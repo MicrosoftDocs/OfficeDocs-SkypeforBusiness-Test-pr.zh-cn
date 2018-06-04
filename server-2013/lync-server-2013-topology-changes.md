@@ -39,9 +39,9 @@ Lync Server 2013 的拓扑要求和注意事项与早期版本中的不同，如
 
   - 持久聊天服务器现在是服务器角色。在 Microsoft Lync Server 2010 中， 群聊服务器是 Microsoft Lync Server 2010 的第三方受信任应用程序。在 Lync Server 2013 中， 持久聊天服务器功能是使用下列三种新的服务器角色实现的：
     
-      - **PersistentChatService ：**作为前端角色实现的主要 持久聊天服务器服务
+      - **PersistentChatService ：** 作为前端角色实现的主要 持久聊天服务器服务
     
-      - **PersistentChatStore ：**后端服务器角色
+      - **PersistentChatStore ：** 后端服务器角色
     
       - **PersistentChatComplianceStore ：** 持久聊天合规性的后端服务器角色
 

@@ -79,7 +79,7 @@ Microsoft Lync Server 2013 中有关流量的默认建议做法和设置是，�
 
 Microsoft Lync Server 2013 可能会通过可以链接到个人的公用网络披露信息。这些信息类型具体可分为两大类：
 
-  - **增强状态数据 ** 增强状态数据是一些信息，用户可以选择是否通过指向联盟伙伴的链接共享此信息，或选择是否与组织内的联系人共享此信息。不与公用 IM 网络上的用户共享此数据。客户端策略和其他客户端配置可能会为系统管理员提供一些控制能力。在 Lync Server 2013 中，可为单个用户配置增强的状态隐私模式，以防止不在用户的联系人列表中的 Lync 用户看到用户的状态信息。增强的状态隐私模式不会阻止 Microsoft Office Communicator 2007 和 Microsoft Office Communicator 2007 R2 的用户看到用户的状态信息。有关详细信息，请参阅入门文档中的 [Lync Server 2013 中面向客户端的新内容](lync-server-2013-what-s-new-for-clients.md) 和部署文档中的 [配置增强状态隐私模式](lync-server-2013-configuring-enhanced-presence-privacy-mode.md)。
+  - **增强状态数据** 增强状态数据是一些信息，用户可以选择是否通过指向联盟伙伴的链接共享此信息，或选择是否与组织内的联系人共享此信息。不与公用 IM 网络上的用户共享此数据。客户端策略和其他客户端配置可能会为系统管理员提供一些控制能力。在 Lync Server 2013 中，可为单个用户配置增强的状态隐私模式，以防止不在用户的联系人列表中的 Lync 用户看到用户的状态信息。增强的状态隐私模式不会阻止 Microsoft Office Communicator 2007 和 Microsoft Office Communicator 2007 R2 的用户看到用户的状态信息。有关详细信息，请参阅入门文档中的 [Lync Server 2013 中面向客户端的新内容](lync-server-2013-what-s-new-for-clients.md) 和部署文档中的 [配置增强状态隐私模式](lync-server-2013-configuring-enhanced-presence-privacy-mode.md)。
 
   - **必需数据** 必需数据是对服务器或客户端进行适当操作所需的数据，它不受客户端或系统管理的控制。对于路由、状态维护和信号传输而言，此信息是必需的服务器或网络级别信息。
 

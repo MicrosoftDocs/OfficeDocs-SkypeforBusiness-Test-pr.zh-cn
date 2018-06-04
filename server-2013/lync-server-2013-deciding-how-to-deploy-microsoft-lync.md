@@ -17,9 +17,9 @@ _**上一次修改主题：** 2012-10-03_
 
 在规划 Lync 时，首先要做的重要决策是如何部署 Microsoft Lync：本地部署为 Lync Server 2013，或在云中部署为带 Microsoft Office 365 的 Skype for Business Online。
 
-  - **本地 Lync Server 2013：**此选项不仅提供了完整的 Lync 功能集，还在配置、自定义和操作您的部署方面提供了最大的灵活性。所有服务器都是现场安装的，并且由您的组织进行维护。本地部署提供了整套 Lync Server 功能。
+  - **本地 Lync Server 2013：** 此选项不仅提供了完整的 Lync 功能集，还在配置、自定义和操作您的部署方面提供了最大的灵活性。所有服务器都是现场安装的，并且由您的组织进行维护。本地部署提供了整套 Lync Server 功能。
 
-  - **云中的 Skype for Business Online**Skype for Business Online专为具有以下要求的组织而设计：在不牺牲 Lync Server 的业务级别功能的情况下实现基于云的即时消息、状态和会议的成本和灵活性优势。利用 Skype for Business Online， Microsoft 可部署和维护所需的服务器基础结构，还可处理持续维护、修补程序和升级。本地部署中可用的某些功能在 Skype for Business Online 中不可用。
+  - **云中的 Skype for Business Online** Skype for Business Online专为具有以下要求的组织而设计：在不牺牲 Lync Server 的业务级别功能的情况下实现基于云的即时消息、状态和会议的成本和灵活性优势。利用 Skype for Business Online， Microsoft 可部署和维护所需的服务器基础结构，还可处理持续维护、修补程序和升级。本地部署中可用的某些功能在 Skype for Business Online 中不可用。
 
 最适合您的部署类型取决于您要部署的工作负载，以及您组织的地理位置和业务状态。
 
