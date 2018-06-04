@@ -63,7 +63,7 @@ Lync-Skype 连接使 Skype 用户和 Lync 用户能够相互添加为联系人�
 
 有关联系人支持的其他信息，请参阅[在 Lync 中添加联系人](http://office.microsoft.com/zh-cn/office365-lync-online-help/add-a-contact-in-lync-ha102828922.aspx)和 [在 Lync 中添加外部联系人](http://office.microsoft.com/zh-cn/office365-lync-online-help/add-an-external-contact-in-lync-ha104038998.aspx?ctt=5%26origin=ha102828922)
 
-当 Skype 用户的 Microsoft 帐户使用自定义域名（如 **bob@contoso.com**）时，Lync 用户可通过两种方式将该 Microsoft 帐户添加到 Lync：
+当 Skype 用户的 Microsoft 帐户使用自定义域名（如 <strong>bob@contoso.com</strong>）时，Lync 用户可通过两种方式将该 Microsoft 帐户添加到 Lync：
 
 1.  使用“添加联系人”图标或者
 
