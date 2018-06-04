@@ -1,4 +1,4 @@
-﻿---
+---
 title: Lync Server 2013：使用 Lync-Skype 连接作为最终用户
 TOCTitle: 使用 Lync-Skype 连接作为最终用户
 ms:assetid: ad22f731-118c-4349-8790-b1a72941cbdd
@@ -93,7 +93,7 @@ Lync-Skype 连接使 Skype 用户和 Lync 用户能够相互添加为联系人�
     
     ![Lync 客户端：显示如何添加 Skype 联系人](images/Dn440175.ac4e2f21-c1d9-47d8-b99e-d49fe4eb36d7(OCS.15).jpg "Lync 客户端：显示如何添加 Skype 联系人")
 
-3.  在“IM 地址”字段中，按照格式 <strong>用户(域名)@msn.com</strong> 输入 Skype 用户的 Microsoft 帐户 (MSA)。因此对于用户 bob@contoso.com，输入内容将是 **bob(contoso.com)@msn.com**，如下所示。
+3.  在“IM 地址”字段中，按照格式 <strong>用户(域名)@msn.com</strong> 输入 Skype 用户的 Microsoft 帐户 (MSA)。因此对于用户 bob@contoso.com，输入内容将是 <strong>bob(contoso.com)@msn.com</strong>，如下所示。
     
     ![Lync 客户端“新联系人”设置](images/Dn440175.422e69b5-2c0c-4260-858f-f10309af772f(OCS.15).jpg "Lync 客户端“新联系人”设置")
 
@@ -101,7 +101,7 @@ Lync-Skype 连接使 Skype 用户和 Lync 用户能够相互添加为联系人�
 
 5.  在“设置私人关系”下拉列表框中，选择合适的联系人设置，然后单击“确定”。
 
-6.  Lync 用户也可以使用 Lync 中的“查找联系人或聊天室，或拨打号码”字段，并添加类似于 <strong>用户(域名)@msn.com</strong> 的地址。因此对于 Microsoft 帐户 bob@contoso.com，输入内容将是 **bob(contoso.com)@msn.com**，如下所示。
+6.  Lync 用户也可以使用 Lync 中的“查找联系人或聊天室，或拨打号码”字段，并添加类似于 <strong>用户(域名)@msn.com</strong> 的地址。因此对于 Microsoft 帐户 bob@contoso.com，输入内容将是 <strong>bob(contoso.com)@msn.com</strong>，如下所示。
     
     ![在 Lync 客户端搜索联系人](images/Dn440175.69787db8-f9b9-49e5-b197-b90b10393301(OCS.15).jpg "在 Lync 客户端搜索联系人")
 
