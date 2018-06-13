@@ -23,116 +23,79 @@ _**上一次修改主题：** 2016-12-08_
 
 **呼叫允许控制**
 
-  -   
-    [Get-CsBandwidthPolicyServiceConfiguration](get-csbandwidthpolicyserviceconfiguration.md)
+  - [Get-CsBandwidthPolicyServiceConfiguration](get-csbandwidthpolicyserviceconfiguration.md)
 
-  -   
-    [New-CsBandwidthPolicyServiceConfiguration](new-csbandwidthpolicyserviceconfiguration.md)
+  - [New-CsBandwidthPolicyServiceConfiguration](new-csbandwidthpolicyserviceconfiguration.md)
 
-  -   
-    [Remove-CsBandwidthPolicyServiceConfiguration](remove-csbandwidthpolicyserviceconfiguration.md)
+  - [Remove-CsBandwidthPolicyServiceConfiguration](remove-csbandwidthpolicyserviceconfiguration.md)
 
-  -   
-    [Set-CsBandwidthPolicyServiceConfiguration](set-csbandwidthpolicyserviceconfiguration.md)
+  - [Set-CsBandwidthPolicyServiceConfiguration](set-csbandwidthpolicyserviceconfiguration.md)
 
-  -   
-    [Get-CsNetworkBandwidthPolicyProfile](get-csnetworkbandwidthpolicyprofile.md)
+  - [Get-CsNetworkBandwidthPolicyProfile](get-csnetworkbandwidthpolicyprofile.md)
 
-  -   
-    [New-CsNetworkBandwidthPolicyProfile](new-csnetworkbandwidthpolicyprofile.md)
+  - [New-CsNetworkBandwidthPolicyProfile](new-csnetworkbandwidthpolicyprofile.md)
 
-  -   
-    [Remove-CsNetworkBandwidthPolicyProfile](remove-csnetworkbandwidthpolicyprofile.md)
+  - [Remove-CsNetworkBandwidthPolicyProfile](remove-csnetworkbandwidthpolicyprofile.md)
 
-  -   
-    [Set-CsNetworkBandwidthPolicyProfile](set-csnetworkbandwidthpolicyprofile.md)
+  - [Set-CsNetworkBandwidthPolicyProfile](set-csnetworkbandwidthpolicyprofile.md)
 
-  -   
-    [New-CsNetworkBWAlternatePath](new-csnetworkbwalternatepath.md)
+  - [New-CsNetworkBWAlternatePath](new-csnetworkbwalternatepath.md)
 
-  -   
-    [New-CsNetworkBWPolicy](new-csnetworkbwpolicy.md)
+  - [New-CsNetworkBWPolicy](new-csnetworkbwpolicy.md)
 
-  -   
-    [Get-CsNetworkConfiguration](get-csnetworkconfiguration.md)
+  - [Get-CsNetworkConfiguration](get-csnetworkconfiguration.md)
 
-  -   
-    [Remove-CsNetworkConfiguration](remove-csnetworkconfiguration.md)
+  - [Remove-CsNetworkConfiguration](remove-csnetworkconfiguration.md)
 
-  -   
-    [Set-CsNetworkConfiguration](set-csnetworkconfiguration.md)
+  - [Set-CsNetworkConfiguration](set-csnetworkconfiguration.md)
 
-  -   
-    [Get-CsNetworkInterRegionRoute](get-csnetworkinterregionroute.md)
+  - [Get-CsNetworkInterRegionRoute](get-csnetworkinterregionroute.md)
 
-  -   
-    [New-CsNetworkInterRegionRoute](new-csnetworkinterregionroute.md)
+  - [New-CsNetworkInterRegionRoute](new-csnetworkinterregionroute.md)
 
-  -   
-    [Remove-CsNetworkInterRegionRoute](remove-csnetworkinterregionroute.md)
+  - [Remove-CsNetworkInterRegionRoute](remove-csnetworkinterregionroute.md)
 
-  -   
-    [Set-CsNetworkInterRegionRoute](set-csnetworkinterregionroute.md)
+  - [Set-CsNetworkInterRegionRoute](set-csnetworkinterregionroute.md)
 
-  -   
-    [Get-CsNetworkInterSitePolicy](get-csnetworkintersitepolicy.md)
+  - [Get-CsNetworkInterSitePolicy](get-csnetworkintersitepolicy.md)
 
-  -   
-    [New-CsNetworkInterSitePolicy](new-csnetworkintersitepolicy.md)
+  - [New-CsNetworkInterSitePolicy](new-csnetworkintersitepolicy.md)
 
-  -   
-    [Remove-CsNetworkInterSitePolicy](remove-csnetworkintersitepolicy.md)
+  - [Remove-CsNetworkInterSitePolicy](remove-csnetworkintersitepolicy.md)
 
-  -   
-    [Set-CsNetworkInterSitePolicy](set-csnetworkintersitepolicy.md)
+  - [Set-CsNetworkInterSitePolicy](set-csnetworkintersitepolicy.md)
 
-  -   
-    [Get-CsNetworkRegion](get-csnetworkregion.md)
+  - [Get-CsNetworkRegion](get-csnetworkregion.md)
 
-  -   
-    [New-CsNetworkRegion](new-csnetworkregion.md)
+  - [New-CsNetworkRegion](new-csnetworkregion.md)
 
-  -   
-    [Remove-CsNetworkRegion](remove-csnetworkregion.md)
+  - [Remove-CsNetworkRegion](remove-csnetworkregion.md)
 
-  -   
-    [Set-CsNetworkRegion](set-csnetworkregion.md)
+  - [Set-CsNetworkRegion](set-csnetworkregion.md)
 
-  -   
-    [Get-CsNetworkRegionLink](get-csnetworkregionlink.md)
+  - [Get-CsNetworkRegionLink](get-csnetworkregionlink.md)
 
-  -   
-    [New-CsNetworkRegionLink](new-csnetworkregionlink.md)
+  - [New-CsNetworkRegionLink](new-csnetworkregionlink.md)
 
-  -   
-    [Remove-CsNetworkRegionLink](remove-csnetworkregionlink.md)
+  - [Remove-CsNetworkRegionLink](remove-csnetworkregionlink.md)
 
-  -   
-    [Set-CsNetworkRegionLink](set-csnetworkregionlink.md)
+  - [Set-CsNetworkRegionLink](set-csnetworkregionlink.md)
 
-  -   
-    [Get-CsNetworkSite](get-csnetworksite.md)
+  - [Get-CsNetworkSite](get-csnetworksite.md)
 
-  -   
-    [New-CsNetworkSite](new-csnetworksite.md)
+  - [New-CsNetworkSite](new-csnetworksite.md)
 
-  -   
-    [Remove-CsNetworkSite](remove-csnetworksite.md)
+  - [Remove-CsNetworkSite](remove-csnetworksite.md)
 
-  -   
-    [Set-CsNetworkSite](set-csnetworksite.md)
+  - [Set-CsNetworkSite](set-csnetworksite.md)
 
-  -   
-    [Get-CsNetworkSubnet](get-csnetworksubnet.md)
+  - [Get-CsNetworkSubnet](get-csnetworksubnet.md)
 
-  -   
-    [New-CsNetworkSubnet](new-csnetworksubnet.md)
+  - [New-CsNetworkSubnet](new-csnetworksubnet.md)
 
-  -   
-    [Remove-CsNetworkSubnet](remove-csnetworksubnet.md)
+  - [Remove-CsNetworkSubnet](remove-csnetworksubnet.md)
 
-  -   
-    [Set-CsNetworkSubnet](set-csnetworksubnet.md)
+  - [Set-CsNetworkSubnet](set-csnetworksubnet.md)
 
 ## 另请参阅
 

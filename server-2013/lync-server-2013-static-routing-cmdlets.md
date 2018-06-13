@@ -23,56 +23,39 @@ _**上一次修改主题：** 2016-12-08_
 
 **静态路由**
 
-  -   
-    [Get-CsSipResponseCodeTranslationRule](get-cssipresponsecodetranslationrule.md)
+  - [Get-CsSipResponseCodeTranslationRule](get-cssipresponsecodetranslationrule.md)
 
-  -   
-    [New-CsSipResponseCodeTranslationRule](new-cssipresponsecodetranslationrule.md)
+  - [New-CsSipResponseCodeTranslationRule](new-cssipresponsecodetranslationrule.md)
 
-  -   
-    [Remove-CsSipResponseCodeTranslationRule](remove-cssipresponsecodetranslationrule.md)
+  - [Remove-CsSipResponseCodeTranslationRule](remove-cssipresponsecodetranslationrule.md)
 
-  -   
-    [Set-CsSipResponseCodeTranslationRule](set-cssipresponsecodetranslationrule.md)
+  - [Set-CsSipResponseCodeTranslationRule](set-cssipresponsecodetranslationrule.md)
 
-  -   
-    [New-CsStaticRoute](new-csstaticroute.md)
+  - [New-CsStaticRoute](new-csstaticroute.md)
 
-  -   
-    [Get-CsStaticRoutingConfiguration](get-csstaticroutingconfiguration.md)
+  - [Get-CsStaticRoutingConfiguration](get-csstaticroutingconfiguration.md)
 
-  -   
-    [New-CsStaticRoutingConfiguration](new-csstaticroutingconfiguration.md)
+  - [New-CsStaticRoutingConfiguration](new-csstaticroutingconfiguration.md)
 
-  -   
-    [Remove-CsStaticRoutingConfiguration](remove-csstaticroutingconfiguration.md)
+  - [Remove-CsStaticRoutingConfiguration](remove-csstaticroutingconfiguration.md)
 
-  -   
-    [Set-CsStaticRoutingConfiguration](set-csstaticroutingconfiguration.md)
+  - [Set-CsStaticRoutingConfiguration](set-csstaticroutingconfiguration.md)
 
-  -   
-    [New-CsSipProxyCustom](new-cssipproxycustom.md)
+  - [New-CsSipProxyCustom](new-cssipproxycustom.md)
 
-  -   
-    [New-CsSipProxyRealm](new-cssipproxyrealm.md)
+  - [New-CsSipProxyRealm](new-cssipproxyrealm.md)
 
-  -   
-    [New-CsSipProxyTCP](new-cssipproxytcp.md)
+  - [New-CsSipProxyTCP](new-cssipproxytcp.md)
 
-  -   
-    [New-CsSipProxyTLS](new-cssipproxytls.md)
+  - [New-CsSipProxyTLS](new-cssipproxytls.md)
 
-  -   
-    [New-CsSipProxyTransport](new-cssipproxytransport.md)
+  - [New-CsSipProxyTransport](new-cssipproxytransport.md)
 
-  -   
-    [New-CsSipProxyUseDefault](new-cssipproxyusedefault.md)
+  - [New-CsSipProxyUseDefault](new-cssipproxyusedefault.md)
 
-  -   
-    [New-CsSipProxyUseDefaultCert](new-cssipproxyusedefaultcert.md)
+  - [New-CsSipProxyUseDefaultCert](new-cssipproxyusedefaultcert.md)
 
-  -   
-    [New-CsIssuedCertId](new-csissuedcertid.md)
+  - [New-CsIssuedCertId](new-csissuedcertid.md)
 
 ## 另请参阅
 

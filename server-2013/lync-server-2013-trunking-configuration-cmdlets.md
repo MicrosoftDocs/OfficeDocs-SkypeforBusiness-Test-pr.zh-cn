@@ -37,17 +37,13 @@ _**上一次修改主题：** 2016-12-08_
 
 <!-- end list -->
 
-  -   
-    [Get-CsOutboundTranslationRule](get-csoutboundtranslationrule.md)
+  - [Get-CsOutboundTranslationRule](get-csoutboundtranslationrule.md)
 
-  -   
-    [New-CsOutboundTranslationRule](new-csoutboundtranslationrule.md)
+  - [New-CsOutboundTranslationRule](new-csoutboundtranslationrule.md)
 
-  -   
-    [Remove-CsOutboundTranslationRule](remove-csoutboundtranslationrule.md)
+  - [Remove-CsOutboundTranslationRule](remove-csoutboundtranslationrule.md)
 
-  -   
-    [Set-CsOutboundTranslationRule](set-csoutboundtranslationrule.md)
+  - [Set-CsOutboundTranslationRule](set-csoutboundtranslationrule.md)
 
 <!-- end list -->
 
@@ -55,25 +51,19 @@ _**上一次修改主题：** 2016-12-08_
 
 <!-- end list -->
 
-  -   
-    [Get-CsTrunkConfiguration](get-cstrunkconfiguration.md)
+  - [Get-CsTrunkConfiguration](get-cstrunkconfiguration.md)
 
-  -   
-    [New-CsTrunkConfiguration](new-cstrunkconfiguration.md)
+  - [New-CsTrunkConfiguration](new-cstrunkconfiguration.md)
 
-  -   
-    [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md)
+  - [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md)
 
-  -   
-    [Set-CsTrunkConfiguration](set-cstrunkconfiguration.md)
+  - [Set-CsTrunkConfiguration](set-cstrunkconfiguration.md)
 
-  -   
-    [Test-CsTrunkConfiguration](test-cstrunkconfiguration.md)
+  - [Test-CsTrunkConfiguration](test-cstrunkconfiguration.md)
 
 <!-- end list -->
 
-  -   
-    [New-CsVoiceRegex](new-csvoiceregex.md)
+  - [New-CsVoiceRegex](new-csvoiceregex.md)
 
 ## 另请参阅
 

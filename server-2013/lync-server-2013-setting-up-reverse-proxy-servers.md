@@ -73,11 +73,9 @@ _**上一次修改主题：** 2016-12-08_
 
 要将 Forefront Threat Management Gateway 2010 成功部署为反向代理，您需要使用 Forefront Threat Management Gateway 2010 文档中定义的先决条件和硬件要求安装和配置一台服务器。在继续之前，请参阅以下主题集以正确配置硬件以及在该服务器上安装 Forefront Threat Management Gateway 2010。
 
-  -   
-    [Forefront Threat Management Gateway (TMG) 2010](http://go.microsoft.com/fwlink/?linkid=291292)
+  - [Forefront Threat Management Gateway (TMG) 2010](http://go.microsoft.com/fwlink/?linkid=291292)
 
-  -   
-    [Forefront TMG 2010 硬件建议](http://go.microsoft.com/fwlink/?linkid=291293)
+  - [Forefront TMG 2010 硬件建议](http://go.microsoft.com/fwlink/?linkid=291293)
 
 要成功地将 IIS ARR 部署为反向代理，请参阅以下主题以配置硬件和必备软件。
 

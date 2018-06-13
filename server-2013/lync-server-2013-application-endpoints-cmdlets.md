@@ -23,11 +23,9 @@ _**上一次修改主题：** 2016-12-08_
 
 **应用程序终结点**
 
-  -   
-    [Get-CsApplicationEndpoint](get-csapplicationendpoint.md)
+  - [Get-CsApplicationEndpoint](get-csapplicationendpoint.md)
 
-  -   
-    [Move-CsApplicationEndpoint](move-csapplicationendpoint.md)
+  - [Move-CsApplicationEndpoint](move-csapplicationendpoint.md)
 
 ## 另请参阅
 
