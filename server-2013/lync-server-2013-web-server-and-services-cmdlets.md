@@ -23,62 +23,43 @@ _**上一次修改主题：** 2016-12-08_
 
 **Web 服务器和服务**
 
-  -   
-    [New-CsSimpleUrl](new-cssimpleurl.md)
+  - [New-CsSimpleUrl](new-cssimpleurl.md)
 
-  -   
-    [Get-CsSimpleUrlConfiguration](get-cssimpleurlconfiguration.md)
+  - [Get-CsSimpleUrlConfiguration](get-cssimpleurlconfiguration.md)
 
-  -   
-    [New-CsSimpleUrlConfiguration](new-cssimpleurlconfiguration.md)
+  - [New-CsSimpleUrlConfiguration](new-cssimpleurlconfiguration.md)
 
-  -   
-    [Remove-CsSimpleUrlConfiguration](remove-cssimpleurlconfiguration.md)
+  - [Remove-CsSimpleUrlConfiguration](remove-cssimpleurlconfiguration.md)
 
-  -   
-    [Set-CsSimpleUrlConfiguration](set-cssimpleurlconfiguration.md)
+  - [Set-CsSimpleUrlConfiguration](set-cssimpleurlconfiguration.md)
 
-  -   
-    [New-CsSimpleUrlEntry](new-cssimpleurlentry.md)
+  - [New-CsSimpleUrlEntry](new-cssimpleurlentry.md)
 
-  -   
-    [Set-CsWebServer](set-cswebserver.md)
+  - [Set-CsWebServer](set-cswebserver.md)
 
-  -   
-    [Get-CsWebServiceConfiguration](get-cswebserviceconfiguration.md)
+  - [Get-CsWebServiceConfiguration](get-cswebserviceconfiguration.md)
 
-  -   
-    [New-CsWebServiceConfiguration](new-cswebserviceconfiguration.md)
+  - [New-CsWebServiceConfiguration](new-cswebserviceconfiguration.md)
 
-  -   
-    [Remove-CsWebServiceConfiguration](remove-cswebserviceconfiguration.md)
+  - [Remove-CsWebServiceConfiguration](remove-cswebserviceconfiguration.md)
 
-  -   
-    [Set-CsWebServiceConfiguration](set-cswebserviceconfiguration.md)
+  - [Set-CsWebServiceConfiguration](set-cswebserviceconfiguration.md)
 
-  -   
-    [New-CsWebTrustedCACertificate](new-cswebtrustedcacertificate.md)
+  - [New-CsWebTrustedCACertificate](new-cswebtrustedcacertificate.md)
 
-  -   
-    [New-CsKerberosAccount](new-cskerberosaccount.md)
+  - [New-CsKerberosAccount](new-cskerberosaccount.md)
 
-  -   
-    [Get-CsKerberosAccountAssignment](get-cskerberosaccountassignment.md)
+  - [Get-CsKerberosAccountAssignment](get-cskerberosaccountassignment.md)
 
-  -   
-    [New-CsKerberosAccountAssignment](new-cskerberosaccountassignment.md)
+  - [New-CsKerberosAccountAssignment](new-cskerberosaccountassignment.md)
 
-  -   
-    [Remove-CsKerberosAccountAssignment](remove-cskerberosaccountassignment.md)
+  - [Remove-CsKerberosAccountAssignment](remove-cskerberosaccountassignment.md)
 
-  -   
-    [Set-CsKerberosAccountAssignment](set-cskerberosaccountassignment.md)
+  - [Set-CsKerberosAccountAssignment](set-cskerberosaccountassignment.md)
 
-  -   
-    [Test-CsKerberosAccountAssignment](test-cskerberosaccountassignment.md)
+  - [Test-CsKerberosAccountAssignment](test-cskerberosaccountassignment.md)
 
-  -   
-    [Set-CsKerberosAccountPassword](set-cskerberosaccountpassword.md)
+  - [Set-CsKerberosAccountPassword](set-cskerberosaccountpassword.md)
 
   - [Test-CsWebApp](test-cswebapp.md)
 
@@ -89,4 +70,3 @@ _**上一次修改主题：** 2016-12-08_
 #### 其他资源
 
 [Lync Server PowerShell 博客](http://go.microsoft.com/fwlink/?linkid=203150%26clcid=0x804)
-
