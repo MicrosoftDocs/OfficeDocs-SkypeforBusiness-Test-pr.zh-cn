@@ -23,38 +23,27 @@ _**上一次修改主题：** 2016-12-08_
 
 本文档包含以下各节：
 
-  -   
-    Lync 2013 客户端
+  - Lync 2013 客户端
 
-  -   
-    Lync Server
+  - Lync Server
 
-  -   
-    安装
+  - 安装
 
-  -   
-    移动性
+  - 移动性
 
-  -   
-    会议
+  - 会议
 
-  -   
-    企业语音
+  - 企业语音
 
-  -   
-    状态
+  - 状态
 
-  -   
-    响应组应用程序和呼叫寄存应用程序
+  - 响应组应用程序和呼叫寄存应用程序
 
-  -   
-    Lync Server 控制面板、拓扑生成器和规划工具
+  - Lync Server 控制面板、拓扑生成器和规划工具
 
-  -   
-    本地化
+  - 本地化
 
-  -   
-    版权信息
+  - 版权信息
 
 ## Lync 2013 客户端
 
@@ -983,4 +972,3 @@ Safari 浏览器中不支持乌兹别克语（拉丁文）区域设置。
 Microsoft、Windows、Windows Live、Active Directory、Internet Explorer、MSN、Outlook 和 SQL Server 是 Microsoft Corporation 在美国和/或其他国家/地区的注册商标或商标。
 
 所有其他商标归其各自的所有者所有。
-
