@@ -73,39 +73,22 @@ _**上一次修改主题：** 2016-12-08_
 
 要将 Forefront Threat Management Gateway 2010 成功部署为反向代理，您需要使用 Forefront Threat Management Gateway 2010 文档中定义的先决条件和硬件要求安装和配置一台服务器。在继续之前，请参阅以下主题集以正确配置硬件以及在该服务器上安装 Forefront Threat Management Gateway 2010。
 
-  -   
-    [Forefront Threat Management Gateway (TMG) 2010](http://go.microsoft.com/fwlink/?linkid=291292)
+  - [Forefront Threat Management Gateway (TMG) 2010](http://go.microsoft.com/fwlink/?linkid=291292)
 
-  -   
-    [Forefront TMG 2010 硬件建议](http://go.microsoft.com/fwlink/?linkid=291293)
+  - [Forefront TMG 2010 硬件建议](http://go.microsoft.com/fwlink/?linkid=291293)
 
 要成功地将 IIS ARR 部署为反向代理，请参阅以下主题以配置硬件和必备软件。
 
-  -   
-    要在 Windows Server 2008 或 Windows Server 2008 R2 上安装 IIS，请参阅[在 Windows Server 2008 或 Windows Server 2008 R2 上安装 IIS 7](http://go.microsoft.com/fwlink/?linkid=291296)
+  - 要在 Windows Server 2008 或 Windows Server 2008 R2 上安装 IIS，请参阅[在 Windows Server 2008 或 Windows Server 2008 R2 上安装 IIS 7](http://go.microsoft.com/fwlink/?linkid=291296)
 
-  -   
-    要在 Windows Server 2012 上安装 IIS，请参阅[在 Windows Server 2012 上安装 IIS 8](http://go.microsoft.com/fwlink/?linkid=291297)
+  - 要在 Windows Server 2012 上安装 IIS，请参阅[在 Windows Server 2012 上安装 IIS 8](http://go.microsoft.com/fwlink/?linkid=291297)
 
-  -   
-    要在 Windows Server 2012 R2 上安装 IIS，请参阅[在 Windows Server 2012 R2 上安装 IIS 8.5](http://go.microsoft.com/fwlink/?linkid=330687)
+  - 要在 Windows Server 2012 R2 上安装 IIS，请参阅[在 Windows Server 2012 R2 上安装 IIS 8.5](http://go.microsoft.com/fwlink/?linkid=330687)
 
-  -   
-    要下载适用于 IIS 的应用程序请求路由扩展插件，请按照[应用程序请求路由 v2.5 下载](http://go.microsoft.com/fwlink/?linkid=291298)中的说明进行操作
+  - 要下载适用于 IIS 的应用程序请求路由扩展插件，请按照[应用程序请求路由 v2.5 下载](http://go.microsoft.com/fwlink/?linkid=291298)中的说明进行操作
 
-  -   
-    要安装 ARR，请按照[安装应用程序请求路由版本 2](http://go.microsoft.com/fwlink/?linkid=291299) 中的说明进行操作
+  - 要安装 ARR，请按照[安装应用程序请求路由版本 2](http://go.microsoft.com/fwlink/?linkid=291299) 中的说明进行操作
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>当前发布的说明适用于 ARR 2.0。对于扩展插件的安装，两个版本之间没有任何区别。</td>
-    </tr>
-    </tbody>
-    </table>
+> [!NOTE]
+> 当前发布的说明适用于 ARR 2.0。对于扩展插件的安装，两个版本之间没有任何区别。
 

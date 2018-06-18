@@ -25,6 +25,8 @@ _**上一次修改主题：** 2012-10-29_
 
     Grant-CsOuPermission -ObjectType <User | Computer | InetOrgPerson | Contact | AppContact | Device> -OU <DN of the OU > 
 
+   &nbsp;
+
     Grant-CsOuPermission -ObjectType "user","contact",inetOrgPerson" -OU "ou=Redmond,dc=contoso,dc=net"
 
 有关 **Grant-CsOuPermission** cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档。

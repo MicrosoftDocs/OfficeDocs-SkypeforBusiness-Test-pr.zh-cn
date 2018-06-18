@@ -154,6 +154,8 @@ Lync Server 支持以下三种简单 URL：会议、拨入和管理。必须设�
          Pool1InternalWebFQDN.contoso.com
          Pool2InternalWebFQDN.contoso.com
 
+&nbsp;
+
     Meet-ext.geolb.contoso.com
          Pool1ExternalWebFQDN.contoso.com
          Pool2ExternalWebFQDN.contoso.com

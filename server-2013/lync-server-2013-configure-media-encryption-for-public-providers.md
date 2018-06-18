@@ -40,6 +40,8 @@ _**上一次修改主题：** 2014-12-12_
 2.  从命令提示符处，键入以下命令：
     
         Set-CsMediaConfiguration -EncryptionLevel SupportEncryption
+
+       &nbsp;
     
         Set-CsExternalAccessPolicy Global -EnablePublicCloudAccess $true -EnablePublicCloudAudioVideoAccess $true
     

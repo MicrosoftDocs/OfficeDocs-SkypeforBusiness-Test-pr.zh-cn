@@ -23,38 +23,27 @@ _**上一次修改主题：** 2016-12-08_
 
 本文档包含以下各节：
 
-  -   
-    Lync 2013 客户端
+  - Lync 2013 客户端
 
-  -   
-    Lync Server
+  - Lync Server
 
-  -   
-    安装
+  - 安装
 
-  -   
-    移动性
+  - 移动性
 
-  -   
-    会议
+  - 会议
 
-  -   
-    企业语音
+  - 企业语音
 
-  -   
-    状态
+  - 状态
 
-  -   
-    响应组应用程序和呼叫寄存应用程序
+  - 响应组应用程序和呼叫寄存应用程序
 
-  -   
-    Lync Server 控制面板、拓扑生成器和规划工具
+  - Lync Server 控制面板、拓扑生成器和规划工具
 
-  -   
-    本地化
+  - 本地化
 
-  -   
-    版权信息
+  - 版权信息
 
 ## Lync 2013 客户端
 
@@ -347,6 +336,8 @@ Windows Fabric 安装失败，因为 Fabric 跟踪是采用时间格式 HH:MM:SS
 1.  启动 Windows PowerShell 并返回以下 cmdlet：
     
         New-PSDrive -Name HKU -PSProvider Registry -Root HKEY_USERS
+
+       &nbsp;
     
         $a="HKU:\.Default\Control Panel\International"
 

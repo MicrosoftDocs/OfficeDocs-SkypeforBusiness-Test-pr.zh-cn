@@ -41,6 +41,8 @@ _**上一次修改主题：** 2016-12-08_
       - 在本地部署中，在 Lync Server 命令行管理程序 内键入以下 cmdlet，为 Lync Online 创建托管提供者：
         
             Set-CSAccessEdgeConfiguration -AllowOutsideUsers 1 -AllowFederatedUsers 1 -UseDnsSrvRouting -EnablePartnerDiscovery $true
+
+           &nbsp;
         
             New-CSHostingProvider -Identity LyncOnline -Name LyncOnlin -ProxyFqdn "sipfed.online.lync.com" -Enabled $true -EnabledSharedAddressSpace $true -HostsOCSUsers $true -VerificationLevel UseSourceVerification -IsLocal $false -AutodiscoverUrl https://webdir.online.lync.com/Autodiscover/AutodiscoverService.svc/root
 
@@ -108,6 +110,8 @@ _**上一次修改主题：** 2016-12-08_
     要移动单个用户，请键入：
     
         $cred = Get-Credential
+
+       &nbsp;
     
         Move-CsUser -Identity <username>@contoso.com -Target "<fe-pool>.contoso.com" -Credential $cred -HostedMigrationOverrideURL <URL>
     

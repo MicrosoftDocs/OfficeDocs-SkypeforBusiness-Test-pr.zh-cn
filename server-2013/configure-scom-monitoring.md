@@ -38,6 +38,8 @@ _**上一次修改主题：** 2012-10-04_
 2.  在命令行中键入：
     
         New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health"
+
+       &nbsp;
     
         New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health\CentralDiscoveryCandidate"
     

@@ -88,6 +88,8 @@ _**上一次修改主题：** 2012-10-19_
 17. 在接收、导入和分配公共证书后，您必须停止边缘服务器服务，然后重新启动它。为此，请在 Lync Server 管理控制台中键入：
     
         Stop-CsWindowsService
+
+       &nbsp;
     
         Start-CsWindowsService
 
