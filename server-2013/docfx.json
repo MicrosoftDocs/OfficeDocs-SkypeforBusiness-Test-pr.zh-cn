@@ -47,8 +47,12 @@
                                          "breadcrumb_path":  "/office/lync-server-2013/breadcrumb/toc.json",
                                          "extendBreadcrumb":  true,
                                          "ROBOTS":  "INDEX,FOLLOW",
-                                         "ms.prod":  "lync-2013",
-                                         "ms.topic":  "conceptual"
+                                         "uhfHeaderId":  "MSDocsHeader-Office",
+                                         "ms.topic":  "conceptual",
+                                         "author":  "Serdar Soysal",
+                                         "ms.author":  "Serdar Soysal",
+                                         "ms.technology":  "lync-2013",                     
+                                         "ms.prod":  "Lync-2013"
                                      },
                   "fileMetadata":  {
 
