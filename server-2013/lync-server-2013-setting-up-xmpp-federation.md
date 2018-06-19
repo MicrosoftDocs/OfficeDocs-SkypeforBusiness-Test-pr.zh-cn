@@ -98,6 +98,8 @@ _**上一次修改主题：** 2012-12-03_
 22. 在接收、导入和分配公共证书后，您必须停止边缘服务器服务，然后重新启动它。为此，请在 Lync Server 管理控制台中键入：
     
         Stop-CsWindowsService
+
+       &nbsp;
     
         Start-CsWindowsService
 
@@ -120,20 +122,28 @@ _**上一次修改主题：** 2012-12-03_
 24. 配置一个新外部访问策略来启用所有用户，方法是在前端服务器上打开 Lync Server 命令行管理程序并键入：
     
         New-CsExternalAccessPolicy -Identity <name of policy to create.  If site scope, prepend with 'site:'> -EnableFederationAcces $true -EnablePublicCloudAccess $true
+
+       &nbsp;
     
         New-CsExternalAccessPolicy -Identity FedPic -EnableFederationAcces $true -EnablePublicCloudAccess $true
+
+       &nbsp;
     
         Get-CsUser | Grant-CsExternalAccessPolicy -PolicyName FedPic
     
     通过键入以下命令为外部用户启用 XMPP 访问：
     
         Set-CsExternalAccessPolicy -Identity <name of the policy being used> EnableXmppAccess $true
+
+       &nbsp;
     
         Set-CsExternalAccessPolicy -Identity FedPic -EnableXmppAccess $true
 
 25. 在部署 XMPP 代理的 边缘服务器上，打开命令提示符或 Windows PowerShell™ 命令行接口并键入以下命令：
     
         Netstat -ano | findstr 5269
+
+       &nbsp;
     
         Netstat -ano | findstr 23456
     

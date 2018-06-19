@@ -29,6 +29,8 @@ _**上一次修改主题：** 2014-05-29_
 
     $creds=Get-Credential
 
+   &nbsp;
+
     Move-CsUser -Identity username@contoso.com -Target sipfed.online.lync.com -Credential $creds -HostedMigrationOverrideUrl <URL>
 
 为 **HostedMigrationOverrideUrl** 参数指定的 URL 的格式必须为托管迁移服务在其中运行的池的 URL，格式如下：*Https://\<Pool FQDN\>/HostedMigration/hostedmigrationService.svc*。

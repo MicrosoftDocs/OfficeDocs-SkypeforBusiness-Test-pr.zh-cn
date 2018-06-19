@@ -153,6 +153,8 @@ _**上一次修改主题：** 2014-03-19_
 2.  可利用提供的 cmdlet 更新现有提供程序并创建新的提供程序。若要删除提供程序，您必须对 **Set-CsClsScenario** 的 Provider 参数使用 Replace 指令。完全删除提供程序的唯一方式是，将提供程序替换为具有相同名称的重定义的提供程序并使用 Update 指令。例如，使用 WPP 将提供程序 LyssProvider 定义为日志类型，将级别设置为“Debug”，则标志集为 TF\_CONNECTION 和 TF\_DIAG。您需要将标志更改为“All”。若要更改提供程序，请键入：
     
         $LyssProvider = New-CsClsProvider -Name "Lyss" -Type "WPP" -Level "Debug" -Flags "All"
+
+       &nbsp;
     
         Set-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider @{Replace=$LyssProvider}
 

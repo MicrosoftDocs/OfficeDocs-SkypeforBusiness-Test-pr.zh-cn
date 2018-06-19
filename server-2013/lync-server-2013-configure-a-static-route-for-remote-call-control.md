@@ -86,6 +86,8 @@ _**上一次修改主题：** 2012-09-22_
 4.  要将新创建的静态路由保留在 中央管理存储中，请根据需要运行以下各项之一：
     
         Set-CsStaticRoutingConfiguration -Route @{Add=$TLSRoute}
+
+       &nbsp;
     
         Set-CsStaticRoutingConfiguration -Route @{Add=$TCPRoute}
 

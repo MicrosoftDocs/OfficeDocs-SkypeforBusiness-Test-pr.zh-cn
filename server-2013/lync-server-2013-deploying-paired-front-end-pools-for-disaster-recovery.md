@@ -52,12 +52,16 @@ _**上一次修改主题：** 2013-02-21_
 10. 使用以下 cmdlet 强制两个池的用户和会议数据相互同步：
     
         Invoke-CsBackupServiceSync -PoolFqdn <Pool1 FQDN>
+
+       &nbsp;
     
         Invoke-CsBackupServiceSync -PoolFqdn <Pool2 FQDN>
     
     同步数据可能需要一些时间。您可以使用以下 cmdlet 检查同步状态。确保两个方向的状态均保持稳定。
     
         Get-CsBackupServiceStatus -PoolFqdn <Pool1 FQDN>
+
+       &nbsp;
     
         Get-CsBackupServiceStatus -PoolFqdn <Pool2 FQDN>
 
