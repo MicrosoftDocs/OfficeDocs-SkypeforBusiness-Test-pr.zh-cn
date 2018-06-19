@@ -202,14 +202,11 @@ Microsoft Lync Server 2010 引入了与 Microsoft Lync Online 2010 和 Microsoft
 
 以下主题包含为支持的联盟方案类型定义证书、防火墙端口和 DNS 条目相关的指导。
 
-  -   
-    [证书摘要 - SIP、XMPP 联盟和公共即时消息](lync-server-2013-certificate-summary-sip-xmpp-federation-and-public-instant-messaging.md)
+  - [证书摘要 - SIP、XMPP 联盟和公共即时消息](lync-server-2013-certificate-summary-sip-xmpp-federation-and-public-instant-messaging.md)
 
-  -   
-    [端口摘要 - SIP、XMPP 联盟和公共即时消息](lync-server-2013-port-summary-sip-xmpp-federation-and-public-instant-messaging.md)
+  - [端口摘要 - SIP、XMPP 联盟和公共即时消息](lync-server-2013-port-summary-sip-xmpp-federation-and-public-instant-messaging.md)
 
-  -   
-    [DNS 摘要 - SIP、XMPP 联盟和公共即时消息](lync-server-2013-dns-summary-sip-xmpp-federation-and-public-instant-messaging.md)
+  - [DNS 摘要 - SIP、XMPP 联盟和公共即时消息](lync-server-2013-dns-summary-sip-xmpp-federation-and-public-instant-messaging.md)
 
 ## 另请参阅
 

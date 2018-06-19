@@ -23,50 +23,35 @@ _**上一次修改主题：** 2016-12-08_
 
 **语音策略**
 
-  -   
-    [Get-CsDialPlan](get-csdialplan.md)
+  - [Get-CsDialPlan](get-csdialplan.md)
 
-  -   
-    [Grant-CsDialPlan](grant-csdialplan.md)
+  - [Grant-CsDialPlan](grant-csdialplan.md)
 
-  -   
-    [New-CsDialPlan](new-csdialplan.md)
+  - [New-CsDialPlan](new-csdialplan.md)
 
-  -   
-    [Remove-CsDialPlan](remove-csdialplan.md)
+  - [Remove-CsDialPlan](remove-csdialplan.md)
 
-  -   
-    [Set-CsDialPlan](set-csdialplan.md)
+  - [Set-CsDialPlan](set-csdialplan.md)
 
-  -   
-    [Test-CsDialPlan](test-csdialplan.md)
+  - [Test-CsDialPlan](test-csdialplan.md)
 
-  -   
-    [Get-CsPstnUsage](get-cspstnusage.md)
+  - [Get-CsPstnUsage](get-cspstnusage.md)
 
-  -   
-    [Set-CsPstnUsage](set-cspstnusage.md)
+  - [Set-CsPstnUsage](set-cspstnusage.md)
 
-  -   
-    [Copy-CsVoicePolicy](https://technet.microsoft.com/zh-cn/library/jj204663\(v=ocs.15\))
+  - [Copy-CsVoicePolicy](https://technet.microsoft.com/zh-cn/library/jj204663\(v=ocs.15\))
 
-  -   
-    [Get-CsVoicePolicy](get-csvoicepolicy.md)
+  - [Get-CsVoicePolicy](get-csvoicepolicy.md)
 
-  -   
-    [Grant-CsVoicePolicy](grant-csvoicepolicy.md)
+  - [Grant-CsVoicePolicy](grant-csvoicepolicy.md)
 
-  -   
-    [New-CsVoicePolicy](new-csvoicepolicy.md)
+  - [New-CsVoicePolicy](new-csvoicepolicy.md)
 
-  -   
-    [Remove-CsVoicePolicy](remove-csvoicepolicy.md)
+  - [Remove-CsVoicePolicy](remove-csvoicepolicy.md)
 
-  -   
-    [Set-CsVoicePolicy](set-csvoicepolicy.md)
+  - [Set-CsVoicePolicy](set-csvoicepolicy.md)
 
-  -   
-    [Test-CsVoicePolicy](test-csvoicepolicy.md)
+  - [Test-CsVoicePolicy](test-csvoicepolicy.md)
 
 ## 另请参阅
 
@@ -77,4 +62,3 @@ _**上一次修改主题：** 2016-12-08_
 #### 其他资源
 
 [Lync Server PowerShell 博客](http://go.microsoft.com/fwlink/?linkid=203150%26clcid=0x804)
-

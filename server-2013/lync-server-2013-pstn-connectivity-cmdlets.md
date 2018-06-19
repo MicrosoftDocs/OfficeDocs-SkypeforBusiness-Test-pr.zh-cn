@@ -23,70 +23,49 @@ _**上一次修改主题：** 2016-12-08_
 
 **[PSTN 网关 Cmdlet](lync-server-2013-pstn-gateways-cmdlets.md)**
 
-  -   
-    [Set-CsPstnGateway](set-cspstngateway.md)
+  - [Set-CsPstnGateway](set-cspstngateway.md)
 
-  -   
-    [Test-CsPstnOutboundCall](test-cspstnoutboundcall.md)
+  - [Test-CsPstnOutboundCall](test-cspstnoutboundcall.md)
 
-  -   
-    [Test-CsPstnPeerToPeerCall](test-cspstnpeertopeercall.md)
+  - [Test-CsPstnPeerToPeerCall](test-cspstnpeertopeercall.md)
 
-  -   
-    [Set-CsMediationServer](set-csmediationserver.md)
+  - [Set-CsMediationServer](set-csmediationserver.md)
 
 **[静态路由 Cmdlet](lync-server-2013-static-routing-cmdlets.md)**
 
-  -   
-    [Get-CsSipResponseCodeTranslationRule](get-cssipresponsecodetranslationrule.md)
+  - [Get-CsSipResponseCodeTranslationRule](get-cssipresponsecodetranslationrule.md)
 
-  -   
-    [New-CsSipResponseCodeTranslationRule](new-cssipresponsecodetranslationrule.md)
+  - [New-CsSipResponseCodeTranslationRule](new-cssipresponsecodetranslationrule.md)
 
-  -   
-    [Remove-CsSipResponseCodeTranslationRule](remove-cssipresponsecodetranslationrule.md)
+  - [Remove-CsSipResponseCodeTranslationRule](remove-cssipresponsecodetranslationrule.md)
 
-  -   
-    [Set-CsSipResponseCodeTranslationRule](set-cssipresponsecodetranslationrule.md)
+  - [Set-CsSipResponseCodeTranslationRule](set-cssipresponsecodetranslationrule.md)
 
-  -   
-    [New-CsStaticRoute](new-csstaticroute.md)
+  - [New-CsStaticRoute](new-csstaticroute.md)
 
-  -   
-    [Get-CsStaticRoutingConfiguration](get-csstaticroutingconfiguration.md)
+  - [Get-CsStaticRoutingConfiguration](get-csstaticroutingconfiguration.md)
 
-  -   
-    [New-CsStaticRoutingConfiguration](new-csstaticroutingconfiguration.md)
+  - [New-CsStaticRoutingConfiguration](new-csstaticroutingconfiguration.md)
 
-  -   
-    [Remove-CsStaticRoutingConfiguration](remove-csstaticroutingconfiguration.md)
+  - [Remove-CsStaticRoutingConfiguration](remove-csstaticroutingconfiguration.md)
 
-  -   
-    [Set-CsStaticRoutingConfiguration](set-csstaticroutingconfiguration.md)
+  - [Set-CsStaticRoutingConfiguration](set-csstaticroutingconfiguration.md)
 
-  -   
-    [New-CsSipProxyCustom](new-cssipproxycustom.md)
+  - [New-CsSipProxyCustom](new-cssipproxycustom.md)
 
-  -   
-    [New-CsSipProxyRealm](new-cssipproxyrealm.md)
+  - [New-CsSipProxyRealm](new-cssipproxyrealm.md)
 
-  -   
-    [New-CsSipProxyTCP](new-cssipproxytcp.md)
+  - [New-CsSipProxyTCP](new-cssipproxytcp.md)
 
-  -   
-    [New-CsSipProxyTLS](new-cssipproxytls.md)
+  - [New-CsSipProxyTLS](new-cssipproxytls.md)
 
-  -   
-    [New-CsSipProxyTransport](new-cssipproxytransport.md)
+  - [New-CsSipProxyTransport](new-cssipproxytransport.md)
 
-  -   
-    [New-CsSipProxyUseDefault](new-cssipproxyusedefault.md)
+  - [New-CsSipProxyUseDefault](new-cssipproxyusedefault.md)
 
-  -   
-    [New-CsSipProxyUseDefaultCert](new-cssipproxyusedefaultcert.md)
+  - [New-CsSipProxyUseDefaultCert](new-cssipproxyusedefaultcert.md)
 
-  -   
-    [New-CsIssuedCertId](new-csissuedcertid.md)
+  - [New-CsIssuedCertId](new-csissuedcertid.md)
 
 **[中继配置 Cmdlet](lync-server-2013-trunking-configuration-cmdlets.md)**
 
@@ -104,17 +83,13 @@ _**上一次修改主题：** 2016-12-08_
 
 <!-- end list -->
 
-  -   
-    [Get-CsOutboundTranslationRule](get-csoutboundtranslationrule.md)
+  - [Get-CsOutboundTranslationRule](get-csoutboundtranslationrule.md)
 
-  -   
-    [New-CsOutboundTranslationRule](new-csoutboundtranslationrule.md)
+  - [New-CsOutboundTranslationRule](new-csoutboundtranslationrule.md)
 
-  -   
-    [Remove-CsOutboundTranslationRule](remove-csoutboundtranslationrule.md)
+  - [Remove-CsOutboundTranslationRule](remove-csoutboundtranslationrule.md)
 
-  -   
-    [Set-CsOutboundTranslationRule](set-csoutboundtranslationrule.md)
+  - [Set-CsOutboundTranslationRule](set-csoutboundtranslationrule.md)
 
 <!-- end list -->
 
@@ -122,54 +97,39 @@ _**上一次修改主题：** 2016-12-08_
 
 <!-- end list -->
 
-  -   
-    [Get-CsTrunkConfiguration](get-cstrunkconfiguration.md)
+  - [Get-CsTrunkConfiguration](get-cstrunkconfiguration.md)
 
-  -   
-    [New-CsTrunkConfiguration](new-cstrunkconfiguration.md)
+  - [New-CsTrunkConfiguration](new-cstrunkconfiguration.md)
 
-  -   
-    [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md)
+  - [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md)
 
-  -   
-    [Set-CsTrunkConfiguration](set-cstrunkconfiguration.md)
+  - [Set-CsTrunkConfiguration](set-cstrunkconfiguration.md)
 
-  -   
-    [Test-CsTrunkConfiguration](test-cstrunkconfiguration.md)
+  - [Test-CsTrunkConfiguration](test-cstrunkconfiguration.md)
 
 <!-- end list -->
 
-  -   
-    [New-CsVoiceRegex](new-csvoiceregex.md)
+  - [New-CsVoiceRegex](new-csvoiceregex.md)
 
 **[语音路由 Cmdlet](lync-server-2013-voice-routing-cmdlets.md)**
 
-  -   
-    [Get-CsRoutingConfiguration](get-csroutingconfiguration.md)
+  - [Get-CsRoutingConfiguration](get-csroutingconfiguration.md)
 
-  -   
-    [New-CsRoutingConfiguration](new-csroutingconfiguration.md)
+  - [New-CsRoutingConfiguration](new-csroutingconfiguration.md)
 
-  -   
-    [Remove-CsRoutingConfiguration](remove-csroutingconfiguration.md)
+  - [Remove-CsRoutingConfiguration](remove-csroutingconfiguration.md)
 
-  -   
-    [Set-CsRoutingConfiguration](set-csroutingconfiguration.md)
+  - [Set-CsRoutingConfiguration](set-csroutingconfiguration.md)
 
-  -   
-    [Get-CsVoiceRoute](get-csvoiceroute.md)
+  - [Get-CsVoiceRoute](get-csvoiceroute.md)
 
-  -   
-    [New-CsVoiceRoute](new-csvoiceroute.md)
+  - [New-CsVoiceRoute](new-csvoiceroute.md)
 
-  -   
-    [Remove-CsVoiceRoute](remove-csvoiceroute.md)
+  - [Remove-CsVoiceRoute](remove-csvoiceroute.md)
 
-  -   
-    [Set-CsVoiceRoute](set-csvoiceroute.md)
+  - [Set-CsVoiceRoute](set-csvoiceroute.md)
 
-  -   
-    [Test-CsVoiceRoute](test-csvoiceroute.md)
+  - [Test-CsVoiceRoute](test-csvoiceroute.md)
 
 ## 另请参阅
 

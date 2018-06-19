@@ -23,20 +23,15 @@ Microsoft Lync Server 2013 与 Exchange 统一消息 (UM) 协同工作，以实�
 
 **Exchange UM**
 
-  -   
-    [Get-CsExUmContact](get-csexumcontact.md)
+  - [Get-CsExUmContact](get-csexumcontact.md)
 
-  -   
-    [Move-CsExUmContact](move-csexumcontact.md)
+  - [Move-CsExUmContact](move-csexumcontact.md)
 
-  -   
-    [New-CsExUmContact](new-csexumcontact.md)
+  - [New-CsExUmContact](new-csexumcontact.md)
 
-  -   
-    [Remove-CsExUmContact](remove-csexumcontact.md)
+  - [Remove-CsExUmContact](remove-csexumcontact.md)
 
-  -   
-    [Set-CsExUmContact](set-csexumcontact.md)
+  - [Set-CsExUmContact](set-csexumcontact.md)
 
   - [Test-CsExStorageConnectivity](test-csexstorageconnectivity.md)
 
@@ -46,32 +41,23 @@ Microsoft Lync Server 2013 与 Exchange 统一消息 (UM) 协同工作，以实�
 
   - [Test-CsExUMVoiceMail](test-csexumvoicemail.md)
 
-  -   
-    [Get-CsHostedVoicemailPolicy](get-cshostedvoicemailpolicy.md)
+  - [Get-CsHostedVoicemailPolicy](get-cshostedvoicemailpolicy.md)
 
-  -   
-    [Grant-CsHostedVoicemailPolicy](grant-cshostedvoicemailpolicy.md)
+  - [Grant-CsHostedVoicemailPolicy](grant-cshostedvoicemailpolicy.md)
 
-  -   
-    [New-CsHostedVoicemailPolicy](new-cshostedvoicemailpolicy.md)
+  - [New-CsHostedVoicemailPolicy](new-cshostedvoicemailpolicy.md)
 
-  -   
-    [Remove-CsHostedVoicemailPolicy](remove-cshostedvoicemailpolicy.md)
+  - [Remove-CsHostedVoicemailPolicy](remove-cshostedvoicemailpolicy.md)
 
-  -   
-    [Set-CsHostedVoicemailPolicy](set-cshostedvoicemailpolicy.md)
+  - [Set-CsHostedVoicemailPolicy](set-cshostedvoicemailpolicy.md)
 
-  -   
-    [Get-CsVoicemailReroutingConfiguration](get-csvoicemailreroutingconfiguration.md)
+  - [Get-CsVoicemailReroutingConfiguration](get-csvoicemailreroutingconfiguration.md)
 
-  -   
-    [New-CsVoicemailReroutingConfiguration](new-csvoicemailreroutingconfiguration.md)
+  - [New-CsVoicemailReroutingConfiguration](new-csvoicemailreroutingconfiguration.md)
 
-  -   
-    [Remove-CsVoicemailReroutingConfiguration](remove-csvoicemailreroutingconfiguration.md)
+  - [Remove-CsVoicemailReroutingConfiguration](remove-csvoicemailreroutingconfiguration.md)
 
-  -   
-    [Set-CsVoicemailReroutingConfiguration](set-csvoicemailreroutingconfiguration.md)
+  - [Set-CsVoicemailReroutingConfiguration](set-csvoicemailreroutingconfiguration.md)
 
 ## 另请参阅
 

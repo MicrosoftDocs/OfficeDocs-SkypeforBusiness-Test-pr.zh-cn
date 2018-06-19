@@ -23,11 +23,9 @@ _**上一次修改主题：** 2016-12-08_
 
 **其他服务器角色**
 
-  -   
-    [Set-CsConferenceServer](set-csconferenceserver.md)
+  - [Set-CsConferenceServer](set-csconferenceserver.md)
 
-  -   
-    [Set-CsUserServer](set-csuserserver.md)
+  - [Set-CsUserServer](set-csuserserver.md)
 
 ## 另请参阅
 

@@ -23,32 +23,23 @@ _**上一次修改主题：** 2016-12-08_
 
 **复制**
 
-  -   
-    [Debug-CsInterPoolReplication](debug-csinterpoolreplication.md)
+  - [Debug-CsInterPoolReplication](debug-csinterpoolreplication.md)
 
-  -   
-    [Invoke-CsManagementStoreReplication](invoke-csmanagementstorereplication.md)
+  - [Invoke-CsManagementStoreReplication](invoke-csmanagementstorereplication.md)
 
-  -   
-    [Get-CsManagementStoreReplicationStatus](get-csmanagementstorereplicationstatus.md)
+  - [Get-CsManagementStoreReplicationStatus](get-csmanagementstorereplicationstatus.md)
 
-  -   
-    [Enable-CsReplica](enable-csreplica.md)
+  - [Enable-CsReplica](enable-csreplica.md)
 
-  -   
-    [Test-CsReplica](test-csreplica.md)
+  - [Test-CsReplica](test-csreplica.md)
 
-  -   
-    [Get-CsUserReplicatorConfiguration](get-csuserreplicatorconfiguration.md)
+  - [Get-CsUserReplicatorConfiguration](get-csuserreplicatorconfiguration.md)
 
-  -   
-    [New-CsUserReplicatorConfiguration](new-csuserreplicatorconfiguration.md)
+  - [New-CsUserReplicatorConfiguration](new-csuserreplicatorconfiguration.md)
 
-  -   
-    [Remove-CsUserReplicatorConfiguration](remove-csuserreplicatorconfiguration.md)
+  - [Remove-CsUserReplicatorConfiguration](remove-csuserreplicatorconfiguration.md)
 
-  -   
-    [Set-CsUserReplicatorConfiguration](set-csuserreplicatorconfiguration.md)
+  - [Set-CsUserReplicatorConfiguration](set-csuserreplicatorconfiguration.md)
 
 ## 另请参阅
 

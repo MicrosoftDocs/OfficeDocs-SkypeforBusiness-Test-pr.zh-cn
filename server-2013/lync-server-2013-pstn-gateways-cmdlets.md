@@ -23,17 +23,13 @@ PSTN 网关使企业语音用户不仅能够对 PSTN 网络（即公用电话交
 
 **PSTN 网关**
 
-  -   
-    [Set-CsPstnGateway](set-cspstngateway.md)
+  - [Set-CsPstnGateway](set-cspstngateway.md)
 
-  -   
-    [Test-CsPstnOutboundCall](test-cspstnoutboundcall.md)
+  - [Test-CsPstnOutboundCall](test-cspstnoutboundcall.md)
 
-  -   
-    [Test-CsPstnPeerToPeerCall](test-cspstnpeertopeercall.md)
+  - [Test-CsPstnPeerToPeerCall](test-cspstnpeertopeercall.md)
 
-  -   
-    [Set-CsMediationServer](set-csmediationserver.md)
+  - [Set-CsMediationServer](set-csmediationserver.md)
 
 ## 另请参阅
 

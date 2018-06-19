@@ -21,20 +21,15 @@ Lync Server 命令行管理程序是 Windows PowerShell 命令窗口的实现，
 
 使用这些 cmdlet 设置 Lync Server 命令行管理程序的某些自定义属性。
 
-  -   
-    [Get-CsUICulture](get-csuiculture.md)
+  - [Get-CsUICulture](get-csuiculture.md)
 
-  -   
-    [Set-CsUICulture](set-csuiculture.md)
+  - [Set-CsUICulture](set-csuiculture.md)
 
-  -   
-    [Get-CsManagementConnection](get-csmanagementconnection.md)
+  - [Get-CsManagementConnection](get-csmanagementconnection.md)
 
-  -   
-    [Remove-CsManagementConnection](remove-csmanagementconnection.md)
+  - [Remove-CsManagementConnection](remove-csmanagementconnection.md)
 
-  -   
-    [Set-CsManagementConnection](set-csmanagementconnection.md)
+  - [Set-CsManagementConnection](set-csmanagementconnection.md)
 
 ## 另请参阅
 

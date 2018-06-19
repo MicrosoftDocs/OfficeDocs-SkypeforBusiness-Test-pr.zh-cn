@@ -39,11 +39,9 @@ The Extensible Messaging and Presence Protocol (XMPP) is a standard communicatio
 
 The XMPP gateway that enables Lync 2013 to communicate with users on an XMPP network was originally released as an add-on to Microsoft Lync Server 2010; in Lync Server 2013, this functionality is built into the software. This means that your users can communicate with XMPP users provided that you:
 
-  -   
-    Configure the XMPP gateway settings.
+  - Configure the XMPP gateway settings.
 
-  -   
-    Configure the other XMPP network (for example, Google Talk) as an allowed XMPP partner.
+  - Configure the other XMPP network (for example, Google Talk) as an allowed XMPP partner.
 
 Note that Lync Server 2013 provides only a single, global set of XMPP configuration settings: you cannot selectively enable or disable XMPP for a given site or a given Registrar pool. In fact you cannot enable or disable XMPP at all: XMPP is always enabled. If you do not want users communicating with XMPP networks then you should remove all the allowed XMPP partners. Users can only communicate with an XMPP network if that network has been configured as an allowed partner.
 

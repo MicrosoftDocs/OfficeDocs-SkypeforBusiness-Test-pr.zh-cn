@@ -23,32 +23,23 @@ _**上一次修改主题：** 2016-12-08_
 
 **语音路由**
 
-  -   
-    [Get-CsRoutingConfiguration](get-csroutingconfiguration.md)
+  - [Get-CsRoutingConfiguration](get-csroutingconfiguration.md)
 
-  -   
-    [New-CsRoutingConfiguration](new-csroutingconfiguration.md)
+  - [New-CsRoutingConfiguration](new-csroutingconfiguration.md)
 
-  -   
-    [Remove-CsRoutingConfiguration](remove-csroutingconfiguration.md)
+  - [Remove-CsRoutingConfiguration](remove-csroutingconfiguration.md)
 
-  -   
-    [Set-CsRoutingConfiguration](set-csroutingconfiguration.md)
+  - [Set-CsRoutingConfiguration](set-csroutingconfiguration.md)
 
-  -   
-    [Get-CsVoiceRoute](get-csvoiceroute.md)
+  - [Get-CsVoiceRoute](get-csvoiceroute.md)
 
-  -   
-    [New-CsVoiceRoute](new-csvoiceroute.md)
+  - [New-CsVoiceRoute](new-csvoiceroute.md)
 
-  -   
-    [Remove-CsVoiceRoute](remove-csvoiceroute.md)
+  - [Remove-CsVoiceRoute](remove-csvoiceroute.md)
 
-  -   
-    [Set-CsVoiceRoute](set-csvoiceroute.md)
+  - [Set-CsVoiceRoute](set-csvoiceroute.md)
 
-  -   
-    [Test-CsVoiceRoute](test-csvoiceroute.md)
+  - [Test-CsVoiceRoute](test-csvoiceroute.md)
 
   - [Get-CsVoiceRoutingPolicy](get-csvoiceroutingpolicy.md)
 
@@ -60,11 +51,9 @@ _**上一次修改主题：** 2016-12-08_
 
   - [Set-CsVoiceRoutingPolicy](set-csvoiceroutingpolicy.md)
 
-  -   
-    [Get-CsPstnUsage](get-cspstnusage.md)
+  - [Get-CsPstnUsage](get-cspstnusage.md)
 
-  -   
-    [Set-CsPstnUsage](set-cspstnusage.md)
+  - [Set-CsPstnUsage](set-cspstnusage.md)
 
 ## 另请参阅
 

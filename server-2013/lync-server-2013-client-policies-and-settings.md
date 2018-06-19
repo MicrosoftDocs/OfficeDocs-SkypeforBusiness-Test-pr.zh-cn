@@ -27,9 +27,7 @@ _**上一次修改主题：** 2012-06-18_
 
 ## 本节内容
 
-  -   
-    [Lync 2013 的新增和更改的设置](lync-server-2013-new-and-changed-settings-for-lync-2013.md)
+  - [Lync 2013 的新增和更改的设置](lync-server-2013-new-and-changed-settings-for-lync-2013.md)
 
-  -   
-    [Lync 2013 的组策略设置](lync-server-2013-group-policy-settings-for-lync-2013.md)
+  - [Lync 2013 的组策略设置](lync-server-2013-group-policy-settings-for-lync-2013.md)
 

@@ -23,17 +23,13 @@ _**上一次修改主题：** 2016-12-08_
 
 **服务**
 
-  -   
-    [Get-CsService](get-csservice.md)
+  - [Get-CsService](get-csservice.md)
 
-  -   
-    [Get-CsWindowsService](get-cswindowsservice.md)
+  - [Get-CsWindowsService](get-cswindowsservice.md)
 
-  -   
-    [Start-CsWindowsService](start-cswindowsservice.md)
+  - [Start-CsWindowsService](start-cswindowsservice.md)
 
-  -   
-    [Stop-CsWindowsService](stop-cswindowsservice.md)
+  - [Stop-CsWindowsService](stop-cswindowsservice.md)
 
 ## 另请参阅
 

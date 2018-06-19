@@ -974,4 +974,3 @@ Safari 浏览器中不支持乌兹别克语（拉丁文）区域设置。
 Microsoft、Windows、Windows Live、Active Directory、Internet Explorer、MSN、Outlook 和 SQL Server 是 Microsoft Corporation 在美国和/或其他国家/地区的注册商标或商标。
 
 所有其他商标归其各自的所有者所有。
-
