@@ -102,9 +102,9 @@ ABSConfig 是一个图形用户界面应用程序，使管理员能够配置与�
 ## 输出
 
 ABSConfig 将通讯簿服务配置存储在数据库中。
-
+```C++
     Path: %ProgramFiles%\Microsoft Lync Server 2013\Reskit
-
+```
 ## 用途
 
 ABSConfig 提供快速且轻松的自定义 Lync Server 2013 通讯簿服务的方式。
@@ -459,7 +459,7 @@ ABSConfig 使管理员能够快速且轻松地自定义 Lync Server 2013 通讯�
 ## 要求
 
 如果此工具在运行 CPS 的相同计算机上运行，则没有要求。如果此工具在远程计算机上运行，Lync Server 2013 使用的 SQL Server 数据库必须配置为允许远程访问。必须为呼叫寄存时间记录器配置 SQL Server 数据库连接字符串才能连接到 SQL Server。此 SQL Server 数据库连接字符串在配置文件 **parkometer.exe.config** 中进行定义。它必须放在 parkometer.exe 所在的相同目录中。以下 XML 文件是一个 parkometer.exe.config 示例。必须配置的参数包括用户名（例如 mydomain\\Administrator）、密码（例如 mypassword）和主机名称（例如 myserver）。
-
+```XML
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
       <appSettings>
@@ -470,7 +470,7 @@ ABSConfig 使管理员能够快速且轻松地自定义 Lync Server 2013 通讯�
     Integrated Security=false;"/>
       </appSettings>
     </configuration>
-
+```
 ## 示例
 
 部署的轨道范围：–o 参数列出为此池配置的所有轨道范围，如下所示
@@ -512,7 +512,7 @@ CleanupStorageServiceData 资源工具包工具允许从 Lync Server 存储服�
 ## 示例
 
 C:\\Program Files\\Microsoft Lync Server 2013\\ResKit\\StorageService\> ImportStorageServiceData.exe
-
+```C++
     Description:
     This tool will remove orphaned data from the Storage Service database
     for a pool. You are required to run this tool on a machine inside the
@@ -568,7 +568,7 @@ C:\\Program Files\\Microsoft Lync Server 2013\\ResKit\\StorageService\> ImportSt
     Writing log: M:\Dev\Server\ResKit\StorageService\CleanupStorageServiceData.Log_20121009_151040
     Tool has finished execution.  Errors encountered: 0
     C:\Program Files\Microsoft Lync Server 2013\ResKit\StorageService>
-
+```
 ## DBAnalyze
 
 ## 说明
@@ -644,14 +644,14 @@ DBAnalyze 是一个命令行工具，可帮助管理员收集有关 Lync Server 
 ## 示例
 
 以下是有效的 Dbanalyze.exe 命令示例：
-
+```C++
     dbanalyze.exe /report:diag
     dbanalyze.exe /report:user /user:usera@domainb.com
     dbanalyze.exe /report:conf /user:bob@example.com /conf:1W9J71SKSX2X
     dbanalyze.exe /report:resolve /pstnid:12345
     dbanalyze.exe /report:mcus
     dbanalyze.exe /report:disk
-
+```
 ## 摘要
 
 DBAnalyzer 使管理员能够快速且轻松地分析 Lync Server 2013 数据库。
@@ -693,7 +693,7 @@ ImportStorageServiceData 资源工具包工具允许将已从存储服务 (LYSS)
 
 
 ## 示例
-
+```C++
     >  C:\StorageService>ImportStorageServiceData.exe
     Description:
     This tool will re-import Storage Service (LYSS) flushed queue data back in.  For a pool: you are required to run this tool on a machine inside the pool which has the Lync Server Management Shell installed.  Additionally, all front end machines need to have Windows Powershell Remoting enabled before executing this tool by executing Enable-PSRemoting.  Also, please ensure that all Storage Service instance DB Size are at the 'Normal' level (verify this by viewing Eventlog events). Otherwise re-importing may cause data to be flushed out again if any Storage Service instance DB size level goes above 'Normal'.
@@ -850,7 +850,7 @@ ImportStorageServiceData 资源工具包工具允许将已从存储服务 (LYSS)
     Log20120910_1609SS
     Tool has finished execution.
     >  C:\StorageService>
-
+```
 ## LCSSync
 
 LCSSync 工具可帮助在多林环境中部署 Lync Server 2013 通信软件。此工具用于将不同用户林中的用户和组作为 Active Directory 域服务联系人对象同步到安装了 Lync Server 2013 的中央林。
@@ -878,7 +878,7 @@ LookupUserConsole 工具显示有关特定用户的内部 Lync Server 路由信�
 ## 示例
 
 C:\\Program Files\\Microsoft Lync Server 2013\\ResKit\>LookupUserConsole.exe
-
+```C++
     > sip:john.doe@vdomain.com
     
       Execution time (ms):                            171.094
@@ -914,7 +914,7 @@ C:\\Program Files\\Microsoft Lync Server 2013\\ResKit\>LookupUserConsole.exe
       Exeuction result:                               UserDoesNotExist
     
     > exit
-
+```
 ## MsTurnPing
 
 MSTurnPing 工具允许 Microsoft Lync Server 2013 通信软件的管理员检查拓扑中运行音频/视频边缘和音频/视频身份验证服务的服务器以及运行带宽策略服务的服务器的状态。
@@ -964,11 +964,11 @@ MSTurnPing 工具允许 Lync Server 2013 通信软件的管理员检查拓扑中
 ## 示例
 
 下面是工具输入示例。
-
+```C++
     MsTurnPing -ServerRole AudioVideoEdgeServer
     
     MsTurnPing -ServerRole BandwidthPolicyServer
-
+```
 ## 摘要
 
 此工具对于希望检查运行音频/视频和带宽策略服务的服务器的状态的 Lync Server 2013 管理员而言是一项宝贵资源。
@@ -1204,9 +1204,9 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 **为 SEFAUtil 工具创建新的受信任的应用程序**
 
 1.  SEFAUTil 工具只能在属于受信任应用程序池的一部分的计算机上运行。如果需要，可通过 Lync Server 命令行管理程序使用以下 cmdlet 将池添加为新的受信任的应用程序池：
-    
+    ```C++
         New-CsTrustedApplicationPool -id <Pool FQDN> -Registrar <Pool Registrar FQDN> -site Site:<Pool Site>
-    
+    ```
     <table>
     <thead>
     <tr class="header">
@@ -1222,9 +1222,9 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 
 
 2.  需要在拓扑中为 SEFAUtil 工具定义受信任的应用程序。要将 SEFAUtil 定义为新的受信任的应用程序，请使用 Lync Server 命令行管理程序并执行以下 cmdlet：
-    
+    ```C++
         New-CsTrustedApplication -ApplicationId sefautil -TrustedApplicationPoolFqdn <Pool FQDN>  -Port 7489
-    
+    ```
     <table>
     <thead>
     <tr class="header">
@@ -1240,15 +1240,15 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 
 
 3.  需要启用拓扑更改。可通过 Lync Server 命令行管理程序执行以下 cmdlet 来启用拓扑更改：
-    
+    ```C++
         Enable-CsToplogy
-
+    ```
 4.  如果需要，请在将用于运行 SEFAUtil 工具的服务器中安装 Lync Server 2013 资源工具包工具（服务器必须属于受信任的应用程序池的一部分）。
 
 5.  验证 SEFAUtil 是否正确运行。为此，请使用管理员特权从命令提示符处运行该工具，以在您的部署中显示用户的呼叫转接设置。默认情况下，该工具位于“…\\Program Files\\Microsoft Lync Server 2013\\Reskit”中。要显示用户的呼叫转接设置，请使用以下命令：
-    
+    ```C++
         SEFAUtil.exe <user SIP address> /server:<Lync Server/Pool FQDN>
-    
+    ```
     应显示用户的呼叫转接设置。
 
 ## 组内呼叫应答
@@ -1276,85 +1276,85 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 
 
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:20
     Call Forward No Answer to: voicemail
-
+```
 ## 设置呼叫转接/无应答目标
 
 此示例设置呼叫转接/无应答目标和响铃延迟。在这里，不提供 /server 开关；SEFAUtil 将尝试自动发现 Lync Server。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /enablefwdnoanswer /callanswerwaittime:30 /setfwddestination:+1425555 0126@contoso.com;user=phone
-
+```
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:30
     Call Forward No Answer to: sip:+14255550126@contoso.com;user=phone
-
+```
 ## 立即启用呼叫转接
 
 此示例立即启用至其他用户的呼叫转接。
-
+```C++
     SEFAUtil.exe sip:katarina@contoso.com /enablefwdimmediate /setfwddestination:anders@contoso.com
-
+```
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     Forward immediate to: sip:anders@contoso.com
-
+```
 ## 立即禁用呼叫转接
 
 此示例立即禁用呼叫转接。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com katarina@contoso.com  /disablefwdimmediate
-
+```
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 ## 将用户添加为代理人并设置代理人的同时响铃
 
 此示例将用户添加为代理人并设置代理人的同时响铃。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /adddelegate:joe@contoso.com /simulringdelegates
-
+```
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simultaneously Ringing Delegates: sip:joe@contoso.com
-
+```
 ## 更改代理人的同时响铃规则
 
 此示例将在上一示例中设置的同时响铃规则设置为延迟的响铃规则。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /delayringdelegates:10
-
+```
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     Delay Ringing Delegates (delay:10 seconds): sip:joe@contoso.com
-
+```
 ## 删除代理人
 
 此示例将删除代理人。
@@ -1372,37 +1372,37 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 </tbody>
 </table>
 
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removedelegate:joe@contoso.com
-
+```
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 ## 添加代理人并设置代理人呼叫转接规则
 
 此示例将添加代理人并设置代理人呼叫转接规则。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /adddelegate:anders@contoso.com /fwdtodelegates
-
+```
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Forwarding calls to Delegates: sip:anders@contoso.com
-
+```
 ## 启用同时响铃并设置目标号码
 
 此示例将启用同时响铃并设置同时响铃目标号码。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /setsimulringdestination:+14255550126 /enablesimulring
-
+```
 <table>
 <thead>
 <tr class="header">
@@ -1418,34 +1418,34 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 
 
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: True
     Simul_Ringing to: sip:+14255550126@contoso.com;user=phone
-
+```
 ## 禁用同时响铃
 
 此示例将禁用同时响铃。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /disablesimulring
-
+```
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 ## 为团队呼叫添加团队成员并将同时响铃设置为团队呼叫成员组
 
 此示例向用户的团队呼叫组添加团队成员，并启用团队呼叫组同时响铃。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /addteammember:anders@contoso.com /simulringteam
-
+```
 <table>
 <thead>
 <tr class="header">
@@ -1461,18 +1461,18 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 
 
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Team ringing enabled. Team: sip:anders@contoso.com
-
+```
 ## 从团队呼叫组中删除成员
 
 此示例将删除用户的团队呼叫组的团队成员。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removeteammember:anders@contoso.com
-
+```
 <table>
 <thead>
 <tr class="header">
@@ -1488,32 +1488,32 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 
 
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 ## 将延迟响铃设置为团队呼叫组
 
 此示例将延迟响铃设置为团队呼叫组时间设置。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /delayringteam:5
-
+```
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Delay Ringing Team (delay:5 seconds). Team: sip:anders@contoso.com
-
+```
 ## 启用团队呼叫
 
 此示例为给定用户启用团队呼叫。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /simulringteam
-
+```
 <table>
 <thead>
 <tr class="header">
@@ -1533,36 +1533,36 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 ## 禁用团队呼叫
 
 此示例为给定用户禁用团队呼叫。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /disableteamcall
-
+```
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 ## 启用组内呼叫应答并为用户分配应答组
 
 此示例为用户分配应答组并启用组内呼叫应答。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /enablegrouppickup:199
-
+```
 **输出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Group Pickup Orbit: sip:199;phone-context=user-default@ contoso.com;user=phone
-
+```
 ## 禁用组内呼叫应答
 
 此示例为给定用户禁用组内呼叫应答。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /disablegrouppickup
-
+```
 <table>
 <thead>
 <tr class="header">
@@ -1576,11 +1576,11 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 </tbody>
 </table>
 
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
-
+```
 ## SYSPrep.ps1
 
 ## 说明
@@ -1659,9 +1659,9 @@ SYSPrep.ps1 是一个 Windows PowerShell 脚本，将在 Windows Server 2008 操
 ## 示例
 
 要运行 SYSPrep.ps1 脚本并安装 Lync Server 2013 必备软件，请从提升的命令提示符处运行以下命令：
-
+```C++
     ./SysPrep.PS1 -SetupFolder D:\Setup
-
+```
 ## 未分配号码通知迁移
 
 未分配号码通知迁移工具使 Lync 管理员能够将由通知应用程序提供服务的未分配号码配置从源 Lync Server 或池移动到目标 Lync Server 或池。
@@ -1729,15 +1729,15 @@ Move-CsAnnouncementConfiguration 脚本需要下表所述的两个参数。
 ## 将未分配号码通知配置从 Lync Server 2010 池移动到 Lync Server 2013 池
 
 此示例将未分配号码通知从源池 (Lync Server 2010) 移动到目标池 (Lync Server 2013)。
-
+```C++
     Move-CsAnnouncementConfiguration.ps1 -Source LS2010Pool.contoso.com -Destination LS2013Pool.contoso.com
-
+```
 ## 将未分配号码通知配置从 Lync Server 2013 池移动到 Lync Server 2010 池
 
 此示例将未分配号码通知从源池 (Lync Server 2013) 移动到目标池 (Lync Server 2010)。
-
+```C++
     Move-CsAnnouncementConfiguration.ps1 -Source LS2013Pool.contoso.com -Destination LS2010Pool.contoso.com
-
+```
 ## Web 会议数据
 
 Web 会议数据工具允许 Lync Server 2013 通信软件的管理员更好地控制与组织者的 Web 会议相关联的数据。方案包括能够基于时间戳条件删除特定用户的会议数据。
@@ -1791,13 +1791,13 @@ Web 会议数据工具允许 Lync Server 2013 通信软件的管理员更好地�
 下表介绍了参数，其中包含示例中使用的一些参数。
 
 ![Web 会议数据工具参数。](images/JJ945604.a733c1c6-5dfc-4874-a74f-bfdee81c1401(OCS.15).jpg "Web 会议数据工具参数。")
-
+```C++
     WebConfDataTool.exe /User:user0@contoso.com /Action:query ""/ExpirationDate:08/09/2010 12:00:00""
-
+```
 上述示例介绍了查询命令如何工作。此类命令的输出是受此工具影响的所有会议内容文件夹的列表。
-
+```C++
     WebConfDataTool.exe /User:user0@contoso.com /Action:delete
-
+```
 上述示例是一个 delete 命令示例。delete 命令将删除此用户的所有非活动会议文件夹。
 
 ## 摘要
