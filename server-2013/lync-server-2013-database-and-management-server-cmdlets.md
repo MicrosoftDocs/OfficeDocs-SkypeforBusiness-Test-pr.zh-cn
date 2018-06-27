@@ -23,23 +23,17 @@ _**上一次修改主题：** 2016-12-08_
 
 **数据库和管理服务器**
 
-  -   
-    [Get-CsConfigurationStoreLocation](get-csconfigurationstorelocation.md)
+  - [Get-CsConfigurationStoreLocation](get-csconfigurationstorelocation.md)
 
-  -   
-    [Remove-CsConfigurationStoreLocation](remove-csconfigurationstorelocation.md)
+  - [Remove-CsConfigurationStoreLocation](remove-csconfigurationstorelocation.md)
 
-  -   
-    [Set-CsConfigurationStoreLocation](set-csconfigurationstorelocation.md)
+  - [Set-CsConfigurationStoreLocation](set-csconfigurationstorelocation.md)
 
-  -   
-    [Install-CsDatabase](install-csdatabase.md)
+  - [Install-CsDatabase](install-csdatabase.md)
 
-  -   
-    [Test-CsDatabase](test-csdatabase.md)
+  - [Test-CsDatabase](test-csdatabase.md)
 
-  -   
-    [Uninstall-CsDatabase](uninstall-csdatabase.md)
+  - [Uninstall-CsDatabase](uninstall-csdatabase.md)
 
   - [Invoke-CsDatabaseFailover](invoke-csdatabasefailover.md)
 
@@ -49,20 +43,15 @@ _**上一次修改主题：** 2016-12-08_
 
   - [Uninstall-CsMirrorDatabase](uninstall-csmirrordatabase.md)
 
-  -   
-    [Get-CsUserDatabaseState](get-csuserdatabasestate.md)
+  - [Get-CsUserDatabaseState](get-csuserdatabasestate.md)
 
-  -   
-    [Set-CsUserDatabaseState](set-csuserdatabasestate.md)
+  - [Set-CsUserDatabaseState](set-csuserdatabasestate.md)
 
-  -   
-    [Update-CsUserDatabase](update-csuserdatabase.md)
+  - [Update-CsUserDatabase](update-csuserdatabase.md)
 
-  -   
-    [Move-CsManagementServer](move-csmanagementserver.md)
+  - [Move-CsManagementServer](move-csmanagementserver.md)
 
-  -   
-    [Set-CsManagementServer](set-csmanagementserver.md)
+  - [Set-CsManagementServer](set-csmanagementserver.md)
 
   - [Invoke-CsManagementServerFailover](invoke-csmanagementserverfailover.md)
 

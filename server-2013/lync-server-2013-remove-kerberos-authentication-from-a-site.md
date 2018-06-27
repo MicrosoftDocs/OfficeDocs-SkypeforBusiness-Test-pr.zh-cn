@@ -42,12 +42,16 @@ _**上一次修改主题：** 2012-01-16_
 3.  通过命令行运行以下两个命令：
     
         Remove-CsKerberosAccountAssignment -Identity "site:SiteName"
+
+       &nbsp;
     
         Enable-CsTopology
     
     例如：
     
         Remove-CsKerberosAccountAssignment -Identity "site:Redmond"
+
+       &nbsp;
     
         Enable-CsTopology
     

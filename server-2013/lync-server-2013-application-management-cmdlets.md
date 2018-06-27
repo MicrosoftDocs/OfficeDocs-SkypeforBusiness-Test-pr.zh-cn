@@ -23,75 +23,53 @@ Microsoft Lync Server 2013 提供了允许您管理 Lync Server 应用程序和�
 
 **[应用程序终结点 Cmdlet](lync-server-2013-application-endpoints-cmdlets.md)**
 
-  -   
-    [Get-CsApplicationEndpoint](get-csapplicationendpoint.md)
+  - [Get-CsApplicationEndpoint](get-csapplicationendpoint.md)
 
-  -   
-    [Move-CsApplicationEndpoint](move-csapplicationendpoint.md)
+  - [Move-CsApplicationEndpoint](move-csapplicationendpoint.md)
 
 **[应用程序服务器和服务 Cmdlet](lync-server-2013-application-server-and-services-cmdlets.md)**
 
-  -   
-    [Set-CsApplicationServer](set-csapplicationserver.md)
+  - [Set-CsApplicationServer](set-csapplicationserver.md)
 
-  -   
-    [Get-CsServerApplication](get-csserverapplication.md)
+  - [Get-CsServerApplication](get-csserverapplication.md)
 
-  -   
-    [New-CsServerApplication](new-csserverapplication.md)
+  - [New-CsServerApplication](new-csserverapplication.md)
 
-  -   
-    [Remove-CsServerApplication](remove-csserverapplication.md)
+  - [Remove-CsServerApplication](remove-csserverapplication.md)
 
-  -   
-    [Set-CsServerApplication](set-csserverapplication.md)
+  - [Set-CsServerApplication](set-csserverapplication.md)
 
 **[受信任应用程序 Cmdlet](lync-server-2013-trusted-applications-cmdlets.md)**
 
-  -   
-    [Get-CsTrustedApplication](get-cstrustedapplication.md)
+  - [Get-CsTrustedApplication](get-cstrustedapplication.md)
 
-  -   
-    [New-CsTrustedApplication](new-cstrustedapplication.md)
+  - [New-CsTrustedApplication](new-cstrustedapplication.md)
 
-  -   
-    [Remove-CsTrustedApplication](remove-cstrustedapplication.md)
+  - [Remove-CsTrustedApplication](remove-cstrustedapplication.md)
 
-  -   
-    [Set-CsTrustedApplication](set-cstrustedapplication.md)
+  - [Set-CsTrustedApplication](set-cstrustedapplication.md)
 
-  -   
-    [Get-CsTrustedApplicationComputer](get-cstrustedapplicationcomputer.md)
+  - [Get-CsTrustedApplicationComputer](get-cstrustedapplicationcomputer.md)
 
-  -   
-    [New-CsTrustedApplicationComputer](new-cstrustedapplicationcomputer.md)
+  - [New-CsTrustedApplicationComputer](new-cstrustedapplicationcomputer.md)
 
-  -   
-    [Remove-CsTrustedApplicationComputer](remove-cstrustedapplicationcomputer.md)
+  - [Remove-CsTrustedApplicationComputer](remove-cstrustedapplicationcomputer.md)
 
-  -   
-    [Get-CsTrustedApplicationEndpoint](get-cstrustedapplicationendpoint.md)
+  - [Get-CsTrustedApplicationEndpoint](get-cstrustedapplicationendpoint.md)
 
-  -   
-    [New-CsTrustedApplicationEndpoint](new-cstrustedapplicationendpoint.md)
+  - [New-CsTrustedApplicationEndpoint](new-cstrustedapplicationendpoint.md)
 
-  -   
-    [Remove-CsTrustedApplicationEndpoint](remove-cstrustedapplicationendpoint.md)
+  - [Remove-CsTrustedApplicationEndpoint](remove-cstrustedapplicationendpoint.md)
 
-  -   
-    [Set-CsTrustedApplicationEndpoint](set-cstrustedapplicationendpoint.md)
+  - [Set-CsTrustedApplicationEndpoint](set-cstrustedapplicationendpoint.md)
 
-  -   
-    [Get-CsTrustedApplicationPool](get-cstrustedapplicationpool.md)
+  - [Get-CsTrustedApplicationPool](get-cstrustedapplicationpool.md)
 
-  -   
-    [New-CsTrustedApplicationPool](new-cstrustedapplicationpool.md)
+  - [New-CsTrustedApplicationPool](new-cstrustedapplicationpool.md)
 
-  -   
-    [Remove-CsTrustedApplicationPool](remove-cstrustedapplicationpool.md)
+  - [Remove-CsTrustedApplicationPool](remove-cstrustedapplicationpool.md)
 
-  -   
-    [Set-CsTrustedApplicationPool](set-cstrustedapplicationpool.md)
+  - [Set-CsTrustedApplicationPool](set-cstrustedapplicationpool.md)
 
 ## 另请参阅
 

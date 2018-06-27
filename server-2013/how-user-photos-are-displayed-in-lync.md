@@ -195,9 +195,15 @@ Lync 2013 为用户照片引入了高分辨率图像支持。Lync 2013 还支持
 
     $pe=New-CsClientPolicyEntry -Name EnablePresencePhotoOptions -Value True
 
+   &nbsp;
+
     $po=Get-CsClientPolicy -Identity Global
 
+   &nbsp;
+
     $po.PolicyEntry.Add($pe)
+
+   &nbsp;
 
     Set-CsClientPolicy -Instance $po
 

@@ -23,112 +23,77 @@ _**上一次修改主题：** 2016-12-08_
 
 **[电话拨入式会议 Cmdlet](lync-server-2013-dial-in-conferencing-cmdlets.md)**
 
-  -   
-    [Get-CsConferenceDirectory](get-csconferencedirectory.md)
+  - [Get-CsConferenceDirectory](get-csconferencedirectory.md)
 
-  -   
-    [Move-CsConferenceDirectory](move-csconferencedirectory.md)
+  - [Move-CsConferenceDirectory](move-csconferencedirectory.md)
 
-  -   
-    [New-CsConferenceDirectory](new-csconferencedirectory.md)
+  - [New-CsConferenceDirectory](new-csconferencedirectory.md)
 
-  -   
-    [Remove-CsConferenceDirectory](remove-csconferencedirectory.md)
+  - [Remove-CsConferenceDirectory](remove-csconferencedirectory.md)
 
-  -   
-    [Test-CsDialInConferencing](test-csdialinconferencing.md)
+  - [Test-CsDialInConferencing](test-csdialinconferencing.md)
 
-  -   
-    [Get-CsDialInConferencingAccessNumber](get-csdialinconferencingaccessnumber.md)
+  - [Get-CsDialInConferencingAccessNumber](get-csdialinconferencingaccessnumber.md)
 
-  -   
-    [New-CsDialInConferencingAccessNumber](new-csdialinconferencingaccessnumber.md)
+  - [New-CsDialInConferencingAccessNumber](new-csdialinconferencingaccessnumber.md)
 
-  -   
-    [Remove-CsDialInConferencingAccessNumber](remove-csdialinconferencingaccessnumber.md)
+  - [Remove-CsDialInConferencingAccessNumber](remove-csdialinconferencingaccessnumber.md)
 
-  -   
-    [Set-CsDialInConferencingAccessNumber](set-csdialinconferencingaccessnumber.md)
+  - [Set-CsDialInConferencingAccessNumber](set-csdialinconferencingaccessnumber.md)
 
-  -   
-    [Get-CsDialInConferencingConfiguration](get-csdialinconferencingconfiguration.md)
+  - [Get-CsDialInConferencingConfiguration](get-csdialinconferencingconfiguration.md)
 
-  -   
-    [New-CsDialInConferencingConfiguration](new-csdialinconferencingconfiguration.md)
+  - [New-CsDialInConferencingConfiguration](new-csdialinconferencingconfiguration.md)
 
-  -   
-    [Remove-CsDialInConferencingConfiguration](remove-csdialinconferencingconfiguration.md)
+  - [Remove-CsDialInConferencingConfiguration](remove-csdialinconferencingconfiguration.md)
 
-  -   
-    [Set-CsDialInConferencingConfiguration](set-csdialinconferencingconfiguration.md)
+  - [Set-CsDialInConferencingConfiguration](set-csdialinconferencingconfiguration.md)
 
-  -   
-    [Get-CsDialInConferencingDtmfConfiguration](get-csdialinconferencingdtmfconfiguration.md)
+  - [Get-CsDialInConferencingDtmfConfiguration](get-csdialinconferencingdtmfconfiguration.md)
 
-  -   
-    [New-CsDialInConferencingDtmfConfiguration](new-csdialinconferencingdtmfconfiguration.md)
+  - [New-CsDialInConferencingDtmfConfiguration](new-csdialinconferencingdtmfconfiguration.md)
 
-  -   
-    [Remove-CsDialInConferencingDtmfConfiguration](remove-csdialinconferencingdtmfconfiguration.md)
+  - [Remove-CsDialInConferencingDtmfConfiguration](remove-csdialinconferencingdtmfconfiguration.md)
 
-  -   
-    [Set-CsDialInConferencingDtmfConfiguration](set-csdialinconferencingdtmfconfiguration.md)
+  - [Set-CsDialInConferencingDtmfConfiguration](set-csdialinconferencingdtmfconfiguration.md)
 
-  -   
-    [Get-CsDialInConferencingLanguageList](get-csdialinconferencinglanguagelist.md)
+  - [Get-CsDialInConferencingLanguageList](get-csdialinconferencinglanguagelist.md)
 
 **[Web 会议 Cmdlet](lync-server-2013-web-conferencing-cmdlets.md)**
 
-  -   
-    [Get-CsConferenceDisclaimer](get-csconferencedisclaimer.md)
+  - [Get-CsConferenceDisclaimer](get-csconferencedisclaimer.md)
 
-  -   
-    [Remove-CsConferenceDisclaimer](remove-csconferencedisclaimer.md)
+  - [Remove-CsConferenceDisclaimer](remove-csconferencedisclaimer.md)
 
-  -   
-    [Set-CsConferenceDisclaimer](set-csconferencedisclaimer.md)
+  - [Set-CsConferenceDisclaimer](set-csconferencedisclaimer.md)
 
-  -   
-    [Set-CsConferenceServer](set-csconferenceserver.md)
+  - [Set-CsConferenceServer](set-csconferenceserver.md)
 
-  -   
-    [Get-CsConferencingConfiguration](get-csconferencingconfiguration.md)
+  - [Get-CsConferencingConfiguration](get-csconferencingconfiguration.md)
 
-  -   
-    [New-CsConferencingConfiguration](new-csconferencingconfiguration.md)
+  - [New-CsConferencingConfiguration](new-csconferencingconfiguration.md)
 
-  -   
-    [Remove-CsConferencingConfiguration](remove-csconferencingconfiguration.md)
+  - [Remove-CsConferencingConfiguration](remove-csconferencingconfiguration.md)
 
-  -   
-    [Set-CsConferencingConfiguration](set-csconferencingconfiguration.md)
+  - [Set-CsConferencingConfiguration](set-csconferencingconfiguration.md)
 
-  -   
-    [Get-CsConferencingPolicy](get-csconferencingpolicy.md)
+  - [Get-CsConferencingPolicy](get-csconferencingpolicy.md)
 
-  -   
-    [Grant-CsConferencingPolicy](grant-csconferencingpolicy.md)
+  - [Grant-CsConferencingPolicy](grant-csconferencingpolicy.md)
 
-  -   
-    [New-CsConferencingPolicy](new-csconferencingpolicy.md)
+  - [New-CsConferencingPolicy](new-csconferencingpolicy.md)
 
-  -   
-    [Remove-CsConferencingPolicy](remove-csconferencingpolicy.md)
+  - [Remove-CsConferencingPolicy](remove-csconferencingpolicy.md)
 
-  -   
-    [Set-CsConferencingPolicy](set-csconferencingpolicy.md)
+  - [Set-CsConferencingPolicy](set-csconferencingpolicy.md)
 
-  -   
-    [Get-CsMeetingConfiguration](get-csmeetingconfiguration.md)
+  - [Get-CsMeetingConfiguration](get-csmeetingconfiguration.md)
 
-  -   
-    [New-CsMeetingConfiguration](new-csmeetingconfiguration.md)
+  - [New-CsMeetingConfiguration](new-csmeetingconfiguration.md)
 
-  -   
-    [Remove-CsMeetingConfiguration](remove-csmeetingconfiguration.md)
+  - [Remove-CsMeetingConfiguration](remove-csmeetingconfiguration.md)
 
-  -   
-    [Set-CsMeetingConfiguration](set-csmeetingconfiguration.md)
+  - [Set-CsMeetingConfiguration](set-csmeetingconfiguration.md)
 
   - [Disable-CsMeetingRoom](disable-csmeetingroom.md)
 
@@ -140,27 +105,20 @@ _**上一次修改主题：** 2016-12-08_
 
   - [Set-CsMeetingRoom](set-csmeetingroom.md)
 
-  -   
-    [Test-CsASConference](test-csasconference.md)
+  - [Test-CsASConference](test-csasconference.md)
 
-  -   
-    [Test-CsAVConference](test-csavconference.md)
+  - [Test-CsAVConference](test-csavconference.md)
 
-  -   
-    [Test-CsDataConference](test-csdataconference.md)
+  - [Test-CsDataConference](test-csdataconference.md)
 
-  -   
-    [Test-CsWebApp](test-cswebapp.md)
+  - [Test-CsWebApp](test-cswebapp.md)
 
-  -   
-    [Test-CsWebAppAnonymous](test-cswebappanonymous.md)
+  - [Test-CsWebAppAnonymous](test-cswebappanonymous.md)
 
-  -   
-    [Test-CsWebScheduler](test-cswebscheduler.md)
+  - [Test-CsWebScheduler](test-cswebscheduler.md)
 
 ## 另请参阅
 
 #### 其他资源
 
 [Lync Server PowerShell 博客](http://go.microsoft.com/fwlink/?linkid=203150%26clcid=0x804)
-

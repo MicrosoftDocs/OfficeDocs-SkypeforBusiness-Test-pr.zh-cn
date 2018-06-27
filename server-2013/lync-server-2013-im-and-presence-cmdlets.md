@@ -21,20 +21,15 @@ _**上一次修改主题：** 2016-12-08_
 
 要配置 IM 和状态，请使用以下 cmdlet：
 
-  -   
-    [Get-CsPresencePolicy](get-cspresencepolicy.md)
+  - [Get-CsPresencePolicy](get-cspresencepolicy.md)
 
-  -   
-    [Grant-CsPresencePolicy](grant-cspresencepolicy.md)
+  - [Grant-CsPresencePolicy](grant-cspresencepolicy.md)
 
-  -   
-    [New-CsPresencePolicy](new-cspresencepolicy.md)
+  - [New-CsPresencePolicy](new-cspresencepolicy.md)
 
-  -   
-    [Remove-CsPresencePolicy](remove-cspresencepolicy.md)
+  - [Remove-CsPresencePolicy](remove-cspresencepolicy.md)
 
-  -   
-    [Set-CsPresencePolicy](set-cspresencepolicy.md)
+  - [Set-CsPresencePolicy](set-cspresencepolicy.md)
 
 <!-- end list -->
 
@@ -48,73 +43,51 @@ _**上一次修改主题：** 2016-12-08_
 
 <!-- end list -->
 
-  -   
-    [Get-CsPrivacyConfiguration](get-csprivacyconfiguration.md)
+  - [Get-CsPrivacyConfiguration](get-csprivacyconfiguration.md)
 
-  -   
-    [New-CsPrivacyConfiguration](new-csprivacyconfiguration.md)
+  - [New-CsPrivacyConfiguration](new-csprivacyconfiguration.md)
 
-  -   
-    [Remove-CsPrivacyConfiguration](remove-csprivacyconfiguration.md)
+  - [Remove-CsPrivacyConfiguration](remove-csprivacyconfiguration.md)
 
-  -   
-    [Set-CsPrivacyConfiguration](set-csprivacyconfiguration.md)
+  - [Set-CsPrivacyConfiguration](set-csprivacyconfiguration.md)
 
 <!-- end list -->
 
-  -   
-    [Set-CsUserServer](set-csuserserver.md)
+  - [Set-CsUserServer](set-csuserserver.md)
 
-  -   
-    [Get-CsUserServicesConfiguration](get-csuserservicesconfiguration.md)
+  - [Get-CsUserServicesConfiguration](get-csuserservicesconfiguration.md)
 
-  -   
-    [New-CsUserServicesConfiguration](new-csuserservicesconfiguration.md)
+  - [New-CsUserServicesConfiguration](new-csuserservicesconfiguration.md)
 
-  -   
-    [Remove-CsUserServicesConfiguration](remove-csuserservicesconfiguration.md)
+  - [Remove-CsUserServicesConfiguration](remove-csuserservicesconfiguration.md)
 
-  -   
-    [Set-CsUserServicesConfiguration](set-csuserservicesconfiguration.md)
+  - [Set-CsUserServicesConfiguration](set-csuserservicesconfiguration.md)
 
-  -   
-    [Get-CsFileTransferFilterConfiguration](get-csfiletransferfilterconfiguration.md)
+  - [Get-CsFileTransferFilterConfiguration](get-csfiletransferfilterconfiguration.md)
 
-  -   
-    [New-CsFileTransferFilterConfiguration](new-csfiletransferfilterconfiguration.md)
+  - [New-CsFileTransferFilterConfiguration](new-csfiletransferfilterconfiguration.md)
 
-  -   
-    [Remove-CsFileTransferFilterConfiguration](remove-csfiletransferfilterconfiguration.md)
+  - [Remove-CsFileTransferFilterConfiguration](remove-csfiletransferfilterconfiguration.md)
 
-  -   
-    [Set-CsFileTransferFilterConfiguration](set-csfiletransferfilterconfiguration.md)
+  - [Set-CsFileTransferFilterConfiguration](set-csfiletransferfilterconfiguration.md)
 
-  -   
-    [Get-CsImFilterConfiguration](get-csimfilterconfiguration.md)
+  - [Get-CsImFilterConfiguration](get-csimfilterconfiguration.md)
 
-  -   
-    [New-CsImFilterConfiguration](new-csimfilterconfiguration.md)
+  - [New-CsImFilterConfiguration](new-csimfilterconfiguration.md)
 
-  -   
-    [Remove-CsImFilterConfiguration](remove-csimfilterconfiguration.md)
+  - [Remove-CsImFilterConfiguration](remove-csimfilterconfiguration.md)
 
-  -   
-    [Set-CsImFilterConfiguration](set-csimfilterconfiguration.md)
+  - [Set-CsImFilterConfiguration](set-csimfilterconfiguration.md)
 
-  -   
-    [Test-CsGroupExpansion](test-csgroupexpansion.md)
+  - [Test-CsGroupExpansion](test-csgroupexpansion.md)
 
-  -   
-    [Test-CsGroupIM](test-csgroupim.md)
+  - [Test-CsGroupIM](test-csgroupim.md)
 
-  -   
-    [Test-CsIM](test-csim.md)
+  - [Test-CsIM](test-csim.md)
 
-  -   
-    [Test-CsP2PAV](test-csp2pav.md)
+  - [Test-CsP2PAV](test-csp2pav.md)
 
-  -   
-    [Test-CsPresence](test-cspresence.md)
+  - [Test-CsPresence](test-cspresence.md)
 
 ## 另请参阅
 
@@ -125,4 +98,3 @@ _**上一次修改主题：** 2016-12-08_
 #### 其他资源
 
 [Lync Server PowerShell 博客](http://go.microsoft.com/fwlink/?linkid=203150%26clcid=0x804)
-

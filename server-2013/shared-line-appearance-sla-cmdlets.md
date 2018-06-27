@@ -9,9 +9,7 @@ mtps_version: v=OCS.15
 ms.translationtype: HT
 ---
 
-# Shared Line Appearance (SLA) cmdlets
-
- 
+# Shared Line Appearance (SLA) cmdlets 
 
 _**上一次修改主题：** 2016-04-12_
 
@@ -23,20 +21,14 @@ Use the following cmdlets for SLA.
 
 **Configuring SLA**
 
-  -   
-    [Get-CsSlaConfiguration](get-csslaconfiguration.md)
+  - [Get-CsSlaConfiguration](get-csslaconfiguration.md)
 
-  -   
-    [Set-CsSlaConfiguration](set-csslaconfiguration.md)
+  - [Set-CsSlaConfiguration](set-csslaconfiguration.md)
 
-  -   
-    [Remove-CsSlaConfiguration](remove-csslaconfiguration.md)
+  - [Remove-CsSlaConfiguration](remove-csslaconfiguration.md)
 
 **Configuring SLA delegates**
 
-  -   
-    [Add-CsSlaDelegates](add-cssladelegates.md)
+  - [Add-CsSlaDelegates](add-cssladelegates.md)
 
-  -   
-    [Remove-CsSlaDelegates](remove-cssladelegates.md)
-
+  - [Remove-CsSlaDelegates](remove-cssladelegates.md)

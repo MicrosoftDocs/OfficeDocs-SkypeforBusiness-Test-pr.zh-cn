@@ -59,17 +59,13 @@ _**上一次修改主题：** 2015-03-09_
 
 本节提供配置以下出站呼叫路由服务器设置的指南：
 
-  -   
-    [Lync Server 2013 中的拨号计划和规范化规则](lync-server-2013-dial-plans-and-normalization-rules.md)
+  - [Lync Server 2013 中的拨号计划和规范化规则](lync-server-2013-dial-plans-and-normalization-rules.md)
 
-  -   
-    [Lync Server 2013 中的语音策略](lync-server-2013-voice-policies.md)
+  - [Lync Server 2013 中的语音策略](lync-server-2013-voice-policies.md)
 
-  -   
-    [Lync Server 2013 中的 PSTN 用法记录](lync-server-2013-pstn-usage-records.md)
+  - [Lync Server 2013 中的 PSTN 用法记录](lync-server-2013-pstn-usage-records.md)
 
-  -   
-    [Lync Server 2013 中的语音路由](lync-server-2013-voice-routes.md)
+  - [Lync Server 2013 中的语音路由](lync-server-2013-voice-routes.md)
 
 ## 另请参阅
 

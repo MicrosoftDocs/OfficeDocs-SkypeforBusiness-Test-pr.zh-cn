@@ -56,8 +56,12 @@ _**上一次修改主题：** 2012-09-05_
 2.  运行 **New-CsNetworkSite** cmdlet 以创建网络站点并将相应带宽策略配置文件应用到每个站点。例如，运行：
     
         New-CsNetworkSite -NetworkSiteID Reno -Description "NA:Branch office for sales force" -NetworkRegionID NorthAmerica -BWPolicyProfileID 10MB_Link
+
+       &nbsp;
     
         New-CsNetworkSite -NetworkSiteID Portland -Description "NA:Branch office for marketing force" -NetworkRegionID NorthAmerica -BWPolicyProfileID 5MB_Link
+
+       &nbsp;
     
         New-CsNetworkSite -NetworkSiteID Albuquerque -Description "NA:Branch office for SouthWest sales" -NetworkRegionID EMEA -BWPolicyProfileID 10MB_Link
 

@@ -17,20 +17,15 @@ _**上一次修改主题：** 2016-12-08_
 
 [Move-CsLegacyUser](move-cslegacyuser.md) cmdlet 为您提供了将用户帐户从 Office Communications Server 2007 或 Microsoft Lync Server 2010 移动到 Microsoft Lync Server 2013 的方法。如果需要“反向”移动用户帐户（例如，从 Microsoft Lync Server 2013 移动到 Microsoft Lync Server 2010），请使用 [Move-CsUser](move-csuser.md) cmdlet。
 
-  -   
-    [Import-CsLegacyConferenceDirectory](import-cslegacyconferencedirectory.md)
+  - [Import-CsLegacyConferenceDirectory](import-cslegacyconferencedirectory.md)
 
-  -   
-    [Import-CsLegacyConfiguration](import-cslegacyconfiguration.md)
+  - [Import-CsLegacyConfiguration](import-cslegacyconfiguration.md)
 
-  -   
-    [Merge-CsLegacyTopology](merge-cslegacytopology.md)
+  - [Merge-CsLegacyTopology](merge-cslegacytopology.md)
 
-  -   
-    [Move-CsApplicationEndpoint](move-csapplicationendpoint.md)
+  - [Move-CsApplicationEndpoint](move-csapplicationendpoint.md)
 
-  -   
-    [Move-CsLegacyUser](move-cslegacyuser.md)
+  - [Move-CsLegacyUser](move-cslegacyuser.md)
 
   - [Convert-CsUserData](convert-csuserdata.md)
 

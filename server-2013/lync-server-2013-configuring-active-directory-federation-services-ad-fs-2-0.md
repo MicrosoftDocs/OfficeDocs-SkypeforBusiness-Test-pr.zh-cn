@@ -43,19 +43,23 @@ _**上一次修改主题：** 2016-12-08_
 
 8.  使用 Windows PowerShell 通过运行以下命令为您的依赖方信任创建并分配颁发授权规则：
     
+
     ```
     $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
     ```
     ```    
     Set-ADFSRelyingPartyTrust -TargetName LyncPool01-PassiveAuth 
+
         -IssuanceAuthorizationRules $IssuanceAuthorizationRules
     ```
 
 9.  使用 Windows PowerShell 通过运行以下命令为您的依赖方信任创建并分配颁发转换规则：
     
+
     ```
     $IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);
     ```
+
     
     ```   
     Set-ADFSRelyingPartyTrust -TargetName LyncPool01-PassiveAuth -IssuanceTransformRules $IssuanceTransformRules

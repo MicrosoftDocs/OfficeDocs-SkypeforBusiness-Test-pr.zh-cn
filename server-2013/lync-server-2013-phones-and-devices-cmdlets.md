@@ -21,102 +21,70 @@ Microsoft Lync Server 2013 提供了许多使您能够管理电话和其他硬�
 
 **CsDeviceUpdate** cmdlet 用于管理设备更新 Web 服务，此服务是 Lync Server 的一个组件，管理员通过它可向运行 Lync Phone Edition 的电话和其他设备分发固件更新。
 
-  -   
-    [Get-CsAnalogDevice](get-csanalogdevice.md)
+  - [Get-CsAnalogDevice](get-csanalogdevice.md)
 
-  -   
-    [Move-CsAnalogDevice](move-csanalogdevice.md)
+  - [Move-CsAnalogDevice](move-csanalogdevice.md)
 
-  -   
-    [New-CsAnalogDevice](new-csanalogdevice.md)
+  - [New-CsAnalogDevice](new-csanalogdevice.md)
 
-  -   
-    [Remove-CsAnalogDevice](remove-csanalogdevice.md)
+  - [Remove-CsAnalogDevice](remove-csanalogdevice.md)
 
-  -   
-    [Set-CsAnalogDevice](set-csanalogdevice.md)
+  - [Set-CsAnalogDevice](set-csanalogdevice.md)
 
-  -   
-    [Get-CsCommonAreaPhone](get-cscommonareaphone.md)
+  - [Get-CsCommonAreaPhone](get-cscommonareaphone.md)
 
-  -   
-    [Move-CsCommonAreaPhone](move-cscommonareaphone.md)
+  - [Move-CsCommonAreaPhone](move-cscommonareaphone.md)
 
-  -   
-    [New-CsCommonAreaPhone](new-cscommonareaphone.md)
+  - [New-CsCommonAreaPhone](new-cscommonareaphone.md)
 
-  -   
-    [Remove-CsCommonAreaPhone](remove-cscommonareaphone.md)
+  - [Remove-CsCommonAreaPhone](remove-cscommonareaphone.md)
 
-  -   
-    [Set-CsCommonAreaPhone](set-cscommonareaphone.md)
+  - [Set-CsCommonAreaPhone](set-cscommonareaphone.md)
 
-  -   
-    [Get-CsUCPhoneConfiguration](get-csucphoneconfiguration.md)
+  - [Get-CsUCPhoneConfiguration](get-csucphoneconfiguration.md)
 
-  -   
-    [New-CsUCPhoneConfiguration](new-csucphoneconfiguration.md)
+  - [New-CsUCPhoneConfiguration](new-csucphoneconfiguration.md)
 
-  -   
-    [Remove-CsUCPhoneConfiguration](remove-csucphoneconfiguration.md)
+  - [Remove-CsUCPhoneConfiguration](remove-csucphoneconfiguration.md)
 
-  -   
-    [Set-CsUCPhoneConfiguration](set-csucphoneconfiguration.md)
+  - [Set-CsUCPhoneConfiguration](set-csucphoneconfiguration.md)
 
-  -   
-    [Import-CsDeviceUpdate](import-csdeviceupdate.md)
+  - [Import-CsDeviceUpdate](import-csdeviceupdate.md)
 
-  -   
-    [Get-CsDeviceUpdateConfiguration](get-csdeviceupdateconfiguration.md)
+  - [Get-CsDeviceUpdateConfiguration](get-csdeviceupdateconfiguration.md)
 
-  -   
-    [New-CsDeviceUpdateConfiguration](new-csdeviceupdateconfiguration.md)
+  - [New-CsDeviceUpdateConfiguration](new-csdeviceupdateconfiguration.md)
 
-  -   
-    [Remove-CsDeviceUpdateConfiguration](remove-csdeviceupdateconfiguration.md)
+  - [Remove-CsDeviceUpdateConfiguration](remove-csdeviceupdateconfiguration.md)
 
-  -   
-    [Set-CsDeviceUpdateConfiguration](set-csdeviceupdateconfiguration.md)
+  - [Set-CsDeviceUpdateConfiguration](set-csdeviceupdateconfiguration.md)
 
-  -   
-    [Clear-CsDeviceUpdateFile](clear-csdeviceupdatefile.md)
+  - [Clear-CsDeviceUpdateFile](clear-csdeviceupdatefile.md)
 
-  -   
-    [Clear-CsDeviceUpdateLog](clear-csdeviceupdatelog.md)
+  - [Clear-CsDeviceUpdateLog](clear-csdeviceupdatelog.md)
 
-  -   
-    [Approve-CsDeviceUpdateRule](approve-csdeviceupdaterule.md)
+  - [Approve-CsDeviceUpdateRule](approve-csdeviceupdaterule.md)
 
-  -   
-    [Get-CsDeviceUpdateRule](get-csdeviceupdaterule.md)
+  - [Get-CsDeviceUpdateRule](get-csdeviceupdaterule.md)
 
-  -   
-    [Remove-CsDeviceUpdateRule](remove-csdeviceupdaterule.md)
+  - [Remove-CsDeviceUpdateRule](remove-csdeviceupdaterule.md)
 
-  -   
-    [Reset-CsDeviceUpdateRule](reset-csdeviceupdaterule.md)
+  - [Reset-CsDeviceUpdateRule](reset-csdeviceupdaterule.md)
 
-  -   
-    [Restore-CsDeviceUpdateRule](restore-csdeviceupdaterule.md)
+  - [Restore-CsDeviceUpdateRule](restore-csdeviceupdaterule.md)
 
-  -   
-    [Test-CsPhoneBootstrap](test-csphonebootstrap.md)
+  - [Test-CsPhoneBootstrap](test-csphonebootstrap.md)
 
-  -   
-    [Get-CsTestDevice](get-cstestdevice.md)
+  - [Get-CsTestDevice](get-cstestdevice.md)
 
-  -   
-    [New-CsTestDevice](new-cstestdevice.md)
+  - [New-CsTestDevice](new-cstestdevice.md)
 
-  -   
-    [Remove-CsTestDevice](remove-cstestdevice.md)
+  - [Remove-CsTestDevice](remove-cstestdevice.md)
 
-  -   
-    [Set-CsTestDevice](set-cstestdevice.md)
+  - [Set-CsTestDevice](set-cstestdevice.md)
 
 ## 另请参阅
 
 #### 其他资源
 
 [Lync Server PowerShell 博客](http://go.microsoft.com/fwlink/?linkid=203150%26clcid=0x804)
-

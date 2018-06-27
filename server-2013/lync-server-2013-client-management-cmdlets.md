@@ -1,21 +1,21 @@
 ﻿---
-title: 客户端管理 Cmdlet
-TOCTitle: 客户端管理 Cmdlet
-ms:assetid: 0384f8ab-453d-49d6-aaa7-52439e27b7e9
-ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Gg398087(v=OCS.15)
-ms:contentKeyID: 49311842
+title: 存档和监控 Cmdlet
+TOCTitle: 存档和监控 Cmdlet
+ms:assetid: 04e1d0f6-d00e-4d8f-b969-daf092b2cdb4
+ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Gg415629(v=OCS.15)
+ms:contentKeyID: 49311859
 ms.date: 12/10/2016
 mtps_version: v=OCS.15
 ms.translationtype: HT
 ---
 
-# 客户端管理 Cmdlet
+# 存档和监控 Cmdlet
 
  
 
 _**上一次修改主题：** 2016-12-08_
 
-客户端管理主要包括确定允许哪些客户端应用程序（如 Microsoft Lync 2013）登录到 Lync Server 2013，以及确定这些客户端应用程序登录后可使用哪些功能。
+通过存档和监控 cmdlet，管理员可以管理即时消息和会议会话存档、记录呼叫详细信息，以及使用用户体验质量 (QoE) 监控 Microsoft Lync Server 2013。
 
 <table>
 <thead>
@@ -31,64 +31,82 @@ _**上一次修改主题：** 2016-12-08_
 </table>
 
 
-## 客户端管理 Cmdlet
+## 存档和监控 Cmdlet
 
-大多数适用于客户端管理的管理任务都可以在 Lync Server 2013 控制面板中执行。也可以使用 cmdlet 从 Lync Server 命令行管理程序或脚本中执行同样的任务。通过使用脚本，可以自动完成某些任务。以下是与客户端管理直接相关的 cmdlet 列表：
+以下是与管理存档和监控直接相关的 cmdlet 列表：
 
-  -   
-    [Get-CsClientPolicy](get-csclientpolicy.md)
+**存档和监控**
 
-  -   
-    [Grant-CsClientPolicy](grant-csclientpolicy.md)
+  - [Get-CsArchivingConfiguration](get-csarchivingconfiguration.md)
 
-  -   
-    [New-CsClientPolicy](new-csclientpolicy.md)
+  - [New-CsArchivingConfiguration](new-csarchivingconfiguration.md)
 
-  -   
-    [Remove-CsClientPolicy](remove-csclientpolicy.md)
+  - [Remove-CsArchivingConfiguration](remove-csarchivingconfiguration.md)
 
-  -   
-    [Set-CsClientPolicy](set-csclientpolicy.md)
+  - [Set-CsArchivingConfiguration](set-csarchivingconfiguration.md)
 
-  -   
-    [New-CsClientPolicyEntry](new-csclientpolicyentry.md)
+  - [Export-CsArchivingData](export-csarchivingdata.md)
 
-  -   
-    [Get-CsClientVersionConfiguration](get-csclientversionconfiguration.md)
+  - [Invoke-CsArchivingDatabasePurge](invoke-csarchivingdatabasepurge.md)
 
-  -   
-    [New-CsClientVersionConfiguration](new-csclientversionconfiguration.md)
+  - [Get-CsArchivingPolicy](get-csarchivingpolicy.md)
 
-  -   
-    [Remove-CsClientVersionConfiguration](remove-csclientversionconfiguration.md)
+  - [Grant-CsArchivingPolicy](grant-csarchivingpolicy.md)
 
-  -   
-    [Set-CsClientVersionConfiguration](set-csclientversionconfiguration.md)
+  - [New-CsArchivingPolicy](new-csarchivingpolicy.md)
 
-  -   
-    [Get-CsClientVersionPolicy](get-csclientversionpolicy.md)
+  - [Remove-CsArchivingPolicy](remove-csarchivingpolicy.md)
 
-  -   
-    [Grant-CsClientVersionPolicy](grant-csclientversionpolicy.md)
+  - [Set-CsArchivingPolicy](set-csarchivingpolicy.md)
 
-  -   
-    [New-CsClientVersionPolicy](new-csclientversionpolicy.md)
+  - [Set-CsArchivingServer](set-csarchivingserver.md)
 
-  -   
-    [Remove-CsClientVersionPolicy](remove-csclientversionpolicy.md)
+  - [Get-CsCdrConfiguration](get-cscdrconfiguration.md)
 
-  -   
-    [Set-CsClientVersionPolicy](set-csclientversionpolicy.md)
+  - [New-CsCdrConfiguration](new-cscdrconfiguration.md)
 
-  -   
-    [Get-CsClientVersionPolicyRule](get-csclientversionpolicyrule.md)
+  - [Remove-CsCdrConfiguration](remove-cscdrconfiguration.md)
 
-  -   
-    [New-CsClientVersionPolicyRule](new-csclientversionpolicyrule.md)
+  - [Set-CsCdrConfiguration](set-cscdrconfiguration.md)
 
-  -   
-    [Remove-CsClientVersionPolicyRule](remove-csclientversionpolicyrule.md)
+  - [Set-CsMonitoringServer](set-csmonitoringserver.md)
 
-  -   
-    [Set-CsClientVersionPolicyRule](set-csclientversionpolicyrule.md)
+  - [Get-CsQoEConfiguration](get-csqoeconfiguration.md)
 
+  - [New-CsQoEConfiguration](new-csqoeconfiguration.md)
+
+  - [Remove-CsQoEConfiguration](remove-csqoeconfiguration.md)
+
+  - [Set-CsQoEConfiguration](set-csqoeconfiguration.md)
+
+[Invoke-CsCdrDatabasePurge](invoke-cscdrdatabasepurge.md)
+
+  - [Export-CsArchivingData](export-csarchivingdata.md)
+
+  - [Invoke-CsQoEDatabasePurge](invoke-csqoedatabasepurge.md)
+
+  - [Get-CsReportingConfiguration](get-csreportingconfiguration.md)
+
+  - [New-CsReportingConfiguration](new-csreportingconfiguration.md)
+
+  - [Remove-CsReportingConfiguration](remove-csreportingconfiguration.md)
+
+  - [Set-CsReportingConfiguration](set-csreportingconfiguration.md)
+
+  - [Get-CsTestUserCredential](get-cstestusercredential.md)
+
+  - [Remove-CsTestUserCredential](remove-cstestusercredential.md)
+
+  - [Set-CsTestUserCredential](set-cstestusercredential.md)
+
+  - [Get-CsWatcherNodeConfiguration](get-cswatchernodeconfiguration.md)
+
+  - [New-CsWatcherNodeConfiguration](new-cswatchernodeconfiguration.md)
+
+  - [Remove-CsWatcherNodeConfiguration](remove-cswatchernodeconfiguration.md)
+
+  - [Set-CsWatcherNodeConfiguration](set-cswatchernodeconfiguration.md)
+
+  - [Test-CsWatcherNodeConfiguration](test-cswatchernodeconfiguration.md)
+
+  - [New-CsExtendedTest](new-csextendedtest.md)

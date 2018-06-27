@@ -23,23 +23,17 @@ _**上一次修改主题：** 2016-12-08_
 
 **语音规范化规则**
 
-  -   
-    [Get-CsVoiceNormalizationRule](get-csvoicenormalizationrule.md)
+  - [Get-CsVoiceNormalizationRule](get-csvoicenormalizationrule.md)
 
-  -   
-    [New-CsVoiceNormalizationRule](new-csvoicenormalizationrule.md)
+  - [New-CsVoiceNormalizationRule](new-csvoicenormalizationrule.md)
 
-  -   
-    [Remove-CsVoiceNormalizationRule](remove-csvoicenormalizationrule.md)
+  - [Remove-CsVoiceNormalizationRule](remove-csvoicenormalizationrule.md)
 
-  -   
-    [Set-CsVoiceNormalizationRule](set-csvoicenormalizationrule.md)
+  - [Set-CsVoiceNormalizationRule](set-csvoicenormalizationrule.md)
 
-  -   
-    [Test-CsVoiceNormalizationRule](test-csvoicenormalizationrule.md)
+  - [Test-CsVoiceNormalizationRule](test-csvoicenormalizationrule.md)
 
-  -   
-    [New-CsVoiceRegex](new-csvoiceregex.md)
+  - [New-CsVoiceRegex](new-csvoiceregex.md)
 
 ## 另请参阅
 

@@ -23,126 +23,86 @@ Microsoft Lync Server 2013 附带了可用于实现并管理企业语音解决�
 
 **增强型 9-1-1**
 
-  -   
-    [Get-CsEnhancedEmergencyServiceDisclaimer](get-csenhancedemergencyservicedisclaimer.md)
+  - [Get-CsEnhancedEmergencyServiceDisclaimer](get-csenhancedemergencyservicedisclaimer.md)
 
-  -   
-    [Remove-CsEnhancedEmergencyServiceDisclaimer](remove-csenhancedemergencyservicedisclaimer.md)
+  - [Remove-CsEnhancedEmergencyServiceDisclaimer](remove-csenhancedemergencyservicedisclaimer.md)
 
-  -   
-    [Set-CsEnhancedEmergencyServiceDisclaimer](set-csenhancedemergencyservicedisclaimer.md)
+  - [Set-CsEnhancedEmergencyServiceDisclaimer](set-csenhancedemergencyservicedisclaimer.md)
 
-  -   
-    [Get-CsLisCivicAddress](get-csliscivicaddress.md)
+  - [Get-CsLisCivicAddress](get-csliscivicaddress.md)
 
-  -   
-    [Test-CsLisCivicAddress](test-csliscivicaddress.md)
+  - [Test-CsLisCivicAddress](test-csliscivicaddress.md)
 
-  -   
-    [Export-CsLisConfiguration](export-cslisconfiguration.md)
+  - [Export-CsLisConfiguration](export-cslisconfiguration.md)
 
-  -   
-    [Import-CsLisConfiguration](import-cslisconfiguration.md)
+  - [Import-CsLisConfiguration](import-cslisconfiguration.md)
 
-  -   
-    [Debug-CsLisConfiguration](debug-cslisconfiguration.md)
+  - [Debug-CsLisConfiguration](debug-cslisconfiguration.md)
 
-  -   
-    [Test-CsLisConfiguration](test-cslisconfiguration.md)
+  - [Test-CsLisConfiguration](test-cslisconfiguration.md)
 
-  -   
-    [Publish-CsLisConfiguration](publish-cslisconfiguration.md)
+  - [Publish-CsLisConfiguration](publish-cslisconfiguration.md)
 
-  -   
-    [Unpublish-CsLisConfiguration](unpublish-cslisconfiguration.md)
+  - [Unpublish-CsLisConfiguration](unpublish-cslisconfiguration.md)
 
-  -   
-    [Get-CsLisLocation](get-cslislocation.md)
+  - [Get-CsLisLocation](get-cslislocation.md)
 
-  -   
-    [Remove-CsLisLocation](remove-cslislocation.md)
+  - [Remove-CsLisLocation](remove-cslislocation.md)
 
-  -   
-    [Set-CsLisLocation](set-cslislocation.md)
+  - [Set-CsLisLocation](set-cslislocation.md)
 
-  -   
-    [Get-CsLisPort](get-cslisport.md)
+  - [Get-CsLisPort](get-cslisport.md)
 
-  -   
-    [Remove-CsLisPort](remove-cslisport.md)
+  - [Remove-CsLisPort](remove-cslisport.md)
 
-  -   
-    [Set-CsLisPort](set-cslisport.md)
+  - [Set-CsLisPort](set-cslisport.md)
 
-  -   
-    [Get-CsLisServiceProvider](get-cslisserviceprovider.md)
+  - [Get-CsLisServiceProvider](get-cslisserviceprovider.md)
 
-  -   
-    [Remove-CsLisServiceProvider](remove-cslisserviceprovider.md)
+  - [Remove-CsLisServiceProvider](remove-cslisserviceprovider.md)
 
-  -   
-    [Set-CsLisServiceProvider](set-cslisserviceprovider.md)
+  - [Set-CsLisServiceProvider](set-cslisserviceprovider.md)
 
-  -   
-    [Get-CsLisSubnet](get-cslissubnet.md)
+  - [Get-CsLisSubnet](get-cslissubnet.md)
 
-  -   
-    [Remove-CsLisSubnet](remove-cslissubnet.md)
+  - [Remove-CsLisSubnet](remove-cslissubnet.md)
 
-  -   
-    [Set-CsLisSubnet](set-cslissubnet.md)
+  - [Set-CsLisSubnet](set-cslissubnet.md)
 
-  -   
-    [Get-CsLisSwitch](get-cslisswitch.md)
+  - [Get-CsLisSwitch](get-cslisswitch.md)
 
-  -   
-    [Remove-CsLisSwitch](remove-cslisswitch.md)
+  - [Remove-CsLisSwitch](remove-cslisswitch.md)
 
-  -   
-    [Set-CsLisSwitch](set-cslisswitch.md)
+  - [Set-CsLisSwitch](set-cslisswitch.md)
 
-  -   
-    [Get-CsLisWirelessAccessPoint](get-csliswirelessaccesspoint.md)
+  - [Get-CsLisWirelessAccessPoint](get-csliswirelessaccesspoint.md)
 
-  -   
-    [Remove-CsLisWirelessAccessPoint](remove-csliswirelessaccesspoint.md)
+  - [Remove-CsLisWirelessAccessPoint](remove-csliswirelessaccesspoint.md)
 
-  -   
-    [Set-CsLisWirelessAccessPoint](set-csliswirelessaccesspoint.md)
+  - [Set-CsLisWirelessAccessPoint](set-csliswirelessaccesspoint.md)
 
-  -   
-    [Get-CsLocationPolicy](get-cslocationpolicy.md)
+  - [Get-CsLocationPolicy](get-cslocationpolicy.md)
 
-  -   
-    [Grant-CsLocationPolicy](grant-cslocationpolicy.md)
+  - [Grant-CsLocationPolicy](grant-cslocationpolicy.md)
 
-  -   
-    [New-CsLocationPolicy](new-cslocationpolicy.md)
+  - [New-CsLocationPolicy](new-cslocationpolicy.md)
 
-  -   
-    [Remove-CsLocationPolicy](remove-cslocationpolicy.md)
+  - [Remove-CsLocationPolicy](remove-cslocationpolicy.md)
 
-  -   
-    [Set-CsLocationPolicy](set-cslocationpolicy.md)
+  - [Set-CsLocationPolicy](set-cslocationpolicy.md)
 
-  -   
-    [Test-CsLocationPolicy](test-cslocationpolicy.md)
+  - [Test-CsLocationPolicy](test-cslocationpolicy.md)
 
-  -   
-    [Get-CsNetworkSite](get-csnetworksite.md)
+  - [Get-CsNetworkSite](get-csnetworksite.md)
 
-  -   
-    [New-CsNetworkSite](new-csnetworksite.md)
+  - [New-CsNetworkSite](new-csnetworksite.md)
 
-  -   
-    [Remove-CsNetworkSite](remove-csnetworksite.md)
+  - [Remove-CsNetworkSite](remove-csnetworksite.md)
 
-  -   
-    [Set-CsNetworkSite](set-csnetworksite.md)
+  - [Set-CsNetworkSite](set-csnetworksite.md)
 
 ## 另请参阅
 
 #### 其他资源
 
 [Lync Server PowerShell 博客](http://go.microsoft.com/fwlink/?linkid=203150%26clcid=0x804)
-
