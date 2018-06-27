@@ -9,7 +9,7 @@ mtps_version: v=OCS.15
 ms.translationtype: HT
 ---
 
-# 配置 Active Directory 联合身份验证服务 (AD FS 2.0)
+# 配置 Active Directory 联合身份验证服务 (AD FS 2.0)!!
 
  
 
@@ -17,19 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
 下面一节介绍如何配置 Active Directory 联合身份验证服务 (AD FS 2.0) 以支持多重身份验证。有关如何安装 AD FS 2.0 的信息，请参阅 AD FS 2.0 分步说明和操作指南：[http://go.microsoft.com/fwlink/p/?LinkId=313374](http://go.microsoft.com/fwlink/p/?linkid=313374)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>安装 AD FS 2.0 时，请勿使用 Windows Server Manager 添加联合身份验证服务角色。请下载并安装 Active Directory 联合身份验证服务 2.0 RTW 程序包：<a href="http://go.microsoft.com/fwlink/p/?linkid=313375">http://go.microsoft.com/fwlink/p/?LinkId=313375</a>。</td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]  
+> 安装 AD FS 2.0 时，请勿使用 Windows Server Manager 添加联合身份验证服务角色。请下载并安装 Active Directory 联合身份验证服务 2.0 RTW 程序包：<a href="http://go.microsoft.com/fwlink/p/?linkid=313375">http://go.microsoft.com/fwlink/p/?LinkId=313375</a>。
 
 
 **针对双重身份验证配置 AD FS**
@@ -54,20 +43,27 @@ _**上一次修改主题：** 2016-12-08_
 
 8.  使用 Windows PowerShell 通过运行以下命令为您的依赖方信任创建并分配颁发授权规则：
     
-        $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");'
 
-       &nbsp;
-    
-        Set-ADFSRelyingPartyTrust -TargetName LyncPool01-PassiveAuth 
+    ```
+    $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
+    ```
+    ```    
+    Set-ADFSRelyingPartyTrust -TargetName LyncPool01-PassiveAuth 
+
         -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+    ```
 
 9.  使用 Windows PowerShell 通过运行以下命令为您的依赖方信任创建并分配颁发转换规则：
     
-        $IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);'
 
-       &nbsp;
+    ```
+    $IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);
+    ```
+
     
-        Set-ADFSRelyingPartyTrust -TargetName LyncPool01-PassiveAuth -IssuanceTransformRules $IssuanceTransformRules
+    ```   
+    Set-ADFSRelyingPartyTrust -TargetName LyncPool01-PassiveAuth -IssuanceTransformRules $IssuanceTransformRules
+    ```
 
 10. 从 AD FS 2.0 管理控制台中，右键单击您的依赖方信任并选择“编辑声明规则”。
 

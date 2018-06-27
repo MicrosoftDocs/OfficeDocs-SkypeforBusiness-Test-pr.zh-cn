@@ -17,18 +17,8 @@ _**上一次修改主题：** 2013-07-11_
 
 以下部分介绍了如何配置具有 2013 年 7 月累积更新的 Lync Server 2013 以支持被动身份验证。启用后，启用了双重身份验证的 Lync 用户需要使用物理或虚拟智能卡和有效的 PIN 来通过具有 2013 年 7 月累积更新的 Lync 2013 客户端登录。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>强烈建议用户在服务级别为注册机构和 Web 服务启用被动身份验证。如果在全局级别为注册机构和 Web 服务启用被动身份验证，则可能导致未使用具有 2013 年 7 月累积更新的 Lync 2013 桌面客户端登录的用户遭遇组织范围身份验证失败。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 强烈建议用户在服务级别为注册机构和 Web 服务启用被动身份验证。如果在全局级别为注册机构和 Web 服务启用被动身份验证，则可能导致未使用具有 2013 年 7 月累积更新的 Lync 2013 桌面客户端登录的用户遭遇组织范围身份验证失败。
 
 
 ## Web 服务配置
@@ -45,18 +35,8 @@ _**上一次修改主题：** 2013-07-11_
     
         New-CsWebServiceConfiguration -Identity "Service:WebServer:LyncPool01.contoso.com" -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>WsFedPassiveMetadataUri FQDN 的值是您的 AD FS 2.0 服务器的联合身份验证服务名称。可通过从导航窗格右键单击“服务”，然后选择“编辑联合身份验证服务属性”来在 AD FS 2.0 管理控制台中找到联合身份验证服务名称值。</td>
-    </tr>
-    </tbody>
-    </table>
+>[!NOTE]  
+> WsFedPassiveMetadataUri FQDN 的值是您的 AD FS 2.0 服务器的联合身份验证服务名称。可通过从导航窗格右键单击“服务”，然后选择“编辑联合身份验证服务属性”来在 AD FS 2.0 管理控制台中找到联合身份验证服务名称值。
 
 
 4.  通过运行以下命令来验证 UseWsFedPassiveAuth 和 WsFedPassiveMetadataUri 值是否设置正确：
@@ -81,13 +61,12 @@ _**上一次修改主题：** 2013-07-11_
 
 1.  从 Lync Server 命令行管理程序 命令行，通过运行以下命令来为将启用被动身份验证且具有 2013 年 7 月累积更新的 Lync Server 2013 边缘池、企业池和 Standard Edition 服务器创建新的代理配置：
     
-        New-CsProxyConfiguration -Identity "Service:EdgeServer:EdgePool01.contoso.com" 
-        -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False
 
-       &nbsp;
+        ```New-CsProxyConfiguration -Identity "Service:EdgeServer:EdgePool01.contoso.com"  
+        -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False```
     
-        New-CsProxyConfiguration -Identity "Service:Registrar:LyncPool01.contoso.com" 
-        -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False
+        ```New-CsProxyConfiguration -Identity "Service:Registrar:LyncPool01.contoso.com"  
+        -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False```
 
 2.  通过运行以下命令来验证所有其他代理身份验证类型是否已成功禁用：
     

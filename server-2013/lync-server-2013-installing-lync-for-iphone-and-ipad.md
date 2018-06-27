@@ -21,9 +21,9 @@ Lync 2013 for iPhone 和 Lync 2013 for iPad 是用户可安装的应用程序，
 
 您可以指示用户通过从其设备访问 App Store 来安装 Lync 2013 for iPhone 和 Lync 2013 for iPad。也可以在线访问面向各种设备的 App Store。
 
-  - 可以从 \< http://www.apple.com/iphone/from-the-app-store/\> 上的 App Store 下载 Lync for iPhone
+  - 可以从 \< http://www.apple.com/iphone/from-the-app-store/<span/>\> 上的 App Store 下载 Lync for iPhone
 
-  - 可以从 \< http://www.apple.com/ipad/from-the-app-store/\> 上的 App Store 下载 Lync for iPad
+  - 可以从 \< http://www.apple.com/ipad/from-the-app-store/<span/>\> 上的 App Store 下载 Lync for iPad
 
 <table>
 <colgroup>

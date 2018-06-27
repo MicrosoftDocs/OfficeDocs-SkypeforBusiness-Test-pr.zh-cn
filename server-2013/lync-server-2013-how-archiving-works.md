@@ -49,9 +49,9 @@ Lync Server 也不存档持久聊天对话。要存档持久聊天对话，必�
 
 部署每台前端服务器时将自动在该服务器上安装存档，但存档在您配置之前不会启用。配置存档的方式由存档的部署方式决定：
 
-  - **使用 Microsoft Exchange 集成的存档。**如果您的用户驻留在 Exchange 2013 上，并且其邮箱已被置于就地保留状态，则可以选择此选项以将 Lync Server 2013 存储与 Exchange 存储集成。如果您选择 Microsoft Exchange 集成选项，则可使用 Exchange 2013 策略和配置来控制这些用户的 Lync Server 2013 数据存档。
+  - **使用 Microsoft Exchange 集成的存档。** 如果您的用户驻留在 Exchange 2013 上，并且其邮箱已被置于就地保留状态，则可以选择此选项以将 Lync Server 2013 存储与 Exchange 存储集成。如果您选择 Microsoft Exchange 集成选项，则可使用 Exchange 2013 策略和配置来控制这些用户的 Lync Server 2013 数据存档。
 
-  - **使用 Lync Server 存档数据库的存档。**如果您的用户未驻留在 Exchange 2013 上或其邮箱未被置于就地保留状态，或者您不希望对部署中的任意或所有用户使用 Microsoft Exchange 集成，则可使用 SQL Server 部署 Lync Server 存档数据库来存储这些用户的存档数据。在此情况下，Lync Server 2013 存档策略和配置将决定是否启用存档及其实现方式。若要使用 Lync Server 2013，则必须向您的拓扑添加适当的 SQL Server 数据库并发布该拓扑。
+  - **使用 Lync Server 存档数据库的存档。** 如果您的用户未驻留在 Exchange 2013 上或其邮箱未被置于就地保留状态，或者您不希望对部署中的任意或所有用户使用 Microsoft Exchange 集成，则可使用 SQL Server 部署 Lync Server 存档数据库来存储这些用户的存档数据。在此情况下，Lync Server 2013 存档策略和配置将决定是否启用存档及其实现方式。若要使用 Lync Server 2013，则必须向您的拓扑添加适当的 SQL Server 数据库并发布该拓扑。
 
 ## 使用 Microsoft Exchange 集成时存档设置
 

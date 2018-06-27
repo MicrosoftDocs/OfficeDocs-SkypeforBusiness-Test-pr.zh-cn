@@ -1,4 +1,4 @@
-﻿---
+---
 title: 语音路由 Cmdlet
 TOCTitle: 语音路由 Cmdlet
 ms:assetid: 8f05b25e-cc62-4d85-a5d8-4ed56f28dfbf
@@ -30,7 +30,7 @@ _**上一次修改主题：** 2016-12-08_
   - [Remove-CsRoutingConfiguration](remove-csroutingconfiguration.md)
 
   - [Set-CsRoutingConfiguration](set-csroutingconfiguration.md)
-
+  
   - [Get-CsVoiceRoute](get-csvoiceroute.md)
 
   - [New-CsVoiceRoute](new-csvoiceroute.md)

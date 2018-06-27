@@ -23,7 +23,7 @@ _**上一次修改主题：** 2012-10-09_
     
       - **Microsoft Exchange 集成**   如果您要使用 Exchange 2013 部署存储 Lync Server 2013 存档数据，那么除了设置一个单独的数据库用于存储存档数据外，您的 Exchange 部署还必须运行 Exchange 2013。有关为 Exchange 2013 设置系统平台的详细信息，请参阅 Exchange 产品文档。
     
-      - **SQL Server   **如果您要使用单独的 SQL Server 数据库存储存档数据，那么除使用 Microsoft Exchange 集成外，您还必须在部署存档之前为数据库设置系统平台。具体的系统平台要求取决于您是将 Microsoft SQL Server 2008 R2 还是将 Microsoft SQL Server 2012 用于存档数据库。有关为这些数据库设置系统平台的详细信息，请参阅 Microsoft SQL Server 2008 R2 和 Microsoft SQL Server 2012 产品文档。
+      - **SQL Server** 如果您要使用单独的 SQL Server 数据库存储存档数据，那么除使用 Microsoft Exchange 集成外，您还必须在部署存档之前为数据库设置系统平台。具体的系统平台要求取决于您是将 Microsoft SQL Server 2008 R2 还是将 Microsoft SQL Server 2012 用于存档数据库。有关为这些数据库设置系统平台的详细信息，请参阅 Microsoft SQL Server 2008 R2 和 Microsoft SQL Server 2012 产品文档。
 
   - **文件服务器平台**   Lync Server 2013 在您设置前端服务器或 Standard Edition 服务器时为文件存储指定的相同位置存储 Lync Server 存档文件。您无法为存档文件存储指定其他位置，所以不需要单独的系统平台存档文件存储。如果您使用 Microsoft Exchange 集成，那么对于驻留在 Exchange 服务器上的用户，会将存档的 Lync 通信的 Exchange 2013 文件存储在这些 Exchange 2013 服务器上。
 
