@@ -23,44 +23,31 @@ _**上一次修改主题：** 2016-12-08_
 
 **企业语音故障排除 Cmdlet**
 
-  -   
-    [Get-CsVoiceConfiguration](get-csvoiceconfiguration.md)
+  - [Get-CsVoiceConfiguration](get-csvoiceconfiguration.md)
 
-  -   
-    [Remove-CsVoiceConfiguration](remove-csvoiceconfiguration.md)
+  - [Remove-CsVoiceConfiguration](remove-csvoiceconfiguration.md)
 
-  -   
-    [Set-CsVoiceConfiguration](set-csvoiceconfiguration.md)
+  - [Set-CsVoiceConfiguration](set-csvoiceconfiguration.md)
 
-  -   
-    [Get-CsVoiceTestConfiguration](get-csvoicetestconfiguration.md)
+  - [Get-CsVoiceTestConfiguration](get-csvoicetestconfiguration.md)
 
-  -   
-    [New-CsVoiceTestConfiguration](new-csvoicetestconfiguration.md)
+  - [New-CsVoiceTestConfiguration](new-csvoicetestconfiguration.md)
 
-  -   
-    [Remove-CsVoiceTestConfiguration](remove-csvoicetestconfiguration.md)
+  - [Remove-CsVoiceTestConfiguration](remove-csvoicetestconfiguration.md)
 
-  -   
-    [Set-CsVoiceTestConfiguration](set-csvoicetestconfiguration.md)
+  - [Set-CsVoiceTestConfiguration](set-csvoicetestconfiguration.md)
 
-  -   
-    [Test-CsVoiceTestConfiguration](test-csvoicetestconfiguration.md)
+  - [Test-CsVoiceTestConfiguration](test-csvoicetestconfiguration.md)
 
-  -   
-    [Test-CsDialPlan](test-csdialplan.md)
+  - [Test-CsDialPlan](test-csdialplan.md)
 
-  -   
-    [Test-CsVoiceNormalizationRule](test-csvoicenormalizationrule.md)
+  - [Test-CsVoiceNormalizationRule](test-csvoicenormalizationrule.md)
 
-  -   
-    [Test-CsVoicePolicy](test-csvoicepolicy.md)
+  - [Test-CsVoicePolicy](test-csvoicepolicy.md)
 
-  -   
-    [Test-CsVoiceRoute](test-csvoiceroute.md)
+  - [Test-CsVoiceRoute](test-csvoiceroute.md)
 
-  -   
-    [Test-CsVoiceUser](test-csvoiceuser.md)
+  - [Test-CsVoiceUser](test-csvoiceuser.md)
 
 ## 另请参阅
 
@@ -71,4 +58,3 @@ _**上一次修改主题：** 2016-12-08_
 #### 其他资源
 
 [Lync Server PowerShell 博客](http://go.microsoft.com/fwlink/?linkid=203150%26clcid=0x804)
-

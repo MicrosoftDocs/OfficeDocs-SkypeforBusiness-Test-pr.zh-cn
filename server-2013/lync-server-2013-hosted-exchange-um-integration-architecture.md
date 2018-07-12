@@ -23,7 +23,7 @@ Lync Server 2013 ExUM Routing 应用程序支持与本地 Exchange 统一消息 
 
 支持以下模式：
 
-  - **本地部署：**Lync Server 2013 和 Exchange UM 均部署在企业内部的本地服务器上。
+  - **本地部署：** Lync Server 2013 和 Exchange UM 均部署在企业内部的本地服务器上。
 
   - **交叉部署 ：** Lync Server 2013 部署在企业内部的本地服务器上，Exchange UM 托管在联机服务提供商的设施上，如 Microsoft Exchange Online 数据中心。
 

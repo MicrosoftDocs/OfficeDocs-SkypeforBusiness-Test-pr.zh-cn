@@ -33,7 +33,7 @@ _**上一次修改主题：** 2013-02-23_
 
 5.  在“编辑文件筛选器”中，选中“显示详细信息…”复选框。
     
-    **编辑会议策略 - \<策略\>**会打开，显示所选策略的设置。有关配置设置的详细信息，请参阅[在 Lync Server 2013 中创建或修改会议策略](lync-server-2013-create-or-modify-a-conferencing-policy.md)。
+    **编辑会议策略 - \<策略\>** 会打开，显示所选策略的设置。有关配置设置的详细信息，请参阅[在 Lync Server 2013 中创建或修改会议策略](lync-server-2013-create-or-modify-a-conferencing-policy.md)。
 
 ## 通过使用 Lync Server PowerShell Cmdlet 查看会议策略
 

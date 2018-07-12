@@ -25,11 +25,11 @@ _**上一次修改主题：** 2012-10-18_
 
   - 执行配置任务的管理员必须具有足够的权限：
     
-      - **CsVoiceAdministrator：**此管理员角色可以执行语音配置任务、管理语音应用程序以及将语音策略分配给最终用户。
+      - **CsVoiceAdministrator：** 此管理员角色可以执行语音配置任务、管理语音应用程序以及将语音策略分配给最终用户。
     
-      - **CsUserAdministrator：**此管理员角色可以管理用户属性，如为用户启用企业语音。此管理员角色还可以分配每用户策略（存档策略例外）、移动用户以及管理公用区域电话和模拟设备。
+      - **CsUserAdministrator：** 此管理员角色可以管理用户属性，如为用户启用企业语音。此管理员角色还可以分配每用户策略（存档策略例外）、移动用户以及管理公用区域电话和模拟设备。
     
-      - **CsAdministrator：**此管理员角色可以执行 CsVoiceAdministrator 和 CsUserAdministrator 的所有任务。
+      - **CsAdministrator：** 此管理员角色可以执行 CsVoiceAdministrator 和 CsUserAdministrator 的所有任务。
     
     <table>
     <thead>

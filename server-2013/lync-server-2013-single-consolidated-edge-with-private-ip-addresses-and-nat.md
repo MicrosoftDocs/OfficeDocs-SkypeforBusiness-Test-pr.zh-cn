@@ -17,14 +17,11 @@ _**上一次修改主题：** 2016-12-08_
 
 如果组织要求支持 15,000 个以下访问边缘服务客户端连接、1,000 个以下活动的 Lync Server Web 会议服务客户端连接以及 500 个以下并发的 A/V 边缘会话，且边缘服务器的高可用性无关紧要，则此拓扑可提供硬件成本更低、部署更简单等优势。如果需要更大的容量或要求高可用性，则需要部署扩展的合并边缘服务器拓扑。有关详细信息，请参阅以下内容之一：
 
-  -   
-    [Lync Server 2013 中的扩展的合并边缘（使用 NAT 通过专用 IP 地址进行 DNS 负载平衡）](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-private-ip-addresses-using-nat.md)
+  - [Lync Server 2013 中的扩展的合并边缘（使用 NAT 通过专用 IP 地址进行 DNS 负载平衡）](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-private-ip-addresses-using-nat.md)
 
-  -   
-    [Lync Server 2013 中的扩展的合并边缘（通过公用 IP 地址进行 DNS 负载平衡）](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses.md)
+  - [Lync Server 2013 中的扩展的合并边缘（通过公用 IP 地址进行 DNS 负载平衡）](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses.md)
 
-  -   
-    [Lync Server 2013 中使用硬件负载平衡器的扩展的合并边缘](lync-server-2013-scaled-consolidated-edge-with-hardware-load-balancers.md)
+  - [Lync Server 2013 中使用硬件负载平衡器的扩展的合并边缘](lync-server-2013-scaled-consolidated-edge-with-hardware-load-balancers.md)
 
 此图未显示 控制器，它是一个在 边缘服务器与您的 前端池或服务器之间的内部网络中部署的可选服务器角色。有关控制器拓扑的详细信息，请参阅 [Lync Server 2013 中控制器所需的组件](lync-server-2013-components-required-for-the-director.md)。此图表示一个反向代理。
 

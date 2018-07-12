@@ -19,14 +19,11 @@ Lync Server 2013 部署的客户端和设备的软件支持包括支持的操作
 
 ## 本部分内容
 
-  -   
-    [Lync Server 2013 中的 Lync 客户端软件支持](lync-server-2013-lync-client-software-support.md)
+  - [Lync Server 2013 中的 Lync 客户端软件支持](lync-server-2013-lync-client-software-support.md)
 
-  -   
-    [Lync Server 2013 中的公共即时消息连接支持](lync-server-2013-support-for-public-instant-messenger-connectivity.md)
+  - [Lync Server 2013 中的公共即时消息连接支持](lync-server-2013-support-for-public-instant-messenger-connectivity.md)
 
-  -   
-    [用户照片在 Lync 中的显示方式](how-user-photos-are-displayed-in-lync.md)
+  - [用户照片在 Lync 中的显示方式](how-user-photos-are-displayed-in-lync.md)
 
 <table>
 <colgroup>

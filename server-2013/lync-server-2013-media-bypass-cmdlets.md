@@ -23,17 +23,13 @@ _**上一次修改主题：** 2016-12-08_
 
 **媒体旁路**
 
-  -   
-    [New-CsNetworkMediaBypassConfiguration](new-csnetworkmediabypassconfiguration.md)
+  - [New-CsNetworkMediaBypassConfiguration](new-csnetworkmediabypassconfiguration.md)
 
-  -   
-    [Get-CsNetworkConfiguration](get-csnetworkconfiguration.md)
+  - [Get-CsNetworkConfiguration](get-csnetworkconfiguration.md)
 
-  -   
-    [Remove-CsNetworkConfiguration](remove-csnetworkconfiguration.md)
+  - [Remove-CsNetworkConfiguration](remove-csnetworkconfiguration.md)
 
-  -   
-    [Set-CsNetworkConfiguration](set-csnetworkconfiguration.md)
+  - [Set-CsNetworkConfiguration](set-csnetworkconfiguration.md)
 
 ## 另请参阅
 

@@ -26,10 +26,16 @@ _**上一次修改主题：** 2016-12-08_
     安装模块后，可以在 Lync Server 命令行管理程序 中键入以下 cmdlet 建立远程会话：
     
         Import-Module LyncOnlineConnector
+
+       &nbsp;
     
         $cred = Get-Credential
+
+       &nbsp;
     
         $CSSession = New-CsOnlineSession -Credential $cred
+
+       &nbsp;
     
         Import-PSSession $CSSession -AllowClobber
     

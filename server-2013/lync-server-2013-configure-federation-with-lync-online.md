@@ -23,6 +23,8 @@ _**上一次修改主题：** 2016-12-08_
 
     Set-CSAccessEdgeConfiguration -AllowOutsideUsers 1 -AllowFederatedUsers 1 -UseDnsSrvRouting
 
+   &nbsp;
+
     New-CSHostingProvider -Identity LyncOnline -ProxyFqdn "sipfed.online.lync.com" -Enabled $true -EnabledSharedAddressSpace $true -HostsOCSUsers $true -VerificationLevel UseSourceVerification -IsLocal $false -AutodiscoverUrl https://webdir.online.lync.com/Autodiscover/AutodiscoverService.svc/root
 
 ## 针对共享 SIP 地址空间配置您的 Skype for Business Online 租户
@@ -41,9 +43,15 @@ Move-CsUser : HostedMigration 错误: Error=(510), 描述=(没有为此用户的
 
     Import-Module LyncOnlineConnector
 
+   &nbsp;
+
     $cred = Get-Credential
 
+   &nbsp;
+
     $CSSession = New-CsOnlineSession -Credential $cred
+
+   &nbsp;
 
     Import-PSSession $CSSession -AllowClobber
 

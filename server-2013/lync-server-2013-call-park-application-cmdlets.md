@@ -23,32 +23,23 @@ _**上一次修改主题：** 2016-12-08_
 
 **呼叫寄存应用程序**
 
-  -   
-    [Get-CsCallParkOrbit](get-cscallparkorbit.md)
+  - [Get-CsCallParkOrbit](get-cscallparkorbit.md)
 
-  -   
-    [New-CsCallParkOrbit](new-cscallparkorbit.md)
+  - [New-CsCallParkOrbit](new-cscallparkorbit.md)
 
-  -   
-    [Remove-CsCallParkOrbit](remove-cscallparkorbit.md)
+  - [Remove-CsCallParkOrbit](remove-cscallparkorbit.md)
 
-  -   
-    [Set-CsCallParkOrbit](set-cscallparkorbit.md)
+  - [Set-CsCallParkOrbit](set-cscallparkorbit.md)
 
-  -   
-    [Set-CsCallParkServiceMusicOnHoldFile](set-cscallparkservicemusiconholdfile.md)
+  - [Set-CsCallParkServiceMusicOnHoldFile](set-cscallparkservicemusiconholdfile.md)
 
-  -   
-    [Get-CsCpsConfiguration](get-cscpsconfiguration.md)
+  - [Get-CsCpsConfiguration](get-cscpsconfiguration.md)
 
-  -   
-    [New-CsCpsConfiguration](new-cscpsconfiguration.md)
+  - [New-CsCpsConfiguration](new-cscpsconfiguration.md)
 
-  -   
-    [Remove-CsCpsConfiguration](remove-cscpsconfiguration.md)
+  - [Remove-CsCpsConfiguration](remove-cscpsconfiguration.md)
 
-  -   
-    [Set-CsCpsConfiguration](set-cscpsconfiguration.md)
+  - [Set-CsCpsConfiguration](set-cscpsconfiguration.md)
 
 ## 另请参阅
 

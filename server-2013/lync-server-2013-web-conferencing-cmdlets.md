@@ -23,56 +23,39 @@ _**上一次修改主题：** 2016-12-08_
 
 **Web 会议**
 
-  -   
-    [Get-CsConferenceDisclaimer](get-csconferencedisclaimer.md)
+  - [Get-CsConferenceDisclaimer](get-csconferencedisclaimer.md)
 
-  -   
-    [Remove-CsConferenceDisclaimer](remove-csconferencedisclaimer.md)
+  - [Remove-CsConferenceDisclaimer](remove-csconferencedisclaimer.md)
 
-  -   
-    [Set-CsConferenceDisclaimer](set-csconferencedisclaimer.md)
+  - [Set-CsConferenceDisclaimer](set-csconferencedisclaimer.md)
 
-  -   
-    [Set-CsConferenceServer](set-csconferenceserver.md)
+  - [Set-CsConferenceServer](set-csconferenceserver.md)
 
-  -   
-    [Get-CsConferencingConfiguration](get-csconferencingconfiguration.md)
+  - [Get-CsConferencingConfiguration](get-csconferencingconfiguration.md)
 
-  -   
-    [New-CsConferencingConfiguration](new-csconferencingconfiguration.md)
+  - [New-CsConferencingConfiguration](new-csconferencingconfiguration.md)
 
-  -   
-    [Remove-CsConferencingConfiguration](remove-csconferencingconfiguration.md)
+  - [Remove-CsConferencingConfiguration](remove-csconferencingconfiguration.md)
 
-  -   
-    [Set-CsConferencingConfiguration](set-csconferencingconfiguration.md)
+  - [Set-CsConferencingConfiguration](set-csconferencingconfiguration.md)
 
-  -   
-    [Get-CsConferencingPolicy](get-csconferencingpolicy.md)
+  - [Get-CsConferencingPolicy](get-csconferencingpolicy.md)
 
-  -   
-    [Grant-CsConferencingPolicy](grant-csconferencingpolicy.md)
+  - [Grant-CsConferencingPolicy](grant-csconferencingpolicy.md)
 
-  -   
-    [New-CsConferencingPolicy](new-csconferencingpolicy.md)
+  - [New-CsConferencingPolicy](new-csconferencingpolicy.md)
 
-  -   
-    [Remove-CsConferencingPolicy](remove-csconferencingpolicy.md)
+  - [Remove-CsConferencingPolicy](remove-csconferencingpolicy.md)
 
-  -   
-    [Set-CsConferencingPolicy](set-csconferencingpolicy.md)
+  - [Set-CsConferencingPolicy](set-csconferencingpolicy.md)
 
-  -   
-    [Get-CsMeetingConfiguration](get-csmeetingconfiguration.md)
+  - [Get-CsMeetingConfiguration](get-csmeetingconfiguration.md)
 
-  -   
-    [New-CsMeetingConfiguration](new-csmeetingconfiguration.md)
+  - [New-CsMeetingConfiguration](new-csmeetingconfiguration.md)
 
-  -   
-    [Remove-CsMeetingConfiguration](remove-csmeetingconfiguration.md)
+  - [Remove-CsMeetingConfiguration](remove-csmeetingconfiguration.md)
 
-  -   
-    [Set-CsMeetingConfiguration](set-csmeetingconfiguration.md)
+  - [Set-CsMeetingConfiguration](set-csmeetingconfiguration.md)
 
   - [Disable-CsMeetingRoom](disable-csmeetingroom.md)
 
@@ -84,23 +67,17 @@ _**上一次修改主题：** 2016-12-08_
 
   - [Set-CsMeetingRoom](set-csmeetingroom.md)
 
-  -   
-    [Test-CsASConference](test-csasconference.md)
+  - [Test-CsASConference](test-csasconference.md)
 
-  -   
-    [Test-CsAVConference](test-csavconference.md)
+  - [Test-CsAVConference](test-csavconference.md)
 
-  -   
-    [Test-CsDataConference](test-csdataconference.md)
+  - [Test-CsDataConference](test-csdataconference.md)
 
-  -   
-    [Test-CsWebApp](test-cswebapp.md)
+  - [Test-CsWebApp](test-cswebapp.md)
 
-  -   
-    [Test-CsWebAppAnonymous](test-cswebappanonymous.md)
+  - [Test-CsWebAppAnonymous](test-cswebappanonymous.md)
 
-  -   
-    [Test-CsWebScheduler](test-cswebscheduler.md)
+  - [Test-CsWebScheduler](test-cswebscheduler.md)
 
 ## 另请参阅
 

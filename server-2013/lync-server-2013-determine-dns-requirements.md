@@ -129,9 +129,9 @@ Lync Windows 应用商店应用使用以下两个记录，因此完全改变了�
 
 移动设备支持手动发现服务。在此情况下，每个用户必须使用整个内部和外部自动发现服务 URI（包括协议和路径）配置移动设备设置，如下所示：
 
-  - https://*\<ExtPoolFQDN\>*/Autodiscover/autodiscoverservice.svc/Root（用于外部访问）
+  - htt<span></span>ps://<span></span>*\<ExtPoolFQDN\>*/Autodiscover/autodiscoverservice.svc/Root（用于外部访问）
 
-  - https://*\<IntPoolFQDN\>*/AutoDiscover/AutoDiscover.svc/Root（用于内部访问）
+  - h<span></span>ttps://<span></span>*\<IntPoolFQDN\>*/AutoDiscover/AutoDiscover.svc/Root（用于内部访问）
 
 建议使用自动发现而非手动发现。但是，手动设置对解决移动设备连接问题很有用。
 

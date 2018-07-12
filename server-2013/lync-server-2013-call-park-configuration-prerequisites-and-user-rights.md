@@ -57,13 +57,13 @@ _**上一次修改主题：** 2012-09-10_
 
 配置 呼叫寄存可能需要以下任何管理角色，具体取决于任务：
 
-  - **CsVoiceAdministrator ：**此管理员角色可以创建、配置和管理所有语音相关的设置和策略。
+  - **CsVoiceAdministrator ：** 此管理员角色可以创建、配置和管理所有语音相关的设置和策略。
 
-  - **CsUserAdministrator ：**此管理员角色可以在语音策略中启用 呼叫寄存。此管理员角色还具有对所有语音配置的只读访问权限。
+  - **CsUserAdministrator ：** 此管理员角色可以在语音策略中启用 呼叫寄存。此管理员角色还具有对所有语音配置的只读访问权限。
 
-  - **CsServerAdministrator ：**此管理员角色可以管理、监控服务器和服务，以及排除服务器和服务的故障。
+  - **CsServerAdministrator ：** 此管理员角色可以管理、监控服务器和服务，以及排除服务器和服务的故障。
 
-  - **CsAdministrator ：**此管理员角色可以执行 CsVoiceAdministrator、CsServerAdministrator 和 CsUserAdministrator 的所有任务。
+  - **CsAdministrator ：** 此管理员角色可以执行 CsVoiceAdministrator、CsServerAdministrator 和 CsUserAdministrator 的所有任务。
 
 <table>
 <thead>

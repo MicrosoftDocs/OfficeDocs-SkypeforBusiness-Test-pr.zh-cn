@@ -23,29 +23,21 @@ _**上一次修改主题：** 2016-12-08_
 
 **注册器和控制器**
 
-  -   
-    [Set-CsDirector](set-csdirector.md)
+  - [Set-CsDirector](set-csdirector.md)
 
-  -   
-    [Reset-CsPoolRegistrarState](reset-cspoolregistrarstate.md)
+  - [Reset-CsPoolRegistrarState](reset-cspoolregistrarstate.md)
 
-  -   
-    [Set-CsRegistrar](set-csregistrar.md)
+  - [Set-CsRegistrar](set-csregistrar.md)
 
-  -   
-    [Get-CsRegistrarConfiguration](get-csregistrarconfiguration.md)
+  - [Get-CsRegistrarConfiguration](get-csregistrarconfiguration.md)
 
-  -   
-    [New-CsRegistrarConfiguration](new-csregistrarconfiguration.md)
+  - [New-CsRegistrarConfiguration](new-csregistrarconfiguration.md)
 
-  -   
-    [Remove-CsRegistrarConfiguration](remove-csregistrarconfiguration.md)
+  - [Remove-CsRegistrarConfiguration](remove-csregistrarconfiguration.md)
 
-  -   
-    [Set-CsRegistrarConfiguration](set-csregistrarconfiguration.md)
+  - [Set-CsRegistrarConfiguration](set-csregistrarconfiguration.md)
 
-  -   
-    [Test-CsRegistration](test-csregistration.md)
+  - [Test-CsRegistration](test-csregistration.md)
 
 ## 另请参阅
 

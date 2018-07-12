@@ -23,20 +23,15 @@ _**上一次修改主题：** 2016-12-08_
 
 **应用程序服务器和服务**
 
-  -   
-    [Set-CsApplicationServer](set-csapplicationserver.md)
+  - [Set-CsApplicationServer](set-csapplicationserver.md)
 
-  -   
-    [Get-CsServerApplication](get-csserverapplication.md)
+  - [Get-CsServerApplication](get-csserverapplication.md)
 
-  -   
-    [New-CsServerApplication](new-csserverapplication.md)
+  - [New-CsServerApplication](new-csserverapplication.md)
 
-  -   
-    [Remove-CsServerApplication](remove-csserverapplication.md)
+  - [Remove-CsServerApplication](remove-csserverapplication.md)
 
-  -   
-    [Set-CsServerApplication](set-csserverapplication.md)
+  - [Set-CsServerApplication](set-csserverapplication.md)
 
 ## 另请参阅
 

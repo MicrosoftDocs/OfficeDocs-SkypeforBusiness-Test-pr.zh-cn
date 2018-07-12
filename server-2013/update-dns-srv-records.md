@@ -39,7 +39,7 @@ _**上一次修改主题：** 2012-09-29_
 
 3.  在“打开”框中，键入 **cmd** ，然后单击“确定”。
 
-4.  在命令提示符处键入 **nslookup***\<FQDN of the Front End pool\>* 或 *\<FQDN of the Standard Edition server\>*，然后按 Enter。
+4.  在命令提示符处键入 **nslookup**<span></span>*\<FQDN of the Front End pool\>* 或 *\<FQDN of the Standard Edition server\>*，然后按 Enter。
 
 5.  验证是否收到一个解析为 FQDN 的相应 IP 地址的答复。
 

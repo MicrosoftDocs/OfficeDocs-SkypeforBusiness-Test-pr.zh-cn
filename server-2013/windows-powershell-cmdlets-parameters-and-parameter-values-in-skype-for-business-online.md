@@ -112,7 +112,7 @@ pldok. **log**
     /b
     ```
 
-  - 参数值 **kenmyer@litwareinc.com**。
+  - 参数值 <strong>kenmyer@litwareinc.com</strong>。
 
 该命令有时会返回有关特定用户的信息：标识为 kenmyer@litwareinc.com 的用户。
 

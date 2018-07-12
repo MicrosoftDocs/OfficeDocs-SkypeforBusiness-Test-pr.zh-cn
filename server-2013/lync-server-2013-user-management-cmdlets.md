@@ -21,11 +21,9 @@ _**上一次修改主题：** 2016-12-08_
 
 大多数适用于用户和用户帐户的管理任务都可以在 Lync Server 控制面板中执行。主要的例外是处理音频会议提供商的 cmdlet。可使用 cmdlet 从 Lync Server 命令行管理程序或脚本中执行用户管理任务。通过使用脚本，可以自动完成某些任务。以下是与管理用户和用户帐户直接相关的 cmdlet 列表：
 
-  -   
-    [Get-CsAdContact](get-csadcontact.md)
+  - [Get-CsAdContact](get-csadcontact.md)
 
-  -   
-    [Get-CsAdUser](get-csaduser.md)
+  - [Get-CsAdUser](get-csaduser.md)
 
   - [Get-CsClientAccessLicense](get-csclientaccesslicense.md)
 
@@ -35,35 +33,25 @@ _**上一次修改主题：** 2016-12-08_
 
   - [Test-CsUnifiedContactStore](test-csunifiedcontactstore.md)
 
-  -   
-    [Disable-CsUser](disable-csuser.md)
+  - [Disable-CsUser](disable-csuser.md)
 
-  -   
-    [Enable-CsUser](enable-csuser.md)
+  - [Enable-CsUser](enable-csuser.md)
 
-  -   
-    [Get-CsUser](get-csuser.md)
+  - [Get-CsUser](get-csuser.md)
 
-  -   
-    [Move-CsUser](move-csuser.md)
+  - [Move-CsUser](move-csuser.md)
 
-  -   
-    [Set-CsUser](set-csuser.md)
+  - [Set-CsUser](set-csuser.md)
 
-  -   
-    [Get-CsUserAcp](get-csuseracp.md)
+  - [Get-CsUserAcp](get-csuseracp.md)
 
-  -   
-    [Remove-CsUserAcp](remove-csuseracp.md)
+  - [Remove-CsUserAcp](remove-csuseracp.md)
 
-  -   
-    [Set-CsUserAcp](set-csuseracp.md)
+  - [Set-CsUserAcp](set-csuseracp.md)
 
-  -   
-    [Test-CsAudioConferencingProvider](test-csaudioconferencingprovider.md)
+  - [Test-CsAudioConferencingProvider](test-csaudioconferencingprovider.md)
 
-  -   
-    [Get-CsUserPoolInfo](get-csuserpoolinfo.md)
+  - [Get-CsUserPoolInfo](get-csuserpoolinfo.md)
 
   - [Get-CsUserServicesPolicy](get-csuserservicespolicy.md)
 

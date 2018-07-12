@@ -23,17 +23,13 @@ _**上一次修改主题：** 2016-12-08_
 
 **媒体配置**
 
-  -   
-    [Get-CsMediaConfiguration](get-csmediaconfiguration.md)
+  - [Get-CsMediaConfiguration](get-csmediaconfiguration.md)
 
-  -   
-    [New-CsMediaConfiguration](new-csmediaconfiguration.md)
+  - [New-CsMediaConfiguration](new-csmediaconfiguration.md)
 
-  -   
-    [Remove-CsMediaConfiguration](remove-csmediaconfiguration.md)
+  - [Remove-CsMediaConfiguration](remove-csmediaconfiguration.md)
 
-  -   
-    [Set-CsMediaConfiguration](set-csmediaconfiguration.md)
+  - [Set-CsMediaConfiguration](set-csmediaconfiguration.md)
 
 ## 另请参阅
 

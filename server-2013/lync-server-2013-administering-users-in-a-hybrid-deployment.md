@@ -36,6 +36,8 @@ _**上一次修改主题：** 2014-05-29_
   - 运行以下 cmdlet，将用户从 Lync Online 移回本地 Lync：
     
         $cred=Get-Credential
+
+       &nbsp;
     
         Move-CsUser -Identity username@contoso.com -Target localpool.contoso.com -Credential $cred -HostedMigrationOverrideUrl <URL>
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Lync Server 2013：使用 Lync-Skype 连接作为最终用户
 TOCTitle: 使用 Lync-Skype 连接作为最终用户
 ms:assetid: ad22f731-118c-4349-8790-b1a72941cbdd
@@ -63,13 +63,13 @@ Lync-Skype 连接使 Skype 用户和 Lync 用户能够相互添加为联系人�
 
 有关联系人支持的其他信息，请参阅[在 Lync 中添加联系人](http://office.microsoft.com/zh-cn/office365-lync-online-help/add-a-contact-in-lync-ha102828922.aspx)和 [在 Lync 中添加外部联系人](http://office.microsoft.com/zh-cn/office365-lync-online-help/add-an-external-contact-in-lync-ha104038998.aspx?ctt=5%26origin=ha102828922)
 
-当 Skype 用户的 Microsoft 帐户使用自定义域名（如 **bob@contoso.com**）时，Lync 用户可通过两种方式将该 Microsoft 帐户添加到 Lync：
+当 Skype 用户的 Microsoft 帐户使用自定义域名（如 <strong>bob@contoso.com</strong>）时，Lync 用户可通过两种方式将该 Microsoft 帐户添加到 Lync：
 
 1.  使用“添加联系人”图标或者
 
 2.  使用“查找联系人或聊天室，或拨打号码”字段。
 
-在每个实例中，Lync 用户必须按照以下格式输入 Skype 用户的电子邮件： **用户(域名)@msn.com**。
+在每个实例中，Lync 用户必须按照以下格式输入 Skype 用户的电子邮件： <strong>用户(域名)@msn.com</strong>。
 
 <table>
 <thead>
@@ -93,7 +93,7 @@ Lync-Skype 连接使 Skype 用户和 Lync 用户能够相互添加为联系人�
     
     ![Lync 客户端：显示如何添加 Skype 联系人](images/Dn440175.ac4e2f21-c1d9-47d8-b99e-d49fe4eb36d7(OCS.15).jpg "Lync 客户端：显示如何添加 Skype 联系人")
 
-3.  在“IM 地址”字段中，按照格式 **用户(域名)@msn.com** 输入 Skype 用户的 Microsoft 帐户 (MSA)。因此对于用户 bob@contoso.com，输入内容将是 **bob(contoso.com)@msn.com**，如下所示。
+3.  在“IM 地址”字段中，按照格式 <strong>用户(域名)@msn.com</strong> 输入 Skype 用户的 Microsoft 帐户 (MSA)。因此对于用户 bob@contoso.com，输入内容将是 <strong>bob(contoso.com)@msn.com</strong>，如下所示。
     
     ![Lync 客户端“新联系人”设置](images/Dn440175.422e69b5-2c0c-4260-858f-f10309af772f(OCS.15).jpg "Lync 客户端“新联系人”设置")
 
@@ -101,7 +101,7 @@ Lync-Skype 连接使 Skype 用户和 Lync 用户能够相互添加为联系人�
 
 5.  在“设置私人关系”下拉列表框中，选择合适的联系人设置，然后单击“确定”。
 
-6.  Lync 用户也可以使用 Lync 中的“查找联系人或聊天室，或拨打号码”字段，并添加类似于 **用户(域名)@msn.com** 的地址。因此对于 Microsoft 帐户 bob@contoso.com，输入内容将是 **bob(contoso.com)@msn.com**，如下所示。
+6.  Lync 用户也可以使用 Lync 中的“查找联系人或聊天室，或拨打号码”字段，并添加类似于 <strong>用户(域名)@msn.com</strong> 的地址。因此对于 Microsoft 帐户 bob@contoso.com，输入内容将是 <strong>bob(contoso.com)@msn.com</strong>，如下所示。
     
     ![在 Lync 客户端搜索联系人](images/Dn440175.69787db8-f9b9-49e5-b197-b90b10393301(OCS.15).jpg "在 Lync 客户端搜索联系人")
 
