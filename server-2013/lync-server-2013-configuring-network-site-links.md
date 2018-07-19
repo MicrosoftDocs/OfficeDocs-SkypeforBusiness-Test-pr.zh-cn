@@ -59,7 +59,7 @@ _**上一次修改主题：** 2012-11-01_
 
 #### 概念
 
-[呼叫允许控制 Cmdlet](lync-server-2013-call-admission-control-cmdlets.md)  
+[呼叫允许控制 Cmdlet](https://docs.microsoft.com/en-us/powershell/module/skype/)  
 
 #### 其他资源
 

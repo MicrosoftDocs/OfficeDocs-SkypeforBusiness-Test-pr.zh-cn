@@ -132,7 +132,7 @@ Shared Line Appearance (SLA) is a new feature in Lync Server 2013, Cumulative Up
 
 ## Delete an SLA group
 
-1.  Delete an SLA group by using the [Remove-CsSlaConfiguration](remove-csslaconfiguration.md) cmdlet:
+1.  Delete an SLA group by using the [Remove-CsSlaConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/remove-csslaconfiguration?view=skype-ps) cmdlet:
     
     ``` 
     Remove-CsSlaConfiguration -Identity <IdentityOfGroup>
