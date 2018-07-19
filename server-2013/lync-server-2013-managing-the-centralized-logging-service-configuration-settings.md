@@ -55,5 +55,5 @@ _**上一次修改主题：** 2012-11-01_
 #### 概念
 
 [集中日志记录服务的概述](lync-server-2013-overview-of-the-centralized-logging-service.md)  
-[集中日志记录 Cmdlet](lync-server-2013-centralized-logging-cmdlets.md)
+[集中日志记录 Cmdlet](https://docs.microsoft.com/en-us/powershell/module/skype/)
 
