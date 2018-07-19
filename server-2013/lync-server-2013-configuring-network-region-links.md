@@ -75,7 +75,7 @@ _**上一次修改主题：** 2012-11-01_
 
 #### 其他资源
 
-[New-CsNetworkRegionLink](new-csnetworkregionlink.md)  
+[New-CsNetworkRegionLink](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkRegionLink)  
 [Set-CsNetworkRegionLink](set-csnetworkregionlink.md)  
 [Remove-CsNetworkRegionLink](remove-csnetworkregionlink.md)  
 [Get-CsNetworkRegionLink](get-csnetworkregionlink.md)

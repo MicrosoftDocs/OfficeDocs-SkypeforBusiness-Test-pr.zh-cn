@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2015-06-22_
 
-要返回有关您的组织已与其签订合同的所有音频会议提供商的信息，您可以简单地不带任何参数调用 [Get-CsAudioConferencingProvider](get-csaudioconferencingprovider.md) cmdlet：
+要返回有关您的组织已与其签订合同的所有音频会议提供商的信息，您可以简单地不带任何参数调用 [Get-CsAudioConferencingProvider](https://docs.microsoft.com/powershell/module/skype/Get-CsAudioConferencingProvider) cmdlet：
 
     Get-CsAudioConferencingProvider
 
@@ -25,7 +25,7 @@ _**上一次修改主题：** 2015-06-22_
 
 仅存在一个接受音频会议商 ID 的 Skype for Business Online cmdlet：
 
-  - [Get-CsAudioConferencingProvider](get-csaudioconferencingprovider.md)
+  - [Get-CsAudioConferencingProvider](https://docs.microsoft.com/powershell/module/skype/Get-CsAudioConferencingProvider)
 
 ## 另请参阅
 

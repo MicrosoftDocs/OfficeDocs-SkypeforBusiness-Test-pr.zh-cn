@@ -53,7 +53,7 @@ _**上一次修改主题：** 2014-02-07_
 
 分配此策略后，Lync Server 会开始将用户的联系人迁移到统一联系人存储中。完成迁移后，用户的联系人将存储在 Exchange 而非 Lync Server 中。如果用户在迁移完成时登录到 Lync 2013，则将出现一个消息框，并要求用户注销 Lync 并重新登录以便最终完成此过程。如果未向用户分配此每用户策略，则用户的联系人不会存储到统一联系人存储中。这是因为这些用户受全局策略管理，而全局策略中已禁止使用统一联系人存储。
 
-通过从 Lync Server 命令行管理程序中运行 [Test-CsUnifiedContactStore](test-csunifiedcontactstore.md) cmdlet，您可以验证是否已将用户的联系人成功迁移到统一的联系人存储库中：
+通过从 Lync Server 命令行管理程序中运行 [Test-CsUnifiedContactStore](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsUnifiedContactStore) cmdlet，您可以验证是否已将用户的联系人成功迁移到统一的联系人存储库中：
 
     Test-CsUnifiedContactStore -UserSipAddress "sip:kenmyer@litwareinc.com" -TargetFqdn "atl-cs-001.litwareinc.com"
 

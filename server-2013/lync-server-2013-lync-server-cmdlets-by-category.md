@@ -69,7 +69,7 @@ Microsoft Lync Server 2013 附带将近 550 个专门设计用于允许管理员
 <td><p><a href="lync-server-2013-persistent-chat-server-cmdlets.md">持久聊天服务器 Cmdlet</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="lync-server-2013-federation-and-external-access-cmdlets.md">联盟和外部访问 Cmdlet</a></p></td>
+<td><p><a href="https://docs.microsoft.com/en-us/powershell/module/skype/">联盟和外部访问 Cmdlet</a></p></td>
 <td><p><a href="lync-server-2013-centralized-logging-cmdlets.md">集中日志记录 Cmdlet</a></p></td>
 </tr>
 <tr class="even">

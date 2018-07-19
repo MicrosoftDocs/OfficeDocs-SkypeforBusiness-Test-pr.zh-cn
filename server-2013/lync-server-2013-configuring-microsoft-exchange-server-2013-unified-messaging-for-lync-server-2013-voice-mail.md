@@ -61,7 +61,7 @@ Microsoft Lync Server 2013 使您可在 Microsoft Exchange Server 2013 中存储
 
 在前一个命令中，Extensions 参数表示用户的电话分机号。在该示例中，用户的分机号为 100。
 
-在启用其邮箱后，用户 kenmyer@litwareinc.com 应该能够使用 Exchange 统一消息。可以通过在 Lync Server 命令行管理程序中运行 [Test-CsExUMConnectivity](test-csexumconnectivity.md) cmdlet 来验证该用户是否可以连接到 Exchange UM：
+在启用其邮箱后，用户 kenmyer@litwareinc.com 应该能够使用 Exchange 统一消息。可以通过在 Lync Server 命令行管理程序中运行 [Test-CsExUMConnectivity](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsExUMConnectivity) cmdlet 来验证该用户是否可以连接到 Exchange UM：
 
     $credential = Get-Credential "litwareinc\kenmyer"
     

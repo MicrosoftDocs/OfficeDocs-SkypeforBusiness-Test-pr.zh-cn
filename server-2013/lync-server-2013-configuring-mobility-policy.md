@@ -117,7 +117,7 @@ Lync Server 2013 提供了移动策略，这些策略确定谁可以使用移动
 
 #### 其他资源
 
-[New-CsMobilityPolicy](new-csmobilitypolicy.md)  
+[New-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsMobilityPolicy)  
 [Set-CsMobilityPolicy](set-csmobilitypolicy.md)  
 [Get-CsMobilityPolicy](get-csmobilitypolicy.md)  
 [Grant-CsMobilityPolicy](grant-csmobilitypolicy.md)  

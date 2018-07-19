@@ -25,7 +25,7 @@ _**上一次修改主题：** 2012-05-25_
 </thead>
 <tbody>
 <tr class="odd">
-<td>使用以下过程定义的步骤可请求用于 IIS 中所有 Lync Server 用途、内部网站和外部网站的组合证书。 Lync Server 2010 引入了一组 Lync Server 命令行管理程序Windows PowerShell cmdlet 来专门管理证书请求、导入和分配。该过程假定存在可以处理该请求的内部部署证书颁发机构 (CA)。如果您使用公共证书实现 Lync Server 用途或者 CA 要求脱机请求，请参阅本主题中的详细语法，以获得有关 –Output 参数的信息。<a href="request-cscertificate.md">Request-CsCertificate</a></td>
+<td>使用以下过程定义的步骤可请求用于 IIS 中所有 Lync Server 用途、内部网站和外部网站的组合证书。 Lync Server 2010 引入了一组 Lync Server 命令行管理程序Windows PowerShell cmdlet 来专门管理证书请求、导入和分配。该过程假定存在可以处理该请求的内部部署证书颁发机构 (CA)。如果您使用公共证书实现 Lync Server 用途或者 CA 要求脱机请求，请参阅本主题中的详细语法，以获得有关 –Output 参数的信息。<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Request-CsCertificate">Request-CsCertificate</a></td>
 </tr>
 </tbody>
 </table>
@@ -114,6 +114,6 @@ _**上一次修改主题：** 2012-05-25_
 
 #### 其他资源
 
-[Get-CsCertificate](get-cscertificate.md)  
+[Get-CsCertificate](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsCertificate)  
 [Set-CsCertificate](set-cscertificate.md)
 

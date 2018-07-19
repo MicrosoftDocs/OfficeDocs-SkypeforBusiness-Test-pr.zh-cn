@@ -25,5 +25,5 @@ _**上一次修改主题：** 2012-09-26_
 
   - 在指定的组织单位 (OU) 容器中创建联系对象的域权限
 
-有关使用 **Get-CsExumContact** cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档中的 [Get-CsExUmContact](get-csexumcontact.md)。
+有关使用 **Get-CsExumContact** cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档中的 [Get-CsExUmContact](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsExUmContact)。
 

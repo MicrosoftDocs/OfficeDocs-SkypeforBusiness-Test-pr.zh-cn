@@ -35,11 +35,11 @@ _**上一次修改主题：** 2015-06-22_
 
 以下 cmdlet 接受用户标识：
 
-  - [Disable-CsMeetingRoom](disable-csmeetingroom.md)
+  - [Disable-CsMeetingRoom](https://docs.microsoft.com/en-us/powershell/module/skype/Disable-CsMeetingRoom)
 
   - [Enable-CsMeetingRoom](enable-csmeetingroom.md)
 
-  - [Get-CsExUmContact](get-csexumcontact.md)
+  - [Get-CsExUmContact](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsExUmContact)
 
   - [Get-CsMeetingRoom](get-csmeetingroom.md)
 
@@ -57,7 +57,7 @@ _**上一次修改主题：** 2015-06-22_
 
   - [Set-CsMeetingRoom](set-csmeetingroom.md)
 
-  - [Set-CsUserAcp](set-csuseracp.md)
+  - [Set-CsUserAcp](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsUserAcp)
 
 请注意，在调用其中一个 **Get-Cs** cmdlet 时，您无需指定用户标识。在这种情况下，cmdlet 将返回指定项目的所有实例。例如，此命令返回有关已启用 Skype for Business Online 的所有用户的信息：
 

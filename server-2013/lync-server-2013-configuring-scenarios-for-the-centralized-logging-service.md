@@ -25,7 +25,7 @@ _**上一次修改主题：** 2016-12-08_
 </thead>
 <tbody>
 <tr class="odd">
-<td>对于任何给定的范围（站点、全局、池或计算机），您可以在任何给定时间最多运行两个方案。若要确定当前正在运行的方案，请使用 Windows PowerShell 和 <a href="get-csclsscenario.md">Get-CsClsScenario</a>。通过使用 Windows PowerShell 和 <a href="set-csclsscenario.md">Set-CsClsScenario</a>，您可以动态更改正在运行的方案。可以在日志记录会话期间修改正在运行的方案，以调整或优化所收集的数据以及源提供程序。</td>
+<td>对于任何给定的范围（站点、全局、池或计算机），您可以在任何给定时间最多运行两个方案。若要确定当前正在运行的方案，请使用 Windows PowerShell 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsScenario">Get-CsClsScenario</a>。通过使用 Windows PowerShell 和 <a href="set-csclsscenario.md">Set-CsClsScenario</a>，您可以动态更改正在运行的方案。可以在日志记录会话期间修改正在运行的方案，以调整或优化所收集的数据以及源提供程序。</td>
 </tr>
 </tbody>
 </table>

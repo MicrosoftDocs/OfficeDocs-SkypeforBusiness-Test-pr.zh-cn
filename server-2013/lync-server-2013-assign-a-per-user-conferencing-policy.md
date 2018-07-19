@@ -127,7 +127,7 @@ _**上一次修改主题：** 2013-02-22_
 
 ## 向多个用户分配每用户会议策略
 
-  - 此命令向在人力资源部工作的所有用户分配每用户会议策略 HRConferencingPolicy。有关此命令中使用的 LdapFilter 参数的详细信息，请参阅 [Get-CsUser](get-csuser.md) cmdlet 的文档。
+  - 此命令向在人力资源部工作的所有用户分配每用户会议策略 HRConferencingPolicy。有关此命令中使用的 LdapFilter 参数的详细信息，请参阅 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) cmdlet 的文档。
     
         Get-CsUser -LdapFilter "Department=Human Resources" | Grant-CsConferencingPolicy -PolicyName "HRConferencingPolicy"
 

@@ -85,7 +85,7 @@ _**上一次修改主题：** 2015-03-09_
 
     New-CsNetworkSubnet -SubnetID <Subnet IP address> -MaskBits <Subnet bitmask> -NetworkSiteID <site ID>
 
-有关详细信息，请参阅[New-CsNetworkSubnet](new-csnetworksubnet.md)。
+有关详细信息，请参阅[New-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkSubnet)。
 
 对于此示例，下表和 Windows PowerShell 命令说明了如何为此方案中定义的网络站点“德里”和“海得拉巴”分配网络子网。出于说明目的，该表中仅包括特定于基于位置的路由的设置。
 

@@ -17,7 +17,7 @@ _**上一次修改主题：** 2013-02-22_
 
 为了准备 Lync VDI 插件的环境，管理员必须执行以下步骤。
 
-1.  在 Lync Server 2013 中，确保针对所有 VDI 用户将 EnableMediaRedirection 设置为 TRUE。有关详细信息，请参阅 [New-CsClientPolicy](new-csclientpolicy.md) cmdlet 和 [Set-CsClientPolicy](set-csclientpolicy.md) cmdlet 的帮助主题。
+1.  在 Lync Server 2013 中，确保针对所有 VDI 用户将 EnableMediaRedirection 设置为 TRUE。有关详细信息，请参阅 [New-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientPolicy) cmdlet 和 [Set-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPolicy) cmdlet 的帮助主题。
 
 2.  在数据中心计算机上，在所有虚拟机上安装 Lync 2013 客户端。
 

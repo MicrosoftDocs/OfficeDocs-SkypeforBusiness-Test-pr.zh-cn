@@ -124,7 +124,7 @@ _**上一次修改主题：** 2014-03-19_
     
         Set-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider $LyssProvider
 
-此命令的最终结果是方案 site:Redmond/RedmondLyssInfo 将获得提供程序的更新标志和级别。可通过使用 Get-CsClsScenario 查看新方案。有关详细信息，请参阅 [Get-CsClsScenario](get-csclsscenario.md)。
+此命令的最终结果是方案 site:Redmond/RedmondLyssInfo 将获得提供程序的更新标志和级别。可通过使用 Get-CsClsScenario 查看新方案。有关详细信息，请参阅 [Get-CsClsScenario](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsScenario)。
 
 <table>
 <thead>
@@ -186,7 +186,7 @@ _**上一次修改主题：** 2014-03-19_
 
 #### 其他资源
 
-[Get-CsClsScenario](get-csclsscenario.md)  
+[Get-CsClsScenario](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsScenario)  
 [New-CsClsScenario](new-csclsscenario.md)  
 [Remove-CsClsScenario](remove-csclsscenario.md)  
 [Set-CsClsScenario](set-csclsscenario.md)  

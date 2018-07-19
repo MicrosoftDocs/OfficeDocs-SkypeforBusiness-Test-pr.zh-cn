@@ -278,7 +278,7 @@ Lync Server 需要标准化的 RFC 3966/E.164 电话号码。要使用非结构�
 </thead>
 <tbody>
 <tr class="odd">
-<td>有关筛选通讯簿的详细信息，请参阅<a href="lync-server-2013-address-book-server-cmdlets.md">通讯簿服务器 Cmdlet</a> 和<a href="http://go.microsoft.com/fwlink/?linkid=330430">筛选 Lync 2013 通讯簿</a></td>
+<td>有关筛选通讯簿的详细信息，请参阅<a href="https://technet.microsoft.com/en-us/library/gg415643(v=ocs.15)">通讯簿服务器 Cmdlet</a> 和<a href="http://go.microsoft.com/fwlink/?linkid=330430">筛选 Lync 2013 通讯簿</a></td>
 </tr>
 </tbody>
 </table>

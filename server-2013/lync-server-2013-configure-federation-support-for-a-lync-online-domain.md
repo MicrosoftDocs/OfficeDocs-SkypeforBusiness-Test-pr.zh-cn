@@ -17,7 +17,7 @@ _**上一次修改主题：** 2012-11-01_
 
 与 Microsoft Lync Online 2010 客户联盟需要完成以下步骤：
 
-  - 配置 Lync Online 2010 客户的域的支持（例如 contoso.onmicrosoft.com）。如本文档的[与 Lync 联机客户联盟的先决条件](lync-server-2013-prerequisites-for-federating-with-a-lync-online-customer.md)一节中规定，您应该已经为您的组织启用联盟。启用联盟要求指定联盟的域用于控制访问的方法。如果将组织配置为使用发现，则可以选择将域添加到组织的允许列表。如果没有启用域发现，则必须将 Lync Online 客户的域名添加到允许的域列表。可以使用 Lync Server 控制面板或运行 **New-CSAllowedDomain** cmdlet 来添加域名。有关使用 Lync Server 控制面板的详细信息，其中包括启用域发现，请参阅操作文档中的[在 Lync Server 2013 中管理组织的 SIP 联盟提供程序](lync-server-2013-manage-sip-federated-providers-for-your-organization.md)。有关使用 **New-CSAllowedDomain** cmdlet 添加域的详细信息，请参阅操作文档中的 [New-CsAllowedDomain](new-csalloweddomain.md)。
+  - 配置 Lync Online 2010 客户的域的支持（例如 contoso.onmicrosoft.com）。如本文档的[与 Lync 联机客户联盟的先决条件](lync-server-2013-prerequisites-for-federating-with-a-lync-online-customer.md)一节中规定，您应该已经为您的组织启用联盟。启用联盟要求指定联盟的域用于控制访问的方法。如果将组织配置为使用发现，则可以选择将域添加到组织的允许列表。如果没有启用域发现，则必须将 Lync Online 客户的域名添加到允许的域列表。可以使用 Lync Server 控制面板或运行 **New-CSAllowedDomain** cmdlet 来添加域名。有关使用 Lync Server 控制面板的详细信息，其中包括启用域发现，请参阅操作文档中的[在 Lync Server 2013 中管理组织的 SIP 联盟提供程序](lync-server-2013-manage-sip-federated-providers-for-your-organization.md)。有关使用 **New-CSAllowedDomain** cmdlet 添加域的详细信息，请参阅操作文档中的 [New-CsAllowedDomain](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsAllowedDomain)。
     
     <table>
     <thead>

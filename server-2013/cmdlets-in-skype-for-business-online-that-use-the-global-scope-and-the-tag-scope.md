@@ -48,7 +48,7 @@ Get-CsExternalAccessPolicy –Identity &quot;tag:RedmondAccessPolicy&quot;</td>
 
 以下 cmdlet 针对全局作用域和每用户（标记）作用域进行操作：
 
-  - [Get-CsClientPolicy](get-csclientpolicy.md)
+  - [Get-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClientPolicy)
 
   - [Get-CsConferencingPolicy](get-csconferencingpolicy.md)
 

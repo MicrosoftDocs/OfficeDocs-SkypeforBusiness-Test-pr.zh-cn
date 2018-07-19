@@ -19,7 +19,7 @@ _**上一次修改主题：** 2014-04-22_
 
 ## 组织者策略设置
 
-下表列出了可应用于会议组织者的所有会议策略设置。有关最新的会议策略设置列表，请参阅 [Set-CsClientPolicy](set-csclientpolicy.md) cmdlet 的帮助主题。
+下表列出了可应用于会议组织者的所有会议策略设置。有关最新的会议策略设置列表，请参阅 [Set-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPolicy) cmdlet 的帮助主题。
 
 ### 组织者策略设置
 

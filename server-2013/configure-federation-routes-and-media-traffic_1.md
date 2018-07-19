@@ -248,7 +248,7 @@ _**上一次修改主题：** 2016-12-08_
     
         Set-CsAccessEdgeConfiguration
     
-    有关这些 cmdlet 的详细信息，请参阅下列主题： [Get-CsAccessEdgeConfiguration](get-csaccessedgeconfiguration.md) 和 [Set-CsAccessEdgeConfiguration](set-csaccessedgeconfiguration.md)。
+    有关这些 cmdlet 的详细信息，请参阅下列主题： [Get-CsAccessEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsAccessEdgeConfiguration) 和 [Set-CsAccessEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsAccessEdgeConfiguration)。
 
 4.  等待复制完成后，将 Lync Server 2013 边缘服务器联机，并测试联盟和外部访问。
 

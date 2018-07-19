@@ -25,7 +25,7 @@ _**上一次修改主题：** 2012-10-19_
     
         Get-CsSite
     
-    这将返回要在其中创建池的 siteName 的 siteID。有关详细信息，请参阅 Lync Server 2013 命令行管理程序文档中的 [Get-CsSite](get-cssite.md)。
+    这将返回要在其中创建池的 siteName 的 siteID。有关详细信息，请参阅 Lync Server 2013 命令行管理程序文档中的 [Get-CsSite](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsSite)。
 
 3.  运行以下 cmdlet：
     

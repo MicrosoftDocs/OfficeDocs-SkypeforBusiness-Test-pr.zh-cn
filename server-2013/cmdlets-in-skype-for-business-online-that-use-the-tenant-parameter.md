@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-06-22_
 
     Set-CsTenantPublicProvider -Tenant "bf19b7db-6960-41e5-a139-2aa373474354" -Provider "WindowsLive"
 
-幸运的是，您不必每次运行其中一个 cmdlet 时都键入租户 ID（例如 bf19b7db-6960-41e5-a139-2aa373474354）。您可以通过以下方法检索租户 ID：运行 [Get-CsTenant](get-cstenant.md) cmdlet，将租户 ID 存储在变量中，然后在调用其中一个其他 cmdlet 时使用该变量。例如：
+幸运的是，您不必每次运行其中一个 cmdlet 时都键入租户 ID（例如 bf19b7db-6960-41e5-a139-2aa373474354）。您可以通过以下方法检索租户 ID：运行 [Get-CsTenant](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsTenant) cmdlet，将租户 ID 存储在变量中，然后在调用其中一个其他 cmdlet 时使用该变量。例如：
 
     $x = (Get-CsTenant).TenantId
     Set-CsTenantPublicProvider -Tenant $x -Provider "WindowsLive"
@@ -34,7 +34,7 @@ _**上一次修改主题：** 2015-06-22_
 
 以下 cmdlet 接受租户标识。但是，在这些情况下，参数是可选的，调用 cmdlet 时不需要输入。Windows PowerShell 将基于您当前连接到 Skype for Business Online 租户选择性地为您输入租户标识：
 
-  - [Get-CsTenant](get-cstenant.md)
+  - [Get-CsTenant](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsTenant)
 
   - [Set-CsTenantFederationConfiguration](set-cstenantfederationconfiguration.md)
 

@@ -69,7 +69,7 @@ _**上一次修改主题：** 2013-02-22_
 
 ## 向多个用户分配每用户拨号计划
 
-  - 此命令向在 Redmond 市工作的所有用户分配每用户拨号计划 RedmondDialPlan。有关此命令中使用的 LdapFilter 参数的详细信息，请参阅 [Get-CsUser](get-csuser.md) cmdlet 的文档。
+  - 此命令向在 Redmond 市工作的所有用户分配每用户拨号计划 RedmondDialPlan。有关此命令中使用的 LdapFilter 参数的详细信息，请参阅 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) cmdlet 的文档。
     
         Get-CsUser -LdapFilter "l=Redmond" | Grant-CsDialPlan -PolicyName "RedmondDialPlan"
 

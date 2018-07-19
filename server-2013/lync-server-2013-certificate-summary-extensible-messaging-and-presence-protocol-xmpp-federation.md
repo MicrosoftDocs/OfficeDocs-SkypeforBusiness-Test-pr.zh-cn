@@ -62,6 +62,6 @@ _**上一次修改主题：** 2015-03-09_
 #### 其他资源
 
 [为 Lync Server 2013 设置边缘证书](lync-server-2013-set-up-edge-certificates.md)  
-[Request-CsCertificate](request-cscertificate.md)  
+[Request-CsCertificate](https://docs.microsoft.com/en-us/powershell/module/skype/Request-CsCertificate)  
 [Set-CsCertificate](set-cscertificate.md)
 

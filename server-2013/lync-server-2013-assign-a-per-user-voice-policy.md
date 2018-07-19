@@ -73,7 +73,7 @@ _**上一次修改主题：** 2013-02-22_
 
 ## 向多个用户分配每用户语音策略
 
-  - 此命令向在 Active Directory 的 Finance OU 中拥有帐户的所有用户分配每用户语音策略 FinanceVoicePolicy。有关此命令中使用的 OU 参数的详细信息，请参阅 [Get-CsUser](get-csuser.md) cmdlet 的文档。
+  - 此命令向在 Active Directory 的 Finance OU 中拥有帐户的所有用户分配每用户语音策略 FinanceVoicePolicy。有关此命令中使用的 OU 参数的详细信息，请参阅 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) cmdlet 的文档。
     
         Get-CsUser -OU "ou=Finance,ou=North America,dc=litwareinc,dc=com" | Grant-CsVoicePolicy -PolicyName "FinanceVoicePolicy"
 
@@ -83,7 +83,7 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsVoicePolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关详细信息，请参阅 [Grant-CsVoicePolicy](grant-csvoicepolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Grant-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsVoicePolicy) cmdlet 的帮助主题。
 
 ## 另请参阅
 

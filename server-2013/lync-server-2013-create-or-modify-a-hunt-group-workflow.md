@@ -89,7 +89,7 @@ _**上一次修改主题：** 2013-09-11_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>全局外部访问策略适用于 响应组应用程序。您可以使用 Lync Server 控制面板或使用“Set-CsExternalAccessPolicy”cmdlet 将 EnableOutsideAccess 参数设置为 True。请记住，除非为全局策略设置分配站点或用户策略，否则这些设置适用于所有用户。因此，在针对响应组更改此设置之前，请确保联盟设置满足您的组织的要求。有关策略如何适用于用户的详细信息，请参阅 <a href="lync-server-2013-manage-external-access-policy-for-your-organization.md">在 Lync Server 2013 中管理组织的外部访问策略</a>。有关联盟设置的详细信息，请参阅 <a href="set-csexternalaccesspolicy.md">Set-CsExternalAccessPolicy</a>。</td>
+    <td>全局外部访问策略适用于 响应组应用程序。您可以使用 Lync Server 控制面板或使用“Set-CsExternalAccessPolicy”cmdlet 将 EnableOutsideAccess 参数设置为 True。请记住，除非为全局策略设置分配站点或用户策略，否则这些设置适用于所有用户。因此，在针对响应组更改此设置之前，请确保联盟设置满足您的组织的要求。有关策略如何适用于用户的详细信息，请参阅 <a href="lync-server-2013-manage-external-access-policy-for-your-organization.md">在 Lync Server 2013 中管理组织的外部访问策略</a>。有关联盟设置的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsExternalAccessPolicy">Set-CsExternalAccessPolicy</a>。</td>
     </tr>
     </tbody>
     </table>

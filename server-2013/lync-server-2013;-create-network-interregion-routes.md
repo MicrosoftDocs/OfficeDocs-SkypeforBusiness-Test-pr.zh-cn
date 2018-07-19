@@ -21,7 +21,7 @@ _**上一次修改主题：** 2012-10-20_
 
 有关使用网络区域间路由的详细信息，请参阅 Lync Server 命令行管理程序文档中的以下 cmdlet：
 
-  - [New-CsNetworkInterRegionRoute](new-csnetworkinterregionroute.md)
+  - [New-CsNetworkInterRegionRoute](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkInterRegionRoute)
 
   - [Get-CsNetworkInterRegionRoute](get-csnetworkinterregionroute.md)
 

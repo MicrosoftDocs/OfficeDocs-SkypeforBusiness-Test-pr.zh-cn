@@ -51,7 +51,7 @@ Grant-CsVoicePolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null</td>
 
 以下 cmdlet 使用用户标识和标记作用域：
 
-  - [Grant-CsClientPolicy](grant-csclientpolicy.md)
+  - [Grant-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsClientPolicy)
 
   - [Grant-CsConferencingPolicy](grant-csconferencingpolicy.md)
 
@@ -61,7 +61,7 @@ Grant-CsVoicePolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null</td>
 
   - [Grant-CsHostedVoicemailPolicy](grant-cshostedvoicemailpolicy.md)
 
-  - [Grant-CsVoicePolicy](grant-csvoicepolicy.md)
+  - [Grant-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsVoicePolicy)
 
 ## 另请参阅
 

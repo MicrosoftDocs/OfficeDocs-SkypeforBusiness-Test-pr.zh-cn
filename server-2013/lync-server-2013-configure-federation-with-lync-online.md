@@ -55,7 +55,7 @@ Move-CsUser : HostedMigration 错误: Error=(510), 描述=(没有为此用户的
 
     Import-PSSession $CSSession -AllowClobber
 
-有关如何建立与 Skype for Business Online 的远程 PowerShell 会话的详细信息，请参阅[使用 Windows PowerShell 连接到 Lync Online](connecting-to-skype-for-business-online-by-using-windows-powershell.md)。
+有关如何建立与 Skype for Business Online 的远程 PowerShell 会话的详细信息，请参阅[使用 Windows PowerShell 连接到 Lync Online](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
 
 有关如何使用 Skype for Business Online PowerShell 模块的详细信息，请参阅 [使用 Windows PowerShell 管理 Lync Online](skype-for-business-online-using-windows-powershell-to-manage-your-tenant.md)。
 

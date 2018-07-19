@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2015-06-22_
 
-许多用于管理 Skype for Business Online 的 Windows PowerShell cmdlet 要求您很具体地了解您试图管理的项目。例如，当您运行 [Set-CsUserAcp](set-csuseracp.md) cmdlet 时，您必须指明您试图管理哪个用户。这意义重大。除非您具体告诉 cmdlet 要管理的用户帐户，否则 **Set-CsUserAcp** cmdlet 不知道应修改哪个用户的音频会议信息。因此，当您每次运行 **Set-CsUserAcp** cmdlet 时，都需要包括 Identity 参数，后跟要修改的用户帐户的标识：
+许多用于管理 Skype for Business Online 的 Windows PowerShell cmdlet 要求您很具体地了解您试图管理的项目。例如，当您运行 [Set-CsUserAcp](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsUserAcp) cmdlet 时，您必须指明您试图管理哪个用户。这意义重大。除非您具体告诉 cmdlet 要管理的用户帐户，否则 **Set-CsUserAcp** cmdlet 不知道应修改哪个用户的音频会议信息。因此，当您每次运行 **Set-CsUserAcp** cmdlet 时，都需要包括 Identity 参数，后跟要修改的用户帐户的标识：
 
     Set-CsUserAcp -Identity "Ken Myer" -TollNumber "14255551298" -ParticipantPassCode 13761 -Domain "fabrikam.com" -Name "Fabrikam ACP"
 

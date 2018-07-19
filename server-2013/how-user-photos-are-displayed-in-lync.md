@@ -121,7 +121,7 @@ Lync 2010 引入了在 Lync 个人资料中包含显示给其他 Lync 用户的�
 
 ## Lync 2010 客户端如何获取图片
 
-在 Lync 2010 中，用户照片由通讯簿服务在服务器上管理。Lync 客户端首先查询服务器上通过通讯组列表扩展 Web 服务公开的通讯簿 Web 查询 (ABWQ) 服务。客户端接收图像文件，然后将其复制到用户的缓冲中，避免在每次需要显示图片时重新下载。查询返回的属性值也会存储在对应用户缓存的通讯簿服务条目中。通讯簿服务每隔 24 小时删除全部缓存的图像，也就是说服务器缓存中的新用户图像最多可能要经过 24 小时才能得到更新。您可以使用 [Update-CsAddressBook](update-csaddressbook.md) cmdlet 强制更新缓存。
+在 Lync 2010 中，用户照片由通讯簿服务在服务器上管理。Lync 客户端首先查询服务器上通过通讯组列表扩展 Web 服务公开的通讯簿 Web 查询 (ABWQ) 服务。客户端接收图像文件，然后将其复制到用户的缓冲中，避免在每次需要显示图片时重新下载。查询返回的属性值也会存储在对应用户缓存的通讯簿服务条目中。通讯簿服务每隔 24 小时删除全部缓存的图像，也就是说服务器缓存中的新用户图像最多可能要经过 24 小时才能得到更新。您可以使用 [Update-CsAddressBook](https://docs.microsoft.com/en-us/powershell/module/skype/Update-CsAddressBook) cmdlet 强制更新缓存。
 
 状态中包含的用户照片还有相关的哈希值，Lync 客户端利用此哈希值确定是否有更新的图像可用。在状态中使用的图像文件发生更改时，客户端将自动获得通知。
 
@@ -191,7 +191,7 @@ Lync 2013 为用户照片引入了高分辨率图像支持。Lync 2013 还支持
 
 通过客户端策略设置启用“显示网站中的图片”选项后，即可在 Lync 2013 中使用该选项。客户端版本必须高于 15.0.4535.1002，该版本安装有 [2013 年 11 月版 Lync 累积更新](http://go.microsoft.com/fwlink/p/?linkid=509908)。用户可能需要注销后再次登录才能在客户端中看到更改。
 
-您可以在 Lync Server 命令行管理程序 中运行 [Set-CsClientPolicy](set-csclientpolicy.md) 策略，将客户端策略设置为启用“显示网站中的图片”设置。以下示例 cmdlet 展示了如何在您的部署中以全局方式为所有用户设置此策略：
+您可以在 Lync Server 命令行管理程序 中运行 [Set-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPolicy) 策略，将客户端策略设置为启用“显示网站中的图片”设置。以下示例 cmdlet 展示了如何在您的部署中以全局方式为所有用户设置此策略：
 
     $pe=New-CsClientPolicyEntry -Name EnablePresencePhotoOptions -Value True
 

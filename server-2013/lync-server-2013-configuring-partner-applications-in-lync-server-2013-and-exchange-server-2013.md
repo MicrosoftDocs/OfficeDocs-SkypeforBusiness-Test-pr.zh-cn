@@ -43,7 +43,7 @@ _**上一次修改主题：** 2016-12-08_
 
     https://autodiscover.litwareinc.com/autodiscover/metadata/json/1
 
-在 Lync Server 中，将使用 [New-CsPartnerApplication](new-cspartnerapplication.md) cmdlet 配置合作伙伴应用程序。除了指定元数据 URI 之外，还应将应用程序信任级别设置为“完全”；这将允许 Exchange 表示自身和领域中的任何已授权用户。例如：
+在 Lync Server 中，将使用 [New-CsPartnerApplication](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsPartnerApplication) cmdlet 配置合作伙伴应用程序。除了指定元数据 URI 之外，还应将应用程序信任级别设置为“完全”；这将允许 Exchange 表示自身和领域中的任何已授权用户。例如：
 
     New-CsPartnerApplication -Identity Exchange -ApplicationTrustLevel Full -MetadataUrl "https://autodiscover.litwareinc.com/autodiscover/metadata/json/1"
 
