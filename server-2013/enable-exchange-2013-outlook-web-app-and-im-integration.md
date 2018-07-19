@@ -31,7 +31,7 @@ _**上一次修改主题：** 2012-10-19_
     
         New-CsTrustedApplicationPool -Identity <E14 CAS FQDN> -ThrottleAsServer $true -TreatAsAuthenticated $true -ComputerFQDN <E14 CAS FQDN> -Site <Site> -Registrar <Pool FQDN in the site> -RequiresReplication $false
     
-    有关详细信息，请参阅 Lync Server 2013 命令行管理程序文档中的 [New-CsTrustedApplicationPool](new-cstrustedapplicationpool.md)。
+    有关详细信息，请参阅 Lync Server 2013 命令行管理程序文档中的 [New-CsTrustedApplicationPool](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrustedApplicationPool)。
     
     应将 Exchange Server FQDN 配置为 Exchange OWA 证书使用者名称 (SN) 或使用者替代名称 (SAN)。
     
@@ -69,7 +69,7 @@ _**上一次修改主题：** 2012-10-19_
     
         New-CsTrustedApplication -ApplicationId <AppID String> -TrustedApplicationPoolFqdn <E14 CAS FQDN> -Port <available port number>
     
-    有关详细信息，请参阅 Lync Server 2013 命令行管理程序文档中的主题 [New-CsTrustedApplication](new-cstrustedapplication.md)。
+    有关详细信息，请参阅 Lync Server 2013 命令行管理程序文档中的主题 [New-CsTrustedApplication](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrustedApplication)。
 
 3.  运行“Enable-CsTopology”。
 

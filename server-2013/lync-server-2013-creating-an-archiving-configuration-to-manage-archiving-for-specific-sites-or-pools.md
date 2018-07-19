@@ -96,7 +96,7 @@ _**上一次修改主题：** 2013-02-23_
     
         New-CsArchivingConfiguration -Identity "site:Redmond" -EnableArchiving "ImOnly" -BlockOnArchiveFailure $True
 
-有关详细信息，请参阅 [New-CsArchivingConfiguration](new-csarchivingconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [New-CsArchivingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsArchivingConfiguration) cmdlet 的帮助主题。
 
 ## 另请参阅
 

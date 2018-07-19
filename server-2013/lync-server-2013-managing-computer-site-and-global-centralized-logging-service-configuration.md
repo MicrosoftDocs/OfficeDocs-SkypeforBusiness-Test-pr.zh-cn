@@ -40,7 +40,7 @@ _**上一次修改主题：** 2014-02-04_
 </table>
 
 
-可以使用 –Computers 参数在 [Search-CsClsLogging](search-csclslogging.md)、[Show-CsClsLogging](show-csclslogging.md)、[Start-CsClsLogging](start-csclslogging.md)、[Stop-CsClsLogging](stop-csclslogging.md)、[Sync-CsClsLogging](sync-csclslogging.md) 和 [Update-CsClsLogging](update-csclslogging.md) 命令执行期间定义单个计算机的作用域。–Computers 参数接受目标计算机的以逗号分隔的完全限定域名 (FQDN) 的列表。
+可以使用 –Computers 参数在 [Search-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Search-CsClsLogging)、[Show-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Show-CsClsLogging)、[Start-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Start-CsClsLogging)、[Stop-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Stop-CsClsLogging)、[Sync-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Sync-CsClsLogging) 和 [Update-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Update-CsClsLogging) 命令执行期间定义单个计算机的作用域。–Computers 参数接受目标计算机的以逗号分隔的完全限定域名 (FQDN) 的列表。
 
 <table>
 <thead>
@@ -66,7 +66,7 @@ _**上一次修改主题：** 2014-02-04_
 </thead>
 <tbody>
 <tr class="odd">
-<td>显示的命令可能包含其他章节中涵盖的参数和概念。示例命令旨在演示如何使用 <strong>–Identity</strong> 参数定义作用域，还包含了其他参数来保证完整性和指定作用域。有关 <strong>Set-CsClsConfiguration</strong> cmdlet 的详细信息，请参阅操作文档中的 <a href="set-csclsconfiguration.md">Set-CsClsConfiguration</a>。</td>
+<td>显示的命令可能包含其他章节中涵盖的参数和概念。示例命令旨在演示如何使用 <strong>–Identity</strong> 参数定义作用域，还包含了其他参数来保证完整性和指定作用域。有关 <strong>Set-CsClsConfiguration</strong> cmdlet 的详细信息，请参阅操作文档中的 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration">Set-CsClsConfiguration</a>。</td>
 </tr>
 </tbody>
 </table>
@@ -168,7 +168,7 @@ cmdlet **Get-CsClsConfiguration** 始终显示作为给定作用域的配置的�
     </thead>
     <tbody>
     <tr class="odd">
-    <td>利用 New-CsClsConfiguration，可以访问大量可选配置设置。有关配置选项的详细信息，请参阅 <a href="get-csclsconfiguration.md">Get-CsClsConfiguration</a> 和<a href="lync-server-2013-understanding-centralized-logging-service-configuration-settings.md">了解日志记录服务配置设置</a>。</td>
+    <td>利用 New-CsClsConfiguration，可以访问大量可选配置设置。有关配置选项的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsConfiguration">Get-CsClsConfiguration</a> 和<a href="lync-server-2013-understanding-centralized-logging-service-configuration-settings.md">了解日志记录服务配置设置</a>。</td>
     </tr>
     </tbody>
     </table>
@@ -216,8 +216,8 @@ cmdlet **Get-CsClsConfiguration** 始终显示作为给定作用域的配置的�
 #### 其他资源
 
 [使用 PowerShell 管理集中日志记录服务配置设置](lync-server-2013-managing-the-centralized-logging-service-configuration-settings.md)  
-[Set-CsClsConfiguration](set-csclsconfiguration.md)  
-[Get-CsClsConfiguration](get-csclsconfiguration.md)  
-[New-CsClsConfiguration](new-csclsconfiguration.md)  
-[Remove-CsClsConfiguration](remove-csclsconfiguration.md)
+[Set-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration)  
+[Get-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsConfiguration)  
+[New-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClsConfiguration)  
+[Remove-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsClsConfiguration)
 

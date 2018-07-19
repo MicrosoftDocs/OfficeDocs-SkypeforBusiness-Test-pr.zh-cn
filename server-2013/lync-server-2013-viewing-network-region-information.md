@@ -63,7 +63,7 @@ _**上一次修改主题：** 2013-02-23_
                            BWPolicyModality=Video;AlternatePath=True}
         NetworkRegionID  : Pacific Northwest
 
-有关详细信息，请参阅 [Get-CsNetworkRegion](get-csnetworkregion.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Get-CsNetworkRegion](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkRegionLink) cmdlet 的帮助主题。
 
 ## 另请参阅
 

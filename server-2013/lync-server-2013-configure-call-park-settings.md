@@ -105,6 +105,6 @@ _**上一次修改主题：** 2015-03-09_
 #### 其他资源
 
 [New-CsCpsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsCpsConfiguration)  
-[Set-CsCpsConfiguration](set-cscpsconfiguration.md)  
+[Set-CsCpsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCpsConfiguration)  
 [Get-CsSite](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsSite)
 

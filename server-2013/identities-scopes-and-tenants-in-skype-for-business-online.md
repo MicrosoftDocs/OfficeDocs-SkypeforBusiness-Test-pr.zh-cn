@@ -67,7 +67,7 @@ _**上一次修改主题：** 2015-06-22_
 
 如您所见，Ken Myer 允许与公共 IM 提供商进行通信。这是因为分配给他的每用户策略中的设置将替代全局策略中的设置。Pilar Ackerman 不能与公共 IM 提供商进行通信。这是因为她受全局策略管理，而全局策略禁止此类通信。
 
-每用户策略必须由 Office 365 支持人员为您创建。创建策略后，您可以使用合适的 **Grant-Cs** cmdlet（例如，[Grant-CsExternalAccessPolicy](grant-csexternalaccesspolicy.md)）将它们分配给用户。每用户策略易于识别，因为策略标识使用以标记 **prefix** 开头。例如：
+每用户策略必须由 Office 365 支持人员为您创建。创建策略后，您可以使用合适的 **Grant-Cs** cmdlet（例如，[Grant-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsExternalAccessPolicy)）将它们分配给用户。每用户策略易于识别，因为策略标识使用以标记 **prefix** 开头。例如：
 
     Identity : tag:AllowPublicIMCommunication
 

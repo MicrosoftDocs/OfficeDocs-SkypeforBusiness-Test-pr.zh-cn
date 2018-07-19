@@ -3998,7 +3998,7 @@
         href: lync-server-2013-managing-certificates-for-operational-processes.md
         items:
         - name: 在 Set-CsCertificate 中使用滚动分期 AV 和 OAuth 证书
-          href: lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-set-cscertificate.md
+          href: lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCertificate
       - name: 在 Lync Server 2013 中管理服务器到服务器身份验证 (Oauth) 和合作伙伴应用程序
         href: lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md
         items:
@@ -4188,7 +4188,7 @@
         - name: 用于通讯簿管理的 Windows PowerShell Cmdlet
           href: lync-server-2013-windows-powershell-cmdlets-for-address-book-management.md
           items:
-          - name: 用于通讯簿管理的 New-CsAddressBookConfiguration
+          - name: 用于通讯簿管理的 new-csaddressbookconfiguration
             href: lync-server-2013-new-csaddressbookconfiguration-for-address-book-management.md
           - name: 用于通讯簿管理的 Set-CsAddressBookConfiguration
             href: lync-server-2013-set-csaddressbookconfiguration-for-address-book-management.md
@@ -4208,7 +4208,7 @@
             href: lync-server-2013-set-csclientpolicy-for-address-book-management.md
           - name: 用于通讯簿管理的 Get-CsService
             href: lync-server-2013-get-csservice-for-address-book-management.md
-          - name: 用于通讯簿管理的 New-CsWebServiceConfiguration
+          - name: 用于通讯簿管理的 new-cswebserviceconfiguration
             href: lync-server-2013-new-cswebserviceconfiguration-for-address-book-management.md
           - name: 用于通讯簿管理的 Get-CsWebServiceConfiguration
             href: lync-server-2013-get-cswebserviceconfiguration-for-address-book-management.md
@@ -4833,9 +4833,9 @@
       - name: Lync Server 2013 中的域准备所做的更改
         href: lync-server-2013-changes-made-by-domain-preparation.md
       - name: Lync Server 2013 中的 Grant-CsSetupPermission 所做的更改
-        href: lync-server-2013-changes-made-by-grant-cssetuppermission.md
+        href: lync-server-2013-changes-made-by-https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsSetupPermission
       - name: Lync Server 2013 中的 Grant-CsOUPermission 所做的更改
-        href: lync-server-2013-changes-made-by-grant-csoupermission.md
+        href: lync-server-2013-changes-made-by-https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsOUPermission
   - name: Lync Server 命令行管理程序
     href: https://docs.microsoft.com/en-us/powershell/module/skype/
   - name: 术语表

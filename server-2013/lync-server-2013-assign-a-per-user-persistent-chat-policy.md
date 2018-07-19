@@ -129,7 +129,7 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsPersistentChatPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关更多信息，请参阅[Grant-CsPersistentChatPolicy](grant-cspersistentchatpolicy.md) cmdlet 的帮助主题。
+有关更多信息，请参阅[Grant-CsPersistentChatPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsPersistentChatPolicy) cmdlet 的帮助主题。
 
 ## 另请参阅
 

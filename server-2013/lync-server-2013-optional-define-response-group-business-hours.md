@@ -69,7 +69,7 @@ _**上一次修改主题：** 2012-11-01_
 
 3.  对于要定义的每个唯一时间范围，请运行：
     
-        $x = New-CsRgsTimeRange [-Name <name of time range>] -OpenTime <time when business hours begin> -CloseTime <time when business hours end>
+        $x = new-csrgstimerange [-Name <name of time range>] -OpenTime <time when business hours begin> -CloseTime <time when business hours end>
     
     要创建使用定义的范围的工作时间集合，请运行：
     
@@ -91,6 +91,6 @@ _**上一次修改主题：** 2012-11-01_
 
 #### 其他资源
 
-[New-CsRgsTimeRange](new-csrgstimerange.md)  
-[New-CsRgsHoursOfBusiness](new-csrgshoursofbusiness.md)
+[new-csrgstimerange](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsTimeRange)  
+[New-CsRgsHoursOfBusiness](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsHoursOfBusiness)
 

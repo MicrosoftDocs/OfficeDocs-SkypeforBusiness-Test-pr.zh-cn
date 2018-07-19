@@ -73,5 +73,5 @@ _**上一次修改主题：** 2012-11-01_
     
       - **IsLocal** 指示托管服务提供商使用的代理服务器是否包含在您的 Lync Server 拓扑中。
     
-    有关使用此 cmdlet 的详细信息，请参阅操作文档中的 [New-CsHostingProvider](new-cshostingprovider.md)。
+    有关使用此 cmdlet 的详细信息，请参阅操作文档中的 [New-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsHostingProvider)。
 

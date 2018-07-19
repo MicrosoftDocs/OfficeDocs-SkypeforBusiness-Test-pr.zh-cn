@@ -23,5 +23,5 @@ _**上一次修改主题：** 2014-02-05_
 
     Remove-CsPersistentChatMessage -Identity "atl-persistentchat-001.litwareinc.com\ITChatRoom" -UserUri "sip:kenmyer@litwareinc.com" -ReplaceMessage "This message is no longer available."
 
-有关详细信息，请参阅 [Remove-CsPersistentChatMessage](remove-cspersistentchatmessage.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Remove-CsPersistentChatMessage](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsPersistentChatMessage) cmdlet 的帮助主题。
 

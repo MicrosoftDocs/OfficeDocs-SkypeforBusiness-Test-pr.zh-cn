@@ -157,9 +157,9 @@ Lync Server 2013 存档策略包括以下内容：
 
 通过 Lync Server 2013 命令行管理程序，您可以使用 cmdlet 实现 Lync Server 2013 控制面板中未提供的选项。这些选项包括：
 
-  - **存档重复消息**。有关详细信息，请参阅操作文档中的 [New-CsArchivingConfiguration](new-csarchivingconfiguration.md) 和 [Set-CsArchivingConfiguration](set-csarchivingconfiguration.md)。
+  - **存档重复消息**。有关详细信息，请参阅操作文档中的 [New-CsArchivingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsArchivingConfiguration) 和 [Set-CsArchivingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsArchivingConfiguration)。
 
-  - **导出存档数据**。有关详细信息，请参阅 [Export-CsArchivingData](export-csarchivingdata.md)
+  - **导出存档数据**。有关详细信息，请参阅 [Export-CsArchivingData](https://docs.microsoft.com/en-us/powershell/module/skype/Export-CsArchivingData)
 
 ## 如何访问存档数据？
 

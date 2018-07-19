@@ -124,5 +124,5 @@ _**上一次修改主题：** 2015-03-09_
     
         Set-CsDeviceUpdateConfiguration -Identity "site:Redmond" -LogCleanupTimeOfDay 03:00
 
-有关详细信息，请参阅 [Set-CsDeviceUpdateConfiguration](set-csdeviceupdateconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Set-CsDeviceUpdateConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsDeviceUpdateConfiguration) cmdlet 的帮助主题。
 

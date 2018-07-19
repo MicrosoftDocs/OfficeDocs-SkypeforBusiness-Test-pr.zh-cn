@@ -81,5 +81,5 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsExternalAccessPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关详细信息，请参阅 [Grant-CsExternalAccessPolicy](grant-csexternalaccesspolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Grant-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsExternalAccessPolicy) cmdlet 的帮助主题。
 

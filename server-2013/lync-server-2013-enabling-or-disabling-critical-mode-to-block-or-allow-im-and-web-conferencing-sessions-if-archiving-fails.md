@@ -68,7 +68,7 @@ _**上一次修改主题：** 2013-02-23_
     
         Set-CsArchivingConfiguration -Identity "site:Redmond" -BlockOnArchiveFailure $False
 
-有关更多信息，请参阅[Set-CsArchivingConfiguration](set-csarchivingconfiguration.md) cmdlet 的帮助主题。
+有关更多信息，请参阅[Set-CsArchivingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsArchivingConfiguration) cmdlet 的帮助主题。
 
 ## 另请参阅
 

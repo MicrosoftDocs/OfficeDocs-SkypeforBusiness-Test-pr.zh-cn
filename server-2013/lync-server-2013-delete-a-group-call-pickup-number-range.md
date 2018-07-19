@@ -39,7 +39,7 @@ _**上一次修改主题：** 2013-01-30_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>有关更多选项的详细信息，请参阅 <a href="remove-cscallparkorbit.md">Remove-CsCallParkOrbit</a>。</td>
+    <td>有关更多选项的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsCallParkOrbit">Remove-CsCallParkOrbit</a>。</td>
     </tr>
     </tbody>
     </table>
@@ -53,6 +53,6 @@ _**上一次修改主题：** 2013-01-30_
 
 #### 其他资源
 
-[Remove-CsCallParkOrbit](remove-cscallparkorbit.md)  
-[Get-CsCallParkOrbit](get-cscallparkorbit.md)
+[Remove-CsCallParkOrbit](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsCallParkOrbit)  
+[Get-CsCallParkOrbit](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsCallParkOrbit)
 

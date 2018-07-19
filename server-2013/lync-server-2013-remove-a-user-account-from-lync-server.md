@@ -59,7 +59,7 @@ _**上一次修改主题：** 2013-02-22_
     
     在此命令运行后，没有办法重新启用该帐户及其以前的设置。您将需要使用 Enable-CsUser cmdlet 为 Ken Myer 创建全新的帐户。
 
-有关详细信息，请参阅 [Disable-CsUser](disable-csuser.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Disable-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Disable-CsUser) cmdlet 的帮助主题。
 
 ## 另请参阅
 

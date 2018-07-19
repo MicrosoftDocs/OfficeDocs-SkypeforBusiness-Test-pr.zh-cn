@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-03-09_
 
 当安装 Microsoft Lync Server 2013 时，将为您创建一个全局的 CDR 配置设置集合。管理员还可以在站点作用域内创建自定义设置。无论何时使用这些站点作用域的设置，它们都优先于全局设置。例如，如果为 Redmond 站点创建了站点作用域的设置，则这些设置（不是全局设置）将用于管理 Redmond 中的 CDR。
 
-您可以使用 Lync Server 控制面板或 [New-CsCdrConfiguration](new-cscdrconfiguration.md) cmdlet 创建 CDR 配置设置。可以使用 Lync Server 控制面板或 [Set-CsCdrConfiguration](set-cscdrconfiguration.md) cmdlet 修改现有设置。如果使用 Lync Server 控制面板创建或修改设置，可使用以下选项：
+您可以使用 Lync Server 控制面板或 [New-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsCdrConfiguration) cmdlet 创建 CDR 配置设置。可以使用 Lync Server 控制面板或 [Set-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCdrConfiguration) cmdlet 修改现有设置。如果使用 Lync Server 控制面板创建或修改设置，可使用以下选项：
 
 
 <table>
@@ -73,7 +73,7 @@ _**上一次修改主题：** 2015-03-09_
 </thead>
 <tbody>
 <tr class="odd">
-<td>New-CsCdrConfiguration 和 Set-CsCdrConfiguration cmdlet 包括 Lync Server 控制面板中未提供的其他选项。有关详细信息，请参阅 <a href="new-cscdrconfiguration.md">New-CsCdrConfiguration</a> 和 <a href="set-cscdrconfiguration.md">Set-CsCdrConfiguration</a> 帮助主题。</td>
+<td>New-CsCdrConfiguration 和 Set-CsCdrConfiguration cmdlet 包括 Lync Server 控制面板中未提供的其他选项。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsCdrConfiguration">New-CsCdrConfiguration</a> 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCdrConfiguration">Set-CsCdrConfiguration</a> 帮助主题。</td>
 </tr>
 </tbody>
 </table>
@@ -119,5 +119,5 @@ _**上一次修改主题：** 2015-03-09_
     
         New-CsCdrConfiguration -Identity "site:Redmond" -KeepCallDetailForDays 30 -KeepErrorReportForDays 90
 
-有关详细信息，请参阅 [New-CsCdrConfiguration](new-cscdrconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [New-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsCdrConfiguration) cmdlet 的帮助主题。
 

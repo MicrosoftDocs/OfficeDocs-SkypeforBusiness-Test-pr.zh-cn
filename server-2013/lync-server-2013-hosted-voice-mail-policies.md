@@ -85,7 +85,7 @@ _**上一次修改主题：** 2012-10-01_
 </thead>
 <tbody>
 <tr class="odd">
-<td>托管 Exchange UM 服务的租户管理员将提供 Destination 和 Organization 属性设置的所需值。要配置策略，必须运行 New-CsHostedVoicemailPolicy cmdlet 或使用 Set-CsHostedVoicemailPolicy cmdlet 来修改一个存在的策略（例如，全局策略）。</td>
+<td>托管 Exchange UM 服务的租户管理员将提供 Destination 和 Organization 属性设置的所需值。要配置策略，必须运行 New-CsHostedVoicemailPolicy cmdlet 或使用 set-cshostedvoicemailpolicy cmdlet 来修改一个存在的策略（例如，全局策略）。</td>
 </tr>
 </tbody>
 </table>
@@ -95,7 +95,7 @@ _**上一次修改主题：** 2012-10-01_
 
   - New-CsHostedVoicemailPolicy
 
-  - Set-CsHostedVoicemailPolicy
+  - set-cshostedvoicemailpolicy
 
   - Get-CsHostedVoicemailPolicy
 

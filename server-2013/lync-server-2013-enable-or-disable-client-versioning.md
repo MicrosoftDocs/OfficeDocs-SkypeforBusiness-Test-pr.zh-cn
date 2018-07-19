@@ -61,5 +61,5 @@ _**上一次修改主题：** 2013-02-23_
     
         Set-CsClientVersionConfiguration -Identity "site:Redmond" -Enabled $True
 
-有关详细信息，请参阅 [Set-CsClientVersionConfiguration](set-csclientversionconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Set-CsClientVersionConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientVersionConfiguration) cmdlet 的帮助主题。
 

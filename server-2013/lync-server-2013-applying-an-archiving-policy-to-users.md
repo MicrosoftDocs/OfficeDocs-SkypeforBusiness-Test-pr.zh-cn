@@ -84,7 +84,7 @@ _**上一次修改主题：** 2013-02-23_
     
         Grant-CsArchivingPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关详细信息，请参阅 [Grant-CsArchivingPolicy](grant-csarchivingpolicy.md) cmdlet 文档。
+有关详细信息，请参阅 [Grant-CsArchivingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsArchivingPolicy) cmdlet 文档。
 
 ## 另请参阅
 

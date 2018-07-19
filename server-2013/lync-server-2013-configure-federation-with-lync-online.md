@@ -63,5 +63,5 @@ Move-CsUser : HostedMigration 错误: Error=(510), 描述=(没有为此用户的
 
 #### 其他资源
 
-[New-CsHostingProvider](new-cshostingprovider.md)
+[New-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsHostingProvider)
 

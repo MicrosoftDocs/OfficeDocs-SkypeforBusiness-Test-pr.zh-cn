@@ -23,7 +23,7 @@ _**上一次修改主题：** 2014-02-05_
 
   - 月汇总，以及过去六个月的趋势汇总（仅限系统使用情况）。
 
-注意，您可以使用 [Get-CsReportingConfiguration](get-csreportingconfiguration.md) cmdlet 返回访问 Lync Server 2013 监控报告使用的 URL：
+注意，您可以使用 [Get-CsReportingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsReportingConfiguration) cmdlet 返回访问 Lync Server 2013 监控报告使用的 URL：
 
     Get-CsReportingConfiguration
 

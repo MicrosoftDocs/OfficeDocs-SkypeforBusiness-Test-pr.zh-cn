@@ -39,5 +39,5 @@ _**上一次修改主题：** 2013-02-20_
     
         Clear-CsDeviceUpdateFile -Identity "service:WebServer:atl-cs-001.litwareinc.com"
 
-有关详细信息，请参阅 [Clear-CsDeviceUpdateFile](clear-csdeviceupdatefile.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Clear-CsDeviceUpdateFile](https://docs.microsoft.com/en-us/powershell/module/skype/Clear-CsDeviceUpdateFile) cmdlet 的帮助主题。
 

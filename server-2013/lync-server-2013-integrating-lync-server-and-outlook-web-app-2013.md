@@ -41,7 +41,7 @@ Lync Server 2013 可以自动发现任何托管 SipName UM 拨号计划的 Excha
 </thead>
 <tbody>
 <tr class="odd">
-<td>这是因为 Lync Server 拓扑现在将具有同一计算机的两个条目：自动发现的条目和手动添加的条目。若要解决此问题并使 Outlook Web App 再次工作，请使用 Windows PowerShell 来移除服务器的受信任池和受信任应用程序条目。有关详细信息，请参阅 <a href="remove-cstrustedapplicationpool.md">Remove-CsTrustedApplicationPool</a> 和 <a href="remove-cstrustedapplication.md">Remove-CsTrustedApplication</a> cmdlet 的帮助主题。</td>
+<td>这是因为 Lync Server 拓扑现在将具有同一计算机的两个条目：自动发现的条目和手动添加的条目。若要解决此问题并使 Outlook Web App 再次工作，请使用 Windows PowerShell 来移除服务器的受信任池和受信任应用程序条目。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrustedApplicationPool">Remove-CsTrustedApplicationPool</a> 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrustedApplication">Remove-CsTrustedApplication</a> cmdlet 的帮助主题。</td>
 </tr>
 </tbody>
 </table>

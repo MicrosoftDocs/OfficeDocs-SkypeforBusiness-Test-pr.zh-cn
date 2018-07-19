@@ -431,7 +431,7 @@ _**上一次修改主题：** 2013-09-11_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>要针对提示使用音频文件，请使用 <strong>Import-CsRgsAudioFile</strong> cmdlet。有关详细信息，请参阅 <a href="import-csrgsaudiofile.md">Import-CsRgsAudioFile</a>。</td>
+    <td>要针对提示使用音频文件，请使用 <strong>Import-CsRgsAudioFile</strong> cmdlet。有关详细信息，请参阅 <a href="https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile">Import-CsRgsAudioFile</a>。</td>
     </tr>
     </tbody>
     </table>
@@ -441,7 +441,7 @@ _**上一次修改主题：** 2013-09-11_
     
         $qid = (Get-CsRgsQueue -Name "Help Desk").Identity
     
-    有关创建队列的详细信息，请参阅 [New-CsRgsQueue](new-csrgsqueue.md)。
+    有关创建队列的详细信息，请参阅 [New-CsRgsQueue](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsQueue)。
 
 5.  定义在工作时间打开工作流时要执行的默认操作，并将其保存在变量中。在命令行中运行：
     
@@ -466,7 +466,7 @@ _**上一次修改主题：** 2013-09-11_
 
 6.  如果要定义工作时间和假日，则需要在创建或修改工作流之前创建工作时间和假日。有关详细信息，请参阅 [（可选）在 Lync Server 2013 中定义响应组工作时间](lync-server-2013-optional-define-response-group-business-hours.md)和 [（可选）定义响应组假日设置](lync-server-2013-optional-define-response-group-holiday-sets.md)。
 
-7.  如果您希望在工作时间之外或在假日收到的呼叫带有提示，请使用 **New-CsRgsPrompt** cmdlet 定义该提示，并使用 **New-CsRgsCallAction** 定义要在提示后执行的操作。有关详细信息，请参阅 [New-CsRgsPrompt](new-csrgsprompt.md) 和 [New-CsRgsCallAction](new-csrgscallaction.md)。
+7.  如果您希望在工作时间之外或在假日收到的呼叫带有提示，请使用 **New-CsRgsPrompt** cmdlet 定义该提示，并使用 **New-CsRgsCallAction** 定义要在提示后执行的操作。有关详细信息，请参阅 [New-CsRgsPrompt](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsPrompt) 和 [New-CsRgsCallAction](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsCallAction)。
 
 8.  检索 Lync Server 响应组服务的服务名称，并为其分配一个变量。在命令行中运行：
     
@@ -501,7 +501,7 @@ _**上一次修改主题：** 2013-09-11_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>有关其他可选参数的详细信息，请参阅 <a href="new-csrgsworkflow.md">New-CsRgsWorkflow</a> 或 <a href="set-csrgsworkflow.md">Set-CsRgsWorkflow</a></td>
+    <td>有关其他可选参数的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsWorkflow">New-CsRgsWorkflow</a> 或 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRgsWorkflow">Set-CsRgsWorkflow</a></td>
     </tr>
     </tbody>
     </table>
@@ -519,8 +519,8 @@ _**上一次修改主题：** 2013-09-11_
 
 #### 其他资源
 
-[New-CsRgsWorkflow](new-csrgsworkflow.md)  
-[Set-CsRgsWorkflow](set-csrgsworkflow.md)  
-[New-CsRgsPrompt](new-csrgsprompt.md)  
-[New-CsRgsCallAction](new-csrgscallaction.md)
+[New-CsRgsWorkflow](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsWorkflow)  
+[Set-CsRgsWorkflow](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRgsWorkflow)  
+[New-CsRgsPrompt](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsPrompt)  
+[New-CsRgsCallAction](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsCallAction)
 

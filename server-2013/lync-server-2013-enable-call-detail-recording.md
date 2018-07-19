@@ -79,7 +79,7 @@ _**上一次修改主题：** 2013-02-23_
     
         Get-CsCdrConfiguration | Set-CsCdrConfiguration "site:Redmond" -EnableCDR $True
 
-有关详细信息，请参阅 [Set-CsCdrConfiguration](set-cscdrconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Set-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCdrConfiguration) cmdlet 的帮助主题。
 
 ## 另请参阅
 

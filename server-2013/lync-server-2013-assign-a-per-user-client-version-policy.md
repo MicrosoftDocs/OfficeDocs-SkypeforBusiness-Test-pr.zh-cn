@@ -135,7 +135,7 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsClientVersionPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关更多信息，请参阅[Grant-CsClientVersionPolicy](grant-csclientversionpolicy.md) cmdlet 的帮助主题。
+有关更多信息，请参阅[Grant-CsClientVersionPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsClientVersionPolicy) cmdlet 的帮助主题。
 
 ## 另请参阅
 

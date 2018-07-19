@@ -33,7 +33,7 @@ _**上一次修改主题：** 2013-07-11_
 
 3.  从 Lync Server 命令行管理程序 命令行，通过运行以下命令来为将启用被动身份验证的每个控制器、企业池和 Standard Edition 服务器创建新的 Web 服务配置：
     
-        New-CsWebServiceConfiguration -Identity "Service:WebServer:LyncPool01.contoso.com" -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
+        new-cswebserviceconfiguration -Identity "Service:WebServer:LyncPool01.contoso.com" -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
     
 >[!NOTE]  
 > WsFedPassiveMetadataUri FQDN 的值是您的 AD FS 2.0 服务器的联合身份验证服务名称。可通过从导航窗格右键单击“服务”，然后选择“编辑联合身份验证服务属性”来在 AD FS 2.0 管理控制台中找到联合身份验证服务名称值。

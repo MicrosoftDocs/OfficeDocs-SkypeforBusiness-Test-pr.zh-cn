@@ -67,5 +67,5 @@ _**上一次修改主题：** 2013-02-23_
     
         et-CsPinPolicy | Where-Object {$_.AllowCommonPatterns -eq $True} | Remove-CsPinPolicy
 
-有关详细信息，请参阅 [Remove-CsPinPolicy](remove-cspinpolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Remove-CsPinPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsPinPolicy) cmdlet 的帮助主题。
 

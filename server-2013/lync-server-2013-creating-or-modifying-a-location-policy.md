@@ -45,7 +45,7 @@ _**上一次修改主题：** 2012-11-01_
         
           - **可选** 将不提示用户输入位置。发出呼叫而未包含位置信息时，紧急服务提供商将应答该呼叫并询问位置。
         
-          - **免责声明**   除用户不能在未输入位置信息的情况下消除提示外，此选项与“必需”相同。用户仍可完成紧急呼叫，但不输入信息将无法完成其他呼叫。此外，还将向用户显示免责声明文本，提醒用户拒绝输入位置信息的后果。要设置免责声明文本，必须使用 Lync Server 命令行管理程序运行 **Set-CsLocationPolicy** cmdlet 或带 EnhancedEmergencyServiceDisclaimer 参数的 **New-CsLocationPolicy** cmdlet。有关详细信息，请参阅 Lync Server 命令行管理程序文档中的 [Set-CsLocationPolicy](set-cslocationpolicy.md) 或 [New-CsLocationPolicy](new-cslocationpolicy.md)。
+          - **免责声明**   除用户不能在未输入位置信息的情况下消除提示外，此选项与“必需”相同。用户仍可完成紧急呼叫，但不输入信息将无法完成其他呼叫。此外，还将向用户显示免责声明文本，提醒用户拒绝输入位置信息的后果。要设置免责声明文本，必须使用 Lync Server 命令行管理程序运行 **Set-CsLocationPolicy** cmdlet 或带 EnhancedEmergencyServiceDisclaimer 参数的 **New-CsLocationPolicy** cmdlet。有关详细信息，请参阅 Lync Server 命令行管理程序文档中的 [Set-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsLocationPolicy) 或 [New-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsLocationPolicy)。
             
             <table>
             <thead>

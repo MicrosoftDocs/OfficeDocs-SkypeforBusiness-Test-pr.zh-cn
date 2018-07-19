@@ -104,7 +104,7 @@ _**上一次修改主题：** 2013-02-23_
         LastPinChangeTime : 9/25/2012 1:35:03 PM
         PinExpirationTime :
 
-有关详细信息，请参阅 [Get-CsConferenceDisclaimer](get-csconferencedisclaimer.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Get-CsConferenceDisclaimer](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsConferenceDisclaimer) cmdlet 的帮助主题。
 
 ## 另请参阅
 

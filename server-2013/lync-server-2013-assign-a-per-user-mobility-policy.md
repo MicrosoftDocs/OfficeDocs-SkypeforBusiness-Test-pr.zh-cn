@@ -129,7 +129,7 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsMobilityPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关详细信息，请参阅 [Grant-CsMobilityPolicy](grant-csmobilitypolicy.md)。
+有关详细信息，请参阅 [Grant-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsMobilityPolicy)。
 
 ## 另请参阅
 

@@ -21,7 +21,7 @@ Lync Server 提供了许多用于管理和配置通讯簿服务的 Windows Power
 
 ## 本部分内容
 
-  - [用于通讯簿管理的 New-CsAddressBookConfiguration](lync-server-2013-new-csaddressbookconfiguration-for-address-book-management.md)
+  - [用于通讯簿管理的 new-csaddressbookconfiguration](lync-server-2013-new-csaddressbookconfiguration-for-address-book-management.md)
 
   - [用于通讯簿管理的 Set-CsAddressBookConfiguration](lync-server-2013-set-csaddressbookconfiguration-for-address-book-management.md)
 
@@ -41,7 +41,7 @@ Lync Server 提供了许多用于管理和配置通讯簿服务的 Windows Power
 
   - [用于通讯簿管理的 Get-CsService](lync-server-2013-get-csservice-for-address-book-management.md)
 
-  - [用于通讯簿管理的 New-CsWebServiceConfiguration](lync-server-2013-new-cswebserviceconfiguration-for-address-book-management.md)
+  - [用于通讯簿管理的 new-cswebserviceconfiguration](lync-server-2013-new-cswebserviceconfiguration-for-address-book-management.md)
 
   - [用于通讯簿管理的 Get-CsWebServiceConfiguration](lync-server-2013-get-cswebserviceconfiguration-for-address-book-management.md)
 

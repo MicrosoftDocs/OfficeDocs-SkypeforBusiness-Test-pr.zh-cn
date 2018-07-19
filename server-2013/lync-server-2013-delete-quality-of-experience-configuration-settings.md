@@ -21,7 +21,7 @@ _**上一次修改主题：** 2013-02-23_
 
 请注意，您还可以“删除”全局设置。但将不会实际删除全局设置。不过，该集合中的所有属性将重置为其默认值。例如，在 QoE 配置设置的集合中启用了默认清除功能。假定您修改了全局集合，这样就会禁用清除功能。如果稍后删除全局设置，则会将这些属性全部重置为其默认值。在这种情况下，这意味着又重新启用清除功能。
 
-可以通过使用 Lync Server 控制面板或[Remove-CsQoEConfiguration](remove-csqoeconfiguration.md) cmdlet 删除 QoE 配置设置。
+可以通过使用 Lync Server 控制面板或[Remove-CsQoEConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsQoEConfiguration) cmdlet 删除 QoE 配置设置。
 
 ## 使用 Lync Server 控制面板 删除 QoE 配置设置
 
@@ -57,5 +57,5 @@ _**上一次修改主题：** 2013-02-23_
     
         Get-CsQoEConfiguration | Where-Object {$_.EnableQoE -eq $False} | Remove-CsQoEConfiguration
 
-有关详细信息，请参阅 [Remove-CsQoEConfiguration](remove-csqoeconfiguration.md)。
+有关详细信息，请参阅 [Remove-CsQoEConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsQoEConfiguration)。
 

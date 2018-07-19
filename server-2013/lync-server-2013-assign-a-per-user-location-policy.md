@@ -137,5 +137,5 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsLocationPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关详细信息，请参阅 [Grant-CsLocationPolicy](grant-cslocationpolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Grant-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsLocationPolicy) cmdlet 的帮助主题。
 

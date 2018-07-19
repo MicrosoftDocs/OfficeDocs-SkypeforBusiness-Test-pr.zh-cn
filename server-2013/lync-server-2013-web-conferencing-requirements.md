@@ -61,9 +61,9 @@ Lync Server 2013 支持在直接附加存储 (DAS) 或存储区域网络 (SAN)�
 
 可以使用以下设置管理如何存储会议内容：
 
-  - **ContentGracePeriod**，位于 [Set-CsConferencingConfiguration](set-csconferencingconfiguration.md) 中，设置 Web 会议内容在会议结束后将在服务器中保留的时间。
+  - **ContentGracePeriod**，位于 [Set-CsConferencingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsConferencingConfiguration) 中，设置 Web 会议内容在会议结束后将在服务器中保留的时间。
 
-  - **MaxContentStorageMb**，位于 [Set-CsConferencingConfiguration](set-csconferencingconfiguration.md) 中，设置在单个会议期间允许用于存储内容的最大文件空间量。
+  - **MaxContentStorageMb**，位于 [Set-CsConferencingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsConferencingConfiguration) 中，设置在单个会议期间允许用于存储内容的最大文件空间量。
 
 **MaxUploadFileSizeMb** 不限制用于 Lync Web App 的文件上载设置。Lync Web App 的文件大小上载限制设置为大约 30MB，并由以下 IIS web.config 文件控制：/DataCollabWeb/Int\[Ext\]/Handler/web.config。若要配置用于 Lync Web App 的文件大小上载限制，请更新 web.config 文件中的 `maxRequestLength` 和 `maxAllowedContentLength`，如下所示。
 

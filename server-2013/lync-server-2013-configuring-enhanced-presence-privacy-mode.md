@@ -54,6 +54,6 @@ _**上一次修改主题：** 2016-12-08_
 #### 其他资源
 
 [Get-CsPrivacyConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsPrivacyConfiguration)  
-[New-CsPrivacyConfiguration](new-csprivacyconfiguration.md)  
+[New-CsPrivacyConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsPrivacyConfiguration)  
 [Set-CsPrivacyConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsPrivacyConfiguration)
 

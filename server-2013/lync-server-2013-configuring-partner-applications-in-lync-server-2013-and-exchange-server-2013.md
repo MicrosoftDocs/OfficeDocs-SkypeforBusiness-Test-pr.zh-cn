@@ -49,7 +49,7 @@ _**上一次修改主题：** 2016-12-08_
 
 此外，您还可通过复制和修改在 Lync Server 2013 服务器到服务器身份验证文档中找到的脚本代码来创建合作伙伴应用程序。有关详细信息，请参阅文章[在 Lync Server 2013 中管理服务器到服务器身份验证 (Oauth) 和合作伙伴应用程序](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md)。
 
-如果您已成功为 Lync Server 和 Exchange 配置了合作伙伴应用程序，则意味着您同样已成功配置了这两个产品之间的服务器到服务器身份验证。Lync Server 2013 包含一条 Windows PowerShell cmdlet [Test-CsExStorageConnectivity](test-csexstorageconnectivity.md)，这使您可验证是否已正确配置服务器到服务器身份验证，以及 Lync Server 存储服务是否可连接到 Exchange 2013。此 cmdlet 是通过连接到 Exchange 2013 用户的邮箱、将某个项目写入用户的对话历史记录文件夹，然后（可选）删除该项目来进行验证的。
+如果您已成功为 Lync Server 和 Exchange 配置了合作伙伴应用程序，则意味着您同样已成功配置了这两个产品之间的服务器到服务器身份验证。Lync Server 2013 包含一条 Windows PowerShell cmdlet [Test-CsExStorageConnectivity](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsExStorageConnectivity)，这使您可验证是否已正确配置服务器到服务器身份验证，以及 Lync Server 存储服务是否可连接到 Exchange 2013。此 cmdlet 是通过连接到 Exchange 2013 用户的邮箱、将某个项目写入用户的对话历史记录文件夹，然后（可选）删除该项目来进行验证的。
 
 若要测试 Lync Server 2013 和 Exchange 2013 的集成，请在 Lync Server 命令行管理程序中运行一条类似于以下命令的命令：
 
