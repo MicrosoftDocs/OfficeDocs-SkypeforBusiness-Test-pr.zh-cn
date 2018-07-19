@@ -25,7 +25,7 @@ _**上一次修改主题：** 2016-12-08_
 </thead>
 <tbody>
 <tr class="odd">
-<td>对于任何给定的范围（站点、全局、池或计算机），您可以在任何给定时间最多运行两个方案。若要确定当前正在运行的方案，请使用 Windows PowerShell 和 <a href="get-csclsscenario.md">Get-CsClsScenario</a>。通过使用 Windows PowerShell 和 <a href="set-csclsscenario.md">Set-CsClsScenario</a>，您可以动态更改正在运行的方案。可以在日志记录会话期间修改正在运行的方案，以调整或优化所收集的数据以及源提供程序。</td>
+<td>对于任何给定的范围（站点、全局、池或计算机），您可以在任何给定时间最多运行两个方案。若要确定当前正在运行的方案，请使用 Windows PowerShell 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsScenario">Get-CsClsScenario</a>。通过使用 Windows PowerShell 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsScenario">Set-CsClsScenario</a>，您可以动态更改正在运行的方案。可以在日志记录会话期间修改正在运行的方案，以调整或优化所收集的数据以及源提供程序。</td>
 </tr>
 </tbody>
 </table>
@@ -67,7 +67,7 @@ _**上一次修改主题：** 2016-12-08_
 
 1.  启动 Lync Server 命令行管理程序：依次单击“开始”、“所有程序”和“Microsoft Lync Server 2013”，然后单击“Lync Server 命令行管理程序”。
 
-2.  若要为日志记录会话创建新的方案，请使用 [New-CsClsProvider](new-csclsprovider.md) 并定义方案的名称（即，对方案进行唯一标识的方式）。从 WPP 中选择日志记录格式的类型（即，Windows 软件跟踪预处理器和其默认值）、EventLog（即，Windows 事件日志格式）或 IISLog（即，基于 IIS 日志文件格式的 ASCII 格式文件）。然后，定义级别（如本主题中的“日志记录级别”下所述）和标志（如本主题中的“标志”下所述）。
+2.  若要为日志记录会话创建新的方案，请使用 [New-CsClsProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClsProvider) 并定义方案的名称（即，对方案进行唯一标识的方式）。从 WPP 中选择日志记录格式的类型（即，Windows 软件跟踪预处理器和其默认值）、EventLog（即，Windows 事件日志格式）或 IISLog（即，基于 IIS 日志文件格式的 ASCII 格式文件）。然后，定义级别（如本主题中的“日志记录级别”下所述）和标志（如本主题中的“标志”下所述）。
     
     对于此示例方案，我们将 LyssProvider 用作示例提供程序变量。
     

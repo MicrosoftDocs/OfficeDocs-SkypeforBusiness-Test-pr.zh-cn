@@ -67,5 +67,5 @@ _**上一次修改主题：** 2013-02-23_
     
         Get-CsClientVersionConfiguration | Set-CsClientVersionConfiguration  -Enabled $False
 
-有关详细信息，请参阅 [New-CsClientVersionConfiguration](new-csclientversionconfiguration.md) 和 [Set-CsClientVersionConfiguration](set-csclientversionconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [New-CsClientVersionConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientVersionConfiguration) 和 [Set-CsClientVersionConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientVersionConfiguration) cmdlet 的帮助主题。
 

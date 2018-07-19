@@ -119,7 +119,7 @@ _**上一次修改主题：** 2013-02-22_
 
 ## 将每用户持久聊天策略分配到多个用户
 
-  - 此命令可用于将每用户持久聊天策略 RedmondUsersPersistentChatPolicy 分配到为 IT 部门服务的所有用户。有关此命令中使用的 LdapFilter 参数的更多信息，请参阅 [Get-CsUser](get-csuser.md) cmdlet 的文档。
+  - 此命令可用于将每用户持久聊天策略 RedmondUsersPersistentChatPolicy 分配到为 IT 部门服务的所有用户。有关此命令中使用的 LdapFilter 参数的更多信息，请参阅 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) cmdlet 的文档。
     
         Get-CsUser -LdapFilter "Department=IT" | Grant-CsPersistentChatPolicy -PolicyName "RedmondUsersPersistentChatPolicy"
 
@@ -129,7 +129,7 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsPersistentChatPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关更多信息，请参阅[Grant-CsPersistentChatPolicy](grant-cspersistentchatpolicy.md) cmdlet 的帮助主题。
+有关更多信息，请参阅[Grant-CsPersistentChatPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsPersistentChatPolicy) cmdlet 的帮助主题。
 
 ## 另请参阅
 

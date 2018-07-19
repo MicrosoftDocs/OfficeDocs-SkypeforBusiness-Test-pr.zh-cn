@@ -72,7 +72,7 @@ _**上一次修改主题：** 2013-02-23_
 
 ## 启用仅清除导出的存档数据功能
 
-  - 如果仅清除已使用 [Export-CsArchivingData](export-csarchivingdata.md) cmdlet 导出至数据文件的存档记录，您还必须将 PurgeExportedArchivesOnly 属性设置为 True ($True)。例如：
+  - 如果仅清除已使用 [Export-CsArchivingData](https://docs.microsoft.com/en-us/powershell/module/skype/Export-CsArchivingData) cmdlet 导出至数据文件的存档记录，您还必须将 PurgeExportedArchivesOnly 属性设置为 True ($True)。例如：
     
         Set-CsArchivingConfiguration -Identity "site:Redmond" -EnablePurging $True -PurgeExportedArchivesOnly $True
     
@@ -84,7 +84,7 @@ _**上一次修改主题：** 2013-02-23_
     
         Set-CsArchivingConfiguration -Identity "site:Redmond" -EnablePurging $False
 
-有关详细信息，包括清除存档数据的其他选项，请参阅 [Set-CsArchivingConfiguration](set-csarchivingconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，包括清除存档数据的其他选项，请参阅 [Set-CsArchivingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsArchivingConfiguration) cmdlet 的帮助主题。
 
 ## 另请参阅
 

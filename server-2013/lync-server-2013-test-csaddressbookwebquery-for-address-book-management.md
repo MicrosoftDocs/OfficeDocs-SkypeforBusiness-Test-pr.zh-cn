@@ -31,5 +31,5 @@ _**上一次修改主题：** 2012-11-01_
 
 #### 其他资源
 
-[Test-CsAddressBookWebQuery](test-csaddressbookwebquery.md)
+[Test-CsAddressBookWebQuery](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsAddressBookWebQuery)
 

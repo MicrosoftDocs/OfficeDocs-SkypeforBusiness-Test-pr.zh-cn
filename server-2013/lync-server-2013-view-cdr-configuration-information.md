@@ -17,7 +17,7 @@ _**上一次修改主题：** 2013-02-23_
 
 利用呼叫详细信息记录 (CDR)，可以跟踪对等即时消息会话、IP 语音 (VoIP) 电话呼叫和会议呼叫等的使用情况。此使用情况数据包含有关呼叫者、被叫方、呼叫时间及通话时长的信息。
 
-在安装 Microsoft Lync Server 2013 时，系统将为您创建一个 CDR 配置设置的全局集合。管理员还可以选择创建可应用于各个站点的自定义设置集合。可使用 Lync Server 控制面板或 [Get-CsCdrConfiguration](get-cscdrconfiguration.md) cmdlet 查看您组织中使用的 CDR 配置设置。
+在安装 Microsoft Lync Server 2013 时，系统将为您创建一个 CDR 配置设置的全局集合。管理员还可以选择创建可应用于各个站点的自定义设置集合。可使用 Lync Server 控制面板或 [Get-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsCdrConfiguration) cmdlet 查看您组织中使用的 CDR 配置设置。
 
 ## 使用 Lync Server 控制面板查看 CDR 配置信息
 
@@ -44,5 +44,5 @@ _**上一次修改主题：** 2013-02-23_
         KeepErrorReportForDays : 60
         PurgeHourOfDay         : 2
 
-有关详细信息，请参阅 [Get-CsCdrConfiguration](get-cscdrconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Get-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsCdrConfiguration) cmdlet 的帮助主题。
 

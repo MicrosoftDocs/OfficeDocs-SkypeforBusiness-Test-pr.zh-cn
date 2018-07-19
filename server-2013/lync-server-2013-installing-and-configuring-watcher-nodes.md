@@ -146,7 +146,7 @@ _**上一次修改主题：** 2015-03-09_
 </thead>
 <tbody>
 <tr class="odd">
-<td>管理员还可手动运行综合事务，无需使用或安装 Operations Manager。有关各种 Test-Cs cmdlet 的详细信息，请参阅 <a href="lync-server-2013-cmdlets-index.md">Lync Server 2013 Cmdlet 索引</a>。</td>
+<td>管理员还可手动运行综合事务，无需使用或安装 Operations Manager。有关各种 Test-Cs cmdlet 的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/?view=skype-ps">Lync Server 2013 Cmdlet 索引</a>。</td>
 </tr>
 </tbody>
 </table>

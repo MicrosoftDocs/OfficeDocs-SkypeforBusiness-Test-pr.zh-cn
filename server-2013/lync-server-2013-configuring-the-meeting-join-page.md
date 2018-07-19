@@ -53,7 +53,7 @@ _**上一次修改主题：** 2015-03-09_
     
         Get-CsWebServiceConfiguration
 
-3.  运行以下命令，其中的参数设置为 True 或 False，具体取决于您的首选项（有关此 cmdlet 的参数的详细信息，请参阅 Lync Server 2013 命令行管理程序 文档中的 [Set-CsWebServiceConfiguration](set-cswebserviceconfiguration.md)：
+3.  运行以下命令，其中的参数设置为 True 或 False，具体取决于您的首选项（有关此 cmdlet 的参数的详细信息，请参阅 Lync Server 2013 命令行管理程序 文档中的 [Set-CsWebServiceConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsWebServiceConfiguration)：
     
         Set-CsWebServiceConfiguration -Identity global -ShowJoinUsingLegacyClientLink $True
 
@@ -61,5 +61,5 @@ _**上一次修改主题：** 2015-03-09_
 
 #### 其他资源
 
-[Set-CsWebServiceConfiguration](set-cswebserviceconfiguration.md)
+[Set-CsWebServiceConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsWebServiceConfiguration)
 

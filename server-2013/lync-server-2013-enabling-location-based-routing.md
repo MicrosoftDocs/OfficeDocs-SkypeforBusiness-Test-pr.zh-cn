@@ -31,7 +31,7 @@ _**上一次修改主题：** 2015-03-09_
 
     New-CsVoiceRoutingPolicy -Identity <voice routing policy ID> -Name <voice routing policy name> -PstnUsages <usages>
 
-有关详细信息，请参阅 [New-CsVoiceRoutingPolicy](new-csvoiceroutingpolicy.md)。
+有关详细信息，请参阅 [New-CsVoiceRoutingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsVoiceRoutingPolicy)。
 
 对于此示例，下表和 Windows PowerShell 命令阐释了两个语音路由策略以及此方案中定义的相关联的 PSTN 用法。出于说明目的，该表中仅包括特定于基于位置的路由的设置。
 
@@ -123,7 +123,7 @@ _**上一次修改主题：** 2015-03-09_
 
     New-CsTrunkConfiguration -Identity < trunk configuration ID>
 
-有关详细信息，请参阅 [New-CsTrunkConfiguration](new-cstrunkconfiguration.md)。
+有关详细信息，请参阅 [New-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrunkConfiguration)。
 
 对于此示例，以下 Windows PowerShell 命令说明了如何为此方案中定义的部署中的每个 Trunk 创建一个 Trunk 配置。
 
@@ -132,23 +132,23 @@ _**上一次修改主题：** 2015-03-09_
     New-CsTrunkConfiguration -Identity Service:PstnGateway:"<Trunk 3 DEL-PBX>"
     New-CsTrunkConfiguration -Identity Service:PstnGateway:"<Trunk 4 HYD-PBX>"
 
-为每个 Trunk 配置 Trunk 配置之后，您可以使用 Lync ServerWindows PowerShell 命令 Set-CsTrunkConfiguration 为必须强制实施路由限制的 Trunk 启用基于位置的路由。为将呼叫路由到 PSTN 网关的 Trunk 启用基于位置的路由以将呼叫路由到 PSTN，并关联网关所在的网络站点。
+为每个 Trunk 配置 Trunk 配置之后，您可以使用 Lync ServerWindows PowerShell 命令 set-cstrunkconfiguration 为必须强制实施路由限制的 Trunk 启用基于位置的路由。为将呼叫路由到 PSTN 网关的 Trunk 启用基于位置的路由以将呼叫路由到 PSTN，并关联网关所在的网络站点。
 
-    Set-CsTrunkConfiguration -Identity <trunk configuration ID> -EnableLocationRestriction $true -NetworkSiteID <site ID>
+    set-cstrunkconfiguration -Identity <trunk configuration ID> -EnableLocationRestriction $true -NetworkSiteID <site ID>
 
-有关详细信息，请参阅 [New-CsTrunkConfiguration](new-cstrunkconfiguration.md)。
+有关详细信息，请参阅 [New-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrunkConfiguration)。
 
 在此示例中，为与德里和海得拉巴中的 PSTN 网关相关联的每个 Trunk 启用了基于位置的路由：
 
-    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 1 DEL-GW -EnableLocationRestriction $true -NetworkSiteID "Delhi"
-    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 2 HYD-GW -EnableLocationRestriction $true -NetworkSiteID "Hyderabad"
+    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 1 DEL-GW -EnableLocationRestriction $true -NetworkSiteID "Delhi"
+    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 2 HYD-GW -EnableLocationRestriction $true -NetworkSiteID "Hyderabad"
 
   
 
 不要为不会将呼叫路由到 PSTN 的 Trunk 启用基于位置的路由；然而，您仍然需要将该 Trunk 与系统所在的网络站点相关联，因为必须为通过此 Trunk 达到连接的终结点的 PSTN 呼叫强制实施基于位置的路由限制。对于此示例，没有为与德里和海得拉巴中的 PBX 系统相关联的每个 Trunk 启用基于位置的路由：
 
-    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 3 DEL-PBX -EnableLocationRestriction $false -NetworkSiteID "Delhi"
-    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 4 HYD-PBX -EnableLocationRestriction $false -NetworkSiteID "Hyderabad"
+    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 3 DEL-PBX -EnableLocationRestriction $false -NetworkSiteID "Delhi"
+    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 4 HYD-PBX -EnableLocationRestriction $false -NetworkSiteID "Hyderabad"
 
   
 与不会将呼叫路由到 PSTN 的系统（如 PBX）相连接的终结点具有类似限制，因为为用户的 Lync 终结点启用了基于位置的路由。这意味着这些用户不管位置如何都能够向 Lync 发出呼叫并接收来自 Lync 用户的呼叫。此外，他们也能够从不会将呼叫路由到 PSTN 网络的其他系统（如连接到不同 PBX 的终结点）发出呼叫和应答来自这些系统的呼叫。所有牵涉 PSTN 终结点的入站呼叫、出站呼叫和呼叫转接都将强制实施基于位置的路由。此类呼叫必须仅使用定义为此类系统的本地网关的 PSTN 网关。
@@ -201,7 +201,7 @@ _**上一次修改主题：** 2015-03-09_
 
     Set-CsVoicePolicy -Identity <voice policy ID> -PreventPSTNTollBypass <$true|$false>
 
-有关详细信息，请参阅 [New-CsVoicePolicy](new-csvoicepolicy.md)。
+有关详细信息，请参阅 [New-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsVoicePolicy)。
 
 对于此示例，下表和 Windows PowerShell 命令说明了如何通过此方案中定义的德里和海得拉巴语音策略防止 PSTN 收费绕路情形。出于说明目的，该表中仅包括特定于基于位置的路由的设置。
 
@@ -249,7 +249,7 @@ _**上一次修改主题：** 2015-03-09_
 
     Set-CsRoutingConfiguration -EnableLocationBasedRouting $true
 
-有关详细信息，请参阅 [Set-CsRoutingConfiguration](set-csroutingconfiguration.md)。
+有关详细信息，请参阅 [Set-CsRoutingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRoutingConfiguration)。
 
 <table>
 <thead>

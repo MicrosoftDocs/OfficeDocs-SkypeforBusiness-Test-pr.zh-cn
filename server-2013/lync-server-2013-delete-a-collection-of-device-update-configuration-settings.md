@@ -36,5 +36,5 @@ _**上一次修改主题：** 2013-02-20_
     
         Get-CsDeviceUpdateConfiguration | Where-Object {$_.LogCleanUpInterval -gt "10.00:00:00" | Remove-CsDeviceUpdateConfiguration
 
-有关详细信息，请参阅 [Remove-CsDeviceUpdateConfiguration](remove-csdeviceupdateconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Remove-CsDeviceUpdateConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsDeviceUpdateConfiguration) cmdlet 的帮助主题。
 

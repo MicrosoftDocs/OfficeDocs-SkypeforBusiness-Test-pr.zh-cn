@@ -31,5 +31,5 @@ _**上一次修改主题：** 2012-11-01_
 
 #### 其他资源
 
-[Set-CsWebServiceConfiguration](set-cswebserviceconfiguration.md)
+[Set-CsWebServiceConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsWebServiceConfiguration)
 

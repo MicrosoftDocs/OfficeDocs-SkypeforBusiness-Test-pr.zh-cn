@@ -72,7 +72,7 @@ _**上一次修改主题：** 2014-02-10_
 
   - 会议内容（例如 PowerPoint 演示文稿）、白板内容、投票数据
 
-要迁移已在会议中共享的内容，请使用 Move-CsUser cmdlet 的 MoveMeetingContent 参数。有关使用此 cmdlet 的详细信息，请参阅 Lync Server 2013 cmdlet 文档中的 [Move-CsUser](move-csuser.md)。
+要迁移已在会议中共享的内容，请使用 Move-CsUser cmdlet 的 MoveMeetingContent 参数。有关使用此 cmdlet 的详细信息，请参阅 Lync Server 2013 cmdlet 文档中的 [Move-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Move-CsUser)。
 
 ## 从 Office Communications Server 2007 R2 迁移会议
 

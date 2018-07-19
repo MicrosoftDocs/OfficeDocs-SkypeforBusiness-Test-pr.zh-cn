@@ -83,5 +83,5 @@ _**上一次修改主题：** 2013-02-23_
     
         Get-CsDeviceUpdateRule -Filter "service:WebServer:atl-cs-001.litwareinc.com*"
 
-有关详细信息，请参阅 [Get-CsDeviceUpdateRule](get-csdeviceupdaterule.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Get-CsDeviceUpdateRule](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsDeviceUpdateRule) cmdlet 的帮助主题。
 

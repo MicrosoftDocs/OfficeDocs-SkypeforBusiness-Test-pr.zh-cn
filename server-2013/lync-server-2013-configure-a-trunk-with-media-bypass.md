@@ -120,7 +120,7 @@ _**上一次修改主题：** 2016-12-08_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>如果禁用此选项而选中“启用媒体旁路”选项，则需要其他设置。如果中继对等方不支持接收来自中介服务器的 SIP REFER 请求且启用了媒体旁路，则为了支持媒体旁路的适当条件，还必须运行 <strong>Set-CsTrunkConfiguration</strong> cmdlet 以禁用活动呼叫和保留呼叫的 RTCP。有关详细信息，请参阅 <a href="lync-server-2013-lync-server-management-shell.md">Lync Server 命令行管理程序</a>文档。<br />
+    <td>如果禁用此选项而选中“启用媒体旁路”选项，则需要其他设置。如果中继对等方不支持接收来自中介服务器的 SIP REFER 请求且启用了媒体旁路，则为了支持媒体旁路的适当条件，还必须运行 <strong>set-cstrunkconfiguration</strong> cmdlet 以禁用活动呼叫和保留呼叫的 RTCP。有关详细信息，请参阅 <a href="lync-server-2013-lync-server-management-shell.md">Lync Server 命令行管理程序</a>文档。<br />
     此外，如果您希望转移的呼叫传输支持媒体旁路，并且网关不支持 SIP REFER 请求，则您可以选择“允许使用第三方呼叫控制的引用”。</td>
     </tr>
     </tbody>

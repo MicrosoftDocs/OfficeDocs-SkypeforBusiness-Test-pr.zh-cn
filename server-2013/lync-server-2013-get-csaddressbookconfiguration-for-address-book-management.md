@@ -37,5 +37,5 @@ Get-CsAddressBookConfiguration cmdlet 返回有关已存在的配置的信息。
 
 #### 其他资源
 
-[Get-CsAddressBookConfiguration](get-csaddressbookconfiguration.md)
+[Get-CsAddressBookConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsAddressBookConfiguration)
 

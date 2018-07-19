@@ -25,7 +25,7 @@ Microsoft Lync Server 2013 使管理员可以选择将即时消息和 Web 会议
 </thead>
 <tbody>
 <tr class="odd">
-<td>要完全禁用 Lync 对话存档，您还必须禁用 Lync 对话历史记录。有关详细信息，请参阅以下主题：<a href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">在 Lync Server 2013 中管理内部通信和外部通信的存档</a>、<a href="new-csclientpolicy.md">New-CsClientPolicy</a> 和 <a href="set-csclientpolicy.md">Set-CsClientPolicy</a>。</td>
+<td>要完全禁用 Lync 对话存档，您还必须禁用 Lync 对话历史记录。有关详细信息，请参阅以下主题：<a href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">在 Lync Server 2013 中管理内部通信和外部通信的存档</a>、<a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientPolicy">New-CsClientPolicy</a> 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPolicy">Set-CsClientPolicy</a>。</td>
 </tr>
 </tbody>
 </table>

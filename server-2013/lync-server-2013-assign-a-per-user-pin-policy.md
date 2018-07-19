@@ -125,7 +125,7 @@ _**上一次修改主题：** 2013-02-22_
 
 ## 为多个用户分配每用户 PIN 策略
 
-  - 以下命令为工作于 Redmond 市的所有用户分配每用户 PIN 策略 RedmondUsersPinPolicy。有关此命令中使用的 LdapFilter 参数的详细信息，请参阅[Get-CsUser](get-csuser.md)。
+  - 以下命令为工作于 Redmond 市的所有用户分配每用户 PIN 策略 RedmondUsersPinPolicy。有关此命令中使用的 LdapFilter 参数的详细信息，请参阅[Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser)。
     
         Get-CsUser -LdapFilter "l=Redmond" | Grant-CsPinPolicy -PolicyName "RedmondUsersPinPolicy"
 
@@ -135,7 +135,7 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsPinPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关详细信息，请参阅 [Grant-CsPinPolicy](grant-cspinpolicy.md)。
+有关详细信息，请参阅 [Grant-CsPinPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsPinPolicy)。
 
 ## 另请参阅
 

@@ -37,5 +37,5 @@ _**上一次修改主题：** 2013-02-23_
         ConfiguredIPAddress   :
         ConfiguredIPv6Address :
 
-有关详细信息，请参阅 [Get-CsNetworkInterface](get-csnetworkinterface.md)。
+有关详细信息，请参阅 [Get-CsNetworkInterface](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkInterface)。
 

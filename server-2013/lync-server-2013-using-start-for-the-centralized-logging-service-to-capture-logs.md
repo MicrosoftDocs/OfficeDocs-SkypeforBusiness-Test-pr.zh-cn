@@ -57,7 +57,7 @@ _**上一次修改主题：** 2013-02-21_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>AlwaysOn 方案没有默认持续时间。此方案将一直运行到您通过 <strong>Stop-CsClsLogging</strong> cmdlet 明确停止它为止。有关详细信息，请参阅 <a href="stop-csclslogging.md">Stop-CsClsLogging</a>。对于所有其他方案，默认持续时间为 4 小时。</td>
+    <td>AlwaysOn 方案没有默认持续时间。此方案将一直运行到您通过 <strong>Stop-CsClsLogging</strong> cmdlet 明确停止它为止。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Stop-CsClsLogging">Stop-CsClsLogging</a>。对于所有其他方案，默认持续时间为 4 小时。</td>
     </tr>
     </tbody>
     </table>
@@ -92,7 +92,7 @@ _**上一次修改主题：** 2013-02-21_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>在任意时间可以在任何给定计算机上运行总共两个方案。如果命令是全局范围的，则部署中的所有计算机将运行方案。要启动第三个方案，必须在您要运行新方案的计算机、池、站点或全局范围上停止日志记录。如果已启动全局范围，则可以在一个或多个计算机和池上停止一种方案或同时停止两种方案的日志记录。有关管理哪些方案正在运行的详细信息，请参阅<a href="lync-server-2013-using-stop-for-the-centralized-logging-service.md">对集中日志记录服务使用 Stop 命令</a>和 <a href="stop-csclslogging.md">Stop-CsClsLogging</a>。</td>
+    <td>在任意时间可以在任何给定计算机上运行总共两个方案。如果命令是全局范围的，则部署中的所有计算机将运行方案。要启动第三个方案，必须在您要运行新方案的计算机、池、站点或全局范围上停止日志记录。如果已启动全局范围，则可以在一个或多个计算机和池上停止一种方案或同时停止两种方案的日志记录。有关管理哪些方案正在运行的详细信息，请参阅<a href="lync-server-2013-using-stop-for-the-centralized-logging-service.md">对集中日志记录服务使用 Stop 命令</a>和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Stop-CsClsLogging">Stop-CsClsLogging</a>。</td>
     </tr>
     </tbody>
     </table>

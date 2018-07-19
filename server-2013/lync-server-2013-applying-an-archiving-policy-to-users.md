@@ -74,7 +74,7 @@ _**上一次修改主题：** 2013-02-23_
 
 ## 向多个用户分配每用户存档策略
 
-  - 此命令向帐户驻留在注册器池 atl-cs-001.litwareinc.com 的所有用户分配每用户存档策略 RedmondArchivingPolicy。有关此命令中使用的 Filter 参数的详细信息，请参阅 [Get-CsUser](get-csuser.md) cmdlet 文档。
+  - 此命令向帐户驻留在注册器池 atl-cs-001.litwareinc.com 的所有用户分配每用户存档策略 RedmondArchivingPolicy。有关此命令中使用的 Filter 参数的详细信息，请参阅 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) cmdlet 文档。
     
         Get-CsUser -Filter {RegistrarPool -eq "atl-cs-001.litwareinc.com"} | Grant-CsArchivingPolicy -PolicyName "RedmondArchivingPolicy"
 
@@ -84,7 +84,7 @@ _**上一次修改主题：** 2013-02-23_
     
         Grant-CsArchivingPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关详细信息，请参阅 [Grant-CsArchivingPolicy](grant-csarchivingpolicy.md) cmdlet 文档。
+有关详细信息，请参阅 [Grant-CsArchivingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsArchivingPolicy) cmdlet 文档。
 
 ## 另请参阅
 

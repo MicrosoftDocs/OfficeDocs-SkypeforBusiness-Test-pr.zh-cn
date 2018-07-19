@@ -63,7 +63,7 @@ Lync Server 2013 支持用于所有 边缘服务器服务的 IPv6 寻址。如�
 
 服务器到服务器身份验证由请求并应用于部署中所有服务器的全局证书管理。此证书负责验证 Lync Server 2013 中服务器的身份以及验证 Exchange 2013 和 Microsoft SharePoint Server 2013 的身份。有关服务器到服务器身份验证的工作原理的详细信息，请参阅 [在 Lync Server 2013 中管理服务器到服务器身份验证 (Oauth) 和合作伙伴应用程序](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md)。音频/视频身份验证过程和服务器到服务器身份验证过程之间一个非常重要的差异是身份验证或令牌的生存期。对于音频/视频身份验证，身份验证将在 8 小时之后过期。服务器到服务器身份验证的生存期为 24 小时。您必须针对每种证书类型进行相应规划。
 
-Lync Server 2013 的新增功能是在当前证书过期前提供替换的音频/视频身份验证证书和服务器到服务器身份验证证书。之后将使用新证书生成新的令牌或新的身份验证请求，但保留旧证书来验证当前会话和身份验证。此功能适用于有效阻止令牌和证书过期导致的几乎所有故障。有关此功能以及其配置方式的详细信息，请参阅 [在 Set-CsCertificate 中使用滚动分期 AV 和 OAuth 证书](lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-set-cscertificate.md)
+Lync Server 2013 的新增功能是在当前证书过期前提供替换的音频/视频身份验证证书和服务器到服务器身份验证证书。之后将使用新证书生成新的令牌或新的身份验证请求，但保留旧证书来验证当前会话和身份验证。此功能适用于有效阻止令牌和证书过期导致的几乎所有故障。有关此功能以及其配置方式的详细信息，请参阅 [在 Set-CsCertificate 中使用滚动分期 AV 和 OAuth 证书](lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCertificate)
 
 ## 减少对基于 Cookie 的关联的依赖
 

@@ -127,7 +127,7 @@ _**上一次修改主题：** 2013-02-22_
 
 ## 将每用户位置策略分配给多个用户
 
-  - 此命令将每用户位置策略 AccountingDepartmentLocationPolicy 分配给就职于 Accounting 部门的所有用户。有关此命令中使用的 LdapFilter 参数的详细信息，请参阅 [Get-CsUser](get-csuser.md) cmdlet 的文档。
+  - 此命令将每用户位置策略 AccountingDepartmentLocationPolicy 分配给就职于 Accounting 部门的所有用户。有关此命令中使用的 LdapFilter 参数的详细信息，请参阅 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) cmdlet 的文档。
     
         Get-CsUser -LdapFilter "Department=Accounting" | Grant-CsLocationPolicy -PolicyName "AccountingDepartmentLocationPolicy"
 
@@ -137,5 +137,5 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsLocationPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关详细信息，请参阅 [Grant-CsLocationPolicy](grant-cslocationpolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Grant-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsLocationPolicy) cmdlet 的帮助主题。
 

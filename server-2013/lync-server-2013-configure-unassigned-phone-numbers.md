@@ -27,7 +27,7 @@ _**上一次修改主题：** 2012-11-01_
 </thead>
 <tbody>
 <tr class="odd">
-<td>在配置未分配号码表之前，必须已定义一个或多个通知，或已设置 Exchange UM 自动助理。有关创建通知的详细信息，请参阅<a href="lync-server-2013-create-an-announcement.md">在 Lync Server 2013 中创建通知</a>。若要查看是否已配置 Exchange UM 设置，请运行 <strong>Get-CsExUmContact</strong> cmdlet。有关详细信息，请参阅 <a href="get-csexumcontact.md">Get-CsExUmContact</a>。</td>
+<td>在配置未分配号码表之前，必须已定义一个或多个通知，或已设置 Exchange UM 自动助理。有关创建通知的详细信息，请参阅<a href="lync-server-2013-create-an-announcement.md">在 Lync Server 2013 中创建通知</a>。若要查看是否已配置 Exchange UM 设置，请运行 <strong>Get-CsExUmContact</strong> cmdlet。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsExUmContact">Get-CsExUmContact</a>。</td>
 </tr>
 </tbody>
 </table>

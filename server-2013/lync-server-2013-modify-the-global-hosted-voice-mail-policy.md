@@ -15,17 +15,17 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2012-09-24_
 
-全局托管的语音邮件策略随 Lync Server 2013 一同安装。可以根据需要修改该策略，但不能重命名或删除它。若要修改全局策略，您可以针对特定的部署使用 Set-CsHostedVoicemailPolicy cmdlet 将参数设置为相应的值。
+全局托管的语音邮件策略随 Lync Server 2013 一同安装。可以根据需要修改该策略，但不能重命名或删除它。若要修改全局策略，您可以针对特定的部署使用 set-cshostedvoicemailpolicy cmdlet 将参数设置为相应的值。
 
-有关 [Set-CsHostedVoicemailPolicy](set-cshostedvoicemailpolicy.md) cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档。
+有关 [set-cshostedvoicemailpolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsHostedVoicemailPolicy) cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档。
 
 ## 修改全局托管语音邮件策略
 
 1.  启动 Lync Server 命令行管理程序：依次单击“开始”、“所有程序”和“Microsoft Lync Server 2013”，然后单击“Lync Server 命令行管理程序”。
 
-2.  运行 Set-CsHostedVoicemailPolicy cmdlet，为您的环境设置全局策略参数。例如，运行：
+2.  运行 set-cshostedvoicemailpolicy cmdlet，为您的环境设置全局策略参数。例如，运行：
     
-        Set-CsHostedVoicemailPolicy -Destination ExUM.fabrikam.com -Organization "corp1.litwareinc.com"
+        set-cshostedvoicemailpolicy -Destination ExUM.fabrikam.com -Organization "corp1.litwareinc.com"
     
     由于该命令不指定策略的 Identity 参数，因此，Windows PowerShell 命令行接口会在全局托管的语音邮件策略中设置以下值：
     
@@ -48,5 +48,5 @@ _**上一次修改主题：** 2012-09-24_
     
         $a = Get-CsHostedVoicemailPolicy
         $a.Organization += ",corp3.litwareinc.com"
-        Set-CsHostedVoicemailPolicy -Organization $a.Organization
+        set-cshostedvoicemailpolicy -Organization $a.Organization
 

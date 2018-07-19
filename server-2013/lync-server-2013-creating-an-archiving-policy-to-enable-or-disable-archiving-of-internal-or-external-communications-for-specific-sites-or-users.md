@@ -108,7 +108,7 @@ _**上一次修改主题：** 2013-02-23_
     
         New-CsArchivingPolicy -Identity "site:Redmond" -ArchiveInternal $True -ArchiveExternal $True
 
-有关详细信息，请参阅 [New-CsArchivingPolicy](new-csarchivingpolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [New-CsArchivingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsArchivingPolicy) cmdlet 的帮助主题。
 
 ## 另请参阅
 

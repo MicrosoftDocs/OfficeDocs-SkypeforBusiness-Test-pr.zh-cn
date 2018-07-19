@@ -17,7 +17,7 @@ _**上一次修改主题：** 2013-07-29_
 
 在配置将充当观察程序节点的计算机之后，您必须：
 
-1.  创建可供这些观察程序节点使用的测试帐户。如果您使用的是 Negotiate 身份验证方法，则必须同时使用 [Set-CsTestUserCredential](set-cstestusercredential.md) cmdlet 来启用这些测试帐户，以在观察程序节点上使用。
+1.  创建可供这些观察程序节点使用的测试帐户。如果您使用的是 Negotiate 身份验证方法，则必须同时使用 [Set-CsTestUserCredential](https://docs.microsoft.com/en-us/powershell/module/skype/) cmdlet 来启用这些测试帐户，以在观察程序节点上使用。
 
 2.  更新观察程序节点配置设置。
 

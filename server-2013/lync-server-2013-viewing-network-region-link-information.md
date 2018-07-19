@@ -61,7 +61,7 @@ _**上一次修改主题：** 2013-02-23_
         NetworkRegionID1    : Pacific Northwest
         NetworkRegionID2    : California
 
-有关详细信息，请参阅[Get-CsNetworkRegionLink](get-csnetworkregionlink.md)。
+有关详细信息，请参阅[Get-CsNetworkRegionLink](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkRegionLink)。
 
 ## 另请参阅
 

@@ -73,7 +73,7 @@ _**上一次修改主题：** 2013-02-23_
     
         New-CsUCPhoneConfiguration -Identity "site:Redmond" -EnforcePhoneLock $True -MinPhonePinLength 8
 
-有关详细信息，请参阅 [New-CsUCPhoneConfiguration](new-csucphoneconfiguration.md)。
+有关详细信息，请参阅 [New-CsUCPhoneConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsUCPhoneConfiguration)。
 
 ## 另请参阅
 

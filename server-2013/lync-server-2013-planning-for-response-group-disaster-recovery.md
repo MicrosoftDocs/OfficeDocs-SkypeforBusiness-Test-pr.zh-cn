@@ -87,7 +87,7 @@ _**上一次修改主题：** 2015-03-09_
 </table>
 
 
-只能为每个池定义一组应用程序级别的 响应组配置设置。这些设置包括默认的保持音乐配置、默认的保持音乐音频文件、代理回响宽限期和调用上下文配置。若要查看这些配置设置，请运行 **Get-CsRgsConfiguration** cmdlet。有关 **Get-CsRgsConfiguration** cmdlet 的详细信息，请参阅 [Get-CsRgsConfiguration](get-csrgsconfiguration.md)。
+只能为每个池定义一组应用程序级别的 响应组配置设置。这些设置包括默认的保持音乐配置、默认的保持音乐音频文件、代理回响宽限期和调用上下文配置。若要查看这些配置设置，请运行 **Get-CsRgsConfiguration** cmdlet。有关 **Get-CsRgsConfiguration** cmdlet 的详细信息，请参阅 [Get-CsRgsConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsRgsConfiguration)。
 
 通过将 **Import-CsRgsConfiguration** cmdlet 与 –ReplaceExistingSettings 参数结合使用可将这些应用程序级别的设置从一个池传送至其他池，但这样做会覆盖目标池中的设置。
 

@@ -63,5 +63,5 @@ _**上一次修改主题：** 2013-02-23_
     
         Get-CsConferencingPolicy | Where-Object {$_.AllowExternalUsersToRecordMeetings -eq $True} | Remove-CsConferencingPolicy
 
-有关详细信息，请参阅 [Remove-CsConferencingPolicy](remove-csconferencingpolicy.md)。
+有关详细信息，请参阅 [Remove-CsConferencingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsConferencingPolicy)。
 

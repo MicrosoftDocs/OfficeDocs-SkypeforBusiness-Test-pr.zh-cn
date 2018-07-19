@@ -31,7 +31,7 @@ _**上一次修改主题：** 2013-02-20_
 </table>
 
 
-如果使用不带任何参数的 **Get-CsMeetingRoom** cmdlet，则它返回有关所有会议设备的信息。可选参数提供筛选信息的不同方式。有关详细信息，请参阅 [Get-CsMeetingRoom](get-csmeetingroom.md) 的“参数”部分。
+如果使用不带任何参数的 **Get-CsMeetingRoom** cmdlet，则它返回有关所有会议设备的信息。可选参数提供筛选信息的不同方式。有关详细信息，请参阅 [Get-CsMeetingRoom](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsMeetingRoom) 的“参数”部分。
 
 
 ## 查看有关所有会议设备的信息
@@ -66,5 +66,5 @@ _**上一次修改主题：** 2013-02-20_
     
         Get-CsMeetingRoom -Identity "Room 1219"
 
-有关详细信息，请参阅 [Get-CsMeetingRoom](get-csmeetingroom.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Get-CsMeetingRoom](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsMeetingRoom) cmdlet 的帮助主题。
 

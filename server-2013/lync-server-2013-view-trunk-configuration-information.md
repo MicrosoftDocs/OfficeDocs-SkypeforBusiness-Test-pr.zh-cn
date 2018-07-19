@@ -68,5 +68,5 @@ SIP 中继配置设置可定义中介服务器与服务提供商的公用电话�
         ForwardPAI                                : False
         EnableFastFailoverTimer                   : True
 
-有关详细信息，请参阅[Get-CsTrunkConfiguration](get-cstrunkconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅[Get-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsTrunkConfiguration) cmdlet 的帮助主题。
 

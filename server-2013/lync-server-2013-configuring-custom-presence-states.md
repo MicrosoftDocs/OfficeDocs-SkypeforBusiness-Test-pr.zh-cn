@@ -92,7 +92,7 @@ _**上一次修改主题：** 2016-12-08_
 
 5.  使用 **Grant-CSClientPolicy** cmdlet 将此新策略分配给用户。
 
-有关详细信息，请参阅 Lync Server 命令行管理程序文档中的 [New-CsClientPolicy](new-csclientpolicy.md) 和 [Grant-CsClientPolicy](grant-csclientpolicy.md)。
+有关详细信息，请参阅 Lync Server 命令行管理程序文档中的 [New-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientPolicy) 和 [Grant-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsClientPolicy)。
 
 <table>
 <colgroup>

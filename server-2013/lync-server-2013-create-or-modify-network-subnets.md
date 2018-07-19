@@ -17,7 +17,7 @@ _**上一次修改主题：** 2013-02-21_
 
 网络子网必须与一个网络站点关联，以便确定属于此子网的主机的地理位置。您可以使用 Lync Server 控制面板配置子网。在 Lync Server 控制面板中，可以创建、修改或删除网络子网。有关删除网络子网的详细信息，请参阅[删除网络子网](lync-server-2013-deleting-network-subnets.md)
 
-在大多数实现呼叫允许控制 (CAC) 的 Microsoft Lync Server 2013 部署中，通常都将有大量子网。因此，最好在 Lync Server 命令行管理程序中配置子网。在其中，可以一起调用 **New-CsNetworkSubnet** 和 Windows PowerShell cmdlet **Import-CSV**。通过将这些 cmdlet 配合使用，可以从逗号分隔值 (.csv) 文件读入子网设置，并且同时创建多个子网。有关如何从 .csv 文件创建子网的示例，请参阅 [New-CsNetworkSubnet](new-csnetworksubnet.md)。
+在大多数实现呼叫允许控制 (CAC) 的 Microsoft Lync Server 2013 部署中，通常都将有大量子网。因此，最好在 Lync Server 命令行管理程序中配置子网。在其中，可以一起调用 **New-CsNetworkSubnet** 和 Windows PowerShell cmdlet **Import-CSV**。通过将这些 cmdlet 配合使用，可以从逗号分隔值 (.csv) 文件读入子网设置，并且同时创建多个子网。有关如何从 .csv 文件创建子网的示例，请参阅 [New-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkSubnet)。
 
 ## 创建网络子网
 
@@ -81,8 +81,8 @@ _**上一次修改主题：** 2013-02-21_
 
 #### 其他资源
 
-[New-CsNetworkSubnet](new-csnetworksubnet.md)  
-[Set-CsNetworkSubnet](set-csnetworksubnet.md)  
-[Remove-CsNetworkSubnet](remove-csnetworksubnet.md)  
-[Get-CsNetworkSubnet](get-csnetworksubnet.md)
+[New-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkSubnet)  
+[Set-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsNetworkSubnet)  
+[Remove-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkSubnet)  
+[Get-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkSubnet)
 

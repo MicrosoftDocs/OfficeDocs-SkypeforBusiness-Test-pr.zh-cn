@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2013-02-20_
 
-使用 **Move-CsMeetingRoom** cmdlet 将会议设备从一个注册器池移至另一个注册器池。此 cmdlet 既可从 Lync Server 2013 命令行管理程序中运行，也可从 Windows PowerShell 的远程会话中运行。
+使用 **move-csmeetingroom** cmdlet 将会议设备从一个注册器池移至另一个注册器池。此 cmdlet 既可从 Lync Server 2013 命令行管理程序中运行，也可从 Windows PowerShell 的远程会话中运行。
 
 <table>
 <thead>
@@ -36,7 +36,7 @@ _**上一次修改主题：** 2013-02-20_
 
   - 若要移动会议设备，您必须指定要移动的会议室的标识，然后将 Target 参数设置为该设备将移到的注册器池的完全限定域名 (FQDN)。例如：
     
-        Move-CsMeetingRoom -Target "atl-cs-001.litwareinc.com" -Identity "Room 14"
+        move-csmeetingroom -Target "atl-cs-001.litwareinc.com" -Identity "Room 14"
 
-有关详细信息，请参阅 [Move-CsMeetingRoom](move-csmeetingroom.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [move-csmeetingroom](https://docs.microsoft.com/en-us/powershell/module/skype/Move-CsMeetingRoom) cmdlet 的帮助主题。
 

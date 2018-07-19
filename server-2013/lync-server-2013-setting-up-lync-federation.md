@@ -143,7 +143,7 @@ _**上一次修改主题：** 2015-03-09_
 
 2.  定义和配置任何必需的 DNS 主机（IPv6 的 A 或 AAAA）和 DNS SRV 记录
 
-3.  使用 Lync Server 控制面板或通过使用 Lync Server 命令行管理程序和相应的 cmdlet 定义和配置任何策略。有关 Lync Server 命令行管理程序 cmdlet 的详细信息，请参阅 [联盟和外部访问 Cmdlet](lync-server-2013-federation-and-external-access-cmdlets.md)
+3.  使用 Lync Server 控制面板或通过使用 Lync Server 命令行管理程序和相应的 cmdlet 定义和配置任何策略。有关 Lync Server 命令行管理程序 cmdlet 的详细信息，请参阅 [联盟和外部访问 Cmdlet](https://docs.microsoft.com/en-us/powershell/module/skype/)
     
     <table>
     <thead>

@@ -31,5 +31,5 @@ Get-CsWebServiceConfiguration 可返回有关组织中当前使用的 Web 服务
 
 #### 其他资源
 
-[Get-CsWebServiceConfiguration](get-cswebserviceconfiguration.md)
+[Get-CsWebServiceConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsWebServiceConfiguration)
 
