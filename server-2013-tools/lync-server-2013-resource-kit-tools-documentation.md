@@ -460,6 +460,7 @@ ABSConfig 使管理员能够快速且轻松地自定义 Lync Server 2013 通讯�
 
 如果此工具在运行 CPS 的相同计算机上运行，则没有要求。如果此工具在远程计算机上运行，Lync Server 2013 使用的 SQL Server 数据库必须配置为允许远程访问。必须为呼叫寄存时间记录器配置 SQL Server 数据库连接字符串才能连接到 SQL Server。此 SQL Server 数据库连接字符串在配置文件 **parkometer.exe.config** 中进行定义。它必须放在 parkometer.exe 所在的相同目录中。以下 XML 文件是一个 parkometer.exe.config 示例。必须配置的参数包括用户名（例如 mydomain\\Administrator）、密码（例如 mypassword）和主机名称（例如 myserver）。
 
+```xml
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
       <appSettings>
@@ -470,6 +471,7 @@ ABSConfig 使管理员能够快速且轻松地自定义 Lync Server 2013 通讯�
     Integrated Security=false;"/>
       </appSettings>
     </configuration>
+```
 
 ## 示例
 
