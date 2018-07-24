@@ -65,13 +65,16 @@ _**上一次修改主题：** 2016-12-08_
 
 3.  使用 **Install-CsDatabase** cmdlet 安装 中央管理存储。
     
-        Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn <fully qualified domain name of SQL Server> 
-        -SqlInstanceName <named instance> -DatabasePaths <logfile path>,<database file path> 
-        -Report <path to report file>
+      ```
+      Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn <fully qualified domain name of SQL Server> 
+      -SqlInstanceName <named instance> -DatabasePaths <logfile path>,<database file path> 
+       -Report <path to report file>
+      ```  
 
-       &nbsp;
-    
-        Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn sqlbe.contoso.net -SqlInstanceName rtc -DatabasePaths "C:\CSDB-Logs","C:\CSDB-CMS" -Report "C:\Logs\InstallDatabases.html"
+        
+      ```
+      Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn sqlbe.contoso.net -SqlInstanceName rtc -DatabasePaths "C:\CSDB-Logs","C:\CSDB-CMS" -Report "C:\Logs\InstallDatabases.html"
+      ```
     
     <table>
     <thead>

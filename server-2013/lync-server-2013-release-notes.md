@@ -79,9 +79,12 @@ Lync Server 存储服务使用 Windows Fabric 进行复制。如果在主前端�
 
 若要解决此问题，请在为部署更改 IP 地址配置后重新启动 Lync Server 服务。为此，请在 Lync Server 命令行管理程序中运行以下 cmdlet：
 
-    Stop-CsWindowsService -graceful
-
-    Start-CsWindowsService
+  ```
+  Stop-CsWindowsService -graceful
+  ```
+  ```
+  Start-CsWindowsService
+  ```
 
 ## Lync Server 2013 管理包中不再提供电话拨入式会议综合事务 cmdlet (3212342)
 

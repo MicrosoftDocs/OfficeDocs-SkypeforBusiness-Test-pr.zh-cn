@@ -103,9 +103,12 @@ _**上一次修改主题：** 2016-12-08_
 
 23. 在接收、导入和分配公共证书后，您必须停止然后重新启动边缘服务器服务。 启动 Lync Server 命令行管理程序：依次单击“开始”、“所有程序”和“Microsoft Lync Server 2013”，然后单击“Lync Server 命令行管理程序”。在 Lync Server 命令行管理程序中键入：
     
-        Stop-CsWindowsService
-    
-        Start-CsWindowsService
+    ```
+    Stop-CsWindowsService
+    ```
+    ```
+    Start-CsWindowsService
+    ```
 
 24. 要为 XMPP 联盟配置 DNS，需将以下 SRV 记录添加到外部 DNS:\_xmpp-server.\_tcp.*\<domain name\>*。SRV 记录将使用端口值 5269 解析到边缘服务器的访问边缘 FQDN。
 
