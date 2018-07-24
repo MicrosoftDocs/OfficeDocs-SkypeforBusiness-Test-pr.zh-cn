@@ -33,26 +33,19 @@ Lync Server 2013 使用证书来提供通信加密和服务器身份信息验证
 
 不支持使用通配符项作为任何角色的主题名称（也称为公用名或 CN）。使用 SAN 中的通配符项时支持以下服务器角色：
 
-  -   
-    **反向代理。**简单的 URL（会议和拨入）发布证书支持通配符 SAN 项。
+   **反向代理。**简单的 URL（会议和拨入）发布证书支持通配符 SAN 项。
 
-  -   
-    **反向代理。**   发布证书上 LyncDiscover 的 SAN 项支持通配符 SAN 项。
+   **反向代理。**   发布证书上 LyncDiscover 的 SAN 项支持通配符 SAN 项。
 
-  -   
-    **控制器。**   控制器 Web 组件中 LyncDiscover 和 LyncDiscoverInternal 的简单 URL（会议和拨入）和 SAN 项支持通配符 SAN 项。
+   **控制器。**   控制器 Web 组件中 LyncDiscover 和 LyncDiscoverInternal 的简单 URL（会议和拨入）和 SAN 项支持通配符 SAN 项。
 
-  -   
-    **前端服务器 (标准版) 和 前端池 (企业版)。** 前端 Web 组件中 LyncDiscover 和 LyncDiscoverInternal 的简单 URL（会议和拨入）和 SAN 项支持通配符 SAN 项。
+   **前端服务器 (标准版) 和 前端池 (企业版)。** 前端 Web 组件中 LyncDiscover 和 LyncDiscoverInternal 的简单 URL（会议和拨入）和 SAN 项支持通配符 SAN 项。
 
-  -   
-    **Exchange 统一消息 (UM)。**   部署为独立的服务器时，服务器不使用 SAN 项。
+   **Exchange 统一消息 (UM)。**   部署为独立的服务器时，服务器不使用 SAN 项。
 
-  -   
-    **Microsoft Exchange Server 客户端访问服务器。**内部客户端和外部客户端支持 SAN 中的通配符项。
+   **Microsoft Exchange Server 客户端访问服务器。**内部客户端和外部客户端支持 SAN 中的通配符项。
 
-  -   
-    相同服务器上的 **Exchange 统一消息 (UM) 和 Microsoft Exchange Server 客户端访问服务器。**支持通配符 SAN 项。
+   相同服务器上的 **Exchange 统一消息 (UM) 和 Microsoft Exchange Server 客户端访问服务器。**支持通配符 SAN 项。
 
 该主题中未提到的服务器角色：
 

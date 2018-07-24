@@ -29,8 +29,7 @@ Lync Server 2013 支持从以下任意一种环境中进行迁移：
 
 Lync Server 2013 仅支持以下迁移方法：
 
-  -   
-    **并行迁移。**在并行迁移中， Lync Server 2013 与现有 Microsoft Lync Server 2010 或 Office Communications Server 2007 R2 部署并排部署，然后将操作转移到新服务器，并将用户移动到 Lync Server 2013。采用这种方法时，在迁移过程中需要使用其他服务器平台（包括硬件和软件），并且新配置中的系统名称和池名称与原配置中的不同。如果需要回滚到先前版本，可以将操作切换回先前的服务器。
+   **并行迁移。**在并行迁移中， Lync Server 2013 与现有 Microsoft Lync Server 2010 或 Office Communications Server 2007 R2 部署并排部署，然后将操作转移到新服务器，并将用户移动到 Lync Server 2013。采用这种方法时，在迁移过程中需要使用其他服务器平台（包括硬件和软件），并且新配置中的系统名称和池名称与原配置中的不同。如果需要回滚到先前版本，可以将操作切换回先前的服务器。
 
 不支持在 Active Directory 域服务 林间迁移。
 

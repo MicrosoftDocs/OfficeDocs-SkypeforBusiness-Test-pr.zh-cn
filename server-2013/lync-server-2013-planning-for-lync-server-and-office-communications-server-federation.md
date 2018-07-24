@@ -45,8 +45,7 @@ Microsoft Lync Server 2010 引入了与 Microsoft Lync Online 2010 和 Microsoft
 
   - 确定您的联盟域发现的要求：
     
-      -   
-        要手动配置联盟，您必须拥有伙伴的边缘服务器的完全限定域名 (FQDN) 以及域名或联机域名，后者在 Lync Server 控制面板、“联盟和外部访问”、“SIP 联盟域”中输入。创建“新”策略或“编辑”现有策略以通过 FQDN 允许或阻止域。
+       要手动配置联盟，您必须拥有伙伴的边缘服务器的完全限定域名 (FQDN) 以及域名或联机域名，后者在 Lync Server 控制面板、“联盟和外部访问”、“SIP 联盟域”中输入。创建“新”策略或“编辑”现有策略以通过 FQDN 允许或阻止域。
         
         <table>
         <thead>
@@ -74,8 +73,7 @@ Microsoft Lync Server 2010 引入了与 Microsoft Lync Online 2010 和 Microsoft
         </tbody>
         </table>
     
-      -   
-        对于已发现的伙伴联盟（其中的伙伴可发现您的边缘服务器），您在外部 DNS (\_sipfederationtls.\_tcp.contoso.com) 中创建一条 SRV 记录（指向端口 5061）和边缘服务器的主机 (A) 记录
+       对于已发现的伙伴联盟（其中的伙伴可发现您的边缘服务器），您在外部 DNS (\_sipfederationtls.\_tcp.contoso.com) 中创建一条 SRV 记录（指向端口 5061）和边缘服务器的主机 (A) 记录
         
         <table>
         <thead>

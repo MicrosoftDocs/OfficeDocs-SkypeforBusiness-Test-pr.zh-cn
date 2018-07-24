@@ -57,11 +57,9 @@ _**上一次修改主题：** 2012-09-21_
     
       - 运行以下操作系统之一：
         
-          -   
-            64 位版本的 Windows Server 2008 Standard 操作系统
+           64 位版本的 Windows Server 2008 Standard 操作系统
         
-          -   
-            64 位版本的 Windows Server 2008 Enterprise 操作系统
+           64 位版本的 Windows Server 2008 Enterprise 操作系统
 
   - 如果与公用电话交换网 (PSTN) 或专用交换机 (PBX) 的连接采用的是时分多路复用 (TDM) 连接，则有一个或多个 PSTN 网关可供部署。（如果连接使用的是 SIP 中继，则不需要 PSTN 网关。）
 
