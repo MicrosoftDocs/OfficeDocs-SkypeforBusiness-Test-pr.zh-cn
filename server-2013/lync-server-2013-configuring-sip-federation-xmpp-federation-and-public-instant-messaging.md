@@ -33,14 +33,11 @@ _**上一次修改主题：** 2015-03-09_
 
 公共即时消息连接是是特定类型的联盟，其允许 Lync Server 客户端访问使用 Lync 2013 配置的公共即时消息合作伙伴。以下是当前公共即时消息连接合作伙伴：
 
-  -   
-    America Online
+   America Online
 
-  -   
-    Windows Live
+   Windows Live
 
-  -   
-    Yahoo\!
+   Yahoo\!
 
 利用公共即时消息连接配置，Lync 用户可按以下内容访问公共即时消息连接用户：
 

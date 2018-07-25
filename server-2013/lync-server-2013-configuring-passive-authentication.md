@@ -62,11 +62,15 @@ _**上一次修改主题：** 2013-07-11_
 1.  从 Lync Server 命令行管理程序 命令行，通过运行以下命令来为将启用被动身份验证且具有 2013 年 7 月累积更新的 Lync Server 2013 边缘池、企业池和 Standard Edition 服务器创建新的代理配置：
     
 
-        ```New-CsProxyConfiguration -Identity "Service:EdgeServer:EdgePool01.contoso.com"  
-        -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False```
+    ```
+    New-CsProxyConfiguration -Identity "Service:EdgeServer:EdgePool01.contoso.com"  
+    -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False
+    ```
     
-        ```New-CsProxyConfiguration -Identity "Service:Registrar:LyncPool01.contoso.com"  
-        -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False```
+    ```
+    New-CsProxyConfiguration -Identity "Service:Registrar:LyncPool01.contoso.com"  
+    -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False
+    ```
 
 2.  通过运行以下命令来验证所有其他代理身份验证类型是否已成功禁用：
     

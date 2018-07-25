@@ -17,11 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 如果您已选择启用 Web 会议，则需计划以下事项：
 
-  -   
-    访问文件存储，文件存储用于存储 Web 会议内容。
+   访问文件存储，文件存储用于存储 Web 会议内容。
 
-  -   
-    与 Office Web Apps Server 集成，这是在会议期间共享 PowerPoint 文件所必需的。
+   与 Office Web Apps Server 集成，这是在会议期间共享 PowerPoint 文件所必需的。
 
 ## 文件存储
 

@@ -9,8 +9,7 @@ mtps_version: v=OCS.15
 ms.translationtype: HT
 ---
 
-# 配置 Active Directory 联合身份验证服务 (AD FS 2.0)!!
-
+# 配置 Active Directory 联合身份验证服务 (AD FS 2.0)
  
 
 _**上一次修改主题：** 2016-12-08_
