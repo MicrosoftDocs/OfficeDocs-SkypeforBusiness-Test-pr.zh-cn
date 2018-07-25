@@ -59,16 +59,16 @@ Microsoft Lync Server 2010 引入了与 Microsoft Lync Online 2010 和 Microsoft
     
        要手动配置联盟，您必须拥有伙伴的 边缘服务器的完全限定域名 (FQDN) 以及域名或联机域名，后者在 Lync Server 控制面板、“联盟和外部访问”、“SIP 联盟域”中输入。创建**新**策略或**编辑**现有策略以通过 FQDN 允许或阻止域。
         
-        > [!WARNING]
-        > 当联盟伙伴更改其 边缘服务器的 IP 地址时，手动配置联盟伙伴的 边缘服务器很容易失败。
+       > [!WARNING]
+       > 当联盟伙伴更改其 边缘服务器的 IP 地址时，手动配置联盟伙伴的 边缘服务器很容易失败。
         
-        > [!NOTE]
-        > 对于<strong>新的 SIP 联盟域</strong>，必须提供 Microsoft Lync Online 和 Microsoft Office 365 的<strong>域名（或 FQDN）</strong>。对于 Microsoft Lync Server 2013、 Lync Server 2010 和 Office Communications Server，还必须提供<strong>访问边缘服务 (FQDN)</strong>
+       > [!NOTE]
+       > 对于<strong>新的 SIP 联盟域</strong>，必须提供 Microsoft Lync Online 和 Microsoft Office 365 的<strong>域名（或 FQDN）</strong>。对于 Microsoft Lync Server 2013、 Lync Server 2010 和 Office Communications Server，还必须提供<strong>访问边缘服务 (FQDN)</strong>
         
        对于已发现的伙伴联盟（其中的伙伴可发现您的 边缘服务器），您在外部 DNS (\_sipfederationtls.\_tcp.contoso.com) 中创建一条 SRV 记录（指向端口 5061）和 边缘服务器的主机 (A) 记录
         
-        > [!IMPORTANT]
-        > 如果您要在 Windows Phone 或者 Apple iPhone、iPad 或其他 Apple 设备上支持 Microsoft Lync Mobile 客户端，并且使用 推送通知服务或 推送通知服务，则必须为每个含有_ Lync Mobile 客户端的 SIP 域计划 _sipfederationtls._tcp. <em>&lt;SIP 域&gt;</em> SRV 记录。Android 和 Nokia Symbian Lync Mobile 不使用推送服务，不受此要求的影响。
+       > [!IMPORTANT]
+       > 如果您要在 Windows Phone 或者 Apple iPhone、iPad 或其他 Apple 设备上支持 Microsoft Lync Mobile 客户端，并且使用 推送通知服务或 推送通知服务，则必须为每个含有_ Lync Mobile 客户端的 SIP 域计划 _sipfederationtls._tcp. <em>&lt;SIP 域&gt;</em> SRV 记录。Android 和 Nokia Symbian Lync Mobile 不使用推送服务，不受此要求的影响。
 
   - 配置外部用户访问策略以支持联盟域
 
@@ -95,10 +95,10 @@ Microsoft Lync Server 2010 引入了与 Microsoft Lync Online 2010 和 Microsoft
   - America Online (AOL) 联系人
 
 > [!IMPORTANT]
-> <li>
-> <p>自 2012 年 9 月 1 日起，Microsoft Lync 公共 IM 连接用户订阅许可证 (PIC USL) 将不再用于购买新的或续订协议。具有活动许可证的客户将能继续与 Yahoo! Messenger 联盟，直到服务关闭日期（具体日期仍有待决定，但不会早于 2013 年 6 月）。</p></li>
-> <li><p>PIC USL 是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的每用户、每月订阅许可证。Microsoft 是否能够提供此服务视 Yahoo! 的支持而定，将不续订 Yahoo! 的底层协议。</p></li>
-> <li><p>与以往相比，Lync 是一个更强大的工具，可用于跨多个组织进行联系以及与世界各地的各个用户进行联系。与 Windows Live Messenger 联盟无需 Lync Standard CAL 之外的其他任何用户/设备许可证。Skype 联盟将添加到此列表，使 Lync 用户能够通过 IM 和语音与数亿人联系。</p></li>
+> <ul>
+> <li>自 2012 年 9 月 1 日起，Microsoft Lync 公共 IM 连接用户订阅许可证 (PIC USL) 将不再用于购买新的或续订协议。具有活动许可证的客户将能继续与 Yahoo! Messenger 联盟，直到服务关闭日期（具体日期仍有待决定，但不会早于 2013 年 6 月）。</li>
+> <li>PIC USL 是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的每用户、每月订阅许可证。Microsoft 是否能够提供此服务视 Yahoo! 的支持而定，将不续订 Yahoo! 的底层协议。</li>
+> <li>与以往相比，Lync 是一个更强大的工具，可用于跨多个组织进行联系以及与世界各地的各个用户进行联系。与 Windows Live Messenger 联盟无需 Lync Standard CAL 之外的其他任何用户/设备许可证。Skype 联盟将添加到此列表，使 Lync 用户能够通过 IM 和语音与数亿人联系。</li>
 > </ul>
 
 此类联盟需要规划以下注意事项：
