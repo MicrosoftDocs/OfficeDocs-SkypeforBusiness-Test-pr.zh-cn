@@ -47,47 +47,16 @@ Microsoft Lync Server 2010 引入了与 Microsoft Lync Online 2010 和 Microsoft
     
        要手动配置联盟，您必须拥有伙伴的边缘服务器的完全限定域名 (FQDN) 以及域名或联机域名，后者在 Lync Server 控制面板、“联盟和外部访问”、“SIP 联盟域”中输入。创建“新”策略或“编辑”现有策略以通过 FQDN 允许或阻止域。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>当联盟伙伴更改其边缘服务器的 IP 地址时，手动配置联盟伙伴的边缘服务器很容易失败。</td>
-        </tr>
-        </tbody>
-        </table>
+       > [!WARNING]
+       > 当联盟伙伴更改其边缘服务器的 IP 地址时，手动配置联盟伙伴的边缘服务器很容易失败。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>对于“新的 SIP 联盟域”，必须提供 Microsoft Lync Online 和 Microsoft Office 365 的“域名（或 FQDN）”。对于 Microsoft Lync Server 2013、Lync Server 2010 和 Office Communications Server，还必须提供“访问边缘服务 (FQDN)”</td>
-        </tr>
-        </tbody>
-        </table>
-    
+       > [!NOTE]
+       > 对于“新的 SIP 联盟域”，必须提供 Microsoft Lync Online 和 Microsoft Office 365 的“域名（或 FQDN）”。对于 Microsoft Lync Server 2013、Lync Server 2010 和 Office Communications Server，还必须提供“访问边缘服务 (FQDN)”
+        
        对于已发现的伙伴联盟（其中的伙伴可发现您的边缘服务器），您在外部 DNS (\_sipfederationtls.\_tcp.contoso.com) 中创建一条 SRV 记录（指向端口 5061）和边缘服务器的主机 (A) 记录
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您要在 Windows Phone 或者 Apple iPhone、iPad 或其他 Apple 设备上支持 Microsoft Lync Mobile 客户端，并且使用推送通知服务或推送通知服务，则必须为每个含有_Lync Mobile 客户端的 SIP 域计划 _sipfederationtls._tcp. <em>&lt;SIP 域&gt;</em> SRV 记录。Android 和 Nokia Symbian Lync Mobile 不使用推送服务，不受此要求的影响。</td>
-        </tr>
-        </tbody>
-        </table>
-
+       > [!IMPORTANT]
+       > 如果您要在 Windows Phone 或者 Apple iPhone、iPad 或其他 Apple 设备上支持 Microsoft Lync Mobile 客户端，并且使用推送通知服务或推送通知服务，则必须为每个含有_Lync Mobile 客户端的 SIP 域计划 _sipfederationtls._tcp. <em>&lt;SIP 域&gt;</em> SRV 记录。Android 和 Nokia Symbian Lync Mobile 不使用推送服务，不受此要求的影响。
 
   - 配置外部用户访问策略以支持联盟域
 
@@ -97,19 +66,8 @@ Microsoft Lync Server 2010 引入了与 Microsoft Lync Online 2010 和 Microsoft
 
 如果您已规划或部署 Microsoft Lync Server 2013 边缘服务器，则规划证书、防火墙和端口/协议要求以及 DNS 要求通常是一个非常简单直观的过程。由于联盟是使用现有边缘服务器的一项额外功能，因此，边缘服务器规划和部署通常可满足规划要求。您应使用下表确定是否已满足您的要求并相应地更改端口/协议和 DNS。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您有一个边缘服务器池且正在与 Lync Server 2013 或 Lync Server 2010 合作伙伴联盟，则您可以在边缘服务器的内部端或外部端上使用 DNS 负载平衡或硬件负载平衡。如果您正在与 Office Communications Server 2007 或 Office Communications Server 2007 R2 联盟，则硬件负载平衡将为边缘服务器提供故障转移支持。DNS 负载平衡 Office Communications Server 2007 和 Office Communications Server 2007 R2 不是 DNS 负载平衡感知的。合作伙伴边缘服务器将建立与您的池中第一个边缘服务器的通信。如果该边缘服务器失败，则通信将不会自动进行故障转移。</td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> 如果您有一个边缘服务器池且正在与 Lync Server 2013 或 Lync Server 2010 合作伙伴联盟，则您可以在边缘服务器的内部端或外部端上使用 DNS 负载平衡或硬件负载平衡。如果您正在与 Office Communications Server 2007 或 Office Communications Server 2007 R2 联盟，则硬件负载平衡将为边缘服务器提供故障转移支持。DNS 负载平衡 Office Communications Server 2007 和 Office Communications Server 2007 R2 不是 DNS 负载平衡感知的。合作伙伴边缘服务器将建立与您的池中第一个边缘服务器的通信。如果该边缘服务器失败，则通信将不会自动进行故障转移。
 
 通常，通过规划所选边缘服务器的证书或池化的边缘服务器计划满足证书要求。
 
