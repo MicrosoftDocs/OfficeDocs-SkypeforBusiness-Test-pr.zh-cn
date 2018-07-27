@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 设备更新日志包含可用于管理设备更新 Web 服务并排除其故障的重要信息。您可以更改已记录的内容以及删除您不需要或不再需要的设备日志和更新。本节介绍如何使用 Lync Server 控制面板或 Lync Server 命令行管理程序修改日志记录设置，清除设备更新日志，或者从服务器中删除日志文件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关设备更新日志文件的详细信息，请参阅 Lync Server 2010 TechNet 库中的<a href="http://technet.microsoft.com/zh-cn/library/gg398250(v=ocs.14).aspx">日志文件类型和位置</a>。（请注意，设备更新 Web 服务与所有 Lync Phone Edition 组件一样，在 Lync Server 2013 上的工作方式与在 Lync Server 2010 上的工作方式是相同的。）</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关设备更新日志文件的详细信息，请参阅 Lync Server 2010 TechNet 库中的<a href="http://technet.microsoft.com/zh-cn/library/gg398250(v=ocs.14).aspx">日志文件类型和位置</a>。（请注意，设备更新 Web 服务与所有 Lync Phone Edition 组件一样，在 Lync Server 2013 上的工作方式与在 Lync Server 2010 上的工作方式是相同的。）
+
 
 
 ## 本节内容

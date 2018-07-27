@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-09-11_
 
 使用以下过程之一创建或修改智能寻线工作流。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以使用 Lync Server 命令行管理程序或 响应组配置工具创建或修改智能寻线工作流。可以从 Lync Server 控制面板访问 响应组配置工具，或者在 Web 浏览器中键入以下 URL 直接打开网页进行访问： <strong>https://</strong><em>&lt;webPoolFqdn&gt;</em><strong>/RgsConfig</strong>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 可以使用 Lync Server 命令行管理程序或 响应组配置工具创建或修改智能寻线工作流。可以从 Lync Server 控制面板访问 响应组配置工具，或者在 Web 浏览器中键入以下 URL 直接打开网页进行访问： <strong>https://</strong><em>&lt;webPoolFqdn&gt;</em><strong>/RgsConfig</strong>。
+
 
 
 ## 使用 响应组配置工具创建或修改智能寻线工作流
@@ -43,18 +34,9 @@ _**上一次修改主题：** 2013-09-11_
 
 5.  在“选择服务”搜索字段中，键入承载您想要创建或修改的工作流的 **ApplicationServer** 服务的全部或部分名称。在生成的服务列表中，单击所需服务，然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此时将打开 响应组配置工具。还可以在 Web 浏览器中键入以下 URL 直接打开 响应组配置工具：<strong>https://</strong><em>&lt;webPoolFqdn&gt;</em><strong>/RgsConfig</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此时将打开 响应组配置工具。还可以在 Web 浏览器中键入以下 URL 直接打开 响应组配置工具：<strong>https://</strong><em>&lt;webPoolFqdn&gt;</em><strong>/RgsConfig</strong>。
+    
 
 
 6.  执行下列操作之一：
@@ -65,95 +47,41 @@ _**上一次修改主题：** 2013-09-11_
 
 7.  如果已准备好让用户开始呼叫工作流，请选中“激活工作流”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要创建受管理的工作流，则需要选择“激活工作流”。在保存活动、受管理的工作流之后，则可以修改并停用该工作流。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果要创建受管理的工作流，则需要选择“激活工作流”。在保存活动、受管理的工作流之后，则可以修改并停用该工作流。
+    
 
 
 8.  要允许联盟用户呼叫组，请选中“启用联盟”复选框。您还必须具有适用于为联盟配置的 响应组应用程序的外部访问策略。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>全局外部访问策略适用于 响应组应用程序。您可以使用 Lync Server 控制面板或使用“Set-CsExternalAccessPolicy”cmdlet 将 EnableOutsideAccess 参数设置为 True。请记住，除非为全局策略设置分配站点或用户策略，否则这些设置适用于所有用户。因此，在针对响应组更改此设置之前，请确保联盟设置满足您的组织的要求。有关策略如何适用于用户的详细信息，请参阅 <a href="lync-server-2013-manage-external-access-policy-for-your-organization.md">在 Lync Server 2013 中管理组织的外部访问策略</a>。有关联盟设置的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsExternalAccessPolicy">Set-CsExternalAccessPolicy</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 全局外部访问策略适用于 响应组应用程序。您可以使用 Lync Server 控制面板或使用“Set-CsExternalAccessPolicy”cmdlet 将 EnableOutsideAccess 参数设置为 True。请记住，除非为全局策略设置分配站点或用户策略，否则这些设置适用于所有用户。因此，在针对响应组更改此设置之前，请确保联盟设置满足您的组织的要求。有关策略如何适用于用户的详细信息，请参阅 <a href="lync-server-2013-manage-external-access-policy-for-your-organization.md">在 Lync Server 2013 中管理组织的外部访问策略</a>。有关联盟设置的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsExternalAccessPolicy">Set-CsExternalAccessPolicy</a>。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>驻留在 Lync Online 中的用户无法向驻留在本地部署中的响应组发出呼叫。在混合部署中以及本地部署已与 Lync Online 部署进行联盟的情形下也是如此。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!NOTE]  
+    > 驻留在 Lync Online 中的用户无法向驻留在本地部署中的响应组发出呼叫。在混合部署中以及本地部署已与 Lync Online 部署进行联盟的情形下也是如此。
+    
 
 
 9.  要在呼叫过程中隐藏代理身份，请选中“启用代理匿名”复选框。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>尽管建立呼叫后，代理或呼叫者可以添加即时消息 (IM) 和视频，但匿名呼叫无法启动 IM 或视频。匿名代理还可以将呼叫置于保持状态、转接呼叫（盲转接和咨询转接）、寄存和取回呼叫。匿名呼叫不支持会议、应用程序共享和桌面共享、文件传输、白板、数据协作和呼叫记录。使用 Lync VDI 插件的代理可以匿名方式接听来电，但他们无法以匿名方式拨出电话。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 尽管建立呼叫后，代理或呼叫者可以添加即时消息 (IM) 和视频，但匿名呼叫无法启动 IM 或视频。匿名代理还可以将呼叫置于保持状态、转接呼叫（盲转接和咨询转接）、寄存和取回呼叫。匿名呼叫不支持会议、应用程序共享和桌面共享、文件传输、白板、数据协作和呼叫记录。使用 Lync VDI 插件的代理可以匿名方式接听来电，但他们无法以匿名方式拨出电话。
+    
 
 
 10. 在“输入将接收呼叫的组的地址”下，键入将应答工作流呼叫的组的主 SIP 统一资源标识符 (URI) 地址。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>工作流的主 URI 是标识和引用工作流的方式。您输入的 SIP URI 将在 Active Directory 域服务 中作为联系人对象创建。若要创建此 URI，则该对象在 Active Directory 中必须是唯一的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 工作流的主 URI 是标识和引用工作流的方式。您输入的 SIP URI 将在 Active Directory 域服务 中作为联系人对象创建。若要创建此 URI，则该对象在 Active Directory 中必须是唯一的。
+    
 
 
 11. 在“显示名称”中，键入希望显示的工作流名称（例如，销售 响应组）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不要在显示名称中包含“&lt;”或“&gt;”字符。不要使用以下保留的显示名称：“RGS Presence Watcher”或“Announcement Service”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 不要在显示名称中包含“&lt;”或“&gt;”字符。不要使用以下保留的显示名称：“RGS Presence Watcher”或“Announcement Service”。
+    
 
 
 12. 在“电话号码”下，键入响应组的线路 URI（例如，+14255550165）。
@@ -188,80 +116,35 @@ _**上一次修改主题：** 2013-09-11_
     
       - 要为呼叫者输入转换成语音的文本形式的欢迎消息，请单击“使用文本到语音转换”，然后在文本框中键入欢迎消息。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>不要在输入的文本中包含 HTML 标记，否则将收到错误消息。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 不要在输入的文本中包含 HTML 标记，否则将收到错误消息。
+        
     
       - 要使用 Wave (.wav) 或 Windows Media 音频 (.wma) 文件录音作为欢迎消息，请单击“选择录音”。如果要上载新的音频文件，请单击“录音”链接。在新浏览器窗口中，单击“浏览”，选择要使用的音频文件，然后单击“打开”。单击“上载”加载该音频文件。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>用户提供的所有音频文件都必须满足特定要求。有关受支持的音频文件格式的详细信息，请参阅 <a href="lync-server-2013-technical-requirements-for-response-group.md">Lync Server 2013 中响应组的技术要求</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 用户提供的所有音频文件都必须满足特定要求。有关受支持的音频文件格式的详细信息，请参阅 <a href="lync-server-2013-technical-requirements-for-response-group.md">Lync Server 2013 中响应组的技术要求</a>。
+        
 
 
 18. 在“步骤 4 指定您的工作时间”下的“您所在的时区”中，单击工作流的时区。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>该时区是工作流的呼叫者和代理所在的时区。它用于计算工作流开放和关闭的时间点。例如，如果将工作流配置为使用北美东部时间的时区，并安排工作流在上午 7:00 开放，晚上 11:00 关闭，则得出的开放和关闭时间点分别为东部时间 7:00 和东部时间 23:00。（必须以 24 小时制输入时间。）</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 该时区是工作流的呼叫者和代理所在的时区。它用于计算工作流开放和关闭的时间点。例如，如果将工作流配置为使用北美东部时间的时区，并安排工作流在上午 7:00 开放，晚上 11:00 关闭，则得出的开放和关闭时间点分别为东部时间 7:00 和东部时间 23:00。（必须以 24 小时制输入时间。）
+    
 
 
 19. 通过执行下列操作之一选择要使用的工作时间日程表类型：
     
       - 要使用预定义工作时间日程表，请单击“使用预设日程表”，然后从下拉列表中选择要使用的日程表。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>之前您必须至少已定义一个预设日程表才能选择该选项。可使用 <strong>New-CSRgsHoursOfBusiness</strong> cmdlet 来定义预设日程表。有关详细信息，请参阅 <a href="lync-server-2013-optional-define-response-group-business-hours.md">（可选）在 Lync Server 2013 中定义响应组工作时间</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 之前您必须至少已定义一个预设日程表才能选择该选项。可使用 <strong>New-CSRgsHoursOfBusiness</strong> cmdlet 来定义预设日程表。有关详细信息，请参阅 <a href="lync-server-2013-optional-define-response-group-business-hours.md">（可选）在 Lync Server 2013 中定义响应组工作时间</a>。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>选择预设日程表时，“天”、“开放”和“关闭”中会自动填写响应组可以应答的日期和时间。</td>
-        </tr>
-        </tbody>
-        </table>
+        
+        > [!NOTE]  
+		> 选择预设日程表时，“天”、“开放”和“关闭”中会自动填写响应组可以应答的日期和时间。
+        
     
       - 要使用仅适用于该工作流的自定义日程表，请单击“使用自定义日程表”。
 
@@ -269,51 +152,24 @@ _**上一次修改主题：** 2013-09-11_
 
 21. 如果要创建自定义日程表，请键入一周中每一天响应组可以应答的“开放”和“关闭”时间点。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>“开放”和“关闭”时间点必须采用 24 小时制。例如，如果营业时间为朝九晚五，其中午餐时间不办公，则工作时间指定为 9:00“开放”、12:00“关闭”、13:00“开放”及 17:00“关闭”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > “开放”和“关闭”时间点必须采用 24 小时制。例如，如果营业时间为朝九晚五，其中午餐时间不办公，则工作时间指定为 9:00“开放”、12:00“关闭”、13:00“开放”及 17:00“关闭”。
+    
 
 
 22. 如果要在办公室未开放时播放消息，请选中“响应组在工作时间以外时播放消息”复选框，然后通过执行以下操作之一指定要播放的消息：
     
       - 要为呼叫者输入转换成语音的文本形式的消息，请单击“使用文本到语音转换”，然后在文本框中键入消息。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>不要在输入的文本中包含 HTML 标记，否则将收到错误消息。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 不要在输入的文本中包含 HTML 标记，否则将收到错误消息。
+        
     
       - 要使用音频文件录音作为消息，请单击“选择录音”。如果要上载新的音频文件，请单击“录音”链接。在新浏览器窗口中，单击“浏览”，选择要使用的文件，然后单击“打开”。单击“上载”，加载该音频文件。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>用户提供的所有音频文件都必须满足特定要求。有关受支持的音频文件格式的详细信息，请参阅 <a href="lync-server-2013-technical-requirements-for-response-group.md">Lync Server 2013 中响应组的技术要求</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 用户提供的所有音频文件都必须满足特定要求。有关受支持的音频文件格式的详细信息，请参阅 <a href="lync-server-2013-technical-requirements-for-response-group.md">Lync Server 2013 中响应组的技术要求</a>。
+        
 
 
 23. 指定播放消息后如何处理呼叫（如果配置了消息）：
@@ -328,51 +184,24 @@ _**上一次修改主题：** 2013-09-11_
 
 24. 在“步骤 5 指定您的假日”下，单击定义响应组停止营业日期的一个或多个假日集对应的复选框。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>配置工作流之前，您需要先定义假日和假日集。使用 <strong>New-CsRgsHoliday</strong> 和 <strong>New-CsRgsHolidaySet</strong> cmdlet 来定义假日和假日集。有关详细信息，请参阅 <a href="lync-server-2013-optional-define-response-group-holiday-sets.md">（可选）定义响应组假日设置</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 配置工作流之前，您需要先定义假日和假日集。使用 <strong>New-CsRgsHoliday</strong> 和 <strong>New-CsRgsHolidaySet</strong> cmdlet 来定义假日和假日集。有关详细信息，请参阅 <a href="lync-server-2013-optional-define-response-group-holiday-sets.md">（可选）定义响应组假日设置</a>。
+    
 
 
 25. 如果要在假日播放消息，请选中“假期播放消息”复选框，然后通过执行以下操作之一指定要播放的消息：
     
       - 要为呼叫者输入转换成语音的文本形式的消息，请单击“使用文本到语音转换”，然后在文本框中键入消息。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>不要在输入的文本中包含 HTML 标记，否则将收到错误消息。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 不要在输入的文本中包含 HTML 标记，否则将收到错误消息。
+        
     
       - 要使用音频文件录音作为消息，请单击“选择录音”。如果要上载新的音频文件，请单击“录音”链接。在新浏览器窗口中，单击“浏览”，选择要使用的文件，然后单击“打开”。单击“上载”，加载该音频文件。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>用户提供的所有音频文件都必须满足特定要求。有关受支持的音频文件格式的详细信息，请参阅 <a href="lync-server-2013-technical-requirements-for-response-group.md">Lync Server 2013 中响应组的技术要求</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 用户提供的所有音频文件都必须满足特定要求。有关受支持的音频文件格式的详细信息，请参阅 <a href="lync-server-2013-technical-requirements-for-response-group.md">Lync Server 2013 中响应组的技术要求</a>。
+        
 
 
 26. 指定播放消息后如何处理呼叫（如果配置了消息）：
@@ -393,18 +222,9 @@ _**上一次修改主题：** 2013-09-11_
     
       - 要使用音频文件录音作为保持音乐，请单击“选择音乐文件”。如果要上载新的音频文件，请单击“音乐文件”链接。在新浏览器窗口中，单击“浏览”，选择要使用的文件，然后单击“打开”。单击“上载”，加载该音频文件。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>用户提供的所有音频文件都必须满足特定要求。有关受支持的音频文件格式的详细信息，请参阅 <a href="lync-server-2013-technical-requirements-for-response-group.md">Lync Server 2013 中响应组的技术要求</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 用户提供的所有音频文件都必须满足特定要求。有关受支持的音频文件格式的详细信息，请参阅 <a href="lync-server-2013-technical-requirements-for-response-group.md">Lync Server 2013 中响应组的技术要求</a>。
+        
 
 
 29. 单击“部署”。
@@ -423,18 +243,9 @@ _**上一次修改主题：** 2013-09-11_
     
         $promptWM = New-CsRgsPrompt -TextToSpeechPrompt "Welcome to Contoso. Please wait for an available agent."
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>要针对提示使用音频文件，请使用 <strong>Import-CsRgsAudioFile</strong> cmdlet。有关详细信息，请参阅 <a href="https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile">Import-CsRgsAudioFile</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 要针对提示使用音频文件，请使用 <strong>Import-CsRgsAudioFile</strong> cmdlet。有关详细信息，请参阅 <a href="https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile">Import-CsRgsAudioFile</a>。
+    
 
 
 4.  获取将在其中定向呼叫的队列或问题的标识。在命令行中运行：
@@ -447,18 +258,9 @@ _**上一次修改主题：** 2013-09-11_
     
         $actionWM = New-CsRgsCallAction -Prompt <saved prompt from previous step> -Action <action to be taken> -QueueID $qid
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>对于智能寻线工作流，默认操作必须将呼叫定向到队列。这对于活动工作流是必需的。对于非活动工作流则不需要。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 对于智能寻线工作流，默认操作必须将呼叫定向到队列。这对于活动工作流是必需的。对于非活动工作流则不需要。
+    
     
     例如：
     
@@ -493,18 +295,9 @@ _**上一次修改主题：** 2013-09-11_
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关其他可选参数的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsWorkflow">New-CsRgsWorkflow</a> 或 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRgsWorkflow">Set-CsRgsWorkflow</a></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关其他可选参数的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsWorkflow">New-CsRgsWorkflow</a> 或 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRgsWorkflow">Set-CsRgsWorkflow</a>
+    
 
 
 ## 另请参阅

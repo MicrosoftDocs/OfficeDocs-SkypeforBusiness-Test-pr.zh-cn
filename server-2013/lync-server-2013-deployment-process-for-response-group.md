@@ -67,18 +67,9 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>（可选）使用 Lync Server 命令行管理程序创建预定义的响应组工作时间和假日。</p></li>
 <li><p>使用 响应组配置工具或 Lync Server 命令行管理程序创建工作流（智能寻线或互动语音响应 (IVR) 呼叫流），包括自定义响应组工作时间和假日。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以通过 Lync Server 控制面板访问 响应组配置工具。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 可以通过 Lync Server 控制面板访问 响应组配置工具。
+
 
 </div></li>
 </ol></td>

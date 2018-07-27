@@ -19,32 +19,13 @@ _**上一次修改主题：** 2012-09-21_
 
 本节提供一组说明如何在网络中部署和管理 CAC 的示例过程。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在开始 CAC 部署之前，必须收集企业网络拓扑所需的所有信息，如规划文档的 <a href="lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md">示例：在 Lync Server 2013 中收集呼叫允许控制要求</a>中所述。此外，请确保已安装并激活 CAC 组件，如部署文档中的 <a href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">在 Lync Server 2013 中定义和配置前端池或 Standard Edition 服务器</a>中所述。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在开始 CAC 部署之前，必须收集企业网络拓扑所需的所有信息，如规划文档的 <a href="lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md">示例：在 Lync Server 2013 中收集呼叫允许控制要求</a>中所述。此外，请确保已安装并激活 CAC 组件，如部署文档中的 <a href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">在 Lync Server 2013 中定义和配置前端池或 Standard Edition 服务器</a>中所述。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中的所有 CAC 部署和管理示例都是通过使用 Lync Server 命令行管理程序来执行的。作为替代方法，您也可以使用 Lync Server 控制面板的“网络配置”部分来管理 CAC。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节中的所有 CAC 部署和管理示例都是通过使用 Lync Server 命令行管理程序来执行的。作为替代方法，您也可以使用 Lync Server 控制面板的“网络配置”部分来管理 CAC。
+
 
 
 ## 本部分内容

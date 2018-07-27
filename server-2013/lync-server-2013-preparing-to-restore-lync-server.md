@@ -107,18 +107,9 @@ _**上一次修改主题：** 2015-03-09_
 
   - SQL Server 2012 或 SQL Server 2008 R2 的安装软件。若要安装数据库服务器，请使用组织确定的适当版本的 SQL Server 和数据库服务器部署过程和配置。在还原服务时，您应满足这些过程和配置要求。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在安装本地配置存储时，Lync Server 部署向导会自动在每台 Standard Edition Server 和任何其他 Lync Server 服务器上安装 SQL Server 2012 Express，除非您在服务器上预先安装了 SQL Server 2012 或 SQL Server 2008 R2。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 在安装本地配置存储时，Lync Server 部署向导会自动在每台 Standard Edition Server 和任何其他 Lync Server 服务器上安装 SQL Server 2012 Express，除非您在服务器上预先安装了 SQL Server 2012 或 SQL Server 2008 R2。
+    
 
 
   - 用于生成系统映像的软件。
@@ -163,18 +154,9 @@ _**上一次修改主题：** 2015-03-09_
 
 4.  在开始还原之前生成系统映像以便在还原期间出错时用作回滚点。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题及相关主题的过程中介绍的 Lync Server 部署向导和 cmdlet 会设置所有必需的访问控制列表 (ACL)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主题及相关主题的过程中介绍的 Lync Server 部署向导和 cmdlet 会设置所有必需的访问控制列表 (ACL)。
+
 
 
 确保在开始还原之前，您计划还原的组件所需的硬件和软件可用。在安装操作系统和 SQL Server 后，以下还原过程中的大多数步骤都可以远程运行。过程中注明的例外情况除外。

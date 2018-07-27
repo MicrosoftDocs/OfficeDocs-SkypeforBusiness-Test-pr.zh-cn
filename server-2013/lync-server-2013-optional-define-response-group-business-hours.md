@@ -33,18 +33,9 @@ _**上一次修改主题：** 2012-11-01_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果已将某个工作流定义为托管工作流，则被分配 CsResponseGroupManager 角色的任何用户均可设置和修改其管理的工作流的工作时间。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果已将某个工作流定义为托管工作流，则被分配 CsResponseGroupManager 角色的任何用户均可设置和修改其管理的工作流的工作时间。
+
 
 
 <table>
@@ -69,7 +60,7 @@ _**上一次修改主题：** 2012-11-01_
 
 3.  对于要定义的每个唯一时间范围，请运行：
     
-        $x = new-csrgstimerange [-Name <name of time range>] -OpenTime <time when business hours begin> -CloseTime <time when business hours end>
+        $x = New-CsRgsTimeRange [-Name <name of time range>] -OpenTime <time when business hours begin> -CloseTime <time when business hours end>
     
     要创建使用定义的范围的工作时间集合，请运行：
     
@@ -91,6 +82,6 @@ _**上一次修改主题：** 2012-11-01_
 
 #### 其他资源
 
-[new-csrgstimerange](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsTimeRange)  
+[New-CsRgsTimeRange](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsTimeRange)  
 [New-CsRgsHoursOfBusiness](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsHoursOfBusiness)
 

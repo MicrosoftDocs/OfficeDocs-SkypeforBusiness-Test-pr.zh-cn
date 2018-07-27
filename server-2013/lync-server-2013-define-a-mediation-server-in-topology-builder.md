@@ -35,43 +35,22 @@ _**上一次修改主题：** 2013-03-25_
 
 5.  在“选择并置服务器角色”上，选中“并置中介服务器”。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><ul>
+    > [!NOTE]  
+    > <ul>
     <li><p>如果您选择的 前端池的类型是 企业版，则 中介服务器组件将安装在该 前端池的所有 前端服务器上。</p></li>
     <li><p>中介服务器使用的 <strong>下一个跃点池</strong> 将是并置 中介服务器的 前端池。</p></li>
     <li><p>中介服务器使用的 <strong>边缘池</strong> 将是与并置 中介服务器的 前端池关联的相同 边缘池。</p></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
+    </ul>
+    
 
 
 6.  单击“设为默认值”以使用此前端池将来自 Microsoft Office Communications Server 2007 R2 的呼叫路由到 PSTN。
 
 7.  当完成一个或多个对等方与前端池的关联时，单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>继续执行企业语音部署过程中的下一步之前，请确保中介服务器池（即已并置中介服务器组件的前端池）正在使用您指定的 FQDN。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 继续执行企业语音部署过程中的下一步之前，请确保中介服务器池（即已并置中介服务器组件的前端池）正在使用您指定的 FQDN。
+    
 
 
 8.  接下来，按照部署指南文档中的 [在 Lync Server 2013 中发布拓扑](lync-server-2013-publish-the-topology.md)中的过程将 中介服务器添加到拓扑，然后再继续下一个步骤 - 修改 中介服务器的侦听端口（如果需要）。您每次使用 拓扑生成器定义或修改拓扑时必须发布拓扑。
@@ -82,18 +61,9 @@ _**上一次修改主题：** 2013-03-25_
 
 如果已在此站点中部署并置在 前端池上的 中介服务器，则可跳过本节并 [在 Lync Server 2013 中安装中介服务器的文件](lync-server-2013-install-the-files-for-mediation-server.md)，然后继续完成 [在 Lync Server 2013 中配置中继](lync-server-2013-configuring-trunks.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题假定您已至少设置一个 前端池，如部署指南文档中的 <a href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">在 Lync Server 2013 中定义和配置前端池或 Standard Edition 服务器</a>和 <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中发布拓扑</a>中所述。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主题假定您已至少设置一个 前端池，如部署指南文档中的 <a href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">在 Lync Server 2013 中定义和配置前端池或 Standard Edition 服务器</a>和 <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中发布拓扑</a>中所述。
+
 
 
 ## 添加中介服务器
@@ -110,18 +80,9 @@ _**上一次修改主题：** 2013-03-25_
     
       - 如果要在池中部署多个中介服务器以实现高可用性，那么请选择“多计算机池”。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>必须部署 DNS 负载平衡以支持具有多个中介服务器的中介服务器池。有关详细信息，请参阅规划文档中的 <a href="lync-server-2013-dns-load-balancing.md">Lync Server 2013 中的 DNS 负载平衡</a>的“在中介服务器池上使用 DNS 负载平衡”部分。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 必须部署 DNS 负载平衡以支持具有多个中介服务器的中介服务器池。有关详细信息，请参阅规划文档中的 <a href="lync-server-2013-dns-load-balancing.md">Lync Server 2013 中的 DNS 负载平衡</a>的“在中介服务器池上使用 DNS 负载平衡”部分。
+        
     
       - 如果因为无需高可用性而只希望在池中部署一个中介服务器，那么请选择“单计算机池”。跳过以下步骤。
 
@@ -151,18 +112,9 @@ _**上一次修改主题：** 2013-03-25_
 
 4.  指定 中介服务器接受来自 PSTN 网关的传入连接所需的 TLS 或 TCP 侦听端口范围。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果未选中“启用 TCP 端口”，则不需要输入 TCP 端口范围。此设置是可选的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果未选中“启用 TCP 端口”，则不需要输入 TCP 端口范围。此设置是可选的。
+    
 
 
 接下来，通过执行 [在 Lync Server 2013 中安装中介服务器的文件](lync-server-2013-install-the-files-for-mediation-server.md)中的步骤 [在 Lync Server 2013 拓扑生成器中定义网关](lync-server-2013-define-a-gateway-in-topology-builder.md)并在池中的每台 中介服务器上安装文件。

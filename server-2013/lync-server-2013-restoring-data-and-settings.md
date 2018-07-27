@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-02-17_
 
 如果您已对配对池实施了灾难恢复拓扑，而其中一个前端池已停机，您需要快速为用户还原服务，请参阅[在 Lync Server 2013 中对池进行故障转移](lync-server-2013-failing-over-a-pool.md)。此外，使用以下主题中的信息以及[备份和还原工作表](lync-server-2013-backup-and-restoration-worksheets.md)中的工作表可在发生故障或中断后还原 Lync Server。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要缩短停机时间和避免数据丢失，请仅在问题排查过程不能有效识别和更正问题时执行本文介绍的还原过程。在排查问题期间，应在关闭并重启服务器时，尝试尽可能减少对其他服务器和组件的影响。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 要缩短停机时间和避免数据丢失，请仅在问题排查过程不能有效识别和更正问题时执行本文介绍的还原过程。在排查问题期间，应在关闭并重启服务器时，尝试尽可能减少对其他服务器和组件的影响。
+
 
 
 ## 本部分内容

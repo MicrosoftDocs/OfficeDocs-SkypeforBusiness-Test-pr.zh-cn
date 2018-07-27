@@ -37,18 +37,9 @@ _**上一次修改主题：** 2016-12-08_
 
   - 在其中部署 Lync Server 的林提升到 Windows Server 2012 R2、Windows Server 2012、Windows Server 2008 R2、Windows Server 2008 或至少 Windows Server 2003 的林功能级别。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>要更改域或林的功能级别，请参阅 TechNet 库中的“提升域和林的功能级别”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=263775" class="uri">http://go.microsoft.com/fwlink/?linkid=263775</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 要更改域或林的功能级别，请参阅 TechNet 库中的“提升域和林的功能级别”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=263775" class="uri">http://go.microsoft.com/fwlink/?linkid=263775</a>。
+    
 
 
   - 在部署 Lync Server 计算机或用户的每个域中部署全局编录。

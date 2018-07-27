@@ -39,18 +39,9 @@ _**上一次修改主题：** 2012-11-01_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在配置中继的过程中，可以启用 Lync Server 2013 媒体旁路功能，以允许媒体绕过中介服务器。配置中继时可以启用媒体旁路，也可以不启用媒体旁路，但我们强烈建议您启用该功能。有关详细信息，请参阅规划文档中的 <a href="lync-server-2013-planning-for-media-bypass.md">在 Lync Server 2013 中规划媒体旁路</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在配置中继的过程中，可以启用 Lync Server 2013 媒体旁路功能，以允许媒体绕过中介服务器。配置中继时可以启用媒体旁路，也可以不启用媒体旁路，但我们强烈建议您启用该功能。有关详细信息，请参阅规划文档中的 <a href="lync-server-2013-planning-for-media-bypass.md">在 Lync Server 2013 中规划媒体旁路</a>。
+
 
 
 ## 本部分内容

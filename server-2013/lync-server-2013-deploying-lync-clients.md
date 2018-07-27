@@ -23,24 +23,12 @@ Lync 2013 引入了不同的客户端部署方法。与早期版本不同，Lync
 
 本节中的主题重点说明了如何使用基于 Office 2013 MSI 的安装程序部署客户端。您主要应参考 Office 2013 资源工具包文档，该文档详细描述了如何准备基础结构、自定义安装以及部署 Office 2013。但您应将 Office 文档与本节中的主题结合使用，这些主题指明了特定于 Lync 2013 的部署注意事项。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
+> [!NOTE]  
+> <ul>
 <li><p>支持在 Outlook 消息和协作客户端中进行会议管理的 Lync 2013 联机会议外接程序将自动随 Lync 2013 一起安装。</p></li>
 <li><p>Office 2013 安装程序不会卸载早期版本的 Lync 或 Office Communicator。Lync 2013 客户端可与其他 Lync 或 Office Communicator 客户端并行安装。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+
 
 
 ## 本节内容

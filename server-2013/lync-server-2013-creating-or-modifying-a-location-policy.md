@@ -47,18 +47,9 @@ _**上一次修改主题：** 2012-11-01_
         
           - **免责声明**   除用户不能在未输入位置信息的情况下消除提示外，此选项与“必需”相同。用户仍可完成紧急呼叫，但不输入信息将无法完成其他呼叫。此外，还将向用户显示免责声明文本，提醒用户拒绝输入位置信息的后果。要设置免责声明文本，必须使用 Lync Server 命令行管理程序运行 **Set-CsLocationPolicy** cmdlet 或带 EnhancedEmergencyServiceDisclaimer 参数的 **New-CsLocationPolicy** cmdlet。有关详细信息，请参阅 Lync Server 命令行管理程序文档中的 [Set-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsLocationPolicy) 或 [New-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsLocationPolicy)。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>在 Lync Server 2013 中，可以使用位置策略为不同区域设置或不同组用户设置不同免责声明，这与在 Lync Server 2010 中不同，其中只能为整个组织指定一个全局免责声明。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]  
+			> 在 Lync Server 2013 中，可以使用位置策略为不同区域设置或不同组用户设置不同免责声明，这与在 Lync Server 2010 中不同，其中只能为整个组织指定一个全局免责声明。
+            
     
       - **仅将位置用于紧急服务**Lync 可能会由于各种原因（例如，向队友通知当前位置）而使用位置信息。选中该复选框可确保位置信息只能用于紧急呼叫。
     

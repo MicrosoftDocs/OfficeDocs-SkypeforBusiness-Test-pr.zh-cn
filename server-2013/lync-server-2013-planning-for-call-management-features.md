@@ -21,18 +21,9 @@ _**上一次修改主题：** 2012-12-17_
 
   - **组应答 ：** 使语音用户能够应答为分配到呼叫应答组的其他语音用户响铃的呼叫。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>组应答是 Lync Server 2013 累积更新 2013 年 2 月版中的新增功能。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 组应答是 Lync Server 2013 累积更新 2013 年 2 月版中的新增功能。
+    
 
 
   - **响应组 ：** 通过智能寻线或互动语音响应 (IVR) 问题和答案，将传入呼叫路由至代理组。

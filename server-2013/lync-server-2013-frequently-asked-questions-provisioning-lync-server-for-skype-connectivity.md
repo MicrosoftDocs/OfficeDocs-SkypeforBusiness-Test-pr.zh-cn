@@ -79,18 +79,9 @@ _**上一次修改主题：** 2016-12-27_
 
   - 会话初始协议 (SIP) 域。这是用户当前用于即时消息传递的 SIP URI 的域后缀。如果您的组织有多个 SIP 域，请为用于即时消息传递的每个域指定域后缀。例如，对于 user1@contoso.com，请为 SIP 域指定 contoso.com；对于 user1@example.fabrikam.com，请将 example.fabrikam.com 指定为 SIP 域。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅指定 SIP 域的域后缀。不要为 SIP 域指定任何 FQDN（包括访问边缘服务的 FQDN）。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 仅指定 SIP 域的域后缀。不要为 SIP 域指定任何 FQDN（包括访问边缘服务的 FQDN）。
+    
 
 
   - 联系信息。为您指定的每个 SIP 域的管理员指定电子邮件地址。

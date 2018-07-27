@@ -41,18 +41,9 @@ _**上一次修改主题：** 2014-07-02_
 
     New-CsHostingProvider -Identity "Exchange Online" -Enabled $True -EnabledSharedAddressSpace $True -HostsOCSUsers $False -ProxyFqdn "exap.um.outlook.com" -IsLocal $False -VerificationLevel UseSourceVerification
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在中国使用 Office 365 世纪互联运营，请将此示例中 <strong>ProxyFqdn</strong> 参数的值替换为服务世纪互联运营的 FQDN“exap.um.partner.outlook.cn”。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您在中国使用 Office 365 世纪互联运营，请将此示例中 <strong>ProxyFqdn</strong> 参数的值替换为服务世纪互联运营的 FQDN“exap.um.partner.outlook.cn”。
+
 
 
   - **Identity** 将为您创建的宿主提供程序指定一个唯一的字符串值标识符（例如“Exchange Online”）。包含空格的值必须用双引号括起来。

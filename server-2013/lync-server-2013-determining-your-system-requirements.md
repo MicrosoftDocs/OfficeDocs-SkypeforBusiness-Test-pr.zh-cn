@@ -31,18 +31,9 @@ _**上一次修改主题：** 2014-01-02_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关 Active Directory 支持、支持的拓扑、服务器并置和其他支持问题的详细信息，请参阅<a href="lync-server-2013-supportability.md">Lync Server 2013 的可支持性</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关 Active Directory 支持、支持的拓扑、服务器并置和其他支持问题的详细信息，请参阅<a href="lync-server-2013-supportability.md">Lync Server 2013 的可支持性</a>。
+
 
 
 ## 本部分内容

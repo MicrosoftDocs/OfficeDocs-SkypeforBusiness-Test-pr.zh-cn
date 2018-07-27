@@ -19,24 +19,12 @@ _**上一次修改主题：** 2013-02-24_
 
 使用以下过程创建或修改网络站点。例如，如果已为一个语音功能创建网络站点，则不需要创建新的网络站点；其他语音功能也将使用这些站点。但是，可能需要修改现有的网络站点定义来应用特定于功能的设置。例如，如果已为 E9-1-1 创建网络站点，则需要在部署呼叫允许控制的过程中修改该网络站点，以便应用带宽策略配置文件。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果存在，您可以找到网站站点的特定示例和要求，因为它们与每个功能的部署文档中的高级语音功能相关：
+> [!NOTE]  
+> 如果存在，您可以找到网站站点的特定示例和要求，因为它们与每个功能的部署文档中的高级语音功能相关：
 <ul>
 <li><p><a href="lync-server-2013-configure-network-sites-for-cac.md">在 Lync Server 2013 中为 CAC 配置网络站点</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+
 
 
 有关使用网络站点的详细信息，请参阅 Lync Server 命令行管理程序文档中以下 cmdlet 的相关内容：
@@ -67,18 +55,9 @@ _**上一次修改主题：** 2013-02-24_
     
     在此示例中，您创建了一个称为“Chicago”的网络站点，该站点位于“NorthAmerica”网络区域。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>为了成功运行此命令，NorthAmerica 网络区域必须已经存在。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 为了成功运行此命令，NorthAmerica 网络区域必须已经存在。
+    
 
 
 3.  要为拓扑完成网络站点的创建，请使用其他站点的设置重复步骤 2。
@@ -99,34 +78,16 @@ _**上一次修改主题：** 2013-02-24_
 
 7.  或者，单击“带宽策略”，然后单击列表中的某个带宽策略。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只有在站点上部署呼叫允许控制时才需要带宽策略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只有在站点上部署呼叫允许控制时才需要带宽策略。
+    
 
 
 8.  或者，单击“位置策略”，然后单击列表中的某个位置策略。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只有在站点上部署 E9-1-1 时才需要位置策略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只有在站点上部署 E9-1-1 时才需要位置策略。
+    
 
 
 9.  或者，单击“说明”，然后键入其他信息以描述此网络站点。
@@ -153,18 +114,9 @@ _**上一次修改主题：** 2013-02-24_
     
     在此示例中，称为“Albuquerque”的站点将移动到“NorthAmerica”网络区域。要修改网络站点配置以部署呼叫允许控制、E9-1-1 或媒体旁路，请分别运行带有 BWPolicyProfileID 参数或 LocationPolicy 参数的 Set-CsNetworkSite cmdlet 来修改网络站点设置。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>尽管存在用于媒体旁路的 BypassID 参数，但强烈建议您不要覆盖自动生成的旁路 ID。您无需指定其他参数来为媒体旁路配置网络站点。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 尽管存在用于媒体旁路的 BypassID 参数，但强烈建议您不要覆盖自动生成的旁路 ID。您无需指定其他参数来为媒体旁路配置网络站点。
+    
 
 
 3.  要为拓扑完成网络站点的修改，请使用其他站点的设置重复步骤 2。

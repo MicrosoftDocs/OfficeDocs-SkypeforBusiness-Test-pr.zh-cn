@@ -19,18 +19,9 @@ _**上一次修改主题：** 2016-12-08_
 
 通过本节中的主题了解如何设置和管理会议设备。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关支持的与 Lync Server 2013 一起使用的会议设备的详细信息，请参阅网页<a href="http://technet.microsoft.com/en-us/lync/gg278164.aspx">适合于 Microsoft Lync 的电话和设备</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关支持的与 Lync Server 2013 一起使用的会议设备的详细信息，请参阅网页<a href="http://technet.microsoft.com/en-us/lync/gg278164.aspx">适合于 Microsoft Lync 的电话和设备</a>。
+
 
 
 ## 本部分内容

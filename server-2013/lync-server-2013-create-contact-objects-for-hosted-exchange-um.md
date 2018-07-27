@@ -57,18 +57,9 @@ _**上一次修改主题：** 2012-09-24_
     
       - **RegistrarPool** 指定运行 Registrar 服务的池的完全限定域名 (FQDN)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>不能将 Exchange UM 联系人对象移动到 Lync Server 2013 之前的 Lync Server 2013 部署所包含的池中。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 不能将 Exchange UM 联系人对象移动到 Lync Server 2013 之前的 Lync Server 2013 部署所包含的池中。
+        
     
       - **OU** 指定此联系人对象将位于的 Active Directory 组织单位。
     

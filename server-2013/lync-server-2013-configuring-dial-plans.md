@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-02-22_
 
 Lync Server 2013 拨号计划是一组指定的规范化规则，可转换指定位置、单个用户或联系人对象的电话号码，以进行电话授权和呼叫路由。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关详细信息，请参阅规划文档中的 <a href="lync-server-2013-dial-plans-and-normalization-rules.md">Lync Server 2013 中的拨号计划和规范化规则</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关详细信息，请参阅规划文档中的 <a href="lync-server-2013-dial-plans-and-normalization-rules.md">Lync Server 2013 中的拨号计划和规范化规则</a>。
+
 
 
 ## 本部分内容

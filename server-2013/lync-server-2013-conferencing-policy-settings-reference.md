@@ -103,18 +103,9 @@ _**上一次修改主题：** 2014-04-22_
 <td><p>允许联盟参与者和匿名参与者获得控制权</p></td>
 <td><p>允许外部参与者和匿名参与者获得另一个用户的共享应用程序的控制权。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果此设置设为 True，而“允许参与者获得控制权”设为 False，则此设置将被覆盖。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果此设置设为 True，而“允许参与者获得控制权”设为 False，则此设置将被覆盖。
+
 
 </div></td>
 </tr>

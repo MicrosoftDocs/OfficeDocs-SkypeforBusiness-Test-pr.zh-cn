@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 本主题介绍如何配置 Microsoft Exchange Server 上的 Exchange 统一消息 (UM) 以便与企业语音一起使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题中的 cmdlet 示例提供 Exchange 2007 版本的 Exchange 命令行管理程序的语法。如果运行的是 Exchange 2010 或 Exchange 2013，请参阅引用的相应文档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主题中的 cmdlet 示例提供 Exchange 2007 版本的 Exchange 命令行管理程序的语法。如果运行的是 Exchange 2010 或 Exchange 2013，请参阅引用的相应文档。
+
 
 
 ## 配置运行 Exchange Server UM 的服务器
@@ -60,19 +51,10 @@ _**上一次修改主题：** 2016-12-08_
     
       - 对于 Exchange 2013，请参阅“统一消息”，网址为 [http://go.microsoft.com/fwlink/?linkid=266579\&clcid=0x804](http://go.microsoft.com/fwlink/?linkid=266579%26clcid=0x804)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>选择 <strong>SIPSecured</strong> 还是 <strong>Secured</strong> 安全级别，取决于对媒体加密是激活还是停用了安全实时传输协议 (SRTP)。为使 Lync Server 2010 与 Exchange UM 集成，这应与 Lync Server 媒体配置中的加密级别相对应。可以通过运行 <strong>Get-CsMediaConfiguration</strong> cmdlet 查看 Lync Server 媒体配置。有关详细信息，请参阅 Lync Server 命令行管理程序文档中的 Get-CsMediaConfiguration。<br />
-    有关选择适当的 VoIP 安全设置的详细信息，请参阅<a href="lync-server-2013-deployment-process-for-integrating-on-premises-unified-messaging.md">集成本地统一消息与 Lync Server 2013 的部署过程</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 选择 <strong>SIPSecured</strong> 还是 <strong>Secured</strong> 安全级别，取决于对媒体加密是激活还是停用了安全实时传输协议 (SRTP)。为使 Lync Server 2010 与 Exchange UM 集成，这应与 Lync Server 媒体配置中的加密级别相对应。可以通过运行 <strong>Get-CsMediaConfiguration</strong> cmdlet 查看 Lync Server 媒体配置。有关详细信息，请参阅 Lync Server 命令行管理程序文档中的 Get-CsMediaConfiguration。<br />
+    有关选择适当的 VoIP 安全设置的详细信息，请参阅<a href="lync-server-2013-deployment-process-for-integrating-on-premises-unified-messaging.md">集成本地统一消息与 Lync Server 2013 的部署过程</a>。
+    
 
 
 2.  运行以下 cmdlet 获取每个 UM 拨号计划的完全限定的域名 (FQDN)：
@@ -91,18 +73,9 @@ _**上一次修改主题：** 2016-12-08_
 
 3.  记录每个 UM 拨号计划的拨号计划名称。您之后可能需要将每个拨号计划名称的 FQDN 用作每个 UM 拨号计划对应 Lync Server 拨号计划的名称，以便确保拨号计划名称匹配，具体情况取决于您使用的 Exchange Server 版本。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅当 UM 拨号计划在早于 Exchange 2010 SP1 的 Exchange 版本上运行时，Lync Server 拨号计划的名称才必须与 UM 拨号计划的名称相匹配。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 仅当 UM 拨号计划在早于 Exchange 2010 SP1 的 Exchange 版本上运行时，Lync Server 拨号计划的名称才必须与 UM 拨号计划的名称相匹配。
+    
 
 
 4.  将拨号计划添加到运行 Exchange UM 的服务器，如下所述：
@@ -122,21 +95,12 @@ _**上一次修改主题：** 2016-12-08_
             $ums[0].DialPlans +=$dp.Identity; 
             set-umserver -instance $ums[0]
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>执行以下步骤之前，请确保已为所有企业语音用户配置了 Exchange Server 邮箱。<br />
+    > [!NOTE]  
+    > 执行以下步骤之前，请确保已为所有企业语音用户配置了 Exchange Server 邮箱。<br />
     对于 Exchange 2007，请访问 Exchange Server 2007 TechNet 库，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268685%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=268685&amp;clcid=0x804</a>。<br />
     对于 Exchange 2010，请访问 Exchange Server 2010 TechNet 库，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268686%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=268686&amp;clcid=0x804</a>。<br />
-    为在步骤 1 中创建的每个拨号计划指定邮箱策略时，既可以选择默认策略，也可以选择已创建的策略。</td>
-    </tr>
-    </tbody>
-    </table>
+    为在步骤 1 中创建的每个拨号计划指定邮箱策略时，既可以选择默认策略，也可以选择已创建的策略。
+    
 
 
 5.  导航到 \<*Exchange 安装目录*\>\\Scripts，然后，如果 Exchange 部署在一个林中，则键入：
@@ -151,47 +115,18 @@ _**上一次修改主题：** 2016-12-08_
     
     如果具有与多个 IP 网关关联的一个或多个 UM 拨号计划，则继续步骤 6。如果每个拨号计划仅与单个 IP 网关关联，则跳过步骤 6。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>运行 exchucutil.ps1 后，请确保重新启动“Lync Server 前端”服务 (rtcsrv.exe)。否则，Lync Server 将无法在拓扑中检测统一消息。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 运行 exchucutil.ps1 后，请确保重新启动“Lync Server 前端”服务 (rtcsrv.exe)。否则，Lync Server 将无法在拓扑中检测统一消息。
 
 
 6.  通过使用 Exchange 命令行管理程序或 Exchange 管理控制台，禁用所有 IP 网关的出站呼叫（与每个拨号计划关联的 IP 网关除外）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>要确保由运行 Exchange Server 统一消息的服务器到外部用户的出站呼叫（例如在电话上播放的方案就是这种情况）可靠地穿越企业防火墙，此步骤必不可少。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 要确保由运行 Exchange Server 统一消息的服务器到外部用户的出站呼叫（例如在电话上播放的方案就是这种情况）可靠地穿越企业防火墙，此步骤必不可少。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>当选择允许传出呼叫通过的 UM IP 网关时，请选择有希望处理最多流量的 UM IP 网关。请勿允许传出流量通过与 Lync Server 控制器池连接的 IP 网关。此外，避免池位于其他中央站点或分支站点中。可以使用以下任意一种方法阻止传出呼叫通过 IP 网关传递：</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!IMPORTANT]  
+    > 当选择允许传出呼叫通过的 UM IP 网关时，请选择有希望处理最多流量的 UM IP 网关。请勿允许传出流量通过与 Lync Server 控制器池连接的 IP 网关。此外，避免池位于其他中央站点或分支站点中。可以使用以下任意一种方法阻止传出呼叫通过 IP 网关传递：
     
       - 如果使用的是 Exchange 命令行管理程序，则可通过运行以下命令来禁用每个 IP 网关：
         
@@ -203,34 +138,14 @@ _**上一次修改主题：** 2016-12-08_
     
       - 如果使用 Exchange 管理控制台，请清除“允许通过此 IP 网关的传出呼叫”复选框。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的 UM SIP URI 拨号计划仅与单个 IP 网关关联，则不禁止传出呼叫通过此网关。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您的 UM SIP URI 拨号计划仅与单个 IP 网关关联，则不禁止传出呼叫通过此网关。
 
 
 7.  为每个 Lync Server 拨号计划创建一个 UM 自动助理。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>请勿在自动助理的名称中包含任何空格。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 请勿在自动助理的名称中包含任何空格。
     
         New-umautoattendant -name <auto attendant name> -umdialplan < name of dial plan created in step 1> -PilotIdentifierList <auto attendant phone number in E.164 format> -SpeechEnabled $true -Status Enabled
     
@@ -244,18 +159,9 @@ _**上一次修改主题：** 2016-12-08_
 
 8.  将 Exchange UM 用户（他们中的每一个应该都配置了 Exchange 邮箱）与 UM 拨号计划关联，并为每个用户创建一个 SIP URI。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>以下示例中的 <strong>SIPResourceIdentifier</strong> 必须是 Lync Server 用户的 SIP 地址。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 以下示例中的 <strong>SIPResourceIdentifier</strong> 必须是 Lync Server 用户的 SIP 地址。
+    
     
         enable-ummailbox -id <user name> -ummailboxpolicy <name of the mailbox policy for the dial plan created in step 1> -Extensions <extension> -SIPResourceIdentifier "<user name>@<full domain name>" -PIN <user pin>
     

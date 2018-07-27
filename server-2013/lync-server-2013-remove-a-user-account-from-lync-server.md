@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-02-22_
 
 您可以使用以下过程来移除 Lync Server 2013 中以前添加的用户帐户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>移除用户将导致您丢失为用户帐户配置的所有设置。如果您要临时禁用用户帐户，请参阅主题<a href="lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md">禁用或重新启用 Lync Server 的用户帐户</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 移除用户将导致您丢失为用户帐户配置的所有设置。如果您要临时禁用用户帐户，请参阅主题<a href="lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md">禁用或重新启用 Lync Server 的用户帐户</a>。
+
 
 
 ## 移除 Lync Server 中的 Lync Server 用户帐户

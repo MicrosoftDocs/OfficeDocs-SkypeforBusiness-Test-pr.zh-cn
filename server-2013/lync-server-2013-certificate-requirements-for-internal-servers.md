@@ -41,32 +41,14 @@ _**上一次修改主题：** 2017-02-17_
 
 请注意，使用证书向导请求证书时会自动配置服务器增强型密钥使用 (EKU)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每个证书友好名称在计算机存储中必须是唯一的。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 每个证书友好名称在计算机存储中必须是唯一的。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您已在 DNS 中配置 sipinternal.contoso.com 或 sipexternal.contoso.com，您需要将它们添加到证书的“使用者可选名称”中。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您已在 DNS 中配置 sipinternal.contoso.com 或 sipexternal.contoso.com，您需要将它们添加到证书的“使用者可选名称”中。
+
 
 
 ### Standard Edition 服务器的证书

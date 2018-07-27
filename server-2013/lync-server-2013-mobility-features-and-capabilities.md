@@ -55,18 +55,9 @@ _**上一次修改主题：** 2016-12-08_
 
   - 与会者视频 (H.264)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 2010 Mobile 为 Nokia Symbian 设备提供了一个客户端。Lync 2013 Mobile 将不会为基于 Nokia Symbian 的设备提供客户端。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync 2010 Mobile 为 Nokia Symbian 设备提供了一个客户端。Lync 2013 Mobile 将不会为基于 Nokia Symbian 的设备提供客户端。
+
 
 
 Apple iPad 用户将可以访问增强功能。在使用音频回拨加入会议后，iPad 用户将能够查看会议中已上载的 Microsoft PowerPoint 演示文稿，共享应用程序和桌面，查看会议参加人列表，并接收会议中共享的其他内容类型的通知。
@@ -85,18 +76,9 @@ Apple iPad 用户将可以访问增强功能。在使用音频回拨加入会议
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>并非所有功能在所有移动设备上的工作方式都相同。有关移动设备上支持的功能的详细信息，请参阅位于 <a href="http://go.microsoft.com/fwlink/p/?linkid=234777">http://go.microsoft.com/fwlink/p/?LinkId=234777</a> 的“移动客户端比较表”。有关受支持的设备和操作系统的详细信息，请参阅<a href="lync-server-2013-planning-for-mobile-clients.md">在 Lync Server 2013 中规划移动客户端</a>下的要求主题。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 并非所有功能在所有移动设备上的工作方式都相同。有关移动设备上支持的功能的详细信息，请参阅位于 <a href="http://go.microsoft.com/fwlink/p/?linkid=234777">http://go.microsoft.com/fwlink/p/?LinkId=234777</a> 的“移动客户端比较表”。有关受支持的设备和操作系统的详细信息，请参阅<a href="lync-server-2013-planning-for-mobile-clients.md">在 Lync Server 2013 中规划移动客户端</a>下的要求主题。
+
 
 
 使用 Lync Server 2013 自动发现功能时，移动应用程序会自动定位 Lync Server 2013 Web 服务而无需用户在其设备设置中手动输入 URL。在移动设备设置中手动输入 URL 也是受支持的，此操作主要用于进行故障排除。

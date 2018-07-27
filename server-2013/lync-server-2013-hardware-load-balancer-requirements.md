@@ -37,32 +37,14 @@ _**上一次修改主题：** 2016-12-08_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用硬件负载平衡器，则为内部网络连接部署的负载平衡器必须配置为仅对发往运行访问边缘服务和 A/V 边缘服务的服务器的流量进行负载平衡。它不能对发往内部 Web 会议边缘服务或内部 XMPP 代理服务的流量进行负载平衡。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果使用硬件负载平衡器，则为内部网络连接部署的负载平衡器必须配置为仅对发往运行访问边缘服务和 A/V 边缘服务的服务器的流量进行负载平衡。它不能对发往内部 Web 会议边缘服务或内部 XMPP 代理服务的流量进行负载平衡。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 不支持直接服务器返回 (DSR) NAT。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Lync Server 2013 不支持直接服务器返回 (DSR) NAT。
+
 
 
 要确定您的硬件负载平衡器是否支持 Lync Server 2013 必需的功能，请参阅“Lync Server 2010 负载平衡器合作伙伴”，网址为 [http://go.microsoft.com/fwlink/p/?linkId=202452](http://go.microsoft.com/fwlink/p/?linkid=202452)。
@@ -85,18 +67,9 @@ _**上一次修改主题：** 2016-12-08_
 
 Lync Server 2013 中大大减少了有关 Web 服务的基于 Cookie 的相关性要求。如果要部署 Lync Server 2013 并且将不保留任何 Lync Server 2010前端服务器或 前端池，则无需基于 Cookie 的持久性。不过，如果您将临时或永久保留任何 Lync Server 2010前端服务器或 前端池，则仍需使用基于 Cookie 的持久性，因为已为 Lync Server 2010 部署并配置了它。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>如果您决定使用基于 Cookie 的相关性，但您的部署不需要它</strong>，如此做没有任何负面影响。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <strong>如果您决定使用基于 Cookie 的相关性，但您的部署不需要它</strong>，如此做没有任何负面影响。
+
 
 
 对于 **不使用**基于 Cookie 的相关性的部署：
@@ -115,18 +88,9 @@ Lync Server 2013 中大大减少了有关 Web 服务的基于 Cookie 的相关�
 
   - 必须在其传入 HTTP 请求没有 Cookie 的每个 HTTP 响应中设置硬件负载平衡器 Cookie，无论该同一 TCP 连接上的上一个 HTTP 响应是否已获得 Cookie 都是如此。如果负载平衡器将 Cookie 插入优化为每个 TCP 连接只发生一次，则不得使用该优化
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>典型硬件负载平衡器配置使用源地址相关性和 20 分钟的 TCP 会话生存期，这对 Lync Server 和 Lync 2013 客户端同样适用，因为在整个客户端使用和/或应用程序交互期间都会维持会话状态。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 典型硬件负载平衡器配置使用源地址相关性和 20 分钟的 TCP 会话生存期，这对 Lync Server 和 Lync 2013 客户端同样适用，因为在整个客户端使用和/或应用程序交互期间都会维持会话状态。
+
 
 
 如果部署移动设备，则您的硬件负载平衡器必须能对 TCP 会话中的单个请求进行负载平衡（实际上，您必须能基于目标 IP 地址对单个请求进行负载平衡）。

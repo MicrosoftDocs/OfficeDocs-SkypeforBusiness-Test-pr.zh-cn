@@ -33,20 +33,11 @@ _**上一次修改主题：** 2012-10-20_
 
 这同时适用于网络站点 1 中的客户端接收的传入 PSTN 呼叫，以及网络站点 1 中的客户端应用程序发送的传出 PSTN 呼叫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请确保 PSTN 网关所属的 IP 子网已配置并与网络站点 2 相关联。<br />
+> [!NOTE]  
+> 请确保 PSTN 网关所属的 IP 子网已配置并与网络站点 2 相关联。<br />
 请确保中介服务器的两个接口所属的 IP 子网已配置并与网络站点 1 相关联。<br />
-有关详细信息，请参阅 <a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中将子网与网络站点相关联</a>。</td>
-</tr>
-</tbody>
-</table>
+有关详细信息，请参阅 <a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中将子网与网络站点相关联</a>。
+
 
 
 ## 示例 2：中介服务器与具有媒体端点的第三方 PBX 之间的 CAC
@@ -65,20 +56,11 @@ _**上一次修改主题：** 2012-10-20_
 
 这同时适用于网络站点 1 中的客户端接收的传入 PSTN 呼叫，以及网络站点 1 中的客户端发送的传出 PSTN 呼叫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请确保 MTP 所属的 IP 子网已配置并与网络站点 2 相关联。<br />
+> [!NOTE]  
+> 请确保 MTP 所属的 IP 子网已配置并与网络站点 2 相关联。<br />
 请确保中介服务器的两个接口所属的 IP 子网已配置并与网络站点 1 相关联。<br />
-有关详细信息，请参阅 <a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中将子网与网络站点相关联</a>。</td>
-</tr>
-</tbody>
-</table>
+有关详细信息，请参阅 <a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中将子网与网络站点相关联</a>。
+
 
 
 ## 示例 3：中介服务器与没有媒体端点的第三方 PBX 之间的 CAC
@@ -93,18 +75,9 @@ _**上一次修改主题：** 2012-10-20_
 
 对于来自第三方终结点的呼叫，在发出会话请求时会提供有关终结点设备的信息，而且可以同时在中介服务器的两端执行 CAC 检查。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请确保终结点设备所属的 IP 子网已配置并与网络站点 2 相关联。<br />
+> [!NOTE]  
+> 请确保终结点设备所属的 IP 子网已配置并与网络站点 2 相关联。<br />
 请确保中介服务器的两个接口所属的 IP 子网已配置并与网络站点 1 相关联。<br />
-有关详细信息，请参阅 <a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中将子网与网络站点相关联</a>。</td>
-</tr>
-</tbody>
-</table>
+有关详细信息，请参阅 <a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中将子网与网络站点相关联</a>。
+
 

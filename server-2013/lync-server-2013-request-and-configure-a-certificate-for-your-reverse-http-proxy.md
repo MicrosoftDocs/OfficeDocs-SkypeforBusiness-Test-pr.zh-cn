@@ -68,18 +68,9 @@ _**上一次修改主题：** 2016-12-08_
 <td><p>使用者替代名称</p></td>
 <td><p>会议简单 URL</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>所有会议简单 URL 都必须位于使用者替代名称中。每个 SIP 域必须至少有一个活动会议简单 URL。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 所有会议简单 URL 都必须位于使用者替代名称中。每个 SIP 域必须至少有一个活动会议简单 URL。
+
 
 </div></td>
 <td><p>meet.contoso.com</p></td>
@@ -99,18 +90,9 @@ _**上一次修改主题：** 2016-12-08_
 <td><p>外部自动发现服务 URL</p></td>
 <td><p>lyncdiscover.contoso.com</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在使用 Microsoft Exchange Server，则也需要为 Exchange 自动发现和 Web 服务 URL 配置反向代理规则。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您在使用 Microsoft Exchange Server，则也需要为 Exchange 自动发现和 Web 服务 URL 配置反向代理规则。
+
 
 </div></td>
 </tr>
@@ -118,36 +100,18 @@ _**上一次修改主题：** 2016-12-08_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果内部部署包含多个 Standard Edition Server 或前端池，则必须为每个外部 Web 场 FQDN 配置 Web 发布规则，并且还需为其配置证书和 Web 侦听器，或者获取使用者替代名称包含所有池使用的名称的证书，将其分配给 Web 侦听器，并在多个 Web 发布规则中共享。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果内部部署包含多个 Standard Edition Server 或前端池，则必须为每个外部 Web 场 FQDN 配置 Web 发布规则，并且还需为其配置证书和 Web 侦听器，或者获取使用者替代名称包含所有池使用的名称的证书，将其分配给 Web 侦听器，并在多个 Web 发布规则中共享。
+
 
 
 ## 创建证书请求
 
 请在反向代理上创建证书请求。您可以在另一台计算机上创建请求，但是在从公共证书颁发机构收到证书之后，您必须导出证书及私钥，并将其导入到反向代理中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>证书请求或证书签名请求 (CSR) 是指向受信任的公共证书颁发机构 (CA) 发出的请求以便验证请求计算机的公钥并签名。当生成证书时，将创建一个公钥和一个私钥。仅公钥会进行共享和签名。顾名思义，公钥对任何公共请求可用。公钥供需要安全地交换信息并验证计算机的身份的客户端、服务器和其他请求使用。私钥受到安全保护，仅由创建密钥对以解密通过公钥进行加密的消息的计算机使用。私钥可以用于其他用途。对于反向代理用途，主要用途是数据译码。其次，另一用途是证书密钥级别的证书身份验证，仅限于验证请求者是否拥有计算机的公钥或者您用于其公钥的计算机是否是所声称的计算机。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 证书请求或证书签名请求 (CSR) 是指向受信任的公共证书颁发机构 (CA) 发出的请求以便验证请求计算机的公钥并签名。当生成证书时，将创建一个公钥和一个私钥。仅公钥会进行共享和签名。顾名思义，公钥对任何公共请求可用。公钥供需要安全地交换信息并验证计算机的身份的客户端、服务器和其他请求使用。私钥受到安全保护，仅由创建密钥对以解密通过公钥进行加密的消息的计算机使用。私钥可以用于其他用途。对于反向代理用途，主要用途是数据译码。其次，另一用途是证书密钥级别的证书身份验证，仅限于验证请求者是否拥有计算机的公钥或者您用于其公钥的计算机是否是所声称的计算机。
+
 
 
 <table>

@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-02-23_
 
 客户端版本配置设置用于启用或禁用客户端版本控制。全局客户端版本配置随 Lync Server 一起安装，用于启用或禁用整个服务器部署的客户端版本控制。您还可以为单个网站配置客户端版本配置设置。可以从 Lync Server 2013 控制面板或 Lync Server 2013 命令行管理程序创建或修改客户端版本配置设置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于匿名用户未与用户、站点或服务关联，因此匿名用户仅受全局级别策略的影响。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由于匿名用户未与用户、站点或服务关联，因此匿名用户仅受全局级别策略的影响。
+
 
 
 ## 使用 Lync Server 控制面板创建或修改客户端版本配置设置

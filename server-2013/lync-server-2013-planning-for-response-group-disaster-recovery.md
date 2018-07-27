@@ -21,18 +21,9 @@ _**上一次修改主题：** 2015-03-09_
 
 在准备和执行灾难恢复过程时，请谨记以下做法。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在共存环境中，仅本文档中介绍的灾难恢复过程支持 Lync Server 2013 响应组。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在共存环境中，仅本文档中介绍的灾难恢复过程支持 Lync Server 2013 响应组。
+
 
 
   - 在进行容量规划时，应制定灾难恢复计划。对于灾难恢复容量，配对池中的每个池应能够处理两个池中所有响应组的工作负荷。有关 响应组容量规划的详细信息，请参阅 [Lync Server 2013 中响应组的容量规划](lync-server-2013-capacity-planning-for-response-group.md)。
@@ -47,18 +38,9 @@ _**上一次修改主题：** 2015-03-09_
 
   - 可以在发生灾难或执行故障转移操作之前，先将响应组导入备份池。事先导入响应组可缩短停机时间，因为在将呼叫路由至备份池后即可在备份池中还原 Lync Server 响应组服务。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在完成故障转移前， 响应组应用程序无法对非活动池中托管的任何代理进行访问。在此期间， 响应组应用程序将处理呼叫，就好像这些代理不可用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 在完成故障转移前， 响应组应用程序无法对非活动池中托管的任何代理进行访问。在此期间， 响应组应用程序将处理呼叫，就好像这些代理不可用。
+    
 
 
 ## 响应组灾难恢复过程
@@ -73,18 +55,9 @@ _**上一次修改主题：** 2015-03-09_
 
 在通过创建具有不同 FQDN 的新池来恢复时，需要在导入响应组时将该新池指定为响应组的所有者。除非或直到您结合使用 –OverwriteOwner 参数和 **Import-CsRgsConfiguration** cmdlet 来明确重新分配所有权，响应组的所有权将一直属于原始池。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果在恢复期间重建池（即，响应组数据库为空），则无论是否使用同一 FQDN，还都需要使用 –OverwriteOwner 参数。如果不重建池，则无需使用 –OverwriteOwner 参数，但在将响应组导入回主池时，允许使用此参数。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果在恢复期间重建池（即，响应组数据库为空），则无论是否使用同一 FQDN，还都需要使用 –OverwriteOwner 参数。如果不重建池，则无需使用 –OverwriteOwner 参数，但在将响应组导入回主池时，允许使用此参数。
+
 
 
 只能为每个池定义一组应用程序级别的 响应组配置设置。这些设置包括默认的保持音乐配置、默认的保持音乐音频文件、代理回响宽限期和调用上下文配置。若要查看这些配置设置，请运行 **Get-CsRgsConfiguration** cmdlet。有关 **Get-CsRgsConfiguration** cmdlet 的详细信息，请参阅 [Get-CsRgsConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsRgsConfiguration)。
@@ -139,18 +112,9 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>中断期间</p></td>
 <td><p>运行 <strong>Import-CsRgsConfiguration</strong> cmdlet，以将备份的 Lync Server 响应组服务配置从主池导入备份池。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要将备份池中的应用程序级别的 响应组设置替换为主池中的设置，请使用 –ReplaceExistingSettings 参数。如果不从主池向备份池传送应用程序级别的设置，则无法恢复主池，您将丢失主池中的设置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果要将备份池中的应用程序级别的 响应组设置替换为主池中的设置，请使用 –ReplaceExistingSettings 参数。如果不从主池向备份池传送应用程序级别的设置，则无法恢复主池，您将丢失主池中的设置。
+
 
 </div></td>
 <td><p>RTCUniversalServerAdmins</p>
@@ -221,18 +185,9 @@ _**上一次修改主题：** 2015-03-09_
 <td><ul>
 <li><p>运行 <strong>Import-CsRgsConfiguration</strong> cmdlet 以将响应组导入回主池。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果无法恢复主池并且您要部署新池来替换它，可使用 –ReplaceExistingSettings 参数将应用程序级别的设置从备份池传送到新池。如果不从备份池传送设置，新池将使用默认设置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果无法恢复主池并且您要部署新池来替换它，可使用 –ReplaceExistingSettings 参数将应用程序级别的设置从备份池传送到新池。如果不从备份池传送设置，新池将使用默认设置。
+
 
 </div></li>
 <li><p>带 –ShowAll 参数（显示所有响应组）或 –Owner 参数（只显示已导入的响应组）运行以下 cmdlet，以确认所有响应组配置均已成功导入回主池：</p>

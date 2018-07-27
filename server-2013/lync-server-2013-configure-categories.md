@@ -25,18 +25,8 @@ _**上一次修改主题：** 2012-10-06_
 
 2.  从“开始”菜单中选择 Lync Server 控制面板或打开浏览器窗口，然后输入管理 URL。有关可用于启动 Lync Server 控制面板的不同方法的详细信息，请参阅[打开 Lync Server 管理工具](lync-server-2013-open-lync-server-administrative-tools.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您还可以使用 Windows PowerShell cmdlet。有关详细信息，请参阅部署文档中的 <a href="configuring-persistent-chat-server-by-using-windows-powershell-cmdlets.md">使用 Windows PowerShell Cmdlet 配置持久聊天服务器</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您还可以使用 Windows PowerShell cmdlet。有关详细信息，请参阅部署文档中的 <a href="configuring-persistent-chat-server-by-using-windows-powershell-cmdlets.md">使用 Windows PowerShell Cmdlet 配置持久聊天服务器</a>。
 
 
 3.  在左侧导航栏中，单击“持久聊天”，然后单击“类别”。
@@ -57,18 +47,8 @@ _**上一次修改主题：** 2012-10-06_
     
     4.  要控制属于此类别的聊天室中的文件上载，请选中或清除“启用文件上载”复选框。如果选中，该类别的聊天室可以启用或禁用文件上载；如果清除，则不允许该类别的聊天室执行文件上载操作。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>此设置在服务器上强制实施，因为使用 Office Communications Server 2007 R2群聊服务器或 Lync Server 2010 群聊的自定义应用程序或之前的 群聊客户端可以将文件发布到聊天室。 Lync 2013 客户端不具有文件上载/下载功能，因此如果您采用纯 Lync 2013 部署或 Lync 2013 客户端，则无法在 持久聊天服务器聊天室中发布文件。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+		> 此设置在服务器上强制实施，因为使用 Office Communications Server 2007 R2群聊服务器或 Lync Server 2010 群聊的自定义应用程序或之前的 群聊客户端可以将文件发布到聊天室。 Lync 2013 客户端不具有文件上载/下载功能，因此如果您采用纯 Lync 2013 部署或 Lync 2013 客户端，则无法在 持久聊天服务器聊天室中发布文件。
     
     5.  要控制聊天历史记录，请选中或清除“启用聊天历史记录”复选框。如果选中，则聊天室聊天内容将变成持久的；否则，将不会保留聊天消息。如果启用了合规性，则将按合规性保存聊天室聊天内容，但用户无法访问较早的消息。此选项可用于指定为无需保留聊天历史记录的实时、临时协作的聊天室。
 

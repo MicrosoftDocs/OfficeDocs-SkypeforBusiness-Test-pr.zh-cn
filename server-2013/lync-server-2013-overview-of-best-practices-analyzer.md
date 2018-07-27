@@ -43,16 +43,7 @@ _**上一次修改主题：** 2012-09-19_
 
 将收集的数据与预定义规则比较后，该工具会报告问题。对于其报告的每个问题，最佳做法分析器都会提供在扫描的 Lync Server 2013 环境中找到的相关信息以及建议配置。最佳做法分析器还提供有关具体问题详细信息的链接。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 最佳做法分析器仅从 Lync Server 2013 组件收集配置信息。您可以使用该工具的早期版本扫描以前的环境。有关详细信息，请参阅<a href="lync-server-2013-requirements-for-running-best-practices-analyzer.md">运行最佳做法分析器的要求</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 最佳做法分析器仅从 Lync Server 2013 组件收集配置信息。您可以使用该工具的早期版本扫描以前的环境。有关详细信息，请参阅<a href="lync-server-2013-requirements-for-running-best-practices-analyzer.md">运行最佳做法分析器的要求</a>。
+
 

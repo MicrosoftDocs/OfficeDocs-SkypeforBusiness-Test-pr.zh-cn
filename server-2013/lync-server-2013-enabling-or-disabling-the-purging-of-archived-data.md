@@ -23,19 +23,10 @@ _**上一次修改主题：** 2013-02-23_
 
 可以在部署存档时初步设置存档配置，但可以在部署后更改、添加和删除配置。有关如何实施存档配置（包括您可以指定的选项以及存档配置的层次结构）的详细信息，请参阅规划文档、部署文档或操作文档中的[Lync Server 2013 的存档工作原理](lync-server-2013-how-archiving-works.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要对驻留在 Lync Server 2013 上的用户使用存档，您必须配置存档策略以指定是对内部通信、外部通信、还是对这两者启用存档。默认情况下，不对内部或外部通信启用存档。在启用任何策略中的存档之前，您应该按本节中所述为您的部署（或者为特定站点和池）指定相应的存档配置。有关启用存档的详细信息，请参阅部署文档中的<a href="lync-server-2013-configuring-and-assigning-archiving-policies.md">配置和分配存档策略</a>。<br />
-如果您决定在部署存档后使用 Microsoft Exchange 集成在 Exchange 2013 服务器上存储存档数据和文件，并且您的所有用户均驻留在 Exchange 2013 服务器上，那么您应该从拓扑中删除 SQL Server 数据库配置。您必须使用拓扑生成器执行此操作。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-changing-archiving-database-options.md">在 Lync Server 2013 中更改存档数据库选项</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要对驻留在 Lync Server 2013 上的用户使用存档，您必须配置存档策略以指定是对内部通信、外部通信、还是对这两者启用存档。默认情况下，不对内部或外部通信启用存档。在启用任何策略中的存档之前，您应该按本节中所述为您的部署（或者为特定站点和池）指定相应的存档配置。有关启用存档的详细信息，请参阅部署文档中的<a href="lync-server-2013-configuring-and-assigning-archiving-policies.md">配置和分配存档策略</a>。<br />
+如果您决定在部署存档后使用 Microsoft Exchange 集成在 Exchange 2013 服务器上存储存档数据和文件，并且您的所有用户均驻留在 Exchange 2013 服务器上，那么您应该从拓扑中删除 SQL Server 数据库配置。您必须使用拓扑生成器执行此操作。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-changing-archiving-database-options.md">在 Lync Server 2013 中更改存档数据库选项</a>。
+
 
 
 ## 为存档启用或禁用清除

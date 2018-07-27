@@ -142,7 +142,7 @@ Lync Server 2013 在每个前端服务器上的数据库中存储有关会议和
     
       - 如果您的部署包括 Lync Server 2013 和 Lync Server 2010 或 Office Communications Server 2007 R2 的组合，则运行以下 cmdlet 并将其分配给拓扑中的每个 Lync Server 2013 池：
         
-            new-csaddressbookconfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
+            New-CsAddressBookConfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
 
 3.  等待在所有池上执行 CMS 复制。
 
@@ -508,18 +508,9 @@ Windows Fabric 安装失败，因为 Fabric 跟踪是采用时间格式 HH:MM:SS
 
 ## 在某些情况下，配置为使用 IPv4 和 IPv6 双协议栈的计算机上运行的 Lync 客户端可能不支持依赖计算机的 IP 子网的功能，例如 E911、媒体绕过、呼叫允许控制和基于位置的路由 (3335508)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。
+
 
 
 **问题：**
@@ -576,18 +567,9 @@ Windows Fabric 安装失败，因为 Fabric 跟踪是采用时间格式 HH:MM:SS
 
 ## 与取回方建立呼叫期间，呼叫者可能会听到一秒的保持音乐 (3334097)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。
+
 
 
 **问题：**
@@ -672,18 +654,9 @@ Lync Server 2013响应组代理只能通过 Lync Server 2010 代理控制台登�
 
 ## 规划工具限制（3331056 和 3331059）
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。
+
 
 
 **问题：**
@@ -848,18 +821,9 @@ Lync Server 2013响应组代理只能通过 Lync Server 2010 代理控制台登�
 
 ## 通讯簿中的索引在某些语言中未按预期工作 (3336047)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。
+
 
 
 如果用户的属性包含索引字段，并且该字段仅包含无法编制索引的字符，则该用户不会显示在通讯簿中执行的搜索中。
@@ -910,18 +874,9 @@ Lync Server 2013响应组代理只能通过 Lync Server 2010 代理控制台登�
 
 ## 在某些 Web 浏览器中使用 Lync Web Scheduler、Dial-In、Join Launcher、持久聊天聊天室管理和 OCTab 时，对阿塞拜疆语和乌兹别克语区域设置的支持是有限的 (3336748)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。
+
 
 
 **问题：**

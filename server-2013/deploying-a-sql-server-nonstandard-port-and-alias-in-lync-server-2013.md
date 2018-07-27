@@ -27,18 +27,9 @@ Lync Server 2013拓扑生成器 支持在配置 Lync Server 2013 时使用 SQL S
 
 为成功确定 Lync Server 2013 用于与 SQL Server 通信的端口，攻击者需要扫描所有端口以获取端口信息。攻击者扫描端口增加了安全防护探测和阻止指令的机会。除使用非标准端口增加安全性之外，您也可以使用 SQL Server 别名为部署提供灵活性。在需要更改 SQL Server 名称的场景下，这对于减少配置更改非常有用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SQL Server 提供了两种容错方法（故障转移群集和镜像）。将 SQL Server 非标准端口和别名以及 Lync Server 2013 结合使用支持这两种 SQL Server 容错方法。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> SQL Server 提供了两种容错方法（故障转移群集和镜像）。将 SQL Server 非标准端口和别名以及 Lync Server 2013 结合使用支持这两种 SQL Server 容错方法。
+
 
 
 当从 拓扑生成器 里配置 SQL Server 数据库连接时，或使用 Install-CsDatabase cmdlet 时，无法明确定义一个 SQL Server 非标准端口号并将其与 SQL 实例联系起来。若要设置一个非标准端口，您需要使用 SQL Server 和 Windows Server 实用程序。
@@ -99,18 +90,8 @@ SQL Server 非标准端口和别名必须在数据库实例中设置，然后才
     
     ![针对实例重置 SQL Server 服务。](images/Dn776290.a965c8cf-f769-4b52-bb38-c48a438cf491(OCS.15).jpg "针对实例重置 SQL Server 服务。")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>确保您更新了防火墙设置以容纳新的 SQL Server 端口。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 确保您更新了防火墙设置以容纳新的 SQL Server 端口。
 
 
 **创建和配置 SQL Server 别名**
@@ -171,18 +152,9 @@ SQL Server 非标准端口和别名必须在数据库实例中设置，然后才
 
 有多种方法可以使其正常工作。建议您确保 SQL Server 数据库在侦听一个使用别名的特定端口。可以通过“**netstat**”和“**telnet**”命令快速检查。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Telnet 客户端是 Windows Server 附带的一项功能，必须安装。Windows Server 功能可以通过打开服务器管理器并从“管理”菜单中选择“添加角色和功能”来安装。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Telnet 客户端是 Windows Server 附带的一项功能，必须安装。Windows Server 功能可以通过打开服务器管理器并从“管理”菜单中选择“添加角色和功能”来安装。
+
 
 
 **使用 netstat 和 telnet 以验证数据库连接**

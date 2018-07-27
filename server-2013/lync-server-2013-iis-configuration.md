@@ -131,34 +131,16 @@ _**上一次修改主题：** 2016-12-08_
 
     Add-WindowsFeature Web-Server, Web-Static-Content, Web-Default-Doc, Web-Scripting-Tools, Web-Windows-Auth, Web-Asp-Net, Web-Log-Libraries, Web-Http-Tracing, Web-Stat-Compression, Web-Dyn-Compression, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Http-Errors, Web-Http-Logging, Web-Net-Ext, Web-Client-Auth, Web-Filtering, Web-Mgmt-Console
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，匿名身份验证会随 IIS 服务器角色一起安装。安装 IIS 后，您可以管理匿名身份验证。有关详细信息，请参阅“启用匿名身份验证 (IIS 7)”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=203935" class="uri">http://go.microsoft.com/fwlink/?linkid=203935</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 默认情况下，匿名身份验证会随 IIS 服务器角色一起安装。安装 IIS 后，您可以管理匿名身份验证。有关详细信息，请参阅“启用匿名身份验证 (IIS 7)”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=203935" class="uri">http://go.microsoft.com/fwlink/?linkid=203935</a>。
+
 
 
 下表指明 Windows Server 2012 和 Windows Server 2012 R2 所需的 IIS 8.0 和 IIS 8.5 角色服务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于 Windows Server 2012 和 Windows Server 2012 R2，Add-WindowsFeature cmdlet 已替换为 Install-WindowsFeature cmdlet。有关详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=392274">Install-WindowsFeature</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 对于 Windows Server 2012 和 Windows Server 2012 R2，Add-WindowsFeature cmdlet 已替换为 Install-WindowsFeature cmdlet。有关详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=392274">Install-WindowsFeature</a>。
+
 
 
 ### IIS 8.0 和 IIS 8.5 角色服务

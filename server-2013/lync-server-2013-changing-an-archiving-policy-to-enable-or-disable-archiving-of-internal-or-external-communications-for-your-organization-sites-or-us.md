@@ -25,19 +25,10 @@ _**上一次修改主题：** 2013-02-23_
 
 有关策略的实现方式的详细信息（包括策略的层次结构），请参阅规划文档、部署文档或操作文档中的[Lync Server 2013 的存档工作原理](lync-server-2013-how-archiving-works.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果为部署启用 Microsoft Exchange 集成，则 Exchange 策略控制是否为驻留在 Exchange 2013 上且其邮箱处于就地保留状态的用户启用存档。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">使用 Exchange 服务器集成设置存档的策略</a>。<br />
-在启用存档之前，应在存档配置中指定所有适当选项。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md">在 Lync Server 2013 中管理组织、站点和池的存档配置选项</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果为部署启用 Microsoft Exchange 集成，则 Exchange 策略控制是否为驻留在 Exchange 2013 上且其邮箱处于就地保留状态的用户启用存档。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">使用 Exchange 服务器集成设置存档的策略</a>。<br />
+在启用存档之前，应在存档配置中指定所有适当选项。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md">在 Lync Server 2013 中管理组织、站点和池的存档配置选项</a>。
+
 
 
 ## 更改存档策略
@@ -64,18 +55,8 @@ _**上一次修改主题：** 2013-02-23_
 
 6.  单击“提交”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>用户策略的设置仅适用于要应用该策略的特定用户和用户组。有关详细信息，请参阅<a href="lync-server-2013-applying-an-archiving-policy-to-users.md">将存档策略应用于用户</a></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> 用户策略的设置仅适用于要应用该策略的特定用户和用户组。有关详细信息，请参阅<a href="lync-server-2013-applying-an-archiving-policy-to-users.md">将存档策略应用于用户</a>
 
 
 ## 使用 Lync Server PowerShell Cmdlet 启用和禁用存档

@@ -17,18 +17,8 @@ _**上一次修改主题：** 2013-10-28_
 
 迁移 XMPP 网关的最后几个步骤是配置 Lync Server 2013 边缘服务器的证书、部署 Lync Server 2013 XMPP 网关以及更新 XMPP 网关的 DNS 记录。这些步骤应该并行执行，以尽可能缩短 XMPP 网关的停机时间。在执行这些步骤前，必须将所有用户移动到 Microsoft Lync Server 2013 部署中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于驻留在 Survivable Branch Appliance 上的用户不支持 XMPP 联盟。这适用于查看状态信息和交换 IM 消息。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 对于驻留在 Survivable Branch Appliance 上的用户不支持 XMPP 联盟。这适用于查看状态信息和交换 IM 消息。
 
 
 ## 在 Lync Server 2013 边缘服务器上配置 XMPP 网关证书。

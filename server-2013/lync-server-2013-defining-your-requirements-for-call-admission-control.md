@@ -25,18 +25,9 @@ _**上一次修改主题：** 2015-03-09_
 
 4.  确定对每个 WAN 链路的带宽限制。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>带宽限制是指 WAN 链路分配给企业语音和音频/视频流量的带宽量。当 WAN 链路被描述为“带宽受限”时，表示该 WAN 链路具有低于链接上预期高峰流量的带宽限制。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 带宽限制是指 WAN 链路分配给企业语音和音频/视频流量的带宽量。当 WAN 链路被描述为“带宽受限”时，表示该 WAN 链路具有低于链接上预期高峰流量的带宽限制。
+    
 
 
 5.  标识分配给每个网络站点的 IP 子网。
@@ -47,18 +38,9 @@ _**上一次修改主题：** 2015-03-09_
 
 ![Litware Inc. 网络拓扑示例](images/Gg398334.477f3b52-2973-4026-9bc0-b1c6bf9f4803(OCS.15).jpg "Litware Inc. 网络拓扑示例")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>所有网络站点都与一个网络区域关联。例如，波特兰、里诺和阿尔伯克基包括在北美区域中。在此图中，只显示应用了 CAC 策略、具有带宽限制的 WAN 链路。芝加哥、纽约和底特律的网络站点在北美区域椭圆中显示，因为这些区域没有带宽限定，因此不需要 CAC 策略。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 所有网络站点都与一个网络区域关联。例如，波特兰、里诺和阿尔伯克基包括在北美区域中。在此图中，只显示应用了 CAC 策略、具有带宽限制的 WAN 链路。芝加哥、纽约和底特律的网络站点在北美区域椭圆中显示，因为这些区域没有带宽限定，因此不需要 CAC 策略。
+
 
 
 以下各节将介绍此示例拓扑的组件。有关如何规划此拓扑（包括带宽限制）的详细信息，请参阅 [示例：在 Lync Server 2013 中收集呼叫允许控制要求](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md)。
@@ -75,18 +57,9 @@ _**上一次修改主题：** 2015-03-09_
 
 CAC 要求为每个网络区域定义一个 Lync Server 中央站点。从该网络区域中的所有站点中选择具有最佳网络连接性和最高带宽的站点作为中央站点。前面的网络拓扑示例显示了三个网络区域，每个网络区域都有一个管理 CAC 决策的中央站点。前面示例中的相应关联如下表所示。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>中央站点不一定与网络站点对应。在本文档的示例中，某些中央站点（芝加哥、伦敦和北京）与网络站点共享同一名称。但是，即使中央站点和网络站点共享同一名称，中央站点也是 Lync Server 拓扑的一个元素，而网络站点是 Lync Server 拓扑所在的完整网络的一部分。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 中央站点不一定与网络站点对应。在本文档的示例中，某些中央站点（芝加哥、伦敦和北京）与网络站点共享同一名称。但是，即使中央站点和网络站点共享同一名称，中央站点也是 Lync Server 拓扑的一个元素，而网络站点是 Lync Server 拓扑所在的完整网络的一部分。
+
 
 
 ### 网络区域、中央站点和网络站点
@@ -161,32 +134,14 @@ CAC 带宽策略可定义下列任何内容或所有内容：
 
   - 分配给单个视频呼叫（会话）的最大带宽。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>所有 CAC 带宽值均表示最大“单向”带宽限制。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 所有 CAC 带宽值均表示最大“单向”带宽限制。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 语音策略功能能够替代针对用户传入呼叫（而非用户发起的传出呼叫）的带宽策略检查。建立会话后，将准确计算带宽消耗。应慎用此设置。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-create-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中创建语音策略和配置 PSTN 用法记录</a>或 <a href="lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中修改语音策略和配置 PSTN 用法记录</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Lync Server 2013 语音策略功能能够替代针对用户传入呼叫（而非用户发起的传出呼叫）的带宽策略检查。建立会话后，将准确计算带宽消耗。应慎用此设置。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-create-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中创建语音策略和配置 PSTN 用法记录</a>或 <a href="lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中修改语音策略和配置 PSTN 用法记录</a>。
+
 
 
 要基于每个会话优化带宽用量，请考虑将要使用的音频和视频编解码器的类型。特别要避免出现为预期要频繁使用的编解码器分配的带宽不足的情况。相反，如果要阻止媒体使用需要更多带宽的编解码器，则应将每个会话的最大带宽设置为足以阻止此类使用的较低值。对于音频，并不是每一种编解码器都适用于每一种方案。例如：
@@ -254,18 +209,9 @@ CAC 带宽策略可定义下列任何内容或所有内容：
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>带宽要求考虑以下几项的开销：以太网 II、IP、用户数据报协议 (UDP)、RTP（实时传输协议）和 SRTP（安全实时传输协议）。其中还包括 RTCP 开销 (10 kbps)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 带宽要求考虑以下几项的开销：以太网 II、IP、用户数据报协议 (UDP)、RTP（实时传输协议）和 SRTP（安全实时传输协议）。其中还包括 RTCP 开销 (10 kbps)。
+
 
 
 G.722.1 和 Siren 编解码器类似，但是它们提供不同的比特率。

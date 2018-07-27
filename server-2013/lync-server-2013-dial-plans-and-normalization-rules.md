@@ -25,18 +25,9 @@ _**上一次修改主题：** 2016-12-08_
 
 客户端通过用户登录 Lync Server 时所提供的带内设置获取拨号计划作用域级别。管理员可以使用 Lync Server 控制面板管理和分配拨号计划作用域级别。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>服务级别公用电话交换网 (PSTN) 网关拨号计划应用于来自特定网关的传入呼叫。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 服务级别公用电话交换网 (PSTN) 网关拨号计划应用于来自特定网关的传入呼叫。
+
 
 
 拨号计划作用域级别定义如下：
@@ -93,18 +84,9 @@ _**上一次修改主题：** 2016-12-08_
 
 如果用户需要拨打一个或多个额外的前导数字（例如，9）以拨通外线，则可以指定一个最多包含四个字符（\#、\* 和 0-9）的外部访问前缀。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果指定了外部访问前缀，则不需要另外创建规范化规则来满足前缀。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果指定了外部访问前缀，则不需要另外创建规范化规则来满足前缀。
+
 
 
 ## 规范化规则
@@ -282,16 +264,7 @@ _**上一次修改主题：** 2016-12-08_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>上表中显示的规范化规则名称不包括空格，但是您可以选择包括空格。例如，表中的第一个名称可以写作“5 digit extension”或“5-digit Extension”，这些名称仍然有效。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 上表中显示的规范化规则名称不包括空格，但是您可以选择包括空格。例如，表中的第一个名称可以写作“5 digit extension”或“5-digit Extension”，这些名称仍然有效。
+
 

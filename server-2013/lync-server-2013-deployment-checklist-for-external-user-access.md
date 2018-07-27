@@ -78,18 +78,9 @@ Microsoft Lync Server 2013 所含工具可同时简化内部服务器和边缘�
 <p></p></td>
 <td><p><strong>Domain Admins</strong> 组和 <strong>RTCUniversalServerAdmins</strong> 或 <strong>CsAdmins</strong> 组</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以使用本地 Users 组成员的帐户定义拓扑，但发布拓扑需要使用 <strong>Domain Admins</strong> 组和 <strong>RTCUniversalServerAdmins</strong> 组成员的帐户。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 可以使用本地 Users 组成员的帐户定义拓扑，但发布拓扑需要使用 <strong>Domain Admins</strong> 组和 <strong>RTCUniversalServerAdmins</strong> 组成员的帐户。
+
 
 </div></td>
 <td><p>部署文档中的 <a href="lync-server-2013-building-an-edge-and-director-topology.md">在 Lync Server 2013 中构建边缘和控制器拓扑</a></p></td>

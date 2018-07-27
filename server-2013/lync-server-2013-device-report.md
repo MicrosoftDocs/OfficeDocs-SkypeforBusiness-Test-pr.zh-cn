@@ -159,18 +159,9 @@ _**上一次修改主题：** 2015-03-09_
 
   - Aastra 6725ip 麦克风（USB 音频设备）-V0
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请记住，如果您运行的是 Lync Server 2013 的已本地化版本，捕获设备的名称可能不相同。美国英语中名为 Aastra 6725ip 麦克风 (Aastra 6725ip)-V0 的设备在法语和西班牙语中可能会有不同的名称。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 请记住，如果您运行的是 Lync Server 2013 的已本地化版本，捕获设备的名称可能不相同。美国英语中名为 Aastra 6725ip 麦克风 (Aastra 6725ip)-V0 的设备在法语和西班牙语中可能会有不同的名称。
+
 
 
 很多时候，您想拥有该级别的详细信息；但在其他时候，您可能仅对多少呼叫在使用普通的 Aastra 麦克风感兴趣，而与型号无关。获得类似此信息的一个方法是将设备报告数据导出到 Microsoft Excel，然后将此数据保存到以逗号分隔的值文件（例如，C:\\Data\\Devices\_Report.csv）中。然后使用一组类似这些的命令，将 .CSV 文件导入到 Windows PowerShell 中，并报告回使用 Aastra 捕获设备所做的呼叫总数：

@@ -17,18 +17,8 @@ _**上一次修改主题：** 2015-03-09_
 
 下表介绍可用作容量规划要求基础的组内呼叫应答用户模型。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>组内呼叫应答基于呼叫寄存应用程序。请记住，在规划灾难恢复容量时，配对池中的每个池都应该能够处理这两个池中呼叫寄存服务（包括组内呼叫应答）的工作负载。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 组内呼叫应答基于呼叫寄存应用程序。请记住，在规划灾难恢复容量时，配对池中的每个池都应该能够处理这两个池中呼叫寄存服务（包括组内呼叫应答）的工作负载。
 
 
 ### 组内呼叫应答用户模型
@@ -76,22 +66,10 @@ _**上一次修改主题：** 2015-03-09_
 </table>
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
+> [!NOTE]  
+> <ul>
 <li><p>对于前端服务器数少于八个的前端池，按照线性方式计算指标。例如，如果您的前端池有一个前端服务器，则按照表中所示值的 1/8 计算最大负载。</p></li>
 <li><p>只要不超过每个池的最大用户数，您就可以增加或减少建议的组数以及每组用户数。例如，您的 Standard Edition Server 可以有 120 个组，每组 25 个用户，因为针对组内呼叫应答启用的用户数仍然没有超过用户模型最大值（即针对组内呼叫应答启用 120 组乘以 25 用户等于 3,000 用户）。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+
 

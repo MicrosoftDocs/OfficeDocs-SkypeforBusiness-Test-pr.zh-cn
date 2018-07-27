@@ -27,18 +27,9 @@ Lync Server 2013企业语音是 Lync Server 2013 基础结构的一部分。
 
 4.  在 拓扑生成器中打开拓扑设计，如部署文档中的 [在 Lync Server 2013 中定义和配置拓扑](lync-server-2013-defining-and-configuring-the-topology.md)中所述。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>拓扑生成器安装是内部池部署过程的一部分。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-install-lync-server-administrative-tools.md">安装 Lync Server 2013 管理工具</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 拓扑生成器安装是内部池部署过程的一部分。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-install-lync-server-administrative-tools.md">安装 Lync Server 2013 管理工具</a>。
+    
 
 
 此外，必须已在与选择部署的参考拓扑对应的中央站点和分支站点中部署 Lync Server Enterprise Edition。必须至少为一个内部池定义、发布和安装文件之后，才能部署 企业语音组件，而且必须使用 拓扑生成器定义和发布内部池。

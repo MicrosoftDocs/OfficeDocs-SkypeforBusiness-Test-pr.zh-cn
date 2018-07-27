@@ -51,18 +51,9 @@ _**上一次修改主题：** 2016-12-08_
 
 9.  单击“提供此服务的主机”，再键入为受信任的外部客户端提供对您的 Lync Server 2013 系统的访问权的 Lync Server 2013  边缘池的完全限定的域名 (FQDN)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此外，还必须将域设置为 Exchange Online 设置中的权威性的接受域。有关详细信息，请参阅“创建接受域”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=229762">http://go.microsoft.com/fwlink/p/?linkId=229762</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此外，还必须将域设置为 Exchange Online 设置中的权威性的接受域。有关详细信息，请参阅“创建接受域”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=229762">http://go.microsoft.com/fwlink/p/?linkId=229762</a>。
+    
 
 
 10. 单击“确定”，然后单击“完成”。

@@ -49,18 +49,9 @@ _**上一次修改主题：** 2013-02-23_
     
       - 要自定义会议邀请中显示的徽标，请在“徽标 URL”中输入徽标的位置。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>徽标必须是大小为 188 x 30 像素的 GIF 或 JPG 图像。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 徽标必须是大小为 188 x 30 像素的 GIF 或 JPG 图像。
+        
     
       - 要自定义会议邀请中显示的帮助文本，请在“帮助 URL”中输入帮助文本的位置。
     

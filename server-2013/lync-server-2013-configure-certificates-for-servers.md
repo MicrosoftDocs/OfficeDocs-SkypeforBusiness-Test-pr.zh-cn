@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 要成功完成此过程，应以 RTCUniversalServerAdmins 组成员或委派了相应权限的用户身份登录。有关委派权限的详细信息，请参阅 [Lync Server 2013 中的委派安装权限](lync-server-2013-delegate-setup-permissions.md)。根据组织和请求证书的要求，可能还需要其他组成员身份。请咨询管理公钥基础结构 (PKI) 证书颁发机构 (CA) 的组。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 除了支持对运行 Lync Phone Edition 的客户端发出的连接使用 SHA-2 套件（SHA-2 使用摘要长度 224、256、384 或 512 位）以外，还支持对运行 Windows 7、Windows Server 2008 R2、Windows Server 2008、Windows Vista 或 Windows XP 操作系统的客户端发出的连接使用 SHA-2 套件。要支持使用 SHA-2 套件进行外部访问，外部证书必须由公共 CA 颁发，它也可以颁发具有相同位长度摘要的证书。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 除了支持对运行 Lync Phone Edition 的客户端发出的连接使用 SHA-2 套件（SHA-2 使用摘要长度 224、256、384 或 512 位）以外，还支持对运行 Windows 7、Windows Server 2008 R2、Windows Server 2008、Windows Vista 或 Windows XP 操作系统的客户端发出的连接使用 SHA-2 套件。要支持使用 SHA-2 套件进行外部访问，外部证书必须由公共 CA 颁发，它也可以颁发具有相同位长度摘要的证书。
+
 
 
 <table>
@@ -49,18 +40,8 @@ _**上一次修改主题：** 2016-12-08_
 
 使用以下过程请求、分配和安装 Standard Edition Server 或 前端服务器证书。对每台 前端服务器重复此过程。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>以下过程说明如何配置由组织部署的内部企业 PKI 颁发的证书以及脱机请求处理。有关从公共 CA 获取证书的信息，请参阅规划文档中的 <a href="lync-server-2013-certificate-requirements-for-internal-servers.md">Lync Server 2013 中内部服务器的证书要求</a>。此外，此过程还说明如何在设置 前端服务器的过程中请求、分配和安装证书。如果提前请求证书（如该部署文档中的 <a href="lync-server-2013-request-certificates-in-advance-optional.md">为 Lync Server 2013 提前请求证书（可选）</a>一节所述），或者不使用组织中部署的内部企业 PKI 获取证书，则必须相应地修改此过程。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 以下过程说明如何配置由组织部署的内部企业 PKI 颁发的证书以及脱机请求处理。有关从公共 CA 获取证书的信息，请参阅规划文档中的 <a href="lync-server-2013-certificate-requirements-for-internal-servers.md">Lync Server 2013 中内部服务器的证书要求</a>。此外，此过程还说明如何在设置 前端服务器的过程中请求、分配和安装证书。如果提前请求证书（如该部署文档中的 <a href="lync-server-2013-request-certificates-in-advance-optional.md">为 Lync Server 2013 提前请求证书（可选）</a>一节所述），或者不使用组织中部署的内部企业 PKI 获取证书，则必须相应地修改此过程。
 
 
 ## 为前端服务器配置证书
@@ -79,34 +60,16 @@ _**上一次修改主题：** 2016-12-08_
 
 7.  在“指定替代证书模板”页上，要使用默认的 Web 服务器模板，请单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果组织已经创建了模板，以用作默认 Web 服务器 CA 模板的备用模板，请选中相应的复选框，然后输入备用模板的名称。您将需要 CA 管理员定义的模板名称。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果组织已经创建了模板，以用作默认 Web 服务器 CA 模板的备用模板，请选中相应的复选框，然后输入备用模板的名称。您将需要 CA 管理员定义的模板名称。
+    
 
 
 8.  在“名称和安全设置”页上，指定一个“友好名称”，该名称应能标识证书和目的。如果将此处留空，则系统会自动生成一个名称。设置密钥的“位长度”，或接受默认值 2048 位。如果您确定需要将证书和私钥移动或复制到其他系统中，请选择“将证书的私钥标记为可导出”，然后单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 对可导出的私钥具有最低要求。其中一个可导出的位置是池中的边缘服务器，在这里媒体中继身份验证服务使用证书副本，而不是对池中的每个实例都分别使用单个证书。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 2013 对可导出的私钥具有最低要求。其中一个可导出的位置是池中的边缘服务器，在这里媒体中继身份验证服务使用证书副本，而不是对池中的每个实例都分别使用单个证书。
+    
 
 
 9.  在“组织信息”页上，可选择提供组织信息，然后单击“下一步”。
@@ -129,18 +92,9 @@ _**上一次修改主题：** 2016-12-08_
 
 18. 在“证书存储”页上，选择已请求的证书。如果要查看证书，请单击“查看证书详细信息”，然后单击“下一步”继续。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果“联机证书请求状态”页报告证书存在问题（例如证书无效），查看实际证书可协助解决问题。可能导致证书无效的两个具体问题为：先前提到的受信任根 CA 证书缺失，与证书相关联的私钥缺失。有关如何解决这两个问题的信息，请参阅 CA 文档。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果“联机证书请求状态”页报告证书存在问题（例如证书无效），查看实际证书可协助解决问题。可能导致证书无效的两个具体问题为：先前提到的受信任根 CA 证书缺失，与证书相关联的私钥缺失。有关如何解决这两个问题的信息，请参阅 CA 文档。
+    
 
 
 19. 在“证书分配摘要”页上，检查显示的信息以确保此证书是应分配的证书，然后单击“下一步”。

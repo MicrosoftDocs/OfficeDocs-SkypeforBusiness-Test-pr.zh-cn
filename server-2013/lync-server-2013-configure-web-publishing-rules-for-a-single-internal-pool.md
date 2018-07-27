@@ -23,18 +23,9 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 使用以下过程创建 Web 发布规则。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>这些过程假定您已安装 Forefront Threat Management Gateway (TMG) 2010 Standard Edition 或者配置了 Internet Information Server 应用程序请求路由 (IIS ARR) 扩展。您可以使用 TMG 或 IIS ARR。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 这些过程假定您已安装 Forefront Threat Management Gateway (TMG) 2010 Standard Edition 或者配置了 Internet Information Server 应用程序请求路由 (IIS ARR) 扩展。您可以使用 TMG 或 IIS ARR。
+
 
 
 ## 在运行 TMG 2010 的计算机上创建 Web 服务器发布规则
@@ -53,34 +44,16 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 7.  在“内部发布详细信息”页的“内部站点名称”框中，键入承载会议内容和通讯簿内容的内部 Web 场的完全限定域名 (FQDN)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果内部服务器是 Standard Edition Server，则此 FQDN 为 Standard Edition Server 的 FQDN。如果内部服务器是前端池，则此 FQDN 是用于平衡内部 Web 场服务器负载的硬件负载平衡器虚拟 IP (VIP)。TMG 服务器必须能够将 FQDN 解析为内部 Web 服务器的 IP 地址。如果 TMG 服务器不能将 FQDN 解析为正确的 IP 地址，可以选择“使用计算机名称或 IP 地址连接到发布的服务器”，然后在“计算机名称或 IP 地址”框中键入内部 Web 服务器的 IP 地址。如果这样做，则必须确保在 TMG 服务器上打开端口 53，且 TMG 服务器可以访问位于外围网络中的 DNS 服务器。还可以使用本地主机文件中的条目提供名称解析。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果内部服务器是 Standard Edition Server，则此 FQDN 为 Standard Edition Server 的 FQDN。如果内部服务器是前端池，则此 FQDN 是用于平衡内部 Web 场服务器负载的硬件负载平衡器虚拟 IP (VIP)。TMG 服务器必须能够将 FQDN 解析为内部 Web 服务器的 IP 地址。如果 TMG 服务器不能将 FQDN 解析为正确的 IP 地址，可以选择“使用计算机名称或 IP 地址连接到发布的服务器”，然后在“计算机名称或 IP 地址”框中键入内部 Web 服务器的 IP 地址。如果这样做，则必须确保在 TMG 服务器上打开端口 53，且 TMG 服务器可以访问位于外围网络中的 DNS 服务器。还可以使用本地主机文件中的条目提供名称解析。
+    
 
 
 8.  在“内部发布详细信息”页的“路径(可选)”框中键入 **/\*** 作为要发布的文件夹的路径。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在网站发布向导中，只能指定一个路径。可以通过修改规则的属性来添加其他路径。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在网站发布向导中，只能指定一个路径。可以通过修改规则的属性来添加其他路径。
+    
 
 
 9.  在“发布名称详细信息”页上，确认在“接受请求”下选择“此域名”，在“公共名称”框中键入外部 Web 服务的 FQDN。
@@ -117,18 +90,9 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 1.  将您将用于反向代理的证书绑定到 HTTPS 协议。单击“开始”，依次选择“程序”、“管理工具”，然后单击“Internet 信息服务 (IIS) 管理器”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关部署和配置 IIS ARR 的其他帮助、屏幕截图和指导可以在 NextHop 文章<a href="http://go.microsoft.com/fwlink/?linkid=293391">使用 IIS ARR 作为 Lync Server 2013 的反向代理</a>中找到。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关部署和配置 IIS ARR 的其他帮助、屏幕截图和指导可以在 NextHop 文章<a href="http://go.microsoft.com/fwlink/?linkid=293391">使用 IIS ARR 作为 Lync Server 2013 的反向代理</a>中找到。
+    
 
 
 2.  如果您尚未这样做，请导入将用于反向代理的证书。在“Internet 信息服务 (IIS) 管理器”中，在控制台左侧单击反向代理服务器名称。在控制台中心的“IIS”下方，找到“服务器证书”。右键单击“服务器证书”，并选择“打开功能”。
@@ -137,34 +101,15 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 4.  分配供 HTTPS 使用的证书。在控制台左侧，选择 IIS 服务器的“默认网站”。在右侧，单击“绑定...”。在“网站绑定”对话框中，单击“添加…”。在“添加网站绑定”对话框中的“类型：”下方，单击“https”。选择 https 将允许您选择用于 https 的证书。在“SSL 证书：”下方，选择已为反向代理导入的证书。单击“确定”。然后单击“关闭”。证书现在已绑定到安全套接字层 (SSL) 和传输层安全性 (TLS) 的反向代理。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您在关闭“绑定”对话框时收到一个警告，表明缺少中间证书，则您需要找到并导入公共 CA 根证书颁发机构证书和任何中间 CA 证书。请参阅您向其请求您的证书的公共 CA 处的说明，并按照说明请求和导入证书链。如果您从 边缘服务器 导出了证书，则可以导入根 CA 证书和与 边缘服务器 相关联的任何中间 CA 证书。将根 CA 证书导入到计算机的（不要与用户存储混淆）受信任的根证书颁发机构存储中，而将中间证书导入到计算机的中间证书颁发机构存储中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您在关闭“绑定”对话框时收到一个警告，表明缺少中间证书，则您需要找到并导入公共 CA 根证书颁发机构证书和任何中间 CA 证书。请参阅您向其请求您的证书的公共 CA 处的说明，并按照说明请求和导入证书链。如果您从 边缘服务器 导出了证书，则可以导入根 CA 证书和与 边缘服务器 相关联的任何中间 CA 证书。将根 CA 证书导入到计算机的（不要与用户存储混淆）受信任的根证书颁发机构存储中，而将中间证书导入到计算机的中间证书颁发机构存储中。
 
 
 5.  在控制台左侧的 IIS 服务器名称下面，右键单击“服务器场”，然后单击“创建服务器场…”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果看不到“服务器场”节点，则您需要安装应用程序请求路由。有关详细信息，请参阅<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">为 Lync Server 2013 设置反向代理服务器</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果看不到“服务器场”节点，则您需要安装应用程序请求路由。有关详细信息，请参阅<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">为 Lync Server 2013 设置反向代理服务器</a>。
+    
     
     在“创建服务器场”对话框中，在“服务器场名称”中键入第一个 URL 的名称（这可以是用于识别目的的友好名称）。单击“下一步”。
 

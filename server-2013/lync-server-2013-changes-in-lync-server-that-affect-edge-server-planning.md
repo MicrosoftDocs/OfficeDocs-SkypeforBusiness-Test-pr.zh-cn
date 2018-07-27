@@ -27,32 +27,13 @@ Lync Server 2013 支持用于所有 边缘服务器服务的 IPv6 寻址。如�
 
 边缘服务器引入了完全集成的 XMPP 代理（部署在边缘服务器上）和 XMPP 网关（部署在前端服务器上）。可将 XMPP 联盟作为可选组件来部署。添加和配置 XMPP 代理和 XMPP 网关将允许 Microsoft Lync 2013 用户从基于 XMPP 的合作伙伴中为即时消息 (IM) 和状态添加联系人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当前， 边缘服务器中的 XMPP 服务只在 Lync Server 客户端与基于 XMPP 的联系人之间提供 IM 和状态。此外，只在一个站点中承载 XMPP。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 当前， 边缘服务器中的 XMPP 服务只在 Lync Server 客户端与基于 XMPP 的联系人之间提供 IM 和状态。此外，只在一个站点中承载 XMPP。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 已测试 Lync Server 2013 的 XMPP 功能，并且支持该功能与 Google Talk 进行即时消息传递联盟。对于任何其他 XMPP 系统，请与第三方供应商联系，以确认它们是否支持与 Lync Server 2013 联盟以及获取任何部署或疑难解答建议。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> Microsoft 已测试 Lync Server 2013 的 XMPP 功能，并且支持该功能与 Google Talk 进行即时消息传递联盟。对于任何其他 XMPP 系统，请与第三方供应商联系，以确认它们是否支持与 Lync Server 2013 联盟以及获取任何部署或疑难解答建议。
 
 
 ## 对回滚音频/视频身份验证和服务器到服务器身份验证证书的支持
@@ -93,18 +74,9 @@ Lync Server 2013 中的自动发现功能使客户端可查找可用于通信的
 
 在 2011 年 11 月版的 Lync Server 2010 的累积更新中引入，Lync Server 2013 中的 Mobility Service 允许使用受支持的 Apple iOS、Android、Windows Phone 运行 Lync Mobile 的移动电话和平板设备或 Nokia 移动设备执行发送和接收即时消息、查看联系人和查看状态等活动。此外，移动设备还支持某些企业语音功能，例如，“单击加入会议”、“单位电话呼叫”、“一号通”、“语音邮件”和“错过的呼叫通知”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Mobility Service 使用反向代理和在前端服务器上部署的已发布服务。无需对边缘服务器进行任何更改。至少需要来自运行 Lync Server 访问边缘服务的服务器的出站 SIP/TCP/5061。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Mobility Service 使用反向代理和在前端服务器上部署的已发布服务。无需对边缘服务器进行任何更改。至少需要来自运行 Lync Server 访问边缘服务的服务器的出站 SIP/TCP/5061。
+
 
 
 ## 控制器角色为可选角色

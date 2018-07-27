@@ -17,27 +17,15 @@ _**上一次修改主题：** 2016-12-08_
 
 Lync Server 使用 SIP 中继将紧急呼叫连接到 E9-1-1 服务提供商。您可以为一个中央站点、多个中央站点或每个分支站点的 E9-1-1 设置紧急服务 SIP 中继。但是，如果呼叫者站点与承载紧急服务 SIP 中继的站点之间的 WAN 链路不可用，则孤立站点的用户发出的呼叫将需要使用用户语音策略中的特殊电话使用记录，以通过本地公用电话交换网 (PSTN) 网关将该呼叫路由到 ECRC。如果呼叫允许控制并发呼叫限制有效，则会出现相同情况。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可采用两种方法在 Lync Server 环境中实现 SIP 中继：
+> [!NOTE]  
+> 可采用两种方法在 Lync Server 环境中实现 SIP 中继：
 <ul>
 <li><p>利用使用其对外公共路由接口的多宿主 中介服务器与 SIP 中继提供商进行通信。</p></li>
 <li><p>使用本地会话边界控制器 (SBC) 在 中介服务器和 SIP 中继提供商服务之间提供安全的分界点。</p></li>
 </ul>
 如果您选择后一种方法，请确保您选择的 SBC 品牌和型号已经过认证并且支持将状态信息数据格式位置对象 (PIDF-LO) 位置数据作为其 SIP INVITE 一部分传递。否则，呼叫将在缺少位置信息的情况下到达紧急服务的服务提供商。有关认证的 SBC 的详细信息，请参阅“适用于 Microsoft Lync 的基础结构”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=248425">http://go.microsoft.com/fwlink/p/?LinkId=248425</a>。<br />
-E9-1-1 的服务提供商会向您提供对 SBC 对的访问权，以实现冗余。您需要就 中介服务器拓扑和呼叫路由配置做出某些决定。您是否平等看待两个 SBC 并对它们之间的呼叫使用循环路由，或者您是否以其中一个 SBC 为主，而另一个为辅？</td>
-</tr>
-</tbody>
-</table>
+E9-1-1 的服务提供商会向您提供对 SBC 对的访问权，以实现冗余。您需要就 中介服务器拓扑和呼叫路由配置做出某些决定。您是否平等看待两个 SBC 并对它们之间的呼叫使用循环路由，或者您是否以其中一个 SBC 为主，而另一个为辅？
+
 
 
 有关在 Lync Server 中部署 SIP 中继的详细信息，请参阅 [如何在 Lync Server 2013 中实施 SIP 中继？](lync-server-2013-how-do-i-implement-sip-trunking.md)。下列问题将帮助您确定如何部署 E9-1-1 的 SIP 中继。

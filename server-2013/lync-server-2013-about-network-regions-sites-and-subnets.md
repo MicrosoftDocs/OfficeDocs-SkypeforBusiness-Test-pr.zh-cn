@@ -17,18 +17,8 @@ _**上一次修改主题：** 2013-02-24_
 
 本节所述的高级企业语音功能共享了网络区域、网络站点和子网的某些配置要求。例如，三种高级功能都要求拓扑中的每个子网与特定 *网络站点* 关联，而每个网络站点必须与 *网络区域* 关联。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对呼叫允许控制、E9-1-1 或媒体旁路开始进行网络配置之前，请确保您已经查看了规划文档的<a href="lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md">Lync Server 2013 中高级企业语音功能的网络设置</a>主题中有关网络设置的其他信息。有关网络配置（主要是呼叫允许控制）的详细信息，另请参阅规划文档中的<a href="lync-server-2013-defining-your-requirements-for-call-admission-control.md">在 Lync Server 2013 中定义呼叫允许控制要求</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 对呼叫允许控制、E9-1-1 或媒体旁路开始进行网络配置之前，请确保您已经查看了规划文档的<a href="lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md">Lync Server 2013 中高级企业语音功能的网络设置</a>主题中有关网络设置的其他信息。有关网络配置（主要是呼叫允许控制）的详细信息，另请参阅规划文档中的<a href="lync-server-2013-defining-your-requirements-for-call-admission-control.md">在 Lync Server 2013 中定义呼叫允许控制要求</a>。
 
 
 呼叫允许控制和 E9-1-1 对网络站点具有其他配置要求：

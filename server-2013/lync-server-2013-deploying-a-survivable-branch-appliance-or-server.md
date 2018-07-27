@@ -21,19 +21,10 @@ _**上一次修改主题：** 2014-12-10_
 
 对于具有 1,000 到 5,000 个用户且没有可恢复 WAN 的分支站点，建议将 Survivable Branch Server 连接到 PSTN 网关或指向电话服务提供商的 SIP 中继。 Survivable Branch Server 是基于 Windows Server 的计算机，其上安装有注册器和 中介服务器软件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于具有 5,000 多个用户和专门 Lync Server 管理员的分支站点，建议进行独立于中央站点部署的完整 Lync Server 2013 部署。<br />
-有关为组织中的分支站点选择最佳恢复能力解决方案的详细信息（包括先决条件和规划注意事项），请参阅规划文档中的 <a href="lync-server-2013-branch-site-resiliency-requirements.md">Lync Server 2013 的分支站点恢复能力要求</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 对于具有 5,000 多个用户和专门 Lync Server 管理员的分支站点，建议进行独立于中央站点部署的完整 Lync Server 2013 部署。<br />
+有关为组织中的分支站点选择最佳恢复能力解决方案的详细信息（包括先决条件和规划注意事项），请参阅规划文档中的 <a href="lync-server-2013-branch-site-resiliency-requirements.md">Lync Server 2013 的分支站点恢复能力要求</a>。
+
 
 
 ## 本部分内容

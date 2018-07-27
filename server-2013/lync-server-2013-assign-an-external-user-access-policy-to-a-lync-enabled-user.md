@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-02-22_
 
 如果已为某个用户启用 Lync Server，则可通过将相应的策略应用于特定用户，在 Lync Server 控制面板中配置 SIP 联盟、XMPP 联盟、远程用户访问和公共即时消息 (IM) 连接。例如，如果您已创建支持远程用户访问的策略，则必须将该策略应用于此用户，然后此用户才能从一个远程位置连接到 Lync Server，并从该远程位置与内部用户进行协作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要支持外部用户访问，必须启用对要支持的每种外部用户访问类型的支持，并配置相应的策略及其他选项以控制其使用。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-configuring-support-for-external-user-access.md">在 Lync Server 2013 中配置对外部用户访问的支持</a>或操作文档中的 <a href="lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md">管理对 Lync Server 2013 的联盟和外部访问</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 要支持外部用户访问，必须启用对要支持的每种外部用户访问类型的支持，并配置相应的策略及其他选项以控制其使用。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-configuring-support-for-external-user-access.md">在 Lync Server 2013 中配置对外部用户访问的支持</a>或操作文档中的 <a href="lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md">管理对 Lync Server 2013 的联盟和外部访问</a>。
+
 
 
 使用本主题中的过程将以前创建的外部用户访问策略应用于一个或多个用户帐户。
@@ -45,18 +36,9 @@ _**上一次修改主题：** 2013-02-22_
 
 5.  在“编辑 Lync Server 用户”中的“外部访问策略”下，选择要应用的用户策略。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>“&lt;自动&gt;”设置将应用默认服务器或全局策略设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > “&lt;自动&gt;”设置将应用默认服务器或全局策略设置。
+    
 
 
 ## 使用 Windows PowerShell cmdlet 分配每用户外部访问策略

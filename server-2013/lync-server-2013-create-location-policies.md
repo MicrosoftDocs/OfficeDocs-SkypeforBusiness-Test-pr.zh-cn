@@ -100,18 +100,9 @@ _**上一次修改主题：** 2015-03-09_
 
 1.  启动 Lync Server 命令行管理程序：依次单击“开始”、“所有程序”和“Microsoft Lync Server 2013”，然后单击“Lync Server 命令行管理程序”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 PstnUsages 的全局列表中还没有 <strong>PstnUsage</strong> 设置，则 CsLocationPolicy 会失败。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果 PstnUsages 的全局列表中还没有 <strong>PstnUsage</strong> 设置，则 CsLocationPolicy 会失败。
+    
 
 
 2.  也可以选择运行以下 cmdlet 编辑全局位置策略：

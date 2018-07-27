@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-01-02_
 
 在定义和配置拓扑之前，必须先确定要安装 中央管理服务器的位置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 拓扑生成器中发布拓扑之前，此设置不会生效。要在创建和发布拓扑之前设置 中央管理服务器，请运行 <strong>Set-CSConfigurationStoreLocation</strong>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 拓扑生成器中发布拓扑之前，此设置不会生效。要在创建和发布拓扑之前设置 中央管理服务器，请运行 <strong>Set-CSConfigurationStoreLocation</strong>。
+
 
 
 ## 选择中央管理服务器

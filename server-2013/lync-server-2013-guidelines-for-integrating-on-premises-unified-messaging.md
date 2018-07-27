@@ -84,25 +84,13 @@ _**上一次修改主题：** 2016-12-08_
 
 在示例 1 中，Tukwila 数据中心启用了 Exchange UM 服务器 1 和 2，Dublin 数据中心启用了 Exchange UM 服务器 3 和 4。如果 Tukwila 发生 Exchange UM 中断，则应将服务器 1 和 2 的域名系统 (DNS) A 记录分别配置为指向服务器 3 和 4。如果 Dublin 发生 Exchange UM 中断，则应将服务器 3 和 4 的 DNS A 记录分别配置为指向服务器 1 和 2。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于示例 1，还应在每台 Exchange UM 服务器上分配以下证书之一：
+> [!NOTE]  
+> 对于示例 1，还应在每台 Exchange UM 服务器上分配以下证书之一：
 <ul>
 <li><p>在使用者替代名称 (SAN) 中使用具有通配符的证书。</p></li>
 <li><p>在 SAN 中使用四台 Exchange UM 服务器的完全限定域名 (FQDN)。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+
 
 
 **示例 2：Exchange UM 恢复能力**

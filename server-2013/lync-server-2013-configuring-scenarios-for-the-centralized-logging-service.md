@@ -91,18 +91,9 @@ _**上一次修改主题：** 2016-12-08_
     
         New-CsClsScenario -Identity "site:Redmond/CollectDataScenario" -Provider @{Add=$LyssProvider, $ABServerProvider,  $SIPStackProvider}
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>众所周知，在 Windows PowerShell 中，用于使用 <code>@{&lt;variable&gt;=&lt;value1&gt;, &lt;value2&gt;, &lt;value&gt;...}</code> 创建值的哈希表的约定称为“展开”。有关 Windows PowerShell 中的展开的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=267760%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=267760&amp;clcid=0x804</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 众所周知，在 Windows PowerShell 中，用于使用 <code>@{&lt;variable&gt;=&lt;value1&gt;, &lt;value2&gt;, &lt;value&gt;...}</code> 创建值的哈希表的约定称为“展开”。有关 Windows PowerShell 中的展开的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=267760%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=267760&amp;clcid=0x804</a>。
+    
 
 
 ## 使用 Set-CsClsScenario cmdlet 修改现有方案

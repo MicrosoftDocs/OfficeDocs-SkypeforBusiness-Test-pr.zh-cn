@@ -37,19 +37,10 @@ _**上一次修改主题：** 2013-02-24_
         
           - **池 Trunk ：** 在“选择服务”中选择此中继配置应用于的中继的名称，然后单击“确定”。此中继可以是根中继或者 拓扑生成器中定义的其他任何中继。请注意，如果已经为特定中继创建了中继配置，则该中继不会显示在“选择服务”中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>选择中继配置的范围后无法更改该范围。<br />
-    “名称”字段会使用中继配置的关联站点或服务的名称进行预填充，且不能更改。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 选择中继配置的范围后无法更改该范围。<br />
+    “名称”字段会使用中继配置的关联站点或服务的名称进行预填充，且不能更改。
+    
 
 
 5.  选择以下“加密支持级别”选项之一：
@@ -78,18 +69,9 @@ _**上一次修改主题：** 2013-02-24_
         
         2.  在“名称”字段中，为记录指定唯一的描述性名称。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>PSTN 用法记录名称在企业语音部署中必须是唯一的。保存记录后，将无法编辑“名称”字段。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]  
+			> PSTN 用法记录名称在企业语音部署中必须是唯一的。保存记录后，将无法编辑“名称”字段。
+            
         
         3.  使用下列方法之一为此 PSTN 用法记录关联和配置路由：
             
@@ -119,34 +101,14 @@ _**上一次修改主题：** 2013-02-24_
         
         3.  单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>根据与要配置的中继关联的中介服务器对等方关联 PSTN 用法记录非常重要。如果中介服务器对等方是 PSTN 网关或会话边界控制器 (SBC)，则强烈建议不要将中继配置与将路由到 PSTN 目标或通过 Lync Server 连接的任何其他下游系统的 PSTN 用法记录相关联。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 根据与要配置的中继关联的中介服务器对等方关联 PSTN 用法记录非常重要。如果中介服务器对等方是 PSTN 网关或会话边界控制器 (SBC)，则强烈建议不要将中继配置与将路由到 PSTN 目标或通过 Lync Server 连接的任何其他下游系统的 PSTN 用法记录相关联。
 
 
 10. 排列 PSTN 用法记录以获得最佳性能。要更改记录在列表中的位置，请选择 PSTN 用法记录，并单击向上箭头或向下箭头。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>PSTN 用法记录在中继配置中列出的顺序很重要。Lync Server 会从上到下遍历该列表。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > PSTN 用法记录在中继配置中列出的顺序很重要。Lync Server 会从上到下遍历该列表。
 
 
 11. 应选择“启用 RTP 闭锁”，以便为 NAT 或防火墙之后的客户端以及支持闭锁的 SBC 启用媒体旁路。
@@ -211,36 +173,17 @@ _**上一次修改主题：** 2013-02-24_
 
 17. 确保中继的转换规则按正确的顺序排列。要更改规则在列表中的位置，请突出显示相应的规则名称，然后单击向上箭头或向下箭头。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 按照从上到下的顺序遍历转换规则列表，并使用第一个与拨打号码相匹配的规则。如果要配置中继以使拨打号码可以匹配多个转换规则，则确保限制较严格的规则排在限制较宽松的规则上方。例如，如果具有与任何 11 位数字相匹配的转换规则和只与以 +1425 开头的 11 位数字相匹配的转换规则，则确保与任何 11 位数字相匹配的规则排在更加严格的规则<em>下方</em>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Lync Server 按照从上到下的顺序遍历转换规则列表，并使用第一个与拨打号码相匹配的规则。如果要配置中继以使拨打号码可以匹配多个转换规则，则确保限制较严格的规则排在限制较宽松的规则上方。例如，如果具有与任何 11 位数字相匹配的转换规则和只与以 +1425 开头的 11 位数字相匹配的转换规则，则确保与任何 11 位数字相匹配的规则排在更加严格的规则<em>下方</em>。
 
 
 18. 完成中继的配置后，单击“确定”。
 
 19. 在“Trunk 配置”页上，单击“提交”，然后单击“全部提交”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>任何时候创建或修改中继配置，都必须运行“全部提交”命令以发布配置更改。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中发布对语音路由配置所做的待处理更改</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 任何时候创建或修改中继配置，都必须运行“全部提交”命令以发布配置更改。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中发布对语音路由配置所做的待处理更改</a>。
+    
 
 
 ## 另请参阅

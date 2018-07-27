@@ -17,36 +17,18 @@ _**上一次修改主题：** 2012-10-10_
 
 必须先在拓扑中纳入存档，然后才能配置您的部署以支持存档。本主题中的信息说明了如何使用拓扑生成器向现有拓扑中添加存档。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要使用 Microsoft Exchange 集成将部署中所有用户的存档数据和文件存储在 Exchange 2013 服务器上，不要指定“存档 SQL Server 存储”或“启用 SQL Server 存储镜像”信息。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要使用 Microsoft Exchange 集成将部署中所有用户的存档数据和文件存储在 Exchange 2013 服务器上，不要指定“存档 SQL Server 存储”或“启用 SQL Server 存储镜像”信息。
+
 
 
 ## 向拓扑中添加存档数据库支持
 
 1.  在运行 Lync Server 2013 或其上安装有 Lync Server 管理工具的计算机上，使用具有本地 Users 组成员身份的帐户（或具有同等用户权限的帐户）登录。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以使用具有本地 Users 组成员身份的帐户定义拓扑，但要发布拓扑（向拓扑中添加服务器时需要），您必须使用具有“Domain Admins”组和“RTCUniversalServerAdmins”组成员身份的帐户，且该帐户对您要用于 Lync Server 2013 文件存储的文件共享具有完全控制权限（即读取、写入和修改）（以便拓扑生成器可以配置必需的自定义访问控制列表 (DACL)），或者使用具有同等权限的帐户。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以使用具有本地 Users 组成员身份的帐户定义拓扑，但要发布拓扑（向拓扑中添加服务器时需要），您必须使用具有“Domain Admins”组和“RTCUniversalServerAdmins”组成员身份的帐户，且该帐户对您要用于 Lync Server 2013 文件存储的文件共享具有完全控制权限（即读取、写入和修改）（以便拓扑生成器可以配置必需的自定义访问控制列表 (DACL)），或者使用具有同等权限的帐户。
+    
 
 
 2.  启动拓扑生成器。

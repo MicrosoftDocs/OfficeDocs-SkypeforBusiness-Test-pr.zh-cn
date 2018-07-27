@@ -59,18 +59,8 @@ _**上一次修改主题：** 2015-03-09_
 </table>
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于 Lync Server 2013，无论何时在池中添加或删除前端服务器，均必须重新启动服务。删除和添加服务器应作为独立操作来完成。例如，如果要添加两台前端服务器，并删除两台前端服务器，请使用以下过程：
+> [!NOTE]  
+> 对于 Lync Server 2013，无论何时在池中添加或删除前端服务器，均必须重新启动服务。删除和添加服务器应作为独立操作来完成。例如，如果要添加两台前端服务器，并删除两台前端服务器，请使用以下过程：
 <ol>
 <li><p>删除两台前端服务器。</p></li>
 <li><p>发布并重新激活拓扑。</p></li>
@@ -78,10 +68,8 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>添加两台前端服务器。</p></li>
 <li><p>发布并重新激活拓扑。</p></li>
 <li><p>重新启动服务。</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+</ol>
+
 
 
 定义拓扑之后，请使用以下过程为站点定义 前端池。有关定义拓扑的详细信息，请参阅 [在 Lync Server 2013 拓扑生成器中定义和配置拓扑](lync-server-2013-define-and-configure-a-topology-in-topology-builder.md)。
@@ -114,18 +102,9 @@ _**上一次修改主题：** 2015-03-09_
     
       - **监控**   通过监控服务器可以收集描述网络和终结点上的媒体质量的数值数据、与 VoIP 呼叫、IM 消息、A/V 对话、会议、应用程序共享和文件传输有关的用法信息，以及失败呼叫的呼叫错误和故障排除信息。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要在部署中启用 CAC，则需要在每个中央站点的一个池中启用 CAC。如果要部署语音功能或 A/V 会议，建议使用 CAC。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果要在部署中启用 CAC，则需要在每个中央站点的一个池中启用 CAC。如果要部署语音功能或 A/V 会议，建议使用 CAC。
+    
     
     下表显示了可用功能（顶部）和为用户提供的功能（左侧）。表中的选择是为组织启用这些功能所需选择的内容。
     
@@ -188,18 +167,9 @@ _**上一次修改主题：** 2015-03-09_
     
       - 如果计划将 中介服务器部署为独立服务器，则清除相应的复选框。在部署 前端服务器完成之后，将以单独的部署步骤部署 中介服务器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>我们建议在可能时并置中介服务器。有关对并置或单独的中介服务器的支持的详细信息，请参阅规划文档中的 <a href="lync-server-2013-components-and-topologies-for-mediation-server.md">Lync Server 2013 中中介服务器的组件和拓扑</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 我们建议在可能时并置中介服务器。有关对并置或单独的中介服务器的支持的详细信息，请参阅规划文档中的 <a href="lync-server-2013-components-and-topologies-for-mediation-server.md">Lync Server 2013 中中介服务器的组件和拓扑</a>。
+    
 
 
 6.  通过“将服务器角色与此前端池关联”页可以定义服务器角色并将服务器角色与 前端池关联。以下角色可用：
@@ -295,18 +265,9 @@ _**上一次修改主题：** 2015-03-09_
     
     2.  （可选）在“外部基 URL”中输入外部基 URL。您可以输入外部基 URL 以将其与内部域命名区分开来。例如，内部域是 contoso.net，但外部域名是 contoso.com。则可以使用 contoso.com 域名来定义 URL。如果是反向代理，这也很重要。外部基 URL 域名应该与反向代理的 FQDN 域名相同。即时消息和状态需要对前端池的 HTTP 访问。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>要使用 DNS 负载平衡，必须创建相应的 DNS 记录。有关详细信息，请参阅 <a href="lync-server-2013-configure-dns-for-load-balancing.md">在 Lync Server 2013 中配置 DNS 负载平衡</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 要使用 DNS 负载平衡，必须创建相应的 DNS 记录。有关详细信息，请参阅 <a href="lync-server-2013-configure-dns-for-load-balancing.md">在 Lync Server 2013 中配置 DNS 负载平衡</a>。
+    
 
 
 10. 如果在“选择功能”页上选择“会议”，请在“选择 Office Web Apps 服务器”页上选择“将池与 Office Web Apps 服务器关联”，然后单击“新建”（或从下拉列表中选择现有 Office Web Apps Server）。
@@ -317,18 +278,9 @@ _**上一次修改主题：** 2015-03-09_
     
     如果在内部防火墙的外部部署 Office Web Apps Server，则选择选项“在外部网络（即外围/Internet）中部署 Office Web Apps 服务器”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关详细信息，请参阅 <a href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">配置与 Office Web Apps Server 和 Lync Server 2013 的集成</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关详细信息，请参阅 <a href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">配置与 Office Web Apps Server 和 Lync Server 2013 的集成</a>。
+    
 
 
 12. 在“定义存档 SQL 存储”页上，选择一个现有实例或 SQL Server，或定义新实例来存储与存档数据关联的数据。

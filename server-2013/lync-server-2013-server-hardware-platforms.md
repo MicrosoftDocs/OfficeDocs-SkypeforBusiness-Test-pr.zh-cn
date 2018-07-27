@@ -23,18 +23,9 @@ _**上一次修改主题：** 2016-12-08_
 
 为实现最佳性能，建议在采用满足下表要求的硬件的服务器上运行 Lync Server。如果使用性能不足的硬件，可能会遇到功能问题或性能下降。请注意，这些硬件要求高于早期版本的 Lync Server的硬件要求，主要是因为在 Lync Server 2013中，所有前端服务器都运行 SQL Server。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>NIC 组合受支持，且应对 Lync Server透明。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=389910">Communications Server or Lync Server and network adapter teaming (通信服务器或 Lync Server 和网络适配器组合)</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> NIC 组合受支持，且应对 Lync Server透明。有关详细信息，请参阅<a href="https://go.microsoft.com/fwlink/p/?linkid=389910">Communications Server or Lync Server and network adapter teaming (通信服务器或 Lync Server 和网络适配器组合)</a>。
+
 
 
 ### 前端服务器、后端服务器、Standard Edition 服务器、持久聊天服务器、持久聊天存储和持久聊天合规性存储（持久聊天服务器的后端服务器角色）的推荐硬件
@@ -74,19 +65,10 @@ _**上一次修改主题：** 2016-12-08_
 <td><ul>
 <li><p>1 个双端口网络适配器，1 Gbps 或更高（建议为 2 Gbps，这要求与一个 MAC 地址和一个 IP 地址结合使用）。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>前端服务器、后端服务器、Standard Edition 服务器和 持久聊天服务器不支持双宿主或多宿主配置。<br />
-ILO/DRAC 等连接不对操作系统公开，用于监视和管理不属于多宿主服务器的服务器硬件，因此这些连接受支持。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 前端服务器、后端服务器、Standard Edition 服务器和 持久聊天服务器不支持双宿主或多宿主配置。<br />
+ILO/DRAC 等连接不对操作系统公开，用于监视和管理不属于多宿主服务器的服务器硬件，因此这些连接受支持。
+
 
 </div></li>
 </ul></td>
@@ -137,19 +119,10 @@ ILO/DRAC 等连接不对操作系统公开，用于监视和管理不属于多�
 <li><p>1 个双端口网络适配器，1 Gbps 或更高（建议为 2 Gbps，这要求与一个 MAC 地址和一个 IP 地址结合使用）。边缘服务器上需有 2 个网络接口，且这 2 个网络接口在独立中介服务器上受支持。</p></li>
 </ul>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>控制器不支持双宿主或多宿主配置。<br />
-ILO/DRAC 等连接不对操作系统公开，用于监视和管理不属于多宿主服务器的服务器硬件，因此这些连接受支持。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 控制器不支持双宿主或多宿主配置。<br />
+ILO/DRAC 等连接不对操作系统公开，用于监视和管理不属于多宿主服务器的服务器硬件，因此这些连接受支持。
+
 
 </div>
 <p>边缘服务器需要两个作为双端口网络适配器的网络接口、1 Gbps 或更高（或者两个成对的网络适配器，总共四个，每对与一个 MAC 地址和一个 IP 地址结合使用，总共两对）。</p>

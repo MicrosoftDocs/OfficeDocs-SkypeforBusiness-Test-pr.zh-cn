@@ -27,32 +27,14 @@ Lync Server 2013 支持的 Active Directory 域服务 本地拓扑如下所示�
 
   - 资源林拓扑中的多林
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 不支持单标签域。例如，支持具有名为 <strong>contoso.local</strong> 的根域的林，但不支持名为 <strong>local</strong> 的单标签根域。有关详细信息，请参阅 Microsoft 知识库文章 300684“关于如何为使用单标签 DNS 名称的域配置 Windows 的信息”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=143752">http://go.microsoft.com/fwlink/p/?linkId=143752</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 不支持单标签域。例如，支持具有名为 <strong>contoso.local</strong> 的根域的林，但不支持名为 <strong>local</strong> 的单标签根域。有关详细信息，请参阅 Microsoft 知识库文章 300684“关于如何为使用单标签 DNS 名称的域配置 Windows 的信息”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=143752">http://go.microsoft.com/fwlink/p/?linkId=143752</a>。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 不支持重命名域。如果需要重命名部署有 Lync Server 的域，则需要先卸载 Lync Server，然后重命名域，最后重新安装 Lync Server。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Lync Server 2013 不支持重命名域。如果需要重命名部署有 Lync Server 的域，则需要先卸载 Lync Server，然后重命名域，最后重新安装 Lync Server。
+
 
 
 有关本地部署支持的拓扑和相关要求的详细信息，请参阅规划文档中的 [Lync Server 2013 中的 Active Directory 域服务要求、支持和拓扑](lync-server-2013-active-directory-domain-services-requirements-support-and-topologies.md)。

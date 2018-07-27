@@ -21,18 +21,9 @@ _**上一次修改主题：** 2016-12-08_
 
 使用本节中的主题了解如何为公用区域电话创建联系对象，修改和删除这些对象，以及配置和查看有关您的部署中的公用区域电话的配置信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有三种公用区域电话可供您选择：Aastra 6721ip 公用区域电话、HP 4110 IP Phone 和 Polycom CX500 IP 公用区域电话。Polycom CX3000 IP 会议电话是另一种公用区域电话变体，但其专门用于会议室。有关公用区域电话的详细信息，请参阅<a href="http://technet.microsoft.com/zh-cn/library/gg398958(v=ocs.14).aspx">选择新设备</a>的“公用区域电话”一节。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有三种公用区域电话可供您选择：Aastra 6721ip 公用区域电话、HP 4110 IP Phone 和 Polycom CX500 IP 公用区域电话。Polycom CX3000 IP 会议电话是另一种公用区域电话变体，但其专门用于会议室。有关公用区域电话的详细信息，请参阅<a href="http://technet.microsoft.com/zh-cn/library/gg398958(v=ocs.14).aspx">选择新设备</a>的“公用区域电话”一节。
+
 
 
 ## 本部分内容

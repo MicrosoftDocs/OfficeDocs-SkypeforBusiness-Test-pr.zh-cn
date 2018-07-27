@@ -27,18 +27,9 @@ _**上一次修改主题：** 2014-03-28_
 
   - Lync Phone Edition
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 移动客户端不支持 响应组应用程序。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync 移动客户端不支持 响应组应用程序。
+
 
 
 有关新增功能的详细信息，请参阅入门文档中的 [Lync Server 2013 中新的响应组应用程序功能](lync-server-2013-new-response-group-application-features.md)。

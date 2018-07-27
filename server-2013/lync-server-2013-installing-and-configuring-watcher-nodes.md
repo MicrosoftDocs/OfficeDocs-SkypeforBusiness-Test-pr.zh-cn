@@ -138,35 +138,17 @@ _**上一次修改主题：** 2015-03-09_
 
 若要使用 System Center Operations Manager，您不必安装观察程序节点。如果您未安装这些节点，则仍可在事件发生时通过 Lync Server 2013 组件获取实时通知。（组件和用户管理包不会使用观察程序节点。）但是，如果要使用主动监控管理包监控端到端的方案，则需要观察程序节点。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>管理员还可手动运行综合事务，无需使用或安装 Operations Manager。有关各种 Test-Cs cmdlet 的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/?view=skype-ps">Lync Server 2013 Cmdlet 索引</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 管理员还可手动运行综合事务，无需使用或安装 Operations Manager。有关各种 Test-Cs cmdlet 的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/?view=skype-ps">Lync Server 2013 Cmdlet 索引</a>。
+
 
 
 综合事务可能使用大量计算机内存和处理器时间，具体取决于您的部署规模。为此，建议您使用专用计算机作为观察程序节点。例如，您不应配置前端服务器充当观察程序节点。观察程序节点应符合以下硬件规格：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>无法在带有 Lync Server 2013 观察程序节点的同一计算机上并置旧的 Microsoft Lync Server 2010 观察程序节点。这是因为 Lync Server 2010 和 Lync Server 2013 的核心系统文件无法安装在同一计算机上。<br />
-但是，Lync Server 2013 观察程序节点可同时监控 Lync Server 2013 和 Lync Server 2010。这两个产品版本上均支持默认的综合事务。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 无法在带有 Lync Server 2013 观察程序节点的同一计算机上并置旧的 Microsoft Lync Server 2010 观察程序节点。这是因为 Lync Server 2010 和 Lync Server 2013 的核心系统文件无法安装在同一计算机上。<br />
+但是，Lync Server 2013 观察程序节点可同时监控 Lync Server 2013 和 Lync Server 2010。这两个产品版本上均支持默认的综合事务。
+
 
 
 可在企业的内部或外部部署 Lync Server 2013 观察程序节点以帮助验证：

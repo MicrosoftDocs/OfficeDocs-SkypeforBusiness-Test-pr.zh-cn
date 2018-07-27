@@ -52,18 +52,9 @@ _**上一次修改主题：** 2012-09-21_
 
 6.  在“SIP 传输协议”列表中，单击网关使用的传输协议，然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>出于安全考虑，强烈建议使用支持传输层安全性 (TLS) 的 PSTN 网关。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 出于安全考虑，强烈建议使用支持传输层安全性 (TLS) 的 PSTN 网关。
+    
 
 
 <table>

@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-02-23_
 
 如果您不再想将某一设置集合用于运行 Lync Phone Edition 的设备，可删除该集合。如果删除某一站点的集合，则全局设置将应用于该站点中的电话。不能删除全局集合。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可能不想删除集合，只是想更改其中的一些设置。有关如何执行此操作的详细信息，请参阅<a href="lync-server-2013-create-or-modify-a-collection-of-lync-phone-edition-configuration-settings.md">创建或修改 Lync Phone Edition 配置设置的集合</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您可能不想删除集合，只是想更改其中的一些设置。有关如何执行此操作的详细信息，请参阅<a href="lync-server-2013-create-or-modify-a-collection-of-lync-phone-edition-configuration-settings.md">创建或修改 Lync Phone Edition 配置设置的集合</a>。
+
 
 
 ## 删除 Lync Phone Edition 配置设置的集合
@@ -41,18 +32,9 @@ _**上一次修改主题：** 2013-02-23_
 
 4.  在“设备配置”页上，单击要删除的集合，单击“编辑”菜单，然后单击“删除”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果删除全局集合，设置将只恢复为默认设置。集合不会消失。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果删除全局集合，设置将只恢复为默认设置。集合不会消失。
+    
 
 
 5.  在确认框中，单击“确定”。

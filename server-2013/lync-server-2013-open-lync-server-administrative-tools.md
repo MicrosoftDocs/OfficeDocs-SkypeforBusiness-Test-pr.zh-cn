@@ -43,18 +43,9 @@ _**上一次修改主题：** 2012-06-28_
 
 1.  以 Domain Admins 组和 RTCUniversalServerAdmins 组成员的身份登录安装了拓扑生成器的计算机。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可以使用作为本地用户组成员的帐户来定义拓扑，但若要读取、发布或启用拓扑（这是在服务器上安装 Lync Server 2013 所必需的），您必须使用作为 Domain Admins 组和 RTCUniversalServerAdmins 组的成员的帐户（此类帐户应在要用于存档文件存储的文件共享上具有完全控制权限，即读取、写入和修改权限，以使拓扑生成器可以配置所需的随机访问控制列表 (DACL)），或具有同等用户权限的帐户。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 可以使用作为本地用户组成员的帐户来定义拓扑，但若要读取、发布或启用拓扑（这是在服务器上安装 Lync Server 2013 所必需的），您必须使用作为 Domain Admins 组和 RTCUniversalServerAdmins 组的成员的帐户（此类帐户应在要用于存档文件存储的文件共享上具有完全控制权限，即读取、写入和修改权限，以使拓扑生成器可以配置所需的随机访问控制列表 (DACL)），或具有同等用户权限的帐户。
+    
 
 
 2.  启动拓扑生成器：依次单击“开始”、“所有程序”和“Microsoft Lync Server 2013”，然后单击“Lync Server 拓扑生成器”。
@@ -63,18 +54,9 @@ _**上一次修改主题：** 2012-06-28_
 
 可以使用下面的过程打开 Lync Server 2013 控制面板以管理环境中服务器、用户、客户端和设备的配置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以使用分配给 CsAdministrator 角色的用户帐户来执行 Lync Server 2013 控制面板中的任何任务。可使用其他角色登录 Lync Server 2013 控制面板来执行特定的管理任务，具体取决于需执行的任务。例如，可使用 CSArchivingAdministrator 管理 Lync Server 2013 控制面板中的存档。有关角色的详细信息，请参阅规划文档中的<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中规划基于角色的访问控制</a>。有关可用于执行某项特定任务的角色的详细信息，请参阅该任务的文档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 可以使用分配给 CsAdministrator 角色的用户帐户来执行 Lync Server 2013 控制面板中的任何任务。可使用其他角色登录 Lync Server 2013 控制面板来执行特定的管理任务，具体取决于需执行的任务。例如，可使用 CSArchivingAdministrator 管理 Lync Server 2013 控制面板中的存档。有关角色的详细信息，请参阅规划文档中的<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中规划基于角色的访问控制</a>。有关可用于执行某项特定任务的角色的详细信息，请参阅该任务的文档。
+
 
 
 ## 从组织防火墙内的任何计算机中打开 Lync Server 2013 控制面板
@@ -107,19 +89,10 @@ _**上一次修改主题：** 2012-06-28_
 
 可使用下面的过程打开 Lync Server 2013 命令行管理程序，以通过使用命令行来管理环境中的服务器、用户、客户端和设备。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以使用分配给 CsAdministrator 角色的用户帐户来执行 Lync Server 2013 命令行管理程序中的任何任务。可使用其他角色登录以执行特定的管理任务，具体取决于需执行的任务。例如，可以使用 CSArchivingAdministrator 运行与存档管理相关的 cmdlet。有关角色的详细信息，请参阅规划文档中的<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中规划基于角色的访问控制</a>。有关可用于运行某个特定 cmdlet 的角色的详细信息，请参阅该 cmdlet 的文档。<br />
-还可以使用 RTCUniversalServerAdmins 组、RTCUniversalUserAdmins 组或 RTCUniversalReadOnlyAdmins 组中的用户帐户来运行某些 cmdlet，具体取决于该 cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 可以使用分配给 CsAdministrator 角色的用户帐户来执行 Lync Server 2013 命令行管理程序中的任何任务。可使用其他角色登录以执行特定的管理任务，具体取决于需执行的任务。例如，可以使用 CSArchivingAdministrator 运行与存档管理相关的 cmdlet。有关角色的详细信息，请参阅规划文档中的<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中规划基于角色的访问控制</a>。有关可用于运行某个特定 cmdlet 的角色的详细信息，请参阅该 cmdlet 的文档。<br />
+还可以使用 RTCUniversalServerAdmins 组、RTCUniversalUserAdmins 组或 RTCUniversalReadOnlyAdmins 组中的用户帐户来运行某些 cmdlet，具体取决于该 cmdlet。
+
 
 
 ## 打开 Lync Server 2013 命令行管理程序

@@ -37,18 +37,9 @@ _**上一次修改主题：** 2016-12-08_
 
   - 在 前端服务器或 Standard Edition Server 和控制器上允许移动设备自动发现移动资源
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要部署移动功能，则建议您使用 IIS 7.5。 Lync Server Mobility Service 安装程序设置了一些 ASP.NET 标志以提高性能。默认情况下，IIS 7.5 安装在 Windows Server 2008 R2 上，并且 Mobility Service 安装程序会自动更改 ASP.NET 设置。如果您在 Windows Server 2008 上使用 IIS 7.0，则需要手动更改这些设置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您要部署移动功能，则建议您使用 IIS 7.5。 Lync Server Mobility Service 安装程序设置了一些 ASP.NET 标志以提高性能。默认情况下，IIS 7.5 安装在 Windows Server 2008 R2 上，并且 Mobility Service 安装程序会自动更改 ASP.NET 设置。如果您在 Windows Server 2008 上使用 IIS 7.0，则需要手动更改这些设置。
+
 
 
 Lync Server 要求安装以下 IIS 模块：
@@ -181,18 +172,9 @@ Lync Server 要求安装以下 IIS 模块：
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于采用合并配置的 前端池，必须先部署 IIS，然后才能向池中添加服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 对于采用合并配置的 前端池，必须先部署 IIS，然后才能向池中添加服务器。
+
 
 
 <table>

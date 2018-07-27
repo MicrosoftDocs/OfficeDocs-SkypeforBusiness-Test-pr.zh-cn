@@ -71,16 +71,7 @@ _**上一次修改主题：** 2015-03-09_
     
         Set-CsConferencingConfiguration
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可为特定站点创建其他会议配置设置集。通过站点标识使用 <strong>New- CsConferencingConfiguration</strong> cmdlet。在为站点创建新的会议配置设置时，站点设置优先于全局设置。有关详细信息，请参阅 Lync Server 命令行管理程序 文档。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 可为特定站点创建其他会议配置设置集。通过站点标识使用 <strong>New- CsConferencingConfiguration</strong> cmdlet。在为站点创建新的会议配置设置时，站点设置优先于全局设置。有关详细信息，请参阅 Lync Server 命令行管理程序 文档。
+    
 

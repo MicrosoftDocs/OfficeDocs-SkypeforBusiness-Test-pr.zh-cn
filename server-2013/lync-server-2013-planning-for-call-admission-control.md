@@ -21,18 +21,9 @@ _**上一次修改主题：** 2012-09-21_
 
 本节介绍了呼叫允许控制功能，并解释了如何规划 CAC。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 有三项高级 企业语音功能：呼叫允许控制、紧急服务 (E9-1-1) 和媒体旁路。有关这三项功能共同的规划信息的概述，请参阅 <a href="lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md">Lync Server 2013 中高级企业语音功能的网络设置</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 有三项高级 企业语音功能：呼叫允许控制、紧急服务 (E9-1-1) 和媒体旁路。有关这三项功能共同的规划信息的概述，请参阅 <a href="lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md">Lync Server 2013 中高级企业语音功能的网络设置</a>。
+
 
 
 ## 本部分内容

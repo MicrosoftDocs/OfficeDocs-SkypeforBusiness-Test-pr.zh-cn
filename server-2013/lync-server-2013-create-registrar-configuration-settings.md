@@ -23,18 +23,9 @@ _**上一次修改主题：** 2013-03-17_
 
   - **证书身份验证** 这是新的身份验证方法，当服务器需要从 Lync Phone Edition 客户端、公用区域电话和 Lync 2013 中获取证书时适用。在 Lync Phone Edition 客户端上，当用户登录并通过提供个人标识号 (PIN) 成功通过身份验证后，Lync Server 2013 将为电话设置 SIP URI，并为电话设置由 Lync Server 签名的证书或标识 Joe 的用户证书（例如：SN=joe@contoso.com）。此证书用于使用注册器和 Web 服务进行身份验证。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果服务器支持对远程客户端和企业客户端进行身份验证，我们建议您同时启用 Kerberos 和 NTLM。边缘服务器与内部服务器通信，以确保只向远程客户端提供 NTLM 身份验证。如果在这些服务器上只启用 Kerberos，则无法对远程用户进行身份验证。如果该服务器也对企业用户进行身份验证，则会使用 Kerberos。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果服务器支持对远程客户端和企业客户端进行身份验证，我们建议您同时启用 Kerberos 和 NTLM。边缘服务器与内部服务器通信，以确保只向远程客户端提供 NTLM 身份验证。如果在这些服务器上只启用 Kerberos，则无法对远程用户进行身份验证。如果该服务器也对企业用户进行身份验证，则会使用 Kerberos。
+
 
 
 按照以下步骤创建新的注册器。

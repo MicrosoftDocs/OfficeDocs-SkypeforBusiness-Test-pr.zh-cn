@@ -21,16 +21,7 @@ Lync Server 2013 安装程序包括证书向导，可帮助您在部署期间执
 
 此部署文档提供了在安装过程中使用证书向导请求证书的过程，如此部署文档的 [在 Lync Server 2013 中为服务器配置证书](lync-server-2013-configure-certificates-for-servers.md)、 [在 Lync Server 2013 中为控制器配置证书](lync-server-2013-configure-certificates-for-the-director.md)和 [在 Lync Server 2013 中安装中介服务器的文件](lync-server-2013-install-the-files-for-mediation-server.md)各节中所述。如果提前请求证书，则必须适当修改上述各节中的证书部署过程，以导入和分配证书，而不是在部署时请求证书。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于从运行 Windows Vista、 Windows Server 2008、 Windows Server 2008 R2 和 Windows 7 操作系统以及 Lync Phone Edition 的客户端发出的连接， Lync Server 2013 支持使用 SHA-256 证书。要支持使用 SHA-256 进行外部访问，外部证书必须由公共 CA 使用 SHA-256 颁发。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 对于从运行 Windows Vista、 Windows Server 2008、 Windows Server 2008 R2 和 Windows 7 操作系统以及 Lync Phone Edition 的客户端发出的连接， Lync Server 2013 支持使用 SHA-256 证书。要支持使用 SHA-256 进行外部访问，外部证书必须由公共 CA 使用 SHA-256 颁发。
+
 

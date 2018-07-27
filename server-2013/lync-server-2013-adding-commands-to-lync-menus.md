@@ -73,18 +73,10 @@ HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\15.0\\Lync\\CustomCommands
 <td><p>DWORD</p></td>
 <td><p>0 = 可执行文件（默认）</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要 ApplicationInstallPath。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 需要 ApplicationInstallPath。
+
 
 </div>
 <p>1 = 协议</p></td>
@@ -94,18 +86,10 @@ HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\15.0\\Lync\\CustomCommands
 <td><p>REG_SZ</p></td>
 <td><p>可执行文件的完整路径。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果 ApplicationType 为 0（可执行文件），则必须指定完整路径。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果 ApplicationType 为 0（可执行文件），则必须指定完整路径。
+
 
 </div></td>
 </tr>

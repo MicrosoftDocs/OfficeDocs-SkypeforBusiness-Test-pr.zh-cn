@@ -39,18 +39,9 @@ Active Directory 的基础结构要求包括以下各项：
 
 ## Active Directory 域服务 准备
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议您对“配置”容器而非“系统”容器部署全局设置。这不会增强安全性，但是可提高一些 Active Directory 域服务 拓扑的可伸缩性。如果从 Microsoft Office Communications Server 2007 进行迁移并且使用的是“系统”容器（而计划使用的是“配置”容器），则必须先移动“系统”容器中的设置，然后再进行任何升级准备。若要将“系统”容器设置迁移到“配置”容器中，请参阅 Office Communications Server 2007 全局设置迁移工具，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=145236">http://go.microsoft.com/fwlink/p/?LinkId=145236</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 建议您对“配置”容器而非“系统”容器部署全局设置。这不会增强安全性，但是可提高一些 Active Directory 域服务 拓扑的可伸缩性。如果从 Microsoft Office Communications Server 2007 进行迁移并且使用的是“系统”容器（而计划使用的是“配置”容器），则必须先移动“系统”容器中的设置，然后再进行任何升级准备。若要将“系统”容器设置迁移到“配置”容器中，请参阅 Office Communications Server 2007 全局设置迁移工具，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=145236">http://go.microsoft.com/fwlink/p/?LinkId=145236</a>。
+
 
 
 在部署 Lync Server 2013 时，第一个步骤是准备 Active Directory 域服务。为 Lync Server 2013 准备 Active Directory 域服务 包含以下三个步骤：
@@ -75,18 +66,9 @@ Active Directory 的基础结构要求包括以下各项：
 
 有关为 Lync Server 准备 AD 时创建的特定通用组以及添加到基础结构组的服务组和管理组的详细信息，请参阅部署文档中的[Lync Server 2013 中的林准备所做的更改](lync-server-2013-changes-made-by-forest-preparation.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 在 Windows Server 2012 中支持运行 Lync Server 2013 的服务器的通用组，而且在 Windows Server 2003 操作系统中支持域控制器的通用组。通用组的成员可包括域树或林中的任何域中的其他组和帐户，并且可将域树或林中的任何域中的权限分配给这些成员。通用组支持与管理员委派相结合，可简化对 Lync Server 部署的管理。例如，不必将一个域添加到另一个域，管理员即可同时管理这两个域。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 在 Windows Server 2012 中支持运行 Lync Server 2013 的服务器的通用组，而且在 Windows Server 2003 操作系统中支持域控制器的通用组。通用组的成员可包括域树或林中的任何域中的其他组和帐户，并且可将域树或林中的任何域中的权限分配给这些成员。通用组支持与管理员委派相结合，可简化对 Lync Server 部署的管理。例如，不必将一个域添加到另一个域，管理员即可同时管理这两个域。
+
 
 
 ## 基于角色的访问控制

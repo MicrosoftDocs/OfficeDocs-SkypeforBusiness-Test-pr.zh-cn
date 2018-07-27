@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-02-23_
 
 可以删除用户策略或站点策略。无法删除全局策略。如果尝试删除全局策略，Lync Server 2013 会自动将该策略重置为默认值。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果为部署启用 Microsoft Exchange 集成，则 Exchange 策略可控制是否为驻留在 Exchange 2013 上且其邮箱处于就地保留状态的用户启用存档。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">使用 Exchange 服务器集成设置存档的策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果为部署启用 Microsoft Exchange 集成，则 Exchange 策略可控制是否为驻留在 Exchange 2013 上且其邮箱处于就地保留状态的用户启用存档。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">使用 Exchange 服务器集成设置存档的策略</a>。
+
 
 
 ## 删除用户存档策略或站点存档策略

@@ -19,18 +19,9 @@ _**上一次修改主题：** 2013-02-23_
 
 使用以下过程为整个组织或组织中的每个站点启用 CDR。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为了启用 CDR，必须配置监控和监控数据库。有关详细信息，请参阅<a href="lync-server-2013-deploying-monitoring.md">部署监控</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 为了启用 CDR，必须配置监控和监控数据库。有关详细信息，请参阅<a href="lync-server-2013-deploying-monitoring.md">部署监控</a>。
+
 
 
 ## 使用 Lync Server 控制面板启用 CDR
@@ -43,18 +34,9 @@ _**上一次修改主题：** 2013-02-23_
 
 4.  在“呼叫详细信息记录”页上，单击表中的相应站点，再单击“操作”，然后单击“启用 CDR”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下，CDR 处于启用状态。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 默认情况下，CDR 处于启用状态。
+    
 
 
 ## 使用 Lync Server 命令行管理程序 cmdlet 启用 CDR

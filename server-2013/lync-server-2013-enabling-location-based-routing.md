@@ -132,23 +132,23 @@ _**上一次修改主题：** 2015-03-09_
     New-CsTrunkConfiguration -Identity Service:PstnGateway:"<Trunk 3 DEL-PBX>"
     New-CsTrunkConfiguration -Identity Service:PstnGateway:"<Trunk 4 HYD-PBX>"
 
-为每个 Trunk 配置 Trunk 配置之后，您可以使用 Lync ServerWindows PowerShell 命令 set-cstrunkconfiguration 为必须强制实施路由限制的 Trunk 启用基于位置的路由。为将呼叫路由到 PSTN 网关的 Trunk 启用基于位置的路由以将呼叫路由到 PSTN，并关联网关所在的网络站点。
+为每个 Trunk 配置 Trunk 配置之后，您可以使用 Lync ServerWindows PowerShell 命令 Set-CsTrunkConfiguration 为必须强制实施路由限制的 Trunk 启用基于位置的路由。为将呼叫路由到 PSTN 网关的 Trunk 启用基于位置的路由以将呼叫路由到 PSTN，并关联网关所在的网络站点。
 
-    set-cstrunkconfiguration -Identity <trunk configuration ID> -EnableLocationRestriction $true -NetworkSiteID <site ID>
+    Set-CsTrunkConfiguration -Identity <trunk configuration ID> -EnableLocationRestriction $true -NetworkSiteID <site ID>
 
 有关详细信息，请参阅 [New-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrunkConfiguration)。
 
 在此示例中，为与德里和海得拉巴中的 PSTN 网关相关联的每个 Trunk 启用了基于位置的路由：
 
-    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 1 DEL-GW -EnableLocationRestriction $true -NetworkSiteID "Delhi"
-    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 2 HYD-GW -EnableLocationRestriction $true -NetworkSiteID "Hyderabad"
+    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 1 DEL-GW -EnableLocationRestriction $true -NetworkSiteID "Delhi"
+    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 2 HYD-GW -EnableLocationRestriction $true -NetworkSiteID "Hyderabad"
 
   
 
 不要为不会将呼叫路由到 PSTN 的 Trunk 启用基于位置的路由；然而，您仍然需要将该 Trunk 与系统所在的网络站点相关联，因为必须为通过此 Trunk 达到连接的终结点的 PSTN 呼叫强制实施基于位置的路由限制。对于此示例，没有为与德里和海得拉巴中的 PBX 系统相关联的每个 Trunk 启用基于位置的路由：
 
-    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 3 DEL-PBX -EnableLocationRestriction $false -NetworkSiteID "Delhi"
-    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 4 HYD-PBX -EnableLocationRestriction $false -NetworkSiteID "Hyderabad"
+    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 3 DEL-PBX -EnableLocationRestriction $false -NetworkSiteID "Delhi"
+    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 4 HYD-PBX -EnableLocationRestriction $false -NetworkSiteID "Hyderabad"
 
   
 与不会将呼叫路由到 PSTN 的系统（如 PBX）相连接的终结点具有类似限制，因为为用户的 Lync 终结点启用了基于位置的路由。这意味着这些用户不管位置如何都能够向 Lync 发出呼叫并接收来自 Lync 用户的呼叫。此外，他们也能够从不会将呼叫路由到 PSTN 网络的其他系统（如连接到不同 PBX 的终结点）发出呼叫和应答来自这些系统的呼叫。所有牵涉 PSTN 终结点的入站呼叫、出站呼叫和呼叫转接都将强制实施基于位置的路由。此类呼叫必须仅使用定义为此类系统的本地网关的 PSTN 网关。
@@ -251,18 +251,9 @@ _**上一次修改主题：** 2015-03-09_
 
 有关详细信息，请参阅 [Set-CsRoutingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRoutingConfiguration)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然基于位置的路由必须通过全局配置启用，但是只将为已按照本文档中指定的内容配置了基于位置的路由的那些站点、用户和 Trunk 强制实施要应用的一组规则。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 虽然基于位置的路由必须通过全局配置启用，但是只将为已按照本文档中指定的内容配置了基于位置的路由的那些站点、用户和 Trunk 强制实施要应用的一组规则。
+
 
 
 

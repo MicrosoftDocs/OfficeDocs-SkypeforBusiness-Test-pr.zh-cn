@@ -69,18 +69,9 @@ Lync Server 2013 引入了更新版本的 Snooper，其中包括了一些新功�
 
 3.  单击“呼叫流”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果单击不属于呼叫流的消息或跟踪，将不会显示流程图并在 Snooper 的底部显示一条状态消息，指示“此消息不符合呼叫流”。选择另一条属于呼叫流的消息或跟踪，将显示呼叫流。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 如果单击不属于呼叫流的消息或跟踪，将不会显示流程图并在 Snooper 的底部显示一条状态消息，指示“此消息不符合呼叫流”。选择另一条属于呼叫流的消息或跟踪，将显示呼叫流。
+    
 
 
 4.  在消息或跟踪行间移动，并注意呼叫流程图是否更新或更改为显示新图。

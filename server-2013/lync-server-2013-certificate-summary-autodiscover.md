@@ -23,34 +23,15 @@ Lync Server 2013 自动发现服务在控制器和前端池服务器上运行，
 
   - **在端口 443 上发布**   外部 Web 服务发布规则使用的证书上的使用者替代名称列表必须为您组织中的每个 SIP 域包含一个 *lyncdiscover.\<sipdomain\>* 条目。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>强烈建议您使用 HTTPS 而不是 HTTP。HTTPS 使用证书来加密流量。HTTP 不提供加密功能，发送的任何数据都将是纯文本格式。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> 强烈建议您使用 HTTPS 而不是 HTTP。HTTPS 使用证书来加密流量。HTTP 不提供加密功能，发送的任何数据都将是纯文本格式。
 
 
 使用内部证书颁发机构重新颁发证书通常是一个简单的过程，但对于 Web 服务发布规则所使用的公共证书，添加多个使用者替代名称条目的成本会很高。为了解决此问题，我们支持端口 80 上的初始自动发现连接，该连接随后会重定向到控制器或前端服务器上的端口 8080。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的 Lync Server 2013 基础结构使用由内部证书颁发机构 (CA) 颁发的内部证书，并且您计划支持移动设备以无线方式进行连接，则必须在移动设备上安装来自内部 CA 的根证书链，或者您必须更改为在您的 Lync Server 2013 基础结构上使用公共证书。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您的 Lync Server 2013 基础结构使用由内部证书颁发机构 (CA) 颁发的内部证书，并且您计划支持移动设备以无线方式进行连接，则必须在移动设备上安装来自内部 CA 的根证书链，或者您必须更改为在您的 Lync Server 2013 基础结构上使用公共证书。
+
 
 
 本主题介绍控制器、前端服务器和反向代理所需的添加的使用者替代名称。只引用添加的使用者替代名称 (SAN)。请参阅规划章节以获取证书上其他条目的相关指导。有关详细信息，请参阅[Lync Server 2013 中的控制器方案](lync-server-2013-scenarios-for-the-director.md)、[Lync Server 2013 中的外部用户访问方案](lync-server-2013-scenarios-for-external-user-access.md)和[Lync Server 2013 中的反向代理方案](lync-server-2013-scenarios-for-reverse-proxy.md)。
@@ -83,18 +64,9 @@ Lync Server 2013 自动发现服务在控制器和前端池服务器上运行，
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可使用新的 SAN 条目将最新更新的证书分配给默认证书。或者，您也可以使用 SAN=*.<em>&lt;sip 域&gt;</em>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您可使用新的 SAN 条目将最新更新的证书分配给默认证书。或者，您也可以使用 SAN=*.<em>&lt;sip 域&gt;</em>。
+
 
 
 ### 前端池证书要求
@@ -123,18 +95,9 @@ Lync Server 2013 自动发现服务在控制器和前端池服务器上运行，
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可使用新的 SAN 条目将最新更新的证书分配给默认证书。或者，您也可以使用 SAN=*.<em>&lt;sip 域&gt;</em></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您可使用新的 SAN 条目将最新更新的证书分配给默认证书。或者，您也可以使用 SAN=*.<em>&lt;sip 域&gt;</em>
+
 
 
 ### 反向代理（公共 CA）证书要求
@@ -159,16 +122,7 @@ Lync Server 2013 自动发现服务在控制器和前端池服务器上运行，
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可使用新的 SAN 条目将最新更新的证书分配给反向代理上的 SSL 侦听器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您可使用新的 SAN 条目将最新更新的证书分配给反向代理上的 SSL 侦听器。
+
 

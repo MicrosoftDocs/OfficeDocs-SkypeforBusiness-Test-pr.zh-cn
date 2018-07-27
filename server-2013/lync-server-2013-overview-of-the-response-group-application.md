@@ -17,32 +17,14 @@ _**上一次修改主题：** 2015-03-09_
 
 当呼叫者呼叫响应组时，呼叫会基于智能寻线或呼叫者对互动语音响应 (IVR) 问题的回答路由至代理。 响应组应用程序使用标准的响应组路由方法，将呼叫路由至下一个可用代理。呼叫路由方法包括串行、最长闲置、并行、循环以及助理路由（即每次传入呼叫时都将同时呼叫所有代理，无论其当前状态如何）。如果没有可用的代理，呼叫将保留在一个队列中，直到代理可用为止。在队列中时，呼叫者将听到音乐，直到可用代理接受呼叫为止。如果队列已满，或者呼叫在队列中已超时，则呼叫者可能会听到一则消息，然后呼叫将断开连接或转接到其他目标。当代理接受呼叫时，呼叫者可能会（也可能不会）看到代理的身份，具体取决于管理员如何配置响应组。代理可以是正式的，这意味着他们必须登录到组，然后才能接受路由至该组的呼叫；也可以是非正式的，这意味着他们无需登录到组，在组外即可接受呼叫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅本地用户可成为代理。如果一个代理从本地移至联机，则 响应组呼叫将不会被路由到该代理。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 仅本地用户可成为代理。如果一个代理从本地移至联机，则 响应组呼叫将不会被路由到该代理。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>响应组应用程序使用一种称为 Match Making 的内部服务对呼叫进行排队并查找可用代理。运行 响应组应用程序的每台计算机都运行 Match Making 服务，但是每个 Lync Server 池一次只能激活一个 Match Making 服务，其他 Match Making 服务均处于非活动状态。如果在计划外中断期间，活动 Match Making 服务变得不可用，则某一个非活动 Match Making 服务将变成活动状态。 响应组应用程序尽力确保呼叫路由和排队不中断。但是，当转换 Match Making 服务时，会丢失此时正在传输的所有呼叫。例如，如果由于 前端服务器停机而导致转换，还会丢失该 前端服务器上活动 Match Making 服务正在处理的所有呼叫。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 响应组应用程序使用一种称为 Match Making 的内部服务对呼叫进行排队并查找可用代理。运行 响应组应用程序的每台计算机都运行 Match Making 服务，但是每个 Lync Server 池一次只能激活一个 Match Making 服务，其他 Match Making 服务均处于非活动状态。如果在计划外中断期间，活动 Match Making 服务变得不可用，则某一个非活动 Match Making 服务将变成活动状态。 响应组应用程序尽力确保呼叫路由和排队不中断。但是，当转换 Match Making 服务时，会丢失此时正在传输的所有呼叫。例如，如果由于 前端服务器停机而导致转换，还会丢失该 前端服务器上活动 Match Making 服务正在处理的所有呼叫。
+
 
 
 在 Lync Server 2013 中，可通过两个管理角色来管理响应组： 响应组 Manager 和 响应组 Administrator。 响应组 Administrator 可管理任意响应组的各个方面。 响应组 Manager 只能管理其拥有的响应组的特定方面。新的 Manager 角色有助于降低管理成本，因为您可以将特定响应组的有限责任委派给已为其启用 企业语音的任何用户。
@@ -132,18 +114,9 @@ _**上一次修改主题：** 2015-03-09_
 
   - Lync Server 控制面板
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>响应组 Manager 只能通过此工具管理 响应组设置。其他 Lync Server 设置对 Manager 不可用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 响应组 Manager 只能通过此工具管理 响应组设置。其他 Lync Server 设置对 Manager 不可用。
+    
 
 
   - 响应组配置工具

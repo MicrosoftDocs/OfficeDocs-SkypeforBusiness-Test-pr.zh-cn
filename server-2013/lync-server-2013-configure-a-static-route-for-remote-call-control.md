@@ -52,18 +52,9 @@ _**上一次修改主题：** 2012-09-22_
     
       - 对于传输控制协议 (TCP) 连接，请在命令提示符处键入以下内容：
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果指定完全限定域名 (FQDN)，则必须首先配置域名系统 (DNS) A 记录。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 如果指定完全限定域名 (FQDN)，则必须首先配置域名系统 (DNS) A 记录。
+        
         
             $TCPRoute = New-CsStaticRoute -TCPRoute -Destination <gateway IP address or FQDN> -Port <gateway SIP listening port> -MatchUri <destination domain>
         

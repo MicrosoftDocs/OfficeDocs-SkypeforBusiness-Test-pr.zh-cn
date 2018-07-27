@@ -59,18 +59,9 @@ _**上一次修改主题：** 2012-10-19_
 
 9.  按照打开的向导中的说明执行操作。有关向导项的信息，请参阅 [在 Lync Server 2013 中定义 Survivable Branch Appliance 或 Survivable Branch Server](lync-server-2013-define-a-survivable-branch-appliance-or-server.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2010 Survivable Branch Appliance 仅可与 Lync Server 2010 监控存储相关联。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 2010 Survivable Branch Appliance 仅可与 Lync Server 2010 监控存储相关联。
+    
 
 
 10. 如果不在该站点上使用 Survivable Branch Appliance 或 Survivable Branch Server，请清除“此向导关闭后将打开新建 Survivable 向导”复选框，然后单击“完成”。

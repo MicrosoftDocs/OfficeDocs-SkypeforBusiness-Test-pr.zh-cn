@@ -31,18 +31,9 @@ _**上一次修改主题：** 2016-12-08_
 
 在您满意后，可以使用 规划工具创建会话部署的图。在 拓扑生成器中创建部署时可以使用该图。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此版本的 Lync Server 2013 包含的规划工具是预发行版本。请注意，规划工具中的容量规划数字是初步数据，最终版本不支持这些数据。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此版本的 Lync Server 2013 包含的规划工具是预发行版本。请注意，规划工具中的容量规划数字是初步数据，最终版本不支持这些数据。
+
 
 
 ## Lync Server 拓扑生成器

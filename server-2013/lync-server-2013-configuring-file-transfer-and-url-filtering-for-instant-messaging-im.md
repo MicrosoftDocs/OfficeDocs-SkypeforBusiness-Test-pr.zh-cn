@@ -33,18 +33,9 @@ _**上一次修改主题：** 2012-11-01_
 
 在部署智能 IM 消息筛选器工具之前，您需要了解在将消息从一台 Lync Server 2013 服务器路由到另一台服务器时如何应用筛选选项。应用这些筛选选项的方式是一致的，不管服务器是位于单个组织中还是跨越多个组织。在消息中插入自定义通知和警告文本以及在服务器之间发送这些消息的方式也是一致的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>即时消息筛选器使得处理消息中的 URL 所需的 CPU 资源量增加。CPU 需求的增加也会影响 Lync Server 的性能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 即时消息筛选器使得处理消息中的 URL 所需的 CPU 资源量增加。CPU 需求的增加也会影响 Lync Server 的性能。
+
 
 
 通过使用 Lync Server 控制面板中的“IM 和状态”组的“URL 筛选器”页面，可以阻止一些或全部超链接，还可以配置警告。选择“超链接前缀”选项“发送警告消息”后，警告将插入到包含超链接的即时消息的开头。
@@ -55,18 +46,9 @@ _**上一次修改主题：** 2012-11-01_
 
   - 如果服务器 (Server1) 将警告添加到包含活动超链接的即时消息，则接收此即时消息的后续服务器 (Server2) 仍然可以基于该即时消息中存在的这个活动超链接来采取不同的操作，并阻止该即时消息或添加警告。如果 Server2 配置为仅为此 URL 添加警告，则以前由 Server1 添加的警告将被删除，在 Server2 上配置的警告将添加到该即时消息的开头。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在混合环境中运行 Lync Server 2013，则 Live Communications Server 2005 SP1 是使用智能 IM 筛选器应用程序所需的最低版本。不带 SP1 的 Live Communications Server 2005 不支持智能 IM 筛选器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您在混合环境中运行 Lync Server 2013，则 Live Communications Server 2005 SP1 是使用智能 IM 筛选器应用程序所需的最低版本。不带 SP1 的 Live Communications Server 2005 不支持智能 IM 筛选器。
+
 
 
 ## URL 筛选
@@ -119,18 +101,9 @@ _**上一次修改主题：** 2012-11-01_
 
 文件传输筛选既影响即时消息，又影响会议。对于会议来说，这些设置影响 Office Live Meeting 2007 客户端中的讲义功能和多媒体播放功能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 还提供了文件传输设置选项。除了提供客户端控制外，Lync Server 中还提供了此服务器端选项。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 还提供了文件传输设置选项。除了提供客户端控制外，Lync Server 中还提供了此服务器端选项。
+
 
 
 可以在即时消息对话过程中、使用 Office Live Meeting 2007 客户端的讲义功能以及多媒体播放功能时，针对所有文件类型筛选文件传输。可以设置以下选项来控制文件传输：

@@ -33,18 +33,9 @@ _**上一次修改主题：** 2016-04-06_
 
 ## 端口和协议详细信息
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows 防火墙必须在启动服务器的 Lync Server 服务之前就已运行，因为启动相应服务时 Lync Server 要在防火墙中打开所需端口。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Windows 防火墙必须在启动服务器的 Lync Server 服务之前就已运行，因为启动相应服务时 Lync Server 要在防火墙中打开所需端口。
+
 
 
 有关边缘组件的防火墙配置的详细信息，请参阅[确定 Lync Server 2013 的外部 A/V 防火墙和端口要求](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md)。
@@ -446,18 +437,9 @@ _**上一次修改主题：** 2016-04-06_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>某些远程呼叫控制方案需要前端服务器或控制器与 PBX 之间的 TCP 连接。虽然 Lync Server 不再使用 TCP 端口 5060，但是在远程呼叫控制部署期间会创建受信任的服务器配置，这样会将 RCC Line Server FQDN 与前端服务器或控制器用来连接到 PBX 系统的 TCP 端口关联。有关详细信息，请参阅 Lync Server 命令行管理程序文档中的 <strong>CsTrustedApplicationComputer</strong> cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 某些远程呼叫控制方案需要前端服务器或控制器与 PBX 之间的 TCP 连接。虽然 Lync Server 不再使用 TCP 端口 5060，但是在远程呼叫控制部署期间会创建受信任的服务器配置，这样会将 RCC Line Server FQDN 与前端服务器或控制器用来连接到 PBX 系统的 TCP 端口关联。有关详细信息，请参阅 Lync Server 命令行管理程序文档中的 <strong>CsTrustedApplicationComputer</strong> cmdlet。
+
 
 
 对于仅使用硬件负载平衡（不是 DNS 负载平衡）的池，下表显示了需要打开硬件负载平衡器的端口。
@@ -753,30 +735,12 @@ _**上一次修改主题：** 2016-04-06_
 
 **\***若要为这些媒体类型配置特定端口，请使用 CsConferencingConfiguration cmdlet（ClientMediaPortRangeEnabled、ClientMediaPort 和 ClientMediaPortRange parameters）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 客户端的设置程序会自动在客户端计算机上创建所需的操作系统防火墙例外。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync 客户端的设置程序会自动在客户端计算机上创建所需的操作系统防火墙例外。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在客户端必须遍历组织的防火墙的任何方案中，都需要用于外部用户访问的端口（例如，由其他组织承载的任何外部通信或会议）。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在客户端必须遍历组织的防火墙的任何方案中，都需要用于外部用户访问的端口（例如，由其他组织承载的任何外部通信或会议）。
+
 

@@ -19,18 +19,9 @@ _**上一次修改主题：** 2012-10-10_
 
 通过配置包含相应的 PSTN 用法记录的语音策略来启动新企业语音部署的建议工作流，然后将相应的路由关联到每个 PSTN 用法记录。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您还可以创建具有<em>用户</em>作用域的语音策略，并将其分配到各个用户或组。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您还可以创建具有<em>用户</em>作用域的语音策略，并将其分配到各个用户或组。
+
 
 
 有关执行上述各项任务的详细步骤，请参阅本节中的过程。

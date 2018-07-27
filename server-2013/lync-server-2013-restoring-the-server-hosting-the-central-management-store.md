@@ -21,18 +21,9 @@ Lync Server 部署具有一个中央管理存储，它的副本会复制到运�
 
 如果托管中央管理存储的后端服务器处于镜像设置状态且镜像数据库仍然正常运行，则我们建议对此仍在正常运行的镜像进行备份，然后按照以下还原过程使用此备份在主数据库和镜像数据库上执行完整的还原。这是必需的要求，因为后端服务器还原需要修改和发布拓扑，只有在托管 CMS 的主数据库处于正常运行状态的情况下，才能完成此操作。另请注意，如果无法发布拓扑，则主数据库和镜像数据库角色就无法交换。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果未托管中央管理存储的后端服务器或 Standard Edition Server 出现故障，请参阅<a href="lync-server-2013-restoring-an-enterprise-edition-back-end-server.md">还原 Enterprise Edition 后端服务器</a>或<a href="lync-server-2013-restoring-a-standard-edition-server.md">还原 Standard Edition Server</a>。如果托管中央管理存储的后端服务器处于镜像配置状态并且只有镜像出现故障，请参阅<a href="lync-server-2013-restoring-a-mirrored-enterprise-edition-back-end-server-mirror.md">还原镜像企业版后端服务器 - 镜像</a>。如果任何其他服务器出现故障，请参阅<a href="lync-server-2013-restoring-an-enterprise-edition-member-server.md">还原 Enterprise Edition 成员服务器</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果未托管中央管理存储的后端服务器或 Standard Edition Server 出现故障，请参阅<a href="lync-server-2013-restoring-an-enterprise-edition-back-end-server.md">还原 Enterprise Edition 后端服务器</a>或<a href="lync-server-2013-restoring-a-standard-edition-server.md">还原 Standard Edition Server</a>。如果托管中央管理存储的后端服务器处于镜像配置状态并且只有镜像出现故障，请参阅<a href="lync-server-2013-restoring-a-mirrored-enterprise-edition-back-end-server-mirror.md">还原镜像企业版后端服务器 - 镜像</a>。如果任何其他服务器出现故障，请参阅<a href="lync-server-2013-restoring-an-enterprise-edition-member-server.md">还原 Enterprise Edition 成员服务器</a>。
+
 
 
 <table>
@@ -53,18 +44,9 @@ Lync Server 部署具有一个中央管理存储，它的副本会复制到运�
 
 1.  首先准备与出现故障的计算机具有相同完全限定域名 (FQDN) 的干净或新服务器，接着安装操作系统，然后还原或重新注册证书。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>按照您组织的服务器部署过程来执行该步骤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 按照您组织的服务器部署过程来执行该步骤。
+    
 
 
 2.  使用具有 RTCUniversalServerAdmins 组和本地 Administrators 组成员身份的用户帐户登录到要还原的服务器。
@@ -91,18 +73,9 @@ Lync Server 部署具有一个中央管理存储，它的副本会复制到运�
     
       - 如果要安装 Enterprise 后端服务器，请安装 SQL Server 2012 或 SQL Server 2008 R2，使实例名称与出现故障前相同。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>根据您要还原的服务器和您的部署，服务器可能包含多个并置或独立数据库。按照先前部署服务器时使用的过程来安装 SQL Server，包括 SQL Server 权限和登录名。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 根据您要还原的服务器和您的部署，服务器可能包含多个并置或独立数据库。按照先前部署服务器时使用的过程来安装 SQL Server，包括 SQL Server 权限和登录名。
+        
 
 
 5.  从前端服务器，启动 Lync Server 命令行管理程序：依次单击“开始”、“所有程序”和“Microsoft Lync Server 2013”，然后单击“Lync Server 命令行管理程序”。
@@ -123,18 +96,9 @@ Lync Server 部署具有一个中央管理存储，它的副本会复制到运�
     
         Set-CsConfigurationStoreLocation -SqlServerFqdn Server01.contoso.com -SqlInstanceName cms -Verbose
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果失去了连接点，可重新运行此 cmdlet。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 如果失去了连接点，可重新运行此 cmdlet。
+    
 
 
 8.  导入 $Backup 中的中央管理存储数据。在命令行中键入：
@@ -149,18 +113,9 @@ Lync Server 部署具有一个中央管理存储，它的副本会复制到运�
     
         Enable-CsTopology
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>启用拓扑后，可在数据库中找到拓扑文档。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 启用拓扑后，可在数据库中找到拓扑文档。
+    
 
 
 10. 如果您要还原同时托管有 CMS 的 企业版后端服务器，或者您需要重新创建 CMS 的镜像，请按照此步骤进行操作。否则，请跳到步骤 11。
@@ -177,18 +132,9 @@ Lync Server 部署具有一个中央管理存储，它的副本会复制到运�
     
     5.  按照“安装数据库”向导操作。如果要还原的数据库不是该服务器上的中央管理存储，请在“创建数据库”页上，选择要重新创建的数据库。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只有独立数据库会显示在“创建数据库”页上。并置数据库在运行 Lync Server 部署向导时创建。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 只有独立数据库会显示在“创建数据库”页上。并置数据库在运行 Lync Server 部署向导时创建。
+        
     
     6.  如果您要还原镜像后端服务器，请继续向导的剩余部分，直到您得到一条“创建镜像数据库”的提示消息。选择您要安装的数据库，并完成该过程。
     

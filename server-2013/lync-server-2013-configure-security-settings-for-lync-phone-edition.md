@@ -31,18 +31,9 @@ _**上一次修改主题：** 2013-02-23_
 
 6.  在“编辑设备配置”中的“电话锁定”下，选中或清除“强制设备锁定”复选框（默认为选中）并指定最小 PIN 长度（默认为 6 个字符）和超时期限（默认为 10 分钟）。建议使用这些默认值或增加 PIN 长度和/或减小超时期限。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关详细信息，请参阅<a href="lync-server-2013-enforce-phone-locking.md">强制电话锁定</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关详细信息，请参阅<a href="lync-server-2013-enforce-phone-locking.md">强制电话锁定</a>。
+    
 
 
 ## 使用 Lync Server 命令行管理程序 cmdlet 为 Lync Phone Edition 电话配置安全设置

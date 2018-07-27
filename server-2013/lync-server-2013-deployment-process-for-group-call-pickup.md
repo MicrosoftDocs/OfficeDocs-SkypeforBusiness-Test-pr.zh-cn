@@ -51,33 +51,15 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>在呼叫寄存通道表中配置呼叫应答号码范围</p></td>
 <td><p>使用 <strong>New-CSCallParkOrbit</strong> cmdlet 在呼叫寄存通道表中创建呼叫应答号码范围，并为呼叫应答范围分配 GroupPickup 类型。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须使用 Lync Server 命令行管理程序在呼叫寄存通道表中创建、修改、删除和查看组内呼叫应答号码范围。 Lync Server 控制面板中不存在组内呼叫应答号码范围。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 必须使用 Lync Server 命令行管理程序在呼叫寄存通道表中创建、修改、删除和查看组内呼叫应答号码范围。 Lync Server 控制面板中不存在组内呼叫应答号码范围。
+
 
 </div>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为与现有拨号计划进行无缝集成，号码范围通常配置为虚拟分机块。不支持将外线直拨分机 (DID) 号码分配为呼叫寄存轨道表中的范围号码。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 为与现有拨号计划进行无缝集成，号码范围通常配置为虚拟分机块。不支持将外线直拨分机 (DID) 号码分配为呼叫寄存轨道表中的范围号码。
+
 
 </div></td>
 <td><p>RTCUniversalServerAdmins</p>

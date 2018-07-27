@@ -19,18 +19,9 @@ _**上一次修改主题：** 2012-10-09_
 
 有关存档配置的工作方式的详细信息（包括全局、站点和池配置的层次结构），请参阅规划文档、部署文档或操作文档中的[Lync Server 2013 的存档工作原理](lync-server-2013-how-archiving-works.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您应在存档配置中指定所有适当的选项，然后再启用存档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您应在存档配置中指定所有适当的选项，然后再启用存档。
+
 
 
 <table>

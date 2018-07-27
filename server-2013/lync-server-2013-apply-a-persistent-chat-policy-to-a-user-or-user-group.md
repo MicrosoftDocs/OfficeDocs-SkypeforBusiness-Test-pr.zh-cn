@@ -17,19 +17,10 @@ _**上一次修改主题：** 2012-10-06_
 
 如果已经为用户启用 Lync Server 2013，则可以向特定用户应用适当的策略以便对其启用或禁用 持久聊天服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要配置和使用 持久聊天服务器，则必须先使用 拓扑生成器将 持久聊天服务器支持添加到拓扑，然后发布该拓扑。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-adding-persistent-chat-server-to-your-deployment.md">在 Lync Server 2013 中将持久聊天服务器添加到部署</a>。<br />
-要配置 持久聊天服务器配置设置，请参阅部署文档中的 <a href="lync-server-2013-configure-persistent-chat-server-options-globally-or-for-persistent-chat-server-pool.md">在 Lync Server 2013 中全局或为持久聊天服务器池配置持久聊天服务器选项</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 要配置和使用 持久聊天服务器，则必须先使用 拓扑生成器将 持久聊天服务器支持添加到拓扑，然后发布该拓扑。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-adding-persistent-chat-server-to-your-deployment.md">在 Lync Server 2013 中将持久聊天服务器添加到部署</a>。<br />
+> 要配置 持久聊天服务器配置设置，请参阅部署文档中的 <a href="lync-server-2013-configure-persistent-chat-server-options-globally-or-for-persistent-chat-server-pool.md">在 Lync Server 2013 中全局或为持久聊天服务器池配置持久聊天服务器选项</a>。
+
 
 
 使用本主题中的过程将以前创建的 持久聊天用户策略应用于一个或多个用户帐户或用户组。
@@ -46,18 +37,9 @@ _**上一次修改主题：** 2012-10-06_
 
 5.  在“编辑 Lync Server 用户”中的“持久聊天策略”下，选择要应用的持久聊天用户策略。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>“&lt;自动&gt;”设置将应用默认生效的策略。服务器将自动应用这些设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > “&lt;自动&gt;”设置将应用默认生效的策略。服务器将自动应用这些设置。
+    
 
 
 6.  单击“提交”。

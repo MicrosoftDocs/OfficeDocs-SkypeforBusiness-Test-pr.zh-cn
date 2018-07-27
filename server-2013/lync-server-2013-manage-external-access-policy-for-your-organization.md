@@ -45,18 +45,9 @@ _**上一次修改主题：** 2013-10-07_
     
     作为一种选择，如果您先选择“启用与联盟用户的通信”，则可以选择“启用与 XMPP 联盟伙伴的通信”。XMPP 联盟是与使用可扩展消息传递和状态协议 (XMPP) 的组织的联盟。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果启用 XMPP 联盟，您还必须选择在拓扑生成器的边缘池配置节中部署“XMPP 联盟”。对 XMPP 联盟进行配置时，将在边缘服务器上部署一个 XMPP 代理并在前端服务器上部署一个 XMPP 网关。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果启用 XMPP 联盟，您还必须选择在拓扑生成器的边缘池配置节中部署“XMPP 联盟”。对 XMPP 联盟进行配置时，将在边缘服务器上部署一个 XMPP 代理并在前端服务器上部署一个 XMPP 网关。
+    
 
 
   - **启用与远程用户的通信**    如果您希望组织中位于防火墙之外的用户（如远程工作者和正在旅行的用户）能够通过 Internet 连接到 Lync Server，请启用此选项。
@@ -84,18 +75,9 @@ _**上一次修改主题：** 2013-10-07_
     </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除了启用外部用户访问支持外，还必须在用户可以使用任何类型的外部用户访问之前，配置策略以控制组织中外部用户访问的使用。有关为外部用户访问创建、配置和应用策略的详细信息，请参阅 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中启用或禁用远程用户访问</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 除了启用外部用户访问支持外，还必须在用户可以使用任何类型的外部用户访问之前，配置策略以控制组织中外部用户访问的使用。有关为外部用户访问创建、配置和应用策略的详细信息，请参阅 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中启用或禁用远程用户访问</a>。
+
 
 
 **使用 Windows PowerShell cmdlet 查看外部访问策略**

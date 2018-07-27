@@ -42,18 +42,9 @@ _**上一次修改主题：** 2014-05-22_
 
 4.  将备份的 Lync Server 响应组服务工作流从池 A 导入到池 B 中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>目前， <strong>Import-CsRgsConfiguration</strong> cmdlet 要求池 A 中的队列和工作流名称与池 B 中的队列和工作流名称不同。如果名称相同，则在您运行 <strong>Import-CsRgsConfiguration</strong> cmdlet 时会得到错误，并且将需要重命名池 B 中的队列和工作流，然后才能继续运行 <strong>Import-CsRgsConfiguration</strong> cmdlet。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 目前， <strong>Import-CsRgsConfiguration</strong> cmdlet 要求池 A 中的队列和工作流名称与池 B 中的队列和工作流名称不同。如果名称相同，则在您运行 <strong>Import-CsRgsConfiguration</strong> cmdlet 时会得到错误，并且将需要重命名池 B 中的队列和工作流，然后才能继续运行 <strong>Import-CsRgsConfiguration</strong> cmdlet。
+    
     
     您有两个选项可将响应组配置从池 A 导入到池 B。您使用哪个选项取决于是否要使用池 A 中的应用程序级别设置覆盖池 B 的应用程序级别设置。
     
@@ -95,18 +86,9 @@ _**上一次修改主题：** 2014-05-22_
         
             Set-CsUnassignedNumber -Identity "<Range Name>" -AnnouncementService "<Pool B FQDN>" -AnnouncementName "<New Announcement in pool B>"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用“Exchange UM”作为所选通知服务的未分配号码范围不需要此步骤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 使用“Exchange UM”作为所选通知服务的未分配号码范围不需要此步骤。
+    
 
 
 7.  通过运行以下 cmdlet 来以灾难恢复 (DR) 模式将池 A 故障转移到池 B：
@@ -216,18 +198,9 @@ _**上一次修改主题：** 2014-05-22_
     
       - （可选）从池 B 移除池 C 中重新创建的通知（如果池 B 中不再使用它们）。若要移除通知，请使用 **Remove-CsAnnouncement** cmdlet。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>使用“Exchange UM”作为通知服务的未分配号码范围不需要此步骤。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 使用“Exchange UM”作为通知服务的未分配号码范围不需要此步骤。
+        
 
 
 21. 通过运行以下 cmdlet 来在池 B 中清除池 A 的用户数据：
@@ -299,18 +272,9 @@ _**上一次修改主题：** 2014-05-22_
             Update-CsUserData -FileName c:\logs\exportedUserDAta.xml -UserFilter $user - 
             }
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>在与池 A 关联的 SBA 上所驻留的用户移动到池 C 之前，这些用户将遇到服务故障。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 在与池 A 关联的 SBA 上所驻留的用户移动到池 C 之前，这些用户将遇到服务故障。
+        
 
 
 28. 在拓扑生成器中，为以前与池 A 关联的每个 SBA X，执行以下操作：

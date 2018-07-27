@@ -17,18 +17,9 @@ _**上一次修改主题：** 2015-11-16_
 
 设置前端池和 Standard Edition Server 时，可以选择配置外部 Web 场完全限定域名 (FQDN) 和关联端口。如果在运行 Lync Server 部署向导时未配置此 URL，则需要手动配置这些设置。通常，管理员不需要修改这些设置，因为这些是建议的默认端口。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下面的屏幕截图是配置 Standard Edition 服务器时截取的，因而“覆盖 FQDN”选项处于禁用状态。当在前端池中配置 Enterprise Edition 服务器时，该选项处于启用状态。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 下面的屏幕截图是配置 Standard Edition 服务器时截取的，因而“覆盖 FQDN”选项处于禁用状态。当在前端池中配置 Enterprise Edition 服务器时，该选项处于启用状态。
+
 
 
 ![编辑 Web 服务池设置](images/Gg520992.fbdf5cc9-479a-463f-bb1d-53575ecdfc9d(OCS.15).jpg "编辑 Web 服务池设置")

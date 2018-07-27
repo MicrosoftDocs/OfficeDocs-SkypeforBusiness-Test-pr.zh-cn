@@ -85,18 +85,9 @@ Lync Server 2013 存档策略包括以下内容：
 
 有关在部署存档时如何设置初始存档策略的详细信息，请参阅部署文档中的[配置和分配存档策略](lync-server-2013-configuring-and-assigning-archiving-policies.md)。有关部署后使用存档策略启用和禁用通信的详细信息，请参阅操作文档中的[在 Lync Server 2013 中管理内部通信和外部通信的存档](lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您实现这两个 Lync Server 2013 存档数据库并启用 Microsoft Exchange 集成，则 Exchange 2013 策略将重写 Lync Server 存档策略，但仅针对驻留在 Exchange 2013 上且其邮箱已被置于就地保留状态的用户执行此操作。Lync 存档仅取决于 Microsoft Exchange 就地保留策略。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您实现这两个 Lync Server 2013 存档数据库并启用 Microsoft Exchange 集成，则 Exchange 2013 策略将重写 Lync Server 存档策略，但仅针对驻留在 Exchange 2013 上且其邮箱已被置于就地保留状态的用户执行此操作。Lync 存档仅取决于 Microsoft Exchange 就地保留策略。
+
 
 
 ## 有哪些可供选择的配置存档选项？
@@ -127,18 +118,9 @@ Lync Server 2013 存档策略包括以下内容：
     
       - 在导出存档数据（如果启用 Microsoft Exchange 集成，还包括上载到 Exchange 的数据）后。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您启用 Microsoft Exchange 集成，则清除驻留在 Exchange 2013 上的用户及其处于就地保留状态的邮箱的过程由 Exchange 进行控制。该唯一限制针对存储在 Lync Server 文件共享中的会议文件。如果您选择在已导出存档数据后，或者选择在指定的最长天数（如果您指定了最长保留天数）后清除数据，则仅在导出文件（上载到 Exchange）后才从文件共享中清除这些文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您启用 Microsoft Exchange 集成，则清除驻留在 Exchange 2013 上的用户及其处于就地保留状态的邮箱的过程由 Exchange 进行控制。该唯一限制针对存储在 Lync Server 文件共享中的会议文件。如果您选择在已导出存档数据后，或者选择在指定的最长天数（如果您指定了最长保留天数）后清除数据，则仅在导出文件（上载到 Exchange）后才从文件共享中清除这些文件。
+    
 
 
 默认情况下不启用任何存档选项。您可以使用 Lync Server 2013 控制面板管理存档配置。

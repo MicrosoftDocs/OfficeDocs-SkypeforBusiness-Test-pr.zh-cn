@@ -21,18 +21,9 @@ _**上一次修改主题：** 2015-03-09_
 
 类似地，管理员可以使用 System Center Operations Manager 执行诸如在发生指定事件时发出实时警报之类的事情，并运行主动测试系统的综合事务。Lync Server 中使用综合事务来验证用户是否能够成功完成常见任务，如登录到系统、交换即时消息，或者拨打位于公用电话交换网 (PSTN) 中的电话。例如，定期运行这些测试会针对用户登录到 Lync Server 的潜在问题向您发出警报，并在支持团队收到无法进行连接的用户打来的大量电话之前为您提供更正问题的机会。通过使用 System Center Operations Manager 运行这些综合事务，管理员可以每天连续 24 小时定期监控 Lync Server 的部署情况，而无需执行除对可能发出的任何警报作出响应以外的一些事情。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>针对 Lync Server 2013，System Center Operations Manager 的管理包还能够检测可能对 Lync Server 产生负面影响的“外部”问题。例如，如果 Internet Information Services (IIS) 脱机，Lync Server 计算机上的系统资源降低到指定的数量以下，或者 Lync Server 计算机遇到硬件故障，则可以通知给管理员。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 针对 Lync Server 2013，System Center Operations Manager 的管理包还能够检测可能对 Lync Server 产生负面影响的“外部”问题。例如，如果 Internet Information Services (IIS) 脱机，Lync Server 计算机上的系统资源降低到指定的数量以下，或者 Lync Server 计算机遇到硬件故障，则可以通知给管理员。
+
 
 
 Lync Server 2013 中的运行状况配置是围绕 System Center Operations Manager 和 Lync Server 管理包的使用情况构建的。这些管理包包括许多新的功能和增强功能，其中包括：

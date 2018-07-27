@@ -46,18 +46,9 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>安装必备软硬件</strong></p></td>
 <td><p>会议在前端池的前端服务器上和 Standard Edition 服务器上运行。除了需要安装这些服务器外，没有额外的软硬件要求。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 使用 Office Web Apps 和 Office Web Apps Server 处理 PowerPoint 演示文稿的共享和呈现。有关安装和配置 Office Web Apps Server 的详细信息，请参阅<a href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">配置与 Office Web Apps Server 和 Lync Server 2013 的集成</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 使用 Office Web Apps 和 Office Web Apps Server 处理 PowerPoint 演示文稿的共享和呈现。有关安装和配置 Office Web Apps Server 的详细信息，请参阅<a href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">配置与 Office Web Apps Server 和 Lync Server 2013 的集成</a>。
+
 
 </div></td>
 <td><p>属于本地 Administrators 组成员的域用户</p></td>

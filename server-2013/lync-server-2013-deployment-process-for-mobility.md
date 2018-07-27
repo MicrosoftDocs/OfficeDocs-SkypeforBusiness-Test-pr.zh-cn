@@ -96,19 +96,10 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>使用 <strong>Set-CsPushNotificationConfiguration</strong> cmdlet 启用 Apple 推送通知服务 (APNS) 和 Microsoft 推送通知服务 (MPNS) 的推送通知。默认情况下，此功能已禁用。</p></li>
 <li><p>使用 <strong>Test-CsFederatedPartner</strong> cmdlet 测试联盟配置，并使用 <strong>Test-CsMCXPushNotification</strong> cmdlet 测试推送通知。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>推送通知用于 Apple 设备和 Windows Phone 上的 Lync 2010 Mobile 客户端<br />
-推送通知仅对 Windows Phone 上的 Lync 2013 移动客户端是必需的</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 推送通知用于 Apple 设备和 Windows Phone 上的 Lync 2010 Mobile 客户端<br />
+推送通知仅对 Windows Phone 上的 Lync 2013 移动客户端是必需的
+
 
 </div></li>
 </ul></td>

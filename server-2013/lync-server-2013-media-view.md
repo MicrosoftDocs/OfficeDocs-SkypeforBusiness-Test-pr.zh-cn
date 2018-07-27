@@ -17,18 +17,9 @@ _**上一次修改主题：** 2015-03-09_
 
 “媒体”视图存储有关在对等会话中使用的一种媒体类型的信息。如果使用多个媒体类型，则一个会话由表中的多条记录表示。此视图是在 Microsoft Lync Server 2013 中引入的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>“媒体”视图不应用来计算会话的媒体持续时间。此视图包含会话中的媒体交换信号详情。媒体交换通过 INVITE 请求实现，StartTime 指示发出 INVITE 的时间。邀请时间不一定表示媒体的启动时间，因为仅在会话被接受后，媒体才启动。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> “媒体”视图不应用来计算会话的媒体持续时间。此视图包含会话中的媒体交换信号详情。媒体交换通过 INVITE 请求实现，StartTime 指示发出 INVITE 的时间。邀请时间不一定表示媒体的启动时间，因为仅在会话被接受后，媒体才启动。
+
 
 
 除了下面列出的内容外，“媒体”视图还包含 [SessionDetails 视图](lync-server-2013-sessiondetails-view.md)中的所有列。

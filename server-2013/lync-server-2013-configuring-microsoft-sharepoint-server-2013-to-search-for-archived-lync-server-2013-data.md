@@ -44,18 +44,9 @@ _**上一次修改主题：** 2016-12-08_
     $service.AllowOAuthOverHttp = $False
     $service.Update()
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>务必要使用自动发现服务的 URI。不要使用示例 URI https://autodiscover.litwareinc.com/autodiscover/metadata/json/1。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 务必要使用自动发现服务的 URI。不要使用示例 URI https://autodiscover.litwareinc.com/autodiscover/metadata/json/1。
+
 
 
 在创建令牌颁发者并配置令牌服务后，运行以下命令，确保用 SharePoint 网站的 URL 替代示例 URL http://atl-sharepoint-001：
@@ -84,18 +75,9 @@ _**上一次修改主题：** 2016-12-08_
     $template = Get-SPWebTemplate | Where-Object {$_.Title -eq "eDiscovery Center"}
     New-SPSite -Url "https://atl-sharepoint-001/sites/discovery" -OwnerAlias "kenmyer" -Template $Template -Name "Discovery Center"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>“eDiscovery”是“electronic discovery”（电子发现）的缩写，通常表示浏览可在法院“合理计算为可导致可靠证据”的项目的电子存档的过程。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> “eDiscovery”是“electronic discovery”（电子发现）的缩写，通常表示浏览可在法院“合理计算为可导致可靠证据”的项目的电子存档的过程。
+
 
 
 新网站准备就绪后，下一步是配置 Exchange 2013，以用作 SharePoint 的结果源。通过在 SharePoint 2013 管理中心页中完成以下过程可执行此操作：

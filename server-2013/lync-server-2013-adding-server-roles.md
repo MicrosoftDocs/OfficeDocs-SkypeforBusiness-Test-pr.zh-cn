@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-06-19_
 
 启动并运行初始部署后，可以为 Lync Server 2013 添加其他服务器角色，如 控制器或独立的 中介服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>执行安装其他服务器角色的任务之前，请参阅与每个角色相关的规划主题。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 执行安装其他服务器角色的任务之前，请参阅与每个角色相关的规划主题。
+
 
 
 ## 本部分内容

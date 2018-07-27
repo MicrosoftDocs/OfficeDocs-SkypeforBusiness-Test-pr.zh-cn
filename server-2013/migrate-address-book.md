@@ -91,7 +91,7 @@ _**上一次修改主题：** 2012-10-09_
     
       - 如果您的部署包括 Lync Server 2013 和 Lync Server 2010 或 Office Communications Server 2007 R2 的组合，则运行以下 cmdlet 并将其分配给拓扑中的每个 Lync Server 2013 池：
         
-            new-csaddressbookconfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
+            New-CsAddressBookConfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
 
 3.  等待在所有池上进行 中央管理存储 复制。
 

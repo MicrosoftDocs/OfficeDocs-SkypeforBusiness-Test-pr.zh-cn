@@ -69,18 +69,9 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>若要使用单独的存档数据库（使用 SQL Server 数据库）为部分或所有用户进行存档存储，需要将存储存档数据的服务器上的 SQL Server。</p></li>
 </ul>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>存档在企业池的前端服务器和 Standard Edition 服务器上运行。除了需要安装这些服务器外，没有额外的软硬件要求。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 存档在企业池的前端服务器和 Standard Edition 服务器上运行。除了需要安装这些服务器外，没有额外的软硬件要求。
+
 
 </div></td>
 <td><p>属于本地 Administrators 组成员的域用户。</p></td>

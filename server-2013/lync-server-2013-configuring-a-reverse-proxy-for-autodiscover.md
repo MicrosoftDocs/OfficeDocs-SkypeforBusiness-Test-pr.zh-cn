@@ -19,36 +19,18 @@ _**上一次修改主题：** 2012-12-12_
 
 如果您决定使用 HTTPS 进行初始 Lync Server 2013 自动发现服务请求并更新反向代理证书上的使用者替代名称列表，则需要向反向代理上的安全套接字层 (SSL) 侦听器分配更新的公共证书。外部（公共）证书所需的更新将包括 lyncdiscover.\<域名\> 的使用者替代名称 (SAN) 条目。然后，您需要修改外部 Web 服务的现有侦听器或为外部自动发现服务 URL（例如 **lyncdiscover.contoso.com**）创建新的 Web 发布规则。如果您的前端池和控制器池尚没有用于外部 Lync Server 2013 Web 服务 URL 的 Web 发布规则（如果您已部署控制器），则也需要为其发布规则。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只要分配给侦听器的证书同时包含针对外部 Web 服务和自动发现服务的必要的使用者名称和使用者替代名称，反向代理发布规则和侦听器就可以为这两种服务提供服务。有关 Web 侦听器和发布规则的默认配置的详细信息，请参阅<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">为 Lync Server 2013 设置反向代理服务器</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 只要分配给侦听器的证书同时包含针对外部 Web 服务和自动发现服务的必要的使用者名称和使用者替代名称，反向代理发布规则和侦听器就可以为这两种服务提供服务。有关 Web 侦听器和发布规则的默认配置的详细信息，请参阅<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">为 Lync Server 2013 设置反向代理服务器</a>。
+
 
 
 如果您决定对初始自动发现服务请求使用 HTTP 以便无需更新反向代理的使用者替代名称，则需要为端口 80 创建或修改一条 Web 发布规则。
 
 本节中的过程介绍如何使用 Microsoft Forefront Threat Management Gateway 2010 创建或修改一条 Web 发布规则以实现自动发现。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>这些过程假定您已安装 Forefront Threat Management Gateway (TMG) 2010 Standard Edition。如果您使用另一个反向代理，则这些过程是类似的，只不过需要将其映射到第三方产品的文档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 这些过程假定您已安装 Forefront Threat Management Gateway (TMG) 2010 Standard Edition。如果您使用另一个反向代理，则这些过程是类似的，只不过需要将其映射到第三方产品的文档。
+
 
 
 ## 为外部自动发现 URL 创建 Web 发布规则

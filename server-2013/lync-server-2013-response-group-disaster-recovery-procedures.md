@@ -145,18 +145,9 @@ _**上一次修改主题：** 2016-12-08_
     
         Import-CsRgsConfiguration -Destination "service:ApplicationServer:primary.contoso.com" -OverwriteOwner -FileName "C:\RgsExportPrimaryUpdated.zip"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果在恢复期间重建池，则无论完全限定域名 (FQDN) 相同还是不同，您都需要使用 –OverwriteOwner 参数。根据经验法则，在将响应组导回到主池时，您可以始终使用 –OverwriteOwner 参数。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 如果在恢复期间重建池，则无论完全限定域名 (FQDN) 相同还是不同，您都需要使用 –OverwriteOwner 参数。根据经验法则，在将响应组导回到主池时，您可以始终使用 –OverwriteOwner 参数。
+    
     
     如果您部署一个新池（具有相同或不同的 FQDN）来替换主池，并且想要针对新池使用备份池中的应用程序级别设置，请包括 –ReplaceExistingSettings 参数。在命令行中键入：
     
@@ -232,16 +223,7 @@ _**上一次修改主题：** 2016-12-08_
     
         Export-CsRgsConfiguration -Source "service:ApplicationServer:backup.contoso.com" -Owner "service:ApplicationServer:primary.contoso.com" -FileName "C:\RgsExportPrimaryUpdated.zip" -RemoveExportedConfiguration
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此步骤将使用导出的配置创建新文件，然后将该文件从备份池中删除。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 此步骤将使用导出的配置创建新文件，然后将该文件从备份池中删除。
+    
 

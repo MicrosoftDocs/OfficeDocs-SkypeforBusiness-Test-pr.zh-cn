@@ -17,18 +17,9 @@ _**上一次修改主题：** 2014-02-07_
 
 使用下列过程之一可创建或修改代理组。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>例如，作为 CsVoiceAdministrator 的管理员，必须为用户启用企业语音和 Lync Server，然后才能将这些用户分配到代理组。如果您是托管工作流的委派响应组管理员之一，则将能够创建代理组并您管理的工作流中使用这些代理组。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 例如，作为 CsVoiceAdministrator 的管理员，必须为用户启用企业语音和 Lync Server，然后才能将这些用户分配到代理组。如果您是托管工作流的委派响应组管理员之一，则将能够创建代理组并您管理的工作流中使用这些代理组。
+
 
 
 <table>
@@ -49,18 +40,9 @@ _**上一次修改主题：** 2014-02-07_
 
 1.  以 RTCUniversalServerAdmins 组成员的身份，或支持响应组的某个预定义管理角色的成员身份登录。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您是托管工作流的委派响应组管理员之一，则可创建组并在管理的工作流中使用这些组。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您是托管工作流的委派响应组管理员之一，则可创建组并在管理的工作流中使用这些组。
+    
 
 
 2.  打开浏览器窗口，然后输入管理 URL 以打开 Lync Server 控制面板。有关可以用于启动 Lync Server 控制面板的不同方法的详细信息，请参阅[打开 Lync Server 管理工具](lync-server-2013-open-lync-server-administrative-tools.md)。
