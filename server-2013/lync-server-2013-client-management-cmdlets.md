@@ -69,7 +69,7 @@ _**上一次修改主题：** 2016-12-08_
     [Remove-CsClientVersionPolicy](remove-csclientversionpolicy.md)
 
   -   
-    [Set-CsClientVersionPolicy](set-csclientversionpolicy.md)
+    [Set-CsClientVersionPolicy](Set-CsClientVersionPolicy.md)
 
   -   
     [Get-CsClientVersionPolicyRule](get-csclientversionpolicyrule.md)

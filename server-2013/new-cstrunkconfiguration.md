@@ -306,7 +306,7 @@ Get-CsAdminRole | Where-Object {$\_.Cmdlets –match "New-CsTrunkConfiguration"}
 #### 其他资源
 
 [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md)  
-[Set-CsTrunkConfiguration](set-cstrunkconfiguration.md)  
+[Set-CsTrunkConfiguration](Set-CsTrunkConfiguration.md)  
 [Get-CsTrunkConfiguration](get-cstrunkconfiguration.md)  
 [Test-CsTrunkConfiguration](test-cstrunkconfiguration.md)  
 [New-CsOutboundTranslationRule](new-csoutboundtranslationrule.md)

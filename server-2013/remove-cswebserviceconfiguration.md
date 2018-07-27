@@ -114,6 +114,6 @@ None. Instead, the **Remove-CsWebServiceConfiguration** cmdlet deletes existing 
 #### 其他资源
 
 [Get-CsWebServiceConfiguration](get-cswebserviceconfiguration.md)  
-[New-CsWebServiceConfiguration](new-cswebserviceconfiguration.md)  
+[New-CsWebServiceConfiguration](New-CsWebServiceConfiguration.md)  
 [Set-CsWebServiceConfiguration](set-cswebserviceconfiguration.md)
 

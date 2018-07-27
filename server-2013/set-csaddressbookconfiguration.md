@@ -183,6 +183,6 @@ The **Set-CsAddressBookConfiguration** cmdlet does not return a value or object.
 #### 其他资源
 
 [Get-CsAddressBookConfiguration](get-csaddressbookconfiguration.md)  
-[New-CsAddressBookConfiguration](new-csaddressbookconfiguration.md)  
+[New-CsAddressBookConfiguration](New-CsAddressBookConfiguration.md)  
 [Remove-CsAddressBookConfiguration](remove-csaddressbookconfiguration.md)
 

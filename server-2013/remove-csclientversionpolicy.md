@@ -114,5 +114,5 @@ The **Remove-CsClientVersionPolicy** cmdlet deletes existing instances of the Mi
 [Get-CsClientVersionPolicy](get-csclientversionpolicy.md)  
 [Grant-CsClientVersionPolicy](grant-csclientversionpolicy.md)  
 [New-CsClientVersionPolicy](new-csclientversionpolicy.md)  
-[Set-CsClientVersionPolicy](set-csclientversionpolicy.md)
+[Set-CsClientVersionPolicy](Set-CsClientVersionPolicy.md)
 

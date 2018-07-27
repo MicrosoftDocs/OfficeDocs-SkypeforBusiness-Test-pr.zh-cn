@@ -124,7 +124,7 @@ The **Get-CsWebServiceConfiguration** cmdlet returns instances of the Microsoft.
 
 #### 其他资源
 
-[New-CsWebServiceConfiguration](new-cswebserviceconfiguration.md)  
+[New-CsWebServiceConfiguration](New-CsWebServiceConfiguration.md)  
 [Remove-CsWebServiceConfiguration](remove-cswebserviceconfiguration.md)  
 [Set-CsWebServiceConfiguration](set-cswebserviceconfiguration.md)
 

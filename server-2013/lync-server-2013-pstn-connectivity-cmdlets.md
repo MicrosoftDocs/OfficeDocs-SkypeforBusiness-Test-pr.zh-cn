@@ -132,7 +132,7 @@ _**上一次修改主题：** 2016-12-08_
     [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md)
 
   -   
-    [Set-CsTrunkConfiguration](set-cstrunkconfiguration.md)
+    [Set-CsTrunkConfiguration](Set-CsTrunkConfiguration.md)
 
   -   
     [Test-CsTrunkConfiguration](test-cstrunkconfiguration.md)

@@ -523,13 +523,13 @@ Microsoft Lync Server 2013 附带了超过 700 个允许管理员从命令行管
 
   - [Move-CsManagementServer](move-csmanagementserver.md)
 
-  - [Move-CsMeetingRoom](move-csmeetingroom.md)
+  - [Move-CsMeetingRoom](Move-CsMeetingRoom.md)
 
   - [Move-CsRgsConfiguration](move-csrgsconfiguration.md)
 
   - [Move-CsUser](move-csuser.md)
 
-  - [New-CsAddressBookConfiguration](new-csaddressbookconfiguration.md)
+  - [New-CsAddressBookConfiguration](New-CsAddressBookConfiguration.md)
 
   - [New-CsAdminRole](new-csadminrole.md)
 
@@ -787,7 +787,7 @@ Microsoft Lync Server 2013 附带了超过 700 个允许管理员从命令行管
 
   - [New-CsWebLink](new-csweblink.md)
 
-  - [New-CsWebServiceConfiguration](new-cswebserviceconfiguration.md)
+  - [New-CsWebServiceConfiguration](New-CsWebServiceConfiguration.md)
 
   - [New-CsWebTrustedCACertificate](new-cswebtrustedcacertificate.md)
 
@@ -1103,7 +1103,7 @@ Microsoft Lync Server 2013 附带了超过 700 个允许管理员从命令行管
 
   - [Set-CsClientVersionConfiguration](set-csclientversionconfiguration.md)
 
-  - [Set-CsClientVersionPolicy](set-csclientversionpolicy.md)
+  - [Set-CsClientVersionPolicy](Set-CsClientVersionPolicy.md)
 
   - [Set-CsClientVersionPolicyRule](set-csclientversionpolicyrule.md)
 
@@ -1159,7 +1159,7 @@ Microsoft Lync Server 2013 附带了超过 700 个允许管理员从命令行管
 
   - [Set-CsHealthMonitoringConfiguration](set-cshealthmonitoringconfiguration.md)
 
-  - [Set-CsHostedVoicemailPolicy](set-cshostedvoicemailpolicy.md)
+  - [Set-CsHostedVoicemailPolicy](Set-CsHostedVoicemailPolicy.md)
 
   - [Set-CsHostingProvider](set-cshostingprovider.md)
 
@@ -1297,7 +1297,7 @@ Microsoft Lync Server 2013 附带了超过 700 个允许管理员从命令行管
 
   - [Set-CsTestDevice](set-cstestdevice.md)
 
-  - [Set-CsTrunkConfiguration](set-cstrunkconfiguration.md)
+  - [Set-CsTrunkConfiguration](Set-CsTrunkConfiguration.md)
 
   - [Set-CsTrustedApplication](set-cstrustedapplication.md)
 

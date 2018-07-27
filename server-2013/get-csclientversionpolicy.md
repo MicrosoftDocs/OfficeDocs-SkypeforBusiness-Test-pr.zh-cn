@@ -124,5 +124,5 @@ The **Get-CsClientVersionPolicy** cmdlet returns instances of the Microsoft.Rtc.
 [Grant-CsClientVersionPolicy](grant-csclientversionpolicy.md)  
 [New-CsClientVersionPolicy](new-csclientversionpolicy.md)  
 [Remove-CsClientVersionPolicy](remove-csclientversionpolicy.md)  
-[Set-CsClientVersionPolicy](set-csclientversionpolicy.md)
+[Set-CsClientVersionPolicy](Set-CsClientVersionPolicy.md)
 
