@@ -78,8 +78,12 @@ Lync Web App 的 Lync Server 2013 版本支持多重身份验证。当从外部�
     
         $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.contoso.com/authorization/claims/permit", Value = "true");'
         $IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.contoso.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);'
+
+       &nbsp;
     
         Set-ADFSRelyingPartyTrust -TargetName ContosoApp -IssuanceAuthorizationRules $IssuanceAuthorizationRules -IssuanceTransformRules $IssuanceTransformRules
+
+       &nbsp;
     
         Set-CsWebServiceConfiguration -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
 
@@ -91,7 +95,7 @@ Windows 7 和 Windows Server 2008 R2 中的 BranchCache 功能可能会干扰 Ly
 
 ## 验证 Lync Web App 部署
 
-您可以使用 Test-CsUcwaConference cmdlet 来验证一对测试用户能否使用统一通信 Web API (UCWA) 参加会议。有关此 cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档中的 [Test-CsUcwaConference](test-csucwaconference.md)。
+您可以使用 Test-CsUcwaConference cmdlet 来验证一对测试用户能否使用统一通信 Web API (UCWA) 参加会议。有关此 cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档中的 [Test-CsUcwaConference](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsUcwaConference)。
 
 ## 对 Windows Server 2008 R2 上的插件安装进行故障排除
 

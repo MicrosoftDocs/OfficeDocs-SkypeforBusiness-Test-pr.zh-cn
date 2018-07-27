@@ -202,7 +202,7 @@ Lync Server 部署具有一个中央管理存储，它的副本会复制到运�
     </thead>
     <tbody>
     <tr class="odd">
-    <td>可使用 <strong>Install-CsDatabase</strong> cmdlet 创建每个数据库以及使用 <strong>Install-CsMirrorDatabase</strong> cmdlet 配置镜像，而不是运行拓扑生成器。有关详细信息，请参阅 <a href="install-csdatabase.md">Install-CsDatabase</a> 和 <a href="install-csmirrordatabase.md">Install-CsMirrorDatabase</a>。</td>
+    <td>可使用 <strong>Install-CsDatabase</strong> cmdlet 创建每个数据库以及使用 <strong>Install-CsMirrorDatabase</strong> cmdlet 配置镜像，而不是运行拓扑生成器。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Install-CsDatabase">Install-CsDatabase</a> 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Install-CsMirrorDatabase">Install-CsMirrorDatabase</a>。</td>
     </tr>
     </tbody>
     </table>

@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2012-11-01_
 
-您可以使用 Stop-CsClsLogging cmdlet 停止当前正在运行的日志记录会话。通常，需要停止日志记录会话的情形并不多。例如，无需先停止日志记录就可以搜索日志和更改配置。如果您有两种方案（例如 AlwaysOn 和 UserReplicator）在运行，并且您需要收集与身份验证相关的信息，则您需要停止其他方案之一（在全局、站点、池或计算机范围内），然后才能开始运行身份验证方案。有关详细信息，请参阅 [Stop-CsClsLogging](stop-csclslogging.md)。
+您可以使用 Stop-CsClsLogging cmdlet 停止当前正在运行的日志记录会话。通常，需要停止日志记录会话的情形并不多。例如，无需先停止日志记录就可以搜索日志和更改配置。如果您有两种方案（例如 AlwaysOn 和 UserReplicator）在运行，并且您需要收集与身份验证相关的信息，则您需要停止其他方案之一（在全局、站点、池或计算机范围内），然后才能开始运行身份验证方案。有关详细信息，请参阅 [Stop-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Stop-CsClsLogging)。
 
 <table>
 <thead>
@@ -50,7 +50,7 @@ _**上一次修改主题：** 2012-11-01_
     
     ![调用 Show-CsCl 后的 Windows PowerShell 控制台](images/JJ687964.eb190c32-529c-4277-a731-52c47d22d8fa(OCS.15).jpg "调用 Show-CsCl 后的 Windows PowerShell 控制台")
     
-    Show-CsClsLogging 的结果是正在运行的方案以及它们所运行的范围的摘要。有关详细信息，请参阅 [Show-CsClsLogging](show-csclslogging.md)。
+    Show-CsClsLogging 的结果是正在运行的方案以及它们所运行的范围的摘要。有关详细信息，请参阅 [Show-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Show-CsClsLogging)。
 
 3.  若要使用特定方案停止当前正在运行的日志记录会话，请键入：
     
@@ -70,7 +70,7 @@ _**上一次修改主题：** 2012-11-01_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>在此日志记录会话期间使用 UserReplicator 方案创建的日志不会被删除。您仍然可以使用 Search-CsClsLogging 命令对日志记录执行搜索。有关详细信息，请参阅 <a href="search-csclslogging.md">Search-CsClsLogging</a>。</td>
+    <td>在此日志记录会话期间使用 UserReplicator 方案创建的日志不会被删除。您仍然可以使用 Search-CsClsLogging 命令对日志记录执行搜索。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Search-CsClsLogging">Search-CsClsLogging</a>。</td>
     </tr>
     </tbody>
     </table>
@@ -90,7 +90,7 @@ _**上一次修改主题：** 2012-11-01_
 
 #### 其他资源
 
-[Show-CsClsLogging](show-csclslogging.md)  
-[Start-CsClsLogging](start-csclslogging.md)  
-[Stop-CsClsLogging](stop-csclslogging.md)
+[Show-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Show-CsClsLogging)  
+[Start-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Start-CsClsLogging)  
+[Stop-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Stop-CsClsLogging)
 

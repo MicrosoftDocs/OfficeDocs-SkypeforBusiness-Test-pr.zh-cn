@@ -23,38 +23,27 @@ _**上一次修改主题：** 2016-12-08_
 
 本文档包含以下各节：
 
-  -   
-    Lync 2013 客户端
+  - Lync 2013 客户端
 
-  -   
-    Lync Server
+  - Lync Server
 
-  -   
-    安装
+  - 安装
 
-  -   
-    移动性
+  - 移动性
 
-  -   
-    会议
+  - 会议
 
-  -   
-    企业语音
+  - 企业语音
 
-  -   
-    状态
+  - 状态
 
-  -   
-    响应组应用程序和呼叫寄存应用程序
+  - 响应组应用程序和呼叫寄存应用程序
 
-  -   
-    Lync Server 控制面板、拓扑生成器和规划工具
+  - Lync Server 控制面板、拓扑生成器和规划工具
 
-  -   
-    本地化
+  - 本地化
 
-  -   
-    版权信息
+  - 版权信息
 
 ## Lync 2013 客户端
 
@@ -90,9 +79,12 @@ Lync Server 存储服务使用 Windows Fabric 进行复制。如果在主前端�
 
 若要解决此问题，请在为部署更改 IP 地址配置后重新启动 Lync Server 服务。为此，请在 Lync Server 命令行管理程序中运行以下 cmdlet：
 
-    Stop-CsWindowsService -graceful
-
-    Start-CsWindowsService
+  ```
+  Stop-CsWindowsService -graceful
+  ```
+  ```
+  Start-CsWindowsService
+  ```
 
 ## Lync Server 2013 管理包中不再提供电话拨入式会议综合事务 cmdlet (3212342)
 
@@ -150,7 +142,7 @@ Lync Server 2013 在每个前端服务器上的数据库中存储有关会议和
     
       - 如果您的部署包括 Lync Server 2013 和 Lync Server 2010 或 Office Communications Server 2007 R2 的组合，则运行以下 cmdlet 并将其分配给拓扑中的每个 Lync Server 2013 池：
         
-            new-csAddressBookConfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
+            new-csaddressbookconfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
 
 3.  等待在所有池上执行 CMS 复制。
 
@@ -347,6 +339,8 @@ Windows Fabric 安装失败，因为 Fabric 跟踪是采用时间格式 HH:MM:SS
 1.  启动 Windows PowerShell 并返回以下 cmdlet：
     
         New-PSDrive -Name HKU -PSProvider Registry -Root HKEY_USERS
+
+       &nbsp;
     
         $a="HKU:\.Default\Control Panel\International"
 
@@ -983,4 +977,3 @@ Safari 浏览器中不支持乌兹别克语（拉丁文）区域设置。
 Microsoft、Windows、Windows Live、Active Directory、Internet Explorer、MSN、Outlook 和 SQL Server 是 Microsoft Corporation 在美国和/或其他国家/地区的注册商标或商标。
 
 所有其他商标归其各自的所有者所有。
-

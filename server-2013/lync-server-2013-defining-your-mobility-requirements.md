@@ -171,7 +171,7 @@ _**上一次修改主题：** 2015-03-09_
     </tbody>
     </table>
     
-    有关您可以配置的策略设置以及如何管理这些策略的说明，请参阅 [New-CsMobilityPolicy](new-csmobilitypolicy.md)、 [Set-CsMobilityPolicy](set-csmobilitypolicy.md)、 [Get-CsMobilityPolicy](get-csmobilitypolicy.md)、 [Grant-CsMobilityPolicy](grant-csmobilitypolicy.md) 和 [Remove-CsMobilityPolicy](remove-csmobilitypolicy.md)。
+    有关您可以配置的策略设置以及如何管理这些策略的说明，请参阅 [New-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsMobilityPolicy)、 [Set-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsMobilityPolicy)、 [Get-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsMobilityPolicy)、 [Grant-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsMobilityPolicy) 和 [Remove-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsMobilityPolicy)。
 
   - **是否希望未启用企业语音的用户能够使用“单击以加入”来加入会议？**
     

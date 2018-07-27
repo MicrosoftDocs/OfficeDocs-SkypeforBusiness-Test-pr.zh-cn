@@ -51,7 +51,7 @@ _**上一次修改主题：** 2013-02-23_
     
         Get-CsArchivingConfiguration | Where-Object {$_.EnableExchangeArchiving -eq $False} | Remove-CsArchivingConfiguration
 
-有关详细信息，请参阅 [Remove-CsArchivingConfiguration](remove-csarchivingconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Remove-CsArchivingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsArchivingConfiguration) cmdlet 的帮助主题。
 
 ## 另请参阅
 

@@ -29,5 +29,5 @@ Lync Server 2013 包含许多 cmdlet，可启动综合命令以确认特定的�
 
 #### 其他资源
 
-[Test-CsAddressBookService](test-csaddressbookservice.md)
+[Test-CsAddressBookService](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsAddressBookService)
 

@@ -51,7 +51,7 @@ _**上一次修改主题：** 2015-03-09_
 <td><ol>
 <li><p>创建新的 PSTN 用法记录。这与位置策略中的“PSTN 用法”设置所用的名称相同。</p></li>
 <li><p>创建或分配一个语音路由给上一步中创建的 PSTN 用法记录，然后将网关属性指向 E9-1-1 SIP 中继或 ELIN 网关。</p></li>
-<li><p>对于 SIP 中继 E9-1-1 服务提供商，设置将使用 <strong>Set-CsTrunkConfiguration –EnablePIDFLOSupport</strong> cmdlet 处理 SIP 上的 E9-1-1 呼叫以传递 PIDF-LO 数据的中继。</p></li>
+<li><p>对于 SIP 中继 E9-1-1 服务提供商，设置将使用 <strong>set-cstrunkconfiguration –EnablePIDFLOSupport</strong> cmdlet 处理 SIP 上的 E9-1-1 呼叫以传递 PIDF-LO 数据的中继。</p></li>
 <li><p>（可选）对于 SIP 中继 E9-1-1 服务提供商，为未被 E9-1-1 服务提供商的 SIP 中继处理的呼叫创建并分配本地 PSTN 路由。如果与 E9-1-1 服务提供商的连接不可用，将使用此路由。如果受 E9-1-1 服务提供商支持，则向网关分配一个中继配置规则，以便将 911 拨号字符串转换为国家和/或地区紧急呼叫响应中心 (ECRC) 的外线直拨分机 (DID) 号码。</p></li>
 </ol></td>
 <td><p>CSVoiceAdmin</p></td>

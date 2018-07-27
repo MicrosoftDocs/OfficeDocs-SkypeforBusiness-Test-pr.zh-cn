@@ -57,11 +57,11 @@ Lync Server 2013持久聊天服务器在 Microsoft Office 365 中不可用。此
 
 持久聊天服务器现在是一个服务器角色。在 Microsoft Lync Server 2010 中， 群聊服务器是 Microsoft Lync Server 2010 的第三方受信任的应用程序。可以使用 拓扑生成器将 持久聊天添加到 Lync Server 2013 拓扑中。在 Lync Server 2013 中，将使用以下三个新的服务器角色实现 持久聊天服务器功能：
 
-  - **PersistentChatService ：**这是 持久聊天的前端角色。在 标准版 部署中，与任何其他 Lync Server 角色类似， 持久聊天服务器服务角色并置在由引导程序部署的 Standard Edition Server 上。在 企业版 部署中，与任何其他 Lync Server 角色类似， 持久聊天服务角色由引导程序部署在独立计算机上。
+  - **PersistentChatService ：** 这是 持久聊天的前端角色。在 标准版 部署中，与任何其他 Lync Server 角色类似， 持久聊天服务器服务角色并置在由引导程序部署的 Standard Edition Server 上。在 企业版 部署中，与任何其他 Lync Server 角色类似， 持久聊天服务角色由引导程序部署在独立计算机上。
 
-  - **PersistentChatStore ：**与 持久聊天内容数据库（在其中存储所有聊天内容）相对应的后端服务器。
+  - **PersistentChatStore ：** 与 持久聊天内容数据库（在其中存储所有聊天内容）相对应的后端服务器。
 
-  - **PersistentChatComplianceStore ：**与 持久聊天合规性数据库（在其中存储所有合规性事件）相对应的后端服务器角色。
+  - **PersistentChatComplianceStore ：** 与 持久聊天合规性数据库（在其中存储所有合规性事件）相对应的后端服务器角色。
 
 这些 持久聊天服务器角色是可选的，只有需要全面的 持久聊天服务器功能的客户才需要安装它们。只有选择部署 持久聊天合规性时才需要 **PersistentChatComplianceStore** 角色。
 

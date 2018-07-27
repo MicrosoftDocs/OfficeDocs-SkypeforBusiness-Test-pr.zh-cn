@@ -17,9 +17,9 @@ _**上一次修改主题：** 2012-10-20_
 
 Lync Server 2013 可将 IP-PBX 和公用电话交换网 (PSTN) 网关相互连接起来，以便能将来自 PBX 电话的呼叫路由到 PSTN，并能将传入 PSTN 呼叫路由到专用交换机 (PBX) 电话。同样， Lync Server 2013 可将两个或两个以上的 IP-PBX 系统相互连接起来，以便能在不同的 PBX 系统中的各个 IP-PBX 电话之间发出和接收呼叫。
 
-可将 Lync Server 命令行管理程序 cmdlet **Set-CsTrunkConfiguration** 与新参数 PstnUsages 结合使用来配置此中继间路由功能。此参数指定一组要使用的 PSTN 用法记录。中继使用此 PSTN 用法来确定路由并相应地路由所有传入呼叫。
+可将 Lync Server 命令行管理程序 cmdlet **set-cstrunkconfiguration** 与新参数 PstnUsages 结合使用来配置此中继间路由功能。此参数指定一组要使用的 PSTN 用法记录。中继使用此 PSTN 用法来确定路由并相应地路由所有传入呼叫。
 
-    Set-CsTrunkConfiguration -Identity <TrunkId> -PstnUsages @{add="<UsageString>"}
+    set-cstrunkconfiguration -Identity <TrunkId> -PstnUsages @{add="<UsageString>"}
 
 下图说明了提供 PSTN 网关和 IP-PBX 之间的互连性的 Lync Server 2013。
 

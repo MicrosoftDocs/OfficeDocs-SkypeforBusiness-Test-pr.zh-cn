@@ -49,5 +49,5 @@ _**上一次修改主题：** 2013-02-23_
     
         Get-CsMeetingConfiguration | Where-Object {$_.AdmitAnonymousUsersByDefault -eq $True} | Remove-CsMeetingConfiguration
 
-有关详细信息，请参阅 [Remove-CsMeetingConfiguration](remove-csmeetingconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Remove-CsMeetingConfiguration](ttps://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsMeetingConfiguration) cmdlet 的帮助主题。
 

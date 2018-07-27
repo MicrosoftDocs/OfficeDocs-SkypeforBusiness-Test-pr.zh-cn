@@ -67,7 +67,7 @@ Lync Server 2013 引入了新的 new cmdlet 支持，用于将响应组从一个
     </thead>
     <tbody>
     <tr class="odd">
-    <td>应用程序级设置包括默认保持音乐配置、默认保持音乐音频文件、代理回拨宽限期以及呼叫上下文配置。要查看这些配置，请运行 <strong>Get-CsRgsConfiguration</strong> cmdlet。有关此 cmdlet 的详细信息，请参阅 <a href="get-csrgsconfiguration.md">Get-CsRgsConfiguration</a>。</td>
+    <td>应用程序级设置包括默认保持音乐配置、默认保持音乐音频文件、代理回拨宽限期以及呼叫上下文配置。要查看这些配置，请运行 <strong>Get-CsRgsConfiguration</strong> cmdlet。有关此 cmdlet 的详细信息，请参阅 <a href="https://docs.microsoft.com/powershell/module/skype/Get-CsRgsConfiguration">Get-CsRgsConfiguration</a>。</td>
     </tr>
     </tbody>
     </table>

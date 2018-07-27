@@ -47,7 +47,7 @@ _**上一次修改主题：** 2013-02-23_
 
 ## 使用 Lync Server PowerShell cmdlet 修改默认操作
 
-用户尝试使用不受客户端版本策略显式支持或限制的客户端登录时将执行的默认操作也可通过使用 Windows PowerShell 命令行接口 和 **Set-CsClientVersionPolicy** cmdlet 管理。此 cmdet 可从 Lync Server 2013 命令行管理程序或从 Windows PowerShell 的远程会话中运行。有关使用远程 Windows PowerShell 连接到 Lync Server 的详细信息，请参阅 Lync Server Windows PowerShell 博客文章“快速入门：使用远程 PowerShell 管理 Microsoft Lync Server 2010”，网址为 [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)。
+用户尝试使用不受客户端版本策略显式支持或限制的客户端登录时将执行的默认操作也可通过使用 Windows PowerShell 命令行接口 和 **set-csclientversionpolicy** cmdlet 管理。此 cmdet 可从 Lync Server 2013 命令行管理程序或从 Windows PowerShell 的远程会话中运行。有关使用远程 Windows PowerShell 连接到 Lync Server 的详细信息，请参阅 Lync Server Windows PowerShell 博客文章“快速入门：使用远程 PowerShell 管理 Microsoft Lync Server 2010”，网址为 [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)。
 
 ## 配置默认操作以阻止访问
 
@@ -61,7 +61,7 @@ _**上一次修改主题：** 2013-02-23_
     
         Set-CsClientVersionConfiguration -Identity "site:Redmond" -DefaultAction Allow
 
-有关详细信息，请参阅 [Set-CsClientVersionPolicy](set-csclientversionpolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [set-csclientversionpolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientVersionPolicy) cmdlet 的帮助主题。
 
 ## 另请参阅
 

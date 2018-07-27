@@ -146,7 +146,7 @@ _**上一次修改主题：** 2015-03-09_
 </thead>
 <tbody>
 <tr class="odd">
-<td>管理员还可手动运行综合事务，无需使用或安装 Operations Manager。有关各种 Test-Cs cmdlet 的详细信息，请参阅 <a href="lync-server-2013-cmdlets-index.md">Lync Server 2013 Cmdlet 索引</a>。</td>
+<td>管理员还可手动运行综合事务，无需使用或安装 Operations Manager。有关各种 Test-Cs cmdlet 的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/?view=skype-ps">Lync Server 2013 Cmdlet 索引</a>。</td>
 </tr>
 </tbody>
 </table>
@@ -171,17 +171,13 @@ _**上一次修改主题：** 2015-03-09_
 
 可在企业的内部或外部部署 Lync Server 2013 观察程序节点以帮助验证：
 
-  -   
-    至企业内部用户的池的连接。
+   至企业内部用户的池的连接。
 
-  -   
-    通过在企业外部工作的远程用户的外围网络的连接。
+   通过在企业外部工作的远程用户的外围网络的连接。
 
-  -   
-    至分支机构装置的连接。
+   至分支机构装置的连接。
 
-  -   
-    至企业内部和通过外围网络的 Lync Server 2010 的连接。
+   至企业内部和通过外围网络的 Lync Server 2010 的连接。
 
 企业内部和企业外部有不同的身份验证选项可用以帮助管理。有关详细信息，请参阅[将观察程序节点配置为运行综合事务](lync-server-2013-configuring-a-watcher-node-to-run-synthetic-transactions.md)。
 

@@ -59,7 +59,7 @@ _**上一次修改主题：** 2012-10-01_
 
 语音邮件策略定义了两个属性， Lync Server 2013 ExUM 路由应用程序将这两个属性插入到发送至托管 Exchange UM 实现的 INVITE 消息的请求 URI 中：
 
-  - **Destination ：**托管 Exchange UM 服务的完全限定域名 (FQDN)。此值由内部 Lync Server 边缘服务器用于进行路由。
+  - **Destination ：** 托管 Exchange UM 服务的完全限定域名 (FQDN)。此值由内部 Lync Server 边缘服务器用于进行路由。
     
     <table>
     <thead>
@@ -75,7 +75,7 @@ _**上一次修改主题：** 2012-10-01_
     </table>
 
 
-  - **Organization ：**托管 Lync Server 2013 用户的邮箱的托管 Exchange UM 服务上的租户 FQDN。语音邮件策略可以包含多个组织。如果策略中包含多个组织，则此属性必须是以逗号分隔的托管 Lync Server 2013 用户邮箱的 Exchange Server 租户列表。
+  - **Organization ：** 托管 Lync Server 2013 用户的邮箱的托管 Exchange UM 服务上的租户 FQDN。语音邮件策略可以包含多个组织。如果策略中包含多个组织，则此属性必须是以逗号分隔的托管 Lync Server 2013 用户邮箱的 Exchange Server 租户列表。
 
 <table>
 <thead>
@@ -85,7 +85,7 @@ _**上一次修改主题：** 2012-10-01_
 </thead>
 <tbody>
 <tr class="odd">
-<td>托管 Exchange UM 服务的租户管理员将提供 Destination 和 Organization 属性设置的所需值。要配置策略，必须运行 New-CsHostedVoicemailPolicy cmdlet 或使用 Set-CsHostedVoicemailPolicy cmdlet 来修改一个存在的策略（例如，全局策略）。</td>
+<td>托管 Exchange UM 服务的租户管理员将提供 Destination 和 Organization 属性设置的所需值。要配置策略，必须运行 New-CsHostedVoicemailPolicy cmdlet 或使用 set-cshostedvoicemailpolicy cmdlet 来修改一个存在的策略（例如，全局策略）。</td>
 </tr>
 </tbody>
 </table>
@@ -95,7 +95,7 @@ _**上一次修改主题：** 2012-10-01_
 
   - New-CsHostedVoicemailPolicy
 
-  - Set-CsHostedVoicemailPolicy
+  - set-cshostedvoicemailpolicy
 
   - Get-CsHostedVoicemailPolicy
 

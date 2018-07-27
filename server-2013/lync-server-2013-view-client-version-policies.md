@@ -59,5 +59,5 @@ _**上一次修改主题：** 2013-02-23_
                       UserAgentFullName=;Enabled=True;CompareOp=LEQ...}
         Description :
 
-有关详细信息，请参阅 [Get-CsClientVersionPolicy](get-csclientversionpolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Get-CsClientVersionPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClientVersionPolicy) cmdlet 的帮助主题。
 

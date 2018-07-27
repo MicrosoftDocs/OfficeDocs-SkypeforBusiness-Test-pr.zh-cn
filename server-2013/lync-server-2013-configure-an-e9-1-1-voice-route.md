@@ -25,7 +25,7 @@ _**上一次修改主题：** 2012-09-17_
 </thead>
 <tbody>
 <tr class="odd">
-<td>若要在 E9-1-1 INVITE 中包含位置信息，您需要配置连接到 E9-1-1 服务提供商的 SIP 中继以便通过网关路由紧急呼叫。为此，请在 <strong>Set-CsTrunkConfiguration</strong> cmdlet 上将 EnablePIDFLOSupport 标志设置为 True。EnablePIDFLOSupport 的默认值为 False。例如：<code>Set-CsTrunkConfiguration Service:PstnGateway:192.168.0.241 -EnablePIDFLOSupport $true.</code><br />
+<td>若要在 E9-1-1 INVITE 中包含位置信息，您需要配置连接到 E9-1-1 服务提供商的 SIP 中继以便通过网关路由紧急呼叫。为此，请在 <strong>set-cstrunkconfiguration</strong> cmdlet 上将 EnablePIDFLOSupport 标志设置为 True。EnablePIDFLOSupport 的默认值为 False。例如：<code>set-cstrunkconfiguration Service:PstnGateway:192.168.0.241 -EnablePIDFLOSupport $true.</code><br />
 无需为回退公用电话交换网 (PSTN) 网关和紧急位置标识号 (ELIN) 网关启用接收位置。</td>
 </tr>
 </tbody>

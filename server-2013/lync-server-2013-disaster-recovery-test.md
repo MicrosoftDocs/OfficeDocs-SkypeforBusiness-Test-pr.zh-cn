@@ -93,11 +93,11 @@ _**上一次修改主题：** 2015-01-26_
 #### 概念
 
 [在 Lync Server 2013 中规划高可用性和灾难恢复](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md)  
-[备份和高可用性 Cmdlet](lync-server-2013-backup-and-high-availability-cmdlets.md)  
+[备份和高可用性 Cmdlet](https://docs.microsoft.com/en-us/powershell/module/skype/?view=skype-ps)  
 
 #### 其他资源
 
-[Import-CsConfiguration](import-csconfiguration.md)  
+[Import-CsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Import-CsConfiguration)  
 [备份和还原 Lync Server 2013](lync-server-2013-backing-up-and-restoring-lync-server.md)  
 [管理 Lync Server 2013 灾难恢复、高可用性和备份服务](lync-server-2013-managing-lync-server-disaster-recovery-high-availability-and-backup-service.md)
 

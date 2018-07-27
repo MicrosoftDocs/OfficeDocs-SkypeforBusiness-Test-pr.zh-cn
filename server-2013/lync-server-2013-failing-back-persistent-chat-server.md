@@ -124,5 +124,5 @@ _**上一次修改主题：** 2014-02-05_
 
     Set-CsPersistentChatState -Identity "service: lyncpc.dci.discovery.com" -PoolState Normal
 
-有关详细信息，请参阅 [Set-CsPersistentChatState](set-cspersistentchatstate.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Set-CsPersistentChatState](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsPersistentChatState) cmdlet 的帮助主题。
 

@@ -125,7 +125,7 @@ _**上一次修改主题：** 2013-02-22_
 
 ## 将每用户客户端版本策略分配到多个用户
 
-  - 此命令用于将每用户客户端版本策略 RedmondClientVersionPolicy 分配到当前分配了语音策略 RedmondVoicePolicy 的所有用户。有关此命令中使用的 Filter 参数的详细信息，请参阅 [Get-CsUser](get-csuser.md) cmdlet。
+  - 此命令用于将每用户客户端版本策略 RedmondClientVersionPolicy 分配到当前分配了语音策略 RedmondVoicePolicy 的所有用户。有关此命令中使用的 Filter 参数的详细信息，请参阅 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) cmdlet。
     
         Get-CsUser -Filter {VoicePolicy -eq "RedmondVoicePolicy"} | Grant-CsClientVersionPolicy -PolicyName "RedmondClientVersionPolicy"
 
@@ -135,7 +135,7 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsClientVersionPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关更多信息，请参阅[Grant-CsClientVersionPolicy](grant-csclientversionpolicy.md) cmdlet 的帮助主题。
+有关更多信息，请参阅[Grant-CsClientVersionPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsClientVersionPolicy) cmdlet 的帮助主题。
 
 ## 另请参阅
 

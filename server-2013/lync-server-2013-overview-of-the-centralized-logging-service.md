@@ -27,7 +27,7 @@ _**上一次修改主题：** 2016-12-08_
 
 可使用 Windows Server 命令行接口或使用 Lync Server 命令行管理程序发出命令。这些命令将在您登录的计算机上执行，并将本地发送到 ClsAgent 或发送到部署中的其他计算机和池。
 
-ClsAgent 维护其在本地计算机上具有的所有 .CACHE 文件的索引文件。ClsAgent 将分配这些文件，使其均匀分布在由选项 CacheFileLocalFolders 定义的卷上，并且绝不会占用每个卷的 80% 以上的容量（即，可使用 **Set-CsClsConfiguration** cmdlet 配置本地缓存位置和百分比）。ClsAgent 还负责从本地计算机中清除旧的缓存事件跟踪日志 (.etl) 文件。两周之后（即，可使用 **Set-CsClsConfiguration** cmdlet 配置时间范围时），会将这些文件复制到一个文件共享中并从本地计算机中删除它们。有关详细信息，请参阅 [Set-CsClsConfiguration](set-csclsconfiguration.md)。在收到一个搜索请求时，搜索条件将用于选择一组缓存的 .etl 文件以便根据代理所维护的索引中的值来执行搜索。
+ClsAgent 维护其在本地计算机上具有的所有 .CACHE 文件的索引文件。ClsAgent 将分配这些文件，使其均匀分布在由选项 CacheFileLocalFolders 定义的卷上，并且绝不会占用每个卷的 80% 以上的容量（即，可使用 **Set-CsClsConfiguration** cmdlet 配置本地缓存位置和百分比）。ClsAgent 还负责从本地计算机中清除旧的缓存事件跟踪日志 (.etl) 文件。两周之后（即，可使用 **Set-CsClsConfiguration** cmdlet 配置时间范围时），会将这些文件复制到一个文件共享中并从本地计算机中删除它们。有关详细信息，请参阅 [Set-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration)。在收到一个搜索请求时，搜索条件将用于选择一组缓存的 .etl 文件以便根据代理所维护的索引中的值来执行搜索。
 
 <table>
 <thead>

@@ -17,7 +17,7 @@ _**上一次修改主题：** 2013-02-21_
 
 您可以使用以下过程删除子网。从 Lync Server 控制面板中，可以创建、修改或删除网络子网。有关创建或修改网络子网的详细信息，请参阅[创建或修改网络子网](lync-server-2013-create-or-modify-network-subnets.md)。
 
-在大多数实现呼叫允许控制 (CAC) 的 Microsoft Lync Server 2013 部署中，通常都将有大量子网。因此，最好在 Lync Server 命令行管理程序中配置子网。在其中，可以一起调用 **New-CsNetworkSubnet** 和 Windows PowerShell cmdlet **Import-CSV**。通过将这些 cmdlet 配合使用，可以从逗号分隔值 (.csv) 文件读入子网设置，并且同时创建多个子网。有关如何从 .csv 文件创建子网的示例，请参阅 [New-CsNetworkSubnet](new-csnetworksubnet.md)。
+在大多数实现呼叫允许控制 (CAC) 的 Microsoft Lync Server 2013 部署中，通常都将有大量子网。因此，最好在 Lync Server 命令行管理程序中配置子网。在其中，可以一起调用 **New-CsNetworkSubnet** 和 Windows PowerShell cmdlet **Import-CSV**。通过将这些 cmdlet 配合使用，可以从逗号分隔值 (.csv) 文件读入子网设置，并且同时创建多个子网。有关如何从 .csv 文件创建子网的示例，请参阅 [New-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkSubnet)。
 
 ## 删除网络子网
 

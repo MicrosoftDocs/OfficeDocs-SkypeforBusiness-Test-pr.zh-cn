@@ -65,7 +65,7 @@ _**上一次修改主题：** 2013-02-23_
     
         Get-CsArchivingPolicy | Where-Object {$_.ArchiveInternal -eq $False} | Remove-CsArchivingPolicy
 
-有关详细信息，请参阅 [Remove-CsArchivingPolicy](remove-csarchivingpolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Remove-CsArchivingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsArchivingPolicy) cmdlet 的帮助主题。
 
 ## 另请参阅
 

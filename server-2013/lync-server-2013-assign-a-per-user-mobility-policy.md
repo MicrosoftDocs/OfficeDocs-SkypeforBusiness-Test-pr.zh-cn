@@ -119,7 +119,7 @@ _**上一次修改主题：** 2013-02-22_
 
 ## 为多个用户分配每用户移动策略
 
-  - 以下命令为当前已分配策略 NorthAmericaMobilityPolicy 的所有用户分配每用户移动策略 RedmondMobilityPolicy。有关此命令中使用的 Filter 参数的详细信息，请参阅 [Get-CsUser](get-csuser.md)。
+  - 以下命令为当前已分配策略 NorthAmericaMobilityPolicy 的所有用户分配每用户移动策略 RedmondMobilityPolicy。有关此命令中使用的 Filter 参数的详细信息，请参阅 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser)。
     
         Get-CsUser -Filter {MobilityPolicy -eq "NorthAmericaMobilityPolicy"} | Grant-CsMobilityPolicy -PolicyName "RedmondMobilityPolicy"
 
@@ -129,7 +129,7 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsMobilityPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关详细信息，请参阅 [Grant-CsMobilityPolicy](grant-csmobilitypolicy.md)。
+有关详细信息，请参阅 [Grant-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsMobilityPolicy)。
 
 ## 另请参阅
 

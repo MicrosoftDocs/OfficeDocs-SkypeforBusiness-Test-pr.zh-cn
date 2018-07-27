@@ -25,9 +25,9 @@ _**上一次修改主题：** 2015-01-23_
 
 有关详细信息，请参阅 Lync Server 命令行管理程序文档中有关以下 cmdlet 的内容：
 
-  - [Set-CsAccessEdgeConfiguration](set-csaccessedgeconfiguration.md)
+  - [Set-CsAccessEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsAccessEdgeConfiguration)
 
-  - [New-CsHostingProvider](new-cshostingprovider.md)
+  - [New-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsHostingProvider)
 
 <table>
 <thead>
@@ -112,5 +112,5 @@ _**上一次修改主题：** 2015-01-23_
 
 #### 其他资源
 
-[New-CsHostingProvider](new-cshostingprovider.md)
+[New-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsHostingProvider)
 

@@ -31,9 +31,9 @@ _**上一次修改主题：** 2012-10-30_
 
 ## 呼叫寄存灾难恢复注意事项
 
-每个池仅可定义一组 呼叫寄存应用程序配置设置和一个自定义的保持音乐音频文件。这些设置包括超时阈值、保持音乐、最大呼叫应答尝试数和超时 URI。要查看这些配置设置，请运行 **Get-CsCpsConfiguration** cmdlet。有关 **Get-CsCpsConfiguration** cmdlet 的详细信息，请参阅 [Get-CsCpsConfiguration](get-cscpsconfiguration.md)。
+每个池仅可定义一组 呼叫寄存应用程序配置设置和一个自定义的保持音乐音频文件。这些设置包括超时阈值、保持音乐、最大呼叫应答尝试数和超时 URI。要查看这些配置设置，请运行 **Get-CsCpsConfiguration** cmdlet。有关 **Get-CsCpsConfiguration** cmdlet 的详细信息，请参阅 [Get-CsCpsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsCpsConfiguration)。
 
 灾难恢复期间， 呼叫寄存会使用备份池中的 呼叫寄存应用程序，这样主池中的设置不会备份。如果无法恢复主池，且您部署新池来替换主池，则会丢失主池中的设置，且您需要在新池中重新配置 呼叫寄存设置和所有自定义保持音乐音频文件。
 
-如果您部署具有不同完全限定域名 (FQDN) 的新池来替换主池，则需要将与主池关联的所有 呼叫寄存通道范围分配到新池的 FQDN，可使用 Lync Server 控制面板或 **Set-CsCallParkOrbit** cmdlet。有关 **Set-CsCallParkOrbit** cmdlet 的详细信息，请参阅 [Set-CsCallParkOrbit](set-cscallparkorbit.md)。
+如果您部署具有不同完全限定域名 (FQDN) 的新池来替换主池，则需要将与主池关联的所有 呼叫寄存通道范围分配到新池的 FQDN，可使用 Lync Server 控制面板或 **Set-CsCallParkOrbit** cmdlet。有关 **Set-CsCallParkOrbit** cmdlet 的详细信息，请参阅 [Set-CsCallParkOrbit](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCallParkOrbit)。
 

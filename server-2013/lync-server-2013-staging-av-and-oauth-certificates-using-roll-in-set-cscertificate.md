@@ -166,6 +166,6 @@ A/V 身份验证服务负责颁发供客户端和其他 A/V 使用者使用的�
 #### 其他资源
 
 [为 Lync Server 2013 设置边缘证书](lync-server-2013-set-up-edge-certificates.md)  
-[Set-CsCertificate](set-cscertificate.md)  
-[Remove-CsCertificate](remove-cscertificate.md)
+[Set-CsCertificate](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCertificate)  
+[Remove-CsCertificate](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsCertificate)
 
