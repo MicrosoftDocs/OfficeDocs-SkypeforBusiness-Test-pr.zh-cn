@@ -17,18 +17,8 @@ _**上一次修改主题：** 2012-09-23_
 
 如果计划部署 Survivable Branch Appliance，必须将 Survivable Branch Appliance 添加到 Active Directory 域服务。请在中央站点执行此过程。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅当部署 Survivable Branch Appliance 时，才需执行此过程。如果要部署 Survivable Branch Server，请不要执行此过程。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 仅当部署 Survivable Branch Appliance 时，才需执行此过程。如果要部署 Survivable Branch Server，请不要执行此过程。
 
 
 ## 将 Survivable Branch Appliance 添加到 Active Directory 域服务
@@ -43,18 +33,9 @@ _**上一次修改主题：** 2012-09-23_
 
 5.  在“选择用户或组”对话框中，添加 RTCUniversalSBATechnicians 组，然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>分支站点中 RTCUniversalSBATechnicians 组的成员稍后会将此设备添加到域。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 分支站点中 RTCUniversalSBATechnicians 组的成员稍后会将此设备添加到域。
+    
 
 
 6.  单击“确定”保存 Survivable Branch Appliance 计算机对象。

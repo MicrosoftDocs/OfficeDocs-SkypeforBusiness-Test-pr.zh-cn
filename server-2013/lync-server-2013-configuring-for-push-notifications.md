@@ -39,18 +39,9 @@ _**上一次修改主题：** 2013-02-12_
 
   - 如果您的环境包含一台 Office Communications Server 2007 R2边缘服务器，则您需要设置与 push.lync.com 的直接 SIP 联盟。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Push.lync.com 是一个适用于推送通知服务的 Microsoft Office 365 域。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Push.lync.com 是一个适用于推送通知服务的 Microsoft Office 365 域。
+    
 
 
   - 若要启用推送通知，您需要运行 **Set-CsPushNotificationConfiguration** cmdlet。默认情况下，推送通知已关闭。
@@ -71,18 +62,9 @@ _**上一次修改主题：** 2013-02-12_
     
         New-CsHostingProvider -Identity "LyncOnline" -Enabled $True -ProxyFqdn "sipfed.online.lync.com" -VerificationLevel UseSourceVerification
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您不能与一个宿主提供程序建立多个联盟关系。也就是说，如果您已设置一个与 sipfed.online.lync.com 建立了联盟关系的宿主提供程序，则请不要为其添加其他宿主提供程序，即使该宿主提供程序的标识不是 LyncOnline 也是如此。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您不能与一个宿主提供程序建立多个联盟关系。也就是说，如果您已设置一个与 sipfed.online.lync.com 建立了联盟关系的宿主提供程序，则请不要为其添加其他宿主提供程序，即使该宿主提供程序的标识不是 LyncOnline 也是如此。
+    
 
 
 4.  在 Lync Online 上设置组织与推送通知服务之间的宿主提供程序联盟。在命令行中键入：

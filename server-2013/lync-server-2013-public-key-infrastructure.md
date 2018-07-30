@@ -23,18 +23,9 @@ Microsoft Lync Server 2013 依靠证书进行服务器身份验证，并且在�
 
 每个证书都链接到一个公钥。证书上指明的服务器持有一个只有它自己知道的对应的私钥。连接的客户端或服务器使用公钥对随机的信息段进行加密并将其发送到该服务器。如果该服务器将此信息解密并以纯文本形式返回此信息，则连接的实体就可以确定该服务器持有证书的私钥，因此该服务器即是证书上指明的服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>并不是所有公共 CA 都符合 Lync Server 2013 证书的要求。建议您参考经认证的公共 CA 供应商的列表以满足您使用公共证书的需要。有关详细信息，请参阅“统一通信证书合作伙伴”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=140898">http://go.microsoft.com/fwlink/p/?LinkId=140898</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 并不是所有公共 CA 都符合 Lync Server 2013 证书的要求。建议您参考经认证的公共 CA 供应商的列表以满足您使用公共证书的需要。有关详细信息，请参阅“统一通信证书合作伙伴”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=140898">http://go.microsoft.com/fwlink/p/?LinkId=140898</a>。
+
 
 
 ## CRL 分发点
@@ -45,16 +36,7 @@ Lync Server 2013 要求所有服务器证书包含一个或多个证书吊销列
 
 Lync Server 2013 要求所有服务器证书支持增强型密钥使用 (EKU)，以便进行服务器身份验证。配置用于服务器身份验证的 EKU 字段意味着证书可以对服务器进行身份验证。此 EKU 对 MTLS 至关重要。EKU 中可能存在多个条目以允许将证书用于多个目的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Live Communications Server 2003 和 Live Communications Server 2005 中的出站 MTLS 连接需要客户端身份验证 EKU，但现在不再需要了。不过，通过公共 IM 连接来连接到 AOL 的边缘服务器仍必须提供此 EKU。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Live Communications Server 2003 和 Live Communications Server 2005 中的出站 MTLS 连接需要客户端身份验证 EKU，但现在不再需要了。不过，通过公共 IM 连接来连接到 AOL 的边缘服务器仍必须提供此 EKU。
+
 

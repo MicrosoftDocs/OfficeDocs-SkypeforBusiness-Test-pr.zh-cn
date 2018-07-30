@@ -19,18 +19,8 @@ _**上一次修改主题：** 2014-12-12_
 
 如果要实现 Windows Live Messenger 与音频/视频 (A/V) 联盟，则必须修改以下两个参数： Lync Server 加密级别和 EnablePublicCloudAccess 策略。默认情况下，加密级别为“必需”。必须将此设置更改为“支持”。如果 nablePublicCloudAccess 策略设置为 False，则需要将其设置为“True”。可以通过 Lync Server 命令行管理程序执行此操作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 是一个比以往更强大的工具，它实现了人员跨组织、跨地域连接。与 Windows Messenger 联盟除了 Lync 标准客户端访问许可证 (CAL) 之外不需要任何其他用户/设备许可证。明年，Skype 联盟将添加到此列表中，届时 Lync 用户将能够通过 IM 和语音与数以亿计的人联系。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Lync 是一个比以往更强大的工具，它实现了人员跨组织、跨地域连接。与 Windows Messenger 联盟除了 Lync 标准客户端访问许可证 (CAL) 之外不需要任何其他用户/设备许可证。明年，Skype 联盟将添加到此列表中，届时 Lync 用户将能够通过 IM 和语音与数以亿计的人联系。
 
 
 ## 为 Windows Live 配置联合
@@ -45,16 +35,7 @@ _**上一次修改主题：** 2014-12-12_
     
         Set-CsExternalAccessPolicy Global -EnablePublicCloudAccess $true -EnablePublicCloudAudioVideoAccess $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>上述步骤是必需步骤，因为 Windows Live Messenger 不支持音频/视频加密。该命令会将您的全局策略设置为支持加密设置，而不会设置为要求音频/视频数据加密。支持加密的客户端（如 Lync 2013）将仍使用加密。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 上述步骤是必需步骤，因为 Windows Live Messenger 不支持音频/视频加密。该命令会将您的全局策略设置为支持加密设置，而不会设置为要求音频/视频数据加密。支持加密的客户端（如 Lync 2013）将仍使用加密。
+    
 

@@ -71,18 +71,9 @@ Microsoft Lync Server 2013 使用 TLS 和 MTLS 来加密即时消息。无论通
 
 媒体通信是使用安全 RTP (SRTP) 进行加密的，SRTP 是为 RTP 通信提供保密性、身份验证和重播攻击保护的实时传输协议 (RTP) 的配置文件。SRTP 使用媒体中继身份验证服务生成的会话密钥响应服务器请求（代表媒体参与者）的成功身份验证。会话密钥受前端服务器提供给媒体中继身份验证服务的商定的用户名和密码保护，并且通过受 TLS 保护的 SIP 通道发送给参与者。解密具有媒体中继服务使用的用户名和密码的受保护的会话密钥，并通过参与者的 TLS 证书和受保护的 SIP 通道以安全方式提供，可允许参与者解密 SRTP 流。此外，中介服务器与其内部下一个跃点之间的双向媒体流也是使用 SRTP 进行加密的。中介服务器与媒体网关之间的双向媒体流未经加密。中介服务器能够支持对媒体网关进行加密，但该网关必须支持 MTLS 和证书存储。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows Live Messenger 的新版本支持音频/视频 (A/V)。如果要实现 Windows Live Messenger 与 A/V 联盟，则还必须修改 Lync Server 加密级别。默认情况下，加密级别为“必需”。必须使用 Lync Server 命令行管理程序 将此设置更改为“受支持”。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-deploying-external-user-access.md">在 Lync Server 2013 中部署外部用户访问</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Windows Live Messenger 的新版本支持音频/视频 (A/V)。如果要实现 Windows Live Messenger 与 A/V 联盟，则还必须修改 Lync Server 加密级别。默认情况下，加密级别为“必需”。必须使用 Lync Server 命令行管理程序 将此设置更改为“受支持”。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-deploying-external-user-access.md">在 Lync Server 2013 中部署外部用户访问</a>。
+
 
 
 在 Microsoft Lync 2013 与 Windows Live 客户端之间未对音频和视频媒体流量进行加密。

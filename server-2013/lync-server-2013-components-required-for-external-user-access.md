@@ -27,18 +27,8 @@ _**上一次修改主题：** 2016-12-08_
 
   - 扩展的边缘拓扑的负载平衡（DNS 负载平衡或硬件负载平衡器）
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不支持对一个接口使用 DNS 负载平衡，而对另一个接口使用硬件负载平衡。必须对两个接口都使用硬件负载平衡，或者对两个接口都使用 DNS 负载平衡。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> 不支持对一个接口使用 DNS 负载平衡，而对另一个接口使用硬件负载平衡。必须对两个接口都使用硬件负载平衡，或者对两个接口都使用 DNS 负载平衡。
 
 
 ## 边缘服务器
@@ -55,18 +45,9 @@ _**上一次修改主题：** 2016-12-08_
 
 授权的外部用户可以访问 边缘服务器，以便连接到您的内部 Lync Server 2013 部署，但 边缘服务器不提供对内部网络的任何其他访问。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>已部署边缘服务器，可为启用 Lync 的客户端和其他 Microsoft 边缘服务器提供连接（与联盟方案中相同）。它们未设计为允许从其他终结点客户端或服务器类型连接。可以部署 XMPP 网关服务器来允许与配置了 XMPP 的合作伙伴进行连接。边缘服务器和 XMPP 网关只能支持来自这些客户端和联盟类型的终结点连接。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 已部署边缘服务器，可为启用 Lync 的客户端和其他 Microsoft 边缘服务器提供连接（与联盟方案中相同）。它们未设计为允许从其他终结点客户端或服务器类型连接。可以部署 XMPP 网关服务器来允许与配置了 XMPP 的合作伙伴进行连接。边缘服务器和 XMPP 网关只能支持来自这些客户端和联盟类型的终结点连接。
+
 
 
 ## 反向代理
@@ -91,18 +72,9 @@ _**上一次修改主题：** 2016-12-08_
 
 有关反向代理以及反向代理必须满足的要求的其他信息，请参阅 [Lync Server 2013 中的反向代理的配置要求](lync-server-2013-configuration-requirements-for-reverse-proxy.md)中的详细信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>外部用户无需与您的组织建立虚拟专用网络 (VPN) 连接即可使用 Lync Server 2013 参与通信。如果您在组织中实施了 VPN 技术并且您的用户对 Lync 使用 VPN，则会对媒体通信（例如视频会议）产生不利影响。您应考虑为媒体流量提供一种直接连接到 AV 边缘服务并绕过 VPN 的方法。有关详细信息，请参阅 NextHop 博客文章“使 Lync 媒体绕过 VPN 隧道”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=256532">http://go.microsoft.com/fwlink/p/?LinkId=256532</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 外部用户无需与您的组织建立虚拟专用网络 (VPN) 连接即可使用 Lync Server 2013 参与通信。如果您在组织中实施了 VPN 技术并且您的用户对 Lync 使用 VPN，则会对媒体通信（例如视频会议）产生不利影响。您应考虑为媒体流量提供一种直接连接到 AV 边缘服务并绕过 VPN 的方法。有关详细信息，请参阅 NextHop 博客文章“使 Lync 媒体绕过 VPN 隧道”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=256532">http://go.microsoft.com/fwlink/p/?LinkId=256532</a>。
+
 
 
 ## 防火墙

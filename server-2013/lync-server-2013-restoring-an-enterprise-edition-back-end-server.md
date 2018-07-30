@@ -43,36 +43,18 @@ _**上一次修改主题：** 2013-02-18_
 
 1.  首先准备与出现故障的计算机具有相同完全限定域名 (FQDN) 的干净或新服务器，接着安装操作系统，然后还原或重新注册证书。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>按照您组织的服务器部署过程来执行该步骤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 按照您组织的服务器部署过程来执行该步骤。
+    
 
 
 2.  使用具有 RTCUniversalServerAdmins 组成员身份的用户帐户登录到要还原的服务器。
 
 3.  安装 SQL Server 2012 或 SQL Server 2008 R2，使实例名称与出现故障前相同。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>根据您的部署，后端服务器可能包含多个并置或独立数据库。按照先前部署服务器时使用的过程来安装 SQL Server，包括 SQL Server 权限和登录名。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 根据您的部署，后端服务器可能包含多个并置或独立数据库。按照先前部署服务器时使用的过程来安装 SQL Server，包括 SQL Server 权限和登录名。
+    
 
 
 4.  安装 SQL Server 后，执行以下操作：
@@ -87,18 +69,9 @@ _**上一次修改主题：** 2013-02-18_
     
     5.  按照“发布拓扑”向导操作。在“创建数据库”页上，选择要重新创建的数据库。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只有独立数据库会显示在“创建数据库”页上。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 只有独立数据库会显示在“创建数据库”页上。
+        
     
     6.  如果要还原镜像的后端，则继续按照向导的其余部分操作，直到出现“创建镜像数据库”的提示。选择要安装的数据库，然后完成该过程。
     

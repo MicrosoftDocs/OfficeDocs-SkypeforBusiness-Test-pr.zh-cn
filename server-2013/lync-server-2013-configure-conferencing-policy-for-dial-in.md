@@ -27,18 +27,9 @@ _**上一次修改主题：** 2014-03-21_
 
   - **允许未启用 企业语音的参与者拨出**    此设置允许未启用 企业语音的会议参与者和组织者拨出电话号码来加入会议的音频部分。将基于组织分配的语音策略授权电话拨出式呼叫。默认情况下，在默认全局会议策略中，此设置处于未选中状态。将禁用此设置默认值。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要启用此功能，未启用 企业语音 的会议组织者应分配有适当的语音策略，以授权来自该用户组织的会议的任何拨出。可通过 Lync Server 命令行管理程序 向未启用企业语音的用户分配语音策略。如果用户没有显式分配的语音策略，则全局语音策略将用于授权拨出请求。如果没有网站语音策略，则将使用全局语音策略。 </td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要启用此功能，未启用 企业语音 的会议组织者应分配有适当的语音策略，以授权来自该用户组织的会议的任何拨出。可通过 Lync Server 命令行管理程序 向未启用企业语音的用户分配语音策略。如果用户没有显式分配的语音策略，则全局语音策略将用于授权拨出请求。如果没有网站语音策略，则将使用全局语音策略。 
+    
 
 
 本节中的过程解释如何修改会议策略。有关如何配置定义默认会议策略中的参与者体验的所有设置的详细信息，请参阅 [在 Lync Server 2013 中创建或修改会议配置设置的集合](lync-server-2013-create-or-modify-a-collection-of-meeting-configuration-settings.md)。有关如何为特定用户或用户组创建会议策略的详细信息，请参阅 [在 Lync Server 2013 中创建或修改会议策略](lync-server-2013-create-or-modify-a-conferencing-policy.md)。有关所有可用会议策略设置的列表，请参阅 [在 Lync Server 2013 中会议策略设置参考](lync-server-2013-conferencing-policy-settings-reference.md)。

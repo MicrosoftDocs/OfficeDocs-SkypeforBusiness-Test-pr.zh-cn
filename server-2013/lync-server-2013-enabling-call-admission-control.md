@@ -27,18 +27,9 @@ _**上一次修改主题：** 2012-11-01_
 
 4.  在“全局”页上，单击“全局”配置。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只能为任何 Microsoft Lync Server 2013 部署配置一个网络，因此列表中最多只有一个网络配置。无法重命名“全局”配置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只能为任何 Microsoft Lync Server 2013 部署配置一个网络，因此列表中最多只有一个网络配置。无法重命名“全局”配置。
+    
 
 
 5.  在“编辑”菜单上，单击“显示详细信息”。

@@ -17,25 +17,12 @@ _**上一次修改主题：** 2016-12-08_
 
 公共即时消息 (IM) 连接允许您的组织中的用户使用 IM 与公共 IM 服务提供商提供的 IM 服务（包括 Inernet 服务的 Windows Live 网络、Yahoo\! 和 AOL）的用户进行通信。您配置一个或多个外部用户访问策略来控制公共用户能否与内部 Lync Server 用户协作。公共即时消息连接是一项增加的功能，它依赖于您的部署和用户的配置。此外，它还依赖于公共 IM 提供商对于服务的设置。有关如何设置您的部署以使用公共提供程序的信息，请参阅“Microsoft Lync Server、Office Communications Server 和 Live Communications Server 的公共 IM 连接设置指南”： <http://go.microsoft.com/fwlink/?linkid=269821>
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
+> [!IMPORTANT]  
+> <ul>
 <li><p>自 2012 年 9 月 1 日起，新订或续订合同不能再购买 Microsoft Lync 公共 IM 连接用户订阅许可证 (“PIC USL”)。拥有有效许可证的客户可继续与 Yahoo! Messenger 联盟直至服务关闭。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
 <li><p>PIC USL 是一个每用户每月订阅许可证，是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的。Microsoft 之所以能够提供此服务离不开 Yahoo! 的支持，但这项支持的基础协议正在逐步终止。</p></li>
 <li><p>Lync 是一个比以往更强大的工具，它实现了人员跨组织、跨地域的连接。除 Lync 标准 CAL 外，与 Windows Live Messenger 联盟不需要任何附加用户/设备许可证。Skype 联盟将添加到此列表中，以便 Lync 用户能够通过 IM 和语音与数亿用户取得联系。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
 
 
 若要访问 Microsoft Lync Server 公共 IM 连接设置网站，请使用下面的链接：[http://go.microsoft.com/fwlink/p/?linkId=212638](http://go.microsoft.com/fwlink/p/?linkid=212638)
@@ -44,18 +31,9 @@ _**上一次修改主题：** 2016-12-08_
 
 对于 IM 邀请，响应取决于客户端软件。除非外部发件人被用户配置的规则（即，用户客户端的“允许”和“阻止”列表中的设置）显式阻止，否则将接受请求。此外，如果用户选择阻止来自其“允许”列表之外的用户的所有 IM，也可以阻止 IM 邀请。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>即使没有为组织启用联盟，也可以配置控制公共用户访问的策略。但是，只有为组织启用联盟后，配置的策略才会生效。有关启用联盟的详细信息，请参阅部署文档或操作文档中的 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中启用或禁用远程用户访问</a>。此外，如果指定某个用户策略来控制公共用户访问，则该策略仅应用于已启用 Lync Server 并配置为使用该策略的用户。有关指定可登录 Lync Server 的公共用户的详细信息，请参阅部署文档或操作文档中的 <a href="lync-server-2013-assign-an-external-user-access-policy-to-a-lync-enabled-user.md">在 Lync Server 2013 中将外部用户访问策略分配到启用 Lync 的用户</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 即使没有为组织启用联盟，也可以配置控制公共用户访问的策略。但是，只有为组织启用联盟后，配置的策略才会生效。有关启用联盟的详细信息，请参阅部署文档或操作文档中的 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中启用或禁用远程用户访问</a>。此外，如果指定某个用户策略来控制公共用户访问，则该策略仅应用于已启用 Lync Server 并配置为使用该策略的用户。有关指定可登录 Lync Server 的公共用户的详细信息，请参阅部署文档或操作文档中的 <a href="lync-server-2013-assign-an-external-user-access-policy-to-a-lync-enabled-user.md">在 Lync Server 2013 中将外部用户访问策略分配到启用 Lync 的用户</a>。
+
 
 
 使用以下过程来配置策略，以支持一个或多个公共 IM 提供商的用户进行访问。

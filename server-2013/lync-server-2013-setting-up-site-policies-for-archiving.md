@@ -19,19 +19,10 @@ _**上一次修改主题：** 2012-10-09_
 
 有关存档策略工作原理（包括全局、站点和用户策略的层次结构）的详细信息，请参阅规划文档、部署文档或操作文档中的[Lync Server 2013 的存档工作原理](lync-server-2013-how-archiving-works.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果为部署启用 Microsoft Exchange 集成，则 Exchange 就地保留策略将控制是否为驻留在 Exchange 2013 上且其邮箱处于就地保留状态的用户启用存档。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">使用 Exchange 服务器集成设置存档的策略</a>。<br />
-在存档策略中启用内部或外部通信的存档之前，应在存档配置中指定所有适当选项。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-configuring-archiving-options.md">配置存档选项</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果为部署启用 Microsoft Exchange 集成，则 Exchange 就地保留策略将控制是否为驻留在 Exchange 2013 上且其邮箱处于就地保留状态的用户启用存档。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">使用 Exchange 服务器集成设置存档的策略</a>。<br />
+在存档策略中启用内部或外部通信的存档之前，应在存档配置中指定所有适当选项。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-configuring-archiving-options.md">配置存档选项</a>。
+
 
 
 ## 创建站点的存档策略

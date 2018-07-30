@@ -17,18 +17,9 @@ _**上一次修改主题：** 2015-03-09_
 
 如果您已经部署了一台或多台边缘服务器，那么添加联盟方案功能就非常简单。如果尚未设置边缘服务器，则必须先设置边缘服务器。有关详细信息，请参阅规划文档中的 [在 Lync Server 2013 中规划外部用户访问](lync-server-2013-planning-for-external-user-access.md)和部署文档中的 [在 Lync Server 2013 中部署外部用户访问](lync-server-2013-deploying-external-user-access.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果打算设置 XMPP 联盟、Lync 联盟或公共即时消息连接的任意组合，则可以并行部署它们，也可以一次部署一个。如果通过拓扑生成器和 Lync Server 命令行管理程序配置选项，则应在为一个、两个或全部三个联盟类型配置选项后在边缘服务器上运行部署向导，这样您可以减少需要执行的步骤数目。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果打算设置 XMPP 联盟、Lync 联盟或公共即时消息连接的任意组合，则可以并行部署它们，也可以一次部署一个。如果通过拓扑生成器和 Lync Server 命令行管理程序配置选项，则应在为一个、两个或全部三个联盟类型配置选项后在边缘服务器上运行部署向导，这样您可以减少需要执行的步骤数目。
+
 
 
 ## 在拓扑生成器和部署向导中设置 Lync 联盟
@@ -145,22 +136,13 @@ _**上一次修改主题：** 2015-03-09_
 
 3.  使用 Lync Server 控制面板或通过使用 Lync Server 命令行管理程序和相应的 cmdlet 定义和配置任何策略。有关 Lync Server 命令行管理程序 cmdlet 的详细信息，请参阅 [联盟和外部访问 Cmdlet](https://docs.microsoft.com/en-us/powershell/module/skype/)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>对于由作为联盟 Lync 合作伙伴的组织者发送的会议，Lync Room System (LRS) 不显示加入按钮。要在 LRS 上显示会议加入链接，发送组织必须使用以下 cmdlet 启用 TNEF：<br />
-    <br />
-    <code>New-RemoteDomain -DomainName Contoso.com -Name Contoso</code><br />
-    <code>Set-RemoteDomain -Identity Contoso -TNEFEnabled $true</code><br />
-    请注意，这不是 LRS 特有的。Outlook 和 Lync 在这种情况下也不会显示“加入”链接，因为不传输 MAPI 属性；但在 Outlook 中，用户可以打开会议邀请并单击会议 URL。当 TNEFEnabled 设置为 true 时，Exchange 2013 不会除去包括 OnlineMeetingExternalLink 在内的 MAPI 属性，提醒中将显示“加入”按钮。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 对于由作为联盟 Lync 合作伙伴的组织者发送的会议，Lync Room System (LRS) 不显示加入按钮。要在 LRS 上显示会议加入链接，发送组织必须使用以下 cmdlet 启用 TNEF：<br />
+    > 
+    > <code>New-RemoteDomain -DomainName Contoso.com -Name Contoso</code><br />
+    > <code>Set-RemoteDomain -Identity Contoso -TNEFEnabled $true</code><br />
+    > 请注意，这不是 LRS 特有的。Outlook 和 Lync 在这种情况下也不会显示“加入”链接，因为不传输 MAPI 属性；但在 Outlook 中，用户可以打开会议邀请并单击会议 URL。当 TNEFEnabled 设置为 true 时，Exchange 2013 不会除去包括 OnlineMeetingExternalLink 在内的 MAPI 属性，提醒中将显示“加入”按钮。
+    
 
 
 ## 另请参阅

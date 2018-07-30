@@ -61,18 +61,9 @@ System Center Operations Manager 提供端对端服务管理，它容易自定�
 
   - 管理协议 SNMP 用于在管理站和代理之间传达管理信息。管理信息是指位于虚拟信息存储（称为管理信息基础 (MIB)）中的托管对象集合。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>上面提供了第三方网络管理解决方案的示例。此列表并不是决定性的，Microsoft 并不偏向于任何特定供应商解决方案。请向网络服务提供商或您的技术提供商咨询以确定最适合您的组织的网络监视解决方案。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 上面提供了第三方网络管理解决方案的示例。此列表并不是决定性的，Microsoft 并不偏向于任何特定供应商解决方案。请向网络服务提供商或您的技术提供商咨询以确定最适合您的组织的网络监视解决方案。
+
 
 
 ## 用于监视个别服务器网络性能的工具

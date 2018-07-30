@@ -29,18 +29,9 @@ _**上一次修改主题：** 2014-12-10_
 
 2.  在 Lync Server 命令行管理程序中，运行 cmdlet **Move-CsUser** 以承载用户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>还可以使用 Lync Server 控制面板验证先决条件并承载用户。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 还可以使用 Lync Server 控制面板验证先决条件并承载用户。
+
 
 
 ## 另请参阅

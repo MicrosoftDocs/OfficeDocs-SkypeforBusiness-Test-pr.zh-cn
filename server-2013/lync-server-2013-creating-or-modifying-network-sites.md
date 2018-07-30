@@ -29,70 +29,34 @@ _**上一次修改主题：** 2012-10-08_
 
 5.  在“新建站点”的“名称”字段中，键入此站点的名称。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>站点名称必须在 Lync Server 2013 部署中是唯一的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 站点名称必须在 Lync Server 2013 部署中是唯一的。
+    
 
 
 6.  在“区域”下拉列表中，选择与此站点关联的网络区域。
 
 7.  （可选）如果要对此站点的音频或视频呼叫设置带宽限制，请从“带宽策略”下拉列表中选择具有相应设置的带宽策略配置文件。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在“网络配置”组的“策略配置文件”页上，可以查看可用带宽策略配置文件的详细信息，或创建新的带宽策略配置文件。有关详细信息，请参阅<a href="lync-server-2013-creating-or-modifying-bandwidth-policy-profiles.md">创建或修改带宽策略配置文件</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在“网络配置”组的“策略配置文件”页上，可以查看可用带宽策略配置文件的详细信息，或创建新的带宽策略配置文件。有关详细信息，请参阅<a href="lync-server-2013-creating-or-modifying-bandwidth-policy-profiles.md">创建或修改带宽策略配置文件</a>。
+    
 
 
 8.  （可选）如果要为此站点提供位置设置，请从“位置策略”下拉列表中选择位置策略。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>位置策略会将特定的增强型 9-1-1 (E9-1-1) 和客户端位置设置分配给站点。在“网络配置”组的“位置策略”页上，可以查看可用位置策略的详细信息，或创建新的位置策略。有关详细信息，请参阅<a href="lync-server-2013-viewing-location-policy-information.md">查看位置策略信息</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 位置策略会将特定的增强型 9-1-1 (E9-1-1) 和客户端位置设置分配给站点。在“网络配置”组的“位置策略”页上，可以查看可用位置策略的详细信息，或创建新的位置策略。有关详细信息，请参阅<a href="lync-server-2013-viewing-location-policy-information.md">查看位置策略信息</a>。
+    
 
 
 9.  （可选）在“说明”字段中键入值，用以提供仅通过名称无法表达的更多有关该站点的信息。
 
 10. 单击“提交”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>创建新网络站点时，不要使用“关联子网”表。创建或修改子网时，会将子网与站点相关联。有关详细信息，请参阅<a href="lync-server-2013-create-or-modify-network-subnets.md">创建或修改网络子网</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 创建新网络站点时，不要使用“关联子网”表。创建或修改子网时，会将子网与站点相关联。有关详细信息，请参阅<a href="lync-server-2013-create-or-modify-network-subnets.md">创建或修改网络子网</a>。
+    
 
 
 ## 修改网络站点
@@ -123,18 +87,9 @@ _**上一次修改主题：** 2012-10-08_
 
 4.  在“站点”页上，单击要删除的站点。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可一次性删除多个站点。要执行此操作，请按住 Ctrl 键，同时选择多个站点。或者，要选择全部站点，请单击“编辑”菜单中的“全选”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 可一次性删除多个站点。要执行此操作，请按住 Ctrl 键，同时选择多个站点。或者，要选择全部站点，请单击“编辑”菜单中的“全选”。
+    
 
 
 5.  在“编辑”菜单上，单击“删除”。

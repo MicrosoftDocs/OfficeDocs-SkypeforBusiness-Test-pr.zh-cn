@@ -19,18 +19,9 @@ Microsoft Lync Server 2013 使用证书手动对其他服务器进行身份验�
 
 分配给 边缘服务器的外部接口的证书是从公共证书颁发机构 (CA) 请求的。下面的文章中列出了证明为 统一通信 提供证书成功的公共 CA： [http://go.microsoft.com/fwlink/?linkid=3052\&clcid=0x804](http://go.microsoft.com/fwlink/?linkid=3052%26clcid=0x804)。请求证书时，可使用 Lync Server 部署向导生成的证书请求或手动创建请求或通过公共 CA 提供的流程。分配证书时，证书将分配给 访问边缘服务接口、 Web 会议边缘服务 接口和音频/视频身份验证服务。音频/视频身份验证服务不应与不使用证书加密音频和视频流的 A/V 边缘服务混淆。内部 边缘服务器接口可使用内部（对您的组织而言）CA 提供的证书或公共 CA 提供的证书。内部接口证书仅使用 SN，无需或不会使用 SAN 条目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下表显示使用者替代名称列表中的第二个 SIP 条目 (sip.fabrikam.com)，以供参考。对于组织中的每个 SIP 域，需要添加证书使用者替代名称列表中列出的对应 FQDN。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 下表显示使用者替代名称列表中的第二个 SIP 条目 (sip.fabrikam.com)，以供参考。对于组织中的每个 SIP 域，需要添加证书使用者替代名称列表中列出的对应 FQDN。
+
 
 
 ## 扩展的合并边缘（硬件负载已平衡）所需的证书

@@ -19,18 +19,9 @@ _**上一次修改主题：** 2012-09-12_
 
 可以使用响应组配置工具创建工作流。可以通过 Lync Server 控制面板中的“响应组”页访问响应组配置工具。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须先创建代理组和队列，然后再创建使用这些组和队列的工作流。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 必须先创建代理组和队列，然后再创建使用这些组和队列的工作流。
+
 
 
 ## 本部分内容

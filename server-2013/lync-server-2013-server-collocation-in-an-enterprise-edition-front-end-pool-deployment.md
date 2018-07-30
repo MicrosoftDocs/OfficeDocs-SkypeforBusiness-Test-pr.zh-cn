@@ -57,18 +57,9 @@ _**上一次修改主题：** 2013-11-11_
 
 可以并置文件共享与数据库，如本节后面所述。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 中，可以选择为您的部署中的部分或所有用户将存档存储与 Exchange 2013 存储集成。但您无法将任何运行 Lync Server 的服务器或组件部署到与 Exchange 存储相同的服务器上。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 中，可以选择为您的部署中的部分或所有用户将存档存储与 Exchange 2013 存储集成。但您无法将任何运行 Lync Server 的服务器或组件部署到与 Exchange 存储相同的服务器上。
+
 
 
 <table>
@@ -101,18 +92,9 @@ _**上一次修改主题：** 2013-11-11_
 
 单个文件共享可用于多个前端池、Standard Edition 服务器（全部位于同一站点）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 中，监控和存档功能使用 Lync Server 文件共享作为前端服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 中，监控和存档功能使用 Lync Server 文件共享作为前端服务器。
+
 
 
 ## 其他组件

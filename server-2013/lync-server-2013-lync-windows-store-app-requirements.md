@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 具有 Lync Server 内部部署的组织必须满足以下要求才能支持 Lync Windows 应用商店应用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于 Lync Server 2010，请在所有服务器上运行 Lync Server 2010 的 2012 年 2 月累积更新（可在 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2670352" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2670352</a> 上获得）或更高版本。为使用户能够加入会议，请在服务器上运行 Lync Server 2010 的 2012 年 10 月累积更新（可在 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2737915" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2737915</a> 上获得）。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 对于 Lync Server 2010，请在所有服务器上运行 Lync Server 2010 的 2012 年 2 月累积更新（可在 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2670352" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2670352</a> 上获得）或更高版本。为使用户能够加入会议，请在服务器上运行 Lync Server 2010 的 2012 年 10 月累积更新（可在 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2737915" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2737915</a> 上获得）。
+
 
 
   - 在服务器上启用自动发现、Lync Web App 和 Web 票证服务。

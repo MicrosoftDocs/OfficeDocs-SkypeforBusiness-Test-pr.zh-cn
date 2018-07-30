@@ -23,18 +23,9 @@ _**上一次修改主题：** 2016-12-08_
 
 如果在组织中部署 Lync 2013，则可与一个或多个 Microsoft Lync Online 2010 客户的域联盟。若要启用内部 Lync 2013 部署的用户与 Lync Online 2010 客户的用户之间的联盟，您必须配置对域和 Lync Online 客户的用户的支持。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本文档仅介绍将组织配置为支持与 Lync Online 2010 客户的联盟的过程，而未介绍将 Lync Online 2010 客户配置为支持联盟的过程。有关 Lync Online 服务的详细信息，请访问 Lync Online，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=218941%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=218941&amp;clcid=0x804</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本文档仅介绍将组织配置为支持与 Lync Online 2010 客户的联盟的过程，而未介绍将 Lync Online 2010 客户配置为支持联盟的过程。有关 Lync Online 服务的详细信息，请访问 Lync Online，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=218941%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=218941&amp;clcid=0x804</a>。
+
 
 
 ## 本部分内容

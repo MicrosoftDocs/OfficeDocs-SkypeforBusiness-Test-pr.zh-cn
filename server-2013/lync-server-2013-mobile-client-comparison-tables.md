@@ -37,25 +37,13 @@ _**上一次修改主题：** 2016-12-08_
 
 这些表指出可供 Lync 用户在 Lync Server 2013 的本地部署中使用的功能。相同功能还可供 Skype for Business Online 和 Microsoft Office 365 用户使用，除非表的脚注中另有说明。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
+> [!NOTE]  
+> <ul>
 <li><p>对于面向最终用户的联机帮助和资源，请参阅“适用于移动客户端的 Microsoft Lync 2013”，网址为：<a href="http://go.microsoft.com/fwlink/?linkid=286237">http://go.microsoft.com/fwlink/?LinkId=286237</a>。</p></li>
 <li><p>若要比较其他 Lync 2013 客户端中提供的功能，请参阅<a href="lync-server-2013-desktop-client-comparison-tables.md">Lync Server 2013 的客户端比较表</a>。</p></li>
 <li><p>Lync Server 2013 还支持 Lync 2010 移动应用程序。有关详细信息，请参阅 Lync Server 2010 文档中的“移动客户端比较表”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=234777" class="uri">http://go.microsoft.com/fwlink/?linkid=234777</a>。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+
 
 
 ## 登录、推送通知和常规功能

@@ -47,16 +47,7 @@ Lync Server 2013 SIP 中继功能支持下列内容：
 
   - 通过使用 E9-1-1 紧急呼叫，应答 911 呼叫的机构可以通过电话号码确定呼叫者的位置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>与 ITSP 联系以获取他们支持并且可以为贵组织启用的服务列表。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 与 ITSP 联系以获取他们支持并且可以为贵组织启用的服务列表。
+
 

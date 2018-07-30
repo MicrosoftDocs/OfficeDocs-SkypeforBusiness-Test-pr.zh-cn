@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-01-30_
 
 使用以下过程为用户禁用组内呼叫应答。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当为某个用户禁用组内呼叫应答时，分配给该用户的呼叫应答组号码不再保留。如果您随后想为该用户重新启用组内呼叫应答，必须使用参数 /enablegrouppickup 再次分配呼叫应答组号码。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 当为某个用户禁用组内呼叫应答时，分配给该用户的呼叫应答组号码不再保留。如果您随后想为该用户重新启用组内呼叫应答，必须使用参数 /enablegrouppickup 再次分配呼叫应答组号码。
+
 
 
 ## 为用户禁用组内呼叫应答

@@ -33,18 +33,9 @@ _**上一次修改主题：** 2012-11-01_
 
   - **允许匿名用户访问会议**    如果您希望内部用户邀请外部匿名用户访问他们组织的会议，则启用此选项。启用此设置只允许匿名用户访问会议。要配置会议体验和定义您的用户如何配置和如何利用会议的选项，以及如何加入匿名用户等，请参阅 [创建或修改站点或用户组的会议用户体验](https://technet.microsoft.com/zh-cn/library/gg429715\(v=ocs.15\))和 [在 Lync Server 2013 中会议策略设置参考](lync-server-2013-conferencing-policy-settings-reference.md)中的详细信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除了启用外部用户访问支持，您还可以配置策略，在用户不能使用任何外部用户访问类型时，控制组织内远程用户访问的使用。有关为外部用户访问创建、配置和应用策略的详细信息，请参阅 <a href="lync-server-2013-manage-external-access-policy-for-your-organization.md">在 Lync Server 2013 中管理组织的外部访问策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 除了启用外部用户访问支持，您还可以配置策略，在用户不能使用任何外部用户访问类型时，控制组织内远程用户访问的使用。有关为外部用户访问创建、配置和应用策略的详细信息，请参阅 <a href="lync-server-2013-manage-external-access-policy-for-your-organization.md">在 Lync Server 2013 中管理组织的外部访问策略</a>。
+
 
 
 **使用 Windows PowerShell Cmdlet 查看访问边缘配置信息**

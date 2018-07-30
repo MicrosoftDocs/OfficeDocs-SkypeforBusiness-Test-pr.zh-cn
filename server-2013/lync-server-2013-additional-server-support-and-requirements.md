@@ -51,18 +51,9 @@ _**上一次修改主题：** 2016-12-08_
 
   - Microsoft Visual C++ 2012 可再发行软件包
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>安装 Lync Server 2013 时将自动安装 Microsoft Visual C++ 2012 可再发行软件包。不应安装和使用任何其他版本。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 安装 Lync Server 2013 时将自动安装 Microsoft Visual C++ 2012 可再发行软件包。不应安装和使用任何其他版本。
+    
 
 
   - URL Rewrite Module 2.0 版可再发行软件包

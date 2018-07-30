@@ -47,67 +47,31 @@ _**上一次修改主题：** 2016-12-08_
 
 10. 要将一个或多个中继与语音路由相关联，请单击“添加”，然后从列表中选择中继。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果部署包括任何 Microsoft Office Communications Server 2007 R2 中介服务器，则它们也会显示在该列表中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果部署包括任何 Microsoft Office Communications Server 2007 R2 中介服务器，则它们也会显示在该列表中。
+    
 
 
 11. 要将一个或多个公用电话交换网 (PSTN) 用法记录与语音路由相关联，请单击“选择”，然后从已为企业语音部署定义的 PSTN 用法记录列表中选择一条记录。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>要查看每个可用 PSTN 用法记录的属性，请参阅<a href="lync-server-2013-view-pstn-usage-records.md">在 Lync Server 2013 中查看 PSTN 用法记录</a>。<br />
-    要创建或编辑 PSTN 用法记录，请参阅<a href="lync-server-2013-create-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中创建语音策略和配置 PSTN 用法记录</a>或<a href="lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中修改语音策略和配置 PSTN 用法记录</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 要查看每个可用 PSTN 用法记录的属性，请参阅<a href="lync-server-2013-view-pstn-usage-records.md">在 Lync Server 2013 中查看 PSTN 用法记录</a>。<br />
+    要创建或编辑 PSTN 用法记录，请参阅<a href="lync-server-2013-create-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中创建语音策略和配置 PSTN 用法记录</a>或<a href="lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中修改语音策略和配置 PSTN 用法记录</a>。
+    
 
 
 12. 排列 PSTN 用法记录以获得最佳性能。要更改记录在列表中的位置，请突出显示相应的记录名称，然后单击向上箭头或向下箭头。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在语音策略中，PSTN 用法记录的列出顺序非常重要，而在语音路由中，PSTN 用法记录的列出顺序则无关紧要。但是，建议您按使用频率来组织该列表，例如：RedmondLocal、RedmondLongDist、RedmondInternational 和 RedmondBackup。（Lync Server 按照从上到下的顺序遍历该列表。）</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在语音策略中，PSTN 用法记录的列出顺序非常重要，而在语音路由中，PSTN 用法记录的列出顺序则无关紧要。但是，建议您按使用频率来组织该列表，例如：RedmondLocal、RedmondLongDist、RedmondInternational 和 RedmondBackup。（Lync Server 按照从上到下的顺序遍历该列表。）
+    
 
 
 13. （可选）在“输入转换后的号码以进行测试”字段中键入一个值，然后单击“执行”。测试结果将显示在该字段下面。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以保存尚未通过测试的语音路由，并在稍后对其进行重新配置。有关详细信息，请参阅<a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中测试语音路由</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以保存尚未通过测试的语音路由，并在稍后对其进行重新配置。有关详细信息，请参阅<a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中测试语音路由</a>。
+    
 
 
 14. 单击“确定”保存语音路由。

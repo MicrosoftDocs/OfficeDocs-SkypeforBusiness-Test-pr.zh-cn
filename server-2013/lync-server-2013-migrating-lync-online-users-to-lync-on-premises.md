@@ -143,18 +143,9 @@ _**上一次修改主题：** 2016-12-08_
         
         `https://admin0a.online.lync.com/HostedMigration/hostedmigrationservice.svc`
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>rtcxds 数据库事务日志文件的默认大小上限为 16 GB。如果您要一次性移动大量用户，特别是在启用镜像的情况下，这样的大小可能不够。为解决此问题，您可以扩大文件大小，或者定期备份日志文件。如需了解详细信息，请参阅 <a href="http://support.microsoft.com/kb/2756725" class="uri">http://support.microsoft.com/kb/2756725</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > rtcxds 数据库事务日志文件的默认大小上限为 16 GB。如果您要一次性移动大量用户，特别是在启用镜像的情况下，这样的大小可能不够。为解决此问题，您可以扩大文件大小，或者定期备份日志文件。如需了解详细信息，请参阅 <a href="http://support.microsoft.com/kb/2756725" class="uri">http://support.microsoft.com/kb/2756725</a>。
+    
 
 
 8.  这是一个可选步骤。如果您需要集成 Exchange 2013 Online，则需要使用额外的托管服务提供商。有关详细信息，请参阅 [配置本地 Lync Server 2013 与 Exchange Online 的集成](lync-server-2013-configuring-on-premises-lync-server-integration-with-exchange-online.md)。

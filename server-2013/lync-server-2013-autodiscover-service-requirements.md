@@ -49,23 +49,14 @@ Microsoft Lync Server 2013 自动发现服务在控制器池服务器和前端�
     
     在此方案中，不需要进行任何证书更改即可支持移动。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果目标 Web 服务器的证书未包含针对 lyncdiscover.contoso.com 的作为使用者替代名称列表值的匹配值：<br />
+    > [!NOTE]  
+    > 如果目标 Web 服务器的证书未包含针对 lyncdiscover.contoso.com 的作为使用者替代名称列表值的匹配值：<br />
     a.   Web 服务器以“Server Hello”进行响应且没有证书。<br />
     b.   运行 Lync Mobile 的移动设备会立即终止会话。<br />
     如果目标 Web 服务器的证书包含 lyncdiscover.contoso.com 作为使用者替代名称列表值：<br />
     a.   Web 服务器以“Server Hello”进行响应且有证书。<br />
-    b.   运行 Lync Mobile 的移动设备验证该证书并完成握手。</td>
-    </tr>
-    </tbody>
-    </table>
+    b.   运行 Lync Mobile 的移动设备验证该证书并完成握手。
+    
 
 
 若要支持在反向代理服务器上使用端口 80 与自动发现服务进行初始连接，您可以创建一个类似于此 Forefront Threat Management Gateway 2010 反向代理 Web 发布规则示例的 http 发布规则：

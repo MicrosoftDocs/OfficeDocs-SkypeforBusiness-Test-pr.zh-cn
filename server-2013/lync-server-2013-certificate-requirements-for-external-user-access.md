@@ -27,36 +27,18 @@ Microsoft Lync Server 2013通信软件支持使用用于访问和 Web 会议边�
 
   - 证书的使用者名称是 访问边缘服务外部接口完全限定域名 (FQDN) 或硬件负载平衡器 VIP（例如，access.contoso.com）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>对于 Lync Server 2013，不再需要满足此要求，但为了与 Office Communications Server 兼容，仍建议满足该要求。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 对于 Lync Server 2013，不再需要满足此要求，但为了与 Office Communications Server 兼容，仍建议满足该要求。
+    
 
 
   - 使用者替代名称列表包含以下各项的 FQDN：
     
       - 访问边缘服务外部接口或硬件负载平衡器 VIP（例如，sip.contoso.com）。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>即使证书使用者名称是访问边缘 FQDN，使用者替代名称还必须包含访问边缘 FQDN，因为传输层安全性 (TLS) 将忽略使用者名称，而使用使用者替代名称条目进行验证。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 即使证书使用者名称是访问边缘 FQDN，使用者替代名称还必须包含访问边缘 FQDN，因为传输层安全性 (TLS) 将忽略使用者名称，而使用使用者替代名称条目进行验证。
+        
     
       - Web 会议边缘外部接口或硬件负载平衡器 VIP（例如，webcon.contoso.com）。
     
@@ -64,18 +46,9 @@ Microsoft Lync Server 2013通信软件支持使用用于访问和 Web 会议边�
     
       - A/V 边缘服务不使用使用者名称或使用者替代名称条目。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用者替代名称列表中的 FQDN 顺序无关紧要。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 使用者替代名称列表中的 FQDN 顺序无关紧要。
+    
 
 
 如果要在站点上部署多台负载平衡边缘服务器，则安装在每台边缘服务器上的 A/V 身份验证服务证书必须由同一 CA 颁发且必须使用同一私钥。请注意，证书的私钥必须是可导出的，不管是在一台边缘服务器上使用还是在多台边缘服务器上使用。如果要从任何计算机（边缘服务器除外）请求证书，则私钥也必须可导出。由于 A/V 身份验证服务不使用使用者名称或使用者替代名称，因此，一旦满足访问边缘和 Web 会议边缘的使用者名称和使用者替代名称要求，且证书的私钥是可导出的，您就能重用访问边缘证书。

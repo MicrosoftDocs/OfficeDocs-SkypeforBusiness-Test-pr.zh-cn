@@ -25,18 +25,9 @@ _**上一次修改主题：** 2016-12-08_
 
 有关如何执行这些任务的详细信息，请参阅部署文档中的 [在 Lync Server 2013 中配置位置数据库](lync-server-2013-configure-the-location-database.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在使用 Lync Server 命令行管理程序命令发布已添加到中央位置数据库的位置，并将这些位置复制到池的本地存储之前，这些位置对于客户端不可用。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-publish-the-location-database.md">发布位置数据库</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在使用 Lync Server 命令行管理程序命令发布已添加到中央位置数据库的位置，并将这些位置复制到池的本地存储之前，这些位置对于客户端不可用。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-publish-the-location-database.md">发布位置数据库</a>。
+
 
 
 本节介绍在计划更新和维护位置数据库时要考虑的事项。

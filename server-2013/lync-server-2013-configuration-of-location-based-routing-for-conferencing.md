@@ -47,18 +47,8 @@ New-CsServerApplication -Identity Service:Registrar:LS2013CU2LBRPool.contoso.com
 
 使用此 cmdlet 之后，请重新启动池中的所有前端服务器或者启用了基于位置的路由会议应用程序的 Standard Edition Server。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在合适池中的所有前端服务器或 Standard Edition Server 重新启动之后，才会对会议或咨询呼叫转接强制实施基于位置的路由限制。如果在上述 cmdlet 中将 <strong>–Critical</strong> 设置为 <strong>$true</strong>，您的 Lync 服务将立即重新启动。如果不希望这些服务立即重新启动，请到现在为止将 <strong>–Critical</strong> 设置为 <strong>$false</strong>，然后在服务重新启动之后，以后使用 <strong>Set-CsServerApplication</strong> 将 <strong>-Critical</strong> 更改为 <strong>$true</strong>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在合适池中的所有前端服务器或 Standard Edition Server 重新启动之后，才会对会议或咨询呼叫转接强制实施基于位置的路由限制。如果在上述 cmdlet 中将 <strong>–Critical</strong> 设置为 <strong>$true</strong>，您的 Lync 服务将立即重新启动。如果不希望这些服务立即重新启动，请到现在为止将 <strong>–Critical</strong> 设置为 <strong>$false</strong>，然后在服务重新启动之后，以后使用 <strong>Set-CsServerApplication</strong> 将 <strong>-Critical</strong> 更改为 <strong>$true</strong>。
 
 
 一旦成功启用基于位置的路由会议应用程序，并且所有适用的 Lync 服务器已重新启动，由启用了基于位置的路由的 Lync 用户组织的所有会议将受到监视以防止 PSTN 收费绕路情形。

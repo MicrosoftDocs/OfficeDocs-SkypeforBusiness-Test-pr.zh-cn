@@ -17,18 +17,9 @@ _**上一次修改主题：** 2015-03-09_
 
 如果不想使用默认呼叫寄存设置，则也可以自定义该设置。安装呼叫寄存应用程序时，默认情况下将配置全局设置。您可以修改全局设置，也可以指定特定于站点的设置。使用 **New-CsCpsConfiguration** cmdlet 可创建新的特定于站点的设置。使用 **Set-CsCpsConfiguration** cmdlet 可修改现有设置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>寄存呼叫超时且回拨失败时，我们建议您至少为要使用的回退目标配置 <strong>OnTimeoutURI</strong> 选项。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 寄存呼叫超时且回拨失败时，我们建议您至少为要使用的回退目标配置 <strong>OnTimeoutURI</strong> 选项。
+
 
 
 使用 **New-CsCpsConfiguration** cmdlet 或 **Set-CsCpsConfiguration** cmdlet 配置以下任何设置：

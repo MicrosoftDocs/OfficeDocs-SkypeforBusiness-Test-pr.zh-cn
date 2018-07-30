@@ -39,18 +39,9 @@ _**上一次修改主题：** 2014-10-28_
 
   - 在运行 Windows Server 2008 或 Windows Server 2008 R2 的计算机上，像安装其他任何 Lync Server 2013 服务器角色一样安装 Microsoft Lync Server 2010。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关安装 Lync Server 的信息，请参阅部署文档中的 <a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关安装 Lync Server 的信息，请参阅部署文档中的 <a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a>。
+    
 
 
 **下一步**：[在 Lync Server 2013 中为用户配置分支站点恢复能力](lync-server-2013-configuring-users-for-branch-site-resiliency.md)

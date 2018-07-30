@@ -29,18 +29,9 @@ _**上一次修改主题：** 2016-07-28_
     
       - **使用所有配置 IP 地址**。如果您希望允许使用计算机上定义的任何 IP 地址，请选择此选项。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>这是针对 IP 版本 6 (IPv6) 配置的建议选项。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 这是针对 IP 版本 6 (IPv6) 配置的建议选项。
+        
     
       - **服务仅供选定 IP 地址使用**。选择此选项可指定要在新服务器上使用的特定地址。如果选择此选项，则必须输入“主 IP 地址”的值。
     

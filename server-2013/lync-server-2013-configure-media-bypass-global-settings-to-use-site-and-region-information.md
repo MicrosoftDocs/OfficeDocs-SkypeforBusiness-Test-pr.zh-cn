@@ -15,19 +15,10 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2012-09-21_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题假定，对于希望媒体绕过中介服务器的特定站点或特定服务，已为从中介服务器到对等方（Internet 电话服务提供商的公用电话交换网 (PSTN) 网关、IP-PBX 或会话边界控制器）的所有中继连接配置媒体旁路。<br />
-本主题还假定，您已采用与您根据<a href="lync-server-2013-create-or-modify-a-network-region.md">在 Lync Server 2013 中创建或修改网络区域</a>、<a href="lync-server-2013-create-or-modify-a-network-site.md">在 Lync Server 2013 中创建或修改网络站点</a>和<a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中将子网与网络站点相关联</a>中的步骤进行的网络区域、网络站点和子站点配置相匹配的方式，定义了拓扑生成器中的所有中央站点和分支站点。如果它们不匹配，则媒体旁路将会失败。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主题假定，对于希望媒体绕过中介服务器的特定站点或特定服务，已为从中介服务器到对等方（Internet 电话服务提供商的公用电话交换网 (PSTN) 网关、IP-PBX 或会话边界控制器）的所有中继连接配置媒体旁路。<br />
+本主题还假定，您已采用与您根据<a href="lync-server-2013-create-or-modify-a-network-region.md">在 Lync Server 2013 中创建或修改网络区域</a>、<a href="lync-server-2013-create-or-modify-a-network-site.md">在 Lync Server 2013 中创建或修改网络站点</a>和<a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中将子网与网络站点相关联</a>中的步骤进行的网络区域、网络站点和子站点配置相匹配的方式，定义了拓扑生成器中的所有中央站点和分支站点。如果它们不匹配，则媒体旁路将会失败。
+
 
 
 除了为与对等方关联的各个中继连接启用媒体旁路外，还必须配置全局设置。如果使用本主题中的步骤为媒体旁路配置全局设置，则假定以下一种或两种情况将影响您的配置：
@@ -36,18 +27,9 @@ _**上一次修改主题：** 2012-09-21_
 
   - 已启用用于带宽管理的呼叫允许控制 (CAC)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关呼叫允许控制和媒体旁路的注意事项的详细信息，请参阅规划文档中<a href="lync-server-2013-media-bypass-and-mediation-server.md">Lync Server 2013 中的媒体绕过和中介服务器</a>的“PSTN 连接的呼叫允许控制”部分。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关呼叫允许控制和媒体旁路的注意事项的详细信息，请参阅规划文档中<a href="lync-server-2013-media-bypass-and-mediation-server.md">Lync Server 2013 中的媒体绕过和中介服务器</a>的“PSTN 连接的呼叫允许控制”部分。
+    
 
 
 启用呼叫允许控制和媒体旁路高级企业语音功能后，会在两者之间共享网络区域和网络站点信息。因此，如果您已配置了呼叫允许控制，则不需要使用以下过程专门为媒体旁路编辑站点和区域信息。如果尚未为呼叫允许控制配置网络区域和站点，并且想要更改媒体旁路设置，请按照该过程中的步骤进行操作。
@@ -70,36 +52,17 @@ _**上一次修改主题：** 2012-09-21_
 
 6.  如有必要，请选中“为非映射站点启用旁路”复选框。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅当具有一个或多个与没有带宽限制的同一区域关联的大型站点，但有一些与有带宽限制的同一区域关联的分支站点时，才应选中该复选框。为未映射的站点启用旁路时可以简化配置，这是因为只需指定与分支站点关联的子网，而无需指定与所有站点关联的所有子网。如果启用了呼叫允许控制，则建议不要选中该复选框。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 仅当具有一个或多个与没有带宽限制的同一区域关联的大型站点，但有一些与有带宽限制的同一区域关联的分支站点时，才应选中该复选框。为未映射的站点启用旁路时可以简化配置，这是因为只需指定与分支站点关联的子网，而无需指定与所有站点关联的所有子网。如果启用了呼叫允许控制，则建议不要选中该复选框。
+    
 
 
 7.  单击“提交”。
 
 接着，将子网添加到网络站点中，如[将子网与网络站点相关联以启用媒体绕过](lync-server-2013-associate-subnets-with-network-sites-for-media-bypass.md)中所述（将子网与网络站点相关联的实际过程会在[在 Lync Server 2013 中将子网与网络站点相关联](lync-server-2013-associate-a-subnet-with-a-network-site.md)中进行介绍）。将所有子网与网络站点相关联后，媒体旁路即部署完成。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果尚未创建网络区域和网络站点，则必须先创建这些区域和站点，才能部署媒体旁路。有关详细信息，请参阅<a href="lync-server-2013-create-or-modify-a-network-region.md">在 Lync Server 2013 中创建或修改网络区域</a>和<a href="lync-server-2013-create-or-modify-a-network-site.md">在 Lync Server 2013 中创建或修改网络站点</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果尚未创建网络区域和网络站点，则必须先创建这些区域和站点，才能部署媒体旁路。有关详细信息，请参阅<a href="lync-server-2013-create-or-modify-a-network-region.md">在 Lync Server 2013 中创建或修改网络区域</a>和<a href="lync-server-2013-create-or-modify-a-network-site.md">在 Lync Server 2013 中创建或修改网络站点</a>。
 
 
 ## 另请参阅

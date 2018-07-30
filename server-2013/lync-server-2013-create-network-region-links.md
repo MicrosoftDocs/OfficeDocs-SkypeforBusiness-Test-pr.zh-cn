@@ -59,18 +59,9 @@ _**上一次修改主题：** 2012-10-19_
 
 8.  也可以选择单击“带宽策略”，然后选择要应用于网络区域链接的带宽策略配置文件。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅在网络区域链接受带宽限制，并且您希望使用 CAC 控制该链接上的媒体流量时，应用带宽策略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 仅在网络区域链接受带宽限制，并且您希望使用 CAC 控制该链接上的媒体流量时，应用带宽策略。
+    
 
 
 9.  单击“提交”。

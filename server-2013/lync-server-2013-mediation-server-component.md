@@ -53,18 +53,9 @@ _**上一次修改主题：** 2012-09-21_
 
 ![中介服务器协议图](images/Gg398399.c3d39ba0-e323-4a58-8f07-4e80d3278af2(OCS.15).jpg "中介服务器协议图")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果在 PSTN 网关与 中介服务器之间的网络上使用 TCP 或 RTP/RTCP（而非 SRTP 或 SRTCP），建议采取一些措施以帮助确保网络的安全和隐私。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果在 PSTN 网关与 中介服务器之间的网络上使用 TCP 或 RTP/RTCP（而非 SRTP 或 SRTCP），建议采取一些措施以帮助确保网络的安全和隐私。
+
 
 
 ## 本节内容

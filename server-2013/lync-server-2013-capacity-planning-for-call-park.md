@@ -17,18 +17,8 @@ _**上一次修改主题：** 2015-03-09_
 
 下表介绍可用作容量规划要求基础的 呼叫寄存用户模型。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请注意，在规划灾难恢复容量时，配对池中的每个池都应该能够处理这两个池中的 呼叫寄存服务的工作负载。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 请注意，在规划灾难恢复容量时，配对池中的每个池都应该能够处理这两个池中的 呼叫寄存服务的工作负载。
 
 
 ### 呼叫寄存用户模型

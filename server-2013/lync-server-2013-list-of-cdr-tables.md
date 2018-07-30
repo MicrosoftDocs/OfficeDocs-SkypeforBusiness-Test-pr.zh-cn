@@ -267,18 +267,9 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><a href="lync-server-2013-voipdetails-table.md">Lync Server 2013 中的 VoipDetails 表</a></p></td>
 <td><p>对于每个双方 VoIP/PSTN 呼叫，存储有关呼叫的信息，例如 VoIP 电话的电话 ID、使用的网关以及断开连接方。有关呼叫开始/结束时间和响应代码，请参阅 <a href="lync-server-2013-sessiondetails-table.md">Lync Server 2013 中的 SessionDetails 表</a>。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果呼叫的一方是 VoIP 用户，或者呼叫涉及中介服务器，则会在此表中创建一个记录。不涉及公用电话交换网 (PSTN) 电话的 VoIP/VoIP 呼叫信息会被捕获到 <a href="lync-server-2013-sessiondetails-table.md">Lync Server 2013 中的 SessionDetails 表</a>中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果呼叫的一方是 VoIP 用户，或者呼叫涉及中介服务器，则会在此表中创建一个记录。不涉及公用电话交换网 (PSTN) 电话的 VoIP/VoIP 呼叫信息会被捕获到 <a href="lync-server-2013-sessiondetails-table.md">Lync Server 2013 中的 SessionDetails 表</a>中。
+
 
 </div></td>
 </tr>
@@ -305,18 +296,9 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><a href="lync-server-2013-locations-table.md">Lync Server 2013 中的 Locations 表</a></p></td>
 <td><p>对于每个紧急呼叫（例如增强型 9-1-1 (E9-1-1) 呼叫），存储有关该呼叫的位置信息。有关呼叫开始/结束时间和响应代码，请参阅 <a href="lync-server-2013-sessiondetails-table.md">Lync Server 2013 中的 SessionDetails 表</a>。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>该表仅包含 E9-1-1 呼叫的位置 blob。有关呼叫的其他详细信息，请参阅 SessionDetails 表。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 该表仅包含 E9-1-1 呼叫的位置 blob。有关呼叫的其他详细信息，请参阅 SessionDetails 表。
+
 
 </div></td>
 </tr>

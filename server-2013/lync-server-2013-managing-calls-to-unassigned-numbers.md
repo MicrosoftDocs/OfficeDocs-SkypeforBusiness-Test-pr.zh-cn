@@ -19,18 +19,9 @@ _**上一次修改主题：** 2012-11-01_
 
 本节介绍如何管理未分配的号码范围以处理对未分配的电话号码的呼叫。此外还介绍如何在灾难恢复过程中管理通知（如果您想要在中断期间使用此功能）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在中断期间使用未分配的号码处理是可选的。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在中断期间使用未分配的号码处理是可选的。
+
 
 
 ## 本部分内容

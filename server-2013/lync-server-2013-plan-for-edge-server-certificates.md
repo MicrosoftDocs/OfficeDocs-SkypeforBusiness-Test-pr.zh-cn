@@ -37,18 +37,9 @@ Lync Server 2013 中简化了为边缘服务器创建证书的步骤。
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>临时音频/视频身份验证证书在 Lync Server 2013 中引入，优先于到期的当前证书，它要求一些其他规划。除了用于外部边缘接口的具有多种用途的一个证书外，还需要两个证书，一个分配到 访问边缘服务和 Web 会议边缘服务，另一个证书用于 A/V 边缘服务。有关其他详细信息，请参阅 <a href="lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCertificate">在 Set-CsCertificate 中使用滚动分期 AV 和 OAuth 证书</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 临时音频/视频身份验证证书在 Lync Server 2013 中引入，优先于到期的当前证书，它要求一些其他规划。除了用于外部边缘接口的具有多种用途的一个证书外，还需要两个证书，一个分配到 访问边缘服务和 Web 会议边缘服务，另一个证书用于 A/V 边缘服务。有关其他详细信息，请参阅 <a href="lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCertificate">在 Set-CsCertificate 中使用滚动分期 AV 和 OAuth 证书</a>
+
 
 
 <table>

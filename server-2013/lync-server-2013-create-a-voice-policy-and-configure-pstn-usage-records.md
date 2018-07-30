@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-11-01_
 
 如果要创建新的语音策略，请执行以下步骤。如果要编辑语音策略，请参阅[在 Lync Server 2013 中修改语音策略和配置 PSTN 用法记录](lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md)中的相关步骤。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每个语音策略必须至少具有一条关联的公用电话交换网 (PSTN) 用法记录。要查看企业语音部署中提供的所有 PSTN 用法记录列表及其属性，请参阅<a href="lync-server-2013-view-pstn-usage-records.md">在 Lync Server 2013 中查看 PSTN 用法记录</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 每个语音策略必须至少具有一条关联的公用电话交换网 (PSTN) 用法记录。要查看企业语音部署中提供的所有 PSTN 用法记录列表及其属性，请参阅<a href="lync-server-2013-view-pstn-usage-records.md">在 Lync Server 2013 中查看 PSTN 用法记录</a>。
+
 
 
 ## 创建语音策略
@@ -47,18 +38,9 @@ _**上一次修改主题：** 2012-11-01_
 
 5.  如果语音策略作用域为“用户”，请在“名称”字段中输入策略的描述性名称。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果语音策略作用域为“Site”，将用站点名称填充“新建语音策略”中的“名称”字段，并且无法更改。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果语音策略作用域为“Site”，将用站点名称填充“新建语音策略”中的“名称”字段，并且无法更改。
+    
 
 
 6.  （可选）输入语音策略的其他描述性信息。
@@ -67,18 +49,9 @@ _**上一次修改主题：** 2012-11-01_
     
       - 当配置同时响铃，且电话关闭，电池耗尽或超出服务范围时，**语音邮件转义**可阻止立即将呼叫路由到用户的移动电话语音电子邮件系统。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>此功能仅可通过 Lync Server 命令行管理程序进行配置</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 此功能仅可通过 Lync Server 命令行管理程序进行配置
+        
     
       - **呼叫转接**用于让用户将呼叫转接到其他电话和客户端设备。Lync Server 2013 为呼叫转接提供了极其广范围的配置选项。例如，如果组织不允许将传入呼叫外部转接到 PSTN，则管理员可应用特定语音策略来部署此限制。默认为启用。
     
@@ -96,18 +69,9 @@ _**上一次修改主题：** 2012-11-01_
     
       - 通过**带宽策略覆盖**，管理员可以覆盖特定用户的呼叫允许控制策略决策。默认为禁用。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只能覆盖向用户发出的传入呼叫的策略，而不能覆盖由用户发出的传出呼叫的策略。建立会话后，将准确记录带宽消耗。应慎用此设置，且应保留对恰当的呼叫允许控制决策使用此设置。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 只能覆盖向用户发出的传入呼叫的策略，而不能覆盖由用户发出的传出呼叫的策略。建立会话后，将准确记录带宽消耗。应慎用此设置，且应保留对恰当的呼叫允许控制决策使用此设置。
+        
     
       - 通过**恶意呼叫跟踪**，用户可以通过使用客户端 UI 报告恶意呼叫（如爆炸威胁），接下来在呼叫详细信息记录 (CDR) 中标记呼叫。默认为禁用。
 
@@ -123,18 +87,9 @@ _**上一次修改主题：** 2012-11-01_
         
         2.  在“名称”字段中，输入记录的唯一描述性名称。例如，您可能要为 Redmond 的全职员工创建名为 **Redmond** 的 PSTN 用法记录，而为临时员工创建名为 **RedmondTemps** 的 PSTN 用法记录。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>PSTN 用法记录名称在企业语音部署中必须是唯一的。保存记录后，将无法编辑“名称”字段。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]  
+			> PSTN 用法记录名称在企业语音部署中必须是唯一的。保存记录后，将无法编辑“名称”字段。
+            
         
         3.  使用以下任意方法为此 PSTN 用法记录关联和配置路由：
             
@@ -198,18 +153,9 @@ _**上一次修改主题：** 2012-11-01_
             
             2.  在“名称”字段中，输入记录的唯一描述性名称。
                 
-                <table>
-                <thead>
-                <tr class="header">
-                <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="odd">
-                <td>PSTN 用法记录名称在企业语音部署中必须是唯一的。保存记录后，将无法编辑“名称”字段。</td>
-                </tr>
-                </tbody>
-                </table>
+                > [!NOTE]  
+				> PSTN 用法记录名称在企业语音部署中必须是唯一的。保存记录后，将无法编辑“名称”字段。
+                
             
             3.  使用以下任意方法为此 PSTN 用法记录关联和配置路由：
                 
@@ -241,36 +187,18 @@ _**上一次修改主题：** 2012-11-01_
 
 11. （可选）输入一个号码来测试语音策略，然后单击“执行”。测试结果会显示在“要测试的转换号码”下。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以保存尚未通过测试的语音策略，并在稍后对其进行重新配置。有关详细信息，请参阅<a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中测试语音路由</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以保存尚未通过测试的语音策略，并在稍后对其进行重新配置。有关详细信息，请参阅<a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中测试语音路由</a>。
+    
 
 
 12. 单击“确定”。
 
 13. 在“语音策略”页上，单击“提交”，然后单击“全部提交”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>任何时候创建或修改语音策略，都必须运行“全部提交”命令以发布配置更改。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中发布对语音路由配置所做的待处理更改</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 任何时候创建或修改语音策略，都必须运行“全部提交”命令以发布配置更改。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中发布对语音路由配置所做的待处理更改</a>。
+    
 
 
 14. （可选）语音邮件转义检测呼叫会立即由用户的移动电话语音邮件应答，并断开到移动电话语音邮件的呼叫的连接。这会允许该呼叫继续在用户的其他终结点上响起，从而为该用户提供应答该呼叫的机会。有关如何配置语音邮件策略的详细信息，请参阅[在 Lync Server 2013 中配置语音电子邮件转义](lync-server-2013-configuring-voice-mail-escape.md)。

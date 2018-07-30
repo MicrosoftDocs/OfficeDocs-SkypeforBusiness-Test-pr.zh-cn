@@ -23,18 +23,9 @@ _**上一次修改主题：** 2013-01-19_
 
 根据您的要求，您可在一个或多个位置部署一台或多台边缘服务器。本节介绍 Lync Server 2013 中的外部用户访问，并说明如何规划边缘和反向代理拓扑。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尽管您需要边缘服务器来支持企业语音和外部用户访问，但本节重点关注对 IM、状态、A/V 会议、联盟、Web 会议和 Lync Mobile 的支持。有关企业语音支持的详细信息，请参阅规划文档中的 <a href="lync-server-2013-planning-for-enterprise-voice.md">在 Lync Server 2013 中规划企业语音</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 尽管您需要边缘服务器来支持企业语音和外部用户访问，但本节重点关注对 IM、状态、A/V 会议、联盟、Web 会议和 Lync Mobile 的支持。有关企业语音支持的详细信息，请参阅规划文档中的 <a href="lync-server-2013-planning-for-enterprise-voice.md">在 Lync Server 2013 中规划企业语音</a>。
+
 
 
 ## 本部分内容

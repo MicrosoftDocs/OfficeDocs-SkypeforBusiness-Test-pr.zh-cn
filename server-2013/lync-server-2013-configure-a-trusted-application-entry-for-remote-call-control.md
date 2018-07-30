@@ -17,18 +17,8 @@ _**上一次修改主题：** 2015-11-02_
 
 必须将 SIP/CSTA 网关配置为受信任应用程序， Lync Server 才能使用静态路由将呼叫路由到网关。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要从 Lync Server 部署的早期版本中迁移用户，请确保在使用本主题中的过程之前删除为 SIP/CSTA 网关创建的所有现有受信任的应用程序项（以前称为授权主机条目）。有关详细信息，请参阅 <a href="lync-server-2013-remove-a-legacy-authorized-host-optional.md">在 Lync Server 2013 中删除旧版授权主机（可选）</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果要从 Lync Server 部署的早期版本中迁移用户，请确保在使用本主题中的过程之前删除为 SIP/CSTA 网关创建的所有现有受信任的应用程序项（以前称为授权主机条目）。有关详细信息，请参阅 <a href="lync-server-2013-remove-a-legacy-authorized-host-optional.md">在 Lync Server 2013 中删除旧版授权主机（可选）</a>。
 
 
 ## 为 SIP/CSTA 网关配置受信任的应用程序项

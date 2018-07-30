@@ -21,32 +21,14 @@ _**上一次修改主题：** 2012-10-04_
 
 { 中介服务器 FQDN，中介服务器 侦听端口（TLS 或 TCP）：网关 IP 和 FQDN，网关侦听端口}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题假定您已设置至少带有一个关联或独立的 中介服务器 或池的 PSTN 网关和根中继 ，如部署文档的 <a href="lync-server-2013-define-a-gateway-in-topology-builder.md">在 Lync Server 2013 拓扑生成器中定义网关</a>中所述。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主题假定您已设置至少带有一个关联或独立的 中介服务器 或池的 PSTN 网关和根中继 ，如部署文档的 <a href="lync-server-2013-define-a-gateway-in-topology-builder.md">在 Lync Server 2013 拓扑生成器中定义网关</a>中所述。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题假定您已经在至少一个中央站点中设置到至少一个 前端池或 Standard Edition Server，如部署文档的 <a href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">在 Lync Server 2013 中定义和配置前端池或 Standard Edition 服务器</a>和 <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中发布拓扑</a>中所述。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本主题假定您已经在至少一个中央站点中设置到至少一个 前端池或 Standard Edition Server，如部署文档的 <a href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">在 Lync Server 2013 中定义和配置前端池或 Standard Edition 服务器</a>和 <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中发布拓扑</a>中所述。
+
 
 
 ## 在 中介服务器 和对等网关之间定义其他中继
@@ -59,18 +41,9 @@ _**上一次修改主题：** 2012-10-04_
 
 3.  在“定义新的 Trunk”中，指定唯一标识中继的友好名称。您不得有两个具有相同名称的中继。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您作为传输类型指定传输层安全性 (TLS)，则必须指定 FQDN，而不是 中介服务器 对等的 IP 地址。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您作为传输类型指定传输层安全性 (TLS)，则必须指定 FQDN，而不是 中介服务器 对等的 IP 地址。
+    
 
 
 4.  在“关联的 PSTN 网关”下，选择 PSTN 对等网关以与此中继相关联。
@@ -81,49 +54,22 @@ _**上一次修改主题：** 2012-10-04_
 
 6.  在“SIP 传输协议”下，单击对等方使用的传输类型。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>为了安全起见，我们强烈建议您部署可使用 TLS 的 中介服务器的对等方。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 为了安全起见，我们强烈建议您部署可使用 TLS 的 中介服务器的对等方。
+    
 
 
 7.  在“关联的中介服务器”下，选择 中介服务器池以与此对等方的根中继相关联
 
 8.  在“关联的中介服务器端口”下，键入 中介服务器将从对等方接收 SIP 消息的侦听端口。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>借助 Lync Server 2013 中的多个中继支持，具有不同中继名称的两个中继无法使用具有相同的“中介服务器 端口”和“IP/PSTN 网关的侦听端口”进行配置</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 借助 Lync Server 2013 中的多个中继支持，具有不同中继名称的两个中继无法使用具有相同的“中介服务器 端口”和“IP/PSTN 网关的侦听端口”进行配置
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>借助 Lync Server 2013 中的多个中继支持，可在 中介服务器上配置多个与多个对等方通信的 SIP 信号端口。当定义中继时，对于由 中介服务器允许的相应协议，“关联的 中介服务器端口”号必须在侦听端口的范围内。此端口范围在 Lync Server 2013 和 中介服务器池 范围下定义。右键单击相应的 中介服务器池，并选择“编辑属性”。在“侦听端口”字段中指定端口范围。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!NOTE]  
+    > 借助 Lync Server 2013 中的多个中继支持，可在 中介服务器上配置多个与多个对等方通信的 SIP 信号端口。当定义中继时，对于由 中介服务器允许的相应协议，“关联的 中介服务器端口”号必须在侦听端口的范围内。此端口范围在 Lync Server 2013 和 中介服务器池 范围下定义。右键单击相应的 中介服务器池，并选择“编辑属性”。在“侦听端口”字段中指定端口范围。
+    
 
 
 9.  单击“确定”。

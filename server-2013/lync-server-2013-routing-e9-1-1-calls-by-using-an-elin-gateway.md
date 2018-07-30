@@ -25,18 +25,9 @@ _**上一次修改主题：** 2016-12-08_
 
 ELIN 网关仅支持来自您组织的网络中的紧急呼叫。它们不支持从您的网络外发出的紧急呼叫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关将 SIP 中继连接用于紧急呼叫的详细信息，请参阅 <a href="lync-server-2013-routing-e9-1-1-calls-by-using-a-sip-trunk.md">在 Lync Server 2013 中使用 SIP 中继路由 E9-1-1 呼叫</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关将 SIP 中继连接用于紧急呼叫的详细信息，请参阅 <a href="lync-server-2013-routing-e9-1-1-calls-by-using-a-sip-trunk.md">在 Lync Server 2013 中使用 SIP 中继路由 E9-1-1 呼叫</a>。
+
 
 
 下图显示了在使用 ELIN 网关时如何将紧急呼叫从 Lync Server 路由到 PSAP。

@@ -17,19 +17,10 @@ _**上一次修改主题：** 2012-09-17_
 
 若要部署 E9-1-1，首先需配置紧急呼叫语音路由。有关创建语音路由的详细信息，请参阅[在 Lync Server 2013 中创建语音路由](lync-server-2013-create-a-voice-route.md)。例如，如果部署包括主要 SIP 中继和辅助 SIP 中继，则可定义多个路由。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要在 E9-1-1 INVITE 中包含位置信息，您需要配置连接到 E9-1-1 服务提供商的 SIP 中继以便通过网关路由紧急呼叫。为此，请在 <strong>set-cstrunkconfiguration</strong> cmdlet 上将 EnablePIDFLOSupport 标志设置为 True。EnablePIDFLOSupport 的默认值为 False。例如：<code>set-cstrunkconfiguration Service:PstnGateway:192.168.0.241 -EnablePIDFLOSupport $true.</code><br />
-无需为回退公用电话交换网 (PSTN) 网关和紧急位置标识号 (ELIN) 网关启用接收位置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要在 E9-1-1 INVITE 中包含位置信息，您需要配置连接到 E9-1-1 服务提供商的 SIP 中继以便通过网关路由紧急呼叫。为此，请在 <strong>Set-CsTrunkConfiguration</strong> cmdlet 上将 EnablePIDFLOSupport 标志设置为 True。EnablePIDFLOSupport 的默认值为 False。例如：<code>Set-CsTrunkConfiguration Service:PstnGateway:192.168.0.241 -EnablePIDFLOSupport $true.</code><br />
+无需为回退公用电话交换网 (PSTN) 网关和紧急位置标识号 (ELIN) 网关启用接收位置。
+
 
 
 有关使用语音路由的详细信息，请参阅 Lync Server 命令行管理程序文档中的以下 cmdlet：

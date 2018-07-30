@@ -110,18 +110,9 @@ Lync Server 2013持久聊天服务器在 Microsoft Office 365 中不可用。此
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关安装消息队列的信息，请参阅部署文档中的 <a href="lync-server-2013-install-operating-systems-and-prerequisite-software-on-servers.md">在服务器上安装适用于 Lync Server 2013 的操作系统和必备软件</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关安装消息队列的信息，请参阅部署文档中的 <a href="lync-server-2013-install-operating-systems-and-prerequisite-software-on-servers.md">在服务器上安装适用于 Lync Server 2013 的操作系统和必备软件</a>。
+    
 
 
 在 Lync Server 2013 中，对高可用性和灾难恢复方面都进行了改进：

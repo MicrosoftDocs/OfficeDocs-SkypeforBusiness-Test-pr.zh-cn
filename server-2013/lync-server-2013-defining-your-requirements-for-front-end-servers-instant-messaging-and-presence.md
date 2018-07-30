@@ -27,18 +27,9 @@ _**上一次修改主题：** 2013-10-07_
 
   - **公共用户** 公共 IM 服务（例如，Internet 服务的 Windows Live 网络、Yahoo\! 和 AOL 提供的 IM 服务）的用户，以及使用可扩展消息传递和状态协议 (XMPP) 的提供商和服务器（例如，Google Talk）的用户。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>请注意，与 Windows Live、AOL 和 Yahoo! 的公共 IM 连接可能需要使用单独的许可证。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 请注意，与 Windows Live、AOL 和 Yahoo! 的公共 IM 连接可能需要使用单独的许可证。
+    
     
     <table>
     <colgroup>

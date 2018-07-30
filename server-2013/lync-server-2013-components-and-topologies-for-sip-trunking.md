@@ -23,33 +23,14 @@ _**上一次修改主题：** 2012-09-21_
 
 如图所示，企业网络与公用电话交换网 (PSTN) 服务提供商之间的连接使用 IP 虚拟专用网络 (VPN)。这个专用网络旨在提供 IP 连接、增强安全性和（可选的）获取服务质量 (QoS) 保证。由于 VPN 的特性，您无需为 SIP 信号流量使用传输层安全性 (TLS)，也无需为媒体流量使用安全实时传输协议 (SRTP)。因此，企业与服务提供商之间的连接由用于 SIP 的普通 TCP 连接以及用于通过 IP VPN 进行隧道传输的媒体的普通实时传输协议 (RTP)（通过 UDP）构成。确保 VPN 路由器之间的所有防火墙打开端口以允许 VPN 路由器进行通信，并且 VPN 路由器外部边缘上的 IP 地址公共可路由。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请与服务提供商联系，以确定是否提供包括故障转移在内的高可用性支持。如果提供，则需要确定设置过程。例如，是否需要在每台 中介服务器上只配置一个 IP 地址和一个 SIP 中继，或者，是否需要在每台 中介服务器上配置多个 SIP 中继？<br />
-如果您具有多个 中央站点，还可以询问服务提供商是否有能力启用与另一个 中央站点的连接。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 请与服务提供商联系，以确定是否提供包括故障转移在内的高可用性支持。如果提供，则需要确定设置过程。例如，是否需要在每台 中介服务器上只配置一个 IP 地址和一个 SIP 中继，或者，是否需要在每台 中介服务器上配置多个 SIP 中继？<br />
+如果您具有多个 中央站点，还可以询问服务提供商是否有能力启用与另一个 中央站点的连接。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于 SIP 中继，强烈建议您部署独立的 中介服务器。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-deploying-mediation-servers-and-defining-peers.md">在 Lync Server 2013 中部署中介服务器和定义对等方</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 对于 SIP 中继，强烈建议您部署独立的 中介服务器。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-deploying-mediation-servers-and-defining-peers.md">在 Lync Server 2013 中部署中介服务器和定义对等方</a>。
+
 
 
 ## 为 SIP 中继保护中介服务器的安全

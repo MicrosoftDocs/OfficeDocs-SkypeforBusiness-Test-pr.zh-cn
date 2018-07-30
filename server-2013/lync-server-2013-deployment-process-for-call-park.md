@@ -39,18 +39,9 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>在通道表中配置呼叫寄存通道范围</p></td>
 <td><p>使用 Lync Server 控制面板 或 <strong>New-CSCallParkOrbit</strong> cmdlet 在呼叫寄存通道表中创建通道范围，并将其与托管呼叫寄存应用程序的应用程序服务相关联。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为与现有拨号计划进行无缝集成，通道范围通常配置为虚拟分机块。不支持将外线直拨分机 (DID) 号码分配为呼叫寄存通道表中的通道号码。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 为与现有拨号计划进行无缝集成，通道范围通常配置为虚拟分机块。不支持将外线直拨分机 (DID) 号码分配为呼叫寄存通道表中的通道号码。
+
 
 </div></td>
 <td><p>RTCUniversalServerAdmins</p>
@@ -86,33 +77,15 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>配置语音策略以为用户启用 呼叫寄存</p></td>
 <td><p>使用 Lync Server 控制面板或带有 <strong>EnableCallPark</strong> 选项的 <strong>Set-CSVoicePolicy</strong> cmdlet，在语音策略中为用户启用 呼叫寄存。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，对所有用户禁用呼叫寄存。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 默认情况下，对所有用户禁用呼叫寄存。
+
 
 </div>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果具有多个语音策略，请确保为每个语音策略（而不只是默认策略）设置 EnableCallPark 属性。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果具有多个语音策略，请确保为每个语音策略（而不只是默认策略）设置 EnableCallPark 属性。
+
 
 </div></td>
 <td><p>RTCUniversalServerAdmins</p>

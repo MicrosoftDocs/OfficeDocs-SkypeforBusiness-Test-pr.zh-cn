@@ -79,18 +79,9 @@ _**上一次修改主题：** 2012-10-07_
 
 9.  在“SIP 传输协议”中，单击 Survivable Branch Appliance 或Survivable Branch Server使用的传输协议，然后单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>出于安全考虑，强烈建议使用传输层安全性 (TLS)。如果要定义 Survivable Branch Appliance，请参考 Survivable Branch Appliance 供应商文档，以验证 Survivable Branch Appliance 是否支持 TLS 协议。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 出于安全考虑，强烈建议使用传输层安全性 (TLS)。如果要定义 Survivable Branch Appliance，请参考 Survivable Branch Appliance 供应商文档，以验证 Survivable Branch Appliance 是否支持 TLS 协议。
+    
 
 
 10. 在控制台树中，右键单击新的 Survivable Branch Appliance 或 Survivable Branch Server，再单击“拓扑”，然后单击“发布”。

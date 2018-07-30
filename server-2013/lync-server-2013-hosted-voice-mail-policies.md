@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-10-01_
 
 *托管语音邮件策略* 向 Lync Server 2013 ExUM 路由应用程序提供有关可在哪里为邮箱位于托管 Exchange 服务的用户路由呼叫的信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅当 Lync Server 2013 与托管 Exchange UM 集成时才需要托管语音邮件策略。对于与内部 Exchange UM 的集成，则不需要这些策略。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 仅当 Lync Server 2013 与托管 Exchange UM 集成时才需要托管语音邮件策略。对于与内部 Exchange UM 的集成，则不需要这些策略。
+
 
 
 ## 托管语音邮件策略作用域
@@ -41,18 +32,9 @@ _**上一次修改主题：** 2012-10-01_
 
   - *每用户* 策略只会影响各个用户或组。要强制实施每用户策略，必须将其显式分配给各个用户、组或联系人对象。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在大多数情况下，只需要一个托管语音邮件策略。可以经常修改全局策略以满足您的所有需要。如果部署多个托管语音邮件策略，则所有这些策略都具有每用户作用域。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在大多数情况下，只需要一个托管语音邮件策略。可以经常修改全局策略以满足您的所有需要。如果部署多个托管语音邮件策略，则所有这些策略都具有每用户作用域。
+
 
 
 ## 托管语音邮件策略属性
@@ -61,41 +43,23 @@ _**上一次修改主题：** 2012-10-01_
 
   - **Destination ：** 托管 Exchange UM 服务的完全限定域名 (FQDN)。此值由内部 Lync Server 边缘服务器用于进行路由。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange Online 的 FQDN 为 exap.um.outlook.com。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Exchange Online 的 FQDN 为 exap.um.outlook.com。
+    
 
 
   - **Organization ：** 托管 Lync Server 2013 用户的邮箱的托管 Exchange UM 服务上的租户 FQDN。语音邮件策略可以包含多个组织。如果策略中包含多个组织，则此属性必须是以逗号分隔的托管 Lync Server 2013 用户邮箱的 Exchange Server 租户列表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>托管 Exchange UM 服务的租户管理员将提供 Destination 和 Organization 属性设置的所需值。要配置策略，必须运行 New-CsHostedVoicemailPolicy cmdlet 或使用 set-cshostedvoicemailpolicy cmdlet 来修改一个存在的策略（例如，全局策略）。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 托管 Exchange UM 服务的租户管理员将提供 Destination 和 Organization 属性设置的所需值。要配置策略，必须运行 New-CsHostedVoicemailPolicy cmdlet 或使用 Set-CsHostedVoicemailPolicy cmdlet 来修改一个存在的策略（例如，全局策略）。
+
 
 
 有关管理托管语音邮件策略的详细信息，请参阅 Lync Server 命令行管理程序文档中以下 cmdlet 的相关内容：
 
   - New-CsHostedVoicemailPolicy
 
-  - set-cshostedvoicemailpolicy
+  - Set-CsHostedVoicemailPolicy
 
   - Get-CsHostedVoicemailPolicy
 

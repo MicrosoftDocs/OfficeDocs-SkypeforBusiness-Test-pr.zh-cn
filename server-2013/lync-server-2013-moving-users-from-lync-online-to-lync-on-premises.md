@@ -17,18 +17,9 @@ _**上一次修改主题：** 2014-05-08_
 
 您的组织是否在部署本地 Lync Server 之前部署了 Lync Online？而现在您希望将最初在 Lync Online 中启用了 Lync 的用户帐户迁移到本地 Lync Server 部署？本节将帮您完成这一任务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节仅介绍迁移最初在 Lync Online 中启用了 Lync 的用户帐户的信息。或许您有一些最初为本地 Lync 启用的用户帐户，随后又迁移到了 Lync Online？如果是这样，如果您希望将这些帐户再度迁移回本地，迁移过程也非常简单：<a href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">管理混合 Lync Server 2013 部署中的用户</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节仅介绍迁移最初在 Lync Online 中启用了 Lync 的用户帐户的信息。或许您有一些最初为本地 Lync 启用的用户帐户，随后又迁移到了 Lync Online？如果是这样，如果您希望将这些帐户再度迁移回本地，迁移过程也非常简单：<a href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">管理混合 Lync Server 2013 部署中的用户</a>。
+
 
 
   - [开始将用户从 Lync Online 迁移到本地 Lync 的第一步](lync-server-2013-first-steps-before-you-start-migrating-users-from-lync-online-to-lync-on-premises.md)

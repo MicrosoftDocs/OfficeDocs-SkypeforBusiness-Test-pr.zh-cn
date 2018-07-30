@@ -15,18 +15,9 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2012-09-12_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题假设已配置了媒体旁路全局设置，并为媒体旁路配置了网络区域和网络站点。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主题假设已配置了媒体旁路全局设置，并为媒体旁路配置了网络区域和网络站点。
+
 
 
 网络中的每个子网必须与特定网络站点相关联。这是因为子网信息用于确定端点所在的网络站点。当会话双方的位置已知时，媒体旁路可以确定将媒体发送到何处进行处理。

@@ -33,18 +33,9 @@ Lync Server 2013 支持以下数据库管理系统：
         
         我们支持在前端服务器和 Standard Edition 服务器上修补和升级 Microsoft SQL Server。但是，当在前端服务器上执行任何种类的升级或修补时，您必须考虑仲裁要求。有关详细信息，请参阅[在 Lync Server 2013 中升级或更新前端服务器](lync-server-2013-upgrade-or-update-front-end-servers.md)和 [Lync Server 2013 中适用于前端服务器、即时消息和状态的拓扑和组件](lync-server-2013-topologies-and-components-for-front-end-servers-instant-messaging-and-presence.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 会自动在每个 Standard Edition 服务器和每个前端服务器服务器上安装 Microsoft SQL Server 2012 Express（64 位版本）。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 2013 会自动在每个 Standard Edition 服务器和每个前端服务器服务器上安装 Microsoft SQL Server 2012 Express（64 位版本）。
+    
 
 
 <table>

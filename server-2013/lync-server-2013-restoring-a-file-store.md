@@ -39,16 +39,7 @@ Standard Edition 的文件存储通常位于 Standard Edition Server 上。Enter
     
         Enable-CsTopology
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅当您在还原过程中没有运行拓扑生成器时，才需要执行此步骤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 仅当您在还原过程中没有运行拓扑生成器时，才需要执行此步骤。
+    
 

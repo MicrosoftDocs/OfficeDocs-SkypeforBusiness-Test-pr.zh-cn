@@ -29,26 +29,14 @@ Lync Server 2013 同时支持计划内会议和临时会议。
 
 部署 Lync Server 2013前端服务器时，可以选择是否还部署 Web 会议、A/V 会议和电话拨入式会议功能。IM 会议功能始终与 IM 对话功能一起自动部署在 Lync Server 2013前端服务器上。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的部署包括使用 Office Communicator 2007 R2 客户端（包括 Live Meeting 控制台或 Microsoft Office Outlook 会议外接程序）组织的会议，则当这些会议迁移到 Lync Server 2013 后，它们将具有以下限制：
+> [!NOTE]  
+> 如果您的部署包括使用 Office Communicator 2007 R2 客户端（包括 Live Meeting 控制台或 Microsoft Office Outlook 会议外接程序）组织的会议，则当这些会议迁移到 Lync Server 2013 后，它们将具有以下限制：
 <ul>
 <li><p>会议中的用户将不能使用数据协作功能，包括文档协作、应用程序共享和桌面共享。</p></li>
 <li><p>可能出现稳定性问题，因为不能通过 Lync Server 2013 支持 Office Communicator 2007 R2 客户端。</p></li>
 </ul>
-为避免这些问题，请使用 Lync 2010 联机会议外接程序或 Lync 2013 联机会议外接程序重新计划使用包含 Outlook 2010 或 Outlook 2013 的 Office Communicator 2007 R2 客户端组织的会议。</td>
-</tr>
-</tbody>
-</table>
+为避免这些问题，请使用 Lync 2010 联机会议外接程序或 Lync 2013 联机会议外接程序重新计划使用包含 Outlook 2010 或 Outlook 2013 的 Office Communicator 2007 R2 客户端组织的会议。
+
 
 
 以下各节介绍部署各种会议功能所要求的事项，包括规划过程、组件、软硬件要求和部署过程。

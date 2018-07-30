@@ -37,18 +37,9 @@ _**上一次修改主题：** 2013-11-07_
 
 虽然可以选择将公共 CA 用于内部边缘证书，但是我们建议您将内部企业 CA 用于其他证书，以将证书的成本降到最低。有关 边缘服务器的证书要求摘要，请参阅 [Lync Server 2013 中外部用户访问的证书要求](lync-server-2013-certificate-requirements-for-external-user-access.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>安装 边缘服务器时，安装程序还包括协助请求、分配和安装证书的任务的证书向导，如 <a href="lync-server-2013-set-up-edge-certificates.md">为 Lync Server 2013 设置边缘证书</a>一节所述。如果要在安装 边缘服务器之前请求证书（例如为了在实际部署 边缘服务器组件期间节省时间），则可以使用内部服务器执行此操作，前提是确保证书可导出且包含全部所需的使用者替代名称。本文档不提供使用内部服务器请求证书的过程。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 安装 边缘服务器时，安装程序还包括协助请求、分配和安装证书的任务的证书向导，如 <a href="lync-server-2013-set-up-edge-certificates.md">为 Lync Server 2013 设置边缘证书</a>一节所述。如果要在安装 边缘服务器之前请求证书（例如为了在实际部署 边缘服务器组件期间节省时间），则可以使用内部服务器执行此操作，前提是确保证书可导出且包含全部所需的使用者替代名称。本文档不提供使用内部服务器请求证书的过程。
+
 
 
 ## 从公共 CA 请求证书

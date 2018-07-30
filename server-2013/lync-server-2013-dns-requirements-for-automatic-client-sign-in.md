@@ -23,18 +23,9 @@ _**上一次修改主题：** 2015-03-09_
 
   - 创建内部 DNS SRV 记录以支持此服务器或池的自动客户端登录。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在下列记录要求中，SIP 域是指分配给用户的 SIP URI 的主机部分。例如，如果 SIP URI 的形式为 *@contoso.com，则 contoso.com 即为 SIP 域。SIP 域通常不同于内部 Active Directory 域。一个组织也可以支持多个 SIP 域。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在下列记录要求中，SIP 域是指分配给用户的 SIP URI 的主机部分。例如，如果 SIP URI 的形式为 *@contoso.com，则 contoso.com 即为 SIP 域。SIP 域通常不同于内部 Active Directory 域。一个组织也可以支持多个 SIP 域。
+    
 
 
 要实现客户端的自动配置，必须创建内部 DNS SRV 记录，将下列记录之一映射到分发来自 Lync 客户端的登录请求的前端池或 Standard Edition Server 的完全限定域名 (FQDN)：
@@ -75,18 +66,9 @@ _**上一次修改主题：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，DNS 记录的查询遵守用户名与 SRV 记录中的域之间的严格域名匹配。如果更希望客户端 DNS 查询改用后缀匹配，可以配置 DisableStrictDNSNaming 组策略。有关详细信息，请参阅规划文档中的<a href="lync-server-2013-planning-for-clients-and-devices.md">规划 Lync Server 2013 中的客户端和设备</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 默认情况下，DNS 记录的查询遵守用户名与 SRV 记录中的域之间的严格域名匹配。如果更希望客户端 DNS 查询改用后缀匹配，可以配置 DisableStrictDNSNaming 组策略。有关详细信息，请参阅规划文档中的<a href="lync-server-2013-planning-for-clients-and-devices.md">规划 Lync Server 2013 中的客户端和设备</a>。
+
 
 
 ## 客户端自动登录所需证书和 DNS 记录的示例

@@ -54,18 +54,8 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>dir01.contoso.net</p></td>
 <td><p>无条目</p></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请注意，最小密钥长度为 1024，但您可能收到一条警告，告知建议的最小密钥长度为 2048 位。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 请注意，最小密钥长度为 1024，但您可能收到一条警告，告知建议的最小密钥长度为 2048 位。
 
 </div>
 <p>OAuthTokenIssuer 证书是单用途证书，用于在大型环境中对服务器进行身份验证，并且可从内部 CA 或公共 CA 请求。此证书是必需的。</p></td>

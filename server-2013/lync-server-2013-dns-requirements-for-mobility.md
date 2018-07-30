@@ -114,16 +114,7 @@ DNS 记录可以是 CNAME 记录或 A（主机）记录。
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lyncdiscover（又称自动发现）流量会通过反向代理。SRV 记录指向通过访问边缘服务解析的一条记录。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lyncdiscover（又称自动发现）流量会通过反向代理。SRV 记录指向通过访问边缘服务解析的一条记录。
+
 

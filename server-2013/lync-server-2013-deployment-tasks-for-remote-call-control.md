@@ -17,19 +17,10 @@ _**上一次修改主题：** 2016-12-08_
 
 本主题介绍为 Lync Server 环境中的用户启用远程呼叫控制时必须执行的部署任务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要迁移以前在 Microsoft Office Communicator 2007 R2 中启用了远程呼叫控制的用户，则在开始执行本主题中介绍的远程呼叫控制部署任务之前，必须先执行另外一个部署任务。在迁移到 Lync Server 的过程中，必须使用适当的 Office Communications Server 2007 R2 管理工具删除受信任应用程序项（以前称为 <em>授权主机项</em> ）。<br />
-有关删除授权主机的详细信息，请参阅<a href="lync-server-2013-remove-a-legacy-authorized-host-optional.md">在 Lync Server 2013 中删除旧版授权主机（可选）</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果要迁移以前在 Microsoft Office Communicator 2007 R2 中启用了远程呼叫控制的用户，则在开始执行本主题中介绍的远程呼叫控制部署任务之前，必须先执行另外一个部署任务。在迁移到 Lync Server 的过程中，必须使用适当的 Office Communications Server 2007 R2 管理工具删除受信任应用程序项（以前称为 <em>授权主机项</em> ）。<br />
+有关删除授权主机的详细信息，请参阅<a href="lync-server-2013-remove-a-legacy-authorized-host-optional.md">在 Lync Server 2013 中删除旧版授权主机（可选）</a>。
+
 
 
 ## 步骤 1：安装和配置 SIP/CSTA 网关，以与 PBX 进行通信

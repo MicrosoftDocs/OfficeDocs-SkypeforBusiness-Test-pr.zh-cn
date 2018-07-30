@@ -43,18 +43,9 @@ Lync Server 2013 存档要求使用 SQL Server 数据库软件存储已存档数
 
 您必须先设置 SQL Server 平台，然后才能部署和启用存档。如果用于发布拓扑的帐户具有适当的管理员权限，则可在发布拓扑时创建存档数据库 (LcsLog)。您稍后还可创建数据库（包括在安装过程中）。有关 SQL Server 的详细信息，请参阅 SQL Server 技术中心 ([http://go.microsoft.com/fwlink/?linkid=129045\&clcid=0x804](http://go.microsoft.com/fwlink/?linkid=129045%26clcid=0x804))。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>确保 SQL Server 代理服务启动类型为“自动”，并且 SQL Server 代理服务正在针对容纳存档数据库的 SQL 实例运行，以便默认存档 SQL Server 维护作业在 SQL Server 代理服务的控制下按计划运行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 确保 SQL Server 代理服务启动类型为“自动”，并且 SQL Server 代理服务正在针对容纳存档数据库的 SQL 实例运行，以便默认存档 SQL Server 维护作业在 SQL Server 代理服务的控制下按计划运行。
+
 
 
 ## 设置文件存储

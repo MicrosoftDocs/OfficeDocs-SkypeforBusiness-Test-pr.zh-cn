@@ -21,18 +21,9 @@ Lync Server 2013 采用的方法是对服务器到服务器身份验证使用单
 
 OAuth 身份验证通常涉及到三方：一台授权服务器和两个需要相互通信的领域。（也可以在不使用授权服务器的情况下执行服务器到服务器身份验证，下文中将会讨论这一过程。）安全令牌由授权服务器（也称为安全令牌服务器）颁发给需要通信的两个领域；这些令牌会确认一个领域是否应信任源自另一个领域的通信。例如，授权服务器颁发的令牌可能验证来自 Lync Server 2013 领域的用户是否能够访问指定的 Exchange 2013 领域，以及相反情况。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>领域只是一个安全容器。默认情况下，Lync Server 2013 将您的默认 SIP 域用作其 OAuth 领域。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 领域只是一个安全容器。默认情况下，Lync Server 2013 将您的默认 SIP 域用作其 OAuth 领域。
+
 
 
 Lync Server 2013 支持三种服务器到服务器身份验证方案。使用 Lync Server 2013，您可以：
@@ -59,18 +50,9 @@ Lync Server 2013 支持三种服务器到服务器身份验证方案。使用 Ly
 
   - 将 Lync Server 2013 将与之通信的服务器配置为“合作伙伴应用程序”。例如，如果 Lync Server 2013 需要与 Exchange 2013 通信，则需要将 Exchange 配置为合作伙伴应用程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>“合作伙伴应用程序”是 Lync Server 2013 需要/无需通过第三方安全令牌服务器即可与之直接交换安全令牌的任何应用程序。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> “合作伙伴应用程序”是 Lync Server 2013 需要/无需通过第三方安全令牌服务器即可与之直接交换安全令牌的任何应用程序。
+
 
 
 请注意，OAuth 是产品的核心部分，不可禁用或删除。

@@ -31,16 +31,7 @@ _**上一次修改主题：** 2012-10-06_
 
 消息删除后，便无法撤销该操作。但是，如果备份了已删除消息，则可还原这些消息。如果启用 持久聊天合规性服务器，则将在合规性数据库中保留旧消息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此聊天室数据使用情况适用于 Lync Server 2013持久聊天服务器 API 应用程序，调用管理员角色的情况除外。 持久聊天服务器 API 无法用于执行任何管理员操作。您必须在 Lync Server 命令行管理程序中执行这些操作。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此聊天室数据使用情况适用于 Lync Server 2013持久聊天服务器 API 应用程序，调用管理员角色的情况除外。 持久聊天服务器 API 无法用于执行任何管理员操作。您必须在 Lync Server 命令行管理程序中执行这些操作。
+
 

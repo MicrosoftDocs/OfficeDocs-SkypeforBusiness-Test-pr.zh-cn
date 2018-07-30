@@ -29,18 +29,9 @@ _**上一次修改主题：** 2013-02-22_
 
 5.  在“编辑 Lync Server 用户”中的“语音策略”下，选择要应用的用户策略。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>“&lt;自动&gt;”设置将应用默认服务器或全局策略设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > “&lt;自动&gt;”设置将应用默认服务器或全局策略设置。
+    
 
 
 ## 使用 Lync Server 命令行管理程序分配用户特定的语音策略

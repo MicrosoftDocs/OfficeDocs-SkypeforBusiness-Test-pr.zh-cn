@@ -65,18 +65,9 @@ _**上一次修改主题：** 2013-01-21_
     
       - Office Web Apps Server，当会议被定义并配置为 Lync Server 拓扑的一部分时
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Office Web Apps Server 是一个单独的角色服务器，并未被配置为外部 Web 服务的一部分。此服务器单独发布用于客户端访问。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> Office Web Apps Server 是一个单独的角色服务器，并未被配置为外部 Web 服务的一部分。此服务器单独发布用于客户端访问。
+        
 
 
 5.  定义每个服务的 SSL 桥接。外部端口 TCP 443 映射到 TCP 4443 的外部 Web 服务端口。对于未加密的 HTTP，端口 TCP 80 映射到外部 Web 服务端口 TCP 8080

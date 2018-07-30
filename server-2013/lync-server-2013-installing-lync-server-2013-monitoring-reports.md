@@ -17,18 +17,9 @@ _**上一次修改主题：** 2015-03-09_
 
 Microsoft Lync Server 2013 监控报告将为您提供大量有关您组织中进行的通信会话的质量和数量的信息。但是，在安装 Lync Server 2013 时不会自动安装监控报告；相反，您必须在计算机上安装 Lync Server 之后单独安装监控报告。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议您在安装监控数据库的同一台计算机上安装监控报告。这可简化分配用于访问报告的权限的过程：在承载监控存储的计算机上安装监控报告意味着，您无需配置允许一台计算机上的数据库与另一台计算机上正在运行的 Reporting Services 进行交互的权限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 建议您在安装监控数据库的同一台计算机上安装监控报告。这可简化分配用于访问报告的权限的过程：在承载监控存储的计算机上安装监控报告意味着，您无需配置允许一台计算机上的数据库与另一台计算机上正在运行的 Reporting Services 进行交互的权限。
+
 
 
 Lync Server 监控报告包含 30 多种报告，这些报告旨在提供有关会议、点对点 IM 会话、用户注册、响应组应用程序等内容的详细信息。在 2013 版本中，Lync Server 监控报告包括许多增强功能：
@@ -41,18 +32,9 @@ Lync Server 监控报告包含 30 多种报告，这些报告旨在提供有关�
 
 监控报告文档中提供了有关各个报告的详细信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 中还包括了一个新报告，即 QoE 呼叫详细信息子报告。但此报告主要供内部使用，且无法直接访问。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 中还包括了一个新报告，即 QoE 呼叫详细信息子报告。但此报告主要供内部使用，且无法直接访问。
+
 
 
 可通过两种方法安装 Lync Server 监控报告：使用 Lync Server 部署向导或使用 Lync Server 2013 安装文件附带的 Windows PowerShell 脚本。无论您使用哪种方法安装此报告，都必须先确保：

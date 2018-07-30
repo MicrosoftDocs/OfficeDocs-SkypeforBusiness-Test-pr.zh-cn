@@ -29,29 +29,9 @@ _**上一次修改主题：** 2012-10-02_
 
 2.  安装 OCSWMIBC.MSI。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>OCSWMIBC.msi 必须安装在运行拓扑生成器合并向导的计算机上。不过，建议将 OCSWMIBC.msi 安装在拓扑中的所有前端服务器上。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > OCSWMIBC.msi 必须安装在运行拓扑生成器合并向导的计算机上。不过，建议将 OCSWMIBC.msi 安装在拓扑中的所有前端服务器上。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>OCSWMIBC.msi 可以安装在域中安装了 Lync Server 2013 核心组件和 Lync Server 2013 命令行管理程序且有权访问 Office Communications Server 2007 R2 拓扑（Active Directory 域服务 (AD DS) 和 SQL Server 的 WMI 提供程序）的任何计算机上。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > OCSWMIBC.msi 可以安装在域中安装了 Lync Server 2013 核心组件和 Lync Server 2013 命令行管理程序且有权访问 Office Communications Server 2007 R2 拓扑（Active Directory 域服务 (AD DS) 和 SQL Server 的 WMI 提供程序）的任何计算机上。
 

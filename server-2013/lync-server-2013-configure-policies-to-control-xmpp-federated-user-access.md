@@ -19,18 +19,9 @@ _**上一次修改主题：** 2012-11-01_
 
 当您配置用以支持可扩展消息传递和状态协议 (XMPP) 联盟合作伙伴的策略时，这些策略适用于 XMPP 联盟域用户，但不适用于会话初始协议 (SIP) 即时消息 (IM) 服务提供商（例如，Windows Live）用户或 SIP 联盟域用户。您为每个您希望允许您的用户在其中添加联系人并与其通信的 XMPP 联盟域配置一个 **XMPP 联盟伙伴**。XMPP 联盟伙伴策略只在单一范围内可用，尽管它未定义为全局策略，却充当全局策略。要为 XMPP 联盟伙伴定义全局、站点或用户策略，需要通过首先为您所需的范围创建和配置外部访问策略来配置策略范围。有关可以为外部访问和联盟配置的策略类型的详细信息，请参阅操作文档中的 [管理对 Lync Server 2013 的联盟和外部访问](lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>所有 <strong>联盟和外部访问</strong>策略都是通过带内设置应用的。登录期间，应用于用户、属于某个站点或在全局范围内的策略传达给客户端。您可以配置策略来控制 XMPP 联盟伙伴访问，即使您还没有为您的组织启用 XMPP 联盟也是如此。但是，您配置的策略只在您为您的组织部署、启用和配置了 XMPP 合作伙伴联盟后才生效。有关部署和配置 XMPP 伙伴合作联盟的详细信息，请参阅部署文档中的 <a href="lync-server-2013-configuring-sip-federation-xmpp-federation-and-public-instant-messaging.md">在 Lync Server 2013 中配置 SIP 联盟、XMPP 联盟和公共即时消息</a>。此外，如果您在外部访问策略中指定了一条用户策略来控制 XMPP 联盟伙伴，则该策略仅适用于启用了 Lync Server 2013 并配置为使用该策略的用户。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 所有 <strong>联盟和外部访问</strong>策略都是通过带内设置应用的。登录期间，应用于用户、属于某个站点或在全局范围内的策略传达给客户端。您可以配置策略来控制 XMPP 联盟伙伴访问，即使您还没有为您的组织启用 XMPP 联盟也是如此。但是，您配置的策略只在您为您的组织部署、启用和配置了 XMPP 合作伙伴联盟后才生效。有关部署和配置 XMPP 伙伴合作联盟的详细信息，请参阅部署文档中的 <a href="lync-server-2013-configuring-sip-federation-xmpp-federation-and-public-instant-messaging.md">在 Lync Server 2013 中配置 SIP 联盟、XMPP 联盟和公共即时消息</a>。此外，如果您在外部访问策略中指定了一条用户策略来控制 XMPP 联盟伙伴，则该策略仅适用于启用了 Lync Server 2013 并配置为使用该策略的用户。
+
 
 
 ## 编辑 XMPP 联盟伙伴的全局策略

@@ -21,18 +21,9 @@ _**上一次修改主题：** 2016-12-08_
 
   - **联盟用户**   具有受信任客户或合作伙伴组织的帐户的用户，如 Lync Server 2010、Lync Server 2013 或 Office Communications Server 2007 R2。联盟用户也可以是通过边缘服务器上的 XMPP 代理和前端服务器或池上的 XMPP 网关使用可扩展消息传递和状态协议 (XMPP) 的已定义合作伙伴组织的成员。定义的受信任关系（称为“联盟”）与 Active Directory 域服务 信任关系无关或者无需依赖它。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅<a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅<a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。
+    
 
 
   - **公共即时消息连接用户**   您的用户通过公共即时消息连接服务（Windows Live、Yahoo\! 和 AOL）建立的联系人。

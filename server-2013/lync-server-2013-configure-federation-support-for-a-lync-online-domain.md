@@ -19,34 +19,16 @@ _**上一次修改主题：** 2012-11-01_
 
   - 配置 Lync Online 2010 客户的域的支持（例如 contoso.onmicrosoft.com）。如本文档的[与 Lync 联机客户联盟的先决条件](lync-server-2013-prerequisites-for-federating-with-a-lync-online-customer.md)一节中规定，您应该已经为您的组织启用联盟。启用联盟要求指定联盟的域用于控制访问的方法。如果将组织配置为使用发现，则可以选择将域添加到组织的允许列表。如果没有启用域发现，则必须将 Lync Online 客户的域名添加到允许的域列表。可以使用 Lync Server 控制面板或运行 **New-CSAllowedDomain** cmdlet 来添加域名。有关使用 Lync Server 控制面板的详细信息，其中包括启用域发现，请参阅操作文档中的[在 Lync Server 2013 中管理组织的 SIP 联盟提供程序](lync-server-2013-manage-sip-federated-providers-for-your-organization.md)。有关使用 **New-CSAllowedDomain** cmdlet 添加域的详细信息，请参阅操作文档中的 [New-CsAllowedDomain](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsAllowedDomain)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Online 客户可以拥有多个域。如果想要与一个以上的域联盟，必须对要支持联盟的每个单独的域配置支持，Lync Online 客户的管理员必须为要联盟的每个域启用联盟。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Online 客户可以拥有多个域。如果想要与一个以上的域联盟，必须对要支持联盟的每个单独的域配置支持，Lync Online 客户的管理员必须为要联盟的每个域启用联盟。
+    
 
 
   - 配置对想要联盟的 Lync Online 2010 客户域的托管服务提供商的支持。请使用本节中的步骤配置托管服务提供商支持。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只有与 Lync Online 客户的域联盟才需要该步骤，而与在联盟的合作伙伴位置本地部署的任何域联盟不需要该步骤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只有与 Lync Online 客户的域联盟才需要该步骤，而与在联盟的合作伙伴位置本地部署的任何域联盟不需要该步骤。
+    
 
 
 ## 要从前端服务器

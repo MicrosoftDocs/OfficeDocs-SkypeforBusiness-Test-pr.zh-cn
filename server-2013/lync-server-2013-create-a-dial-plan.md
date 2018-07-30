@@ -33,35 +33,17 @@ _**上一次修改主题：** 2013-10-24_
     
       - “用户拨号计划”可以应用于指定的用户或组。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>选择拨号计划作用域后，就无法更改。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 选择拨号计划作用域后，就无法更改。
+    
 
 
 5.  如果要创建用户拨号计划，请在“新建拨号计划”对话框的“名称”字段中输入描述性名称。保存此名称后，就无法更改。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>对于站点拨号计划，“名称”字段会使用站点名称预先填充，且不能更改。<br />
-    对于池拨号计划，“名称”字段会使用 PSTN 网关或注册器名称预先填充，且不能更改。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 对于站点拨号计划，“名称”字段会使用站点名称预先填充，且不能更改。<br />
+    对于池拨号计划，“名称”字段会使用 PSTN 网关或注册器名称预先填充，且不能更改。
+    
 
 
 6.  “简单名称”字段会使用与“名称”字段中显示的相同名称预先填充。您可以选择编辑该字段来指定描述性更强的名称，以反映应用该拨号计划的站点、服务或用户。
@@ -86,34 +68,16 @@ _**上一次修改主题：** 2013-10-24_
 
 8.  （可选）如果要将此拨号计划用作电话拨入式访问号码的区域，请指定“电话拨入式会议区域”。如果不希望将此拨号计划用于电话拨入式访问号码，请将此字段留空。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>电话拨入式会议区域需要将电话拨入式会议访问号码与一个或多个拨号计划相关联。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 电话拨入式会议区域需要将电话拨入式会议访问号码与一个或多个拨号计划相关联。
+    
 
 
 9.  （可选）在“外部访问前缀”字段中，指定一个值，该值仅在用户需要拨打一个或多个附加的前导数字（例如 9）以拨通外线时使用。键入的前缀值不得超过 4 个字符（\#、\* 和 0-9）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果指定了外部访问前缀，则不需要创建新的规范化规则来满足前缀。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果指定了外部访问前缀，则不需要创建新的规范化规则来满足前缀。
+    
 
 
 10. 按如下所示为拨号计划关联并配置规范化规则：
@@ -128,18 +92,9 @@ _**上一次修改主题：** 2013-10-24_
     
       - 要从拨号计划中删除某个规范化规则，请突出显示相应的规则名称，然后单击“删除”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>每个拨号计划都必须至少有一个关联的规范化规则。有关如何确定拨号计划所需的全部规范化规则的信息，请参阅规划文档中的 <a href="lync-server-2013-dial-plans-and-normalization-rules.md">Lync Server 2013 中的拨号计划和规范化规则</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 每个拨号计划都必须至少有一个关联的规范化规则。有关如何确定拨号计划所需的全部规范化规则的信息，请参阅规划文档中的 <a href="lync-server-2013-dial-plans-and-normalization-rules.md">Lync Server 2013 中的拨号计划和规范化规则</a>。
+    
 
 
 11. 验证拨号计划的规范化规则是否已按正确顺序排列。要更改规则在列表中的位置，请突出显示相应的规则名称，然后单击向上箭头或向下箭头。
@@ -161,36 +116,18 @@ _**上一次修改主题：** 2013-10-24_
 
 12. （可选）输入一个号码来测试拨号计划，然后单击“执行”。测试结果会显示在“输入要测试的号码”下。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以保存尚未通过测试的拨号计划，并在稍后对其进行重新配置。有关详细信息，请参阅 <a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中测试语音路由</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以保存尚未通过测试的拨号计划，并在稍后对其进行重新配置。有关详细信息，请参阅 <a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中测试语音路由</a>。
+    
 
 
 13. 单击“确定”。
 
 14. 在“拨号计划”页上，单击“提交”，然后单击“全部提交”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>任何时候创建拨号计划，都必须运行“全部提交”命令以发布配置更改。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中发布对语音路由配置所做的待处理更改</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 任何时候创建拨号计划，都必须运行“全部提交”命令以发布配置更改。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中发布对语音路由配置所做的待处理更改</a>。
+    
 
 
 ## 另请参阅

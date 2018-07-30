@@ -39,18 +39,9 @@ _**上一次修改主题：** 2012-10-19_
 
   - 视频会话限制：700 kbps
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>最小音频会话限制值为 40 kbps。最小视频会话限制值为 100 kbps。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 最小音频会话限制值为 40 kbps。最小视频会话限制值为 100 kbps。
+
 
 
 ## 使用命令行管理程序创建带宽策略配置文件

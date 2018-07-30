@@ -228,18 +228,9 @@ Lync 客户端中支持的功能以及本地和联机环境中可用的功能存
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果需要与运行 Office Communications Server 2007 的合作伙伴联盟，您将需要打开入站/出站 RTP/UDP 和 RTP/TCP 端口 50000-59999。有关 A/V 防火墙要求的详细信息，请参阅 <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">确定 Lync Server 2013 的外部 A/V 防火墙和端口要求</a>。有关端口和协议的详细信息，请参阅 <a href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Lync Server 2013 中的端口摘要 - 使用硬件负载平衡器的扩展的合并边缘</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果需要与运行 Office Communications Server 2007 的合作伙伴联盟，您将需要打开入站/出站 RTP/UDP 和 RTP/TCP 端口 50000-59999。有关 A/V 防火墙要求的详细信息，请参阅 <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">确定 Lync Server 2013 的外部 A/V 防火墙和端口要求</a>。有关端口和协议的详细信息，请参阅 <a href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Lync Server 2013 中的端口摘要 - 使用硬件负载平衡器的扩展的合并边缘</a>。
+
 
 
 ## 用户帐户和数据

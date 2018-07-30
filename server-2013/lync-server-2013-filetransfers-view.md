@@ -17,18 +17,9 @@ _**上一次修改主题：** 2015-03-09_
 
 FileTranfer 视图存储有关点对点文件传输会话的信息。Microsoft Lync Server 2013 中已引入了此视图。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除以下列出的列外，FileTransfers 视图还包含 <a href="lync-server-2013-sessiondetails-view.md">SessionDetails 视图</a> 中的所有列。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 除以下列出的列外，FileTransfers 视图还包含 <a href="lync-server-2013-sessiondetails-view.md">SessionDetails 视图</a> 中的所有列。
+
 
 
 

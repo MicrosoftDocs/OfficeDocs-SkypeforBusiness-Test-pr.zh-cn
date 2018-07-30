@@ -41,18 +41,9 @@ CAC 仅控制实时语音和视频流量，不控制数据流量。
 
 呼叫详细信息记录 (CDR) 捕获有关重新路由至 PSTN 或语音邮件的呼叫的信息。CDR 不会捕获有关重新路由至 Internet 的呼叫的信息，因为 Internet 被视为备用路径而非次要选项。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>语音邮件处理不会因为带宽限制而被拒绝。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 语音邮件处理不会因为带宽限制而被拒绝。
+
 
 
 带宽策略服务生成两种逗号分隔值 (CSV) 格式的日志文件。“检查失败”日志文件捕获带宽请求被拒绝时的信息。“链接利用率”日志文件捕获网络拓扑快照和 WAN 链路带宽用量。这两种日志文件都有助于根据利用率微调 CAC 策略。

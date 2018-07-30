@@ -57,20 +57,11 @@ _**上一次修改主题：** 2016-12-08_
 
     Set-CsOAuthConfiguration -Identity global -ExchangeAutodiscoverUrl "https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>上述命令中的 Identity 参数为可选；这是因为 Lync Server 仅允许您单个 OAuth 配置设置的全局集合。在其他情况下，这表示您可使用此稍简单的命令配置自动发现 URL：<br />
+> [!NOTE]  
+> 上述命令中的 Identity 参数为可选；这是因为 Lync Server 仅允许您单个 OAuth 配置设置的全局集合。在其他情况下，这表示您可使用此稍简单的命令配置自动发现 URL：<br />
 Set-CsOAuthConfiguration–ExchangeAutodiscoverUrl &quot;https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc&quot;<br />
-如果您不熟悉该技术，OAuth 是由大量网站使用的标准身份验证协议。借助 OAuth，不会将用户凭据和密码从一台计算机传递到另一台计算机。但是，身份验证和授权是基于安全令牌的交换；这些令牌会将访问权限授予特定时间量的一组特定资源。</td>
-</tr>
-</tbody>
-</table>
+如果您不熟悉该技术，OAuth 是由大量网站使用的标准身份验证协议。借助 OAuth，不会将用户凭据和密码从一台计算机传递到另一台计算机。但是，身份验证和授权是基于安全令牌的交换；这些令牌会将访问权限授予特定时间量的一组特定资源。
+
 
 
 除了配置自动发现服务外，还必须为指向 Exchange 服务器的服务创建 DNS 记录。例如，如果您的自动发现服务位于 autodiscover.litwareinc.com，则需要为解析为 Exchange 服务器（例如，atl-exchange-001.litwareinc.com）的完全限定域名的 autodiscover.litwareinc.com 创建 DNS 记录。

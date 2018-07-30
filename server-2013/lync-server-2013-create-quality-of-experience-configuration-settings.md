@@ -60,18 +60,9 @@ QoE 配置设置可使用 Lync Server 控制面板或 [New-CsQoEConfiguration](h
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>New-CsQoEConfiguration cmdlet 包含 Lync Server 控制面板中未提供的其他选项。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsQoEConfiguration">New-CsQoEConfiguration</a> 帮助主题。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> New-CsQoEConfiguration cmdlet 包含 Lync Server 控制面板中未提供的其他选项。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsQoEConfiguration">New-CsQoEConfiguration</a> 帮助主题。
+
 
 
 ## 使用 Lync Server 控制面板创建 QoE 配置设置

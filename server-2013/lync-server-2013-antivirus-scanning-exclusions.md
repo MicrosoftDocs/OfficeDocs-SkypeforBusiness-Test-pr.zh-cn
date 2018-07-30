@@ -17,18 +17,9 @@ _**上一次修改主题：** 2015-11-02_
 
 若要确保防病毒扫描程序不干扰 Lync Server 2013 的运行，您必须排除对其运行防病毒扫描程序的每个 Lync Server 2013 服务器或服务器角色的特定进程和目录。应排除以下进程和目录：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下面列出的文件夹和文件位置是 Lync Server 2013 的默认位置。对于您没有使用默认值的任何位置，排除您为组织指定的位置，而不是本主题中指定的默认位置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 下面列出的文件夹和文件位置是 Lync Server 2013 的默认位置。对于您没有使用默认值的任何位置，排除您为组织指定的位置，而不是本主题中指定的默认位置。
+
 
 
   - Lync Server 2013 进程：

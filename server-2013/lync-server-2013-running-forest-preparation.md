@@ -31,18 +31,9 @@ _**上一次修改主题：** 2012-10-29_
 
 5.  在“准备林”页上，单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>林准备允许您为 Lync Server 2013 选择放置通用组的位置。选择与组织要求一致的位置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 林准备允许您为 Lync Server 2013 选择放置通用组的位置。选择与组织要求一致的位置。
+    
 
 
 6.  在“正在执行命令”页上，查找“任务状态: 已完成”，然后单击“查看日志”。

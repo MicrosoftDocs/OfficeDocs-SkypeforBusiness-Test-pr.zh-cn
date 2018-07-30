@@ -25,18 +25,9 @@ _**上一次修改主题：** 2016-12-08_
 
   - 648 像素 x 648 像素，适用于 Lync 2013 和 Microsoft Lync Web App。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您具有资源，建议您上载 648x648 照片；这将在任何 Office 2013 应用程序中提供最高分辨率和最佳图片质量。每张大小为 648x648、深度为 24 位的 JPEG 照片均会生成一个约为 240 KB 的文件大小。这意味着，每四张用户照片将占用约 1 MB 的磁盘空间。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您具有资源，建议您上载 648x648 照片；这将在任何 Office 2013 应用程序中提供最高分辨率和最佳图片质量。每张大小为 648x648、深度为 24 位的 JPEG 照片均会生成一个约为 240 KB 的文件大小。这意味着，每四张用户照片将占用约 1 MB 的磁盘空间。
+
 
 
 高分辨率照片是使用 Exchange Web Services 访问的，此类照片可由运行 Outlook 2013 Web App 的用户上载；只允许用户更新其自己的照片。但是，管理员可使用 Exchange 命令行管理程序和与以下命令类似的一系列 Windows PowerShell 命令来更新任何用户的照片：
@@ -47,18 +38,9 @@ _**上一次修改主题：** 2016-12-08_
 
 在上面的示例中，第一个命令使用 Get-Content cmdlet 读取文件 C:\\Photos\\Kenmyer.jpg 的内容，并将数据存储在名为 $photo 的变量中。在第二个命令中，Exchange cmdlet Set-UserPhoto 用于上载照片并将该照片附加到 Ken Myer 的用户帐户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在此示例中，Ken Myer 的 Active Directory 显示名称将用作用户帐户标识。也可以通过使用其他标识符（例如，用户的 SMTP 地址或其用户主体名称）来引用用户帐户。有关详细信息，请参阅 Set-UserPhoto cmdlet 的文档，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268536%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=268536&amp;clcid=0x804</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在此示例中，Ken Myer 的 Active Directory 显示名称将用作用户帐户标识。也可以通过使用其他标识符（例如，用户的 SMTP 地址或其用户主体名称）来引用用户帐户。有关详细信息，请参阅 Set-UserPhoto cmdlet 的文档，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268536%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=268536&amp;clcid=0x804</a>
+
 
 
 上载照片并不等同于将照片分配给 Ken Myer 的用户帐户。相反，上载照片只是会生成将显示在“Outlook Web App 选项”页上的照片预览。若要将照片实际分配给用户帐户，用户必须在“选项”页上单击“保存”或管理员必须执行本示例中的第三个命令。此第三个命令使用 Save 参数将照片分配给 Ken Myer 的用户帐户：

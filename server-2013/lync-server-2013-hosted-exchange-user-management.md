@@ -17,18 +17,9 @@ _**上一次修改主题：** 2015-03-09_
 
 要为邮箱位于托管 Exchange 服务上的 Lync Server 2013 用户提供语音邮件服务，必须为这些用户帐户启用托管语音邮件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在可以为 Lync Server 2013 用户启用托管语音邮件之前，必须已部署应用于对应用户帐户的托管语音邮件策略。该策略的作用域可以是 global、site 或每用户，只要适用于要启用的用户即可。有关详细信息，请参阅 <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的托管语音邮件策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在可以为 Lync Server 2013 用户启用托管语音邮件之前，必须已部署应用于对应用户帐户的托管语音邮件策略。该策略的作用域可以是 global、site 或每用户，只要适用于要启用的用户即可。有关详细信息，请参阅 <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的托管语音邮件策略</a>。
+
 
 
 ## msExchUCVoiceMailSettings 属性
@@ -79,19 +70,10 @@ Lync Server 2013 引入一个名为 **msExchUCVoiceMailSettings** 的新用户�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果该属性已具有 Lync Server 2013 键/值对（CSHostedVoiceMail=0 或 CSHostedVoiceMail=1）以外的值，则会出现警告，指示该属性可能由其他应用程序管理。例如，如果键/值对 ExchangeHostedVoiceMail=0 或 ExchangeHostedVoiceMail=1 已存在，则显示警告。在这种情况下，可以通过在 Active Directory 中编辑来更改值，或运行以下 cmdlet 将值设置为 null：<br />
-Set-CsUser –identity user –HostedVoicemail $null</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果该属性已具有 Lync Server 2013 键/值对（CSHostedVoiceMail=0 或 CSHostedVoiceMail=1）以外的值，则会出现警告，指示该属性可能由其他应用程序管理。例如，如果键/值对 ExchangeHostedVoiceMail=0 或 ExchangeHostedVoiceMail=1 已存在，则显示警告。在这种情况下，可以通过在 Active Directory 中编辑来更改值，或运行以下 cmdlet 将值设置为 null：<br />
+Set-CsUser –identity user –HostedVoicemail $null
+
 
 
 ## 为用户启用托管语音邮件

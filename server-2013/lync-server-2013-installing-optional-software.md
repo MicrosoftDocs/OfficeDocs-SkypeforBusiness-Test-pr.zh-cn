@@ -41,18 +41,9 @@ Microsoft Lync Server 2013 规划工具专为导出到 Microsoft Excel 和 Micro
 
 将设计导出到 Microsoft Visio 会创建在配置的拓扑和基础结构的文档中使用的图。您可以编辑和重新排列导入的图以满足文档需求。典型的 Visio 图包括：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的设计大到需要三台以上前端服务器，则会为 前端池、 前端服务器、运行 SQL Server 的计算机、IP 地址和 FQDN 创建另一个页面。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您的设计大到需要三台以上前端服务器，则会为 前端池、 前端服务器、运行 SQL Server 的计算机、IP 地址和 FQDN 创建另一个页面。
+
 
 
   - 全局拓扑 – 配置的 Lync Server 2013 站点图。

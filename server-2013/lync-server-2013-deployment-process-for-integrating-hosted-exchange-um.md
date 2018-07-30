@@ -81,18 +81,9 @@ _**上一次修改主题：** 2015-03-09_
 </ol></td>
 <td><p>RTCUniversalUserAdmins</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要创建、修改或删除联系人对象，运行 New-CsExUmContact、Set-CsExUmContact 或 Remove-CsExUmContact cmdlet 的用户必须对存储新联系人对象的 Active Directory 组织单位具有相应的权限。可以通过运行 Grant-CsOUPermission cmdlet 授予此权限。有关详细信息，请参阅 Lync Server 命令行管理程序文档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 要创建、修改或删除联系人对象，运行 New-CsExUmContact、Set-CsExUmContact 或 Remove-CsExUmContact cmdlet 的用户必须对存储新联系人对象的 Active Directory 组织单位具有相应的权限。可以通过运行 Grant-CsOUPermission cmdlet 授予此权限。有关详细信息，请参阅 Lync Server 命令行管理程序文档。
+
 
 </div></td>
 <td><p><a href="lync-server-2013-create-contact-objects-for-hosted-exchange-um.md">在 Lync Server 2013 中为托管 Exchange UM 创建联系人对象</a></p></td>

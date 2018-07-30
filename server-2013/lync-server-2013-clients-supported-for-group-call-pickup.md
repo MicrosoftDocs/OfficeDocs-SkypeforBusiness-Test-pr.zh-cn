@@ -23,18 +23,9 @@ _**上一次修改主题：** 2013-02-12_
 
   - Lync Phone Edition
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>用户可以使用其中任何客户端应答拨打至组内呼叫应答成员的呼叫，但用户必须驻留在具有 2013 年 2 月版的 Lync Server 2013 累积更新的 Lync Server 2013 池中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 用户可以使用其中任何客户端应答拨打至组内呼叫应答成员的呼叫，但用户必须驻留在具有 2013 年 2 月版的 Lync Server 2013 累积更新的 Lync Server 2013 池中。
+
 
 
 在 2013 年 2 月版的 Lync Server 2013 累积更新中，不支持将以下客户端和设备用于应答拨打至组内呼叫应答成员的呼叫：

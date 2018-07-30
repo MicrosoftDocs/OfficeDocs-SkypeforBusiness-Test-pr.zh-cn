@@ -31,18 +31,9 @@ _**上一次修改主题：** 2012-09-21_
 
   - 对于要启用 企业语音的每个用户，指定并规范化了唯一的主电话号码，并将该号码复制到了 **msRTCSIP-line** 属性。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 支持 E.164 号码和非外线直拨分机 (DID) 号码。可以用 <strong>&lt;E.164&gt;;ext=&lt;extension&gt;</strong> 格式或数字字符串形式表示非 DID 号码，同时要求专用分机号在整个企业中是唯一的。例如，可以使用 <strong>+1425550100;ext=1001</strong> 或 <strong>1001</strong> 表示专用号码 1001。使用 <strong>1001</strong> 表示时，预期此专用号码在整个企业中是唯一的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 支持 E.164 号码和非外线直拨分机 (DID) 号码。可以用 <strong>&lt;E.164&gt;;ext=&lt;extension&gt;</strong> 格式或数字字符串形式表示非 DID 号码，同时要求专用分机号在整个企业中是唯一的。例如，可以使用 <strong>+1425550100;ext=1001</strong> 或 <strong>1001</strong> 表示专用号码 1001。使用 <strong>1001</strong> 表示时，预期此专用号码在整个企业中是唯一的。
+    
 
 
   - 部署 企业语音的管理员应当是 RTCUniversalServerAdmins 组的成员。

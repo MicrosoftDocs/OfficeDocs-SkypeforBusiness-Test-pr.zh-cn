@@ -111,17 +111,8 @@ _**上一次修改主题：** 2015-03-09_
 
 单个用户必须从 Lync 注销然后重新登录，这些更改才会实际生效。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您还可以启用客户端媒体端口范围，然后使用单个命令分配这些端口范围。例如：<br />
-<code>Set-CsConferencingConfiguration -ClientMediaPortRangeEnabled $True -ClientAudioPort 50020 -ClientAudioPortRange 20 -ClientVideoPort 58000 -ClientVideoPortRange 20 -ClientAppSharingPort 42000 -ClientAppSharingPortRange 20 -ClientFileTransferPort 42020 -ClientFileTransferPortRange 20</code></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您还可以启用客户端媒体端口范围，然后使用单个命令分配这些端口范围。例如：<br />
+<code>Set-CsConferencingConfiguration -ClientMediaPortRangeEnabled $True -ClientAudioPort 50020 -ClientAudioPortRange 20 -ClientVideoPort 58000 -ClientVideoPortRange 20 -ClientAppSharingPort 42000 -ClientAppSharingPortRange 20 -ClientFileTransferPort 42020 -ClientFileTransferPortRange 20</code>
+
 

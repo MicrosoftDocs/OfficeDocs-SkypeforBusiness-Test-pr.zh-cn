@@ -145,18 +145,9 @@ SIP 中继配置设置定义了中介服务器和服务提供商的公用电话�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server CsTrunkConfiguration cmdlet 支持 Lync Server 控制面板中未显示的其他属性。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsTrunkConfiguration">set-cstrunkconfiguration</a> cmdlet 的帮助主题。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server CsTrunkConfiguration cmdlet 支持 Lync Server 控制面板中未显示的其他属性。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsTrunkConfiguration">Set-CsTrunkConfiguration</a> cmdlet 的帮助主题。
+
 
 
 ## 使用 Lync Server 控制面板修改 SIP 中继配置设置

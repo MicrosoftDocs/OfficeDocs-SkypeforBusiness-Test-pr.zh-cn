@@ -52,16 +52,7 @@ _**上一次修改主题：** 2014-02-10_
     
     如果部署了 E9-1-1，且中央站点的 SIP 中继由于 WAN 连接故障而不可用， Survivable Branch Appliance 会将 E9-1-1 呼叫路由到本地分支网关。要启用该功能，分支站点用户的语音策略应在 WAN 出现故障时将呼叫路由到本地网关。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>XMPP 不支持 SBA（survivable branch office，自动恢复分支机构）。处于 SBA 配置的用户将无法向 XMPP 联系人发送 IM 或查看其联机状态。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> XMPP 不支持 SBA（survivable branch office，自动恢复分支机构）。处于 SBA 配置的用户将无法向 XMPP 联系人发送 IM 或查看其联机状态。
+
 

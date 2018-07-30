@@ -41,18 +41,9 @@ _**上一次修改主题：** 2013-01-21_
     
       - 单击列表中已定义的客户端类型之一，然后单击“显示详细信息”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可以使用通配符来指示客户端类型。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 可以使用通配符来指示客户端类型。
+    
 
 
 3.  在“用户代理”中，选择客户端类型。
@@ -67,18 +58,9 @@ _**上一次修改主题：** 2013-01-21_
     
       - 在“更新”中，键入与客户端的更新版本相对应的版本号。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可以使用通配符来指示客户端版本号。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 可以使用通配符来指示客户端版本号。
+    
 
 
 5.  要为上述步骤中指定的客户端版本指定匹配操作，请在“比较操作”中，单击下列选项之一：
@@ -101,18 +83,9 @@ _**上一次修改主题：** 2013-01-21_
     
       - 要允许客户端登录并接收来自 Windows Server 更新服务或 Microsoft Update 的更新，请单击“允许并升级”。仅当选中用户代理“OC”时，才能进行此操作。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>选择此操作会使得在用户下次登录到 Lync 2013 时显示一个通知。该通知指出有可用更新，即使更新尚未发布到 Windows Server Update Service 或 Microsoft Update。为了避免混淆，您只应在更新可用后选择此操作。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 选择此操作会使得在用户下次登录到 Lync 2013 时显示一个通知。该通知指出有可用更新，即使更新尚未发布到 Windows Server Update Service 或 Microsoft Update。为了避免混淆，您只应在更新可用后选择此操作。
+        
     
       - 要允许客户端登录并显示有关下载其他客户端版本的位置的消息，请单击“使用 URL 允许”。需要在此过程的后面阶段指定 URL。
     

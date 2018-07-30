@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-01-30_
 
 使用下面的过程在呼叫寄存轨道表中创建或修改呼叫应答组号码范围。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必须使用 Lync Server 命令行管理程序在呼叫寄存轨道表中创建、修改、移除和查看组内呼叫应答号码范围。组内呼叫应答号码范围在 Lync Server 控制面板中不可用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您必须使用 Lync Server 命令行管理程序在呼叫寄存轨道表中创建、修改、移除和查看组内呼叫应答号码范围。组内呼叫应答号码范围在 Lync Server 控制面板中不可用。
+
 
 
 <table>

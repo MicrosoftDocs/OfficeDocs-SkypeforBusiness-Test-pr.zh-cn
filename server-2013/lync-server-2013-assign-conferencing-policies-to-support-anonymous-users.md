@@ -19,18 +19,9 @@ _**上一次修改主题：** 2012-10-19_
 
 使用本节中的过程可将已创建的会议策略应用于一个或多个用户或用户组。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除了配置和应用策略以允许用户邀请匿名用户之外，还必须为组织启用对匿名用户的支持。有关详细信息，请参阅 <a href="lync-server-2013-configure-policies-to-control-public-user-access.md">在 Lync Server 2013 中配置策略以控制公共用户访问</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 除了配置和应用策略以允许用户邀请匿名用户之外，还必须为组织启用对匿名用户的支持。有关详细信息，请参阅 <a href="lync-server-2013-configure-policies-to-control-public-user-access.md">在 Lync Server 2013 中配置策略以控制公共用户访问</a>。
+
 
 
 ## 为匿名参与会议配置用户策略
@@ -55,18 +46,9 @@ _**上一次修改主题：** 2012-10-19_
 
 8.  在“编辑 Lync Server 用户”中的“会议策略”下，选择具有要应用于此用户的匿名用户访问配置的用户策略。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>“&lt;自动&gt;”设置应用默认服务器安装设置，并由服务器自动应用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > “&lt;自动&gt;”设置应用默认服务器安装设置，并由服务器自动应用。
+    
 
 
 要允许用户邀请匿名用户参加会议，还必须在组织中启用匿名用户支持。有关详细信息，请参阅部署文档或操作文档中的 [在 Lync Server 2013 中配置策略以控制公共用户访问](lync-server-2013-configure-policies-to-control-public-user-access.md)。

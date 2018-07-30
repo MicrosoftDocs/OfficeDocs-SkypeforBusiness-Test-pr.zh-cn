@@ -156,18 +156,9 @@ _**上一次修改主题：** 2016-12-15_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>VIP 表示硬件负载平衡器的虚拟 IP 地址</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> VIP 表示硬件负载平衡器的虚拟 IP 地址
+
 
 
 ## 前端池的 DNS SRV 记录

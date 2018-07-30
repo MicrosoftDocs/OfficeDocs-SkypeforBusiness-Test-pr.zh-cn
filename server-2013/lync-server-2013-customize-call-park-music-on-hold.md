@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-09-10_
 
 可以指定您自己的要用于保留音乐的音乐文件，而不是指定 Lync Server 2013 附带的默认音乐文件。若要自定义保留音乐，请使用 **Set-CsCallParkServiceMusicOnHoldFile** cmdlet。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您自定义保留音乐并希望多个网站使用同一音乐，则必须为运行呼叫寄存应用程序的每个网站配置音乐文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您自定义保留音乐并希望多个网站使用同一音乐，则必须为运行呼叫寄存应用程序的每个网站配置音乐文件。
+
 
 
 ## 自定义音乐文件

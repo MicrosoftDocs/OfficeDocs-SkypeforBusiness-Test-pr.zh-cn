@@ -19,18 +19,9 @@ System Center Operations Manager 本身只能监控一小部分的 Windows 操�
 
   - 组件和用户管理包 (Microsoft.LS.2013.Monitoring.ComponentAndUser.mp) 可跟踪记录在事件日志中、由性能计数器注册，或者记录在呼叫详细信息记录 (CDR) 或体验质量 (QoE) 数据库中的 Lync Server 问题。对于严重问题，可以将 System Center Operations Manager 配置为立即通过电子邮件、即时消息或短消息服务 (SMS) 消息通知给管理员。SMS 是一种可用来将文本消息从一个移动设备发送到另一个移动设备的技术。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关配置 Operations Manager 通知的详细信息，请参阅 TechNet 库中的“配置通知”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268785%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=268785&amp;clcid=0x804</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关配置 Operations Manager 通知的详细信息，请参阅 TechNet 库中的“配置通知”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268785%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=268785&amp;clcid=0x804</a>。
+    
 
 
   - 主动监控包 (Microsoft.LS.2013.Monitoring.ActiveMonitoring.mp) 会主动测试关键的 Lync Server 组件，如登录到系统、交换即时消息或对位于公用电话交换网 (PSTN) 的电话发起呼叫。这些测试是使用 Lync Server 综合事务 cmdlet 来执行的。例如，**Test-CsIM** cmdlet 可用来模拟一对测试用户之间的即时消息对话。如果这种模拟的消息对话失败，则会生成一个警报。

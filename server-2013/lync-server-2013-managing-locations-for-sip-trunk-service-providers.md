@@ -25,18 +25,9 @@ _**上一次修改主题：** 2016-12-08_
 
   - 如果位置是一个大概位置（因为它是由无线访问点决定的），您可能需要添加词 Near（例如“Near 1st Floor 1234”）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在使用 Lync Server 命令行管理程序命令发布已添加到中央位置数据库的位置，并将这些位置复制到池的本地存储之前，这些位置对于客户端不可用。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-publish-the-location-database.md">发布位置数据库</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在使用 Lync Server 命令行管理程序命令发布已添加到中央位置数据库的位置，并将这些位置复制到池的本地存储之前，这些位置对于客户端不可用。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-publish-the-location-database.md">发布位置数据库</a>。
+
 
 
 以下各节讨论填充和维护位置数据库时需要考虑的注意事项。

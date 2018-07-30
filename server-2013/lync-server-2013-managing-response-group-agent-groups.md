@@ -17,32 +17,14 @@ _**上一次修改主题：** 2012-10-01_
 
 代理组由指定应答响应组呼叫的一组人员组成。创建代理组时，要选择分配给该组的代理并指定其他组设置，如路由方法以及代理能否登录到组和从组注销。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须先为用户启用企业语音，然后才能将其添加到代理组。有关如何为用户启用企业语音的详细信息，请参阅<a href="lync-server-2013-enable-users-for-enterprise-voice.md">在 Lync Server 2013 中为用户启用企业语音</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 必须先为用户启用企业语音，然后才能将其添加到代理组。有关如何为用户启用企业语音的详细信息，请参阅<a href="lync-server-2013-enable-users-for-enterprise-voice.md">在 Lync Server 2013 中为用户启用企业语音</a>。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有内部部署用户可以成为代理。如果代理从内部部署移动到联机状态，则不会将响应组呼叫路由到该代理。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 只有内部部署用户可以成为代理。如果代理从内部部署移动到联机状态，则不会将响应组呼叫路由到该代理。
+
 
 
 必须登录到组和从组注销（与登录到 Lync Server 或从中注销不同）的代理称为*正式代理*。正式代理必须登录到组，然后才能接收路由至该组的呼叫。这对于以兼职形式应答组中的呼叫的代理很有用。正式代理通过单击 Lync 2013 中的菜单项打开 Windows Internet Explorer Internet 浏览器并显示网页控制台，以登录到组或从组注销。

@@ -33,18 +33,9 @@ _**上一次修改主题：** 2013-02-21_
 
 6.  在“掩码”字段中，输入一个 1 到 32 之间的数值。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>该值是要应用于正在创建的子网的位掩码。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 该值是要应用于正在创建的子网的位掩码。
+    
 
 
 7.  在“网络站点 ID”中，选择该子网归属的站点。

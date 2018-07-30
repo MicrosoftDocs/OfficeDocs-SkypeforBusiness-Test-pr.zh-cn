@@ -19,18 +19,9 @@ _**上一次修改主题：** 2013-11-22_
 
 在部署试点池时，应使用“定义新的前端池”向导。应在 Lync Server 2013 试点池中部署 Office Communications Server 2007 R2 池中具有的相同功能和工作负荷。如果已部署存档服务器、监控服务器或 System Center Operations Manager 以存档或监控您的 Office Communications Server 2007 R2 环境，并希望在整个迁移过程中继续使用存档或监控功能，则需要在试点环境中也部署这些功能。为存档或监控 Office Communications Server 2007 R2 环境部署的版本将不捕获 Lync Server 2013 环境中的数据。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>以下过程将讨论应在整体试点池部署过程中考虑的功能和设置。本节仅重点介绍了应作为试点池部署的一部分考虑的关键点。有关详细步骤，请参阅<a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a> 部署指南。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 以下过程将讨论应在整体试点池部署过程中考虑的功能和设置。本节仅重点介绍了应作为试点池部署的一部分考虑的关键点。有关详细步骤，请参阅<a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a> 部署指南。
+
 
 
 **部署 Lync Server 2013 试点池**

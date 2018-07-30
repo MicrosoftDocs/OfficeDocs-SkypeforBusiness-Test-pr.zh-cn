@@ -17,18 +17,9 @@ _**上一次修改主题：** 2010-11-03_
 
 为 Kerberos 身份验证帐户创建计算机对象后，即可设置该帐户的密码。在一台服务器上运行 Windows PowerShell cmdlet 可设置 Kerberos 帐户密码。可以在为 Kerberos 身份验证所创建的对象上设置密码。可将密码设置为已知值，但默认情况下为随机密码。该密码可用于所有使用该帐户的 Kerberos 身份验证源。使用 Windows PowerShell cmdlet 可设置和管理 Kerberos 帐户密码。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Kerberos 帐户对象是计算机对象，但使用 UserAccount 参数通过引用的 Windows PowerShell cmdlet 进行操作。请注意，这并非错误，而是 cmdlet 在与 Kerberos 帐户创建和维护结合使用时的预期行为。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Kerberos 帐户对象是计算机对象，但使用 UserAccount 参数通过引用的 Windows PowerShell cmdlet 进行操作。请注意，这并非错误，而是 cmdlet 在与 Kerberos 帐户创建和维护结合使用时的预期行为。
+
 
 
 ## 本部分内容

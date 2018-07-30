@@ -17,18 +17,9 @@ _**上一次修改主题：** 2015-03-09_
 
 ConferenceMessageCount 视图存储有关用户已向会议中发送的消息数的信息。此视图是在 Microsoft Lync Server 2013 中引入的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ConferenceMessageCount 视图包含 <a href="lync-server-2013-conferencesessiondetails-view.md">ConferenceSessionDetails 视图</a>中的所有列以及下面列出的列。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> ConferenceMessageCount 视图包含 <a href="lync-server-2013-conferencesessiondetails-view.md">ConferenceSessionDetails 视图</a>中的所有列以及下面列出的列。
+
 
 
 

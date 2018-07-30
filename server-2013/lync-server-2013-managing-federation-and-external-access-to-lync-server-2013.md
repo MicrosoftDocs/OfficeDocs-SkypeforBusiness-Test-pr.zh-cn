@@ -174,18 +174,9 @@ _**上一次修改主题：** 2015-03-09_
 <td><p></p></td>
 <td><p><a href="lync-server-2013-assign-conferencing-policies-to-support-anonymous-users.md">在 Lync Server 2013 中分配会议策略以支持匿名用户</a></p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您还必须考虑“配置策略”下的以下配置设置：<a href="lync-server-2013-create-or-modify-a-conferencing-policy.md">在 Lync Server 2013 中创建或修改会议策略</a>和<a href="lync-server-2013-conferencing-policy-settings-reference.md">在 Lync Server 2013 中会议策略设置参考</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您还必须考虑“配置策略”下的以下配置设置：<a href="lync-server-2013-create-or-modify-a-conferencing-policy.md">在 Lync Server 2013 中创建或修改会议策略</a>和<a href="lync-server-2013-conferencing-policy-settings-reference.md">在 Lync Server 2013 中会议策略设置参考</a>
+
 
 </div></td>
 <td><p></p></td>

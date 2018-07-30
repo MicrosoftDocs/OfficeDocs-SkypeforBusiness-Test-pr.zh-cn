@@ -45,18 +45,9 @@ _**上一次修改主题：** 2013-02-18_
 
 1.  首先准备与出现故障的服务器具有相同完全限定域名 (FQDN) 的干净或新服务器，接着安装操作系统，然后还原或重新注册证书。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>按照您组织的服务器部署过程来执行该步骤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 按照您组织的服务器部署过程来执行该步骤。
+    
 
 
 2.  使用具有 RTCUniversalServerAdmins 组成员身份的用户帐户登录到要还原的服务器。

@@ -41,18 +41,9 @@ _**上一次修改主题：** 2016-12-08_
 
 中央站点的 中介服务器可用于为分支站点的 IP-PBX 或 PSTN 网关路由呼叫。但是，如果部署 SIP 中继，则必须在每个中继终止的站点上部署一台 中介服务器。使用中央站点的 中介服务器为分支站点的 IP-PBX 或 PSTN 网关路由呼叫时，不需要使用媒体旁路。但是，如果可以启用媒体旁路，则可以降低媒体路径延迟，从而改善媒体质量，因为媒体路径不再需要遵循信号路径。媒体旁路还将减少池中的处理负载。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>媒体旁路将不会与每个 PSTN 网关、IP-PBX 和 SBC 进行交互操作。Microsoft 与认证合作伙伴一起对一组 PSTN 网关和 SBC 进行了测试，另外也对 Cisco IP-PBX 进行了一些测试。只有 <a href="http://go.microsoft.com/fwlink/p/?linkid=268730">http://go.microsoft.com/fwlink/p/?LinkId=268730</a> 上的“统一通信开放式互操作性程序 – Lync Server”中列出的产品和版本才支持媒体旁路。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 媒体旁路将不会与每个 PSTN 网关、IP-PBX 和 SBC 进行交互操作。Microsoft 与认证合作伙伴一起对一组 PSTN 网关和 SBC 进行了测试，另外也对 Cisco IP-PBX 进行了一些测试。只有 <a href="http://go.microsoft.com/fwlink/p/?linkid=268730">http://go.microsoft.com/fwlink/p/?LinkId=268730</a> 上的“统一通信开放式互操作性程序 – Lync Server”中列出的产品和版本才支持媒体旁路。
+
 
 
 如果要求具有分支站点恢复能力，则必须在分支站点部署 Survivable Branch Appliance 或部署 前端服务器、 中介服务器和网关的组合。（分支站点恢复能力的假定前提是该站点上的状态和会议不可恢复。）有关分支站点的语音规划指导，请参阅 [在 Lync Server 2013 中规划分支站点语音恢复能力](lync-server-2013-planning-for-branch-site-voice-resiliency.md)。
@@ -61,16 +52,7 @@ _**上一次修改主题：** 2016-12-08_
 
 最后，如果中央站点具有 TDM PBX，或者 IP-PBX 仍然需要 PSTN 网关，则必须在连接 中介服务器和 PBX 的呼叫路由上部署网关。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要提高独立的中介服务器的媒体性能，应在这些服务器的网络适配器上启用接收方缩放 (RSS)。通过启用 RSS，服务器上的多个处理器能够以并行方式处理传入数据包。有关详细信息，请参阅“Windows Server 中的接收方伸缩改进”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=268731">http://go.microsoft.com/fwlink/p/?LinkId=268731</a>。有关如何启用 RSS 的详细信息，请参阅网络适配器文档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 要提高独立的中介服务器的媒体性能，应在这些服务器的网络适配器上启用接收方缩放 (RSS)。通过启用 RSS，服务器上的多个处理器能够以并行方式处理传入数据包。有关详细信息，请参阅“Windows Server 中的接收方伸缩改进”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=268731">http://go.microsoft.com/fwlink/p/?LinkId=268731</a>。有关如何启用 RSS 的详细信息，请参阅网络适配器文档。
+
 

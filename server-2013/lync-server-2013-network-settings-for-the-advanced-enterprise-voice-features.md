@@ -31,18 +31,9 @@ Lync Server 有以下三个高级 企业语音功能：呼叫允许控制 (CAC)�
 
 网络区域是仅在呼叫允许控制 (CAC)、E9-1-1 和媒体旁路的配置中使用的网络中心或网络中枢。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>网络区域与 Lync Server 电话拨入式会议区域不同，后者需要将电话拨入式会议访问号码与一个或多个 Lync Server 拨号计划相关联。有关电话拨入式会议区域的详细信息，请参阅规划文档中的 <a href="lync-server-2013-dial-in-conferencing-requirements.md">电话拨入式会议要求</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 网络区域与 Lync Server 电话拨入式会议区域不同，后者需要将电话拨入式会议访问号码与一个或多个 Lync Server 拨号计划相关联。有关电话拨入式会议区域的详细信息，请参阅规划文档中的 <a href="lync-server-2013-dial-in-conferencing-requirements.md">电话拨入式会议要求</a>。
+
 
 
 CAC 要求每个网络区域都有一个关联的 Lync Server 中央站点，此站点管理区域内的媒体流量（即，根据已配置的有关是否可以建立实时音频或视频会话的策略来做出决策）。 Lync Server 中央站点不代表地理位置，而是代表配置为一个池或一组池的服务器的逻辑分组。有关中央站点的详细信息，请参阅规划文档中的 [Lync Server 2013 中的参考拓扑](lync-server-2013-reference-topologies.md)。另请参阅可支持性文档中的 [Lync Server 2013 中支持的拓扑](lync-server-2013-supported-topologies.md)。
@@ -57,18 +48,9 @@ CAC 要求每个网络区域都有一个关联的 Lync Server 中央站点，此
 
 网络站点代表地理位置，例如分支机构、地区办事处或总部。每个网络站点都必须与特定网络区域相关联。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>网络站点仅供高级 企业语音功能使用。网络站点与您在 Lync Server 拓扑中配置的分支站点不同。有关分支站点的详细信息，请参阅规划文档中的 <a href="lync-server-2013-reference-topologies.md">Lync Server 2013 中的参考拓扑</a>。另请参阅可支持性文档中的 <a href="lync-server-2013-supported-topologies.md">Lync Server 2013 中支持的拓扑</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 网络站点仅供高级 企业语音功能使用。网络站点与您在 Lync Server 拓扑中配置的分支站点不同。有关分支站点的详细信息，请参阅规划文档中的 <a href="lync-server-2013-reference-topologies.md">Lync Server 2013 中的参考拓扑</a>。另请参阅可支持性文档中的 <a href="lync-server-2013-supported-topologies.md">Lync Server 2013 中支持的拓扑</a>。
+
 
 
 要配置网络站点并将其与网络区域相关联，可以使用 Lync Server 控制面板的“网络配置”部分，或者运行 Lync Server 命令行管理程序**New-CsNetworkSite** 或 **Set-CsNetworkSite** cmdlet。如需获得相关说明，请参阅部署文档中的[在 Lync Server 2013 中创建或修改网络站点](lync-server-2013-create-or-modify-a-network-site.md)，或者参考 Lync Server 命令行管理程序文档。

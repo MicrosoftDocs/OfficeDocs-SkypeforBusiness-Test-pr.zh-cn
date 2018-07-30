@@ -48,50 +48,23 @@ _**上一次修改主题：** 2015-03-09_
 <p>webcon.contoso.com</p>
 <p>contoso.com</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支持 contoso.com XMPP 命名空间</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 支持 contoso.com XMPP 命名空间
+
 
 </div>
 <p>sip.fabrikam.com</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支持 fabrikam.com SIP 命名空间</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 支持 fabrikam.com SIP 命名空间
+
 
 </div>
 <p>fabrikam.com</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支持 fabrikam.com XMPP 命名空间</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 支持 fabrikam.com XMPP 命名空间
+
 
 </div></td>
 <td><p>如果要部署与 AOL 的公共 IM 连接，则证书必须来自公共 CA，并且必须具有服务器 EKU 和客户端 EKU。该证书分配给以下各项的外部 边缘服务器接口：</p>
@@ -101,18 +74,9 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>A/V 边缘服务</p></li>
 </ul>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>从技术上来说，证书不分配给 A/V 边缘。安全通信和身份验证通过媒体中继身份验证服务 (MRAS) 进行管理。MRAS 使用分配给边缘服务器内部接口的证书。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 从技术上来说，证书不分配给 A/V 边缘。安全通信和身份验证通过媒体中继身份验证服务 (MRAS) 进行管理。MRAS 使用分配给边缘服务器内部接口的证书。
+
 
 </div>
 <p>请注意，根据拓扑生成器中的定义，SAN 将自动添加到证书中。根据需要为其他 SIP 域和其他需要支持的条目添加 SAN 条目。将在 SAN 中复制使用者名称，并且该名称必须在正确的操作中显示。</p></td>

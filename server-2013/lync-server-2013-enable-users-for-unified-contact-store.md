@@ -48,34 +48,16 @@ _**上一次修改主题：** 2012-10-07_
             New-CsUserServicesPolicy -Identity "<policy name>" -UcsAllowed $True
             Grant-CsUserServicesPolicy -Identity "<user display name>" -PolicyName <"policy name">
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>还可以使用用户别名或 SIP URI 代替用户显示名称。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 还可以使用用户别名或 SIP URI 代替用户显示名称。
+        
         
         例如：
         
             New-CsUserServicesPolicy -Identity "UCS Enabled Users" -UcsAllowed $True
             Grant-CsUserServicesPolicy -Identity "Ken Myer" -PolicyName "UCS Enabled Users"
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>在上面的示例中，第一个命令创建一个名为“<em>启用 UCS 的用户</em>”的新每用户策略，并将 UcsAllowed 标记设置为 True。第二个命令将该策略分配给显示名称为 Ken Myer 的用户，这意味着现在已为 Ken Myer 启用统一的联系人存储库。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 在上面的示例中，第一个命令创建一个名为“<em>启用 UCS 的用户</em>”的新每用户策略，并将 UcsAllowed 标记设置为 True。第二个命令将该策略分配给显示名称为 Ken Myer 的用户，这意味着现在已为 Ken Myer 启用统一的联系人存储库。
+        
 

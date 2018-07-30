@@ -65,16 +65,7 @@ _**上一次修改主题：** 2013-02-21_
     
         Get-CsBackupServiceStatus -PoolFqdn <Pool2 FQDN>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>拓扑生成器 中的“语音的自动故障转移和故障回复”选项和关联的时间间隔仅适用于 Lync Server 2010 中引入的语音复原功能。选择此选项并不意味着本文档中讨论的池故障转移将自动执行。池故障转移和故障回复始终需要管理员手动且分别调用故障转移和故障回复 cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 拓扑生成器 中的“语音的自动故障转移和故障回复”选项和关联的时间间隔仅适用于 Lync Server 2010 中引入的语音复原功能。选择此选项并不意味着本文档中讨论的池故障转移将自动执行。池故障转移和故障回复始终需要管理员手动且分别调用故障转移和故障回复 cmdlet。
+
 

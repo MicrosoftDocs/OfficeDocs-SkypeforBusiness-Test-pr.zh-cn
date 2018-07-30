@@ -19,18 +19,9 @@ Lync Web App 是随 Lync Server 2013 一起安装的 Internet 信息服务 (IIS)
 
 Lync Web App 中的语音、视频和共享功能需要 Microsoft ActiveX 控件。您可以提前安装 ActiveX 控件，或允许用户在出现提示时进行安装，用户第一次使用 Lync Web App 或第一次访问需要 ActiveX 控件的功能时，即会出现提示。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 边缘服务器部署中，在外围网络中，需要 HTTPS 反向代理才能访问 Lync Web App 客户端。您还必须发布简单 URL。有关详细信息，请参阅<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">为 Lync Server 2013 设置反向代理服务器</a>和<a href="lync-server-2013-planning-for-simple-urls.md">在 Lync Server 2013 中规划简单 URL</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 边缘服务器部署中，在外围网络中，需要 HTTPS 反向代理才能访问 Lync Web App 客户端。您还必须发布简单 URL。有关详细信息，请参阅<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">为 Lync Server 2013 设置反向代理服务器</a>和<a href="lync-server-2013-planning-for-simple-urls.md">在 Lync Server 2013 中规划简单 URL</a>。
+
 
 
 ## 针对 Lync Web App 启用多重身份验证
@@ -111,18 +102,9 @@ Windows 7 和 Windows Server 2008 R2 中的 BranchCache 功能可能会干扰 Ly
 
 4.  清除“不将加密的页存盘”，然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果已选中，则在尝试从 Lync Web App 下载附件时，此设置还将导致错误。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果已选中，则在尝试从 Lync Web App 下载附件时，此设置还将导致错误。
+    
 
 
 5.  重新加入会议。插件在下载时应无错误。

@@ -33,18 +33,9 @@ _**上一次修改主题：** 2016-12-08_
 
 6.  在“电话”下的“线路 URI”字段中，键入唯一的规范化电话号码（例如，tel:+14255550200）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅当将“电话”设置为“仅限 PC 到 PC”、“企业语音”、“远程呼叫控制”或“仅远程呼叫控制”时，才可以指定“线路 URI”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 仅当将“电话”设置为“仅限 PC 到 PC”、“企业语音”、“远程呼叫控制”或“仅远程呼叫控制”时，才可以指定“线路 URI”。
+    
 
 
 7.  单击“提交”。

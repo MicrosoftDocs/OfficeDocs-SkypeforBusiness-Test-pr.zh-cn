@@ -27,18 +27,9 @@ _**上一次修改主题：** 2012-09-22_
 
 1.  创建一个网络站点，代表 ITSP。将网络站点与相应的网络区域相关联，然后为该网络站点的音频和视频分配零带宽。有关详细信息，请参阅部署文档中的 [在 Lync Server 2013 中为 CAC 配置网络站点](lync-server-2013-configure-network-sites-for-cac.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>对于 ITSP，该网络站点配置不起作用。带宽策略值实际是在步骤 2 中应用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 对于 ITSP，该网络站点配置不起作用。带宽策略值实际是在步骤 2 中应用。
+    
 
 
 2.  使用在步骤 1 中创建的站点的相关参数值，为 SIP 中继创建站点间链接。例如，使用企业中的网络站点名称作为参数 NetworkSiteID1 的值，并使用 ITSP 网络站点名称作为参数 NetworkSiteID2 的值。有关详细信息，请参阅部署文档中的 [在 Lync Server 2013 中创建网络站点间策略](lync-server-2013-create-network-intersite-policies.md)。有关 New-CsNetworkInterSitePolicy cmdlet，另请参阅 Lync Server 命令行管理程序文档。

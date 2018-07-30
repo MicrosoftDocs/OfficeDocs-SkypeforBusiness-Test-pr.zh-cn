@@ -31,18 +31,9 @@ Lync Server 2013 需要域名系统 (DNS) 并通过以下方式使用该系统�
 
   - 为了 DNS 负载平衡。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 不支持国际化域名 (IDN)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 不支持国际化域名 (IDN)。
+
 
 
 <table>

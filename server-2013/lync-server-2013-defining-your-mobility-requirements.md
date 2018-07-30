@@ -47,18 +47,9 @@ _**上一次修改主题：** 2015-03-09_
     
         Set-CsMcxConfiguration -Identity site:Redmond -ExposedWebURL Internal
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>UCWA 不需要其他任何额外配置，并且它不具有仅用于内部的同等配置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > UCWA 不需要其他任何额外配置，并且它不具有仅用于内部的同等配置。
+    
     
     <table>
     <thead>
@@ -95,18 +86,9 @@ _**上一次修改主题：** 2015-03-09_
     
     如果您不支持推送通知，则 Apple 移动设备和 Windows Phone 的用户将找不到在移动应用程序处于非活动状态时所发生的事件（例如，即时消息邀请或错过的消息）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Apple 设备上的 Lync 2013 Mobile 客户端不需要推送通知，而 Windows Phone 上的 Lync 2013 Mobile 客户端使用推送通知。对于 Windows Phone 上的 Lync Mobile 以及不能运行 Lync 2013 Mobile 客户端的 Apple 设备，有关推送通知和推送通知交换所的规划应保持一致。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Apple 设备上的 Lync 2013 Mobile 客户端不需要推送通知，而 Windows Phone 上的 Lync 2013 Mobile 客户端使用推送通知。对于 Windows Phone 上的 Lync Mobile 以及不能运行 Lync 2013 Mobile 客户端的 Apple 设备，有关推送通知和推送通知交换所的规划应保持一致。
+    
 
 
   - **是否希望所有用户都可以访问移动功能，或是否希望自己能够指定哪些用户可以访问这些功能？**
@@ -177,18 +159,9 @@ _**上一次修改主题：** 2015-03-09_
     
     对于可以访问移动功能和“单位电话呼叫”功能的用户，必须为他们启用企业语音。不过，对于未启用企业语音的用户，如果为其分配了适当的语音策略，则可通过单击其移动设备上的链接来加入会议。您可以为这些用户分配一个特定的语音策略或确保存在适用的全局或站点级策略。您分配的语音策略必须具有公用电话交换网 (PSTN) 用法记录和可定义用户为加入会议而将拨出到的区域的路由。有关设置语音策略、PSTN 用法记录和路由的详细信息，请参阅[在 Lync Server 2013 中配置语音策略、PSTN 用法记录和语音路由](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>需要使用“单击以加入”的移动用户需要语音策略、相关的 PSTN 用法记录以及语音路由，因为单击移动设备上的链接会导致来自 Lync Server 2013 的出站呼叫。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 需要使用“单击以加入”的移动用户需要语音策略、相关的 PSTN 用法记录以及语音路由，因为单击移动设备上的链接会导致来自 Lync Server 2013 的出站呼叫。
+    
 
 
 ## 另请参阅

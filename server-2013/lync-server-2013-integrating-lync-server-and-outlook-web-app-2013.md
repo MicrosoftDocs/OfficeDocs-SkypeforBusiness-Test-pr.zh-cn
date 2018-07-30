@@ -33,18 +33,9 @@ Microsoft Lync 2013 还可以与 Exchange 2010 和 Outlook 2010 结合使用。�
 
 Lync Server 2013 可以自动发现任何托管 SipName UM 拨号计划的 Exchange 服务器；这些服务器将自动添加到 Lync Server 已知服务器列表中。无需创建受信任应用程序池并将这些服务器添加到已知服务器列表中。事实上，这样做将导致 Outlook Web App 集成停止工作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>这是因为 Lync Server 拓扑现在将具有同一计算机的两个条目：自动发现的条目和手动添加的条目。若要解决此问题并使 Outlook Web App 再次工作，请使用 Windows PowerShell 来移除服务器的受信任池和受信任应用程序条目。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrustedApplicationPool">Remove-CsTrustedApplicationPool</a> 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrustedApplication">Remove-CsTrustedApplication</a> cmdlet 的帮助主题。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 这是因为 Lync Server 拓扑现在将具有同一计算机的两个条目：自动发现的条目和手动添加的条目。若要解决此问题并使 Outlook Web App 再次工作，请使用 Windows PowerShell 来移除服务器的受信任池和受信任应用程序条目。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrustedApplicationPool">Remove-CsTrustedApplicationPool</a> 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrustedApplication">Remove-CsTrustedApplication</a> cmdlet 的帮助主题。
+
 
 
 如果这两个服务运行在单独的计算机上，则在确认已安装统一通信托管 API 4.0 运行时后，您必须创建与 Outlook Web App 关联的 Lync Server 受信任应用程序池和受信任应用程序；这会将服务器添加到已知服务器列表中。为此，请首先从 Lync Server 命令行管理程序中运行类似于以下命令的命令：
@@ -73,18 +64,9 @@ Lync Server 2013 可以自动发现任何托管 SipName UM 拨号计划的 Excha
 
     Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -InstantMessagingEnabled $True -InstantMessagingType OCS
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，在您安装 Outlook Web App 时会启用即时消息；也就是说，InstantMessagingEnabled 属性设置为 True。不过，您仍必须运行上面的命令才能将即时消息类型设置为 OCS。默认情况下，InstantMessagingType 设置为 None。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 默认情况下，在您安装 Outlook Web App 时会启用即时消息；也就是说，InstantMessagingEnabled 属性设置为 True。不过，您仍必须运行上面的命令才能将即时消息类型设置为 OCS。默认情况下，InstantMessagingType 设置为 None。
+
 
 
 接下来，您必须向 Outlook Web App Web.config 文件（此文件通常位于文件夹 C:\\Program Files\\Microsoft\\Exchange Server\\V15\\ClientAccess\\Owa 中）中添加以下两行。这两行应添加在 Web.config 文件中的 \<应用程序设置\> 节点之下，并且应仅在安装了 Outlook Web App 的后端服务器上执行此过程。

@@ -71,18 +71,9 @@ _**上一次修改主题：** 2015-06-22_
 
     Identity : tag:AllowPublicIMCommunication
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>标记 <strong>prefix</strong> 可回溯到 Lync Server 2010 最初部署的那些天。在这些天里，每用户策略称为<em>标记策略</em>，通过标记 <strong>prefix</strong> 进行标识。这些策略现在更准确地称为<em>每用户策略</em>，标记作用域更准确地称为<em>每用户作用域</em>。但是，出于技术原因，标记 <strong>prefix</strong> 从未更改。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 标记 <strong>prefix</strong> 可回溯到 Lync Server 2010 最初部署的那些天。在这些天里，每用户策略称为<em>标记策略</em>，通过标记 <strong>prefix</strong> 进行标识。这些策略现在更准确地称为<em>每用户策略</em>，标记作用域更准确地称为<em>每用户作用域</em>。但是，出于技术原因，标记 <strong>prefix</strong> 从未更改。
+
 
 
 使用 Skype for Business Online 和 Windows PowerShell 时要使用的另一个关键术语是*租户*。当您设置 Skype for Business Online 帐户时，您的新部署会被分配一个租户 ID 号，它是与此类似的全局唯一标识符 (GUID)：

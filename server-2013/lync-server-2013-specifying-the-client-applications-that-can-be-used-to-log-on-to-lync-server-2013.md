@@ -19,18 +19,9 @@ _**上一次修改主题：** 2012-12-11_
 
 除了创建全局策略外，还可以为特定服务或站点创建客户端版本策略，或创建可分配给单个用户的用户作用域策略。可以在 Lync Server 控制面板中将用户作用域客户端版本策略分配给“用户”组中的各个用户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于匿名用户未与用户、站点或服务关联，因此匿名用户仅受全局级别策略的影响。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由于匿名用户未与用户、站点或服务关联，因此匿名用户仅受全局级别策略的影响。
+
 
 
 <table>
@@ -55,18 +46,9 @@ _**上一次修改主题：** 2012-12-11_
 
 3.  在左侧导航栏中，单击“客户端”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下，选中“客户端版本策略”选项卡。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 默认情况下，选中“客户端版本策略”选项卡。
+    
 
 
 4.  在“客户端版本策略”页上，双击列表中的“全局”策略。
@@ -103,18 +85,9 @@ _**上一次修改主题：** 2012-12-11_
     
       - 在“更新”中，键入与客户端的更新版本相对应的版本号。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可以使用通配符来指示客户端版本号。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 可以使用通配符来指示客户端版本号。
+    
 
 
 8.  要为上述步骤中指定的客户端版本指定匹配操作，请在“比较操作”中，单击下列选项之一：
@@ -137,18 +110,9 @@ _**上一次修改主题：** 2012-12-11_
     
       - 要允许客户端登录并接收来自 Windows Server 更新服务或 Microsoft Update 的更新，请单击“允许并升级”。仅当选中用户代理“OC”时，才能进行此操作。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>选择此操作会使得在用户下次登录到 Lync 2013 时显示一个通知。该通知指出有可用更新，即使更新尚未发布到 Windows Server Update Service 或 Microsoft Update。为了避免混淆，您只应在更新可用后选择此操作。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 选择此操作会使得在用户下次登录到 Lync 2013 时显示一个通知。该通知指出有可用更新，即使更新尚未发布到 Windows Server Update Service 或 Microsoft Update。为了避免混淆，您只应在更新可用后选择此操作。
+        
     
       - 要允许客户端登录并显示有关下载其他客户端版本的位置的消息，请单击“使用 URL 允许”。需要在此过程的后面阶段指定 URL。
     

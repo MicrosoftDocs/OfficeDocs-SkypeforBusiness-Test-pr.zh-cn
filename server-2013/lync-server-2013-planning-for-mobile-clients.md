@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 Lync 2013 移动客户端通过 Internet 或蜂窝连接提供增强的状态显示、IM、Lync 会议以及语音和视频呼叫。有关列出移动客户端的特性和功能并将其与桌面客户端相比的矩阵，请参阅[Lync Server 2013 的移动客户端比较表](lync-server-2013-mobile-client-comparison-tables.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 也支持 Lync 2010 移动客户端。有关详细信息，请参阅 Lync Server 2010 TechNet 库中的“规划移动客户端”，网址是 <a href="http://go.microsoft.com/fwlink/?linkid=235955" class="uri">http://go.microsoft.com/fwlink/?linkid=235955</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 也支持 Lync 2010 移动客户端。有关详细信息，请参阅 Lync Server 2010 TechNet 库中的“规划移动客户端”，网址是 <a href="http://go.microsoft.com/fwlink/?linkid=235955" class="uri">http://go.microsoft.com/fwlink/?linkid=235955</a>。
+
 
 
 ## 本部分内容

@@ -17,18 +17,9 @@ _**上一次修改主题：** 2014-06-10_
 
 要以经过身份验证的用户身份加入电话拨入式会议，具有 Active Directory 域服务 (AD DS) 凭据的 Lync Server 2013 用户需要个人标识号 (PIN)。如果用户忘记了电话拨入式会议的 PIN 或尚未通过 Lync Server 设置 PIN，则可以在 Lync Server 控制面板中设置用户的 PIN。可以自动生成 PIN，或手动创建 PIN。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以将 PIN 的具体特征（如 PIN 的最小长度）配置为策略。除了全局策略，您还可以为各个站点或用户配置 PIN 策略。有关配置 PIN 策略的详细信息，请参阅 <a href="lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md">在 Lync Server 2013 中配置电话拨入式会议个人标识号 (PIN) 规则</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 可以将 PIN 的具体特征（如 PIN 的最小长度）配置为策略。除了全局策略，您还可以为各个站点或用户配置 PIN 策略。有关配置 PIN 策略的详细信息，请参阅 <a href="lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md">在 Lync Server 2013 中配置电话拨入式会议个人标识号 (PIN) 规则</a>。
+
 
 
 ## 设置用户的 PIN
@@ -70,18 +61,9 @@ _**上一次修改主题：** 2014-06-10_
     
     5.  单击“查找”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果锁定了 PIN，则必须解锁 PIN，然后才能对其进行设置。要解锁 PIN，请单击用户，再单击“操作”，然后单击“解锁 PIN”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 如果锁定了 PIN，则必须解锁 PIN，然后才能对其进行设置。要解锁 PIN，请单击用户，再单击“操作”，然后单击“解锁 PIN”。
+    
 
 
 6.  在搜索结果中单击某个用户，再单击“操作”，然后单击“设置 PIN”。

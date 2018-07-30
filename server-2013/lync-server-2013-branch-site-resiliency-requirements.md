@@ -35,34 +35,15 @@ _**上一次修改主题：** 2015-03-09_
 
 我们建议您为分支站点中的用户创建单独的用户级别 IP 语音 (VoIP) 策略。该策略应该包括一个使用 Survivable Branch Appliance 或分支服务器网关的主路由，以及一个或多个使用中央站点带公用电话交换网 (PSTN) 网关的中继的备份路由。如果主路由不可用，则将改用使用一个或多个中央站点网关的备份路由。这样，不管是在分支站点注册器还是在中央站点的备份注册器池中注册用户，用户的 VoIP 策略将始终有效。这对于处理故障转移的情况是很重要的。例如，如果您需要重命名 Survivable Branch Appliance 或将 Survivable Branch Appliance 重新配置为连接到中央站点上的备份注册器池，则在此期间，您必须将分支站点用户移到中央站点。（有关重命名或重新配置 Survivable Branch Appliance 的详细信息，请参阅部署文档中的[附录 B：在 Lync Server 2013 中管理 Survivable Branch Appliance](lync-server-2013-appendix-b-managing-a-survivable-branch-appliance.md)。）如果这些用户没有制定用户级别的 VoIP 策略或用户级别的拨号计划，那么在这些用户移到其他站点时，默认情况下，中央站点的站点级别 VoIP 策略和站点级别拨号计划（而非分支站点的站点级别的 VoIP 策略和拨号计划）将会应用到这些用户。在这种情况下，除非备份注册器池所用的站点级别 VoIP 策略和站点级别拨号计划也能应用到这些分支站点用户，否则他们的呼叫将失败。例如，如果某个位于日本的分支站点上的用户移到位于雷蒙德的中央站点上，那么，其规范化规则是在所有 7 位数字呼叫之前附加 +1425 的拨号计划就可能不会采用适当的方式转换对这些用户的呼叫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建分支机构备份路由时，建议将两个 PSTN 电话用法记录添加到分支机构用户策略中，并为每个记录分配单独的路由。第一个路由（主路由）会将呼叫定向到与 Survivable Branch Appliance (SBA) 或分支服务器关联的网关；第二个路由（备份路由）会将呼叫定向到中央站点上的网关。在定向呼叫时，SBA 或分支服务器会在尝试所有分配给第一个 PSTN 用法记录的路由后，再尝试第二个用法记录。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 创建分支机构备份路由时，建议将两个 PSTN 电话用法记录添加到分支机构用户策略中，并为每个记录分配单独的路由。第一个路由（主路由）会将呼叫定向到与 Survivable Branch Appliance (SBA) 或分支服务器关联的网关；第二个路由（备份路由）会将呼叫定向到中央站点上的网关。在定向呼叫时，SBA 或分支服务器会在尝试所有分配给第一个 PSTN 用法记录的路由后，再尝试第二个用法记录。
 
 
 为了有助于确保在分支网关或 Survivable Branch Appliance 站点的 Windows 组件不可用时（例如， Survivable Branch Appliance 或分支网关停机维护时），对分支站点用户的入站呼叫能够到达这些用户，请在网关上创建故障转移路由（或与外线直拨分机 (DID) 提供商合作）将传入呼叫重定向到中央站点上的备份注册器池。在此处，呼叫将会通过 WAN 链路路由到分支用户。请确保路由会转换这些号码以符合 PSTN 网关要求或其他中继对等方接受的电话号码格式。有关创建故障转移路由的详细信息，请参阅 [在 Lync Server 2013 中配置故障转移路由](lync-server-2013-configuring-a-failover-route.md)。另外，您还可以为与分支站点网关相关联的中继创建服务级别拨号计划，以规范化传入呼叫。如果您在分支站点上有两个 Survivable Branch Appliance，则可以为它们创建一个站点级别的拨号计划，除非必须为它们各自单独创建一个拨号计划。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要说明其状态、会议或故障转移依赖于中央站点的任何分支站点用户使用中央站点资源的情况，建议您将每个分支站点用户视作已在中央站点进行注册。当前对分支站点用户（包括在 Survivable Branch Appliance 中注册的用户）的数量没有限制。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 要说明其状态、会议或故障转移依赖于中央站点的任何分支站点用户使用中央站点资源的情况，建议您将每个分支站点用户视作已在中央站点进行注册。当前对分支站点用户（包括在 Survivable Branch Appliance 中注册的用户）的数量没有限制。
+
 
 
 我们还建议您创建一个用户级别的拨号计划和语音策略，然后将它分配给分支站点用户。有关详细信息，请参阅部署文档中的 [在 Lync Server 2013 中创建拨号计划](lync-server-2013-create-a-dial-plan.md)和 [在 Lync Server 2013 中为分支用户创建 VoIP 路由策略](lync-server-2013-create-the-voip-routing-policy-for-branch-users.md)。
@@ -203,18 +184,9 @@ Survivable Branch Appliance (SBA) 和 Survivable Branch Server 会在 WAN 中断
 
 如果企业 DNS 服务器仅位于中央站点，则在 WAN 中断期间，分支站点用户将无法连接到这些服务器，因此，使用 DNS SRV（服务 (SRV) 资源记录）的 Lync Server 发现将失败。要确保在 WAN 中断期间提示重新路由，必须在分支站点上缓存 DNS 记录。如果分支路由器支持 DNS 缓存，则为分支路由器启用 DNS 缓存。或者，可以在分支上部署 DNS 服务器。此服务器可以是独立服务器，也可以是支持 DNS 功能的 Survivable Branch Appliance 版本。有关详细信息，请联系您的 Survivable Branch Appliance 提供商。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>分支站点中不必有域控制器。 Survivable Branch Appliance 使用特殊证书对客户端进行身份验证，当客户端登录时，它会将该证书发送给客户端以响应客户端的证书请求。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 分支站点中不必有域控制器。 Survivable Branch Appliance 使用特殊证书对客户端进行身份验证，当客户端登录时，它会将该证书发送给客户端以响应客户端的证书请求。
+
 
 
 Lync 客户端可使用 DHCP 选项 120（SIP 注册器选项）发现 Lync Server。可通过以下两种方法之一配置该功能：

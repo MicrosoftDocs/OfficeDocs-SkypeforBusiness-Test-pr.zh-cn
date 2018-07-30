@@ -31,36 +31,17 @@ _**上一次修改主题：** 2016-12-08_
 
 对于新的 Lync Server 2013 部署，我们现在还支持在 Standard Edition Server 上部署 持久聊天服务器。但是，性能和规模将会受影响，并且由于该新部署没有高可用性选项，因此应该主要出于概念证明、评估等目的使用此部署。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关两种拓扑的其他详细信息，请参阅本文档集中的 <a href="lync-server-2013-planning-for-persistent-chat-server.md">在 Lync Server 2013 中规划持久聊天服务器</a>和部署文档中的 <a href="lync-server-2013-deploying-persistent-chat-server.md">在 Lync Server 2013 中部署持久聊天服务器</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关两种拓扑的其他详细信息，请参阅本文档集中的 <a href="lync-server-2013-planning-for-persistent-chat-server.md">在 Lync Server 2013 中规划持久聊天服务器</a>和部署文档中的 <a href="lync-server-2013-deploying-persistent-chat-server.md">在 Lync Server 2013 中部署持久聊天服务器</a>。
+
 
 
 ## 单服务器拓扑
 
 持久聊天服务器的最低配置和最简单的部署是单 持久聊天服务器前端服务器拓扑。此部署要求具有一台运行 持久聊天服务器的服务器（如果已启用合规性，该服务器可以运行合规性服务）、一台承载 SQL Server 数据库的服务器，如果有合规性要求，该 SQL Server 数据库用于存储合规性数据。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您不能向作为 拓扑生成器中的单服务器部署启动的 持久聊天服务器池添加其他服务器。建议使用多服务器池拓扑（即使您使用的是单服务器），以便能在稍后根据需要添加更多服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您不能向作为 拓扑生成器中的单服务器部署启动的 持久聊天服务器池添加其他服务器。建议使用多服务器池拓扑（即使您使用的是单服务器），以便能在稍后根据需要添加更多服务器。
 
 
 下图显示了具有合规性的单个 持久聊天服务器前端服务器拓扑的所有必需组件和可选组件。
@@ -359,18 +340,8 @@ _**上一次修改主题：** 2016-12-08_
 
 对于每个聊天室，前面的容量规划表将指定与聊天室关联的访问控制项的数量，包括直接分配到聊天室的项。可以使用访问控制列表 (ACL) 控制对单个聊天室的访问，也可以在类别级别控制访问。在 ACL 中，单个访问控制项可以是用户组（例如，安全组、通讯组列表），也可以是单个用户。您可以为聊天室管理者、演示者和成员定义访问控制项。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>规划管理聊天室的策略时，请牢记允许的访问控制项总数是 200 万。如果计算出的访问控制项超过 200 万，服务器性能可能会显著降低。为避免这一问题，请尽可能确保您的访问控制项是用户组而非单个用户。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 规划管理聊天室的策略时，请牢记允许的访问控制项总数是 200 万。如果计算出的访问控制项超过 200 万，服务器性能可能会显著降低。为避免这一问题，请尽可能确保您的访问控制项是用户组而非单个用户。
 
 
 ## 管理邀请的聊天室访问的容量规划
@@ -379,18 +350,8 @@ _**上一次修改主题：** 2016-12-08_
 
 下表中的示例数据假定在 50% 聊天室的“聊天室设置”页面上，“邀请”选项设置为“是”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果计算出的服务器生成的邀请数量超过 100 万，服务器性能可能会显著降低。为避免这一问题，请确保将配置为发送邀请的聊天室的数量降至最低，或者限制可以加入配置为发送邀请的聊天室的用户数。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果计算出的服务器生成的邀请数量超过 100 万，服务器性能可能会显著降低。为避免这一问题，请确保将配置为发送邀请的聊天室的数量降至最低，或者限制可以加入配置为发送邀请的聊天室的用户数。
 
 
 ### 邀请的聊天室访问示例

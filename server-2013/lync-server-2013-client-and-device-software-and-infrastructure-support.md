@@ -25,23 +25,11 @@ Lync Server 2013 部署的客户端和设备的软件支持包括支持的操作
 
   - [用户照片在 Lync 中的显示方式](how-user-photos-are-displayed-in-lync.md)
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Phone Edition 在 Lync Server 2013 上的工作方式与在 Lync Server 2010 上的工作方式是相同的。有关设备的软件支持的详细信息，请参阅 Lync Server 2010 TechNet 库中的以下主题：
+> [!NOTE]  
+> Lync Phone Edition 在 Lync Server 2013 上的工作方式与在 Lync Server 2010 上的工作方式是相同的。有关设备的软件支持的详细信息，请参阅 Lync Server 2010 TechNet 库中的以下主题：
 <ul>
 <li><p>设备所需的 Lync Server 2010 组件，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=256488" class="uri">http://go.microsoft.com/fwlink/p/?linkid=256488</a>&gt;</p></li>
 <li><p>设备系统和基础结构支持，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=256489" class="uri">http://go.microsoft.com/fwlink/p/?linkid=256489</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+
 
