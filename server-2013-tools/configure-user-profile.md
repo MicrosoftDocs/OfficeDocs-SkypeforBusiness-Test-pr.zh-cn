@@ -21,18 +21,8 @@ The tools included in the Lync Server 2013 Stress and Performance Tool package e
 
 To configure user profiles, run the Lync Server 2013 Load Configuration Tool (UserProfileGenerator.exe) and fill out each of the tabs. UserProfileGenerator.exe generates a directory for each of the client computers that you need to run the simulation. Each client directory also comes with a script to start all of the instances of the Lync Server 2013 Stress and Performance Tool (LyncPerfTool.exe).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945592.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>The user-specific values specified in UserProfileGenerator must match the values specified in the Lync Server 2013 User Creation Tool (UserProvisioningTool) for the pool.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> The user-specific values specified in UserProfileGenerator must match the values specified in the Lync Server 2013 User Creation Tool (UserProvisioningTool) for the pool.
 
 
 Fill in the fields on each tab of the Lync Server 2013 Load Configuration Tool, as described in the following sections.
@@ -75,18 +65,8 @@ Configure the load levels and parameters for each of the general scenarios that 
 
 1.  In **Instant Messaging**, which includes peer-to-peer and conferencing, specify the appropriate value for the Load Level.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Load level values for all fields (except Location Information Services) are <strong>Disabled</strong>, <strong>Low</strong>, <strong>Medium</strong>, <strong>High</strong>, and <strong>Custom</strong>. When Low, Medium, High, or Custom is selected, configurations will be generated for each modality and client. High will result in the maximum supported load to be generated for the server, Medium corresponds to 60 percent of the load, and Low corresponds to 30 percent of the load.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Load level values for all fields (except Location Information Services) are <strong>Disabled</strong>, <strong>Low</strong>, <strong>Medium</strong>, <strong>High</strong>, and <strong>Custom</strong>. When Low, Medium, High, or Custom is selected, configurations will be generated for each modality and client. High will result in the maximum supported load to be generated for the server, Medium corresponds to 60 percent of the load, and Low corresponds to 30 percent of the load.
 
 
 2.  In **Audio Conferencing**, which is audio conferencing only, specify the appropriate value for Load Level. Peer-to-peer calls are covered in the Voice Scenarios section later in this topic. To enable MultiView, open the **Advanced** tab for that modality.
@@ -131,18 +111,8 @@ Use the **Voice Scenarios** tab to configure all of the voice-related scenarios.
 
 2.  In **UC/PSTN Gateway**, specify a value for Load Level. If you select a load level other than **Disabled**, you must supply a value for **PSTN Area Code** by clicking the **Add** button under Mediation Server and PSTN. Verify that you have a route configured for that area code.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>You can use either the Lync Server 控制面板 or the Lync Server 命令行管理程序 to verify voice route configuration.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > You can use either the Lync Server 控制面板 or the Lync Server 命令行管理程序 to verify voice route configuration.
 
 
 3.  In **Conferencing Attendant**, specify a value for Load Level. Selecting a load level (other than **Disabled**) will enable the **Telephone Number** field. Enter the telephone number of the Auto Attendant that you want to use. Also, click the **Advanced** button, and then specify a value for the **LocationProfile** field.

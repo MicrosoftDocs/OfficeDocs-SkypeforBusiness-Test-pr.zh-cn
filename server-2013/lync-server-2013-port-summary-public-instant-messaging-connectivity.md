@@ -19,19 +19,9 @@ _**上一次修改主题：** 2015-03-09_
 
 Windows Live Messenger 可参与和 Lync 客户端的音频/视频通信。这对您通常作为外部用户在防火墙上支持 Lync 客户端非常类似的防火墙端口和协议配置进行了解释。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>与以往相比，Lync 是一个更强大的工具，可用于跨多个组织进行联系以及与世界各地的各个用户进行联系。与 Windows Live Messenger 联盟无需 Lync 标准版客户端访问许可证 (CAL) 之外的其他任何用户/设备许可证。Skype 联盟将添加到此列表，使 Lync 用户能够通过 IM 和语音与数亿人联系。<br />
-与 Messenger 客户端联系人的联盟将于 2013 年 3 月 15 日正式结束，中国内地除外。Skype 将成为以前使用 Messenger 的联盟用户的联盟客户端。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 与以往相比，Lync 是一个更强大的工具，可用于跨多个组织进行联系以及与世界各地的各个用户进行联系。与 Windows Live Messenger 联盟无需 Lync 标准版客户端访问许可证 (CAL) 之外的其他任何用户/设备许可证。Skype 联盟将添加到此列表，使 Lync 用户能够通过 IM 和语音与数亿人联系。<br />
+> 与 Messenger 客户端联系人的联盟将于 2013 年 3 月 15 日正式结束，中国内地除外。Skype 将成为以前使用 Messenger 的联盟用户的联盟客户端。
 
 
 ## 防火墙摘要 – 公共即时消息连接

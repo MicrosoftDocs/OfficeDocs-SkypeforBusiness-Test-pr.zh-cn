@@ -17,18 +17,8 @@ _**上一次修改主题：** 2012-09-17_
 
 如果要创建或修改电话拨入式会议访问号码，请执行以下步骤。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建新的拨入访问号码前，必须在与新拨入访问号码关联的拨号计划中设置电话拨入式会议区域。多个拨号计划可使用同一区域。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 创建新的拨入访问号码前，必须在与新拨入访问号码关联的拨号计划中设置电话拨入式会议区域。多个拨号计划可使用同一区域。
 
 
 ## 创建或修改拨入访问号码

@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-12-08_
 
 Lync Server 部署向导可指导您完成每一项 Active Directory 准备任务。部署向导运行 Lync Server 命令行管理程序 cmdlet。对于单域、单林拓扑或其他类似拓扑的环境，此工具很有用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以在域控制器运行某些 32 位版本操作系统的林或域中部署 Lync Server（有关详细信息，请参阅 <a href="lync-server-2013-active-directory-infrastructure-requirements.md">Lync Server 2013 的 Active Directory 基础结构要求</a>）。但是，不能在这些环境中使用 Lync Server 部署向导运行架构、林和域准备，因为部署向导和支持文件仅提供了 64 位版本。可以改为在 32 位域控制器上使用 ldifde.exe 和 associated .ldf 文件来准备架构、林和域。请参阅本主题稍后的“使用 Cmdlet 和 Ldifde.exe”一节。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 可以在域控制器运行某些 32 位版本操作系统的林或域中部署 Lync Server（有关详细信息，请参阅 <a href="lync-server-2013-active-directory-infrastructure-requirements.md">Lync Server 2013 的 Active Directory 基础结构要求</a>）。但是，不能在这些环境中使用 Lync Server 部署向导运行架构、林和域准备，因为部署向导和支持文件仅提供了 64 位版本。可以改为在 32 位域控制器上使用 ldifde.exe 和 associated .ldf 文件来准备架构、林和域。请参阅本主题稍后的“使用 Cmdlet 和 Ldifde.exe”一节。
 
 
 可以使用 Lync Server 命令行管理程序 cmdlet 远程运行任务，也可以将其用于更为复杂的环境。

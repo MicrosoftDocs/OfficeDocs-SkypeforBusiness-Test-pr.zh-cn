@@ -32,18 +32,8 @@ _**上一次修改主题：** 2012-09-10_
     
         Set-CsCallParkServiceMusicOnHoldFile -Service <ServiceID where the Call Park application resides> -Content <Byte[]>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用 <strong>Get-CsService</strong> cmdlet 可标识服务。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsService">Get-CsService</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 使用 <strong>Get-CsService</strong> cmdlet 可标识服务。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsService">Get-CsService</a>。
     
     以下示例说明了如何以字节数组的形式获取文件 soothingmusic.wma 的内容并将其分配给变量。然后，将音频文件指定为呼叫寄存的保留音乐文件。有关详细信息，请参阅 [Set-CsCallParkServiceMusicOnHoldFile](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCallParkServiceMusicOnHoldFile)。
     

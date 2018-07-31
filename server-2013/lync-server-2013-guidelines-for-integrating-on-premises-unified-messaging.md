@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
 以下是部署企业语音时要考虑的准则和最佳做法：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅当您也使用 UCMA 4 时， Exchange 统一消息 (UM) 才支持 IPv6。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 仅当您也使用 UCMA 4 时， Exchange 统一消息 (UM) 才支持 IPv6。
 
 
   - 部署 Lync Server 2013 Standard Edition Server 或 前端池。有关安装的详细信息，请参阅部署文档中的 [部署 Lync Server 2013](lync-server-2013-deploying-lync-server.md)。
@@ -62,18 +52,8 @@ _**上一次修改主题：** 2016-12-08_
 
 ## 部署冗余 Exchange UM 服务器
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于为组织配置的每个 Exchange UM SIP URI 拨号计划，我们建议您至少为其部署两台运行 Exchange UM 服务的服务器。除了提供扩展容量之外，部署冗余服务还可提供高可用性。如果服务器发生故障，则可将 Lync Server 2013 配置为故障转移到其他服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 对于为组织配置的每个 Exchange UM SIP URI 拨号计划，我们建议您至少为其部署两台运行 Exchange UM 服务的服务器。除了提供扩展容量之外，部署冗余服务还可提供高可用性。如果服务器发生故障，则可将 Lync Server 2013 配置为故障转移到其他服务器。
 
 
 以下示例配置提供 Exchange UM 恢复能力。

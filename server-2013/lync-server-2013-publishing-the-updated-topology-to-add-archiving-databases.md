@@ -42,16 +42,6 @@ _**上一次修改主题：** 2012-10-01_
 
 6.  在“发布向导完成”页上，确认已成功发布拓扑，然后单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>发布拓扑后，必须配置存档选项和策略，然后才能存档任何内容。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-configuring-support-for-archiving.md">配置存档支持</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 发布拓扑后，必须配置存档选项和策略，然后才能存档任何内容。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-configuring-support-for-archiving.md">配置存档支持</a>。
 

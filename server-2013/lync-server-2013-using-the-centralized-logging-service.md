@@ -29,18 +29,8 @@ _**上一次修改主题：** 2012-11-01_
     
       - 使用现有*提供程序* 或创建新提供程序。*提供程序* 定义日志记录会话收集的内容、详细信息级别、要跟踪的组件以及应用的标志。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您熟悉 OCSLogger，那就知道术语<em>提供程序</em> 指的是<strong>组件</strong>（例如，S4、SIPStack）、<strong>日志记录类型</strong>（例如，WPP、EventLog 或 IIS 日志文件）、<strong>跟踪级别</strong>（例如，全部、详细、调试）和<strong>标志</strong>（例如，TF_COMPONENT、TF_DIAG）的集合。这些项目都在提供程序（Windows PowerShell 变量）中定义并传递到集中日志记录服务命令中。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 如果您熟悉 OCSLogger，那就知道术语<em>提供程序</em> 指的是<strong>组件</strong>（例如，S4、SIPStack）、<strong>日志记录类型</strong>（例如，WPP、EventLog 或 IIS 日志文件）、<strong>跟踪级别</strong>（例如，全部、详细、调试）和<strong>标志</strong>（例如，TF_COMPONENT、TF_DIAG）的集合。这些项目都在提供程序（Windows PowerShell 变量）中定义并传递到集中日志记录服务命令中。
     
       - 配置要从中收集日志的计算机和池。
     

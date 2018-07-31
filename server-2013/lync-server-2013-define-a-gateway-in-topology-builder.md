@@ -73,18 +73,8 @@ _**上一次修改主题：** 2012-10-04_
 
 10. 单击“完成”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>完成此步骤之前，请确保您定义的对等方正在运行并使用指定的 FQDN 或 IP 地址。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 完成此步骤之前，请确保您定义的对等方正在运行并使用指定的 FQDN 或 IP 地址。
 
 
 接下来，要向拓扑中添加对等方，请按照部署文档的 [在 Lync Server 2013 中发布拓扑](lync-server-2013-publish-the-topology.md)中的过程进行操作。每次使用 拓扑生成器构建或修改拓扑时，必须先发布拓扑，然后才能使用数据安装运行 Lync Server 的服务器的文件。

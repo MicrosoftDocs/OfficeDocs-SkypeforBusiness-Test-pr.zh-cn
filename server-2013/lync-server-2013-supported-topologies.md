@@ -25,18 +25,8 @@ Lync Server 2013 内部部署由以下几个部分组成：
     
       - Enterprise Edition 前端池，它由一台或多台前端服务器（出于可伸缩性考虑，通常至少包括两台前端服务器）和一台单独的后端服务器构成。前端池最多可包含十二台前端服务器。多台前端服务器需要负载平衡。对于 SIP 流量，建议使用 DNS 负载平衡，但也支持硬件负载平衡。如果对 SIP 流量使用 DNS 负载平衡，您仍需对 HTTP 流量使用硬件负载平衡器。建议使用 SQL Server 镜像来实现数据库的高可用性。后端数据库需要一个单独的实例，但可将存档数据库、监控数据库、持久聊天数据库和持久聊天合规性数据库与其并置。Lync Server 2013 还支持将共享群集用于部署中的文件共享。有关数据库存储要求的详细信息，请参阅[Lync Server 2013 中的数据库软件支持](lync-server-2013-database-software-support.md)。有关文件存储要求的详细信息，请参阅[Lync Server 2013 中的文件存储支持](lync-server-2013-file-storage-support.md)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您将 Lync Server 数据库与其他数据库并置在一起，则强烈建议您评估可能影响可用性和性能的所有因素。若要验证故障转移功能，建议您测试所有故障转移方案。</td>
-        </tr>
-        </tbody>
-        </table>
+        >  [!IMPORTANT]  
+        > 如果您将 Lync Server 数据库与其他数据库并置在一起，则强烈建议您评估可能影响可用性和性能的所有因素。若要验证故障转移功能，建议您测试所有故障转移方案。
     
       - Standard Edition Server，包含一个并置的 SQL Server Express 数据库。
 

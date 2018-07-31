@@ -17,18 +17,8 @@ _**上一次修改主题：** 2013-11-07_
 
 使用 Microsoft Lync Server 2013 规划工具开始设计和规划 Lync Server 2013 基础结构之前，必须首先安装 规划工具。无需将 规划工具部署到计划安装 Lync Server 2013 的域或基础结构中的工作站或服务器。规划工具随附的自述文件详细介绍了有关安装和使用该工具的重要信息。为明确起见，此处复述了自述文件中的某些信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>规划工具要求执行安装的用户具有要安装该工具的计算机上的管理员权限。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 规划工具要求执行安装的用户具有要安装该工具的计算机上的管理员权限。
 
 
 支持安装和操作 规划工具的操作系统有：

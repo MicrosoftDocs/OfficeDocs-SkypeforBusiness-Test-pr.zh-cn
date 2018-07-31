@@ -17,48 +17,18 @@ _**上一次修改主题：** 2012-09-26_
 
 可使用 Lync Server 控制面板或 Lync Server 命令行管理程序将用户移至新的 Lync Server 2013 部署。您必须满足一些要求，才能确保顺利迁移到 Lync Server 2013。有关完成本主题中的过程要满足的先决条件的详细信息，请参阅 [配置用于迁移的客户端](configure-clients-for-migration_1.md)。有关移动用户的详细步骤，请参阅 [第 6 阶段：将用户移至试点池中](phase-6-move-users-to-the-pilot-pool.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用“Active Directory 用户和计算机”管理单元或 Microsoft Office Communications Server 2007 R2 管理工具将用户从旧环境移至 Lync Server 2013。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 不能使用“Active Directory 用户和计算机”管理单元或 Microsoft Office Communications Server 2007 R2 管理工具将用户从旧环境移至 Lync Server 2013。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Move-CsLegacyUser</strong> cmdlet 要求用户名的格式必须正确，并且没有前导或尾随空格。如果某用户帐户包含前导或尾随空格，则不能使用 <strong>Move-CsLegacyUser</strong> cmdlet 移动它。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> <strong>Move-CsLegacyUser</strong> cmdlet 要求用户名的格式必须正确，并且没有前导或尾随空格。如果某用户帐户包含前导或尾随空格，则不能使用 <strong>Move-CsLegacyUser</strong> cmdlet 移动它。
 
 
 将用户移至 Lync Server 2013 池时，用户的数据会移至与新池关联的后端数据库。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>这包括由旧用户创建的活动会议。例如，如果旧用户在“我的会议”中配置了一个会议，那么移动用户后，该会议在新 Lync Server 2013 池中仍然有效。访问该会议时仍要使用相同的 <strong>会议 URL 和会议 ID</strong>。唯一的区别是会议现在托管在 Lync Server 2013 池中，而不是 Office Communications Server 2007 R2 池中。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 这包括由旧用户创建的活动会议。例如，如果旧用户在“我的会议”中配置了一个会议，那么移动用户后，该会议在新 Lync Server 2013 池中仍然有效。访问该会议时仍要使用相同的 <strong>会议 URL 和会议 ID</strong>。唯一的区别是会议现在托管在 Lync Server 2013 池中，而不是 Office Communications Server 2007 R2 池中。
 
 
 <table>

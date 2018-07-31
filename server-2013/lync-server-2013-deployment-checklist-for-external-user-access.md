@@ -29,18 +29,8 @@ Microsoft Lync Server 2013 所含工具可同时简化内部服务器和边缘�
 
 下表概述了边缘服务器部署过程。要审核在部署外部用户访问之前必须做出的规划决策，请参阅 [Lync Server 2013 中的外部用户访问方案](lync-server-2013-scenarios-for-external-user-access.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下表中的信息主要涉及新的部署。如果已在 Lync Server 2010、Office Communications Server 2007 R2 或 Office Communications Server 2007 环境中部署了边缘服务器，请参阅<a href="migration.md">迁移</a>以了解有关迁移到 Lync Server 2013 的详细信息。Office Communications Server 2007 R2 之前的所有版本（包括 Office Communications Server 2007、Live Communications Server 2005 和 Live Communications Server 2003）均不支持迁移。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 下表中的信息主要涉及新的部署。如果已在 Lync Server 2010、Office Communications Server 2007 R2 或 Office Communications Server 2007 环境中部署了边缘服务器，请参阅<a href="migration.md">迁移</a>以了解有关迁移到 Lync Server 2013 的详细信息。Office Communications Server 2007 R2 之前的所有版本（包括 Office Communications Server 2007、Live Communications Server 2005 和 Live Communications Server 2003）均不支持迁移。
 
 
 为了提高边缘服务器的性能和安全性，同时为了方便部署，在部署外围网络和边缘服务器时，请应用以下最佳做法：

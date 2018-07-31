@@ -57,18 +57,8 @@ _**上一次修改主题：** 2012-09-21_
     
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 cmdlet <strong>Set-CsPstnGateway</strong> 修改 PSTN 网关的属性。有关详细信息，请参阅 Lync Server 命令行管理程序帮助中的 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsPstnGateway">Set-CsPstnGateway</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 使用 cmdlet <strong>Set-CsPstnGateway</strong> 修改 PSTN 网关的属性。有关详细信息，请参阅 Lync Server 命令行管理程序帮助中的 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsPstnGateway">Set-CsPstnGateway</a>。
 
 
 执行下一步以实现分支站点恢复能力： [在 Lync Server 2013 中为用户配置分支站点恢复能力](lync-server-2013-configuring-users-for-branch-site-resiliency.md)

@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-12-08_
 
 有关删除 Lync Server 2010 服务器和服务器角色的详细介绍以及停用 Lync Server 2010 部署的分步指南，请参阅“卸载 Microsoft Lync Server 2010 和删除服务器角色”，可从 [http://go.microsoft.com/fwlink/p/?linkId=246227](http://go.microsoft.com/fwlink/p/?linkid=246227) 下载本文。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关在停用旧环境之前迁移和升级 Microsoft 统一通信托管 API (UCMA) 应用程序的信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=269555">http://go.microsoft.com/fwlink/p/?LinkId=269555</a></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 有关在停用旧环境之前迁移和升级 Microsoft 统一通信托管 API (UCMA) 应用程序的信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=269555">http://go.microsoft.com/fwlink/p/?LinkId=269555</a>
 
 
 ## 本部分内容

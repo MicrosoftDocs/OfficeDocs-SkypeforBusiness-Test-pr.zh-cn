@@ -35,18 +35,8 @@ _**上一次修改主题：** 2012-10-19_
 
 在停用 Lync Server 2010 池之前，必须完成迁移指向 Lync Server 2010 池的拨入访问号码。如果未按以下过程所述完成拨入访问号码的迁移，对该访问号码的传入呼叫将失败。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在停用 Lync Server 2010 池之前必须执行此过程。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 在停用 Lync Server 2010 池之前必须执行此过程。
 
 
 <table>
@@ -79,18 +69,8 @@ _**上一次修改主题：** 2012-10-19_
 
 6.  确认将拨入访问号码迁移出的 Lync Server 2010 池没有保留任何拨入访问号码。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>当所有拨入访问号码均指向 Lync Server 2013 池后，可以停用 Lync Server 2010 池。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 当所有拨入访问号码均指向 Lync Server 2013 池后，可以停用 Lync Server 2010 池。
 
 
 **使用 Lync Server 控制面板确认拨入访问号码迁移**

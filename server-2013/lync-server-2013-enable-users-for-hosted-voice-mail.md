@@ -21,18 +21,8 @@ _**上一次修改主题：** 2012-09-24_
 
 有关 [Set-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsUser) cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在可以为 Lync Server 2013 用户启用托管语音邮件之前，必须已部署应用于其用户帐户的托管语音邮件策略。有关详细信息，请参阅 <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的托管语音邮件策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 在可以为 Lync Server 2013 用户启用托管语音邮件之前，必须已部署应用于其用户帐户的托管语音邮件策略。有关详细信息，请参阅 <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的托管语音邮件策略</a>。
 
 
 ## 为用户启用托管语音邮件

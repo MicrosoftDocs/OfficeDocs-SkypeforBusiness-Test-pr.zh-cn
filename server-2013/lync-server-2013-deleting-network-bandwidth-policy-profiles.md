@@ -34,18 +34,8 @@ _**上一次修改主题：** 2012-11-01_
 
 5.  在“编辑”菜单上，单击“删除”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不能删除与网络站点关联的带宽策略配置文件。只有先删除配置文件与网络站点之间的关联，然后才能将配置文件删除。有关如何修改网络站点的详细信息，请参阅<a href="lync-server-2013-creating-or-modifying-network-sites.md">创建或修改网络站点</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 不能删除与网络站点关联的带宽策略配置文件。只有先删除配置文件与网络站点之间的关联，然后才能将配置文件删除。有关如何修改网络站点的详细信息，请参阅<a href="lync-server-2013-creating-or-modifying-network-sites.md">创建或修改网络站点</a>。
 
 
 ## 另请参阅

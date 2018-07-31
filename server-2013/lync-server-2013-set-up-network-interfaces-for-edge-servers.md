@@ -35,18 +35,8 @@ _**上一次修改主题：** 2012-09-08_
 
 1.  为每台边缘服务器安装两个网络适配器，一个用于面向内部的接口，另一个用于面向外部的接口。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>内部子网和外部子网不得相互路由。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 内部子网和外部子网不得相互路由。
 
 
 2.  在外部接口上，在外部外围网络（也称为 DMZ、外围安全区域或屏蔽子网）子网上配置三个静态 IP 地址，并将默认网关指向外部防火墙的内部接口。配置适配器 DNS 设置以指向一对外围 DNS 服务器。
@@ -64,18 +54,8 @@ _**上一次修改主题：** 2012-09-08_
 
 1.  为每台边缘服务器安装两个网络适配器，一个用于面向内部的接口，另一个用于面向外部的接口。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>内部子网和外部子网不得相互路由。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 内部子网和外部子网不得相互路由。
 
 
 2.  在外部接口上，在外部外围网络子网上配置三个静态 IP 地址。还可在外部接口上配置默认网关。例如，定义面向 Internet 的路由器或外部防火墙作为默认网关。将 DNS 设置配置为指向一台 DNS 服务器（最好是一对外部 DNS 服务器）。

@@ -63,18 +63,8 @@ _**上一次修改主题：** 2012-06-28_
 
 1.  使用分配给 CsAdministrator 角色或其他角色，并且具有与要执行的任务对应的用户权限的用户帐户，登录到内部部署中最低屏幕分辨率为 1024 x 768 的任何计算机。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果已配置管理简单统一资源定位器 (URL)，则可通过在组织防火墙内的计算机上运行的 Internet 浏览器访问 Lync Server 2013 控制面板。有关配置管理简单 URL 的详细信息，请参阅规划文档中的<a href="lync-server-2013-planning-for-simple-urls.md">在 Lync Server 2013 中规划简单 URL</a> 和部署文档中的<a href="lync-server-2013-edit-or-configure-simple-urls.md">在 Lync Server 2013 中编辑或配置简单 URL</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果已配置管理简单统一资源定位器 (URL)，则可通过在组织防火墙内的计算机上运行的 Internet 浏览器访问 Lync Server 2013 控制面板。有关配置管理简单 URL 的详细信息，请参阅规划文档中的<a href="lync-server-2013-planning-for-simple-urls.md">在 Lync Server 2013 中规划简单 URL</a> 和部署文档中的<a href="lync-server-2013-edit-or-configure-simple-urls.md">在 Lync Server 2013 中编辑或配置简单 URL</a>。
 
 
 2.  打开浏览器窗口，然后输入为组织配置的管理 URL。

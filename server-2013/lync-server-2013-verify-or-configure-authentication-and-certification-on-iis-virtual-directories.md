@@ -39,18 +39,8 @@ _**上一次修改主题：** 2012-05-25_
 
 3.  在“Internet 信息服务 (IIS) 管理器”中，选择“服务器名称”。在“功能视图”中，选择“服务器证书”，右键单击并选择“打开功能”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在“服务器证书功能视图”中，如果向服务器分配了证书，则这些证书会显示在此处。如果某证书与 IIS 中外部网站的要求匹配，您可以重新使用该证书。要查看证书，请右键单击相应证书并选择“查看…”</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 在“服务器证书功能视图”中，如果向服务器分配了证书，则这些证书会显示在此处。如果某证书与 IIS 中外部网站的要求匹配，您可以重新使用该证书。要查看证书，请右键单击相应证书并选择“查看…”
 
 
 4.  在为其请求证书的前端服务器或控制器上，单击“开始”，选择“所有程序”，选择“Microsoft Lync Server 2013”，然后单击“Lync Server 命令行管理程序”。
@@ -71,18 +61,8 @@ _**上一次修改主题：** 2012-05-25_
     
         Request-CsCertificate -New -Type Default,WebServicesInternal,WebServicesExternal -CA dc01.contoso.net\contoso-DC01-CA -Verbose -DomainName "LyncdiscoverInternal.Contoso.com,Lyncdiscover.Contoso.com"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下，Request-CsCertificate 将使用服务器或池名称填充使用者名称，使用服务器 FQDN、池 FQDN、简单 URL FQDN 以及内部和外部 Web 服务 FQDN 填充使用者可选名称中的条目。它通过引用您的部署中的拓扑文档来执行此操作。如果缺少值并且您指定了 –Verbose 参数，那么将通知您可选名称的计算值和实际值不同，但不会告知您缺少哪些值。该命令会向您提供 cmdlet 引用的完整计算值。在输出中使用计算的可选名称字符串以重新请求包括所有值的新证书。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 默认情况下，Request-CsCertificate 将使用服务器或池名称填充使用者名称，使用服务器 FQDN、池 FQDN、简单 URL FQDN 以及内部和外部 Web 服务 FQDN 填充使用者可选名称中的条目。它通过引用您的部署中的拓扑文档来执行此操作。如果缺少值并且您指定了 –Verbose 参数，那么将通知您可选名称的计算值和实际值不同，但不会告知您缺少哪些值。该命令会向您提供 cmdlet 引用的完整计算值。在输出中使用计算的可选名称字符串以重新请求包括所有值的新证书。
     
     ![使用 Request-CsCertificate 的证书请求的输出](images/Gg429702.9e59a657-fa75-4454-8fd3-57c81e829f7b(OCS.15).jpg "使用 Request-CsCertificate 的证书请求的输出")
 

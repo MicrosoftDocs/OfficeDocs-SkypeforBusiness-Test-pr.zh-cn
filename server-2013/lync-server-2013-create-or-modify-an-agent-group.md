@@ -22,18 +22,8 @@ _**上一次修改主题：** 2014-02-07_
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果将用户分配为响应组代理，需告知用户，如果用户已启用隐私模式，则需搜索“RGS Presence Watcher”联系人并将其添加到联系人列表。已启用隐私模式但未将“RGS Presence Watcher”添加到联系人列表中的代理将无法接收拨打到响应组的呼叫。未启用隐私模式的代理不受影响。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果将用户分配为响应组代理，需告知用户，如果用户已启用隐私模式，则需搜索“RGS Presence Watcher”联系人并将其添加到联系人列表。已启用隐私模式但未将“RGS Presence Watcher”添加到联系人列表中的代理将无法接收拨打到响应组的呼叫。未启用隐私模式的代理不受影响。
 
 
 ## 使用 Lync Server 控制面板创建或修改代理组
@@ -67,18 +57,8 @@ _**上一次修改主题：** 2014-02-07_
 
 8.  在“警报时间(秒)”中，指定将呼叫转至下一个空闲的代理之前，向某位代理响铃的秒数（默认为 20 秒）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>代理警报时间设置不能超出 180 秒，如果代理警报时间超过 180 秒，客户端应用程序会拒绝呼叫，因为 SIP 事务计时器达到其最长等待时间。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 代理警报时间设置不能超出 180 秒，如果代理警报时间超过 180 秒，客户端应用程序会拒绝呼叫，因为 SIP 事务计时器达到其最长等待时间。
 
 
 9.  在“路由方法”中，选择将呼叫路由至组中代理的方法，具体如下：
@@ -115,18 +95,8 @@ _**上一次修改主题：** 2014-02-07_
         
           - 如果通讯组列表包含已启用 Lync Server 2010 但未启用企业语音的用户，它们将作为不正常的代理添加到代理组。确保通信组列表的所有成员已为其用户帐户启用企业语音。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果使用电子邮件通讯组列表，则 响应组管理员或用户可以看到隐藏成员身份或隐藏列表。</td>
-        </tr>
-        </tbody>
-        </table>
+        >  [!IMPORTANT]  
+        > 如果使用电子邮件通讯组列表，则 响应组管理员或用户可以看到隐藏成员身份或隐藏列表。
         
         在下列情况中，可以看见隐藏成员身份或隐藏列表：
         
@@ -150,18 +120,8 @@ _**上一次修改主题：** 2014-02-07_
     
         New-CsRgsAgentGroup -Name "Help Desk" -Parent "service:ApplicationServer:atl-cs-001.contoso.com"  -Description "Contoso Help Desk" -AgentAlertTime 20 -ParticipationPolicy Formal -RoutingMethod RoundRobin -AgentsByUri("sip:mindy@contoso.com","sip:bob@contoso.com")
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>代理警报时间设置不能超出 180 秒，如果代理警报时间超过 180 秒，客户端应用程序会拒绝呼叫，因为 SIP 事务计时器达到其最长等待时间。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 代理警报时间设置不能超出 180 秒，如果代理警报时间超过 180 秒，客户端应用程序会拒绝呼叫，因为 SIP 事务计时器达到其最长等待时间。
 
 
 4.  确认是否已创建代理组。运行：

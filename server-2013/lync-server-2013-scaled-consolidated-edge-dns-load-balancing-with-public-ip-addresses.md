@@ -32,34 +32,14 @@ Microsoft Lync Server 2013 的新增功能是对 IPv6 寻址的支持。与 IPv4
 
 存在 IPv6 的网络地址转换技术 (NAT)，以允许 NAT IPv6 转换为 IPv4（通常称为 NAT64）以及 NAT IPv6 转换为 IPv6（通常称为 NAT66）。NAT 技术的存在意味着针对 Lync Server边缘服务器 存在的五种方案仍有效。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>IPv6 是一个复杂的主题，需要您的网络团队和 Internet 提供商进行仔细地规划，以确保您在 Windows 服务器级别和 Lync Server 2013 级别分配的地址按预期工作。请参阅本主题结尾处的链接，以了解有关 IPv6 寻址和规划的其他资源。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> IPv6 是一个复杂的主题，需要您的网络团队和 Internet 提供商进行仔细地规划，以确保您在 Windows 服务器级别和 Lync Server 2013 级别分配的地址按预期工作。请参阅本主题结尾处的链接，以了解有关 IPv6 寻址和规划的其他资源。
 
 
 ![扩展合并边缘拓扑](images/JJ204761.7c1e3e6b-9b1b-4ac6-b0e7-9c256dbc2537(OCS.15).jpg "扩展合并边缘拓扑")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用的是呼叫允许控制 (CAC)，那么仍必须将 IPv4 地址分配给 边缘服务器内部接口。CAC 使用 IPv4 地址并且必须使它们可用于操作。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果您使用的是呼叫允许控制 (CAC)，那么仍必须将 IPv4 地址分配给 边缘服务器内部接口。CAC 使用 IPv4 地址并且必须使它们可用于操作。
 
 
 ## 本部分内容

@@ -67,18 +67,8 @@ _**上一次修改主题：** 2014-02-05_
 
 7.  设置 持久聊天服务器活动服务器。从 Lync Server 命令外壳中，使用 **Set-CsPersistentChatActiveServer** cmdlet 设置活动服务器列表。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>所有活动服务器必须都与新主数据库位于同一数据中心中，或位于与数据库之间存在低延迟/高带宽连接的数据中心中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 所有活动服务器必须都与新主数据库位于同一数据中心中，或位于与数据库之间存在低延迟/高带宽连接的数据中心中。
     
     此时，从 持久聊天服务器主数据库到 持久聊天服务器备份数据库的故障转移即成功完成。
 

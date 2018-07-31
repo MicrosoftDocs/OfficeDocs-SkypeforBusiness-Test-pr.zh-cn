@@ -23,18 +23,8 @@ _**上一次修改主题：** 2016-06-06_
 
 在迁移用户的联系人之后（当用户用 Lync 2013 登录时，会自动执行此操作），用户可从 Lync 2013、 Outlook 2013 或 Outlook Web Access 中访问和管理其 Lync 联系人。用户不必登录 Lync 即可从 Outlook 或 Outlook Web Access 中管理其联系人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果用户在迁移后从 Lync 2010 中登录，则联系人和组可用并且保持最新，但用户无法管理（即添加、删除、移动、标记、取消标记或修改）这些联系人。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果用户在迁移后从 Lync 2010 中登录，则联系人和组可用并且保持最新，但用户无法管理（即添加、删除、移动、标记、取消标记或修改）这些联系人。
 
 
 ## 本部分内容

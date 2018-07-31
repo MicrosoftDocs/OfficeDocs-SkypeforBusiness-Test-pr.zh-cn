@@ -38,18 +38,8 @@ Lync Server 2013企业语音是 Lync Server 2013 基础结构的一部分。
 
 要查看阐明示例呼叫允许控制部署（包括网络区域、网络站点和子网）的参考拓扑，请参阅规划文档中的 [示例：在 Lync Server 2013 中收集呼叫允许控制要求](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要在中央站点部署 企业语音，请继续阅读本节中的主题。要在分支站点上部署 企业语音，请跳至部署文档中的 <a href="lync-server-2013-deploying-branch-sites.md">在 Lync Server 2013 中部署分支站点</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 要在中央站点部署 企业语音，请继续阅读本节中的主题。要在分支站点上部署 企业语音，请跳至部署文档中的 <a href="lync-server-2013-deploying-branch-sites.md">在 Lync Server 2013 中部署分支站点</a>。
 
 
 本节包含中介服务器并置到每个前端服务器或 Standard Edition Server 上的部署过程（推荐），以及独立的中介服务器池的部署过程。

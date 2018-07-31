@@ -28,18 +28,8 @@ _**上一次修改主题：** 2015-03-09_
 
 1.  覆盖内部 Web 服务池 FQDN。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果决定使用自定义的 FQDN 覆盖内部 Web 服务，则每个 FQDN 都必须不同于任何其他前端池、控制器或控制器池。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果决定使用自定义的 FQDN 覆盖内部 Web 服务，则每个 FQDN 都必须不同于任何其他前端池、控制器或控制器池。
 
 
 2.  创建 DNS A 主机记录以将池 FQDN 解析为池中所有服务器的 IP 地址。

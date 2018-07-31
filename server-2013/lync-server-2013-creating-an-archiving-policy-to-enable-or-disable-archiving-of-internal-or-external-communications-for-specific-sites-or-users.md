@@ -57,18 +57,8 @@ _**上一次修改主题：** 2013-02-23_
 
 6.  单击“提交”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>用户策略的设置仅应用于您向其应用该策略的特定用户和用户组。有关详细信息，请参阅<a href="lync-server-2013-applying-an-archiving-policy-to-users.md">将存档策略应用于用户</a></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 用户策略的设置仅应用于您向其应用该策略的特定用户和用户组。有关详细信息，请参阅<a href="lync-server-2013-applying-an-archiving-policy-to-users.md">将存档策略应用于用户</a>
 
 
 ## 使用 Lync Server 命令行管理程序 cmdlet 创建存档策略

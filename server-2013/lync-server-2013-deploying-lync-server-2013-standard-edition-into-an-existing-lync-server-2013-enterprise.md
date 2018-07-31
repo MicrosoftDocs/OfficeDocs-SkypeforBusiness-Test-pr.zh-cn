@@ -31,16 +31,6 @@ _**上一次修改主题：** 2012-10-01_
 
 6.  设置和安装 Standard Edition Server。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果部署了仅具有一台 Standard Edition Server 的环境，则您应该已通过使用“准备第一个 Standard Edition Server”链接在 Lync Server 部署向导中开始安装流程，以在新的 Standard Edition Server 中安装初始数据库文件。在现有 Lync Server 2013 部署中安装 Standard Edition Server 时，<strong>请勿</strong>采用此过程。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 如果部署了仅具有一台 Standard Edition Server 的环境，则您应该已通过使用“准备第一个 Standard Edition Server”链接在 Lync Server 部署向导中开始安装流程，以在新的 Standard Edition Server 中安装初始数据库文件。在现有 Lync Server 2013 部署中安装 Standard Edition Server 时，<strong>请勿</strong>采用此过程。
 

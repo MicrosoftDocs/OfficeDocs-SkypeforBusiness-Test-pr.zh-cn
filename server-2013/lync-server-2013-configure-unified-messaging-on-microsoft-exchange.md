@@ -26,18 +26,8 @@ _**上一次修改主题：** 2016-12-08_
 
 1.  为每个企业语音位置配置文件创建 UM 会话初始协议 (SIP) 统一资源标识符 (URI) 拨号计划。如果选择使用 Exchange 管理控制台，则创建一个具有安全设置 **Secured（首选）**的新拨号计划。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果将安全设置值设置为 <strong>SIP Secured</strong> 来要求仅加密 SIP 流量（如之前所建议），请注意，如果前端池配置为要求加密（表明该池要求对 SIP 和 RTP 流量都进行加密），则拨号计划上的该安全设置是不够的。当拨号计划和池安全设置不兼容时，前端池对 Exchange UM 的所有呼叫都将失败，从而导致一个错误，指示您具有“不兼容的安全设置”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果将安全设置值设置为 <strong>SIP Secured</strong> 来要求仅加密 SIP 流量（如之前所建议），请注意，如果前端池配置为要求加密（表明该池要求对 SIP 和 RTP 流量都进行加密），则拨号计划上的该安全设置是不够的。当拨号计划和池安全设置不兼容时，前端池对 Exchange UM 的所有呼叫都将失败，从而导致一个错误，指示您具有“不兼容的安全设置”。
     
     如果使用 Exchange 命令行管理程序，则键入：
     

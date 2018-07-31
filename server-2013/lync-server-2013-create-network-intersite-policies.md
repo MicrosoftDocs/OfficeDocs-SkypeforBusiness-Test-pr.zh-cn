@@ -27,18 +27,8 @@ _**上一次修改主题：** 2012-10-19_
 
   - [Remove-CsNetworkInterSitePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkInterSitePolicy)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅当两个网络站点之间具有直接交叉链接时，才需要网络站点间策略。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 仅当两个网络站点之间具有直接交叉链接时，才需要网络站点间策略。
 
 
 在示例拓扑北美区域中，Reno 和 Albuquerque 站点之间具有直接链接。这两个站点需要可应用相应带宽策略配置文件的站点间策略。以下示例将应用 20Mb\_Link 配置文件。

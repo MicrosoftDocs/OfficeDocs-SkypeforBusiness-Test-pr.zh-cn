@@ -35,18 +35,8 @@ Standard Edition Server 和 Enterprise Edition Server 共享相同的软件要�
 
 ## 操作系统安装
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 只提供 64 位版本，要求使用 64 位硬件和 64 位版本的 Windows Server 操作系统。此发行版不提供 Lync Server 2013 的 32 位版本。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Lync Server 2013 只提供 64 位版本，要求使用 64 位硬件和 64 位版本的 Windows Server 操作系统。此发行版不提供 Lync Server 2013 的 32 位版本。
 
 
 Standard Edition Server 和 Enterprise Edition Server 可以使用以下任意项：

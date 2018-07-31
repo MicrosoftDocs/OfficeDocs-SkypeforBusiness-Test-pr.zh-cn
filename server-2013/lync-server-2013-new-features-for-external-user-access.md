@@ -19,18 +19,8 @@ Lync Server 2013 引入了扩展用户的功能和通信方式的新功能。而
 
   - **对 IPv6 寻址的支持 -** Lync Server 2013 支持所有 边缘服务器服务的 IPv6 寻址。如果您已通过 Windows Server 中的配置为接口提供了 IPv6 地址，则可在通过 拓扑生成器的 IP 地址配置的 边缘服务器配置中使用 IPv6 地址。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Lync Server 2013 中使用 IPv6 地址取决于组织部署的路由器和防火墙中是否支持 IPv6，以及 Internet 服务提供商提供的支持。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 在 Lync Server 2013 中使用 IPv6 地址取决于组织部署的路由器和防火墙中是否支持 IPv6，以及 Internet 服务提供商提供的支持。
 
 
   - **可扩展消息传递和状态协议 (XMPP)** Lync Server 2013 引入了完全集成的 XMPP 代理（部署在 边缘服务器上）和部署在 前端服务器上的 XMPP 网关。可将 XMPP 联盟作为可选组件来部署。添加并配置 XMPP 代理和 XMPP 网关将允许 Microsoft Lync 2013 用户针对即时消息 (IM) 和状态添加基于 XMPP 的合作伙伴中的联系人。

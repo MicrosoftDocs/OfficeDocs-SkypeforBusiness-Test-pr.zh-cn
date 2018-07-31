@@ -35,19 +35,9 @@ _**上一次修改主题：** 2016-12-08_
 
 如果使用随 Lync Server 2013 一起提供的 Lync Mobile，硬件负载平衡器中的 Cookie 关联的要求会显著减少，并且会替换传输控制协议 (TCP) 关联。Cookie 关联仍可使用，但 Web 服务不再需要它。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>所有 Mobility Service 流量都会通过反向代理，无论发起点在内部还是外部都是如此。如果存在单一反向代理或反向代理场或者提供反向代理功能的设备，当内部流量通过某个接口发出并尝试立即在同一接口上进入时，可能引发问题。这通常会导致称为 TCP 数据包欺骗（或简称为欺骗）的安全规则违规。必须允许<em>发夹</em>（一个或一系列数据包发出后立即进入），移动功能才能运行。此问题的一个解决方案是使用独立于防火墙（始终会出于安全目的在防火墙处强制执行欺骗防御规则）的反向代理。发夹可能在反向代理的外部接口上而不是防火墙外部接口上发生。您可以在防火墙处检测欺骗，并在反向代理处放宽该规则，以允许移动功能所需的发夹行为。<br />
-如果可能，请使用域名系统 (DNS) 主机或 CNAME 记录为发夹行为（而非防火墙）定义反向代理。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 所有 Mobility Service 流量都会通过反向代理，无论发起点在内部还是外部都是如此。如果存在单一反向代理或反向代理场或者提供反向代理功能的设备，当内部流量通过某个接口发出并尝试立即在同一接口上进入时，可能引发问题。这通常会导致称为 TCP 数据包欺骗（或简称为欺骗）的安全规则违规。必须允许<em>发夹</em>（一个或一系列数据包发出后立即进入），移动功能才能运行。此问题的一个解决方案是使用独立于防火墙（始终会出于安全目的在防火墙处强制执行欺骗防御规则）的反向代理。发夹可能在反向代理的外部接口上而不是防火墙外部接口上发生。您可以在防火墙处检测欺骗，并在反向代理处放宽该规则，以允许移动功能所需的发夹行为。<br />
+> 如果可能，请使用域名系统 (DNS) 主机或 CNAME 记录为发夹行为（而非防火墙）定义反向代理。
 
 
 Lync Server 2013 支持 Lync 2010 Mobile 和 Lync 2013 移动客户端的移动功能。这两个客户端均使用 Lync Server 2013 自动发现服务查找其移动入口点，但使用的移动服务有所不同。 Lync 2010 Mobile 使用称为 *Mcx* 的移动服务，该移动服务是 2011 年 11 月版 Lync Server 2010 累积更新中引入。 Lync 2013 移动客户端使用统一通信 Web API（即 *UCWA* ）作为其移动服务提供程序。
@@ -80,19 +70,9 @@ Lync Server 2013 支持 Lync 2010 Mobile 和 Lync 2013 移动客户端的移动�
 
 ![移动请求流](images/Hh690030.cdb96424-96f2-4abf-88d7-1d32d1010ffd(OCS.15).jpg "移动请求流")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>上图演示了通用 Web 服务。名为 Mobility 的虚拟目录描绘了移动服务 Mcx 和/或 UCWA。如果您尚未应用 2013 年 2 月版 Lync Server 2013 累积更新，则您的内部和外部 Web 服务上可能已经定义了虚拟目录 Ucwa，也可能尚未定义。您将会有一个虚拟目录 Autodiscover，并且可能会有一个虚拟目录 Mcx。<br />
-自动发现和服务发现的工作方式相同，无论您部署何种移动服务技术。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 上图演示了通用 Web 服务。名为 Mobility 的虚拟目录描绘了移动服务 Mcx 和/或 UCWA。如果您尚未应用 2013 年 2 月版 Lync Server 2013 累积更新，则您的内部和外部 Web 服务上可能已经定义了虚拟目录 Ucwa，也可能尚未定义。您将会有一个虚拟目录 Autodiscover，并且可能会有一个虚拟目录 Mcx。<br />
+> 自动发现和服务发现的工作方式相同，无论您部署何种移动服务技术。
 
 
 若要同时支持企业网络内部和外部的移动用户，内部和外部 Web FQDN 必须满足某些先决条件。此外，您可能需要满足其他要求，具体取决于您选择用来实现以下各项的功能：
@@ -127,19 +107,9 @@ Lync Server 2013 支持 Lync 2010 Mobile 和 Lync 2013 移动客户端的移动�
 
 DNS 记录可以是 CNAME 记录或 A（主机，如果是 IPv6，则为 AAAA）记录。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>移动设备客户端不支持来自不同域的多个安全套接字层 (SSL) 证书。因此，不支持通过 HTTPS 对其他域进行 CNAME 重定向。例如，不支持通过 HTTPS 将 lyncdiscover.contoso.com 的 DNS CNAME 记录重定向到 director.contoso.net 地址。在此类拓扑中，移动设备客户端需要对第一个请求使用 HTTP，以便通过 HTTP 解析 CNAME 重定向。之后，后续请求会使用 HTTPS。若要支持此方案，您需要使用针对端口 80 (HTTP) 的 Web 发布规则配置反向代理。有关详细信息，请参阅<a href="lync-server-2013-configuring-the-reverse-proxy-for-mobility.md">在 Lync Server 2013 中配置反向代理以实现移动功能</a>中的“创建针对端口 80 的 Web 发布规则”。<br />
-支持通过 HTTPS 对同一域的 CNAME 重定向。在这种情况下，目标域的证书涵盖了原始域。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 移动设备客户端不支持来自不同域的多个安全套接字层 (SSL) 证书。因此，不支持通过 HTTPS 对其他域进行 CNAME 重定向。例如，不支持通过 HTTPS 将 lyncdiscover.contoso.com 的 DNS CNAME 记录重定向到 director.contoso.net 地址。在此类拓扑中，移动设备客户端需要对第一个请求使用 HTTP，以便通过 HTTP 解析 CNAME 重定向。之后，后续请求会使用 HTTPS。若要支持此方案，您需要使用针对端口 80 (HTTP) 的 Web 发布规则配置反向代理。有关详细信息，请参阅<a href="lync-server-2013-configuring-the-reverse-proxy-for-mobility.md">在 Lync Server 2013 中配置反向代理以实现移动功能</a>中的“创建针对端口 80 的 Web 发布规则”。<br />
+> 支持通过 HTTPS 对同一域的 CNAME 重定向。在这种情况下，目标域的证书涵盖了原始域。
 
 
 有关您的方案所需的 DNS 记录的详细信息，请参阅 [Lync Server 2013 中的 DNS 摘要 - 自动发现](lync-server-2013-dns-summary-autodiscover.md)。
@@ -148,18 +118,8 @@ DNS 记录可以是 CNAME 记录或 A（主机，如果是 IPv6，则为 AAAA）
 
 如果您支持推送通知并希望 Apple 移动设备通过 Wi-Fi 网络接收推送通知，则还需要在您的企业 Wi-Fi 网络上打开端口 5223。端口 5223 是一个由 Apple 推送通知服务 (APNS) 使用的出站 TCP 端口。该移动设备将启动连接。有关详细信息，请参阅 [http://support.apple.com/kb/TS1629](http://support.apple.com/kb/ht6175?viewlocale=zh_cn)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 Lync 2013 Mobile 客户端的 Apple 设备不需要推送通知。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 使用 Lync 2013 Mobile 客户端的 Apple 设备不需要推送通知。
 
 
 请注意，如果用户驻留在 Survivable Branch Appliance (SBA) 上，则需要以下端口：

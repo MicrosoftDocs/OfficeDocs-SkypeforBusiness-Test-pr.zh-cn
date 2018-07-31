@@ -27,18 +27,8 @@ _**上一次修改主题：** 2015-03-09_
     
     ![反向代理和外部 Web 服务](images/JJ204932.13142405-d5c9-45b7-a8b7-a8c89f09c97c(OCS.15).jpg "反向代理和外部 Web 服务")  
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不要将来自内部部署的反向代理的 4443 over TCP 与来自 Standard Edition 服务器或保存 中央管理存储角色的 前端池的端口 4443 over TCP 流量混淆。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 不要将来自内部部署的反向代理的 4443 over TCP 与来自 Standard Edition 服务器或保存 中央管理存储角色的 前端池的端口 4443 over TCP 流量混淆。
 
 
 ## 端口和协议详细信息

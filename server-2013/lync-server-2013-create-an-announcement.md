@@ -23,18 +23,8 @@ _**上一次修改主题：** 2012-11-01_
 
 3.  运行 **New-CsAnnouncement** cmdlet 创建并命名通知。执行此步骤，以创建具有音频提示、文本到语音转换 (TTS) 提示或无提示的通知。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可能要创建无提示的通知（例如，要在不播放消息的情况下将呼叫转接到指定目标时）。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 您可能要创建无提示的通知（例如，要在不播放消息的情况下将呼叫转接到指定目标时）。
 
 
 4.  将新通知分配给未分配号码表中的号码范围。

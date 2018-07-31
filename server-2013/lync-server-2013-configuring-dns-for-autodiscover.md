@@ -82,18 +82,8 @@ DNS 记录可以是 A（主机）记录，也可以是 CNAME 记录，取决于�
     > 如果您未使用控制器，则使用前端池的内部和外部 Web 服务 FQDN，或者，对于单台服务器，使用前端服务器或 Standard Edition Server 的 FQDN。
     
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必须在您的 Lync Server 2013 环境中支持的每个 SIP 域的正向查找区域中创建一条新的自动发现 CNAME 记录。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 您必须在您的 Lync Server 2013 环境中支持的每个 SIP 域的正向查找区域中创建一条新的自动发现 CNAME 记录。
 
 
 ## 创建 DNS A 记录
@@ -162,18 +152,8 @@ DNS 记录可以是 A（主机）记录，也可以是 CNAME 记录，取决于�
 
 11. 若要创建另一条 A 记录，请重复步骤 8 至 10。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必须在您的 Lync Server 2013 环境中支持的每个 SIP 域的正向查找区域中创建一条新的 lyncdiscover 和 lyncdiscoverinternal A 记录。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 您必须在您的 Lync Server 2013 环境中支持的每个 SIP 域的正向查找区域中创建一条新的 lyncdiscover 和 lyncdiscoverinternal A 记录。
 
 
 12. 创建完 A 记录（对于 IPv6 为 AAAA）后，请单击“完成”。

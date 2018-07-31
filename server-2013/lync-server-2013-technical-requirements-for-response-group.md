@@ -47,18 +47,8 @@ _**上一次修改主题：** 2016-12-08_
 
   - **端口 8404**   用于在服务器之间通信
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此端口用于 Match Making 服务，且在拥有多台 前端服务器的池中部署 响应组应用程序时，该端口是必需的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 此端口用于 Match Making 服务，且在拥有多台 前端服务器的池中部署 响应组应用程序时，该端口是必需的。
 
 
 <table>

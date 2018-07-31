@@ -41,18 +41,8 @@ Lync Server 支持三种简单 URL：
 
 2.  在左侧窗格中选择“简单 URL”，然后在“管理访问 URL”框下，输入要用于对 Lync Server 2013 控制面板进行管理访问的简单 URL，然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>建议尽可能使用最简单的 URL 作为管理 URL。最简单的选项是 <strong>https://admin.</strong><em>&lt;domain&gt;</em>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 建议尽可能使用最简单的 URL 作为管理 URL。最简单的选项是 <strong>https://admin.</strong><em>&lt;domain&gt;</em>。
 
 
 ## 另请参阅

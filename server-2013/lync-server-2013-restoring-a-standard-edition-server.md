@@ -17,18 +17,8 @@ _**上一次修改主题：** 2013-02-21_
 
 如果未托管中央管理存储的 Standard Edition Server 出现故障，请按照本节中的过程操作。如果中央管理存储出现故障，请参阅[还原承载中央管理存储的服务器](lync-server-2013-restoring-the-server-hosting-the-central-management-store.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议在开始还原之前制作系统的映像副本，以便在还原过程中出现问题时可将该映像作为回滚点。您可能需要在安装操作系统和 SQL Server 之后制作映像副本，然后再还原或重新注册证书。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 建议在开始还原之前制作系统的映像副本，以便在还原过程中出现问题时可将该映像作为回滚点。您可能需要在安装操作系统和 SQL Server 之后制作映像副本，然后再还原或重新注册证书。
 
 
 ## 还原 Standard Edition Server
@@ -44,18 +34,8 @@ _**上一次修改主题：** 2013-02-21_
 
 3.  通过将相应文件存储从 $Backup 复制到服务器上的文件存储位置来还原文件存储，然后共享该文件夹。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>还原的文件存储的路径和文件名应与备份的文件存储完全相同，以便使用这些文件的组件可以访问它们。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 还原的文件存储的路径和文件名应与备份的文件存储完全相同，以便使用这些文件的组件可以访问它们。
 
 
 4.  运行拓扑生成器：

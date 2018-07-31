@@ -36,18 +36,8 @@ _**上一次修改主题：** 2013-11-22_
 
 4.  输入池 FQDN。定义试点池时，您可以选择是部署 Enterprise Edition 前端池还是部署 Standard Edition Server。Lync Server 2013 不要求试点池功能与在旧池中部署的内容一致。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您为试点池定义的池或服务器完全限定的域名 (FQDN) 必须是唯一的。它不能匹配当前部署的 Lync Server 2010 池或当前部署的任何其他服务器的名称。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 您为试点池定义的池或服务器完全限定的域名 (FQDN) 必须是唯一的。它不能匹配当前部署的 Lync Server 2010 池或当前部署的任何其他服务器的名称。
     
     ![“定义新的前端池向导 FQDN”页](images/JJ205144.c5fd138c-e75a-413a-827f-b1461c996d40(OCS.15).jpg "“定义新的前端池向导 FQDN”页")
 

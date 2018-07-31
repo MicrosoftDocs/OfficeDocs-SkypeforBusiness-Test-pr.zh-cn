@@ -21,18 +21,8 @@ _**上一次修改主题：** 2015-03-09_
 
 使用 RBAC，可根据用户的 Lync Server 角色实现精确访问和授权。这样就可以利用“最小特权”安全做法，以便仅向管理员和用户授予其工作所需的权限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>RBAC 限制仅适用于使用 Lync Server 控制面板或 Lync Server 命令行管理程序进行远程工作的管理员。位于运行 Lync Server 的服务器上的用户不受 RBAC 限制。因此， Lync Server 的物理安全性对维护 RBAC 限制十分重要。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> RBAC 限制仅适用于使用 Lync Server 控制面板或 Lync Server 命令行管理程序进行远程工作的管理员。位于运行 Lync Server 的服务器上的用户不受 RBAC 限制。因此， Lync Server 的物理安全性对维护 RBAC 限制十分重要。
 
 
 ## 角色和作用域

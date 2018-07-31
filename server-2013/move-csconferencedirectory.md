@@ -47,19 +47,9 @@ When you create a dial-in conferencing Uniform Resource Identifier (URI), those 
 
 Occasionally, you might need to move a conference directory from one pool to another; for example, if you decommission a pool you might need to move your existing conference directories to a new location. The **Move-CsConferenceDirectory** cmdlet enables you to move conference directories to a different pool.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Before you move a conference directory it is highly recommended that you make a backup copy of that directory. This can be done by using the Export-CsUserData cmdlet and the ConferenceDirectoryFilter parameter. For example, this command backs up conference directory 3 to the file C:\Logs\ConferenceDirectory3.zip:<br />
-Export-CsUserData –PoolFqdn &quot;atl-cs-001.litwareinc.com&quot; –ConferenceFilterDirectory 3 –FileName &quot;C:\Logs\ConferenceDirectory3.zip&quot;</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Before you move a conference directory it is highly recommended that you make a backup copy of that directory. This can be done by using the Export-CsUserData cmdlet and the ConferenceDirectoryFilter parameter. For example, this command backs up conference directory 3 to the file C:\Logs\ConferenceDirectory3.zip:<br />
+> Export-CsUserData –PoolFqdn &quot;atl-cs-001.litwareinc.com&quot; –ConferenceFilterDirectory 3 –FileName &quot;C:\Logs\ConferenceDirectory3.zip&quot;
 
 
 Who can run this cmdlet: By default, members of the following groups are authorized to run the **Move-CsConferenceDirectory** cmdlet locally: RTCUniversalServerAdmins. To return a list of all the role-based access control (RBAC) roles this cmdlet has been assigned to (including any custom RBAC roles you have created yourself), run the following command from the Windows PowerShell prompt:

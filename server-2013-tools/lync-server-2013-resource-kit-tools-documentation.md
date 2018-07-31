@@ -247,18 +247,8 @@ ABSConfig 使管理员能够快速且轻松地自定义 Lync Server 2013 通讯�
 
   - 自定义报告，使用 BandwidthUtilizationAnalyzer.xlsm 执行
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945592.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>强烈建议最终用户不要手动启动 BandwidthUtilizationAnalyzer.xlsm。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 强烈建议最终用户不要手动启动 BandwidthUtilizationAnalyzer.xlsm。
 
 
 ## 启动带宽用量分析器
@@ -579,18 +569,8 @@ DBAnalyze 是一个命令行工具，可帮助管理员收集有关 Lync Server 
 
   - **诊断模式**   创建报告，信息涵盖表（记录数、碎片、数据大小和索引大小）、数据和日志文件大小、上次备份时间、运行 Microsoft Office Communications Server 的服务器之间的联系人分布、平均权限数、联系人、容器、订阅、出版物、每个用户的终结点、任何未正确驻留的用户、无法路由的用户、每个用户组织的平均会议数、计划内会议、活动会议和数据库版本。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>运行诊断模式可能会影响服务器性能。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 运行诊断模式可能会影响服务器性能。
 
 
   - **用户数据模式**  为指定用户或者其联系人和权限列表中具有该用户的用户报告联系人、容器、订阅、出版物、权限和联系人组数据。此模式也报告用户组织或受邀加入的会议的摘要数据。
@@ -1129,50 +1109,20 @@ SEFAUtil（辅助扩展功能激活）使 Lync Server 2013 管理员和技术支
 
   - 启用/禁用/修改团队呼叫组设置
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 SEFAUtil 工具新增功能</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lync Server 2013 SEFAUtil 工具新增功能
 
 
   - 启用/禁用/修改同时响铃设置（包括目标）
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 SEFAUtil 工具新增功能</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lync Server 2013 SEFAUtil 工具新增功能
 
 
   - 启用/禁用/修改组内呼叫应答设置
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 SEFAUtil 工具新增功能</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Lync Server 2013 SEFAUtil 工具新增功能
 
 
 此工具存在以下限制：
@@ -1209,36 +1159,16 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
     
         New-CsTrustedApplicationPool -id <Pool FQDN> -Registrar <Pool Registrar FQDN> -site Site:<Pool Site>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须安装在将用于运行 SEFAUtil 工具的任何计算机上安装 UCMA 3.0。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 必须安装在将用于运行 SEFAUtil 工具的任何计算机上安装 UCMA 3.0。
 
 
 2.  需要在拓扑中为 SEFAUtil 工具定义受信任的应用程序。要将 SEFAUtil 定义为新的受信任的应用程序，请使用 Lync Server 命令行管理程序并执行以下 cmdlet：
     
         New-CsTrustedApplication -ApplicationId sefautil -TrustedApplicationPoolFqdn <Pool FQDN>  -Port 7489
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果需要则可以使用其他端口。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果需要则可以使用其他端口。
 
 
 3.  需要启用拓扑更改。可通过 Lync Server 命令行管理程序执行以下 cmdlet 来启用拓扑更改：
@@ -1676,18 +1606,8 @@ SYSPrep.ps1 是一个 Windows PowerShell 脚本，将在 Windows Server 2008 操
 
 1.  将源服务器或池中承载的通知应用程序的未分配号码通知使用的所有音频文件移动到目标服务器或池的文件存储。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>音频文件一旦复制到目标池，将从源池中删除。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 音频文件一旦复制到目标池，将从源池中删除。
 
 
 2.  将为源服务器或池中承载的通知应用程序配置的所有未分配号码通知移动到目标服务器或池。

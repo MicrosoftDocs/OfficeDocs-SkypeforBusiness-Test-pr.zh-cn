@@ -17,18 +17,8 @@ _**上一次修改主题：** 2013-09-23_
 
 通过为 Microsoft Lync Server 2013 部署边缘组件，未登录到您组织的内部网络的外部用户（包括经过身份验证的和匿名的远程用户、联盟合作伙伴（包括 XMPP 合作伙伴）、移动客户端以及公共即时消息 (IM) 服务的用户）可以使用 Lync Server 与您组织内的其他用户进行通信。 Lync Server 2013 的部署和配置过程与 Lync Server 2010 的部署和配置过程有显著的不同。用于安装和管理的工具与 Lync Server 2010 中的工具非常相似。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Lync Server 2013边缘服务器安装和配置可能是一个较为复杂的过程，它可能要求大量规划以及与您的内部团队进行协作，包括但不限于，安全、网络、防火墙、域名系统 (DNS)、负载平衡器以及公钥基础结构 (PKI) 注意事项。强烈建议您在部署外部访问组件之前，先查看和使用规划过程和提供的文档。这将帮助您限制在部署过程中出现的意外更改和问题的数目和频率。有关规划外部用户访问的信息，请参阅 <a href="lync-server-2013-planning-for-external-user-access.md">在 Lync Server 2013 中规划外部用户访问</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Microsoft Lync Server 2013边缘服务器安装和配置可能是一个较为复杂的过程，它可能要求大量规划以及与您的内部团队进行协作，包括但不限于，安全、网络、防火墙、域名系统 (DNS)、负载平衡器以及公钥基础结构 (PKI) 注意事项。强烈建议您在部署外部访问组件之前，先查看和使用规划过程和提供的文档。这将帮助您限制在部署过程中出现的意外更改和问题的数目和频率。有关规划外部用户访问的信息，请参阅 <a href="lync-server-2013-planning-for-external-user-access.md">在 Lync Server 2013 中规划外部用户访问</a>。
 
 
 ## 本部分内容

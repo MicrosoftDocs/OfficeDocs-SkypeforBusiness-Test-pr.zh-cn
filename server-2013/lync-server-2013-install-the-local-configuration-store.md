@@ -19,18 +19,8 @@ _**上一次修改主题：** 2014-06-27_
 
 要能够使用 Lync Server 部署向导 执行任何操作，我们需要服务器上存在本地配置存储。本地配置存储是中央管理存储的本地副本，它是在 SQL Server Express 的本地安装之后创建的。中央管理存储本身将添加到基于 Standard Edition Server或 SQL Server Express 的数据库上安装的现有 SQL Server 数据库。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的组织要求安装到系统驱动器之外的某个系统驱动器上或者您考虑空间问题，这将允许您安装到非系统驱动器。您可以在“安装”对话框中将 Lync Server 文件的本地安装路径更改为新的可用驱动器。如果您将安装文件（包括 OCSCore.msi）安装到此路径，则其余的 Lync Server 2013 文件也将部署到这里。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果您的组织要求安装到系统驱动器之外的某个系统驱动器上或者您考虑空间问题，这将允许您安装到非系统驱动器。您可以在“安装”对话框中将 Lync Server 文件的本地安装路径更改为新的可用驱动器。如果您将安装文件（包括 OCSCore.msi）安装到此路径，则其余的 Lync Server 2013 文件也将部署到这里。
 
 
 ## 安装本地配置存储

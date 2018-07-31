@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-12-08_
 
 ## 统一消息集成过程
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>与组织的 Exchange 管理员协调，以确认为帮助确保实现顺利而又成功的集成每人所需执行的任务，这一点很重要。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 与组织的 Exchange 管理员协调，以确认为帮助确保实现顺利而又成功的集成每人所需执行的任务，这一点很重要。
 
 
 
@@ -175,18 +165,8 @@ _**上一次修改主题：** 2016-12-08_
 <p>此工具的工作方式是，扫描 Active Directory 中的 Exchange UM 设置并允许 Lync Server 2013 管理员查看、创建和编辑联系对象。</p></td>
 <td><p>RTCUniversalServerAdmins <em>和</em> RTCUniversalUserAdmins</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要成功运行 ocsumutil.exe，用户必须同时属于这两个组。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 要成功运行 ocsumutil.exe，用户必须同时属于这两个组。
 
 </div>
 <div class="alert">

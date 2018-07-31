@@ -87,18 +87,8 @@ _**上一次修改主题：** 2016-12-08_
 
   - Tel:5550100（对于企业范围内唯一的分机）
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>即使由通讯簿服务 (ABS) 执行规范化之后，也需要对 Active Directory 域服务中每个用户的主要电话号码进行规范化，这是由于 ABS 无权访问 Active Directory 域服务，因此无法将主要号码复制到 <strong>msRTCSIP-line</strong> 属性。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 即使由通讯簿服务 (ABS) 执行规范化之后，也需要对 Active Directory 域服务中每个用户的主要电话号码进行规范化，这是由于 ABS 无权访问 Active Directory 域服务，因此无法将主要号码复制到 <strong>msRTCSIP-line</strong> 属性。
 
 
 ## 步骤 2. 为用户启用企业语音

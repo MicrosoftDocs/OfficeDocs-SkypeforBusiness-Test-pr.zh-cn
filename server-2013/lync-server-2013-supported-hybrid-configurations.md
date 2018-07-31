@@ -53,19 +53,9 @@ _**上一次修改主题：** 2016-12-08_
 <li><p>联系人列表（通过统一联系人存储）</p>
 <p>有关详细信息，请参阅<a href="lync-server-2013-configuring-lync-server-to-use-the-unified-contact-store.md">将 Microsoft Lync Server 2013 配置为使用统一联系人存储</a></p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要 Exchange 2013。<br />
-需要 Lync 2013 桌面客户端。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 需要 Exchange 2013。<br />
+> 需要 Lync 2013 桌面客户端。
 
 </div></li>
 <li><p>Lync 2013 客户端和 Lync Web App 中的高分辨率联系人照片。</p>

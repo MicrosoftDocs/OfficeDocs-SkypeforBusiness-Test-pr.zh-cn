@@ -89,18 +89,8 @@ _**上一次修改主题：** 2015-03-09_
 
   - 具有与发生故障的服务器相同的完全限定域名 (FQDN) 的干净或新服务器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在安装操作系统时，请确保不要删除 Active Directory 域服务 中的计算机帐户，并确保保留该帐户的组权限。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 在安装操作系统时，请确保不要删除 Active Directory 域服务 中的计算机帐户，并确保保留该帐户的组权限。
 
 
   - 操作系统的安装软件。若要安装操作系统，请使用组织确定的服务器部署过程和配置。在还原服务时，您应满足这些过程和配置要求。
@@ -114,18 +104,8 @@ _**上一次修改主题：** 2015-03-09_
 
   - 用于生成系统映像的软件。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>建议在安装操作系统和 SQL Server 之后、开始还原之前，生成系统的映像副本，以便可以在还原期间出错时使用此映像作为回滚点。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 建议在安装操作系统和 SQL Server 之后、开始还原之前，生成系统的映像副本，以便可以在还原期间出错时使用此映像作为回滚点。
 
 
   - Lync Server 2013 安装软件。Lync Server 部署向导位于 Lync Server 安装文件夹或媒体中的 \\setup\\amd64\\Setup.exe。

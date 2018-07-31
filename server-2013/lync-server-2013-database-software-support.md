@@ -62,18 +62,8 @@ Lync Server 2013 支持以下数据库管理系统：
 
 在前端池中，后端数据库可以是单台 SQL Server 计算机。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您将 Lync Server 数据库与其他数据库并置在一起，则强烈建议您评估可能影响可用性和性能的所有因素，并请您确保在某个节点失败时剩余节点可处理负载。若要验证故障转移功能，建议您测试所有故障转移方案。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果您将 Lync Server 数据库与其他数据库并置在一起，则强烈建议您评估可能影响可用性和性能的所有因素，并请您确保在某个节点失败时剩余节点可处理负载。若要验证故障转移功能，建议您测试所有故障转移方案。
 
 
 ## 使用 SQL 镜像和 SQL 群集

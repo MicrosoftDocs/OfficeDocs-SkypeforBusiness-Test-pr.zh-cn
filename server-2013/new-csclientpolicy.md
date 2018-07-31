@@ -471,19 +471,9 @@ Get-CsAdminRole | Where-Object {$\_.Cmdlets –match "New-CsClientPolicy"}
 <td><p>System.String</p></td>
 <td><p>Indicates which Microsoft Outlook contact folders (if any) should not be searched any time Lync searches for new contacts. Multiple folders can be specified by separating the folder names using semicolons; for example: -ExcludedContactFolders &quot;SenderPhotoContacts;OtherContacts&quot;.</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>When using a Skype for Business client, with either Office 2013 or Office 2016, this policy won't work in the same way.<br />
-In that combination, the Skype for Business client uses the search capabilities of Office (mso.dll), which finds contacts from Exchange mailbox contact folders. There isn't an option to suppress the search of those contact folders for the Office search component.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> When using a Skype for Business client, with either Office 2013 or Office 2016, this policy won't work in the same way.<br />
+> In that combination, the Skype for Business client uses the search capabilities of Office (mso.dll), which finds contacts from Exchange mailbox contact folders. There isn't an option to suppress the search of those contact folders for the Office search component.
 
 </div></td>
 </tr>

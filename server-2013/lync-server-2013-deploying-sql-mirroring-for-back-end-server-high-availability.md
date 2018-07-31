@@ -41,18 +41,8 @@ _**上一次修改主题：** 2016-12-08_
 
 对于 SQL 镜像，可在创建池时或之后为镜像配置拓扑。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅在主、镜像和见证（如果需要）服务器都属于同一个域时，可使用 拓扑生成器或 cmdlet 设置和删除 SQL 镜像。如果您需要在不同域中的服务器之间设置 SQL 镜像，请参阅 SQL Server 文档。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 仅在主、镜像和见证（如果需要）服务器都属于同一个域时，可使用 拓扑生成器或 cmdlet 设置和删除 SQL 镜像。如果您需要在不同域中的服务器之间设置 SQL 镜像，请参阅 SQL Server 文档。
 
 
 <table>

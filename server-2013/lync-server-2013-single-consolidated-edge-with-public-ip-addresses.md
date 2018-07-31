@@ -23,18 +23,8 @@ _**上一次修改主题：** 2016-12-08_
 
   - [Lync Server 2013 中使用硬件负载平衡器的扩展的合并边缘](lync-server-2013-scaled-consolidated-edge-with-hardware-load-balancers.md)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当在 边缘服务器上使用公用 IP 地址时， 边缘服务器上的默认网关不再是您的防火墙或路由器，而是您的公共外围边缘（将为公共地址）的路由器或防火墙。反向代理将继续使用与最外层的外围网络关联的路由器或防火墙。反向代理和具有公用 IP 地址的 边缘服务器之间的区别是，反向代理仍在使用 NAT，而 边缘服务器在使用路由关系。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 当在 边缘服务器上使用公用 IP 地址时， 边缘服务器上的默认网关不再是您的防火墙或路由器，而是您的公共外围边缘（将为公共地址）的路由器或防火墙。反向代理将继续使用与最外层的外围网络关联的路由器或防火墙。反向代理和具有公用 IP 地址的 边缘服务器之间的区别是，反向代理仍在使用 NAT，而 边缘服务器在使用路由关系。
 
 
 此图未显示 控制器，它是一个在 边缘服务器与您的 前端池或服务器之间的内部网络中部署的可选服务器角色。有关控制器拓扑的详细信息，请参阅 [Lync Server 2013 中控制器所需的组件](lync-server-2013-components-required-for-the-director.md)。此图表示一个反向代理。
@@ -50,36 +40,16 @@ Microsoft Lync Server 2013 的新增功能是对 IPv6 寻址的支持。与 IPv4
 
 存在 IPv6 的网络地址转换技术 (NAT)，以允许 NAT IPv6 转换为 IPv4（通常称为 NAT64）以及 NAT IPv6 转换为 IPv6（通常称为 NAT66）。NAT 技术的存在意味着针对 Lync Server边缘服务器 存在的五种方案仍有效。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>IPv6 是一个复杂的主题，需要您的网络团队和 Internet 提供商进行仔细地规划，以确保您在 Windows 服务器级别和 Lync Server 2013 级别分配的地址按预期工作。请参阅本主题结尾处的链接，以了解有关 IPv6 寻址和规划的其他资源。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> IPv6 是一个复杂的主题，需要您的网络团队和 Internet 提供商进行仔细地规划，以确保您在 Windows 服务器级别和 Lync Server 2013 级别分配的地址按预期工作。请参阅本主题结尾处的链接，以了解有关 IPv6 寻址和规划的其他资源。
 
 
 **单个带公用 IP 地址拓扑的合并边缘**
 
 ![单个合并边缘的边缘方案](images/JJ205148.2db9f9e1-75aa-4de0-ab3f-c6effddb4f4d(OCS.15).jpg "单个合并边缘的边缘方案")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用的是呼叫允许控制 (CAC)，那么仍必须将 IPv4 地址分配给 边缘服务器内部接口。CAC 使用 IPv4 地址并且必须使它们可用于操作。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果您使用的是呼叫允许控制 (CAC)，那么仍必须将 IPv4 地址分配给 边缘服务器内部接口。CAC 使用 IPv4 地址并且必须使它们可用于操作。
 
 
 ## 本部分内容

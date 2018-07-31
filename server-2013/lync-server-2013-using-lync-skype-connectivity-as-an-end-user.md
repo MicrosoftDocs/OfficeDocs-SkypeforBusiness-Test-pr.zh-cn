@@ -71,18 +71,8 @@ Lync-Skype 连接使 Skype 用户和 Lync 用户能够相互添加为联系人�
 
 在每个实例中，Lync 用户必须按照以下格式输入 Skype 用户的电子邮件： <strong>用户(域名)@msn.com</strong>。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此帐户对于使用以下域名的 Microsoft 帐户不是必需的： <strong>@live.com、@hotmail.com 或 @outlook.com</strong>。有关支持的自定义域名的详细信息，请参阅 <a href="http://support.microsoft.com/kb/897567">支持的公共 IM 域</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 此帐户对于使用以下域名的 Microsoft 帐户不是必需的： <strong>@live.com、@hotmail.com 或 @outlook.com</strong>。有关支持的自定义域名的详细信息，请参阅 <a href="http://support.microsoft.com/kb/897567">支持的公共 IM 域</a>。
 
 
 **使用自定义域名时将 Skype 联系人添加到 Lync**
@@ -127,18 +117,8 @@ Lync-Skype 连接使 Skype 用户和 Lync 用户能够相互添加为联系人�
     
     ![Skype 客户端与 Lync 联系人的 IM 对话](images/Dn440175.86ca6f81-4db9-45ba-8511-1f7541aaf066(OCS.15).jpg "Skype 客户端与 Lync 联系人的 IM 对话")
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 管理员必须配置 Lync 用户的策略设置以允许传入请求。如果未配置，Lync 用户不会收到来自 Skype 用户的联系人请求。根据 Lync 用户的策略设置的配置，添加 Skype 用户这一请求将出现在 Lync 客户端的“新建”选项卡上。要开始与 Skype 用户进行通信，Lync 用户必须将 Skype 用户添加到其收藏夹列表或联系人列表。下图显示了 Lync 客户端中“新建”选项卡的位置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Lync Server 管理员必须配置 Lync 用户的策略设置以允许传入请求。如果未配置，Lync 用户不会收到来自 Skype 用户的联系人请求。根据 Lync 用户的策略设置的配置，添加 Skype 用户这一请求将出现在 Lync 客户端的“新建”选项卡上。要开始与 Skype 用户进行通信，Lync 用户必须将 Skype 用户添加到其收藏夹列表或联系人列表。下图显示了 Lync 客户端中“新建”选项卡的位置。
     
     ![Lync 客户端“新联系人”页](images/Dn440175.b1cf8570-1401-47d9-ab14-b04f0d7e8a7a(OCS.15).jpg "Lync 客户端“新联系人”页")
 

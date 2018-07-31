@@ -42,18 +42,8 @@ _**上一次修改主题：** 2013-02-23_
 
 5.  单击“操作”，然后单击“取消挂起更新”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您确信不再希望推出已取消的设备更新规则，可能需要删除它们。有关详细信息，请参阅<a href="lync-server-2013-remove-a-device-update-rule.md">删除设备更新规则</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果您确信不再希望推出已取消的设备更新规则，可能需要删除它们。有关详细信息，请参阅<a href="lync-server-2013-remove-a-device-update-rule.md">删除设备更新规则</a>。
 
 
 ## 使用 Windows PowerShell Cmdlet 重置设备更新规则

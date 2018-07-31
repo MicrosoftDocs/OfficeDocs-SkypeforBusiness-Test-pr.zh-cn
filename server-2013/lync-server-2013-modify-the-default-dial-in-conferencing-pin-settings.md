@@ -41,18 +41,8 @@ _**上一次修改主题：** 2012-10-18_
 
 11. 要允许在 PIN 中使用数字的通用模式，如连续数字和重复数字集，请选中“允许通用模式”复选框。如果未选择此选项，则仅允许使用数字的复杂模式。默认情况下，仅允许使用数字的复杂模式。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>我们建议您不要允许使用通用模式。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 我们建议您不要允许使用通用模式。
 
 
 12. 单击“提交”。

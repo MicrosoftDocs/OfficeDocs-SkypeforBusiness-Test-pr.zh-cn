@@ -43,18 +43,8 @@ Lync Server 2013 支持在直接附加存储 (DAS) 或存储区域网络 (SAN)�
 
 管理员必须设置对文件共享的权限，以使 RTC 组拥有必要的读和写访问权限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果遇到与权限有关的任何错误，请打开拓扑生成器，下载并重新发布现有拓扑。发布拓扑将验证文件共享权限并在需要时重置这些权限。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 如果遇到与权限有关的任何错误，请打开拓扑生成器，下载并重新发布现有拓扑。发布拓扑将验证文件共享权限并在需要时重置这些权限。
 
 
 可以使用以下设置管理如何存储会议内容：

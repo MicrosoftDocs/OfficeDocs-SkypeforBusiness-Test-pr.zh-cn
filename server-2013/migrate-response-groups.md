@@ -49,50 +49,20 @@ _**上一次修改主题：** 2013-09-23_
 
 若要将旧版池中的响应组迁移到 Lync Server 2013，您必须运行 **Move-CsRgsConfiguration** cmdlet。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>响应组迁移 cmdlet 会移动整个池的 响应组配置。您不能选择特定组、队列或工作流进行迁移。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 响应组迁移 cmdlet 会移动整个池的 响应组配置。您不能选择特定组、队列或工作流进行迁移。
 
 
 在迁移响应组后，您需要使用 Lync Server 控制面板或 Lync Server 命令行管理程序 cmdlet 验证是否已成功迁移所有代理组、队列和工作流。
 
 迁移响应组时，不会删除 Lync Server 2010 响应组。在迁移后使用 Lync Server 控制面板或 Lync Server 命令行管理程序管理响应组时，您会看到 Lync Server 2010 响应组和 Lync Server 2013 响应组。应仅对 Lync Server 2013 响应组应用更新。仅保留 Lync Server 2010 响应组以进行回滚。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在完成迁移并创建新的响应组之后，Lync Server 控制面板和 Lync Server 命令行管理程序将显示每个响应组的 Lync Server 2010 和 Lync Server 2013 版本。请勿使用 Lync Server 控制面板 或 Lync Server 命令行管理程序 删除 Lync Server 2010 响应组。如果删除，则迁移期间创建的对应响应组将停止工作。当您停用 Lync Server 2010 池时，Lync Server 2010 响应组将被删除。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 在完成迁移并创建新的响应组之后，Lync Server 控制面板和 Lync Server 命令行管理程序将显示每个响应组的 Lync Server 2010 和 Lync Server 2013 版本。请勿使用 Lync Server 控制面板 或 Lync Server 命令行管理程序 删除 Lync Server 2010 响应组。如果删除，则迁移期间创建的对应响应组将停止工作。当您停用 Lync Server 2010 池时，Lync Server 2010 响应组将被删除。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议在停用池之前不要删除之前的部署中的任何数据。此外，强烈建议在迁移后立即导出响应组。假使已删除 Lync Server 2010 响应组，您可以从备份中还原响应组以便再次运行 Lync Server 2013 响应组。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 建议在停用池之前不要删除之前的部署中的任何数据。此外，强烈建议在迁移后立即导出响应组。假使已删除 Lync Server 2010 响应组，您可以从备份中还原响应组以便再次运行 Lync Server 2013 响应组。
 
 
 Lync Server 2013 引入了一种新的 响应组功能，称为“工作流类型”。“工作流类型”可以是“托管”的，也可以是“非托管”的。所有响应组都是使用设置为“非托管”的“工作流类型”和空管理员列表进行迁移的。

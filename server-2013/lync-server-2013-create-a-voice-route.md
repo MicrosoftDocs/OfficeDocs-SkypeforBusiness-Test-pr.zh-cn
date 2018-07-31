@@ -76,18 +76,8 @@ _**上一次修改主题：** 2016-12-08_
 
 14. 单击“确定”保存语音路由。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>任何时候创建语音路由，都必须运行“全部提交”命令以发布配置更改。有关详细信息，请参阅<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中发布对语音路由配置所做的待处理更改</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 任何时候创建语音路由，都必须运行“全部提交”命令以发布配置更改。有关详细信息，请参阅<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中发布对语音路由配置所做的待处理更改</a>。
 
 
 ## 另请参阅

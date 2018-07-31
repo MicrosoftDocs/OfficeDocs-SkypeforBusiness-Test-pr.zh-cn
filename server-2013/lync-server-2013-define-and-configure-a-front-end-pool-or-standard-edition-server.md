@@ -206,47 +206,17 @@ _**上一次修改主题：** 2015-03-09_
     
       - 要定义新文件共享，请选择“定义新的文件共享”，在“文件服务器 FQDN”框中，输入要放置文件共享的现有文件服务器的 FQDN，然后在“文件共享”框中输入文件共享的名称。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 的文件共享不能位于 前端服务器上。请注意，在此示例中，文件共享位于基于 SQL Server 的后端服务器上。根据组织要求，这可能不是最佳位置，文件服务器可能是更好的选择。可以在尚未创建文件共享的情况下定义文件共享。在发布拓扑之前，您将需要在定义的位置创建文件共享。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Lync Server 2013 的文件共享不能位于 前端服务器上。请注意，在此示例中，文件共享位于基于 SQL Server 的后端服务器上。根据组织要求，这可能不是最佳位置，文件服务器可能是更好的选择。可以在尚未创建文件共享的情况下定义文件共享。在发布拓扑之前，您将需要在定义的位置创建文件共享。
 
 
 9.  在“指定 Web 服务 URL”页上，执行以下一项或两项操作：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>基 URL 指的是 URL 的 Web 服务标识减去 https://。例如，如果池的 Web 服务的完整 URL 为 https://pool01.contoso.net，则基 URL 为 pool01.contoso.net。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 基 URL 指的是 URL 的 Web 服务标识减去 https://。例如，如果池的 Web 服务的完整 URL 为 https://pool01.contoso.net，则基 URL 为 pool01.contoso.net。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您拥有多个 前端池或 前端服务器，则外部 Web 服务 FQDN 必须是唯一的。例如，如果将 前端服务器的外部 Web 服务 FQDN 定义为 <strong>pool01.contoso.com</strong>，则不能将 <strong>pool01.contoso.com</strong> 用于另一个 前端池或 前端服务器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果您拥有多个 前端池或 前端服务器，则外部 Web 服务 FQDN 必须是唯一的。例如，如果将 前端服务器的外部 Web 服务 FQDN 定义为 <strong>pool01.contoso.com</strong>，则不能将 <strong>pool01.contoso.com</strong> 用于另一个 前端池或 前端服务器。
     
     1.  如果要配置 DNS 负载平衡，请选中“覆盖内部 Web 服务池 FQDN”复选框，在“内部基 URL”中输入内部基 URL（必须不同于池 FQDN，例如，“internal-\<基 URL\>”）。
         

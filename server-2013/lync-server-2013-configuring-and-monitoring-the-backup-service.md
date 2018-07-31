@@ -40,18 +40,8 @@ SyncInterval 的默认值为 2 分钟。
 
     Set-CsBackupServiceConfiguration -SyncInterval 00:03:00
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尽管可使用此 cmdlet 更改备份服务的默认同步间隔，但除非绝对有必要，否则您不应这样做，因为同步间隔对备份服务的性能和恢复点目标 (RPO) 有很大的影响。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 尽管可使用此 cmdlet 更改备份服务的默认同步间隔，但除非绝对有必要，否则您不应这样做，因为同步间隔对备份服务的性能和恢复点目标 (RPO) 有很大的影响。
 
 
 ## 获取特殊池的备份服务状态

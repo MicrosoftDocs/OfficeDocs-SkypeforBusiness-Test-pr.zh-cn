@@ -65,18 +65,8 @@ _**上一次修改主题：** 2017-03-09_
     
     Web 会议和 A/V 边缘私有 IP 地址是 Windows Server 中“局域网连接属性”的“Internet 协议版本 4 (TCP/IPv4)”和“Internet 协议版本 6 (TCP/IPv6)”属性的“高级”部分中的其他 IP 地址。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用两个网络适配器配置 边缘服务器是两个选项之一。另一个选项是对 边缘服务器的内部端使用一个网络适配器，对该服务器的外部端使用三个网络适配器。此选项的主要优点是每个 边缘服务器服务具有不同的网络适配器，当需要进行故障排除时，这就可能实现更简明的数据收集</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 使用两个网络适配器配置 边缘服务器是两个选项之一。另一个选项是对 边缘服务器的内部端使用一个网络适配器，对该服务器的外部端使用三个网络适配器。此选项的主要优点是每个 边缘服务器服务具有不同的网络适配器，当需要进行故障排除时，这就可能实现更简明的数据收集
 
 
 ### 扩展的合并边缘、使用 NAT（举例）通过私有 IP 地址实现 DNS 负载平衡所需的 DNS 记录
@@ -162,18 +152,8 @@ _**上一次修改主题：** 2017-03-09_
 <td><p>sip.contoso.com</p></td>
 <td><p>其他潜在联盟伙伴通过自动 DNS 发现技术发现您的联盟所需的 SIP 访问边缘外部接口（称为“允许的 SIP 域”，在以前版本中称为增强联盟）。根据需要对包含已启用 Lync 的用户的所有 SIP 域重复</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 SRV 记录是移动性和推送通知交换所必需的</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 此 SRV 记录是移动性和推送通知交换所必需的
 
 </div></td>
 </tr>

@@ -252,18 +252,8 @@ Lync Server 需要标准化的 RFC 3966/E.164 电话号码。要使用非结构�
 
 可以使用某些标志位定义用于通讯簿服务器属性的筛选器。例如，某些标志位的状态可以将属性标识为包含属性或排除属性。用户复制程序筛选出包含排除属性的联系人，并筛选出不包含包含属性的联系人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关筛选通讯簿的详细信息，请参阅<a href="https://technet.microsoft.com/en-us/library/gg415643(v=ocs.15)">通讯簿服务器 Cmdlet</a> 和<a href="http://go.microsoft.com/fwlink/?linkid=330430">筛选 Lync 2013 通讯簿</a></td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 有关筛选通讯簿的详细信息，请参阅<a href="https://technet.microsoft.com/en-us/library/gg415643(v=ocs.15)">通讯簿服务器 Cmdlet</a> 和<a href="http://go.microsoft.com/fwlink/?linkid=330430">筛选 Lync 2013 通讯簿</a>
 
 
 目前，存在三种不同的筛选器。下表列出了这些筛选器。

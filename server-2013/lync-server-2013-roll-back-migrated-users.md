@@ -59,18 +59,8 @@ _**上一次修改主题：** 2012-10-07_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在将 Exchange 邮箱从 Exchange 2013 移动到 Exchange 2010 之前， Exchange 管理员必须确保 Lync Server 管理员已先将 Lync Server 用户联系人从 Exchange 2013 回滚到 Lync Server。要将统一联系人存储联系人回滚到 Lync Server，请参阅本节后面的“将统一联系人存储联系人从 Exchange 2013 回滚到 Lync Server 2013”。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 在将 Exchange 邮箱从 Exchange 2013 移动到 Exchange 2010 之前， Exchange 管理员必须确保 Lync Server 管理员已先将 Lync Server 用户联系人从 Exchange 2013 回滚到 Lync Server。要将统一联系人存储联系人回滚到 Lync Server，请参阅本节后面的“将统一联系人存储联系人从 Exchange 2013 回滚到 Lync Server 2013”。
 
 
 以下过程介绍如何回滚用户联系人。如果您使用 **Move-CsUser** cmdlet 在 Lync Server 2013 与 Lync Server 2010 之间移动用户，则可以跳过这些步骤，因为在 **Move-CsUser** cmdlet 将用户从 Lync Server 2013 移动到 Lync Server 2010 时，会自动回滚统一联系人存储。 **Move-CsUser** 不会禁用统一联系人存储策略，因此如果用户移回 Lync Server 2013，将会再次发生统一联系人存储迁移。
@@ -89,18 +79,8 @@ _**上一次修改主题：** 2012-10-07_
 
 3.  在将用户从 Lync Server 2013 移动到 Lync Server 2010 之前，回滚 Lync Server 上指定用户的“好友列表”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果省略此步骤，则将丢失“好友列表”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果省略此步骤，则将丢失“好友列表”。
 
 
 4.  回滚指定用户。在命令行中键入：
@@ -111,18 +91,8 @@ _**上一次修改主题：** 2012-10-07_
     
         Invoke-CsUcsRollback -Identity "Ken Myer"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>建议不要使用 –Force 选项来强制回滚。如果使用此选项，则将会丢失用户的联系人。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 建议不要使用 –Force 选项来强制回滚。如果使用此选项，则将会丢失用户的联系人。
 
 
 ## 将统一联系人存储联系人从 Exchange 2013 回滚到 Lync Server 2013
@@ -145,18 +115,8 @@ _**上一次修改主题：** 2012-10-07_
     
         Invoke-CsUcsRollback -Identity "Ken Myer"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须先回滚 Lync Server 用户，然后移动 Exchange 2013 邮箱。在完成 Lync Server 回滚之前阻止 Exchange 管理员回滚 Exchange。建议不要使用 –Force 选项来强制回滚。如果使用此选项，则将会丢失用户的联系人。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 必须先回滚 Lync Server 用户，然后移动 Exchange 2013 邮箱。在完成 Lync Server 回滚之前阻止 Exchange 管理员回滚 Exchange。建议不要使用 –Force 选项来强制回滚。如果使用此选项，则将会丢失用户的联系人。
 
 
 4.  在将用户回滚到 Lync Server 之后，Exchange 管理员可将 Exchange 用户从 Exchange 2013 回滚到 Exchange 2010。

@@ -27,16 +27,6 @@ _**上一次修改主题：** 2014-09-03_
 
 3.  在“正在执行命令”页上，成功启动所有服务后，单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>用于启动服务器上的服务的命令是报告实际上已启动服务的最佳方法。该命令可能无法反映服务的实际状态。建议使用紧随“启动服务”之后的步骤“服务状态(可选)”来打开 Microsoft 管理控制台 (MMC) 并确认服务已成功启动。如果未启动任何 Lync Server 服务，则可在 MMC 中右键单击该服务，然后单击“启动”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 用于启动服务器上的服务的命令是报告实际上已启动服务的最佳方法。该命令可能无法反映服务的实际状态。建议使用紧随“启动服务”之后的步骤“服务状态(可选)”来打开 Microsoft 管理控制台 (MMC) 并确认服务已成功启动。如果未启动任何 Lync Server 服务，则可在 MMC 中右键单击该服务，然后单击“启动”。
 

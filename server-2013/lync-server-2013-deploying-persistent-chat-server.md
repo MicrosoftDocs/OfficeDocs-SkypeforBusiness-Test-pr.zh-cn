@@ -31,18 +31,8 @@ Lync Server 2013持久聊天服务器是 Lync Server 2013 基础结构的一部�
 
 有关支持的并置配置的详细信息，请参阅[Lync Server 2013 中支持的服务器并置](lync-server-2013-supported-server-collocation.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我们不支持 持久聊天服务器标准版 的高可用性。性能和规模将受到限制。另外，我们仅支持新的 持久聊天服务器Standard Edition Server。不支持将 Lync Server 2010、 群聊服务器 升级到 Lync Server 2013持久聊天服务器标准版。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 我们不支持 持久聊天服务器标准版 的高可用性。性能和规模将受到限制。另外，我们仅支持新的 持久聊天服务器Standard Edition Server。不支持将 Lync Server 2010、 群聊服务器 升级到 Lync Server 2013持久聊天服务器标准版。
 
 
 如果您的组织需要合规性支持，则可以在 持久聊天服务器前端服务器上安装 持久聊天服务器合规性服务。合规性需要一个单独的数据库。
@@ -59,18 +49,8 @@ Lync Server 2013持久聊天服务器是 Lync Server 2013 基础结构的一部�
 
 虚拟服务器也支持 持久聊天服务器。如果虚拟服务器与物理服务器的规格一致，则最多可支持 20,000 个并发用户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>持久聊天服务器必须安装在 Windows NT 文件系统上才能帮助强制执行文件系统安全性。FAT32 是 持久聊天服务器不支持的文件系统。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 持久聊天服务器必须安装在 Windows NT 文件系统上才能帮助强制执行文件系统安全性。FAT32 是 持久聊天服务器不支持的文件系统。
 
 
 ## 本节内容

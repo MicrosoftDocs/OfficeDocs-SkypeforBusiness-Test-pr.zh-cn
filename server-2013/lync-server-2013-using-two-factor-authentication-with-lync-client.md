@@ -70,18 +70,8 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>注销</p></td>
 <td><p>结束与您的用户 ID 相关的 Lync 会话，但是 Lync 继续在后台运行。注销时，登录窗口将会出现。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>注销时选择“删除我的登录信息”以从计算机中删除您的登录 ID 和密码。这样做使支持人员可以更轻松地解决登录问题。还通过使未经授权的用户难以使用您的凭据登录来帮助确保您的登录信息更安全。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 注销时选择“删除我的登录信息”以从计算机中删除您的登录 ID 和密码。这样做使支持人员可以更轻松地解决登录问题。还通过使未经授权的用户难以使用您的凭据登录来帮助确保您的登录信息更安全。
 
 </div></td>
 <td><p>在 Lync 主窗口上，选择“选项”按钮，然后选择“文件”&gt;“注销”。</p></td>
@@ -129,18 +119,8 @@ _**上一次修改主题：** 2015-03-09_
     
     询问您的 Lync Server 管理员此资源的 Web 地址（如果您没有）。URL 看起来与此类似：https://MyCA.\[yourcompanyname\].com/certsrv。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您正在使用 Internet Explorer 10，则可能需要在兼容模式下查看此网站。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果您正在使用 Internet Explorer 10，则可能需要在兼容模式下查看此网站。
 
 
 3.  当系统提示您登录证书页面时，请使用您的域帐户（例如您的计算机的管理员）登录。
@@ -169,18 +149,8 @@ _**上一次修改主题：** 2015-03-09_
 
 9.  出现提示时，输入您的个人标识号 (PIN)，然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的技术支持人员未向您提供用于注册智能卡的特殊 PIN，请使用默认智能卡 PIN 值 12345678。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果您的技术支持人员未向您提供用于注册智能卡的特殊 PIN，请使用默认智能卡 PIN 值 12345678。
 
 
 10. 选择可在首次使用智能卡时强制用户（您）更改 PIN 的选项。
@@ -189,18 +159,8 @@ _**上一次修改主题：** 2015-03-09_
 
 12. 出现提示时，输入您的个人标识号 (PIN)，然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的技术支持人员未向您提供用于注册智能卡的特殊 PIN，请使用默认智能卡 PIN 值 12345678。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果您的技术支持人员未向您提供用于注册智能卡的特殊 PIN，请使用默认智能卡 PIN 值 12345678。
 
 
 13. 选择可在首次使用智能卡时强制用户（您）更改 PIN 的选项。
@@ -225,16 +185,6 @@ _**上一次修改主题：** 2015-03-09_
 
 4.  为您的智能卡键入 PIN 号码，然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的支持人员未向您提供智能卡 PIN 号码，请使用默认值 12345678。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果您的支持人员未向您提供智能卡 PIN 号码，请使用默认值 12345678。
 

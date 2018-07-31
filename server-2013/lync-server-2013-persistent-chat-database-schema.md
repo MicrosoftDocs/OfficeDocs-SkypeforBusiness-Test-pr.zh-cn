@@ -19,18 +19,8 @@ _**上一次修改主题：** 2012-09-18_
 
 持久聊天数据库指的是与 Lync Server 2013 后端服务器角色 **PersistentChatStore** （与 mgc 数据库对应）和 **PersistentChatComplianceStore** （与 mgccomp 数据库对应）对应的数据库。发布此架构的目的是让您能够生成查询和一定程度地了解如何生成有关聊天使用、活跃的聊天室、置顶帖等内容的有用报告。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我们保留改进此架构的权利。Microsoft 不对保留此已发布架构的完全向后兼容性做任何保证。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 我们保留改进此架构的权利。Microsoft 不对保留此已发布架构的完全向后兼容性做任何保证。
 
 
 请遵循以下最佳做法：

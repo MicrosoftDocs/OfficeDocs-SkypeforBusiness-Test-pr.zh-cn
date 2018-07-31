@@ -41,16 +41,6 @@ Lync Server 2013 引入的选项也可将呼叫者的电话号码（即呼叫者
     
       - 要从中继删除某个转换规则，请突出显示相应的规则名称，然后单击“删除”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果已在关联的中继对等方上配置了转换规则，则不要将任何转换规则与中继相关联，因为这两种规则可能会发生冲突。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果已在关联的中继对等方上配置了转换规则，则不要将任何转换规则与中继相关联，因为这两种规则可能会发生冲突。
 

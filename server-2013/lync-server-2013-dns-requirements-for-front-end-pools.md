@@ -42,18 +42,8 @@ _**上一次修改主题：** 2015-03-09_
 <ul>
 <li><p>DNS 负载平衡：   Pool01.contoso.net   池的 IP 地址   10.10.10.5</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每个前端服务器也将具有一个单独的 A 记录：</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 每个前端服务器也将具有一个单独的 A 记录：
 
 </div>
 <ol>
@@ -87,18 +77,8 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>统一通信 (UC) 设备发现设备更新 Web 服务</p></td>
 <td><p>有一条名为 ucupdates-r2.&lt;SIP 域&gt; 的内部 A 记录，解析为承载设备更新 Web 服务的前端池的 IP 地址。在打开了 UC 设备但用户从未登录到该设备的情况下，该设备通过此 A 记录可以发现承载设备更新 Web 服务的前端池并获得更新。否则，该设备在用户首次登录时通过带内设置获得此信息。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果 Lync Server 2010 中已部署设备更新 Web 服务，则已创建名为 ucupdates.<em>&lt;SIP 域&gt;</em> 的内部 A 记录。对于 Microsoft Office Communications Server 2007 R2，必须另外创建一条名为 ucupdates-r2.<em>&lt;SIP 域&gt;</em> 的 DNS A 记录。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果 Lync Server 2010 中已部署设备更新 Web 服务，则已创建名为 ucupdates.<em>&lt;SIP 域&gt;</em> 的内部 A 记录。对于 Microsoft Office Communications Server 2007 R2，必须另外创建一条名为 ucupdates-r2.<em>&lt;SIP 域&gt;</em> 的 DNS A 记录。
 
 </div></td>
 </tr>

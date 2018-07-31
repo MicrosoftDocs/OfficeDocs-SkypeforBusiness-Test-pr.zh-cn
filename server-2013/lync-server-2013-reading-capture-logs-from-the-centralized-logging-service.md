@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-28_
 
 在运行搜索后，您会体会到集中日志记录服务的好处，您将拥有一个可用于跟踪已报告问题的文件。读取该文件有多种方法。输出文件为标准文本格式，可以使用 Notepad.exe 或任何其他可以打开和读取文本文件的程序。对于较大文件和更复杂的问题，可以使用 Snooper.exe 之类的工具，该工具可用于读取和解析集中日志记录服务的记录输出。Snooper 包含在可单独下载的 Lync Server 2013 调试工具中。Lync Server 2013 调试工具不会创建快捷方式或菜单项。安装完 Lync Server 2013 调试工具后，打开 Windows 资源管理器、命令行窗口或 Lync Server 命令行管理程序，然后转到目录（默认位置）C:\\Program Files\\Microsoft Lync Server 2013\\Debugging Tools。双击 Snooper.exe 或键入 Snooper.exe，然后按 ENTER（如果使用命令行或 Lync Server 命令行管理程序）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题的目的不是详细介绍和讨论疑难解答技术。疑难解答及其相关过程是一个复杂的主题。有关疑难解答基础和疑难解答具体工作负荷的详细信息，请参阅 Microsoft Lync Server 2010 资源工具包丛书，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=211003%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=211003&amp;clcid=0x804</a>。过程和步骤仍适用于 Lync Server 2013。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 本主题的目的不是详细介绍和讨论疑难解答技术。疑难解答及其相关过程是一个复杂的主题。有关疑难解答基础和疑难解答具体工作负荷的详细信息，请参阅 Microsoft Lync Server 2010 资源工具包丛书，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=211003%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=211003&amp;clcid=0x804</a>。过程和步骤仍适用于 Lync Server 2013。
 
 
 Lync Server 2013 引入了更新版本的 Snooper，其中包括了一些新功能。以下屏幕快照显示了 Office Communications Server 2007 中的 Snooper 版本。

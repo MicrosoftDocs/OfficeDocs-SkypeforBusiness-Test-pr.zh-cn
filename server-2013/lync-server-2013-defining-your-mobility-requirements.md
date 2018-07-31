@@ -51,18 +51,8 @@ _**上一次修改主题：** 2015-03-09_
     > UCWA 不需要其他任何额外配置，并且它不具有仅用于内部的同等配置。
     
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您使用的是 Lync Server 2013前端服务器或 前端池，并且 <strong>没有</strong>任何 Lync Server 2010前端服务器或 前端池， <strong>则无需基于 Cookie 的持久性</strong>。如果需要保留任何 Lync Server 2010前端服务器或 前端池，则与 Lync Server 2010 中相同的规则仍适用于基于 Cookie 的持久性。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果您使用的是 Lync Server 2013前端服务器或 前端池，并且 <strong>没有</strong>任何 Lync Server 2010前端服务器或 前端池， <strong>则无需基于 Cookie 的持久性</strong>。如果需要保留任何 Lync Server 2010前端服务器或 前端池，则与 Lync Server 2010 中相同的规则仍适用于基于 Cookie 的持久性。
 
 
   - **是否希望支持针对 Apple iOS 设备和 Windows Phone 的推送通知？**
@@ -71,18 +61,8 @@ _**上一次修改主题：** 2015-03-09_
     
     如果您希望在 Wi-Fi 网络中支持推送通知，并希望在移动设备提供商的 3G 或数据网络中支持推送通知，则您必须在企业 Wi-Fi 网络上向外打开端口 5223。通过在 Wi-Fi 网络中支持推送通知，可支持仅使用 Wi-Fi 的移动设备和室内接收能力较差的移动设备。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅在支持运行 Lync 2010 Mobile 客户端的 Apple 设备时才需要打开端口 TCP 5223。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 仅在支持运行 Lync 2010 Mobile 客户端的 Apple 设备时才需要打开端口 TCP 5223。
     
     如果您不支持推送通知，则 Apple 移动设备和 Windows Phone 的用户将找不到在移动应用程序处于非活动状态时所发生的事件（例如，即时消息邀请或错过的消息）。
     

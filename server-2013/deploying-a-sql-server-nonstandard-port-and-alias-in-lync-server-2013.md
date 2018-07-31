@@ -110,18 +110,8 @@ SQL Server 非标准端口和别名必须在数据库实例中设置，然后才
     
     ![创建新别名](images/Dn776290.03653588-aecf-4fdd-b58a-95f5b372d478(OCS.15).jpg "创建新别名")
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>确保输入您在之前的步骤中使用的同个非标准端口，因为这是 SQL Server 将侦听的端口。如果一个已配置的别名连接到错误的 SQL Server FQDN 或实例，请禁用并重新启动相关的网络协议。这样可以清除所有缓存的连接信息，使客户可以正确连接。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 确保输入您在之前的步骤中使用的同个非标准端口，因为这是 SQL Server 将侦听的端口。如果一个已配置的别名连接到错误的 SQL Server FQDN 或实例，请禁用并重新启动相关的网络协议。这样可以清除所有缓存的连接信息，使客户可以正确连接。
 
 
 **创建一个 DNS CNAME 资源记录**

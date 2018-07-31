@@ -65,16 +65,6 @@ _**上一次修改主题：** 2012-10-19_
     
     其中，*forest FQDN* 指定在其中部署 Lync Server 2013 的林。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>运行 exchucutil.ps1 后，请确保重新启动“Lync Server 前端”服务 (rtcsrv.exe)。否则，Lync Server 2013 将无法在拓扑中检测统一消息。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 运行 exchucutil.ps1 后，请确保重新启动“Lync Server 前端”服务 (rtcsrv.exe)。否则，Lync Server 2013 将无法在拓扑中检测统一消息。
 

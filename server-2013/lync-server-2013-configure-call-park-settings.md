@@ -70,18 +70,8 @@ _**上一次修改主题：** 2015-03-09_
     
         New-CsCpsConfiguration -Identity site:<sitename to apply settings> [-CallPickupTimeoutThreshold <hh:mm:ss>] -[EnableMusicOnHold <$true | $false>] [-MaxCallPickupAttempts <number of rings>] [-OnTimeoutURI sip:<sip URI for routing unanswered call>]
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用 <strong>Get-CsSite</strong> cmdlet 可标识站点。有关详细信息，请参阅 Lync Server 命令行管理程序文档。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 使用 <strong>Get-CsSite</strong> cmdlet 可标识站点。有关详细信息，请参阅 Lync Server 命令行管理程序文档。
     
     例如：
     

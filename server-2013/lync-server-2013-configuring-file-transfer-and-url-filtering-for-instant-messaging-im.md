@@ -67,18 +67,8 @@ _**上一次修改主题：** 2012-11-01_
 
   - **阻止带文件扩展名的 URL** 即时消息筛选器阻止包含具有“编辑文件筛选器”对话框的“要阻止的文件类型扩展名”下所列扩展名的文件的任何活动 Intranet 或 Internet URL。阻止 URL 之后，会向发送方显示一条错误消息。如果选择了此选项，则此选项优先于针对“要阻止的文件类型扩展名”下定义的任何文件扩展名的所有其他筛选选项。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>文件扩展名筛选仅限于标准文件名。筛选对于嵌入在其他名称中的文件扩展名不起作用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 文件扩展名筛选仅限于标准文件名。筛选对于嵌入在其他名称中的文件扩展名不起作用。
 
 
 要配置即时消息对话中处理超链接的方式，请选择“超链接前缀”下的以下选项之一：
@@ -116,18 +106,8 @@ _**上一次修改主题：** 2012-11-01_
     
       - **全部阻止** 服务器将删除包含文件传输请求的所有即时消息并向该请求的发送方返回一条错误消息。Office Live Meeting 2007 客户端中的讲义功能被禁用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>文件扩展名筛选仅限于标准文件名。筛选对于嵌入在其他名称中的文件扩展名不起作用。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 文件扩展名筛选仅限于标准文件名。筛选对于嵌入在其他名称中的文件扩展名不起作用。
 
 
 ## 本节内容

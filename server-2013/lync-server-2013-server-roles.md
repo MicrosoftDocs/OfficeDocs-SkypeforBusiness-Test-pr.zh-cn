@@ -81,18 +81,8 @@ Standard Edition Server 是为小型组织以及大型组织的试验项目而�
 
 后端服务器是运行 Microsoft SQL Server 的数据库服务器，旨在为前端池提供数据库服务。后端服务器既可用作池的用户和会议数据的备份存储，又可用作其他数据库（如响应组数据库）的主存储。您可以只有一台后端服务器，但建议将一个使用 SQL Server 镜像的解决方案用于故障转移。后端服务器不运行任何 Lync Server 软件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议不要将 Lync Server 数据库与其他数据库并置。如果您这样做，可能会影响可用性和性能。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 建议不要将 Lync Server 数据库与其他数据库并置。如果您这样做，可能会影响可用性和性能。
 
 
 存储在后端服务器数据库中的信息包括状态信息、用户的联系人列表、包含所有当前会议状态相关的永久数据的会议数据，以及会议安排数据。

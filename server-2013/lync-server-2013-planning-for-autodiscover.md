@@ -36,18 +36,8 @@ _**上一次修改主题：** 2013-02-16_
 
 因为 Lync Server 2013 对所有客户端使用自动发现，所以主要方案是独占使用 HTTPS 并使用 lyncdiscover.\<域\> 创建证书作为反向代理、控制器和前端服务器的配置的一部分。如果从 Lync Server 2010 将自动发现实现到升级的部署中，则可能需要使用 HTTP 来避免重新颁发证书。以下各节中提供了有关这两种方案的指南。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>外部 Web 服务发布规则所使用的证书上的使用者替代名称列表必须包含组织中的每个 SIP 域的 <em>lyncdiscover.&lt;sip 域&gt;</em> 条目。有关控制器、前端服务器和反向代理所需的使用者替代名称条目的详细信息，请参阅<a href="lync-server-2013-certificate-summary-autodiscover.md">证书摘要 - 自动发现</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 外部 Web 服务发布规则所使用的证书上的使用者替代名称列表必须包含组织中的每个 SIP 域的 <em>lyncdiscover.&lt;sip 域&gt;</em> 条目。有关控制器、前端服务器和反向代理所需的使用者替代名称条目的详细信息，请参阅<a href="lync-server-2013-certificate-summary-autodiscover.md">证书摘要 - 自动发现</a>。
 
 
 ## 本部分内容

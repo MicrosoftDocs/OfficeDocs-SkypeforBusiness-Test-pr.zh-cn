@@ -25,18 +25,8 @@ _**上一次修改主题：** 2016-12-08_
 
 3.  在 SIP 域的控制台树中，展开“正向查找区域”，并选择将在其中安装 Lync Server 2013 的 SIP 域。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必须在 Lync Server 所在的或将安装 Lync Server 的 SIP 域中创建 DNS SRV 记录。在创建 SRV 记录时，用于“提供此服务的主机”字段的 FQDN 必须是边缘池的外部 FQDN。例如，如果边缘池的外部 FQDN 为 edge01.contoso.net，请输入该值。此外，此记录必须位于 DNS 主机 (A) 记录所在的域中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 您必须在 Lync Server 所在的或将安装 Lync Server 的 SIP 域中创建 DNS SRV 记录。在创建 SRV 记录时，用于“提供此服务的主机”字段的 FQDN 必须是边缘池的外部 FQDN。例如，如果边缘池的外部 FQDN 为 edge01.contoso.net，请输入该值。此外，此记录必须位于 DNS 主机 (A) 记录所在的域中。
 
 
 4.  右键单击选定的域，再单击“其他新记录”。

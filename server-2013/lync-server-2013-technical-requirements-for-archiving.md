@@ -71,18 +71,8 @@ Lync Server 2013 简化了存档必备组件，原因如下：
     
       - Microsoft SQL Server 2012 Standard
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Microsoft SQL Server 2008 R2 Express 和 Microsoft SQL Server 2012 Express 不支持存档。不支持 32 位版本的 SQL Server。有关其他 SQL Server 要求和限制，请参阅规划文档或可支持性文档中的 <a href="lync-server-2013-database-software-support.md">Lync Server 2013 中的数据库软件支持</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Microsoft SQL Server 2008 R2 Express 和 Microsoft SQL Server 2012 Express 不支持存档。不支持 32 位版本的 SQL Server。有关其他 SQL Server 要求和限制，请参阅规划文档或可支持性文档中的 <a href="lync-server-2013-database-software-support.md">Lync Server 2013 中的数据库软件支持</a>。
     
     您必须先设置 SQL Server 平台，然后才能部署和启用存档。如果用于发布拓扑的帐户具有适当的管理员权限，则可在发布拓扑时创建存档数据库 (LcsLog)。您稍后还可创建数据库（包括在安装过程中）。有关 SQL Server 的详细信息，请参阅 SQL Server 技术中心 ( [http://go.microsoft.com/fwlink/?linkid=129045\&clcid=0x804](http://go.microsoft.com/fwlink/?linkid=129045%26clcid=0x804))。
 

@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-04-06_
 
 本节汇总了 Lync Server 部署中服务器、负载平衡器和客户端使用的端口和协议。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>一对一通信中涉及的 Lync 和 Communicator 客户端通常称为对等客户端。从技术上来说，两个客户端在一对一对话中使用即时消息多点控制单元 (IMMCU) 进行通信。IMMCU 是 前端服务器 的一个组件。将 IMMCU 放在所需的通信工作流中允许进行呼叫详细信息记录和 前端服务器 启用的其他功能。通信从客户端上的动态源端口发送到 前端服务器 端口 TLS/TCP/5061（假设使用推荐的传输层安全性）。根据设计，只有当 Lync Server 和 IMMCU 处于活动状态且可用时，才可能实现对等通信（以及多方 IM）。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 一对一通信中涉及的 Lync 和 Communicator 客户端通常称为对等客户端。从技术上来说，两个客户端在一对一对话中使用即时消息多点控制单元 (IMMCU) 进行通信。IMMCU 是 前端服务器 的一个组件。将 IMMCU 放在所需的通信工作流中允许进行呼叫详细信息记录和 前端服务器 启用的其他功能。通信从客户端上的动态源端口发送到 前端服务器 端口 TLS/TCP/5061（假设使用推荐的传输层安全性）。根据设计，只有当 Lync Server 和 IMMCU 处于活动状态且可用时，才可能实现对等通信（以及多方 IM）。
 
 
 ## 端口和协议详细信息

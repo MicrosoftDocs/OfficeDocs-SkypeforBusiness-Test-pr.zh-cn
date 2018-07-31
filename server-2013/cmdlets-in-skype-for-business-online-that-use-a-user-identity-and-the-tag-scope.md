@@ -25,19 +25,9 @@ _**上一次修改主题：** 2015-06-22_
 
 此命令失败是因为无需分配全局策略。如果希望使用全局策略管理用户，请确保不要向该用户分配每用户策略。如果未向用户分配每用户策略，则将使用全局策略自动管理用户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果以前向用户分配了每用户策略，而您希望取消分配该策略并通过全局策略管理该用户，该怎么办？在这种情况下，请首先使用以下语法，它将通过授予该用户 null 策略来取消分配每用户策略：<br />
-Grant-CsVoicePolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果以前向用户分配了每用户策略，而您希望取消分配该策略并通过全局策略管理该用户，该怎么办？在这种情况下，请首先使用以下语法，它将通过授予该用户 null 策略来取消分配每用户策略：<br />
+> Grant-CsVoicePolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null
 
 
 其次，请记住，每用户策略是在标记作用域创建的。但是，在指定策略名称时，您可以忽略标记 **prefix**。这两个命令是一致的：

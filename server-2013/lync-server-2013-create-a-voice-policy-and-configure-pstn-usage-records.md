@@ -121,18 +121,8 @@ _**上一次修改主题：** 2012-11-01_
 
 9.  排列 PSTN 用法记录以获得最佳性能。要更改记录在列表中的位置，请突出显示相应的记录名称，然后单击向上箭头或向下箭头。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>PSTN 用法记录在语音策略中的列出顺序十分重要。Lync Server 会从上到下遍历该列表。建议按使用频率来组织该列表，例如：RedmondLocal、RedmondLongDist、RedmondInternational 和 RedmondBackup。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > PSTN 用法记录在语音策略中的列出顺序十分重要。Lync Server 会从上到下遍历该列表。建议按使用频率来组织该列表，例如：RedmondLocal、RedmondLongDist、RedmondInternational 和 RedmondBackup。
 
 
 10. 要在此语音策略中为呼叫转接和同时响铃关联和配置 PSTN 用法记录，请执行以下任意操作：

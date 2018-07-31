@@ -44,18 +44,8 @@ _**上一次修改主题：** 2016-12-08_
 
 Lync Server 要求安装以下 IIS 模块：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果组织要求您在系统驱动器之外的某个驱动器上定位 IIS 和所有 Web Services，您可以在“安装”对话框中更改 Lync Server 文件的安装位置路径。如果您将安装文件（包括 OCSCore.msi）安装到此路径，则其余的 Lync Server 文件也将部署到该驱动器。有关如何在安装 IIS 时重新定位 Windows Server Manager 部署的 INETPUB 的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=216888">http://go.microsoft.com/fwlink/p/?linkId=216888</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果组织要求您在系统驱动器之外的某个驱动器上定位 IIS 和所有 Web Services，您可以在“安装”对话框中更改 Lync Server 文件的安装位置路径。如果您将安装文件（包括 OCSCore.msi）安装到此路径，则其余的 Lync Server 文件也将部署到该驱动器。有关如何在安装 IIS 时重新定位 Windows Server Manager 部署的 INETPUB 的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=216888">http://go.microsoft.com/fwlink/p/?linkId=216888</a>。
 
 
   - 静态内容

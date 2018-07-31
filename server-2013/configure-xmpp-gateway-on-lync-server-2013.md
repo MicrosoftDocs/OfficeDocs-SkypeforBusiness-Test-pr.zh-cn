@@ -25,18 +25,8 @@ _**上一次修改主题：** 2013-10-28_
 
 1.  在边缘服务器上，单击部署向导中“步骤 3：请求、安装或分配证书”旁边的“再次运行”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您第一次部署边缘服务器，您将看到“运行”而不是“再次运行”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果您第一次部署边缘服务器，您将看到“运行”而不是“再次运行”。
 
 
 2.  在“可用的证书任务”页上，单击“创建新的证书请求”。
@@ -67,18 +57,8 @@ _**上一次修改主题：** 2013-10-28_
 
 12. 在“配置其他使用者替代名称”页上，指定所需的任何其他使用者替代名称。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果安装了 XMPP 代理，则默认情况下域名（如 contoso.com）填充在 SAN 条目中。如果您需要更多条目，请在此步骤中添加它们。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果安装了 XMPP 代理，则默认情况下域名（如 contoso.com）填充在 SAN 条目中。如果您需要更多条目，请在此步骤中添加它们。
 
 
 13. 在“请求摘要”页上，检查要用于生成请求的证书信息。

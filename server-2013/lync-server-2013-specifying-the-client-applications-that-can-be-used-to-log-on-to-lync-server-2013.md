@@ -24,18 +24,8 @@ _**上一次修改主题：** 2012-12-11_
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>按优先顺序列出筛选器。例如，如果您具有一个筛选器可允许运行版本 1.5 的客户端进行连接，还有另一个筛选器可阻止运行低于 2.0 版本的客户端，则第一个筛选器优先，允许运行版本 1.5 的客户端进行连接。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 按优先顺序列出筛选器。例如，如果您具有一个筛选器可允许运行版本 1.5 的客户端进行连接，还有另一个筛选器可阻止运行低于 2.0 版本的客户端，则第一个筛选器优先，允许运行版本 1.5 的客户端进行连接。
 
 
 ## 编辑默认客户端版本策略
@@ -59,18 +49,8 @@ _**上一次修改主题：** 2012-12-11_
     
       - 单击列表中已定义的客户端类型之一，然后单击“显示详细信息”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可以使用通配符来指示客户端类型。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 可以使用通配符来指示客户端类型。
 
 
 6.  在“用户代理”中，选择客户端类型。

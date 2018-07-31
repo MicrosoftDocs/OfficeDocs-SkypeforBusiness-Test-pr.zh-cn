@@ -33,18 +33,8 @@ _**上一次修改主题：** 2012-09-21_
 
 1.  使用作为本地用户帐户成员的帐户登录到安装了最佳做法分析器的计算机。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>虽然可使用作为本地 Administrators 组成员的帐户查看扫描结果，但除非您具有适当的用户权限，否则无法运行扫描。有关详细信息，请参阅<a href="lync-server-2013-group-memberships-and-user-rights-requirements-for-best-practices-analyzer.md">最佳做法分析器的组成员身份和用户权限要求</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 虽然可使用作为本地 Administrators 组成员的帐户查看扫描结果，但除非您具有适当的用户权限，否则无法运行扫描。有关详细信息，请参阅<a href="lync-server-2013-group-memberships-and-user-rights-requirements-for-best-practices-analyzer.md">最佳做法分析器的组成员身份和用户权限要求</a>。
 
 
 2.  单击“开始”，指向“所有程序”，再单击“Microsoft Lync Server 2013”，然后单击“最佳做法分析器”。
@@ -92,16 +82,6 @@ _**上一次修改主题：** 2012-09-21_
     
       - 若要查看其他报告，请单击“其他报告”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关最佳做法分析器报告以及这些报告标识的问题的详细信息，请参阅<a href="lync-server-2013-viewing-and-working-with-reports-created-by-best-practices-analyzer.md">查看和使用由最佳做法分析器创建的报告</a>和<a href="lync-server-2013-analyzing-and-resolving-issues-identified-by-best-practices-analyzer.md">分析和解决由最佳做法分析器标识的问题</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 有关最佳做法分析器报告以及这些报告标识的问题的详细信息，请参阅<a href="lync-server-2013-viewing-and-working-with-reports-created-by-best-practices-analyzer.md">查看和使用由最佳做法分析器创建的报告</a>和<a href="lync-server-2013-analyzing-and-resolving-issues-identified-by-best-practices-analyzer.md">分析和解决由最佳做法分析器标识的问题</a>。
 
