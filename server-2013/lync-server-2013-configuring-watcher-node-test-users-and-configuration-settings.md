@@ -166,19 +166,9 @@ _**上一次修改主题：** 2013-07-29_
     PersistentChatMessage
     DataConference
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要按字母顺序查看综合事务，请改为使用以下命令：<br />
-Get-CsWatcherNodeConfiguration –Identity &quot;atl-cs-001.litwareinc.com&quot; | Select-Object –ExpandProperty Tests | Sort-Object</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]  
+> 要按字母顺序查看综合事务，请改为使用以下命令：<br />
+> Get-CsWatcherNodeConfiguration –Identity &quot;atl-cs-001.litwareinc.com&quot; | Select-Object –ExpandProperty Tests | Sort-Object
 
 
 要验证是否已创建观察程序节点，请从 Lync Server 命令行管理程序中键入以下命令：

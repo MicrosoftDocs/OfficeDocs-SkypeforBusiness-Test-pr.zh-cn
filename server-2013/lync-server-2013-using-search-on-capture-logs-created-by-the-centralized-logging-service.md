@@ -47,18 +47,8 @@ _**上一次修改主题：** 2013-02-21_
     
         Search-CsClsLogging -OutputFilePath <string value of path and file to write the output file>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下，Search-CsClsLogging 将搜索结果发送至控制台。如果要将搜索结果保存至文件，请使用 –OutputFilePath <em>&lt;字符串完全限定的文件路径&gt;</em>。若要定义 –OutputFilePath 参数，请在参数中以用引号括起的字符串格式提供路径和文件名（例如；C:\LogFiles\SearchOutput.txt）。在此示例中，必须确保目录 C:\LogFiles 存在，并且您有权在该文件夹中读取和写入（NTFS 权限修改）文件。输出将进行追加而不会被覆盖。如果需要不同文件，请为每个搜索定义不同文件名。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 默认情况下，Search-CsClsLogging 将搜索结果发送至控制台。如果要将搜索结果保存至文件，请使用 –OutputFilePath <em>&lt;字符串完全限定的文件路径&gt;</em>。若要定义 –OutputFilePath 参数，请在参数中以用引号括起的字符串格式提供路径和文件名（例如；C:\LogFiles\SearchOutput.txt）。在此示例中，必须确保目录 C:\LogFiles 存在，并且您有权在该文件夹中读取和写入（NTFS 权限修改）文件。输出将进行追加而不会被覆盖。如果需要不同文件，请为每个搜索定义不同文件名。
     
     例如：
     
@@ -100,18 +90,8 @@ _**上一次修改主题：** 2013-02-21_
     
         Search-CsClsLogging -Pools "pool01.contoso.net" -StartTime "11/20/2012 08:00:00 AM" -EndTime "11/20/2012 09:00:00 AM" -OutputFilePath "C:\Logfiles\logfile.txt"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您指定的时间和日期字符串可以为“日期时间”或“时间日期”。该命令将分析字符串，并对日期和时间使用适当的值。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 您指定的时间和日期字符串可以为“日期时间”或“时间日期”。该命令将分析字符串，并对日期和时间使用适当的值。
 
 
 3.  如果要从 11/20/2012 的 11:00:00 AM 开始检索日志，需定义 –StartTime。除非定义特定的 –EndTime，否则，搜索的默认时间范围是 30 分钟。生成的搜索将在 11:00:00 AM 到 11:30:00 AM 之间从已定义计算机或池中返回日志。

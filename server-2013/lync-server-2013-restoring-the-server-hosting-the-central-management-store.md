@@ -26,18 +26,8 @@ Lync Server 部署具有一个中央管理存储，它的副本会复制到运�
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议在开始还原之前制作系统的映像副本。在还原过程中出现问题时您可将该映像作为回滚点。您可能需要在安装操作系统和 SQL Server 之后制作映像副本，然后再还原或重新注册证书。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 建议在开始还原之前制作系统的映像副本。在还原过程中出现问题时您可将该映像作为回滚点。您可能需要在安装操作系统和 SQL Server 之后制作映像副本，然后再还原或重新注册证书。
 
 
 ## 还原中央管理存储
@@ -53,18 +43,8 @@ Lync Server 部署具有一个中央管理存储，它的副本会复制到运�
 
 3.  如果要还原 Standard Edition Server，请通过将相应文件存储从 $Backup 复制到服务器上的文件存储位置来还原文件存储，然后共享该文件夹。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>还原的文件存储的路径和文件名应与备份的文件存储完全相同，以便使用这些文件的组件可以访问它们。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 还原的文件存储的路径和文件名应与备份的文件存储完全相同，以便使用这些文件的组件可以访问它们。
 
 
 4.  执行以下操作之一：
@@ -140,18 +120,8 @@ Lync Server 部署具有一个中央管理存储，它的副本会复制到运�
     
     7.  按照向导的其余部分操作，然后单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可使用 <strong>Install-CsDatabase</strong> cmdlet 创建每个数据库以及使用 <strong>Install-CsMirrorDatabase</strong> cmdlet 配置镜像，而不是运行拓扑生成器。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Install-CsDatabase">Install-CsDatabase</a> 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Install-CsMirrorDatabase">Install-CsMirrorDatabase</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 可使用 <strong>Install-CsDatabase</strong> cmdlet 创建每个数据库以及使用 <strong>Install-CsMirrorDatabase</strong> cmdlet 配置镜像，而不是运行拓扑生成器。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Install-CsDatabase">Install-CsDatabase</a> 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Install-CsMirrorDatabase">Install-CsMirrorDatabase</a>。
 
 
 11. 如果要还原 Standard Edition Server，请浏览到 Lync Server 安装文件夹或介质，并启动位于 \\setup\\amd64\\Setup.exe 中的 Lync Server 部署向导。使用 Lync Server 部署向导执行以下操作：

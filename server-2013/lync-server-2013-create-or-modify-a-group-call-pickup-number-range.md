@@ -22,18 +22,8 @@ _**上一次修改主题：** 2013-01-30_
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须为呼叫应答组号码范围分配 GroupPickup 类型。仅当为用户分配的组号码是 GroupPickup 类型时，才为用户启用组内呼叫应答。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 必须为呼叫应答组号码范围分配 GroupPickup 类型。仅当为用户分配的组号码是 GroupPickup 类型时，才为用户启用组内呼叫应答。
 
 
 呼叫应答组号码范围必须符合以下规则：
@@ -68,18 +58,8 @@ _**上一次修改主题：** 2013-01-30_
     
         Set-CsCallParkOrbit -Identity "Redmond call pickup" -Type GroupPickup
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅在您最初指定了错误的类型并且组范围尚未使用时，才能使用此 cmdlet 更改分配到号码范围的类型。如果您将号码范围从 CallPark 更改为 GroupPickup 或相反，并且号码范围已在使用中，则呼叫寄存或组内呼叫应答将不再对该号码范围起作用。例如，如果您将号码范围从 CallPark 更改为 GroupPick，则呼叫寄存应用程序将无法再使用该轨道范围来寄存呼叫。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 仅在您最初指定了错误的类型并且组范围尚未使用时，才能使用此 cmdlet 更改分配到号码范围的类型。如果您将号码范围从 CallPark 更改为 GroupPickup 或相反，并且号码范围已在使用中，则呼叫寄存或组内呼叫应答将不再对该号码范围起作用。例如，如果您将号码范围从 CallPark 更改为 GroupPick，则呼叫寄存应用程序将无法再使用该轨道范围来寄存呼叫。
 
 
 ## 另请参阅

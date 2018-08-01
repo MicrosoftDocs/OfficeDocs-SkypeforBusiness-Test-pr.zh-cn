@@ -96,18 +96,8 @@ _**上一次修改主题：** 2013-09-11_
     
     2.  键入要添加到工作流的其他管理员的 SIP URI，单击“添加”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须为被指定为响应组管理员的每一位用户分配 CsResponseGroupManager 角色。如果没有为用户分配此角色，他们无法管理响应组。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 必须为被指定为响应组管理员的每一位用户分配 CsResponseGroupManager 角色。如果没有为用户分配此角色，他们无法管理响应组。
 
 
 16. 在“步骤 2 选择语言”下，单击要用于语音识别和文本到语音转换的语言。
@@ -282,18 +272,8 @@ _**上一次修改主题：** 2013-09-11_
     
         $workflowHG = New-CsRgsWorkflow -Parent $serviceID -Name "Human Resources" -Description "Human Resources workflow" -PrimaryUri "sip:humanresources@contoso.com" -LineUri "TEL:+14255551219" -DisplayNumber "555-1219" -Active $true -Anonymous $true -DefaultAction $actionWM -EnabledForFederation $false -Managed $true -ManagersByUri "sip:bob@contoso.com", "mindy@contoso.com"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须为所有指定为工作流管理员的用户分配 CsResponseGroupManager 角色。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 必须为所有指定为工作流管理员的用户分配 CsResponseGroupManager 角色。
     
     > [!NOTE]  
     > 有关其他可选参数的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsWorkflow">New-CsRgsWorkflow</a> 或 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRgsWorkflow">Set-CsRgsWorkflow</a>

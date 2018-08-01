@@ -55,18 +55,8 @@ _**上一次修改主题：** 2016-12-08_
 
 持久聊天服务器使用 持久聊天数据库存储聊天历史记录、配置和用户设置数据。（可选）它使用 持久聊天合规性数据库存储合规性数据。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>持久聊天数据库 (mgc) 和合规性数据库 (mgccomp) 可以位于同一 SQL Server 实例或不同 SQL Servers 中。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 持久聊天数据库 (mgc) 和合规性数据库 (mgccomp) 可以位于同一 SQL Server 实例或不同 SQL Servers 中。
 
 
 若要准备数据库服务器平台，请确保每台计算机均满足硬件要求，然后安装必备软件。

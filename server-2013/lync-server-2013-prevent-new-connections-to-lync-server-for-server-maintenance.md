@@ -35,18 +35,8 @@ Lync Server 允许您将服务器置于脱机状态（例如，应用软件或�
 
 除了阻止运行 Lync Server 的服务器上所有服务的新连接之外，还可以阻止单个 Lync Server 服务的新连接。例如，此方法适用于需要应用 Lync Server 更新但无需关闭整台服务器的情况。请注意，阻止一项服务的连时，必须选择 Windows 服务列表中所属和显示的服务。例如，Lync Server 前端服务和监控的数据收集代理是不同的 Lync Server 服务，但在 Windows 服务列表中，它们合并显示为 Lync Server 前端服务。可以阻止 Lync Server 前端服务的新连接，但无法分别阻止这两个底层 Lync Server 服务各自的新连接。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果将某台服务器设置为阻止新连接，然后重新启动该服务器，则默认情况下，该服务器启动后将立即开始接受新连接。要防止此情况发生，请在重新启动服务器之前，将其设置为仅手动暂停和恢复。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果将某台服务器设置为阻止新连接，然后重新启动该服务器，则默认情况下，该服务器启动后将立即开始接受新连接。要防止此情况发生，请在重新启动服务器之前，将其设置为仅手动暂停和恢复。
 
 
 ## 阻止与 Lync Server 建立新连接：
@@ -61,18 +51,8 @@ Lync Server 允许您将服务器置于脱机状态（例如，应用软件或�
 
 5.  或者，作为推荐选项，单击“启动类型”旁边的“手动”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果将某台服务器设置为阻止新连接，然后重新启动该服务器，则默认情况下，该服务器启动后将立即开始接受新连接。要防止此情况发生，请在重新启动服务器之前，将其设置为仅手动暂停和恢复。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果将某台服务器设置为阻止新连接，然后重新启动该服务器，则默认情况下，该服务器启动后将立即开始接受新连接。要防止此情况发生，请在重新启动服务器之前，将其设置为仅手动暂停和恢复。
 
 
 6.  完成后，单击“确定”。

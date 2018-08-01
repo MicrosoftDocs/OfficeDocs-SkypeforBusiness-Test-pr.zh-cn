@@ -747,18 +747,8 @@ Lync Server 2013响应组代理只能通过 Lync Server 2010 代理控制台登�
 
 3.  发布拓扑。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只要更改后端数据库镜像关系，就必须重新启动池中的所有 前端服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 只要更改后端数据库镜像关系，就必须重新启动池中的所有 前端服务器。
 
 
 ## 管理员尝试删除包含具有关联的见证存储的前端池的部署时， 拓扑生成器中返回验证错误 (3199266)

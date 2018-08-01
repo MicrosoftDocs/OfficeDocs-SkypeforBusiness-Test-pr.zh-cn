@@ -52,18 +52,8 @@ _**上一次修改主题：** 2012-06-20_
     > 安装发布的拓扑时，电话拨入式会议设置网页将作为 Web 服务的一部分安装在前端服务器或 Standard Edition Server 上。
     
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果在部署 Lync Server 2013 后更改 拓扑生成器中“文件存储”的路径，则需要重新启动会议助理和会议通知应用程序才能使用新路径。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果在部署 Lync Server 2013 后更改 拓扑生成器中“文件存储”的路径，则需要重新启动会议助理和会议通知应用程序才能使用新路径。
 
 
   - 已部署 企业语音。如果不打算部署 企业语音，则必须已将中介服务器并置到 Enterprise Edition 前端服务器或 Standard Edition Server 上，或已部署独立的中介服务器，并且已部署 PSTN 网关。有关部署 企业语音的详细信息，请参阅部署文档中的 [在 Lync Server 2013 中部署企业语音](lync-server-2013-deploying-enterprise-voice.md)。有关安装独立中介服务器和 PSTN 网关的详细信息，请参阅部署文档中的 [在 Lync Server 2013 中部署中介服务器和定义对等方](lync-server-2013-deploying-mediation-servers-and-defining-peers.md)。

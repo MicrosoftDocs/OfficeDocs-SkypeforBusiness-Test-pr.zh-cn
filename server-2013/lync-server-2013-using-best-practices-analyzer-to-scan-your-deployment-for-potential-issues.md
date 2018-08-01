@@ -39,18 +39,8 @@ _**上一次修改主题：** 2012-10-21_
     
       - 若要指定要用于 Active Directory 域服务、边缘服务器或 Exchange Server 的不同凭据，请单击“显示高级登录选项”，选中需要单独凭据的每个复选框，为每个选中的复选框指定凭据，然后单击“连接到 Active Directory 服务器”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在开始扫描之前，最佳做法分析器会执行网络和权限检查，以确保指定帐户凭据有效并且最佳做法分析器可以连接到 Active Directory 域服务。如果该工具在工作组服务器上运行，则该工具还验证它能否连接到外围网络中的边缘服务器（即，它们是否包括在扫描中）。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在开始扫描之前，最佳做法分析器会执行网络和权限检查，以确保指定帐户凭据有效并且最佳做法分析器可以连接到 Active Directory 域服务。如果该工具在工作组服务器上运行，则该工具还验证它能否连接到外围网络中的边缘服务器（即，它们是否包括在扫描中）。
 
 
 5.  在“启动新的最佳实践扫描”页面上，选择您要包括在扫描中的选项，指定网络速度，然后单击“开始扫描”。
@@ -65,16 +55,6 @@ _**上一次修改主题：** 2012-10-21_
     
       - 若要查看其他报告，请单击“其他报告”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关最佳做法分析器报告以及它们所标识的问题的详细信息，请参阅<a href="lync-server-2013-viewing-and-working-with-reports-created-by-best-practices-analyzer.md">查看和使用由最佳做法分析器创建的报告</a>和<a href="lync-server-2013-analyzing-and-resolving-issues-identified-by-best-practices-analyzer.md">分析和解决由最佳做法分析器标识的问题</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 有关最佳做法分析器报告以及它们所标识的问题的详细信息，请参阅<a href="lync-server-2013-viewing-and-working-with-reports-created-by-best-practices-analyzer.md">查看和使用由最佳做法分析器创建的报告</a>和<a href="lync-server-2013-analyzing-and-resolving-issues-identified-by-best-practices-analyzer.md">分析和解决由最佳做法分析器标识的问题</a>。
 

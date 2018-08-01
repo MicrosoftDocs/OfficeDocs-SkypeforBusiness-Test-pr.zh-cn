@@ -25,18 +25,8 @@ _**上一次修改主题：** 2012-09-22_
 
 3.  要创建静态路由，并将其置于变量 $TLSRoute 或 $TCPRoute 中，请执行以下操作之一：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>要匹配某个域的子域，可在 MatchUri 参数中指定通配符值。例如， <strong>*.contoso.net</strong> 。该值与以后缀 <strong>contoso.net</strong> 结尾的任何域匹配。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 要匹配某个域的子域，可在 MatchUri 参数中指定通配符值。例如， <strong>*.contoso.net</strong> 。该值与以后缀 <strong>contoso.net</strong> 结尾的任何域匹配。
     
       - 对于传输层安全性 (TLS) 连接，请在命令提示符处键入以下内容：
         

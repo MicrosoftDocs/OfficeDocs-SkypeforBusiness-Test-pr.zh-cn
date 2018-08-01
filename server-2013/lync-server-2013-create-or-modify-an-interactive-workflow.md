@@ -91,18 +91,8 @@ _**上一次修改主题：** 2013-09-11_
     
     2.  键入要添加到工作流的其他管理员的 SIP URI，然后单击“添加”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须为被指定为响应组管理员的每一位用户分配 CsResponseGroupManager 角色。如果没有为用户分配此角色，他们无法管理响应组。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 必须为被指定为响应组管理员的每一位用户分配 CsResponseGroupManager 角色。如果没有为用户分配此角色，他们无法管理响应组。
 
 
 16. 在“步骤 2 选择语言”下，单击要用于语音识别和文本到语音转换的语言。
@@ -237,18 +227,8 @@ _**上一次修改主题：** 2013-09-11_
 
 29. 在“响应 1”下，指定第一个可能的问题答案，具体操作如下：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不要在任何语音响应中使用引号 (&quot;)。引号会导致 IVR 失败。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 不要在任何语音响应中使用引号 (&quot;)。引号会导致 IVR 失败。
     
     > [!NOTE]  
     > 可以选择允许呼叫者使用语音、字母数字键盘输入或同时使用两者进行回答。

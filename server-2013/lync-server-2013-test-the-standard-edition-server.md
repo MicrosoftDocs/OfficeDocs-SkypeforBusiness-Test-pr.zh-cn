@@ -23,18 +23,8 @@ _**上一次修改主题：** 2012-10-01_
 
 2.  如果用户对象当前已登录，则注销后重新登录，以注册新的组分配。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>用户帐户不能是运行 Lync Server 2013 Standard Edition 的服务器的本地管理员。如果未将相应的用户和组添加到 CsAdministors 组，则在打开 Lync Server 2013 控制面板时会收到错误消息，指出“未授权:由于基于角色的访问控制 (RBAC) 授权失败，访问被拒绝”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 用户帐户不能是运行 Lync Server 2013 Standard Edition 的服务器的本地管理员。如果未将相应的用户和组添加到 CsAdministors 组，则在打开 Lync Server 2013 控制面板时会收到错误消息，指出“未授权:由于基于角色的访问控制 (RBAC) 授权失败，访问被拒绝”。
 
 
 3.  使用管理帐户登录到已安装 Lync Server 控制面板的计算机。

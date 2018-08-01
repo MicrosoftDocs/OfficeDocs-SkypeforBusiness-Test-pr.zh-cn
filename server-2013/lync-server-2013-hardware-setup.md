@@ -27,18 +27,8 @@ _**上一次修改主题：** 2013-02-21_
     
     有关在分布式文件系统 (DFS) 中使用文件共享更新的详细信息，请参阅 [为 Lync Server 2013 配置文件存储](lync-server-2013-configure-dfs-file-storage.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 Enterprise Edition 的文件共享不能位于 前端服务器上。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Lync Server 2013 Enterprise Edition 的文件共享不能位于 前端服务器上。
 
 
   - 为 Web 服务安装和设置硬件负载平衡器。部署域名系统 (DNS) 负载平衡后，还需要在这些池中使用硬件负载平衡器，但仅用于 HTTP/HTTPS 流量。硬件负载平衡器用于客户端通过端口 443 和 80 发送的 HTTPS 流量。尽管还需要在这些池中使用硬件负载平衡器，但是主要针对 HTTP/HTTPS 流量进行设置和管理，这都是硬件负载平衡器管理员所熟悉的内容。

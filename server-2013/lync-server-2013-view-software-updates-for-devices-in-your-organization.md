@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
 通过 Lync Server 2013，可使用设备更新 Web 服务查看和管理组织设备的软件更新。Microsoft 支持网站 ([http://go.microsoft.com/fwlink/?linkid=204091\&clcid=0x804](http://go.microsoft.com/fwlink/?linkid=204091%26clcid=0x804)) 上的 .cab (CAB) 文件中提供了这些更新。下载 .cab 文件后，运行 **Import-CSdeviceUpdate** cmdlet 可从该 .cab 文件中导入设备更新规则。有关 **Import-CSdeviceUpdate** cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档中的 [Import-CsDeviceUpdate](https://docs.microsoft.com/en-us/powershell/module/skype/Import-CsDeviceUpdate)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>将新的更新部署到组织之前，请验证其在测试设备上是否正常工作。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 将新的更新部署到组织之前，请验证其在测试设备上是否正常工作。
 
 
 ## 查看 UC 设备的软件更新

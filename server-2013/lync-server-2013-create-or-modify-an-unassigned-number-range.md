@@ -17,18 +17,8 @@ _**上一次修改主题：** 2012-11-01_
 
 使用下列过程之一配置 通知应用程序的未分配号码范围。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在配置未分配号码表之前，必须已定义一个或多个通知，或已设置 Exchange 统一消息 (UM) 自动助理。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 在配置未分配号码表之前，必须已定义一个或多个通知，或已设置 Exchange 统一消息 (UM) 自动助理。
 
 
 ## 使用 Lync Server 控制面板配置未分配电话号码
@@ -78,18 +68,8 @@ _**上一次修改主题：** 2012-11-01_
 
 10. 在“未分配号码”页上，确保未分配号码范围按照所需顺序排列。要更改号码范围在表中的位置，请在范围列表中单击一个或多个连续名称，然后单击向上箭头或向下箭头。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 从上至下搜索未分配号码表，并使用第一个匹配未分配号码的范围。如果有重叠的范围并且有一个范围指定了最后的操作，请确保将该范围置于列表底部。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Lync Server 从上至下搜索未分配号码表，并使用第一个匹配未分配号码的范围。如果有重叠的范围并且有一个范围指定了最后的操作，请确保将该范围置于列表底部。
 
 
 11. 按照希望的顺序排列未分配号码范围后，单击“全部提交”。
@@ -102,18 +82,8 @@ _**上一次修改主题：** 2012-11-01_
 
 3.  使用 **New-CsUnassignedNumber** 可创建新的未分配号码范围。使用 **Set-CsUnassignedNumber** 可修改现有未分配号码范围。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您具有重叠的范围并希望按某个特定顺序应用这些范围，请包含 Priority 参数。优先级最高的范围将应用于呼叫。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果您具有重叠的范围并希望按某个特定顺序应用这些范围，请包含 Priority 参数。优先级最高的范围将应用于呼叫。
     
     在命令行中，执行下列操作之一：
     

@@ -50,18 +50,8 @@ Lync Server 2013 的新增功能是在当前证书过期前提供替换的音频
 
 在之前版本的 Lync Server 和 Office Communications Server 中，基于 Cookie 的关联由 Web 服务用于确保维持客户端和 Web 服务会话的状态。 Lync Server 2013 Web 服务使用内置关联机制来评估基于 Cookie 的关联的大部分要求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在将所有客户端迁移到即将到来的 Microsoft Lync Mobile 客户端之前， Microsoft Lync 2010 Mobile 客户端必须使用基于 Cookie 的关联并且需要配置基于 Cookie 的关联（尚未确定发布日期）。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 在将所有客户端迁移到即将到来的 Microsoft Lync Mobile 客户端之前， Microsoft Lync 2010 Mobile 客户端必须使用基于 Cookie 的关联并且需要配置基于 Cookie 的关联（尚未确定发布日期）。
 
 
 有关 Lync Server 2013 中基于 Cookie 的关联的详细信息，请参阅 [Lync Server 2013 中外部用户访问所需的组件](lync-server-2013-components-required-for-external-user-access.md)。

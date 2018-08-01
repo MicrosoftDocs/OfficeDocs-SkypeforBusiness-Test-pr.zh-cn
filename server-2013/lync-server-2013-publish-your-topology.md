@@ -35,17 +35,7 @@ _**上一次修改主题：** 2012-09-08_
     
       - 要关闭向导，请单击“完成”。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果这是 边缘服务器或 边缘池的新安装，则必须从现有 前端服务器、 前端池或 Standard Edition Server 导出 边缘服务器配置。若要导出该配置，请参阅 <a href="lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md">导出 Lync Server 2013 拓扑并将其复制到外部媒体以用于边缘安装</a>。在通过 Lync Server 部署向导安装和部署 边缘服务器的过程中，您将从外部媒体或网络共享中导入配置文件。<br />
-        在 边缘服务器可运行且已通过内部部署复制本地配置管理存储数据库后，将发布针对 Lync Server 2013 配置的后续更新，并会将这些更新复制到 边缘服务器。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+    > 如果这是 边缘服务器或 边缘池的新安装，则必须从现有 前端服务器、 前端池或 Standard Edition Server 导出 边缘服务器配置。若要导出该配置，请参阅 <a href="lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md">导出 Lync Server 2013 拓扑并将其复制到外部媒体以用于边缘安装</a>。在通过 Lync Server 部署向导安装和部署 边缘服务器的过程中，您将从外部媒体或网络共享中导入配置文件。<br />
+    > 在 边缘服务器可运行且已通过内部部署复制本地配置管理存储数据库后，将发布针对 Lync Server 2013 配置的后续更新，并会将这些更新复制到 边缘服务器。
 

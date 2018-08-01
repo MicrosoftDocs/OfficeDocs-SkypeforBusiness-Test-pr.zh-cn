@@ -27,18 +27,8 @@ Lync Server 2013 ExUM 路由应用程序支持在以下环境中与 Exchange 统
 
   - **混合模式**Lync Server 2013 部署中的一些用户邮箱驻留在企业内部运行 Microsoft Exchange Server 的本地服务器上，而另外一些则驻留在承载 Exchange 服务数据中心。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>混合模式可用作评估用户和将用户逐步迁移至承载 Exchange UM 期间的过渡性解决方案，或者，如果选择在迁移其他用户之后将某些用户的 Exchange UM 服务保留在内部，则混合模式可用作永久性解决方案。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 混合模式可用作评估用户和将用户逐步迁移至承载 Exchange UM 期间的过渡性解决方案，或者，如果选择在迁移其他用户之后将某些用户的 Exchange UM 服务保留在内部，则混合模式可用作永久性解决方案。
 
 
 要将 Lync Server 2013 与承载 Exchange UM 集成，必须配置共享 *SIP 地址空间* （也称为 *拆分域* ）。在此配置中， Lync Server 2013 和第三方托管的 Exchange UM 服务提供商可访问相同的 SIP 域地址空间。有关详细信息，请参阅规划文档中的 [Lync Server 2013 中的托管 Exchange UM 集成体系结构](lync-server-2013-hosted-exchange-um-integration-architecture.md)。

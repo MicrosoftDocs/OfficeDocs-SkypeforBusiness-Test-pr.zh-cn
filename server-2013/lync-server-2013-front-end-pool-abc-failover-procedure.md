@@ -56,18 +56,8 @@ _**上一次修改主题：** 2014-05-22_
         
             Import-CsRgsConfiguration -Destination "service:ApplicationServer:<Pool B FQDN>" -FileName "C:\RgsExportPrimary.zip"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>请记住，如果您不想使用主池（池 A）的设置覆盖备份池（池 B）的应用程序级别设置，则池 A 的应用程序级别设置会在池 A 丢失时丢失，因为响应组应用程序只能为每个池存储一组应用程序级别设置。在部署池 C 以替换池 A 时，必须重新配置应用程序级别设置，包括默认的保持音乐音频文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 请记住，如果您不想使用主池（池 A）的设置覆盖备份池（池 B）的应用程序级别设置，则池 A 的应用程序级别设置会在池 A 丢失时丢失，因为响应组应用程序只能为每个池存储一组应用程序级别设置。在部署池 C 以替换池 A 时，必须重新配置应用程序级别设置，包括默认的保持音乐音频文件。
 
 
 5.  通过运行以下 cmdlet 显示导入的响应组来验证响应组配置导入是否成功。请注意，导入的响应组仍为池 A 所拥有。
@@ -162,18 +152,8 @@ _**上一次修改主题：** 2014-05-22_
         
             Import-CsRgsConfiguration -Destination "service:ApplicationServer:<Pool B FQDN>" -FileName "C:\RgsExportPrimary.zip"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>请记住，如果您不想使用备份池（池 B）的设置覆盖池 C 的应用程序级别设置，则池 B 的应用程序级别设置会丢失，因为响应组应用程序只能为每个池存储一组应用程序级别设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 请记住，如果您不想使用备份池（池 B）的设置覆盖池 C 的应用程序级别设置，则池 B 的应用程序级别设置会丢失，因为响应组应用程序只能为每个池存储一组应用程序级别设置。
 
 
 18. 通过运行以下 cmdlet 显示已导入到池 C 的响应组来验证响应组配置导入是否成功。

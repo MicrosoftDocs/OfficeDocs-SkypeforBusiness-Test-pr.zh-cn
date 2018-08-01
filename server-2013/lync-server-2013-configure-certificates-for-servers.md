@@ -22,18 +22,8 @@ _**上一次修改主题：** 2016-12-08_
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>选择哪个哈希摘要和签名算法取决于将使用证书的客户端和服务器，客户端和服务器将与其通信的其他计算机和设备也必须知道如何使用证书中使用的算法。有关操作系统和一些客户端应用程序中支持的摘要长度的信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=287002">http://go.microsoft.com/fwlink/?LinkId=287002</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 选择哪个哈希摘要和签名算法取决于将使用证书的客户端和服务器，客户端和服务器将与其通信的其他计算机和设备也必须知道如何使用证书中使用的算法。有关操作系统和一些客户端应用程序中支持的摘要长度的信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=287002">http://go.microsoft.com/fwlink/?LinkId=287002</a>。
 
 
 每台 Standard Edition Server 或 前端服务器最多需要四个证书：oAuthTokenIssuer 证书、默认证书、Web 内部证书和 Web 外部证书。但是，也可以请求和分配单个具有相应使用者替代名称条目的默认证书以及 oAuthTokenIssuer 证书。有关证书要求的详细信息，请参阅 [Lync Server 2013 中内部服务器的证书要求](lync-server-2013-certificate-requirements-for-internal-servers.md)。有关请求、分配和安装 oAuthTokenIssuer 证书的详细信息，请参阅 [在 Lync Server 2013 中管理服务器到服务器身份验证 (Oauth) 和合作伙伴应用程序](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md)

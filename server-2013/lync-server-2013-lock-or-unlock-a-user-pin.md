@@ -41,18 +41,8 @@ _**上一次修改主题：** 2013-02-23_
     
     4.  根据所选的用户属性，通过键入条件或单击下拉列表中的箭头输入用于筛选搜索结果的条件。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>要向查询中添加附加搜索子句，请单击“添加筛选器”。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 要向查询中添加附加搜索子句，请单击“添加筛选器”。
     
     5.  单击“查找”。
     
@@ -82,18 +72,8 @@ _**上一次修改主题：** 2013-02-23_
     
     4.  根据所选的用户属性，通过键入条件或单击下拉列表中的箭头输入用于筛选搜索结果的条件。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>要向查询中添加附加搜索子句，请单击“添加筛选器”。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 要向查询中添加附加搜索子句，请单击“添加筛选器”。
     
     5.  单击“查找”。
     

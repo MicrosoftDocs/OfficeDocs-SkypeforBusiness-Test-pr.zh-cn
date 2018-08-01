@@ -94,19 +94,10 @@ DNS 记录可以是 CNAME 记录或 A（主机）记录。
 <td><p>_sipfederationtls._tcp. <em>&lt;sipdomain&gt;</em></p>
 <p>解析为访问边缘服务的主机（A 或 AAAA）记录</p></td>
 <td><p>要支持推送通知服务和 Apple 推送通知服务，应为每个具有 Microsoft Lync Mobile 客户端的 SIP 域创建一条 SRV 记录。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此要求仅适用于基于 Apple 或 Microsoft 的移动设备上的 Microsoft Lync Mobile 客户端。Andriod 和 Nokia Symbian 设备不使用推送通知。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]
+> 此要求仅适用于基于 Apple 或 Microsoft 的移动设备上的 Microsoft Lync Mobile 客户端。Andriod 和 Nokia Symbian 设备不使用推送通知。
 
 </div></td>
 </tr>

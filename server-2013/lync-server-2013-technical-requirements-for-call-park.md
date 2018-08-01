@@ -41,34 +41,14 @@ _**上一次修改主题：** 2016-12-08_
 
   - **端口 5075**   用于 SIP 侦听请求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此端口是默认设置，您可以使用 <strong>Set-CsApplicationServer</strong> cmdlet 对其进行更改。有关此 cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此端口是默认设置，您可以使用 <strong>Set-CsApplicationServer</strong> cmdlet 对其进行更改。有关此 cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档。
 
 
 ## 音频文件要求
 
 呼叫寄存应用程序仅支持保持音乐的 Windows Media 音频 (.wma) 文件。您可以使用 Microsoft Expression Encoder 4 来自定义用作保持音乐的文件。若要下载 Expression Encoder 4，请参阅“Expression Encoder 4”（网址为 [http://go.microsoft.com/fwlink/p/?linkId=202843](http://go.microsoft.com/fwlink/p/?linkid=202843)）。使用该工具可将文件转换为 .wma 格式。呼叫寄存保持音乐文件的建议格式为 Media Audio 9，44 kHz，16 位，单声道，CBR，32 kbps。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>转换后的文件仅以 16 KHz 在电话上播放，即使录制时采用 44 KHz 也是如此。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 转换后的文件仅以 16 KHz 在电话上播放，即使录制时采用 44 KHz 也是如此。
 

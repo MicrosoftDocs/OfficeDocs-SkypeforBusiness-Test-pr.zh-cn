@@ -115,18 +115,8 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 6.  在“添加服务器”对话框中，在“服务器地址”中键入您的 前端服务器 上外部 Web 服务的完全限定的域名 (FQDN)。这里用作举例说明的名称与反向代理[Lync Server 2013 中的证书摘要 - 反向代理](lync-server-2013-certificate-summary-reverse-proxy.md)的“规划”部分使用的名称相同。参阅反向代理规划，键入 FQDN `webext.contoso.com`。确认选中“联机”旁边的复选框。单击“添加”以向此配置的 Web 服务器池添加服务器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 使用硬件负载平衡器池化控制器和前端服务器的 HTTP 和 HTTPS 流量。在向 IIS ARR 服务器场添加服务器时，您只能提供一个 FQDN。FQDN 将是非池化服务器配置中的前端服务器或控制器，或者为服务器池配置的硬件负载平衡器的 FQDN。负载平衡 HTTP 和 HTTPS 流量唯一支持的方法是使用硬件负载平衡器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Lync Server 使用硬件负载平衡器池化控制器和前端服务器的 HTTP 和 HTTPS 流量。在向 IIS ARR 服务器场添加服务器时，您只能提供一个 FQDN。FQDN 将是非池化服务器配置中的前端服务器或控制器，或者为服务器池配置的硬件负载平衡器的 FQDN。负载平衡 HTTP 和 HTTPS 流量唯一支持的方法是使用硬件负载平衡器。
 
 
 7.  在“添加服务器”对话框中，单击“高级设置...”。这将打开一个对话框，以为配置的 FQDN 请求定义应用程序请求路由。目的是重新定义在 IIS ARR 处理请求时使用哪个端口。
@@ -139,34 +129,14 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 10. 单击服务器场的名称。在 IIS 管理器功能视图中的“服务器场”下方，双击“代理”。在“代理设置”页面上，将“超时（秒）”的值更改为适合您的部署的值。单击“应用”以保存更改。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>代理超时值是一个数字，因部署而异。您应该监控您的部署并修改值以便获得最佳客户端体验。您或许能够设置较低值，如 200。如果在您的环境中支持 Lync 移动客户端，您应该将值设置为 960，以便允许来自 Office 365 的推送通知超时，其超时值为 900。很可能您需要增加超时值以避免在值太低时客户端断开连接，或者如果通过代理进行的连接未断开，请降低该数字，并在客户端断开连接之后清除。只有监控您的环境的正常情况并设定比较基准，才能准确地确定此值的恰当设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 代理超时值是一个数字，因部署而异。您应该监控您的部署并修改值以便获得最佳客户端体验。您或许能够设置较低值，如 200。如果在您的环境中支持 Lync 移动客户端，您应该将值设置为 960，以便允许来自 Office 365 的推送通知超时，其超时值为 900。很可能您需要增加超时值以避免在值太低时客户端断开连接，或者如果通过代理进行的连接未断开，请降低该数字，并在客户端断开连接之后清除。只有监控您的环境的正常情况并设定比较基准，才能准确地确定此值的恰当设置。
 
 
 11. 单击服务器场的名称。在 IIS 管理器功能视图中的“服务器场”下方，双击“路由规则”。在“路由规则”对话框的“路由”下方，清除“启用 SSL 卸载”旁边的复选框。如果无法清除该复选框，请选择“使用 URL 重写检查传入请求”的复选框。单击“应用”以保存更改。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不支持反向代理的 SSL 卸载。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 不支持反向代理的 SSL 卸载。
 
 
 12. 为必须穿过反向代理的每个 URL 重复步骤 5-11。常见列表将为以下内容：
@@ -183,18 +153,8 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
     
       - Office Web Apps 服务器 URL：officewebapps01.contoso.com
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Office Web Apps Server 的 URL 将使用不同的 httpsPort 地址。在步骤 7 中，您将“httpsPort”定义为“443”，并将“httpPort”定义为端口“80”。所有其他配置设置相同。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > Office Web Apps Server 的 URL 将使用不同的 httpsPort 地址。在步骤 7 中，您将“httpsPort”定义为“443”，并将“httpPort”定义为端口“80”。所有其他配置设置相同。
 
 
 13. 在控制台左侧，单击 IIS 服务器名称。在控制台中心，在“IIS”下方找到“URL 重写”。双击“URL 重写”以打开 URL 重写规则配置。您应会看到您在前面的步骤中创建的每个服务器场的规则。如果看不到，请确认您已在 Internet Information Server 管理器控制台中“起始页”节点的正下方单击 **IIS 服务器**名称。
@@ -213,18 +173,8 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 15. 为您已经定义的每个 SSL 重写规则（每个服务器场 URL 一个）重复在步骤 14 中定义的过程。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下，将创建 HTTP 规则并通过与 SSL 规则类似的命名表示。对于我们当前的示例，HTTP 规则将命名为 <strong>ARR_webext.contoso.com_loadbalance</strong>。无需对这些规则做任何修改，可以安全地忽略它们。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 默认情况下，将创建 HTTP 规则并通过与 SSL 规则类似的命名表示。对于我们当前的示例，HTTP 规则将命名为 <strong>ARR_webext.contoso.com_loadbalance</strong>。无需对这些规则做任何修改，可以安全地忽略它们。
 
 
 ## 在 TMG 2010 中修改 Web 发布规则的属性

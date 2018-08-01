@@ -52,7 +52,8 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>OAuthTokenIssuer</p></td>
 <td><p>dir01.contoso.net</p></td>
 <td><p>无条目</p></td>
-<td><div class="alert">
+<td><div>
+
 > [!IMPORTANT]  
 > 请注意，最小密钥长度为 1024，但您可能收到一条警告，告知建议的最小密钥长度为 2048 位。
 

@@ -25,18 +25,8 @@ _**上一次修改主题：** 2013-02-18_
 
 如果中央管理存储出现故障，请参阅[还原承载中央管理存储的服务器](lync-server-2013-restoring-the-server-hosting-the-central-management-store.md)。如果不是后端服务器的 Enterprise Edition 成员服务器出现故障，请参阅[还原 Enterprise Edition 成员服务器](lync-server-2013-restoring-an-enterprise-edition-member-server.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议在开始还原之前制作系统的映像副本。您可以在还原过程中出现问题时将该映像作为回滚点。您可能需要在安装操作系统和 SQL Server 之后制作映像副本，然后再还原或重新注册证书。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 建议在开始还原之前制作系统的映像副本。您可以在还原过程中出现问题时将该映像作为回滚点。您可能需要在安装操作系统和 SQL Server 之后制作映像副本，然后再还原或重新注册证书。
 
 
 ## 还原 Enterprise Edition 后端服务器
@@ -77,18 +67,8 @@ _**上一次修改主题：** 2013-02-18_
     
     7.  按照向导的其余部分操作，然后单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可以使用 <strong>Install-CsDatabase</strong> cmdlet 创建每个数据库，使用 <strong>Install-CsMirrorDatabase</strong> cmdlet 配置镜像，而不是运行拓扑生成器。有关详细信息，请参阅 Lync Server 命令行管理程序文档。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 可以使用 <strong>Install-CsDatabase</strong> cmdlet 创建每个数据库，使用 <strong>Install-CsMirrorDatabase</strong> cmdlet 配置镜像，而不是运行拓扑生成器。有关详细信息，请参阅 Lync Server 命令行管理程序文档。
 
 
 5.  执行以下操作以还原用户数据：

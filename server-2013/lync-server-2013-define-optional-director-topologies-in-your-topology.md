@@ -47,48 +47,18 @@ Lync Server 2013 控制器可以是单实例服务器，也可以安装为多个
     
     2.  要创建新的文件共享，请单击“定义新的文件共享”，在“文件服务器 FQDN”中键入文件共享位置的 FQDN，在“文件共享”中键入共享的名称，然后单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在发布拓扑前，此步骤中指定或创建的文件共享必须已存在或已创建。<br />
-    实际上未使用分配给控制器的文件共享，因此可以分配组织中任何池的文件共享。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在发布拓扑前，此步骤中指定或创建的文件共享必须已存在或已创建。<br />
+    > 实际上未使用分配给控制器的文件共享，因此可以分配组织中任何池的文件共享。
 
 
 7.  在“指定 Web 服务 URL”对话框的“外部基 URL”中，指定控制器的 FQDN，然后单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>该名称必须可以从 Internet DNS 服务器进行解析并指向反向代理的公用 IP 地址，以侦听对该 URL 的 HTTP/HTTPS 请求，并将其代理到该控制器上的外部 Web 服务虚拟目录中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 该名称必须可以从 Internet DNS 服务器进行解析并指向反向代理的公用 IP 地址，以侦听对该 URL 的 HTTP/HTTPS 请求，并将其代理到该控制器上的外部 Web 服务虚拟目录中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果有多个 前端池或 前端服务器，则外部 Web 服务 FQDN 必须是唯一的。例如，如果将 前端服务器的外部 Web 服务 FQDN 定义为 <strong>pool01.contoso.com</strong>，则不能将 <strong>pool01.contoso.com</strong> 用于另一个 前端池或 前端服务器。如果您还部署 控制器，则为任何 控制器或 控制器池定义的外部 Web 服务 FQDN 必须与任何其他 控制器或 控制器池以及任何 前端池或 前端服务器的不同。如果决定使用自定义的 FQDN 覆盖内部 Web 服务，则每个 FQDN 都必须不同于任何其他 前端池、 控制器或 控制器池。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果有多个 前端池或 前端服务器，则外部 Web 服务 FQDN 必须是唯一的。例如，如果将 前端服务器的外部 Web 服务 FQDN 定义为 <strong>pool01.contoso.com</strong>，则不能将 <strong>pool01.contoso.com</strong> 用于另一个 前端池或 前端服务器。如果您还部署 控制器，则为任何 控制器或 控制器池定义的外部 Web 服务 FQDN 必须与任何其他 控制器或 控制器池以及任何 前端池或 前端服务器的不同。如果决定使用自定义的 FQDN 覆盖内部 Web 服务，则每个 FQDN 都必须不同于任何其他 前端池、 控制器或 控制器池。
 
 
 8.  发布拓扑。
@@ -121,48 +91,18 @@ Lync Server 2013 控制器可以是单实例服务器，也可以安装为多个
     
       - 要创建新的文件共享，请单击“定义新的文件共享”，在“文件服务器 FQDN”中键入文件共享位置的 FQDN，在“文件共享”中键入共享的名称，然后单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在发布拓扑前，此步骤中指定或创建的文件共享必须已存在或已创建。<br />
-    实际上未使用分配给控制器的文件共享，因此可以分配组织中任何池的文件共享。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在发布拓扑前，此步骤中指定或创建的文件共享必须已存在或已创建。<br />
+    > 实际上未使用分配给控制器的文件共享，因此可以分配组织中任何池的文件共享。
 
 
 8.  在“指定 Web 服务 URL”对话框的“外部基 URL”中，指定控制器的 FQDN，然后单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>该名称必须可从 Internet DNS 服务器解析，并指向反向代理的公用 IP 地址，该代理侦听发送到该 URL 的 HTTP/HTTPS 请求，并将其代理到该控制器池上的外部 Web 服务虚拟目录。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 该名称必须可从 Internet DNS 服务器解析，并指向反向代理的公用 IP 地址，该代理侦听发送到该 URL 的 HTTP/HTTPS 请求，并将其代理到该控制器池上的外部 Web 服务虚拟目录。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果有多个 前端池或 前端服务器，则外部 Web 服务 FQDN 必须是唯一的。例如，如果将 前端服务器的外部 Web 服务 FQDN 定义为 <strong>pool01.contoso.com</strong>，则不能将 <strong>pool01.contoso.com</strong> 用于另一个 前端池或 前端服务器。如果您还部署 控制器，则为任何 控制器或 控制器池定义的外部 Web 服务 FQDN 必须与任何其他 控制器或 控制器池以及任何 前端池或 前端服务器的不同。如果决定使用自定义的 FQDN 覆盖内部 Web 服务，则每个 FQDN 都必须不同于任何其他 前端池、 控制器或 控制器池。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果有多个 前端池或 前端服务器，则外部 Web 服务 FQDN 必须是唯一的。例如，如果将 前端服务器的外部 Web 服务 FQDN 定义为 <strong>pool01.contoso.com</strong>，则不能将 <strong>pool01.contoso.com</strong> 用于另一个 前端池或 前端服务器。如果您还部署 控制器，则为任何 控制器或 控制器池定义的外部 Web 服务 FQDN 必须与任何其他 控制器或 控制器池以及任何 前端池或 前端服务器的不同。如果决定使用自定义的 FQDN 覆盖内部 Web 服务，则每个 FQDN 都必须不同于任何其他 前端池、 控制器或 控制器池。
 
 
 9.  发布拓扑。

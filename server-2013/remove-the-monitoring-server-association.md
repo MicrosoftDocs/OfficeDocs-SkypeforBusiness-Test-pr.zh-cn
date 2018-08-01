@@ -27,18 +27,8 @@ _**上一次修改主题：** 2012-10-04_
 
 4.  如果已关联 Survivable Branch Server，则依次展开“分支站点”、分支站点名称，然后展开“Survivable Branch Appliance”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>用户界面中的“Survivable Branch Appliance”适用于 Survivable Branch Server 和 Survivable Branch Appliance。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 用户界面中的“Survivable Branch Appliance”适用于 Survivable Branch Server 和 Survivable Branch Appliance。
 
 
 5.  右键单击与 监控服务器关联的池、服务器或设备，然后单击“编辑属性”。

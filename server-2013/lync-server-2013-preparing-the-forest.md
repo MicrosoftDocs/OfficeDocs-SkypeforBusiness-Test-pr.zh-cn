@@ -19,18 +19,8 @@ _**上一次修改主题：** 2013-02-21_
 
 林准备还创建包含 Lync Server 2013 所用属性集和显示说明符的对象，并将其存储在配置容器中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>执行林准备过程之前，确保已将架构准备更改复制到所有域控制器。如果复制尚未完成，则会出错。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 执行林准备过程之前，确保已将架构准备更改复制到所有域控制器。如果复制尚未完成，则会出错。
 
 
 如果正在执行新的 Lync Server 部署，必须将全局设置存储在配置容器中。如果正在从早期版本进行升级且仍将全局设置存储在系统容器中，则可继续使用系统容器。

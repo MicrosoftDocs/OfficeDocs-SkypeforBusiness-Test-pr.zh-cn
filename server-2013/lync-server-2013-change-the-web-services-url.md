@@ -34,18 +34,8 @@ _**上一次修改主题：** 2015-11-16_
 
 4.  添加或编辑“外部 Web 服务 FQDN”，然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果有多个前端池或前端服务器，则外部 Web 服务 FQDN 必须是唯一的。例如，如果将前端服务器的外部 Web 服务 FQDN 定义为 <strong>pool01.contoso.com</strong>，则不能将 <strong>pool01.contoso.com</strong> 用于另一个前端池或前端服务器。如果您还部署控制器，则为任何控制器或控制器池定义的外部 Web 服务 FQDN 必须与任何其他控制器或控制器池以及任何前端池或前端服务器的不同。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果有多个前端池或前端服务器，则外部 Web 服务 FQDN 必须是唯一的。例如，如果将前端服务器的外部 Web 服务 FQDN 定义为 <strong>pool01.contoso.com</strong>，则不能将 <strong>pool01.contoso.com</strong> 用于另一个前端池或前端服务器。如果您还部署控制器，则为任何控制器或控制器池定义的外部 Web 服务 FQDN 必须与任何其他控制器或控制器池以及任何前端池或前端服务器的不同。
 
 
 5.  验证是否已为环境正确配置侦听端口和已发布端口。
@@ -62,18 +52,8 @@ _**上一次修改主题：** 2015-11-16_
 
   - 您可覆盖前端池控制器或控制器池上的内部 Web 服务并定义您自己的 FQDN。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果决定使用自定义的 FQDN 覆盖内部 Web 服务，则每个 FQDN 都必须不同于任何其他前端池、控制器或控制器池。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果决定使用自定义的 FQDN 覆盖内部 Web 服务，则每个 FQDN 都必须不同于任何其他前端池、控制器或控制器池。
 
 
   - 必须在反向代理或硬件负载平衡器上将已发布端口配置为侦听端口。

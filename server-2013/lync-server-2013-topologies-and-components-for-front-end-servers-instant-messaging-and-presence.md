@@ -108,18 +108,8 @@ _**上一次修改主题：** 2016-12-08_
 
 以后每次启动池时，都应启动 85% 的服务器（如上表所示）。如果无法启动此数量的服务器（但是可以启动足够数量的服务器来避免遭遇池级别仲裁丢失），那么您可以使用 **Reset-CsPoolRegistrarState –ResetType QuorumLossRecovery** cmdlet 来使池从此路由组级别仲裁丢失中恢复，然后继续操作。有关如何使用此 cmdlet 的详细信息，请参阅 [Reset-CsPoolRegistrarState](https://docs.microsoft.com/en-us/powershell/module/skype/Reset-CsPoolRegistrarState)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于 Lync Server 使用主 SQL 数据库作为见证，如果您关闭主 SQL 并切换到镜像副本，同时关闭足够多的前端服务器，结果正在运行的数量不足（根据上表），那么整个池都将关闭。有关详细信息，请参阅<a href="http://go.microsoft.com/fwlink/?linkid=393672">数据库镜像见证</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由于 Lync Server 使用主 SQL 数据库作为见证，如果您关闭主 SQL 并切换到镜像副本，同时关闭足够多的前端服务器，结果正在运行的数量不足（根据上表），那么整个池都将关闭。有关详细信息，请参阅<a href="http://go.microsoft.com/fwlink/?linkid=393672">数据库镜像见证</a>。
 
 
 ## 池级别仲裁丢失

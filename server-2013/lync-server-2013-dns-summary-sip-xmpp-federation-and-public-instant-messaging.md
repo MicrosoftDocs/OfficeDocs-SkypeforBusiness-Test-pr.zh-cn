@@ -19,18 +19,8 @@ _**上一次修改主题：** 2017-03-09_
 
 DNS 记录摘要表描述开放或可发现联盟所需要的条目。如果不想实现联盟发现，可以决定不配置 \_sipfederationtls.\_tcp. *\<SIP 域名\>* 记录。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在某些特定情况下，您必须具有 _sipfederationtls._tcp. <em>&lt;SIP domain name&gt;</em> SRV 记录，但又不想使用可发现联盟。其中一种情况是，您已经为用户部署了移动性。移动性推送通知交换所 (PNCH) 是一种用于使用 Lync 2010 Mobile 客户端的 Apple iPhone 或 iPad 或者使用 Lync 2010 Mobile 或 Lync 2013 移动客户端的 Windows Phone 上的 Microsoft Lync Mobile 客户端的特殊类型的联盟。如果同时部署了移动性和推送通知，则需要使用 _sipfederationtls._tcp. <em>&lt;SIP 域名&gt;</em> SRV SRV 记录。若要缓解此问题并控制可发现性，请清除设置“启用合作伙伴域发现”以关闭发现功能。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 在某些特定情况下，您必须具有 _sipfederationtls._tcp. <em>&lt;SIP domain name&gt;</em> SRV 记录，但又不想使用可发现联盟。其中一种情况是，您已经为用户部署了移动性。移动性推送通知交换所 (PNCH) 是一种用于使用 Lync 2010 Mobile 客户端的 Apple iPhone 或 iPad 或者使用 Lync 2010 Mobile 或 Lync 2013 移动客户端的 Windows Phone 上的 Microsoft Lync Mobile 客户端的特殊类型的联盟。如果同时部署了移动性和推送通知，则需要使用 _sipfederationtls._tcp. <em>&lt;SIP 域名&gt;</em> SRV SRV 记录。若要缓解此问题并控制可发现性，请清除设置“启用合作伙伴域发现”以关闭发现功能。
 
 
 要为您的部署配置可扩展消息传递和状态协议 (XMPP)，您需要在外部 DNS 服务器中创建两条域名系统 (DNS) 记录，DNS 服务器随后将这些记录解析为您的 边缘服务器或 边缘池的 访问边缘服务。
@@ -61,19 +51,10 @@ DNS 记录摘要表描述开放或可发现联盟所需要的条目。如果不�
 <td><p>_sipfederationtls._tcp.contoso.com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>其他潜在联盟合作伙伴借助自动 DNS 发现技术发现您的联盟所需的访问边缘服务外部接口（称为“允许的 SIP 域”，在以前版本中称为“增强联盟”）。根据需要对具有已启用 Lync 的用户的所有 SIP 域重复此操作。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>移动性和推送通知交换所需要此 SRV 记录。当存在多个 SIP 域时，请为将具有 Lync Mobile 客户端的每个域创建并发布一条 SRV 记录。如果部署支持的每个 SIP 域没有显式 SRV 记录，推送通知服务和 Apple 推送通知服务可能无法按预期运行。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]
+> 移动性和推送通知交换所需要此 SRV 记录。当存在多个 SIP 域时，请为将具有 Lync Mobile 客户端的每个域创建并发布一条 SRV 记录。如果部署支持的每个 SIP 域没有显式 SRV 记录，推送通知服务和 Apple 推送通知服务可能无法按预期运行。
 
 </div></td>
 </tr>

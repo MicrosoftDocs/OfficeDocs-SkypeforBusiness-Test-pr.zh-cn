@@ -94,19 +94,10 @@ XMPP 合作伙伴的配置中协商类型的设置有多种可能的组合。并
 <td><p>必需</p></td>
 <td><p>正确</p></td>
 <td><p>SASL over TLS</p></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果 SASL 和 TLS 都为必需，回拨将不可操作。</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> 如果 SASL 和 TLS 都为必需，回拨将不可操作。
 
 </div></td>
 </tr>
@@ -122,19 +113,10 @@ XMPP 合作伙伴的配置中协商类型的设置有多种可能的组合。并
 <td><p>必需</p></td>
 <td><p>正确</p></td>
 <td><p>SASL over TLS、TLS 回拨、TCP 回拨</p></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。
 
 </div></td>
 </tr>
@@ -143,19 +125,10 @@ XMPP 合作伙伴的配置中协商类型的设置有多种可能的组合。并
 <td><p>必需</p></td>
 <td><p>错误</p></td>
 <td><p>SASL over TLS</p></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。
 
 </div></td>
 </tr>
@@ -164,19 +137,10 @@ XMPP 合作伙伴的配置中协商类型的设置有多种可能的组合。并
 <td><p>必需</p></td>
 <td><p>正确</p></td>
 <td><p>TCP 回拨</p></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。
 
 </div></td>
 </tr>
@@ -184,34 +148,16 @@ XMPP 合作伙伴的配置中协商类型的设置有多种可能的组合。并
 <td><p>不支持</p></td>
 <td><p>必需</p></td>
 <td><p>错误</p></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不是有效的配置</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> 不是有效的配置
 
 </div></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因为 SASL 需要 TLS，而 TLS 不可用，则 SASL/TLS 无法成功。将 TCP 回拨设置为 false，但无法使用。</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> 因为 SASL 需要 TLS，而 TLS 不可用，则 SASL/TLS 无法成功。将 TCP 回拨设置为 false，但无法使用。
 
 </div></td>
 </tr>
@@ -234,19 +180,10 @@ XMPP 合作伙伴的配置中协商类型的设置有多种可能的组合。并
 <td><p>可选</p></td>
 <td><p>正确</p></td>
 <td><p>SASL over TLS、TLS 回拨、TCP 回拨</p></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。
 
 </div></td>
 </tr>
@@ -255,19 +192,10 @@ XMPP 合作伙伴的配置中协商类型的设置有多种可能的组合。并
 <td><p>可选</p></td>
 <td><p>错误</p></td>
 <td><p>SASL over TLS</p></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。
 
 </div></td>
 </tr>
@@ -276,19 +204,10 @@ XMPP 合作伙伴的配置中协商类型的设置有多种可能的组合。并
 <td><p>可选</p></td>
 <td><p>正确</p></td>
 <td><p>TCP 回拨</p></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。
 
 </div></td>
 </tr>
@@ -296,34 +215,16 @@ XMPP 合作伙伴的配置中协商类型的设置有多种可能的组合。并
 <td><p>不支持</p></td>
 <td><p>可选</p></td>
 <td><p>错误</p></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不是有效的配置</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> 不是有效的配置
 
 </div></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> SASL 需要 TLS。允许 TLS 为可选项可能会导致会话协商失败。
 
 </div></td>
 </tr>
@@ -339,19 +240,10 @@ XMPP 合作伙伴的配置中协商类型的设置有多种可能的组合。并
 <td><p>不支持</p></td>
 <td><p>错误</p></td>
 <td><p>不是有效的配置</p></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须启用 SASL 或回拨。</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> 必须启用 SASL 或回拨。
 
 </div></td>
 </tr>
@@ -367,19 +259,10 @@ XMPP 合作伙伴的配置中协商类型的设置有多种可能的组合。并
 <td><p>不支持</p></td>
 <td><p>错误</p></td>
 <td><p>不是有效的配置</p></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须启用 SASL 或回拨。</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> 必须启用 SASL 或回拨。
 
 </div></td>
 </tr>
@@ -395,19 +278,10 @@ XMPP 合作伙伴的配置中协商类型的设置有多种可能的组合。并
 <td><p>不支持</p></td>
 <td><p>错误</p></td>
 <td><p>不是有效的配置</p></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须启用 SASL 或回拨。</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!WARNING]
+> 必须启用 SASL 或回拨。
 
 </div></td>
 </tr>

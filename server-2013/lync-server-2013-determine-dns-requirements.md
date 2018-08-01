@@ -17,36 +17,16 @@ _**上一次修改主题：** 2016-12-08_
 
 使用以下流程图确定域名系统 (DNS) 要求。对于 2013 年 2 月版的 Lync Server 2013 累积更新，如有变化会在应用处注明。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Lync Server 2013 支持使用 IPv6 寻址。要使用 IPv6 地址，还必须提供 IPv6 DNS 支持和配置 DNS 主机 AAAA（称为“4 A”）记录。在使用 IPv4 和 IPv6 的部署中，最好为 IPv4 配置和维护 A 记录，并为 IPv6 配置主机 AAAA。即使您的部署已完全转换为 IPv6，当外部用户仍在使用 IPv4 时，也仍需要 IPv4 DNS 主机记录。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Microsoft Lync Server 2013 支持使用 IPv6 寻址。要使用 IPv6 地址，还必须提供 IPv6 DNS 支持和配置 DNS 主机 AAAA（称为“4 A”）记录。在使用 IPv4 和 IPv6 的部署中，最好为 IPv4 配置和维护 A 记录，并为 IPv6 配置主机 AAAA。即使您的部署已完全转换为 IPv6，当外部用户仍在使用 IPv4 时，也仍需要 IPv4 DNS 主机记录。
 
 
 **确定 DNS 要求流程图**
 
 ![DNS 要求流程图](images/Gg398758.175782ac-363e-408a-912f-8991bf152970(OCS.15).jpg "DNS 要求流程图")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，未加入域的计算机的计算机名称是主机名称，而不是完全限定域名 (FQDN)。拓扑生成器使用 FQDN，而非主机名称。因此，必须在要部署为未加入域的边缘服务器的计算机名称上配置 DNS 后缀。在分配 Lync Server、边缘服务器和池的 FQDN 时，<strong>仅使用标准字符</strong>（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线字符。外部 DNS 和公共 CA 通常不支持在 FQDN 中使用非标准字符（当必须向证书中的 SN 分配 FQDN 时）。有关其他详细信息，请参阅<a href="lync-server-2013-configure-dns-host-records.md">配置 Lync Server 2013 的 DNS 主机记录</a></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 默认情况下，未加入域的计算机的计算机名称是主机名称，而不是完全限定域名 (FQDN)。拓扑生成器使用 FQDN，而非主机名称。因此，必须在要部署为未加入域的边缘服务器的计算机名称上配置 DNS 后缀。在分配 Lync Server、边缘服务器和池的 FQDN 时，<strong>仅使用标准字符</strong>（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线字符。外部 DNS 和公共 CA 通常不支持在 FQDN 中使用非标准字符（当必须向证书中的 SN 分配 FQDN 时）。有关其他详细信息，请参阅<a href="lync-server-2013-configure-dns-host-records.md">配置 Lync Server 2013 的 DNS 主机记录</a>
 
 
 ## Lync 客户端如何定位服务
@@ -90,18 +70,8 @@ Lync Windows 应用商店应用使用以下两个记录，因此完全改变了�
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认配置是使所有移动客户端流量通过外部网站。您可以修改设置，以便仅返回内部 URL（如果这更符合您的需求）。在此配置下，仅当用户位于企业网络内部时才能在其移动设备上使用 Lync 移动应用程序。若要定义此配置，需要使用 <strong>Set-CsMcxConfiguration</strong> cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 默认配置是使所有移动客户端流量通过外部网站。您可以修改设置，以便仅返回内部 URL（如果这更符合您的需求）。在此配置下，仅当用户位于企业网络内部时才能在其移动设备上使用 Lync 移动应用程序。若要定义此配置，需要使用 <strong>Set-CsMcxConfiguration</strong> cmdlet。
 
 
 > [!NOTE]  
@@ -121,18 +91,8 @@ Lync Windows 应用商店应用使用以下两个记录，因此完全改变了�
 
 拆分式 DNS 以名称编号得名，例如，拆分 DNS 或水平拆分 DNS。它仅仅描述其中具有相同命名空间的两个 DNS 区域（其中一个 DNS 区域仅为内部请求提供服务，而另一个 DNS 区域仅为外部请求提供服务）的 DNS 配置。但是，内部 DNS 所包含的许多 DNS SRV 和 A 记录不包含在外部 DNS 中，反之亦然。如果内部和外部 DNS 中存在相同的 DNS 记录（例如，www.contoso.com），则根据启动 DNS 查询的位置（内部或外部）不同，返回的 IP 地址也将不同。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当前，移动性（或者更具体讲，LyncDiscover 和 LyncDiscoverInternal DNS 记录）不支持拆分式 DNS。必须在外部 DNS 服务器上定义 LyncDiscover，在内部 DNS 服务器上定义 LyncDiscoverInternal。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 当前，移动性（或者更具体讲，LyncDiscover 和 LyncDiscoverInternal DNS 记录）不支持拆分式 DNS。必须在外部 DNS 服务器上定义 LyncDiscover，在内部 DNS 服务器上定义 LyncDiscoverInternal。
 
 
 出于这些主题的目的，将使用术语“拆分式 DNS”。

@@ -73,30 +73,16 @@ _**上一次修改主题：** 2014-11-10_
 
 ## 有关管理 Web 门户的其他说明
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>出于安全考虑，管理 Web 门户会每隔 15 分钟自动将您注销。</p></li>
-<li><p>只有在重新启动 LRS 系统之后，才会应用设置更改。</p></li>
-<li><p>LRS 管理 Web 门户上的通知是粘滞形式的；换言之，它们不会消失。</p></li>
-<li><p>通知仅在您刷新页面之后显示。</p></li>
-<li><p>LRS 聊天室的状态仅在您刷新页面之后显示。</p></li>
-<li><p>如果 LRSApp 帐户密码过期，您不能查看聊天室的状态。请配置 LRSAppuser 帐户密码以便它从不过期，或者确保在密码即将过期时更新密码。</p></li>
-<li><p>仅本地部署支持 LRS 管理 Web 模板。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]  
+> <ul>
+> <li><p>出于安全考虑，管理 Web 门户会每隔 15 分钟自动将您注销。</p></li>
+> <li><p>只有在重新启动 LRS 系统之后，才会应用设置更改。</p></li>
+> <li><p>LRS 管理 Web 门户上的通知是粘滞形式的；换言之，它们不会消失。</p></li>
+> <li><p>通知仅在您刷新页面之后显示。</p></li>
+> <li><p>LRS 聊天室的状态仅在您刷新页面之后显示。</p></li>
+> <li><p>如果 LRSApp 帐户密码过期，您不能查看聊天室的状态。请配置 LRSAppuser 帐户密码以便它从不过期，或者确保在密码即将过期时更新密码。</p></li>
+> <li><p>仅本地部署支持 LRS 管理 Web 模板。</p></li>
+> </ul>
 
 ## 疑难解答
 

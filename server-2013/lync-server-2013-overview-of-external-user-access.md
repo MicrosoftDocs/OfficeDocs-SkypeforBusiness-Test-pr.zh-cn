@@ -52,16 +52,6 @@ Lync Server 2013 角色，用于提供外部访问：
 
 **反向代理**   反向代理是对在内部网络上发布可用资源并从已发布资源中检索客户端信息的专用服务器的泛称。 Lync Server 2013 使用反向代理发布大量功能，例如会议、会议加入位置、通讯簿、通讯组列表扩展、下载会议内容、设备更新、Mobility Service 等等。可使用可满足发布必需资源位置的要求的任何反向代理。为了演示必需的发布规则，使用了 Microsoft Forefront Threat Management Gateway (TMG) 2010 作为一个示例，但 Forefront TMG 2010 不是必需的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 同时支持 IPv4 和 IPv6。Windows Server 2008 R2、Windows Server 2012 和 Windows Server 2012 R2 使用可同时使用 IPv4 和 IPv6 的双协议栈。由于从 IPv4 到 IPv6 的部署的过渡特征，因此这一点非常重要。部署的某些方面可支持 IPv4，其他方面可使用 IPv6。这对于需要考虑 Internet 部署和内部部署的情况尤其重要。外部客户端必须通过反向代理进行通信以使用移动、会议、通讯簿下载等服务。当前，无论将 Forefront Threat Management Gateway 2010 和 Internet Security and Acceleration Server 2006 部署到的操作系统版本如何，二者都不支持 IPv6 寻址。由于 IPv6 和 IPv4 与外部客户端相关，因此您必须根据您对二者的使用来进行相应的规划。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Lync Server 2013 同时支持 IPv4 和 IPv6。Windows Server 2008 R2、Windows Server 2012 和 Windows Server 2012 R2 使用可同时使用 IPv4 和 IPv6 的双协议栈。由于从 IPv4 到 IPv6 的部署的过渡特征，因此这一点非常重要。部署的某些方面可支持 IPv4，其他方面可使用 IPv6。这对于需要考虑 Internet 部署和内部部署的情况尤其重要。外部客户端必须通过反向代理进行通信以使用移动、会议、通讯簿下载等服务。当前，无论将 Forefront Threat Management Gateway 2010 和 Internet Security and Acceleration Server 2006 部署到的操作系统版本如何，二者都不支持 IPv6 寻址。由于 IPv6 和 IPv4 与外部客户端相关，因此您必须根据您对二者的使用来进行相应的规划。
 

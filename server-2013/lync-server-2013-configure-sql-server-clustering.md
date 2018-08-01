@@ -49,18 +49,8 @@ Microsoft Lync Server 2013 支持 SQL Server 2012 和 SQL Server 2008 R2 的群�
 
 1.  启动拓扑生成器：依次单击“开始”、“所有程序”和“Microsoft Lync Server 2013”，然后单击“Lync Server 拓扑生成器”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>以下过程假定您已在拓扑生成器中定义和配置拓扑。有关定义拓扑的详细信息，请参阅<a href="lync-server-2013-defining-and-configuring-the-topology.md">在 Lync Server 2013 中定义和配置拓扑</a>。要使用拓扑生成器发布拓扑并配置数据库，必须以具有正确用户权限和组成员身份的用户登录。有关所需权限和组成员身份的详细信息，请参阅<a href="lync-server-2013-deployment-permissions-for-sql-server.md">Lync Server 2013 中 SQL Server 的部署权限</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 以下过程假定您已在拓扑生成器中定义和配置拓扑。有关定义拓扑的详细信息，请参阅<a href="lync-server-2013-defining-and-configuring-the-topology.md">在 Lync Server 2013 中定义和配置拓扑</a>。要使用拓扑生成器发布拓扑并配置数据库，必须以具有正确用户权限和组成员身份的用户登录。有关所需权限和组成员身份的详细信息，请参阅<a href="lync-server-2013-deployment-permissions-for-sql-server.md">Lync Server 2013 中 SQL Server 的部署权限</a>。
 
 
 2.  在拓扑生成器中发布拓扑时，在“创建数据库”页上单击“高级”。

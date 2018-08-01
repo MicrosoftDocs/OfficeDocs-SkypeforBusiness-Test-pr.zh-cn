@@ -41,18 +41,8 @@ _**上一次修改主题：** 2013-11-07_
 
   - **端口 5071**   用于 SIP 侦听请求
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此端口是默认设置，可以通过使用 <strong>Set-CsApplicationServer</strong> cmdlet 进行更改。有关此 cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序 文档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此端口是默认设置，可以通过使用 <strong>Set-CsApplicationServer</strong> cmdlet 进行更改。有关此 cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序 文档。
 
 
 ## 音频文件要求

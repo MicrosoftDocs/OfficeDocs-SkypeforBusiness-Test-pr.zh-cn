@@ -15,18 +15,8 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2013-11-07_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在运行证书向导时，请确保您使用作为组（已为其分配您将使用的证书模板类型的适当权限）的成员的帐户进行登录。默认情况下， Lync Server 2013 证书请求将使用 Web 服务器证书模板。如果您使用作为 RTCUniversalServerAdmins 组的成员的帐户来通过此模板请求证书，请确保已为该组分配使用此模板所需的注册权限。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 在运行证书向导时，请确保您使用作为组（已为其分配您将使用的证书模板类型的适当权限）的成员的帐户进行登录。默认情况下， Lync Server 2013 证书请求将使用 Web 服务器证书模板。如果您使用作为 RTCUniversalServerAdmins 组的成员的帐户来通过此模板请求证书，请确保已为该组分配使用此模板所需的注册权限。
 
 
 每台边缘服务器的内部接口都需要一个证书。内部接口的证书可以由内部企业证书颁发机构 (CA) 或公共 CA 颁发。如果组织已部署内部 CA，则通过使用内部 CA 为内部接口颁发证书可以节省使用公用证书的开支。可以使用内部 Windows Server 2008 CA 或 Windows Server 2008 R2 CA 创建这些证书。
@@ -210,18 +200,8 @@ _**上一次修改主题：** 2013-11-07_
 
 6.  双击“证书(本地计算机)”扩展证书存储。双击“个人”，然后双击“证书”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果本地计算机的证书个人存储中没有证书，则表示未导入与证书关联的私钥。请检查请求和导入步骤。如果问题仍然存在，请联系您的证书颁发机构管理员或提供商。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果本地计算机的证书个人存储中没有证书，则表示未导入与证书关联的私钥。请检查请求和导入步骤。如果问题仍然存在，请联系您的证书颁发机构管理员或提供商。
 
 
 7.  在本地计算机的证书个人存储中，右键单击要导出的证书。单击“所有任务”，再单击“导出”。
@@ -239,18 +219,8 @@ _**上一次修改主题：** 2013-11-07_
     
       - 导出所有扩展属性
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>从边缘服务器导出证书时，请勿选择“如果导出成功，删除私钥”。如果选择此选项，您将需要将证书和私钥导入到此边缘服务器。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!WARNING]  
+		> 从边缘服务器导出证书时，请勿选择“如果导出成功，删除私钥”。如果选择此选项，您将需要将证书和私钥导入到此边缘服务器。
     
     单击“下一步”继续。
 

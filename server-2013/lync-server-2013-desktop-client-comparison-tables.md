@@ -33,18 +33,8 @@ _**上一次修改主题：** 2017-05-03_
 
 这些表指示对 Lync Server 2013 内部部署中的 Lync 用户可用的功能。除非另行说明，否则这些功能也可用于 Lync Online 和 Office 365 用户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关 Lync 2013 移动客户端中的功能可用性的详细信息，请参阅<a href="lync-server-2013-mobile-client-comparison-tables.md">Lync Server 2013 的移动客户端比较表</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 有关 Lync 2013 移动客户端中的功能可用性的详细信息，请参阅<a href="lync-server-2013-mobile-client-comparison-tables.md">Lync Server 2013 的移动客户端比较表</a>。
 
 
 > [!NOTE]  

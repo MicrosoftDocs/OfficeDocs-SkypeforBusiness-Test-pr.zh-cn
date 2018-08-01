@@ -23,18 +23,8 @@ Lync Server 2013 中简化了为边缘服务器创建证书的步骤。
 
 使用证书向导创建单个公共证书，确保有一个证书定义的可导出私钥并将其分配到以下边缘服务器外部接口：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 中不支持通配符证书，除非用于通过反向代理总结简单 URL。您必须为每个 SIP 域名、 Web 会议边缘服务、 A/V 边缘服务以及您的部署提供的 XMPP 域定义不同的使用者替代名称 (SAN)。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Lync Server 中不支持通配符证书，除非用于通过反向代理总结简单 URL。您必须为每个 SIP 域名、 Web 会议边缘服务、 A/V 边缘服务以及您的部署提供的 XMPP 域定义不同的使用者替代名称 (SAN)。
 
 
 > [!NOTE]  
@@ -42,18 +32,8 @@ Lync Server 2013 中简化了为边缘服务器创建证书的步骤。
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 边缘服务器的池的事件中，将具有私钥的证书导出到每个 边缘服务器，并将该证书分配到每个 边缘服务器服务。对内部 边缘服务器证书执行相同的操作，导出具有私钥的证书，并将其分配到每个内部边缘接口。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 在 边缘服务器的池的事件中，将具有私钥的证书导出到每个 边缘服务器，并将该证书分配到每个 边缘服务器服务。对内部 边缘服务器证书执行相同的操作，导出具有私钥的证书，并将其分配到每个内部边缘接口。
 
 
   - 确保有一个分配到该证书的可导出私钥
@@ -68,18 +48,8 @@ Lync Server 2013 中简化了为边缘服务器创建证书的步骤。
 
   - 边缘服务器（在证书向导中称为“边缘内部”）
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可将单独和不同的证书用于每个 边缘服务器服务。选择单独证书的较好理由是是否想将新的滚动证书功能用于 A/V 边缘服务证书。如果是此功能，则建议将 A/V 边缘服务证书从 访问边缘服务和 Web 会议边缘服务分开，如果您选择为每项服务请求、获得和分配单独的证书，则必须请求可为 A/V 边缘服务（这实际上仍然是 A/V 身份验证服务）导出的私钥，并将相同的证书分配到每个 边缘服务器上的 A/V 边缘外部接口。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 可将单独和不同的证书用于每个 边缘服务器服务。选择单独证书的较好理由是是否想将新的滚动证书功能用于 A/V 边缘服务证书。如果是此功能，则建议将 A/V 边缘服务证书从 访问边缘服务和 Web 会议边缘服务分开，如果您选择为每项服务请求、获得和分配单独的证书，则必须请求可为 A/V 边缘服务（这实际上仍然是 A/V 身份验证服务）导出的私钥，并将相同的证书分配到每个 边缘服务器上的 A/V 边缘外部接口。
 
 
 ## 另请参阅

@@ -42,7 +42,8 @@ Lync 2013 引入了针对基于 H.264/MPEG-4 Part 10 高级视频编码标准的
 <li><p>显卡必须支持 DirectX 9.0 且必须公开 DXVA2_ModeH264_VLD_NoFGT 解码模式。</p></li>
 <li><p>必须安装最新的显卡驱动程序。</p></li>
 </ul>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 有关解码模式的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=268530">http://go.microsoft.com/fwlink/p/?LinkId=268530</a>。
 
@@ -67,7 +68,8 @@ Lync 2013 引入了针对基于 H.264/MPEG-4 Part 10 高级视频编码标准的
 <tr class="odd">
 <td><p>硬件加速 H.264 编码：摄像机要求</p></td>
 <td><p>具有符合 USB Video Class (UVC) 规格版本 1.5 的集成 H.264 硬件编码器的 USB 视频摄像机。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 使用 Windows 8 或 Windows 8.1 时，Lync 2013 支持 UVC 1.5 摄像机，这包括对 UVC 1.5 的支持。由于 Windows 7 不包括对 UVC 1.5 的支持，因此，Lync 2013 会将 UVC 1.5 摄像机视为没有硬件编码支持的常规摄像机。
 
@@ -80,7 +82,8 @@ Lync 2013 引入了针对基于 H.264/MPEG-4 Part 10 高级视频编码标准的
 <li><p>显卡必须支持 DirectX 9.0 且必须公开 DXVA2_ModeH264_VLD_NoFGT 解码模式。</p></li>
 <li><p>必须安装最新的显卡驱动程序。</p></li>
 </ul>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 有关解码模式的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=268530">http://go.microsoft.com/fwlink/p/?LinkId=268530</a>。
 
@@ -105,7 +108,8 @@ Lync 2013 引入了针对基于 H.264/MPEG-4 Part 10 高级视频编码标准的
 <tr class="even">
 <td><p>硬件加速 H.264 编码：摄像机要求</p></td>
 <td><p>具有符合 USB Video Class (UVC) 规格版本 1.5 的集成 H.264 硬件编码器的 USB 视频摄像机。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 使用 Windows 8 或 Windows 8.1 时，Lync 2013 支持 UVC 1.5 摄像机，这包括对 UVC 1.5 的支持。由于 Windows 7 不包括对 UVC 1.5 的支持，因此，Lync 2013 会将 UVC 1.5 摄像机视为没有硬件编码支持的常规摄像机。
 

@@ -17,18 +17,8 @@ _**上一次修改主题：** 2015-03-09_
 
 本节中的主题提供了可使用 Lync Server 2013 控制面板执行的用户设置配置的分步过程。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能使用 Lync Server 控制面板管理 Active Directory Domain Admins 组的成员用户。对于 Domain Admins 用户，只能使用 Lync Server 控制面板执行只读搜索操作。要对 Domain Admins 用户执行写入操作（例如，启用或禁用 Lync Server 控制面板、更改池或策略分配、电话设置、SIP 地址），必须在以 Domain Admins 用户身份登录后使用 Windows PowerShell cmdlet。有关使用 Windows PowerShell cmdlet 管理用户的详细信息，请参阅 <a href="lync-server-2013-lync-server-management-shell.md">Lync Server 命令行管理程序</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 不能使用 Lync Server 控制面板管理 Active Directory Domain Admins 组的成员用户。对于 Domain Admins 用户，只能使用 Lync Server 控制面板执行只读搜索操作。要对 Domain Admins 用户执行写入操作（例如，启用或禁用 Lync Server 控制面板、更改池或策略分配、电话设置、SIP 地址），必须在以 Domain Admins 用户身份登录后使用 Windows PowerShell cmdlet。有关使用 Windows PowerShell cmdlet 管理用户的详细信息，请参阅 <a href="lync-server-2013-lync-server-management-shell.md">Lync Server 命令行管理程序</a>。
 
 
 在执行任何涉及搜索用户或筛选用户搜索结果的 Lync Server 2013 管理任务时，有些用户属性 (Property) 作为 Active Directory 域服务 中的属性 (Attribute) 存在，但在部署 Microsoft Exchange Server 之前，它们不会复制到全局编录中。 Microsoft Exchange 而非 Lync Server 会在安装时将以下属性标记为要复制到全局编录中：

@@ -66,7 +66,8 @@ _**上一次修改主题：** 2015-03-09_
 </tr>
 <tr class="odd">
 <td><p>所有文件存储：Lync Server 文件存储、存档文件存储</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 名为 <strong>Meeting.Active</strong> 的文件不应进行备份。在召开会议时，会使用并锁定这些文件。
 
@@ -120,7 +121,8 @@ _**上一次修改主题：** 2015-03-09_
 </tr>
 <tr class="even">
 <td><p>还原指向中央管理存储的 Active Directory 域服务 指针</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 如果在任何时候丢失服务连接点，则可重新运行该 cmdlet。
 
@@ -145,7 +147,8 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="even">
 <td><p>重新安装 Lync Server 组件</p></td>
 <td><p>Lync Server 安装程序</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 位于 \setup\amd64\Setup.exe 下的 Lync Server 安装文件夹或介质中。
 
@@ -163,7 +166,8 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="odd">
 <td><p>还原响应组配置数据 (RgsConfig.mdf)</p></td>
 <td><p>Import-CsRgsConfiguration</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 如果是在数据库中无响应组数据的新部署的池中还原配置，则应使用 –OverwriteOwner 选项。即使正在还原的数据位于具有同一完全限定域名 (FQDN) 的池中，也要使用此选项。否则，由于响应组的联系对象已存在于 Active Directory 中，导入操作将失败。
 

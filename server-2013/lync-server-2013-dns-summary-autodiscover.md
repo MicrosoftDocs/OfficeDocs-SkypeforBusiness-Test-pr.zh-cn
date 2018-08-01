@@ -17,18 +17,8 @@ _**上一次修改主题：** 2015-03-09_
 
 自动发现是一项灵活的服务，因为该服务允许通过 HTTP 或 HTTPS 进行通信。要实现此目的，必须正确配置承载自动发现服务的服务器所使用的域名系统 (DNS) 和证书。[证书摘要 - 自动发现](lync-server-2013-certificate-summary-autodiscover.md)中介绍了相关证书要求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 客户端的 DNS 查找逻辑遵循特定的解析顺序。您应该始终在您的 DNS 中包括 lyncdiscoverinternal.&lt;域&gt; 和 lyncdiscover.&lt;域&gt;。排除 lyncdiscoverinternal.&lt;域&gt; 记录将导致内部客户端无法连接到所需服务或接受错误的自动发现响应。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Lync Server 客户端的 DNS 查找逻辑遵循特定的解析顺序。您应该始终在您的 DNS 中包括 lyncdiscoverinternal.&lt;域&gt; 和 lyncdiscover.&lt;域&gt;。排除 lyncdiscoverinternal.&lt;域&gt; 记录将导致内部客户端无法连接到所需服务或接受错误的自动发现响应。
 
 
 ### 内部 DNS 记录

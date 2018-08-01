@@ -21,18 +21,8 @@ Standard Edition 的文件存储通常位于 Standard Edition Server 上。Enter
 
 1.  如果文件存储发生故障，请将相应的文件存储从 $Backup\\ 复制到文件服务器或 Standard Edition Server 上的文件存储位置，然后共享该文件夹。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>还原的文件存储的路径和文件名应与备份的文件存储完全相同，以便使用这些文件的组件可以访问它们。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 还原的文件存储的路径和文件名应与备份的文件存储完全相同，以便使用这些文件的组件可以访问它们。
 
 
 2.  如果需要，为文件存储设置访问控制列表 (ACL)。在命令行中键入：

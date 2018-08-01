@@ -25,18 +25,8 @@ _**上一次修改主题：** 2012-11-01_
 
 有关详细信息，请参阅规划文档中的[在 Lync Server 2013 中规划 PSTN 连接](lync-server-2013-planning-for-pstn-connectivity.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>开始中继配置之前，请验证是否已创建拓扑，是否已按照部署文档中的 <a href="lync-server-2013-define-a-gateway-in-topology-builder.md">在 Lync Server 2013 拓扑生成器中定义网关</a>所述配置中介服务器及其对等方并彼此关联。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 开始中继配置之前，请验证是否已创建拓扑，是否已按照部署文档中的 <a href="lync-server-2013-define-a-gateway-in-topology-builder.md">在 Lync Server 2013 拓扑生成器中定义网关</a>所述配置中介服务器及其对等方并彼此关联。
 
 
 > [!NOTE]  

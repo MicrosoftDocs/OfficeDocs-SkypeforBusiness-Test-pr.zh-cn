@@ -35,18 +35,8 @@ _**上一次修改主题：** 2013-02-17_
     
         Invoke-CsDataBaseFailover -PoolFqdn pool0.vdomain.com -DatabaseType User -NewPrincipal Mirror -Force -Verbose
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果已将后端数据库配置为使用具有见证的同步镜像，则故障转移是自动的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果已将后端数据库配置为使用具有见证的同步镜像，则故障转移是自动的。
 
 
 4.  完成故障转移后，执行以下操作：

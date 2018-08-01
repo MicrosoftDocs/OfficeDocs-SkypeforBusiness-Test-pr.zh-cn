@@ -33,29 +33,9 @@ _**上一次修改主题：** 2010-11-08_
     
         Set-CsKerberosAccountPassword -FromComputer fe01.contoso.com -ToComputer dir01.contoso.com
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>源计算机和目标计算机的名称必须是服务器的完全限定域名 (FQDN)。除非池名称与要用作源计算机或目标计算机的计算机名称相同，否则不能使用池 FQDN。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 源计算机和目标计算机的名称必须是服务器的完全限定域名 (FQDN)。除非池名称与要用作源计算机或目标计算机的计算机名称相同，否则不能使用池 FQDN。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>对 Kerberos 身份验证进行更改（例如，添加帐户或删除帐户）之后，必须通过 Lync Server 命令行管理程序命令提示符运行 <strong>Enable-CsTopology</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 对 Kerberos 身份验证进行更改（例如，添加帐户或删除帐户）之后，必须通过 Lync Server 命令行管理程序命令提示符运行 <strong>Enable-CsTopology</strong>。
 

@@ -17,18 +17,8 @@ _**上一次修改主题：** 2014-10-28_
 
 成功完成 [使用 Lync Server 2013 部署 Survivable Branch Appliance 或 Survivable Branch Server - 中央站点任务](lync-server-2013-deploying-a-survivable-branch-appliance-or-server-central-site-tasks.md)中的任务后，在分支站点执行本主题中所述的两个过程之一。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要执行此过程，您必须是 RTCUniversalSBATechnicians 组的成员。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 要执行此过程，您必须是 RTCUniversalSBATechnicians 组的成员。
 
 
 ## 部署 Survivable Branch Appliance

@@ -25,18 +25,8 @@ _**上一次修改主题：** 2016-12-08_
 
 2.  安装 Lync Server 2013持久聊天服务器池。它将为空（没有类别、聊天室或外接程序）。在迁移旧的类别、聊天室或外接程序前，可以在 Lync Server 2013持久聊天服务器部署中创建聊天室、类别或外接程序。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>注意这些新创建的项可能与您迁移的旧项冲突。应避免任何命名冲突；否则，在迁移旧数据时将覆盖新创建的项。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 注意这些新创建的项可能与您迁移的旧项冲突。应避免任何命名冲突；否则，在迁移旧数据时将覆盖新创建的项。
 
 
 ## 准备要迁移的源数据
@@ -45,34 +35,14 @@ _**上一次修改主题：** 2016-12-08_
 
 1.  备份Lync Server 2010 群聊或 Office Communications Server 2007 R2  群聊的源数据库。有关备份 SQL Server 的详细信息，请参阅“备份概述 (SQL Server)”，网址为 <http://go.microsoft.com/fwlink/p/?linkid=254851>。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Active Directory 域服务 应该相同。一个迁移条件是不能迁移到不同部署中的池（具体来说，不同 Active Directory 林中的池）。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Active Directory 域服务 应该相同。一个迁移条件是不能迁移到不同部署中的池（具体来说，不同 Active Directory 林中的池）。
 
 
 2.  检查 Lync Server 2010 群聊或 Office Communications Server 2007 R2  群聊聊天室和类别配置。对现有旧部署中的类别、聊天室或外接程序的任何更改都将通过 群聊管理工具完成。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>对 Lync Server 2013持久聊天服务器部署中的类别、聊天室或外接程序的任何更改都通过 Lync Server 控制面板或 Windows PowerShell cmdlet 执行。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 对 Lync Server 2013持久聊天服务器部署中的类别、聊天室或外接程序的任何更改都通过 Lync Server 控制面板或 Windows PowerShell cmdlet 执行。
     
     按照以下步骤准备要迁移的旧系统。
     
@@ -112,18 +82,8 @@ _**上一次修改主题：** 2016-12-08_
 
 7.  必须将所有上传的文件（整个文件夹）XCOPY 到新的 Lync Server 2013持久聊天文件存储中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync 2013（客户端）不支持在聊天室中上传或查看文件。您仍可以使用旧客户端在聊天室中发布和查看文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Lync 2013（客户端）不支持在聊天室中上传或查看文件。您仍可以使用旧客户端在聊天室中发布和查看文件。
 
 
 8.  将 Lync Server 2010 群聊或 Office Communications Server 2007 R2  群聊查找服务器 URI 移植到 Lync Server 2013持久聊天服务器 联系人对象。如果在迁移后需要在不更改任何客户端配置的情况下将 Lync 2010 群聊或 Office Communicator 2007 R2  群聊客户端连接到最新的 Lync 2013持久聊天（客户端），则需要执行以下步骤：
@@ -146,16 +106,6 @@ _**上一次修改主题：** 2016-12-08_
 
 13. 您现在可以开始通过新客户端启用 持久聊天服务器功能。有关启用 持久聊天服务器的详细信息，请参阅 [在 Lync Server 2013 中部署持久聊天服务器](lync-server-2013-deploying-persistent-chat-server.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 支持多个 持久聊天服务器池。但是，我们支持将一个 Lync 2010 群聊或 Office Communications Server 2007 R2  群聊池迁移到单个 Lync Server 2013持久聊天服务器池。您可以在部署中添加其他新 持久聊天服务器池以满足法规需求（例如，将数据保存在给定的地域内）。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Lync Server 2013 支持多个 持久聊天服务器池。但是，我们支持将一个 Lync 2010 群聊或 Office Communications Server 2007 R2  群聊池迁移到单个 Lync Server 2013持久聊天服务器池。您可以在部署中添加其他新 持久聊天服务器池以满足法规需求（例如，将数据保存在给定的地域内）。
 

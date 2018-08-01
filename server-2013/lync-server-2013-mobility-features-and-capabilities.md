@@ -21,18 +21,8 @@ _**上一次修改主题：** 2016-12-08_
 
 2013 年 2 月版的 Lync Server 2013 累积更新中引入的移动功能支持 Lync 2013 Mobile 客户端功能。2013 年 2 月版的 Lync Server 2013 累积更新安装统一通信 Web API 或 UCWA。UCWA 是用于 Lync 2013 Mobile 客户端的组件。在 Lync Server 2013 中，Mcx 用于 Lync 2010 Mobile 客户端。2013 年 2 月版的 Lync Server 2013 累积更新引入 UCWA 作为移动服务的新入口点。 Lync Server 2013 同时实施 2011 年 11 月版的 Lync Server 2013 累积更新中引入的 Mobility Service (Mcx)，并为 Lync 2010 Mobile 提供支持。部署 2013 年 2 月版的 Lync Server 2013 累积更新时，用户可以使用受支持的 Apple iOS、Android 和 Windows Phone 移动设备执行如下活动：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>受 2011 年 11 月版的 Lync Server 2010 累积更新的 Mobility Service 支持的功能均带有 (Mcx) 标记。所有列出的功能均受 2013 年 2 月版的 Lync Server 2013 累积更新中引入的 UCWA 的支持。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 受 2011 年 11 月版的 Lync Server 2010 累积更新的 Mobility Service 支持的功能均带有 (Mcx) 标记。所有列出的功能均受 2013 年 2 月版的 Lync Server 2013 累积更新中引入的 UCWA 的支持。
 
 
   - 发送和接收即时消息 (Mcx)
@@ -62,18 +52,8 @@ _**上一次修改主题：** 2016-12-08_
 
 Apple iPad 用户将可以访问增强功能。在使用音频回拨加入会议后，iPad 用户将能够查看会议中已上载的 Microsoft PowerPoint 演示文稿，共享应用程序和桌面，查看会议参加人列表，并接收会议中共享的其他内容类型的通知。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>利用一号通功能，用户可以通过移动电话接收拨打至单位号码的呼叫。利用单位电话呼叫功能，用户可以使用单位电话号码（而不是移动电话号码）从 Lync Mobile 客户端发出出站呼叫。利用电话拨出式会议，客户端可以请求 Mcx 或 UCWA（基于 Lync Mobile 版本）为其发出呼叫。服务器将发起呼叫，然后在移动电话上回拨用户。当用户应答时，服务器将通过拨打另一方的号码来完成呼叫。通过使用单位电话呼叫功能，用户可以在呼叫期间维护其工作标识，这意味着呼叫接收方将看不到呼叫者的移动电话号码，并且呼叫者可免于支付出站呼叫费。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 利用一号通功能，用户可以通过移动电话接收拨打至单位号码的呼叫。利用单位电话呼叫功能，用户可以使用单位电话号码（而不是移动电话号码）从 Lync Mobile 客户端发出出站呼叫。利用电话拨出式会议，客户端可以请求 Mcx 或 UCWA（基于 Lync Mobile 版本）为其发出呼叫。服务器将发起呼叫，然后在移动电话上回拨用户。当用户应答时，服务器将通过拨打另一方的号码来完成呼叫。通过使用单位电话呼叫功能，用户可以在呼叫期间维护其工作标识，这意味着呼叫接收方将看不到呼叫者的移动电话号码，并且呼叫者可免于支付出站呼叫费。
 
 
 > [!NOTE]  
@@ -83,18 +63,8 @@ Apple iPad 用户将可以访问增强功能。在使用音频回拨加入会议
 
 使用 Lync Server 2013 自动发现功能时，移动应用程序会自动定位 Lync Server 2013 Web 服务而无需用户在其设备设置中手动输入 URL。在移动设备设置中手动输入 URL 也是受支持的，此操作主要用于进行故障排除。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Mcx 和 UCWA 均是赠送服务，两者的部署用于支持 Lync 2010 Mobile 和 Lync 2013 Mobile 客户端。 Lync 2013 Mobile 将无法登录 Lync Server 2010 部署。 Lync 2010 Mobile 和 Lync 2013 Mobile 将可以使用 Lync Server 2013 部署并应用 2013 年 2 月版的 Lync Server 2013 累积更新。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Mcx 和 UCWA 均是赠送服务，两者的部署用于支持 Lync 2010 Mobile 和 Lync 2013 Mobile 客户端。 Lync 2013 Mobile 将无法登录 Lync Server 2010 部署。 Lync 2010 Mobile 和 Lync 2013 Mobile 将可以使用 Lync Server 2013 部署并应用 2013 年 2 月版的 Lync Server 2013 累积更新。
 
 
 移动功能还支持针对不支持在后台运行的应用程序的移动设备的 *推送通知* 。推送通知是一类发送给移动设备的有关当移动应用程序处于不活动状态时发生的事件的通知。例如，错过的即时消息 (IM) 邀请会产生推送通知。

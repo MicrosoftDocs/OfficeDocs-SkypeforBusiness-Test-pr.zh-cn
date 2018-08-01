@@ -47,18 +47,8 @@ _**上一次修改主题：** 2012-10-20_
     
         New-CsNetworkInterRegionRoute -Identity EMEA_APAC_Route -NetworkRegionID1 EMEA -NetworkRegionID2 APAC -NetworkRegionLinkIDs "EMEA-APAC-LINK"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>北美/APAC 的网络区域间路由需要两个网络区域链接，因为它们之间没有直接网络区域链接。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 北美/APAC 的网络区域间路由需要两个网络区域链接，因为它们之间没有直接网络区域链接。
 
 
 ## 使用 Lync Server 控制面板创建网络区域间路由
@@ -79,18 +69,8 @@ _**上一次修改主题：** 2012-10-20_
 
 8.  单击“网络区域链接”字段旁边的“添加”，然后添加将用于网络区域间路由的网络区域链接。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要为彼此之间没有直接网络区域链接的两个网络区域创建路由，则必须添加所有必要的链接来完成路由。例如，北美/APAC 网络区域间路由需要两个网络区域链接，因为它们之间没有直接网络区域链接。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果要为彼此之间没有直接网络区域链接的两个网络区域创建路由，则必须添加所有必要的链接来完成路由。例如，北美/APAC 网络区域间路由需要两个网络区域链接，因为它们之间没有直接网络区域链接。
 
 
 9.  单击“提交”。

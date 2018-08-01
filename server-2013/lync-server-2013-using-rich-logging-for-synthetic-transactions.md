@@ -45,18 +45,8 @@ _**上一次修改主题：** 2012-10-22_
 
     Test-CsRegistration -TargetFqdn atl-cs-001.litwareinc.com -OutLoggerVariable RegistrationTest
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>变量名称不要以 $ 字符开头。可使用 RegistrationTest 之类的变量名称而非 $RegistrationTest。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 变量名称不要以 $ 字符开头。可使用 RegistrationTest 之类的变量名称而非 $RegistrationTest。
 
 
 上述命令输出如下内容：
@@ -79,16 +69,6 @@ _**上一次修改主题：** 2012-10-22_
 
 从 System Center Operations Manager 中运行的综合事务将自动针对问题生成这些日志文件。不过，如果执行过程在 Windows PowerShell 能够加载和运行综合事务之前失败，则不会生成这些日志。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，Lync Server 2013 将日志文件保存到不共享的文件夹中。若要轻松访问这些日志，您应该共享此文件夹（例如，\\atl-watcher-001.litwareinc.com\WatcherNode）。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 默认情况下，Lync Server 2013 将日志文件保存到不共享的文件夹中。若要轻松访问这些日志，您应该共享此文件夹（例如，\\atl-watcher-001.litwareinc.com\WatcherNode）。
 

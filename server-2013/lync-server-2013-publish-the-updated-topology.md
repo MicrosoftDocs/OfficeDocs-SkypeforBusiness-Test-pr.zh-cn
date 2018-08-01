@@ -31,16 +31,6 @@ _**上一次修改主题：** 2012-10-01_
 
 5.  在“发布向导完成”页上，确认已成功发布拓扑，然后单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>发布拓扑后，必须先配置 持久聊天服务器支持，然后才能存档内容。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 发布拓扑后，必须先配置 持久聊天服务器支持，然后才能存档内容。
 

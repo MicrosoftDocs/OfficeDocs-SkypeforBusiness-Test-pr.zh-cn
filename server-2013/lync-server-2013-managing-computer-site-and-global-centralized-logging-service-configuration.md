@@ -33,34 +33,14 @@ _**上一次修改主题：** 2014-02-04_
 
 可以使用 –Computers 参数在 [Search-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Search-CsClsLogging)、[Show-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Show-CsClsLogging)、[Start-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Start-CsClsLogging)、[Stop-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Stop-CsClsLogging)、[Sync-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Sync-CsClsLogging) 和 [Update-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Update-CsClsLogging) 命令执行期间定义单个计算机的作用域。–Computers 参数接受目标计算机的以逗号分隔的完全限定域名 (FQDN) 的列表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>还可以定义–Pools 和您要对其运行日志记录命令的以逗号分隔的池的列表。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 还可以定义–Pools 和您要对其运行日志记录命令的以逗号分隔的池的列表。
 
 
 站点和全局作用域在 **New-**、**Set-** 和 **Remove-**集中日志记录服务 cmdlet 中定义。以下示例演示了如何设置站点和全局作用域。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>显示的命令可能包含其他章节中涵盖的参数和概念。示例命令旨在演示如何使用 <strong>–Identity</strong> 参数定义作用域，还包含了其他参数来保证完整性和指定作用域。有关 <strong>Set-CsClsConfiguration</strong> cmdlet 的详细信息，请参阅操作文档中的 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration">Set-CsClsConfiguration</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 显示的命令可能包含其他章节中涵盖的参数和概念。示例命令旨在演示如何使用 <strong>–Identity</strong> 参数定义作用域，还包含了其他参数来保证完整性和指定作用域。有关 <strong>Set-CsClsConfiguration</strong> cmdlet 的详细信息，请参阅操作文档中的 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration">Set-CsClsConfiguration</a>。
 
 
 ## 检索当前集中日志记录服务配置

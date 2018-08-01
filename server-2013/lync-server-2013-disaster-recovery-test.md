@@ -74,18 +74,8 @@ _**上一次修改主题：** 2015-01-26_
 
   - OCSServices.\<域\>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关详细的管理过程，请参阅<a href="lync-server-2013-backing-up-and-restoring-lync-server.md">备份和还原 Lync Server 2013</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 有关详细的管理过程，请参阅<a href="lync-server-2013-backing-up-and-restoring-lync-server.md">备份和还原 Lync Server 2013</a>。
 
 
 ## 另请参阅

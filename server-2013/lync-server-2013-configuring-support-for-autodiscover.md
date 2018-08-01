@@ -19,18 +19,8 @@ Lync Server Web 服务**自动发现服务**首先出现在 2011 年 11 月版�
 
 自动发现服务充当所有客户端的共同位置，以请求关于哪些服务和功能可用以及如何联系服务（通过完全限定域名或 Web 统一资源定位器引用）的信息。自动发现公开了许多功能，并且每个客户端将基于客户端可以使用的功能来进行请求。例如，桌面 Lync 2013 客户端将使用自动发现来确定外部 Web 服务，但不会使用 Mobility Service (Mcx)。若要正确定义您的客户端并使其能够使用对其可用的功能，应定义允许客户端有效查找并使用自动发现条目的方案。若要使用自动发现，您的部署要求反向代理发布 Lync Server Web 服务、DNS 记录被配置为解析 Lync Server 自动发现服务和 Lync Server Web 服务的 DNS 查询，并且针对您的特定方案正确配置了证书服务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关自动发现请求/响应中元素的用途的技术详细信息，请参阅<a href="lync-server-2013-understanding-autodiscover.md">了解自动发现</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 有关自动发现请求/响应中元素的用途的技术详细信息，请参阅<a href="lync-server-2013-understanding-autodiscover.md">了解自动发现</a>。
 
 
 下列信息和表定义了每个方案中您需要实施哪些配置（如果有）才能充分而高效地使用自动发现服务。下列主题中的信息特定于 Microsoft Lync Server 2013。如果您要查找关于如何规划 Lync Server 2010 的 Mobility 的指南，请参阅 <http://go.microsoft.com/fwlink/?linkid=275113>。若要部署 Lync Server 2010 的 Mobility，请参阅 <http://go.microsoft.com/fwlink/?linkid=275114>

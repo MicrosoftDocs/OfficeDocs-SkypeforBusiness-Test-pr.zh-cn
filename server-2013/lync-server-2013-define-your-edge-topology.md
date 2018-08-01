@@ -26,18 +26,8 @@ _**上一次修改主题：** 2012-09-28_
 
 如果在定义和发布内部拓扑时定义了边缘拓扑，且不需要对之前定义的边缘拓扑进行任何更改，则无需再次对其进行定义和发布。仅当需要对边缘拓扑进行更改时才应使用以下过程。您必须使之前定义和发布的拓扑可用于边缘服务器，这可以通过使用 [导出 Lync Server 2013 拓扑并将其复制到外部媒体以用于边缘安装](lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md)中的过程来实现。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能从边缘服务器运行 拓扑生成器，必须从前端服务器或 Standard Edition Server 运行。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 不能从边缘服务器运行 拓扑生成器，必须从前端服务器或 Standard Edition Server 运行。
 
 
 定义边缘服务器拓扑的过程在 拓扑生成器中完成。下面列出了您需要规划和配置的三种主要类型的边缘服务器拓扑：
@@ -62,18 +52,8 @@ _**上一次修改主题：** 2012-09-28_
     
       - 在“池 FQDN”中，键入边缘服务器内部接口的完全限定域名 (FQDN)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>指定的名称必须与在服务器上配置的计算机名称相同。默认情况下，未加入域的计算机的计算机名称是短名称，不是 FQDN。拓扑生成器使用 FQDN，而非短名称。因此，如果要部署为边缘服务器的计算机未加入域，则必须为计算机名称配置 DNS 后缀。分配 Lync Server、边缘服务器和池的 FQDN 时只能使用标准字符（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线。外部 DNS 和公共 CA 通常不支持在 FQDN 中使用非标准字符（当 FQDN 必须分配给证书中的 SN 时）。有关向计算机名称添加 DNS 后缀的详细信息，请参阅<a href="lync-server-2013-configure-dns-for-edge-support.md">在 Lync Server 2013 中配置边缘支持的 DNS</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 指定的名称必须与在服务器上配置的计算机名称相同。默认情况下，未加入域的计算机的计算机名称是短名称，不是 FQDN。拓扑生成器使用 FQDN，而非短名称。因此，如果要部署为边缘服务器的计算机未加入域，则必须为计算机名称配置 DNS 后缀。分配 Lync Server、边缘服务器和池的 FQDN 时只能使用标准字符（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线。外部 DNS 和公共 CA 通常不支持在 FQDN 中使用非标准字符（当 FQDN 必须分配给证书中的 SN 时）。有关向计算机名称添加 DNS 后缀的详细信息，请参阅<a href="lync-server-2013-configure-dns-for-edge-support.md">在 Lync Server 2013 中配置边缘支持的 DNS</a>。
     
       - 单击“单计算机池”，然后单击“下一步”。
 
@@ -171,18 +151,8 @@ _**上一次修改主题：** 2012-09-28_
     
       - 在“池 FQDN”中，键入边缘池的内部连接的完全限定的域名 (FQDN)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>为池指定的名称必须是内部边缘池名称。此名称必须定义为 FQDN。拓扑生成器使用 FQDN，而非短名称。在分配 Lync Server、边缘服务器和池的 FQDN 时，仅使用标准字符（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线。外部 DNS 和公共 CA 通常不支持在 FQDN 中使用非标准字符（当必须向证书中的 SN 分配 FQDN 时）。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 为池指定的名称必须是内部边缘池名称。此名称必须定义为 FQDN。拓扑生成器使用 FQDN，而非短名称。在分配 Lync Server、边缘服务器和池的 FQDN 时，仅使用标准字符（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线。外部 DNS 和公共 CA 通常不支持在 FQDN 中使用非标准字符（当必须向证书中的 SN 分配 FQDN 时）。
     
       - 单击“多计算机池”，然后单击“下一步”。
 
@@ -308,18 +278,8 @@ _**上一次修改主题：** 2012-09-28_
     
       - 在“FQDN”中，键入为边缘池的内端选择的完全限定域名 (FQDN)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>为池指定的名称必须是内部边缘池名称。此名称必须定义为 FQDN。拓扑生成器使用 FQDN，而非短名称。在分配 Lync Server、边缘服务器和池的 FQDN 时，仅使用标准字符（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线。外部 DNS 和公共 CA 通常不支持在 FQDN 中使用非标准字符（当必须向证书中的 SN 分配 FQDN 时）。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 为池指定的名称必须是内部边缘池名称。此名称必须定义为 FQDN。拓扑生成器使用 FQDN，而非短名称。在分配 Lync Server、边缘服务器和池的 FQDN 时，仅使用标准字符（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线。外部 DNS 和公共 CA 通常不支持在 FQDN 中使用非标准字符（当必须向证书中的 SN 分配 FQDN 时）。
     
     <!-- end list -->
     
@@ -349,18 +309,8 @@ _**上一次修改主题：** 2012-09-28_
     
       - **在外部接口上启用 IPv6** ：如果需要将 IPv6 地址应用于 边缘服务器或 边缘池外部接口，请选中此复选框
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>请勿选中“边缘池的外部 IP 地址由 NAT 转换”复选框。使用硬件负载平衡时，不支持网络地址转换 (NAT)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 请勿选中“边缘池的外部 IP 地址由 NAT 转换”复选框。使用硬件负载平衡时，不支持网络地址转换 (NAT)。
 
 
 9.  在“外部 FQDN”中，执行下列操作：

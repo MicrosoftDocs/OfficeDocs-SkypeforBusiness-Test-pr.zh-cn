@@ -64,18 +64,8 @@ _**上一次修改主题：** 2015-03-09_
 
 通过将 **Import-CsRgsConfiguration** cmdlet 与 –ReplaceExistingSettings 参数结合使用可将这些应用程序级别的设置从一个池传送至其他池，但这样做会覆盖目标池中的设置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关向其他池传送设置的这一约束仅适用于应用程序级别设置和默认的保持音乐音频文件。它不适用于代理组、队列、工作流、工作时间和假日集。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 有关向其他池传送设置的这一约束仅适用于应用程序级别设置和默认的保持音乐音频文件。它不适用于代理组、队列、工作流、工作时间和假日集。
 
 
 如果不想在灾难期间替换备份池中的应用程序级别设置并且主池无法恢复，则主池中的应用程序级别设置将丢失。如果在恢复期间需要创建新池来替换主池（具有同一 FQDN 或不同 FQDN），则无法恢复原始的应用程序级别设置。在此情况下，需要用这些设置配置新池并包括保持音乐音频文件。
@@ -111,7 +101,8 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="even">
 <td><p>中断期间</p></td>
 <td><p>运行 <strong>Import-CsRgsConfiguration</strong> cmdlet，以将备份的 Lync Server 响应组服务配置从主池导入备份池。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 如果要将备份池中的应用程序级别的 响应组设置替换为主池中的设置，请使用 –ReplaceExistingSettings 参数。如果不从主池向备份池传送应用程序级别的设置，则无法恢复主池，您将丢失主池中的设置。
 
@@ -123,19 +114,10 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="odd">
 <td><p>导入后</p></td>
 <td><p>带 –ShowAll 参数（显示所有响应组）或 –Owner 参数（只显示导入的响应组）运行 响应组 cmdlet，以确认所有响应组配置均已导入备份池。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果不使用 –ShowAll 参数或 –Owner 参数，导入备份池的响应组将不会列在 cmdlet 返回的结果中。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]
+> 如果不使用 –ShowAll 参数或 –Owner 参数，导入备份池的响应组将不会列在 cmdlet 返回的结果中。
 
 </div>
 <p>运行以下 cmdlet：</p>
@@ -156,19 +138,10 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>所有正式代理必须重新登录到它们在备份池中的正式组。</p></li>
 <li><p>管理配置更改：</p>
 <p>备份池中的响应组（无论是导入备份池中的还是由备份池所拥有）在出现故障时均可正常修改。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须使用 Lync Server 命令行管理程序管理导入备份池的响应组。当这些响应组在备份池中时，不能使用 Lync Server 控制面板对其进行管理。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]
+> 必须使用 Lync Server 命令行管理程序管理导入备份池的响应组。当这些响应组在备份池中时，不能使用 Lync Server 控制面板对其进行管理。
 
 </div></li>
 </ul></td>
@@ -184,7 +157,8 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>故障回复后</p></td>
 <td><ul>
 <li><p>运行 <strong>Import-CsRgsConfiguration</strong> cmdlet 以将响应组导入回主池。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 如果无法恢复主池并且您要部署新池来替换它，可使用 –ReplaceExistingSettings 参数将应用程序级别的设置从备份池传送到新池。如果不从备份池传送设置，新池将使用默认设置。
 

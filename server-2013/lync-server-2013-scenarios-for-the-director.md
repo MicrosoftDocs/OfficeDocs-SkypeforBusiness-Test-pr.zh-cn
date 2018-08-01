@@ -17,18 +17,8 @@ _**上一次修改主题：** 2012-10-22_
 
 控制器是运行 Microsoft Lync Server 2013  通信软件的服务器，它可对用户请求进行身份验证，但不托管任何用户帐户。与 前端服务器类似， 控制器还承载 Web 服务，这将对 Web 票证请求进行身份验证并提供其他服务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您部署 控制器，则必须通过反向代理在外部发布 控制器 Web 服务以及 前端服务器的 Web 服务。以下主题将介绍可能的 控制器拓扑的规划过程。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果您部署 控制器，则必须通过反向代理在外部发布 控制器 Web 服务以及 前端服务器的 Web 服务。以下主题将介绍可能的 控制器拓扑的规划过程。
 
 
 ## 本部分内容

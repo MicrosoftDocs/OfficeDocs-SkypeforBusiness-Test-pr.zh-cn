@@ -15,18 +15,8 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2016-12-08_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您想要使用 Exchange 统一消息 (UM) 为 企业语音用户提供呼叫应答、Outlook Voice Access 或自动助理服务，请阅读规划文档中的 <a href="lync-server-2013-planning-for-exchange-unified-messaging-integration.md">在 Lync Server 2013 中规划 Exchange 统一消息集成</a>，然后按照本节中的说明进行操作。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果您想要使用 Exchange 统一消息 (UM) 为 企业语音用户提供呼叫应答、Outlook Voice Access 或自动助理服务，请阅读规划文档中的 <a href="lync-server-2013-planning-for-exchange-unified-messaging-integration.md">在 Lync Server 2013 中规划 Exchange 统一消息集成</a>，然后按照本节中的说明进行操作。
 
 
 要配置 Exchange 统一消息 (UM) 与 企业语音一起使用，您需要执行以下任务：

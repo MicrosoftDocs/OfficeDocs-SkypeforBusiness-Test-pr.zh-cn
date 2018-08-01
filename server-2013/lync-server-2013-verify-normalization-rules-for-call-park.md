@@ -17,18 +17,8 @@ _**上一次修改主题：** 2012-09-11_
 
 不能对 呼叫寄存通道进行规范化。检查拨号计划以确保未对通道号码进行规范化。如果必须创建其他规范化规则来阻止对通道进行规范化，请按照 [在 Lync Server 2013 中创建拨号计划](lync-server-2013-create-a-dial-plan.md)中的过程来定义新的规范化规则，例如，“要匹配的模式”表示通道范围，“转换模式”为 **$1**。例如，如果 呼叫寄存通道范围是 7000 – 7999，则“要匹配的模式”为 **^(7\\d{3})$**，“转换模式”为 **$1**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请确保拨号计划中的默认规范化规则不包含 <strong>^(\d*)</strong>。否则， 呼叫寄存规范化规则将始终不会运行。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 请确保拨号计划中的默认规范化规则不包含 <strong>^(\d*)</strong>。否则， 呼叫寄存规范化规则将始终不会运行。
 
 
 ## 另请参阅

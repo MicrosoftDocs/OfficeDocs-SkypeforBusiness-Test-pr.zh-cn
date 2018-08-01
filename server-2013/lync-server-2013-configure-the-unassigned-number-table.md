@@ -23,18 +23,8 @@ _**上一次修改主题：** 2012-10-30_
 > 在配置未分配号码表之前，系统必须已定义通知，或已设置 Exchange 统一消息 (UM) 自动助理。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当有人呼叫未分配号码时， Lync Server 从上到下搜索未分配号码表，然后使用第一个匹配范围。因此，要在万不得已时执行的操作应指定给表中最后一个范围。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 当有人呼叫未分配号码时， Lync Server 从上到下搜索未分配号码表，然后使用第一个匹配范围。因此，要在万不得已时执行的操作应指定给表中最后一个范围。
 
 
 ## 本部分内容

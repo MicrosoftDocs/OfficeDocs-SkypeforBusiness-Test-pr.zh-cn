@@ -23,18 +23,8 @@ _**上一次修改主题：** 2016-12-08_
 
   - 每个 IPv6 地址都有一个作用域。可用于 IPv6 寻址的三个作用域是 IPv6 全局地址（与公共 IPv4 地址类似）、IPv6 唯一本地地址（与专用 IPv4 地址范围类似）和 IPv6 链接本地地址（与 Windows Server for IPv4 中的自动专用 IP 地址类似）。池内所有服务器都应该具有作用域相同的 IPv6 地址。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>IPv6 是一个复杂的主题，需要您的网络团队和 Internet 提供商进行仔细地规划，以确保您在 Windows Server 级别和 Lync Server 2013 级别分配的地址按预期工作。请参阅本主题结尾处的链接，以了解有关 IPv6 寻址和规划的其他资源。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> IPv6 是一个复杂的主题，需要您的网络团队和 Internet 提供商进行仔细地规划，以确保您在 Windows Server 级别和 Lync Server 2013 级别分配的地址按预期工作。请参阅本主题结尾处的链接，以了解有关 IPv6 寻址和规划的其他资源。
 
 
 ## 另请参阅

@@ -19,18 +19,8 @@ _**上一次修改主题：** 2012-11-01_
 
 工作时间设置定义工作流何时可以应答呼叫并指定对非工作时间的呼叫所采取的操作。响应组管理员可以使用 **New-CsRgsHoursOfBusiness** cmdlet 来创建可用于任意数目的响应组的预定义日程表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建或修改工作流时，可以指定仅适用于该工作流的自定义日程表。有关详细信息，请参阅 <a href="lync-server-2013-create-or-modify-a-hunt-group-workflow.md">在 Lync Server 2013 中创建或修改智能寻线工作流</a>或 <a href="lync-server-2013-create-or-modify-an-interactive-workflow.md">在 Lync Server 2013 中创建或修改互动工作流</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 创建或修改工作流时，可以指定仅适用于该工作流的自定义日程表。有关详细信息，请参阅 <a href="lync-server-2013-create-or-modify-a-hunt-group-workflow.md">在 Lync Server 2013 中创建或修改智能寻线工作流</a>或 <a href="lync-server-2013-create-or-modify-an-interactive-workflow.md">在 Lync Server 2013 中创建或修改互动工作流</a>。
 
 
 > [!NOTE]  
@@ -38,18 +28,8 @@ _**上一次修改主题：** 2012-11-01_
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>以下 cmdlet 中的参数采用 24 小时制表示（例如，20:00=8:00 P.M.）。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 以下 cmdlet 中的参数采用 24 小时制表示（例如，20:00=8:00 P.M.）。
 
 
 ## 创建预定义工作时间集合

@@ -37,16 +37,6 @@ _**上一次修改主题：** 2012-09-08_
     
     用于 Lync Server 的模板的默认证书名称是 Web Server。仅当需要使用与默认模板不同的模板时指定 \<模板名称\>。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果组织希望支持与 AOL 的公共 IM 连接，则必须使用 Windows PowerShell（而非证书向导）请求要分配给访问边缘服务的外部边缘的证书。这是因为证书向导用于请求证书的证书颁发机构 (CA) Web 服务器模板不支持客户端 EKU 配置。使用 Windows PowerShell 创建证书之前，CA 管理员必须创建和部署支持客户端 EKU 的新模板。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果组织希望支持与 AOL 的公共 IM 连接，则必须使用 Windows PowerShell（而非证书向导）请求要分配给访问边缘服务的外部边缘的证书。这是因为证书向导用于请求证书的证书颁发机构 (CA) Web 服务器模板不支持客户端 EKU 配置。使用 Windows PowerShell 创建证书之前，CA 管理员必须创建和部署支持客户端 EKU 的新模板。
 

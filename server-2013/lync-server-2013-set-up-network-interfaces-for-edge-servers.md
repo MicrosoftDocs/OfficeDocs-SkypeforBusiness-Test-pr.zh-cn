@@ -17,36 +17,16 @@ _**上一次修改主题：** 2012-09-08_
 
 每台边缘服务器均是具有面向外部和内部的接口的多宿主计算机。适配器域名系统 (DNS) 设置取决于外围网络中是否有 DNS 服务器。如果外围中存在 DNS 服务器，则这些服务器必须有一个包含有关下一个跃点服务器或池（即，控制器或指定的前端池）的一个或多个 DNS A 记录的区域，而对于外部查询，则会对其他公共 DNS 服务器进行名称查找。如果外围中不存在 DNS 服务器，则边缘服务器将使用外部 DNS 服务器解析 Internet 名称查找，并且每个边缘服务器会使用 HOST 将下一个跃点服务器名称解析为 IP 地址。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg399038.security(OCS.15).gif" title="security" alt="security" />安全性 注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为安全起见，建议不要让边缘服务器访问位于内部网络的 DNS 服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 为安全起见，建议不要让边缘服务器访问位于内部网络的 DNS 服务器。
 
 
 ## 配置接口（外围网络中存在 DNS 服务器）
 
 1.  为每台边缘服务器安装两个网络适配器，一个用于面向内部的接口，另一个用于面向外部的接口。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>内部子网和外部子网不得相互路由。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 内部子网和外部子网不得相互路由。
 
 
 2.  在外部接口上，在外部外围网络（也称为 DMZ、外围安全区域或屏蔽子网）子网上配置三个静态 IP 地址，并将默认网关指向外部防火墙的内部接口。配置适配器 DNS 设置以指向一对外围 DNS 服务器。
@@ -64,18 +44,8 @@ _**上一次修改主题：** 2012-09-08_
 
 1.  为每台边缘服务器安装两个网络适配器，一个用于面向内部的接口，另一个用于面向外部的接口。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>内部子网和外部子网不得相互路由。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 内部子网和外部子网不得相互路由。
 
 
 2.  在外部接口上，在外部外围网络子网上配置三个静态 IP 地址。还可在外部接口上配置默认网关。例如，定义面向 Internet 的路由器或外部防火墙作为默认网关。将 DNS 设置配置为指向一台 DNS 服务器（最好是一对外部 DNS 服务器）。

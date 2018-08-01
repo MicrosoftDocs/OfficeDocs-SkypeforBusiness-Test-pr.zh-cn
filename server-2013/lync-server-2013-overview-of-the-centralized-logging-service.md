@@ -46,33 +46,12 @@ ClsAgent 维护其在本地计算机上具有的所有 .CACHE 文件的索引文
 
 在启动日志记录会话时，您指定与您尝试解决的问题相关的方案。可以随时运行两个方案，其中一个方案应为 AlwaysOn 方案。顾名思义，此方案应始终在部署中运行，并收集有关所有计算机、池和组件的信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，AlwaysOn 方案在部署中不会运行。您必须显式启动此方案。一旦启动此方案，它就将继续运行直到被显式停止，并且在重新启动计算机的过程中持续保持运行状态。有关启动和停止方案的详细信息，请参阅<a href="lync-server-2013-using-start-for-the-centralized-logging-service-to-capture-logs.md">使用启动集中日志服务以捕获日志</a>和<a href="lync-server-2013-using-stop-for-the-centralized-logging-service.md">对集中日志记录服务使用 Stop 命令</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 默认情况下，AlwaysOn 方案在部署中不会运行。您必须显式启动此方案。一旦启动此方案，它就将继续运行直到被显式停止，并且在重新启动计算机的过程中持续保持运行状态。有关启动和停止方案的详细信息，请参阅<a href="lync-server-2013-using-start-for-the-centralized-logging-service-to-capture-logs.md">使用启动集中日志服务以捕获日志</a>和<a href="lync-server-2013-using-stop-for-the-centralized-logging-service.md">对集中日志记录服务使用 Stop 命令</a>。
 
 
 在出现问题时，启动与所报告的问题相关的另一个方案。重现该问题并停止针对该方案的日志记录。开始与所报告的问题相关的日志搜索。日志的聚合收集会生成一个日志文件，其中包含站点或全局范围部署中的所有计算机中的跟踪消息。如果搜索返回的数据多于可进行可行性分析的数据（通常称为信噪比，其中噪音过高），则可使用范围更小的参数运行另一个搜索。此时，您可以关注显示的模式并可帮助您准确了解问题。最后，在执行一组优化搜索后，您可以找到与该问题相关的数据并指出根本原因。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在面对 Lync Server 中的问题方案时，您首先问自己“我已了解与该问题相关的哪些信息？”如果量化问题边界，则可以消除 Lync Server 中的大部分操作实体。<br />
-考虑以下示例方案：您知道用户在查找联系人时未获得当前结果。在媒体组件、企业语音、会议和许多其他组件中查找问题是毫无意义的。您不知道出现问题的实际位置：是客户端上还是服务器端？联系人通过用户复制程序从 Active Directory 中收集，并通过通讯簿服务器 (ABServer) 传送到客户端。ABServer 从 RTC 数据库获取其更新（用户复制程序将更新写入该数据库），并将其收集到一个通讯簿文件中（默认情况下为 1:30 AM）。Lync Server 客户端根据随机计划检索新的通讯簿。由于您知道此过程的工作方式，因此您可以减少对与由用户复制程序从 Active Directory 中收集的数据相关的问题的可能原因的搜索，ABServer 不检索和创建通讯簿文件或客户端不下载通讯簿文件。</td>
-</tr>
-</tbody>
-</table>
-
+> [!TIP]  
+> 在面对 Lync Server 中的问题方案时，您首先问自己“我已了解与该问题相关的哪些信息？”如果量化问题边界，则可以消除 Lync Server 中的大部分操作实体。<br />
+考虑以下示例方案：您知道用户在查找联系人时未获得当前结果。在媒体组件、企业语音、会议和许多其他组件中查找问题是毫无意义的。您不知道出现问题的实际位置：是客户端上还是服务器端？联系人通过用户复制程序从 Active Directory 中收集，并通过通讯簿服务器 (ABServer) 传送到客户端。ABServer 从 RTC 数据库获取其更新（用户复制程序将更新写入该数据库），并将其收集到一个通讯簿文件中（默认情况下为 1:30 AM）。Lync Server 客户端根据随机计划检索新的通讯簿。由于您知道此过程的工作方式，因此您可以减少对与由用户复制程序从 Active Directory 中收集的数据相关的问题的可能原因的搜索，ABServer 不检索和创建通讯簿文件或客户端不下载通讯簿文件。

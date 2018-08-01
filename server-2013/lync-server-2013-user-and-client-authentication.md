@@ -23,18 +23,8 @@ _**上一次修改主题：** 2013-11-11_
 
   - **NTLM 协议** - 用于具有 Active Directory 凭据且从企业防火墙外部的终结点进行连接的用户。访问边缘服务 将登录请求传递给控制器（如果存在）或前端服务器以进行身份验证。而访问边缘服务本身不执行任何身份验证。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>与 Kerberos 相比，NTLM 协议提供的攻击保护较弱，所以某些组织最大程度地降低对 NTLM 的使用。因此，对 Lync Server 2013 的访问可能限定于内部，或通过 VPN 或 DirectAccess 连接而连接的客户端。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 与 Kerberos 相比，NTLM 协议提供的攻击保护较弱，所以某些组织最大程度地降低对 NTLM 的使用。因此，对 Lync Server 2013 的访问可能限定于内部，或通过 VPN 或 DirectAccess 连接而连接的客户端。
 
 
   - **摘要式协议** - 用于所谓的匿名用户。匿名用户是指满足以下条件的外部用户：这些用户虽然不具备认可的 Active Directory 凭据，但已被邀请参与内部会议并且拥有有效的会议密钥。摘要式身份验证不能用于其他客户端交互活动。

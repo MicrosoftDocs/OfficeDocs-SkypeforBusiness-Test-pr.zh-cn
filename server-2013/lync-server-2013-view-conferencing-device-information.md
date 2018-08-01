@@ -17,18 +17,8 @@ _**上一次修改主题：** 2013-02-20_
 
 您可以使用 Windows PowerShell 和 **Get-CsMeetingRoom** cmdlet 查看有关配置用于供贵组织使用的会议设备的信息。从 Lync Server 2013 命令行管理程序或从 Windows PowerShell 的远程会话运行 **Get-CsMeetingRoom** cmdlet。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关使用远程 Windows PowerShell 连接到 Lync Server 的详细信息，请参阅 Lync Server Windows PowerShell 博客文章“快速入门：使用远程 PowerShell 管理 Microsoft Lync Server 2010”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关使用远程 Windows PowerShell 连接到 Lync Server 的详细信息，请参阅 Lync Server Windows PowerShell 博客文章“快速入门：使用远程 PowerShell 管理 Microsoft Lync Server 2010”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</a>。
 
 
 如果使用不带任何参数的 **Get-CsMeetingRoom** cmdlet，则它返回有关所有会议设备的信息。可选参数提供筛选信息的不同方式。有关详细信息，请参阅 [Get-CsMeetingRoom](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsMeetingRoom) 的“参数”部分。

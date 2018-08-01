@@ -39,18 +39,8 @@ _**上一次修改主题：** 2012-10-04_
     
         Move-CsConferenceDirectory -Identity 3 -TargetPool pool02.contoso.net
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可能会遇到下面显示的错误，此错误是由需要来自 Active Directory 的一组更新的权限的 Lync Server 命令行管理程序导致的。若要纠正此错误，请关闭当前窗口并打开一个新的 Lync Server 命令行管理程序，然后重新运行该命令。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您可能会遇到下面显示的错误，此错误是由需要来自 Active Directory 的一组更新的权限的 Lync Server 命令行管理程序导致的。若要纠正此错误，请关闭当前窗口并打开一个新的 Lync Server 命令行管理程序，然后重新运行该命令。
 
 
 ![Move-CsConferenceDirectory 错误输出](images/JJ204994.4748b9e8-9651-4527-afe1-cbdc6d5ce4a8(OCS.15).jpg "Move-CsConferenceDirectory 错误输出")

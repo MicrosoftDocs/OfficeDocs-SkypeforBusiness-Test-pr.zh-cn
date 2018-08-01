@@ -114,16 +114,6 @@ _**上一次修改主题：** 2015-03-09_
 
 3Office Communicator 2007 R2 中的状态和 IM 功能与 Lync Server 2013 兼容，但会议功能不兼容。在从 Office Communications Server 2007 R2 迁移的过程中， Office Communicator 2007 R2 可提供状态和 IM 互操作性，但用户应使用 Lync Web App 2013 来加入 Lync Server 2013 会议。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关 Lync Server 2013 客户端与来自早期版本的 Lync Server 和 Office Communications Server 的客户端共存和交互的能力的详细信息，请参阅规划文档中的 <a href="lync-server-2013-client-interoperability-in-lync-2013.md">Lync 2013 中的客户端互操作性</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关 Lync Server 2013 客户端与来自早期版本的 Lync Server 和 Office Communications Server 的客户端共存和交互的能力的详细信息，请参阅规划文档中的 <a href="lync-server-2013-client-interoperability-in-lync-2013.md">Lync 2013 中的客户端互操作性</a>。
 

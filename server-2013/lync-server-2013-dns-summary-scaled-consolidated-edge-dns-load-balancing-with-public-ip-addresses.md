@@ -66,18 +66,8 @@ _**上一次修改主题：** 2017-03-09_
     
     Web 会议边缘服务和 A/V 边缘服务专用 IP 地址是 Windows Server 中 **本地连接属性**的 **Internet 协议第四版 (TCP/IPv4)** 和 **Internet 协议版本 6 (TCP/IPv6)** 属性的 **高级**部分中的其他 IP 地址。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用两个网络适配器配置 边缘服务器是两个选项之一。另一个选项是对 边缘服务器的内部端使用一个网络适配器，对该服务器的外部端使用三个网络适配器。此选项的主要优点是每个 边缘服务器服务具有不同的网络适配器，当需要进行故障排除时，这就可能实现更简明的数据收集</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 使用两个网络适配器配置 边缘服务器是两个选项之一。另一个选项是对 边缘服务器的内部端使用一个网络适配器，对该服务器的外部端使用三个网络适配器。此选项的主要优点是每个 边缘服务器服务具有不同的网络适配器，当需要进行故障排除时，这就可能实现更简明的数据收集
 
 
 ### 使用公用 IP 地址的扩展的合并边缘（DNS 负载平衡）所需的 DNS 记录（示例）
@@ -162,19 +152,10 @@ _**上一次修改主题：** 2017-03-09_
 <td><p>_sipfederationtls._tcp.contoso.com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>SIP 访问边缘服务外部接口。用于实现称为“允许的 SIP 域”的联盟（在之前的版本中称为“增强联盟”）对其他潜在联盟伙伴的自动 DNS 发现。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根据需要对包含启用了 Lync 的用户和使用 推送通知服务或 Apple 推送通知服务的 Microsoft Lync Mobile 客户端的所有 SIP 域重复</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]
+> 根据需要对包含启用了 Lync 的用户和使用 推送通知服务或 Apple 推送通知服务的 Microsoft Lync Mobile 客户端的所有 SIP 域重复
 
 </div></td>
 </tr>

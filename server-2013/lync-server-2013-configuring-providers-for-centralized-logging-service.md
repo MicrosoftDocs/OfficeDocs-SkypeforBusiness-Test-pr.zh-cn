@@ -27,19 +27,9 @@ _**上一次修改主题：** 2014-03-19_
 
 本主题的其余部分将重点说明如何定义提供程序、修改提供程序以及提供程序定义为优化您的疑难解答所包含的内容。可通过两种方式发出集中日志记录服务命令。默认情况下，可使用位于目录 C:\\Program Files\\Common Files\\Microsoft Lync Server 2013\\CLSAgent 中的 CLSController.exe。也可以使用 Lync Server 命令行管理程序发出 Windows PowerShell 命令。重要区别在于，在命令行中使用 CLSController.exe 时，可供选择的可用方案是有限的，在这些方案中，提供程序已被定义且不可更改，但您可以定义日志级别。通过使用 Windows PowerShell，可以定义在日志记录会话中使用的新提供程序，并对日志记录会话的创建、其收集的内容及其收集数据的级别进行完全控制。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如前所述，提供程序的功能十分强大。但是，方案的功能更为强大，因为方案是对提供程序表示的组件进行设置并执行跟踪所需的所有信息的具体体现。由于方案将包含一组提供程序，因此将运行一个包含几百条用于收集大量信息的命令的批处理文件与在命令行中一次性发出几百条命令相比是不受限制的。<br />
-集中日志记录服务提供了大量已为您定义的方案，这样您便无需深入了解提供程序的详细信息。提供的方案涵盖了绝大多数您可能会遇到的问题。在极少数情况下，您可能需要创建和定义提供程序并将其分配给方案。强烈建议您先熟悉提供的每个方案，然后再调查有关创建新的提供程序和方案的需求。虽然您可以通过此处提供的有关创建提供程序的信息来熟悉方案如何使用提供程序元素来收集跟踪信息，但此时不提供有关提供程序本身的详细信息。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如前所述，提供程序的功能十分强大。但是，方案的功能更为强大，因为方案是对提供程序表示的组件进行设置并执行跟踪所需的所有信息的具体体现。由于方案将包含一组提供程序，因此将运行一个包含几百条用于收集大量信息的命令的批处理文件与在命令行中一次性发出几百条命令相比是不受限制的。<br />
+> 集中日志记录服务提供了大量已为您定义的方案，这样您便无需深入了解提供程序的详细信息。提供的方案涵盖了绝大多数您可能会遇到的问题。在极少数情况下，您可能需要创建和定义提供程序并将其分配给方案。强烈建议您先熟悉提供的每个方案，然后再调查有关创建新的提供程序和方案的需求。虽然您可以通过此处提供的有关创建提供程序的信息来熟悉方案如何使用提供程序元素来收集跟踪信息，但此时不提供有关提供程序本身的详细信息。
 
 
 如[集中日志记录服务的概述](lync-server-2013-overview-of-the-centralized-logging-service.md)中所述，用于定义在方案中使用的提供程序的关键元素为：
@@ -126,18 +116,8 @@ _**上一次修改主题：** 2014-03-19_
 
 此命令的最终结果是方案 site:Redmond/RedmondLyssInfo 将获得提供程序的更新标志和级别。可通过使用 Get-CsClsScenario 查看新方案。有关详细信息，请参阅 [Get-CsClsScenario](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsScenario)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>New-ClsCsProvider</strong> 不会检查以确定标志是否有效。请确保标志（例如，TF_DIAG 或 TF_CONNECTION）的拼写正确。如果标志的拼写不正确，则提供程序无法返回预期日志信息。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> <strong>New-ClsCsProvider</strong> 不会检查以确定标志是否有效。请确保标志（例如，TF_DIAG 或 TF_CONNECTION）的拼写正确。如果标志的拼写不正确，则提供程序无法返回预期日志信息。
 
 
 若要将其他提供程序添加到此方案，请键入：
@@ -166,18 +146,8 @@ _**上一次修改主题：** 2014-03-19_
     
         Remove-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>cmdlet <strong>Remove-CsClsScenario</strong> 不会提示您进行确认。方案将连同已分配给它的提供程序一起被删除。可通过重新运行最初用于创建方案的命令来重新创建方案。没有用于恢复已删除的方案或提供程序的过程。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > cmdlet <strong>Remove-CsClsScenario</strong> 不会提示您进行确认。方案将连同已分配给它的提供程序一起被删除。可通过重新运行最初用于创建方案的命令来重新创建方案。没有用于恢复已删除的方案或提供程序的过程。
 
 
 在使用 **Remove-CsClsScenario** cmdlet 删除一个方案时，可以从作用域中完全删除此方案。若要使用已创建的方案以及作为该方案的一部分的提供程序，可以创建新的提供程序并将其分配给新方案。

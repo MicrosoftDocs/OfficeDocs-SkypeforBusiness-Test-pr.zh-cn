@@ -15,19 +15,9 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2016-12-08_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有迁移最初部署本地 Lync 之前在 Lync Online 中启用 Lync 的用户帐户时才需要执行这些步骤。要迁移最初为本地 Lync 启用的用户，以便将其迁移至 Lync Online，请参阅 <a href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">管理混合 Lync Server 2013 部署中的用户</a>。<br />
-此外，所迁移的全部用户都必须拥有本地 Active Directory 帐户。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 只有迁移最初部署本地 Lync 之前在 Lync Online 中启用 Lync 的用户帐户时才需要执行这些步骤。要迁移最初为本地 Lync 启用的用户，以便将其迁移至 Lync Online，请参阅 <a href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">管理混合 Lync Server 2013 部署中的用户</a>。<br />
+> 此外，所迁移的全部用户都必须拥有本地 Active Directory 帐户。
 
 
 ## 将最初在 Lync Online 中启用的用户帐户迁移到本地 Lync

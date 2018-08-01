@@ -35,7 +35,7 @@ _**上一次修改主题：** 2013-07-11_
     
         New-CsWebServiceConfiguration -Identity "Service:WebServer:LyncPool01.contoso.com" -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
     
->[!NOTE]  
+> [!NOTE]  
 > WsFedPassiveMetadataUri FQDN 的值是您的 AD FS 2.0 服务器的联合身份验证服务名称。可通过从导航窗格右键单击“服务”，然后选择“编辑联合身份验证服务属性”来在 AD FS 2.0 管理控制台中找到联合身份验证服务名称值。
 
 

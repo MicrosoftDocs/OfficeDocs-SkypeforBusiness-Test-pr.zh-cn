@@ -80,18 +80,8 @@ _**上一次修改主题：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg399038.security(OCS.15).gif" title="security" alt="security" />安全性 注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果在 Windows Server 2008 操作系统上使用 IIS 7.0， Lync Server 安装程序将禁用 IIS 中的内核模式身份验证。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果在 Windows Server 2008 操作系统上使用 IIS 7.0， Lync Server 安装程序将禁用 IIS 中的内核模式身份验证。
 
 
 ## 本部分内容

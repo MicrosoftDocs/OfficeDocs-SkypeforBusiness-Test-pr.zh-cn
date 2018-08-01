@@ -35,36 +35,16 @@ _**上一次修改主题：** 2013-02-21_
 
 9.  如果备份文件夹位于主服务器上，请在“如果备份文件夹位于主服务器上，则键入该文件夹的本地路径（示例: c:\\backup）：”框中键入该备份文件夹的本地路径。（如果备份文件夹不在主服务器上，则可将此框留空。）
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果主服务器上的 SQL Server 服务帐户在本地系统帐户下运行，则必须在主服务器上创建备份文件夹并指定该文件夹的本地路径。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果主服务器上的 SQL Server 服务帐户在本地系统帐户下运行，则必须在主服务器上创建备份文件夹并指定该文件夹的本地路径。
 
 
 10. 配置“删除文件，如果其保留时间超过”和“在以下时间内没有执行备份时报警”参数。
 
 11. 查看“备份作业”下的“计划”框中所列的备份计划。若要自定义安装的计划，请单击“计划”，然后根据需要调整 SQL Server 代理计划。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用您对主数据库使用的相同设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 使用您对主数据库使用的相同设置。
 
 
 12. 在“压缩”下，选择“使用默认服务器设置”，然后单击“确定”。
@@ -85,18 +65,8 @@ _**上一次修改主题：** 2013-02-21_
 
 20. 选择并运行查询（参见第 18 步）中以下行之前的前半部分：-- \*\*\*\*\*\* End: Script to be run at Primary: \*\*\*\*\*\*。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须手动运行此脚本，因为 SQL Server Management Studio 在 SQL Server 日志传送配置中不支持多个主数据库。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 必须手动运行此脚本，因为 SQL Server Management Studio 在 SQL Server 日志传送配置中不支持多个主数据库。
 
 
 21. 选择“取消”以关闭日志文件传送配置面板并建立正确实现主数据库和镜像数据库的日志文件传送的工作设置（在故障转移的情况下）。

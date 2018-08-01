@@ -52,18 +52,8 @@ XMPP 联盟基于可扩展消息传递和状态协议定义外部部署。利用
 
   - Lync 客户端中 XMPP 联盟联系人的创建
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 已测试 Lync Server 2013 的 XMPP 功能，并且支持该功能与 Google Talk 进行即时消息传递联盟。对于任何其他 XMPP 系统，请与第三方供应商联系，以确认它们是否支持与 Lync Server 2013 联盟以及获取任何部署或疑难解答建议。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Microsoft 已测试 Lync Server 2013 的 XMPP 功能，并且支持该功能与 Google Talk 进行即时消息传递联盟。对于任何其他 XMPP 系统，请与第三方供应商联系，以确认它们是否支持与 Lync Server 2013 联盟以及获取任何部署或疑难解答建议。
 
 
 ## 边缘服务器外部联盟、公共即时消息连接和 XMPP 用户部署过程
@@ -89,7 +79,8 @@ XMPP 联盟基于可扩展消息传递和状态协议定义外部部署。利用
 <td><p>确定要添加到现有边缘部署的选项</p></td>
 <td><p>运行 拓扑生成器以编辑边缘服务器设置并创建和发布拓扑。现有边缘拓扑会将 中央管理存储中的更改复制到边缘服务器。</p></td>
 <td><p>Domain Admins 组和 RTCUniversalServerAdmins 组</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 可以使用属于本地用户组成员的帐户来编辑拓扑，但发布拓扑需要属于 Domain Admins 组和 RTCUniversalServerAdmins 组的成员的帐户。
 

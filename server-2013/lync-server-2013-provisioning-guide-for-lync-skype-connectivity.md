@@ -17,18 +17,8 @@ _**上一次修改主题：** 2014-11-26_
 
 Lync Server 2013 支持与 Skype 进行连接。此连接使 Lync 2013 用户能够使用 Skype 用户的 Microsoft 帐户 (MSA) 添加 Skype 联系人。Skype 客户端也可以将 Lync 用户添加到其联系人列表。根据 Lync Server 中以管理方式设置的策略，Lync 和 Skype 用户将能够使用即时消息进行通信、查看彼此的状态和启动音频和视频呼叫。Lync-Skype 连接也是 Lync Online 的一项功能，可以从 Office 365 门户中的 Lync 管理中心为 Lync Online 客户启用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果 Lync Server 已配置为使用公共即时消息连接 (PIC) 与 Windows Messenger 进行连接，则您的部署已配置 Lync-Skype 连接。您可能需要考虑的唯一更改是将现有 Messenger PIC 条目重命名为 Skype。有关详细信息，请参阅本指南后面的“针对 Lync 配置 Skype PIC 提供程序设置”。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果 Lync Server 已配置为使用公共即时消息连接 (PIC) 与 Windows Messenger 进行连接，则您的部署已配置 Lync-Skype 连接。您可能需要考虑的唯一更改是将现有 Messenger PIC 条目重命名为 Skype。有关详细信息，请参阅本指南后面的“针对 Lync 配置 Skype PIC 提供程序设置”。
 
 
 ## 本部分内容

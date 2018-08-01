@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
 若要部署和管理组内呼叫应答，您需要使用 SEFAUtil 资源工具包工具。该工具是 Lync Server 2013 资源工具包工具的一部分。在安装 SEFAUtil 之前，您的拓扑中必须有一个受信任的应用程序池，将 SEFAUtil 指定为受信任应用程序，然后启用该拓扑。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 统一通信托管 API (UCMA) 3.0 核心 SDK 必须安装在您计划运行 SEFAUtil 工具的任何计算机上。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Microsoft 统一通信托管 API (UCMA) 3.0 核心 SDK 必须安装在您计划运行 SEFAUtil 工具的任何计算机上。
 
 
 您可以在您的部署中的任何前端池中运行 SEFAUtil。

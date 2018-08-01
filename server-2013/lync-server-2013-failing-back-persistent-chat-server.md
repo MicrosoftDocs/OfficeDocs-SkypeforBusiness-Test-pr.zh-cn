@@ -29,25 +29,12 @@ _**上一次修改主题：** 2014-02-05_
 
 1.  使用 Lync Server 命令行管理程序中的 `Set-CsPersistentChatActiveServer` cmdlet 清除 持久聊天服务器活动服务器列表中的所有服务器。这将会阻止所有 持久聊天服务器在故障回复期间连接到 mgc 数据库和 mgccomp 数据库。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>辅助 持久聊天服务器后端服务器上的 SQL Server 代理应以特权帐户运行。尤其需要指出的是，该帐户必须具有以下权限：
-    <ul>
-    <li><p>对于放置备份的网络共享的读取权限。</p></li>
-    <li><p>对于备份将复制到的特定本地目录的写入权限。</p></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> 辅助 持久聊天服务器后端服务器上的 SQL Server 代理应以特权帐户运行。尤其需要指出的是，该帐户必须具有以下权限：
+    > <ul>
+    > <li><p>对于放置备份的网络共享的读取权限。</p></li>
+    > <li><p>对于备份将复制到的特定本地目录的写入权限。</p></li>
+    > </ul>
 
 
 2.  在备份 mgc 数据库上禁用镜像：
@@ -106,18 +93,8 @@ _**上一次修改主题：** 2014-02-05_
 
 6.  设置 持久聊天服务器活动服务器。从 Lync Server 命令行管理程序中，使用 **Set-CsPersistentChatActiveServer** cmdlet 设置活动服务器的列表。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>所有活动服务器必须都与新主数据库位于同一数据中心中，或位于与数据库之间存在低延迟/高带宽连接的数据中心中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 所有活动服务器必须都与新主数据库位于同一数据中心中，或位于与数据库之间存在低延迟/高带宽连接的数据中心中。
 
 
 运行以下 Windows PowerShell 命令将池还原到正常状态：

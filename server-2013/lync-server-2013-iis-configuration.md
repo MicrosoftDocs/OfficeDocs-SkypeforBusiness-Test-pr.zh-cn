@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-12-08_
 
 为 Lync Server 2013、 标准版 或池中第一台 前端服务器配置和安装 前端服务器之前，必须为 Internet Information Services (IIS) 安装和配置服务器角色和 Web 服务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果组织需要您将 IIS 和所有 Web 服务定位到非系统驱动器上，您可以在最初安装 Lync Server 2013 管理工具时在“安装”对话框中更改 Lync Server 2013 文件的安装位置路径。安装 IIS 前，需要安装管理工具。如果您将安装文件（包括 OCSCore.msi）安装到此路径，则其余的 Lync Server 2013 文件也将部署到该驱动器。有关详细信息，请参阅<a href="lync-server-2013-install-lync-server-administrative-tools.md">安装 Lync Server 2013 管理工具</a>。有关如何在安装 IIS 时重新定位 Windows Server Manager 部署的 INETPUB 的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=216888" class="uri">http://go.microsoft.com/fwlink/?linkid=216888</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果组织需要您将 IIS 和所有 Web 服务定位到非系统驱动器上，您可以在最初安装 Lync Server 2013 管理工具时在“安装”对话框中更改 Lync Server 2013 文件的安装位置路径。安装 IIS 前，需要安装管理工具。如果您将安装文件（包括 OCSCore.msi）安装到此路径，则其余的 Lync Server 2013 文件也将部署到该驱动器。有关详细信息，请参阅<a href="lync-server-2013-install-lync-server-administrative-tools.md">安装 Lync Server 2013 管理工具</a>。有关如何在安装 IIS 时重新定位 Windows Server Manager 部署的 INETPUB 的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=216888" class="uri">http://go.microsoft.com/fwlink/?linkid=216888</a>。
 
 
 下表指出了所需的 IIS 7.5 角色服务。
@@ -321,18 +311,8 @@ _**上一次修改主题：** 2016-12-08_
 
     Add-WindowsFeature Web-Server, Web-Static-Content, Web-Default-Doc, Web-Http-Errors, Web-Asp-Net, Web-Net-Ext, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Http-Logging, Web-Log-Libraries, Web-Request-Monitor, Web-Http-Tracing, Web-Basic-Auth, Web-Windows-Auth, Web-Client-Auth, Web-Filtering, Web-Stat-Compression, Web-Dyn-Compression, NET-Framework-45-Core, NET-WCF-HTTP-Activation45, Web-Asp-Net45, Web-Mgmt-Tools, Web-Scripting-Tools, Web-Mgmt-Console, Web-Mgmt-Compat, Windows-Identity-Foundation, Server-Media-Foundation, BITS -Source D:\sources\sxs
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows Server 2012 的新增内容是 –Source 参数，该参数用来定义可找到 Windows Server 2012 源媒体的位置。该媒体可以定义为 DVD 驱动器（例如，D:\Sources\Sxs）或已复制媒体文件的网络共享（例如，\\fileserver\windows2012\sources\Sxs）。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Windows Server 2012 的新增内容是 –Source 参数，该参数用来定义可找到 Windows Server 2012 源媒体的位置。该媒体可以定义为 DVD 驱动器（例如，D:\Sources\Sxs）或已复制媒体文件的网络共享（例如，\\fileserver\windows2012\sources\Sxs）。
 
 
 ## 另请参阅

@@ -49,18 +49,8 @@ _**上一次修改主题：** 2013-11-25_
 
 4.  在“正在执行命令”页上，将 SQL Server Express 作为中央管理服务器进行安装。创建必需的防火墙规则。安装数据库和必备软件后，单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>初始安装可能要花费一些时间，这期间命令输出摘要屏幕上不显示更新。这是由 SQL Server Express 安装所导致的。如果需要监视数据库安装，请使用任务管理器监视安装过程。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 初始安装可能要花费一些时间，这期间命令输出摘要屏幕上不显示更新。这是由 SQL Server Express 安装所导致的。如果需要监视数据库安装，请使用任务管理器监视安装过程。
 
 
 5.  若要在 Lync Server 2013 Standard Edition 前端服务器上创建新的 中央管理存储，请在 Lync Server 命令行管理程序中键入：
@@ -79,18 +69,8 @@ _**上一次修改主题：** 2013-11-25_
     
         Enable-CsTopology
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 <code>Enable-CsTopology</code> 未成功，请首先解决妨碍该命令完成的问题，然后再继续。如果 <strong>Enable-CsTopology</strong> 未成功，移动将失败，这可能会使拓扑处于无 中央管理存储的状态。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果 <code>Enable-CsTopology</code> 未成功，请首先解决妨碍该命令完成的问题，然后再继续。如果 <strong>Enable-CsTopology</strong> 未成功，移动将失败，这可能会使拓扑处于无 中央管理存储的状态。
 
 
 4.  在 Lync Server 2013前端服务器或 前端池中，在 Lync Server 命令行管理程序中键入：
@@ -115,18 +95,8 @@ _**上一次修改主题：** 2013-11-25_
     
         Get-CsManagementStoreReplicationStatus
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>复制可能需要一段时间来更新当前所有副本。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 复制可能需要一段时间来更新当前所有副本。
 
 
 ## 在移动后移除 Lync Server 2010中央管理存储文件
@@ -135,18 +105,8 @@ _**上一次修改主题：** 2013-11-25_
 
 2.  打开 Lync Server 命令行管理程序
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在复制完成和系统稳定之前，不要继续删除以前的数据库文件。如果在完成复制之前删除这些文件，将会中断复制过程并导致新移动的 中央管理服务器处于未知状态。可使用 cmdlet <strong>Get-CsManagementStoreReplicationStatus</strong> 确认复制状态。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 在复制完成和系统稳定之前，不要继续删除以前的数据库文件。如果在完成复制之前删除这些文件，将会中断复制过程并导致新移动的 中央管理服务器处于未知状态。可使用 cmdlet <strong>Get-CsManagementStoreReplicationStatus</strong> 确认复制状态。
 
 
 3.  若要从 Lync Server 2010中央管理服务器中移除 中央管理存储数据库文件，请键入：
