@@ -139,14 +139,16 @@ _**上一次修改主题：** 2016-12-08_
 <tr class="even">
 <td><p>配置 Lync Server 2013 拨号计划。</p></td>
 <td><p>如果要与 Exchange 2007 SP1 或最新的 Service Pack 或者 Exchange 2010 集成，请创建名称与 Exchange UM 拨号计划完全限定的域名 (FQDN) 匹配的新 企业语音拨号计划。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 您需要对每个 UM 拨号计划执行此操作。
 
 
 </div>
 <p>如果要与 Exchange 2010 SP1 集成，请确保已配置合适的全局/站点级别或池级别的 企业语音拨号计划。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 如果要与 Exchange 2010 SP1 集成， Lync Server 拨号计划和 Exchange UM SIP 拨号计划的名称则不需要匹配。
 
@@ -164,12 +166,14 @@ _**上一次修改主题：** 2016-12-08_
 </ul>
 <p>此工具的工作方式是，扫描 Active Directory 中的 Exchange UM 设置并允许 Lync Server 2013 管理员查看、创建和编辑联系对象。</p></td>
 <td><p>RTCUniversalServerAdmins <em>和</em> RTCUniversalUserAdmins</p>
-<div class="alert">
+<div>
+
 > [!IMPORTANT]
 > 要成功运行 ocsumutil.exe，用户必须同时属于这两个组。
 
 </div>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 要创建联系对象，运行 ocsumutil.exe 的用户必须对存储新联系对象的 Active Directory 组织单位 (OU) 具有正确的权限。可以通过运行 <strong>Grant-CsOUPermission</strong> cmdlet 授予此权限。有关详细信息，请参阅 Lync Server 命令行管理程序文档。
 

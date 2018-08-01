@@ -58,7 +58,8 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>若要使用 Microsoft Exchange 集成（使用 Exchange 2013 为部分或所有用户进行存档存储），您需要一个现有 Exchange 2013 部署。</p></li>
 <li><p>若要使用单独的存档数据库（使用 SQL Server 数据库）为部分或所有用户进行存档存储，需要将存储存档数据的服务器上的 SQL Server。</p></li>
 </ul>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 存档在企业池的前端服务器和 Standard Edition 服务器上运行。除了需要安装这些服务器外，没有额外的软硬件要求。
 

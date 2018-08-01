@@ -80,7 +80,8 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>为托管 Exchange UM 创建订阅者访问联系人对象。</p></li>
 </ol></td>
 <td><p>RTCUniversalUserAdmins</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 要创建、修改或删除联系人对象，运行 New-CsExUmContact、Set-CsExUmContact 或 Remove-CsExUmContact cmdlet 的用户必须对存储新联系人对象的 Active Directory 组织单位具有相应的权限。可以通过运行 Grant-CsOUPermission cmdlet 授予此权限。有关详细信息，请参阅 Lync Server 命令行管理程序文档。
 

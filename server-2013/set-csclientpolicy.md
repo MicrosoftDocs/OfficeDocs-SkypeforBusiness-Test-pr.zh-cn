@@ -259,7 +259,8 @@ Get-CsAdminRole | Where-Object {$\_.Cmdlets –match "Set-CsClientPolicy"}
 <td><p><em>DisableOneNote12Integration</em></p></td>
 <td><p>Optional</p></td>
 <td><p>System.Boolean</p></td>
-<td><div class="alert">
+<td><div>
+
 > [!NOTE]  
 > This setting applies to the Lync 2010 Client only. Lync 2013 or higher clients do not implement this setting. To disable Shared Notes in conference, refer to <a href="set-csconferencingpolicy.md">Set-CsConferencingPolicy</a> parameter AllowSharedNotes.
 

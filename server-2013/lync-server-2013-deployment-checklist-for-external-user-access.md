@@ -67,7 +67,8 @@ Microsoft Lync Server 2013 所含工具可同时简化内部服务器和边缘�
 </ul>
 <p></p></td>
 <td><p><strong>Domain Admins</strong> 组和 <strong>RTCUniversalServerAdmins</strong> 或 <strong>CsAdmins</strong> 组</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 可以使用本地 Users 组成员的帐户定义拓扑，但发布拓扑需要使用 <strong>Domain Admins</strong> 组和 <strong>RTCUniversalServerAdmins</strong> 组成员的帐户。
 

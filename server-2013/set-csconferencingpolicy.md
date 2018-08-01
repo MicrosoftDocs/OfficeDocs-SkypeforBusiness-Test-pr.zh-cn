@@ -339,7 +339,8 @@ Get-CsAdminRole | Where-Object {$\_.Cmdlets –match "Set-CsConferencingPolicy"}
 <td><p>Optional</p></td>
 <td><p>System.UInt32</p></td>
 <td><p>Indicates the maximum number of people who are allowed to attend a meeting. After the maximum number of participants has been reached anyone else who tries to join the meeting will be turned away with the notice that the meeting is full. The number of participants specified in this value can be any 32-bit whole number (any value between 1 and 4,294,967,295), but the recommended size is between 2 and 250, inclusive; the default value is 250.</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 250 is the maximum for shared pool deployments, based on Microsoft testing. For information about supporting meeting with more than 250 participants, see &quot;Microsoft Lync Server 2010 Support for Large Meetings&quot; at <a href="https://go.microsoft.com/fwlink/p/?linkid=242073">https://go.microsoft.com/fwlink/p/?linkId=242073</a>.
 

@@ -189,7 +189,8 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="odd">
 <td><p>Exchange Server 2013</p></td>
 <td><p>与 Exchange Server 2010 支持相同，增加了统一联系人存储、高分辨率图片以及存档集成。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 有关详细信息，请参阅<a href="lync-server-2013-integrating-with-microsoft-exchange-server-2013.md">集成 Microsoft Lync Server 2013 和 Microsoft Exchange Server 2013</a>。
 

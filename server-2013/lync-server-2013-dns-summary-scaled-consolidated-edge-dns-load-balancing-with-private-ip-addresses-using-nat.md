@@ -151,7 +151,8 @@ _**上一次修改主题：** 2017-03-09_
 <td><p>_sipfederationtls._tcp.contoso.com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>其他潜在联盟伙伴通过自动 DNS 发现技术发现您的联盟所需的 SIP 访问边缘外部接口（称为“允许的 SIP 域”，在以前版本中称为增强联盟）。根据需要对包含已启用 Lync 的用户的所有 SIP 域重复</p>
-<div class="alert">
+<div>
+
 > [!IMPORTANT]
 > 此 SRV 记录是移动性和推送通知交换所必需的
 

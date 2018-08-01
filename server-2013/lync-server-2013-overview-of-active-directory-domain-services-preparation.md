@@ -43,7 +43,8 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>通过添加 Lync Server 所使用的新类和属性，扩展 Active Directory 架构。</p>
 <p>为部署中将部署 Lync Server 的每个林运行一次。</p></td>
 <td><p>针对将部署 Lync Server 的每个林的根域中的架构主机。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 如果在架构主机上具有权限，则无需在根域中执行此步骤，但必须是根域中 Schema Admins 组的成员，并且是架构主机上 Enterprise Admins 组的成员。在资源林拓扑中，仅在资源林中执行此步骤，而不必在任何用户林中执行。在中央林拓扑中，仅在中央林中执行此步骤，而不必在任何用户林中执行。
 
@@ -56,7 +57,8 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>创建 Lync Server 所使用的全局设置和通用组。</p>
 <p>为部署中将部署 Lync Server 的每个林运行一次。</p></td>
 <td><p>在将部署 Lync Server 的每个林的根域中。您必须是 Enterprise Admins 组的成员才能执行此步骤。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 在资源林拓扑中，仅在资源林中执行此步骤，而不必在任何用户林中执行。在中央林拓扑中，仅在中央林中执行此步骤，而不必在任何用户林中执行。
 
@@ -68,7 +70,8 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><a href="lync-server-2013-preparing-domains.md">为 Lync Server 2013 准备域</a></p></td>
 <td><p>添加对通用组成员所要使用的对象的权限。</p>
 <p>为每个用户域或服务器域运行一次。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 如果是从 Lync Server 2010 迁移到 Lync Server 2013，部署向导可能指示域准备已经完成。无需再次运行域准备。未将 Lync Server 2010 权限更改为 Lync Server 2013。
 

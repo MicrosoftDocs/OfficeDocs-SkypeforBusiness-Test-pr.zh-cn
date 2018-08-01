@@ -56,7 +56,8 @@ _**上一次修改主题：** 2016-12-08_
 <td><p></p></td>
 <td><p>准备 Active Directory 同步</p></td>
 <td><p>Active Directory 同步使您的内部部署 Active Directory 与 Office 365 保持连续同步。这样，您可以创建每个用户帐户和组的同步版本，同时实现从您的本地 Microsoft Exchange Server 环境到 Microsoft Exchange Online 的全局地址列表 (GAL) 同步。</p>
-<div class="alert">
+<div>
+
 > [!IMPORTANT]
 > 您需要在本地 Lync 部署与联机 Lync 部署之间同步组织内所有 Lync 用户的 AD 帐户，即便用户未迁移到 Lync Online 也是如此。如果未能同步所有用户，组织内本地用户与联机用户之间的通信将出现问题。
 

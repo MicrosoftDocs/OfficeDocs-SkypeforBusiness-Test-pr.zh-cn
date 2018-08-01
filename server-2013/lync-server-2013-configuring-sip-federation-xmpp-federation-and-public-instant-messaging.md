@@ -79,7 +79,8 @@ XMPP 联盟基于可扩展消息传递和状态协议定义外部部署。利用
 <td><p>确定要添加到现有边缘部署的选项</p></td>
 <td><p>运行 拓扑生成器以编辑边缘服务器设置并创建和发布拓扑。现有边缘拓扑会将 中央管理存储中的更改复制到边缘服务器。</p></td>
 <td><p>Domain Admins 组和 RTCUniversalServerAdmins 组</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 可以使用属于本地用户组成员的帐户来编辑拓扑，但发布拓扑需要属于 Domain Admins 组和 RTCUniversalServerAdmins 组的成员的帐户。
 

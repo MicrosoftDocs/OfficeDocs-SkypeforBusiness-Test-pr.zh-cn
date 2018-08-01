@@ -43,7 +43,8 @@ _**上一次修改主题：** 2016-12-08_
 <td><p>使用者替代名称</p></td>
 <td><p>池 FQDN</p></td>
 <td><p>webext.contoso.com</p>
-<div class="alert">
+<div>
+
 > [!IMPORTANT]
 > 使用者名称还必须存在于使用者替代名称中。
 
@@ -57,7 +58,8 @@ _**上一次修改主题：** 2016-12-08_
 <tr class="even">
 <td><p>使用者替代名称</p></td>
 <td><p>会议简单 URL</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 所有会议简单 URL 都必须位于使用者替代名称中。每个 SIP 域必须至少有一个活动会议简单 URL。
 
@@ -79,7 +81,8 @@ _**上一次修改主题：** 2016-12-08_
 <td><p>使用者替代名称</p></td>
 <td><p>外部自动发现服务 URL</p></td>
 <td><p>lyncdiscover.contoso.com</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 如果您在使用 Microsoft Exchange Server，则也需要为 Exchange 自动发现和 Web 服务 URL 配置反向代理规则。
 

@@ -152,7 +152,8 @@ _**上一次修改主题：** 2017-03-09_
 <td><p>_sipfederationtls._tcp.contoso.com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>SIP 访问边缘服务外部接口。用于实现称为“允许的 SIP 域”的联盟（在之前的版本中称为“增强联盟”）对其他潜在联盟伙伴的自动 DNS 发现。</p>
-<div class="alert">
+<div>
+
 > [!IMPORTANT]
 > 根据需要对包含启用了 Lync 的用户和使用 推送通知服务或 Apple 推送通知服务的 Microsoft Lync Mobile 客户端的所有 SIP 域重复
 

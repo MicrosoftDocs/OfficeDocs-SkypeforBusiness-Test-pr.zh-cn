@@ -48,7 +48,8 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>运行 拓扑生成器以配置拓扑。配置拓扑时，请选择电话拨入式会议选项。</p></li>
 <li><p>发布拓扑并部署 前端池或 Standard Edition Server。</p></li>
 <li><p>如有必要，创建独立的 中介服务器并将其与 PSTN 网关相关联。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 仅当您没有部署 企业语音且没有将 中介服务器与 企业版前端服务器或 Standard Edition Server 并置时，才需要执行此步骤。如果部署了企业语音，则在企业语音部署过程中安装并配置中介服务器和 PSTN 网关。如果并置中介服务器，则在前端池或 Standard Edition Server 部署过程中安装并配置中介服务器。
 
@@ -110,7 +111,8 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="even">
 <td><p><strong>配置拨入访问号码</strong></p></td>
 <td><p>使用 Lync Server 2013 控制面板或 Lync Server 命令行管理程序设置拨入访问号码，用户通过呼叫该号码来拨入会议，并指定区域以将访问号码与相应的拨号计划相关联。组织者拨号计划指定的区域的前三个访问号码包含在会议邀请中。 电话拨入式会议设置页上提供了所有访问号码。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 创建拨入访问号码后，可以使用 <strong>Set-CsDialInConferencingAccessNumber</strong> cmdlet 修改 Active Directory 联系人对象的显示名称，以便用户可以更加轻松地识别正确的访问号码。
 
