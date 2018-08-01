@@ -21,18 +21,8 @@ _**上一次修改主题：** 2016-12-08_
 
 Lync Server 控制面板需要安装 Microsoft Silverlight 浏览器插件 4.0.50524.0 版或更新版本。如果未安装 Silverlight 或者安装了早期版本，请按照消息中的说明进行操作来安装所需的版本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>与可在其上安装 Lync Server 控制面板和所有其他 Lync Server 控制面板管理工具的操作系统有关的 Lync Server 2013的其他软件要求。有关详细信息，请参阅可支持性文档中的<a href="lync-server-2013-server-and-tools-operating-system-support.md">Lync Server 2013 中的服务器和工具操作系统支持</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 与可在其上安装 Lync Server 控制面板和所有其他 Lync Server 控制面板管理工具的操作系统有关的 Lync Server 2013的其他软件要求。有关详细信息，请参阅可支持性文档中的<a href="lync-server-2013-server-and-tools-operating-system-support.md">Lync Server 2013 中的服务器和工具操作系统支持</a>。
 
 
 如果 Internet 浏览器因安全注意事项而阻止安装 Silverlight，请将打开 Lync Server 控制面板的统一资源定位器 (URL) 添加到受信任网站的列表。在 Internet Explorer 安全设置中，确保“运行 ActiveX 控件和插件”设置为“已启用”。有关详细信息，请参阅 [http://go.microsoft.com/fwlink/?linkid=214060\&clcid=0x804](http://go.microsoft.com/fwlink/?linkid=214060%26clcid=0x804)。此外，请确保浏览器配置为使用 SSL 3.0。
@@ -51,18 +41,8 @@ Lync Server 控制面板需要安装 Microsoft Silverlight 浏览器插件 4.0.5
 
 有关配置管理访问 URL 的分步过程，请参阅部署文档中的[在 Lync Server 2013 中编辑或配置简单 URL](lync-server-2013-edit-or-configure-simple-urls.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果 Web 服务器上有多个网络适配器，则必须为每个额外的网络适配器手动配置 DNS 以便 DNS 解析正常运行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果 Web 服务器上有多个网络适配器，则必须为每个额外的网络适配器手动配置 DNS 以便 DNS 解析正常运行。
 
 
 ## Internet Information Services (IIS) 要求

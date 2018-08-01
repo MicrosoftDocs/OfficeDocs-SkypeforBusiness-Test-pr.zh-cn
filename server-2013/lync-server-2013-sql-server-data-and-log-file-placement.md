@@ -17,18 +17,8 @@ _**上一次修改主题：** 2015-03-09_
 
 在为 Lync Server 2013  前端池规划和部署 Microsoft SQL Server 2012 或 Microsoft SQL Server 2008 R2 SP1 的过程中，一个重要的注意事项是向物理硬盘中放置数据和日志文件以提高性能。推荐的磁盘配置是使用 6 个轴实现 1+0 RAID 集。使用 Lync Server 部署向导将 前端池及关联的服务器角色和服务（即， 存档和监控服务器、 Lync Server 响应组服务、 Lync Server 呼叫寄存服务）使用的所有数据库和日志文件放置到 RAID 驱动器集上将生成经测试可实现良好性能的配置。下表详细介绍了这些数据库文件以及它们负责的内容。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的策略和 SQL Server 配置需要更专业的安装，可以使用 Lync Server 命令行管理程序将数据库和日志文件安装到任何预定义位置。有关更多详细信息，请参阅 <a href="lync-server-2013-database-installation-using-lync-server-management-shell.md">在 Lync Server 2013 中使用 Lync Server 命令行管理程序安装数据库</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您的策略和 SQL Server 配置需要更专业的安装，可以使用 Lync Server 命令行管理程序将数据库和日志文件安装到任何预定义位置。有关更多详细信息，请参阅 <a href="lync-server-2013-database-installation-using-lync-server-management-shell.md">在 Lync Server 2013 中使用 Lync Server 命令行管理程序安装数据库</a>。
 
 
 ### 中央管理存储的数据和日志文件

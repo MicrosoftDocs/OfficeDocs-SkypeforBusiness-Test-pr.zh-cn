@@ -153,7 +153,7 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
     
       - Office Web Apps 服务器 URL：officewebapps01.contoso.com
         
-        >  [!IMPORTANT]  
+        > [!IMPORTANT]  
         > Office Web Apps Server 的 URL 将使用不同的 httpsPort 地址。在步骤 7 中，您将“httpsPort”定义为“443”，并将“httpPort”定义为端口“80”。所有其他配置设置相同。
 
 

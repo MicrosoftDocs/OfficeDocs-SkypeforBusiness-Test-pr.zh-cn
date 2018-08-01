@@ -17,47 +17,19 @@ _**上一次修改主题：** 2012-10-07_
 
 如果您需要回滚统一联系人存储功能，则只有在将用户移回至 Exchange 2010 或 Lync Server 2010 时才能回滚联系人。要进行回滚，请针对用户禁用该策略，然后运行 **Invoke-CsUcsRollback** cmdlet。只是单独运行 **Invoke-CsUcsRollback** 并不足以确保永久回滚，因为如果未禁用该策略，统一联系人存储迁移将再次发生。例如，如果用户回滚是因 Exchange 2013 回滚到 Exchange 2010 产生的，且用户邮箱移动到 Exchange 2013，则只要统一联系人存储对于用户服务策略中的用户而言仍处于启用状态，统一联系人存储迁移就会回滚后的七天内再次发生。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在以下情况下， <strong>Move-CsUser</strong> cmdlet 会将用户的联系人存储从 Exchange 2013 自动回滚到 Lync Server 2013：
-<ul>
-<li><p>当用户从 Lync Server 2013 移动到 Lync Server 2010 时。</p></li>
-<li><p>当用户交叉迁移时，如用户在内部从 Skype for Business Online 移动到 Lync Server 2013（反之亦然）时。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在以下情况下， <strong>Move-CsUser</strong> cmdlet 会将用户的联系人存储从 Exchange 2013 自动回滚到 Lync Server 2013：
+> <ul>
+> <li><p>当用户从 Lync Server 2013 移动到 Lync Server 2010 时。</p></li>
+> <li><p>当用户交叉迁移时，如用户在内部从 Skype for Business Online 移动到 Lync Server 2013（反之亦然）时。</p></li>
+> </ul>
 
-
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果统一联系人存储模式在导出和导入之间发生更改，则从备份数据库中导入统一联系人存储数据，可能导致统一联系人存储数据和用户数据发生损坏。例如：
-<ul>
-<li><p>如果您在用户的联系人迁移到 Exchange 2013 之前导出联系人列表，然后在迁移之后再导入相同的数据，则统一联系人存储数据和联系人列表将发生损坏。</p></li>
-<li><p>如果您在将用户迁移到 Exchange 2013 之后导出用户数据，回滚迁移，然后由于某种原因在迁移之后再导入该数据，则统一联系人存储数据和联系人列表将发生损坏。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> 如果统一联系人存储模式在导出和导入之间发生更改，则从备份数据库中导入统一联系人存储数据，可能导致统一联系人存储数据和用户数据发生损坏。例如：
+> <ul>
+> <li><p>如果您在用户的联系人迁移到 Exchange 2013 之前导出联系人列表，然后在迁移之后再导入相同的数据，则统一联系人存储数据和联系人列表将发生损坏。</p></li>
+> <li><p>如果您在将用户迁移到 Exchange 2013 之后导出用户数据，回滚迁移，然后由于某种原因在迁移之后再导入该数据，则统一联系人存储数据和联系人列表将发生损坏。</p></li>
+> </ul>
 
 > [!IMPORTANT]
 > 在将 Exchange 邮箱从 Exchange 2013 移动到 Exchange 2010 之前， Exchange 管理员必须确保 Lync Server 管理员已先将 Lync Server 用户联系人从 Exchange 2013 回滚到 Lync Server。要将统一联系人存储联系人回滚到 Lync Server，请参阅本节后面的“将统一联系人存储联系人从 Exchange 2013 回滚到 Lync Server 2013”。

@@ -27,18 +27,8 @@ Lync Server 2013 的技术要求如下：
 
   - 存档数据库的性能要求和注意事项。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本 Lync Server 2013 版本中未提供缩放和性能信息。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本 Lync Server 2013 版本中未提供缩放和性能信息。
 
 
 ## 基础结构要求

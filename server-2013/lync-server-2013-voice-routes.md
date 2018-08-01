@@ -63,18 +63,8 @@ Lync Server 在如何将呼叫路由到 PSTN 方面提供了灵活性。语音�
 
 Lync Server 提供了一种处理出站呼叫的呼叫者 ID 的方法。例如，如果组织要掩盖员工的直拨分机号，并将其替换为常规企业或部门的号码，管理员现在可以使用 Lync Server 控制面板隐藏呼叫者 ID 并将其替换为指定的备用呼叫者 ID。在规划路由逻辑时，请考虑您希望此选项面向哪些个人、组或站点—甚至也许面向所有员工。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于通过 PSTN 重新路由的呼叫，将显示常规呼叫者 ID，而不是原始呼叫者 ID。这可能会导致呼叫绕过被叫方可能已配置的“请勿打扰”或隐私设置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 对于通过 PSTN 重新路由的呼叫，将显示常规呼叫者 ID，而不是原始呼叫者 ID。这可能会导致呼叫绕过被叫方可能已配置的“请勿打扰”或隐私设置。
 
 
 ## 其他路由逻辑

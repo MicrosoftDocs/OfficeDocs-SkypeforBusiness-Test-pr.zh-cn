@@ -19,34 +19,15 @@ _**上一次修改主题：** 2013-02-17_
 
 为支持移动设备上的 Lync 移动应用程序，Lync Server 2013 提供了三项服务： Lync Server 2013 Mcx Mobility Service、 Lync Server 2013 自动发现服务以及 Lync Server 2013 推送通知服务。2013 年 2 月版 Lync Server 2013 累积更新增加了一项免费的高级服务 Lync 2013 Mobile 客户端，该服务通过统一通信 Web API 或 UCWA 提供移动支持。本节简要介绍这些组件并确定支持移动性的 Lync Server 2013 拓扑。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>混合部署中也提供了移动服务。如果您的用户驻留在联机部署中，则无需部署用于支持移动性的服务。您无需为自动发现服务定义设置，即可允许移动用户查找他们的联机标识。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 混合部署中也提供了移动服务。如果您的用户驻留在联机部署中，则无需部署用于支持移动性的服务。您无需为自动发现服务定义设置，即可允许移动用户查找他们的联机标识。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您正在规划任何外部用户连接（例如，联盟、外部用户访问或移动功能），则必须将 边缘服务器与 Standard Edition Server以及 前端服务器或 前端池结合使用。 Standard Edition Server 和 前端服务器或 前端池不需要任何必需组件，即可允许外部用户访问您的内部部署，或者允许内部部署与您的外部用户进行通信。对于包括与内部用户进行协作或通信的外部用户的所有方案（包括移动性），您必须至少部署一个 边缘服务器和一个反向代理。<br />
-<em>推送通知</em> 使用一种与 Lync Online 服务的联盟，以承载推送通知交换所 (PNCH)。当移动设备处于非活动状态时，推送通知是指声音提醒、屏幕上的通知（文本），以及由应用程序推送到 Apple iPhone、iPad 和 Windows Phone 的徽章。PNCH 会接收来自 Lync Server 的推送通知。当 PNCH 收到消息通知时，它将根据消息所针对的移动客户端，通过 Apple 推送通知服务或 Lync Server 2013 推送通知服务将通知转发到移动客户端。PNCH 对于这些移动客户端而言是一项必需服务。为了与 Lync Online 联盟，PNCH 会使用 边缘服务器和证书，以确保保密性和身份验证、策略，以及正确配置的域名系统 (DNS) 记录。基于 Nokia Symbian 和 Android 的 Lync Mobile 客户端不使用 PNCH。有关规划和部署 边缘服务器的详细信息，请参阅 <a href="lync-server-2013-planning-for-external-user-access.md">在 Lync Server 2013 中规划外部用户访问</a>和 <a href="lync-server-2013-deploying-external-user-access.md">在 Lync Server 2013 中部署外部用户访问</a>。<br />
-随 2013 年 2 月版 Lync Server 2013 累积更新引入的、适用于 Apple 设备的 Lync 2013 Mobile 客户端不再使用推送通知或推送通知交换所 (PNCH)。但 Windows Phone 上的 Lync 2013 Mobile 客户端仍使用推送通知和 PNCH。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您正在规划任何外部用户连接（例如，联盟、外部用户访问或移动功能），则必须将 边缘服务器与 Standard Edition Server以及 前端服务器或 前端池结合使用。 Standard Edition Server 和 前端服务器或 前端池不需要任何必需组件，即可允许外部用户访问您的内部部署，或者允许内部部署与您的外部用户进行通信。对于包括与内部用户进行协作或通信的外部用户的所有方案（包括移动性），您必须至少部署一个 边缘服务器和一个反向代理。<br />
+> <em>推送通知</em> 使用一种与 Lync Online 服务的联盟，以承载推送通知交换所 (PNCH)。当移动设备处于非活动状态时，推送通知是指声音提醒、屏幕上的通知（文本），以及由应用程序推送到 Apple iPhone、iPad 和 Windows Phone 的徽章。PNCH 会接收来自 Lync Server 的推送通知。当 PNCH 收到消息通知时，它将根据消息所针对的移动客户端，通过 Apple 推送通知服务或 Lync Server 2013 推送通知服务将通知转发到移动客户端。PNCH 对于这些移动客户端而言是一项必需服务。为了与 Lync Online 联盟，PNCH 会使用 边缘服务器和证书，以确保保密性和身份验证、策略，以及正确配置的域名系统 (DNS) 记录。基于 Nokia Symbian 和 Android 的 Lync Mobile 客户端不使用 PNCH。有关规划和部署 边缘服务器的详细信息，请参阅 <a href="lync-server-2013-planning-for-external-user-access.md">在 Lync Server 2013 中规划外部用户访问</a>和 <a href="lync-server-2013-deploying-external-user-access.md">在 Lync Server 2013 中部署外部用户访问</a>。<br />
+> 随 2013 年 2 月版 Lync Server 2013 累积更新引入的、适用于 Apple 设备的 Lync 2013 Mobile 客户端不再使用推送通知或推送通知交换所 (PNCH)。但 Windows Phone 上的 Lync 2013 Mobile 客户端仍使用推送通知和 PNCH。
+
 
 
 ## 移动组件

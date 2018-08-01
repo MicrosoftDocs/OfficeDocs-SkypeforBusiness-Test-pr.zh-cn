@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
 故障排除 cmdlet 提供了验证 Microsoft Lync Server 2013 是否按预期工作的不同方法。例如，通过 CsHealthMonitoringConfiguration cmdlet，您可以为注册器和控制器池设置测试帐户。然后，可以使用这些测试帐户来验证用户是否能够成功完成常见任务，如登录系统、交换即时消息，或者拨打位于公用电话交换网 (PSTN) 中的电话。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关 cmdlet 的其他信息，请参阅 Lync Server Windows PowerShell 博客，网址为：<a href="http://go.microsoft.com/fwlink/?linkid=263432%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=263432&amp;clcid=0x804</a>。每个博客的内容及其 URL 如有更改，恕不另行通知。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关 cmdlet 的其他信息，请参阅 Lync Server Windows PowerShell 博客，网址为：<a href="http://go.microsoft.com/fwlink/?linkid=263432%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=263432&amp;clcid=0x804</a>。每个博客的内容及其 URL 如有更改，恕不另行通知。
 
 
 ## 服务器角色和服务 Cmdlet

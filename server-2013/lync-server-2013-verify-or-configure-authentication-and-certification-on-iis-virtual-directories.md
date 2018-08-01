@@ -17,18 +17,8 @@ _**上一次修改主题：** 2012-05-25_
 
 使用以下过程可在 Internet Information Services (IIS) 虚拟目录中配置证书或验证是否正确配置了证书。可以对您的内部 Lync Server 池中运行 IIS 的每台服务器以及可选 控制器或 控制器池服务器执行以下过程。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用以下过程定义的步骤可请求用于 IIS 中所有 Lync Server 用途、内部网站和外部网站的组合证书。 Lync Server 2010 引入了一组 Lync Server 命令行管理程序Windows PowerShell cmdlet 来专门管理证书请求、导入和分配。该过程假定存在可以处理该请求的内部部署证书颁发机构 (CA)。如果您使用公共证书实现 Lync Server 用途或者 CA 要求脱机请求，请参阅本主题中的详细语法，以获得有关 –Output 参数的信息。<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Request-CsCertificate">Request-CsCertificate</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 使用以下过程定义的步骤可请求用于 IIS 中所有 Lync Server 用途、内部网站和外部网站的组合证书。 Lync Server 2010 引入了一组 Lync Server 命令行管理程序Windows PowerShell cmdlet 来专门管理证书请求、导入和分配。该过程假定存在可以处理该请求的内部部署证书颁发机构 (CA)。如果您使用公共证书实现 Lync Server 用途或者 CA 要求脱机请求，请参阅本主题中的详细语法，以获得有关 –Output 参数的信息。<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Request-CsCertificate">Request-CsCertificate</a>
 
 
 ## 在 IIS 虚拟目录中配置身份验证和证书

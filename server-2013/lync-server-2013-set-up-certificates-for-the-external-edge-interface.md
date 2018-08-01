@@ -181,18 +181,8 @@ _**上一次修改主题：** 2016-12-08_
     
       - 导出所有扩展属性
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>从边缘服务器导出证书时，请勿选择“如果导出成功，删除私钥”。如果选择此选项，您将需要将证书和私钥导入到此边缘服务器。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!WARNING]  
+		> 从边缘服务器导出证书时，请勿选择“如果导出成功，删除私钥”。如果选择此选项，您将需要将证书和私钥导入到此边缘服务器。
 
 
 10. 单击“下一步”。

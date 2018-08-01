@@ -17,34 +17,14 @@ _**上一次修改主题：** 2012-10-19_
 
 在将您的用户移到 Lync Server 2013 池后，您可以迁移响应组。迁移响应组包括复制代理组、队列、工作流和音频文件，以及将 响应组联系对象从旧版部署移到 Lync Server 2013 池。在迁移旧版响应组后，对响应组的呼叫由 Lync Server 2013 池中的 响应组应用程序处理，而不再由旧版池处理。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然您可以在将所有用户移到 Lync Server 2013 池之前迁移响应组，但我们建议您首先移动所有用户。特别是，作为响应组代理的用户在移到 Lync Server 2013 池之前，将不具有新特性的完整功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 虽然您可以在将所有用户移到 Lync Server 2013 池之前迁移响应组，但我们建议您首先移动所有用户。特别是，作为响应组代理的用户在移到 Lync Server 2013 池之前，将不具有新特性的完整功能。
 
 
 在迁移响应组之前，您必须已部署包括响应组应用程序的 Lync Server 2013 池。响应组应用程序默认情况下在您部署企业语音时进行安装和激活。您可以通过运行 **Get-CsService–ApplicationServer** cmdlet 来确保安装了响应组应用程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在迁移旧版响应组之前，您可以在 Lync Server 2013 池中创建新的 Lync Server 2013 响应组。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在迁移旧版响应组之前，您可以在 Lync Server 2013 池中创建新的 Lync Server 2013 响应组。
 
 
 要将响应组从旧版池迁移到 Lync Server 2013，需要运行 **Move-CsRgsConfiguration** cmdlet。在运行 **Move-CsRgsConfiguration** 之前，您必须先安装 Windows Management Instrumentation (WMI) Backward Compatibility 接口包。可通过运行 OCSWMIBC.msi 来安装此应用程序。OCSWMIBC.msi 位于安装介质上的 Setup 文件夹中。

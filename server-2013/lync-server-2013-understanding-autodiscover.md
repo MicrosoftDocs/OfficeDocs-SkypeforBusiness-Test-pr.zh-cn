@@ -23,32 +23,12 @@ Lync Server 2013 自动发现服务是最初在 Microsoft Lync Server 2010 中�
 
 理解自动发现响应文档（包括 Web 服务如何通过此文档将功能传达到客户端）的最佳方法是从 Lync Web 服务自动发现响应文档中仔细分析和定义典型响应中的每一行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在随后的详细信息中，用户已经通过响应身份验证请求向主服务器进行了身份验证。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在随后的详细信息中，用户已经通过响应身份验证请求向主服务器进行了身份验证。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 自动发现 Web 服务是在 <strong>Microsoft Developer Network</strong> (MSDN) 库的<strong>开放性规范</strong>一节的 <strong>Microsoft Office 协议</strong>中定义的。有关详细信息，请参阅完整的规范文档“Lync 自动发现 Web 服务协议”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=273839" class="uri">http://go.microsoft.com/fwlink/?linkid=273839</a>。有关身份验证的详细信息，请参阅“OC 身份验证 Web 服务协议”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=279015" class="uri">http://go.microsoft.com/fwlink/?linkid=279015</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync 自动发现 Web 服务是在 <strong>Microsoft Developer Network</strong> (MSDN) 库的<strong>开放性规范</strong>一节的 <strong>Microsoft Office 协议</strong>中定义的。有关详细信息，请参阅完整的规范文档“Lync 自动发现 Web 服务协议”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=273839" class="uri">http://go.microsoft.com/fwlink/?linkid=273839</a>。有关身份验证的详细信息，请参阅“OC 身份验证 Web 服务协议”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=279015" class="uri">http://go.microsoft.com/fwlink/?linkid=279015</a>。
 
 
 ## Lync Server Web 服务自动发现响应

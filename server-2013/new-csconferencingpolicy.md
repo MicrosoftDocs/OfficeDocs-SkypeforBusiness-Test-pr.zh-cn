@@ -329,18 +329,8 @@ Get-CsAdminRole | Where-Object {$\_.Cmdlets –match "New-CsConferencingPolicy"}
 <td><p>System.UInt32</p></td>
 <td><p>Indicates the maximum number of people who are allowed to attend a meeting. After the maximum number of participants has been reached, anyone else who tries to join the meeting will be turned away with the notice that the meeting is full. The number of participants specified in this value can be any 32-bit whole number (any value between 1 and 4,294,967,295), but the recommended size is between 2 and 250, inclusive; the default value is 250.</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>250 is the maximum for shared pool deployments, based on Microsoft testing. For information about supporting meeting with more than 250 participants, see &quot;Microsoft Lync Server 2010 Support for Large Meetings&quot; at <a href="https://go.microsoft.com/fwlink/p/?linkid=242073">https://go.microsoft.com/fwlink/p/?linkId=242073</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 250 is the maximum for shared pool deployments, based on Microsoft testing. For information about supporting meeting with more than 250 participants, see &quot;Microsoft Lync Server 2010 Support for Large Meetings&quot; at <a href="https://go.microsoft.com/fwlink/p/?linkid=242073">https://go.microsoft.com/fwlink/p/?linkId=242073</a>.
 
 </div>
 <p>This setting applies to the user who organizes the conference: no conference created by a user affected by this policy will allow more than the specified number of participants. However, the user can take part in other conferences where additional participants are allowed.</p></td>

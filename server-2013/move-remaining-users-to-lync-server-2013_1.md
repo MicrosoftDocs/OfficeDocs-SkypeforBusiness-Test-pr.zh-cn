@@ -31,18 +31,8 @@ _**上一次修改主题：** 2012-09-26_
 > 这包括由旧用户创建的活动会议。例如，如果旧用户在“我的会议”中配置了一个会议，那么移动用户后，该会议在新 Lync Server 2013 池中仍然有效。访问该会议时仍要使用相同的 <strong>会议 URL 和会议 ID</strong>。唯一的区别是会议现在托管在 Lync Server 2013 池中，而不是 Office Communications Server 2007 R2 池中。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 上驻留用户不需要同时部署升级的客户端。仅在升级到新客户端软件后，用户才能使用新功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 上驻留用户不需要同时部署升级的客户端。仅在升级到新客户端软件后，用户才能使用新功能。
 
 
 ## 迁移后任务

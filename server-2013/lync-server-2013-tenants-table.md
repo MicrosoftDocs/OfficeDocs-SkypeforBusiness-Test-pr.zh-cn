@@ -17,18 +17,8 @@ _**上一次修改主题：** 2015-03-09_
 
 Tenants 表是一个支持表，用于存储各个租户的列表。表中的每条记录分别表示一个租户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在本地部署中，CDR 使用内置租户 ID 指示不同的身份验证类型，例如公共 IM 连接、联盟和匿名。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在本地部署中，CDR 使用内置租户 ID 指示不同的身份验证类型，例如公共 IM 连接、联盟和匿名。
 
 
 

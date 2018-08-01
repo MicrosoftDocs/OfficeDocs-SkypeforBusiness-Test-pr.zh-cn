@@ -47,19 +47,9 @@ Lync Server 2013 控制器可以是单实例服务器，也可以安装为多个
     
     2.  要创建新的文件共享，请单击“定义新的文件共享”，在“文件服务器 FQDN”中键入文件共享位置的 FQDN，在“文件共享”中键入共享的名称，然后单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在发布拓扑前，此步骤中指定或创建的文件共享必须已存在或已创建。<br />
-    实际上未使用分配给控制器的文件共享，因此可以分配组织中任何池的文件共享。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在发布拓扑前，此步骤中指定或创建的文件共享必须已存在或已创建。<br />
+    > 实际上未使用分配给控制器的文件共享，因此可以分配组织中任何池的文件共享。
 
 
 7.  在“指定 Web 服务 URL”对话框的“外部基 URL”中，指定控制器的 FQDN，然后单击“完成”。
@@ -101,19 +91,9 @@ Lync Server 2013 控制器可以是单实例服务器，也可以安装为多个
     
       - 要创建新的文件共享，请单击“定义新的文件共享”，在“文件服务器 FQDN”中键入文件共享位置的 FQDN，在“文件共享”中键入共享的名称，然后单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在发布拓扑前，此步骤中指定或创建的文件共享必须已存在或已创建。<br />
-    实际上未使用分配给控制器的文件共享，因此可以分配组织中任何池的文件共享。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在发布拓扑前，此步骤中指定或创建的文件共享必须已存在或已创建。<br />
+    > 实际上未使用分配给控制器的文件共享，因此可以分配组织中任何池的文件共享。
 
 
 8.  在“指定 Web 服务 URL”对话框的“外部基 URL”中，指定控制器的 FQDN，然后单击“完成”。

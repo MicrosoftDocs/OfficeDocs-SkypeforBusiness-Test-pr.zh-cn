@@ -21,18 +21,8 @@ _**上一次修改主题：** 2012-10-19_
 
   - 将其添加到统一消息智能寻线。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要使用 <strong>Get-CsExUmContact</strong> 和 <strong>Move-CsExUmContact</strong> cmdlet，您必须是 RTCUniversalUserAdmins 组的成员，并且拥有存储联系对象的组织单位 (OU) 的 OU 权限。可以使用 <strong>Grant-OUPermission</strong> cmdlet 授予 OU 权限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要使用 <strong>Get-CsExUmContact</strong> 和 <strong>Move-CsExUmContact</strong> cmdlet，您必须是 RTCUniversalUserAdmins 组的成员，并且拥有存储联系对象的组织单位 (OU) 的 OU 权限。可以使用 <strong>Grant-OUPermission</strong> cmdlet 授予 OU 权限。
 
 
 ## 使用 Lync Server 命令行管理程序移动联系对象

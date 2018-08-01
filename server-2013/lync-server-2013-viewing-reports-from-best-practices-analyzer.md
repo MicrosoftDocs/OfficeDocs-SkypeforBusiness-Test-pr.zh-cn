@@ -45,33 +45,13 @@ _**上一次修改主题：** 2012-09-21_
     
       - 若要从本地存储的扫描结果列表中查看报告，请单击扫描的名称，然后单击“查看该扫描的报告”。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>最佳做法分析器从文件夹 <em>&lt;systemDrive&gt;</em>\Documents and Settings\<em>&lt;user&gt;</em>\Application Data\Microsoft\RtcBPA 中创建本地文件的列表。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 最佳做法分析器从文件夹 <em>&lt;systemDrive&gt;</em>\Documents and Settings\<em>&lt;user&gt;</em>\Application Data\Microsoft\RtcBPA 中创建本地文件的列表。
     
       - 若要查看存储在另一个位置的扫描结果报告，请单击“导入扫描”，找到包含扫描结果的文件，然后单击“打开”。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果此计算机上的最佳做法分析器的版本与已用来收集导入文件中的数据的版本不匹配，则计算机上的工具可能会在此文件导入后再次对其进行分析。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 如果此计算机上的最佳做法分析器的版本与已用来收集导入文件中的数据的版本不匹配，则计算机上的工具可能会在此文件导入后再次对其进行分析。
 
 
 5.  在“查看最佳实践报告”页上，执行下列操作之一：

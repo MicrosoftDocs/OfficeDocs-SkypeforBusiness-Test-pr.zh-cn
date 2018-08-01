@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
 Microsoft Lync 2013 具有重新设计的用户界面和重要的新增功能。对于管理员而言，现在客户端包含在 Office 安装程序中，提供了更简单的在组织内部署 Office 和自定义客户端的方法。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关 Lync 2013 用户界面更新的说明视图，请参阅位于 <a href="http://go.microsoft.com/fwlink/?linkid=273885" class="uri">http://go.microsoft.com/fwlink/?linkid=273885</a> 上的“Lync 2013 中的新增功能”。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关 Lync 2013 用户界面更新的说明视图，请参阅位于 <a href="http://go.microsoft.com/fwlink/?linkid=273885" class="uri">http://go.microsoft.com/fwlink/?linkid=273885</a> 上的“Lync 2013 中的新增功能”。
 
 
 ## 与 Office 安装程序的集成
@@ -43,18 +33,8 @@ Lync 2013 客户端和 Lync 2013 联机会议外接程序（后者支持从 Outl
 
   - 使用安装程序命令行参数选项
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 2013 安装程序不卸载早期版本的 Lync 或 Office Communicator。 Lync 2013 客户端可与其他 Lync 或 office Communicator 客户端并行安装</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync 2013 安装程序不卸载早期版本的 Lync 或 Office Communicator。 Lync 2013 客户端可与其他 Lync 或 office Communicator 客户端并行安装
 
 
 有关详细信息，请参阅 [部署 Lync 客户端](lync-server-2013-deploying-lync-clients.md)。

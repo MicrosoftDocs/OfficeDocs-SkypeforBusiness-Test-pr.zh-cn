@@ -63,18 +63,8 @@ Microsoft Lync Server 2013 集成了 边缘服务器上的可扩展消息传递�
     
       - “SASL 协商”。定义 SASL 协商规则。XMPP 服务可能需要 SASL，可以将 SASL 设置为可选，或者将 SASL 定义为不受支持。选择“可选”表明可以根据需要为合作伙伴 XMPP 服务选择强制协商选项。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>SASL 需要 TLS。若要使用 SASL，TLS 必须为必需或可选项。任何将 SASL 定义为“必需”或“可选”的配置都必须提供 TLS 支持。当单击“提交”保存更改时，如果未将 TLS 设为“必需”或“可选”，将警告您 SASL 必须提供 TLS 支持且无法保存您的更改。若要处理该错误，请将 TLS 设为“必需”或“可选”。如果 SASL 的使用是可选的且无法实现 TLS 协商支持，则您必须将 SASL 协商设为“不支持”。通过 XMPP 服务确认必须建立哪些适当的 TLS 和 SASL 协商流，否则将发生服务中断。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!WARNING]  
+		> SASL 需要 TLS。若要使用 SASL，TLS 必须为必需或可选项。任何将 SASL 定义为“必需”或“可选”的配置都必须提供 TLS 支持。当单击“提交”保存更改时，如果未将 TLS 设为“必需”或“可选”，将警告您 SASL 必须提供 TLS 支持且无法保存您的更改。若要处理该错误，请将 TLS 设为“必需”或“可选”。如果 SASL 的使用是可选的且无法实现 TLS 协商支持，则您必须将 SASL 协商设为“不支持”。通过 XMPP 服务确认必须建立哪些适当的 TLS 和 SASL 协商流，否则将发生服务中断。
         
            “必需”。XMPP 服务需要 SASL 协商。
         

@@ -79,16 +79,6 @@ Lync Server*语音策略* 为分配有该策略的每个用户、站点或组织
 
 每个语音策略应具有一条或多条关联的 PSTN 用法记录。PSTN 用法可以与语音策略相关联，以仅用于同时响铃和呼叫转接。有关规划 PSTN 用法记录的详细信息，请参阅 [Lync Server 2013 中的 PSTN 用法记录](lync-server-2013-pstn-usage-records.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PSTN 用法顺序至关重要，因为在将用户与路由相匹配时，出站路由功能会从上到下比较 PSTN 用法。如果第一个用法与呼叫路由相匹配，则会使用该路由。如果不匹配，则出站路由功能会查看列表中的下一个 PSTN 用法，一直持续到找到匹配项为止。实际上，如果列表中的第一个 PSTN 用法不可用，则后续的 PSTN 用法将提供备份。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> PSTN 用法顺序至关重要，因为在将用户与路由相匹配时，出站路由功能会从上到下比较 PSTN 用法。如果第一个用法与呼叫路由相匹配，则会使用该路由。如果不匹配，则出站路由功能会查看列表中的下一个 PSTN 用法，一直持续到找到匹配项为止。实际上，如果列表中的第一个 PSTN 用法不可用，则后续的 PSTN 用法将提供备份。
 

@@ -45,18 +45,8 @@ _**上一次修改主题：** 2012-10-22_
 
     Test-CsRegistration -TargetFqdn atl-cs-001.litwareinc.com -OutLoggerVariable RegistrationTest
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>变量名称不要以 $ 字符开头。可使用 RegistrationTest 之类的变量名称而非 $RegistrationTest。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 变量名称不要以 $ 字符开头。可使用 RegistrationTest 之类的变量名称而非 $RegistrationTest。
 
 
 上述命令输出如下内容：
