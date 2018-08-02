@@ -66,13 +66,10 @@ _**上一次修改主题：** 2016-12-08_
 <p>Exchange 组织管理员（如果这不是组织中的第一个 Exchange Server）</p></td>
 <td><p>请参阅适用于您的 Exchange Server 版本的文档：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>Exchange Server 2007 部署文档，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=268694">http://go.microsoft.com/fwlink/p/?LinkId=268694</a>。</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>Exchange Server 2010 或最新的 Service Pack 部署文档，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=268695">http://go.microsoft.com/fwlink/p/?LinkId=268695</a>。</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>Microsoft Exchange Server 2013 规划和部署，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=266569">http://go.microsoft.com/fwlink/p/?LinkId=266569</a>。</p>
 </dd>
 </dl></td>
