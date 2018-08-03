@@ -33,17 +33,13 @@ _**上一次修改主题：** 2016-12-08_
 
 > [!IMPORTANT]  
 > 运行 Exchange UM 集成实用程序之前，请确保已执行以下操作：
-<ul>
-<li><p>创建一个或多个 Exchange UM 拨号计划，如 Exchange 产品文档中所述。</p>
-<p>对于 Microsoft Exchange Server 2010，请参阅“创建 UM 拨号计划”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=186177">http://go.microsoft.com/fwlink/p/?linkId=186177</a>。</p>
-<p>对于 Microsoft Exchange Server 2007 Service Pack 1 (SP1)，请参阅“如何创建统一消息 SIP URI 拨号计划”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=185771">http://go.microsoft.com/fwlink/p/?linkId=185771</a>。</p></li>
-<li><p>创建一个或多个相应的 Lync Server 拨号计划，如<a href="lync-server-2013-create-a-dial-plan.md">在 Lync Server 2013 中创建拨号计划</a>中所述。</p>
-
+> <ul><li><p>创建一个或多个 Exchange UM 拨号计划，如 Exchange 产品文档中所述。</p>
+> <p>对于 Microsoft Exchange Server 2010，请参阅“创建 UM 拨号计划”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=186177">http://go.microsoft.com/fwlink/p/?linkId=186177</a>。</p>
+> <p>对于 Microsoft Exchange Server 2007 Service Pack 1 (SP1)，请参阅“如何创建统一消息 SIP URI 拨号计划”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=185771">http://go.microsoft.com/fwlink/p/?linkId=185771</a>。</p></li>
+> <li><p>创建一个或多个相应的 Lync Server 拨号计划，如<a href="lync-server-2013-create-a-dial-plan.md">在 Lync Server 2013 中创建拨号计划</a>中所述。</p>
 > [!IMPORTANT]  
 > <p>创建自动助理，并确保订阅者访问号码和自动助理号码的格式为 E.164。</p>
-
-</li>
-</ul>
+> </li></ul>
 
 
 ## 运行 Exchange UM 集成实用程序

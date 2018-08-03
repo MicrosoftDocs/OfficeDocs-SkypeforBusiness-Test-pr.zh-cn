@@ -46,7 +46,7 @@ _**上一次修改主题：** 2012-09-21_
       - 若要从本地存储的扫描结果列表中查看报告，请单击扫描的名称，然后单击“查看该扫描的报告”。
         
         > [!NOTE]  
-		> 最佳做法分析器从文件夹 <em>&lt;systemDrive&gt;</em>\Documents and Settings\<em>&lt;user&gt;</em>\Application Data\Microsoft\RtcBPA 中创建本地文件的列表。
+		> 最佳做法分析器从文件夹 <em>&lt;systemDrive&gt;</em>\Documents and Settings\\<em>&lt;user&gt;</em>\Application Data\Microsoft\RtcBPA 中创建本地文件的列表。
     
       - 若要查看存储在另一个位置的扫描结果报告，请单击“导入扫描”，找到包含扫描结果的文件，然后单击“打开”。
         
