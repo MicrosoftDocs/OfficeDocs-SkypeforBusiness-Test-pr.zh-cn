@@ -55,7 +55,7 @@ _**上一次修改主题：** 2016-12-08_
 > </ol>
 
 > [!NOTE]  
-> 必须为要写入到的镜像文件创建文件共享，SQL Server 和 SQL Agent 在其下运行的服务需要读取/写入访问权限。如果 SQL Server 服务在网络服务上下文下运行，您可以向共享权限添加主体和镜像 SQL Server 的 &lt;域&gt;\&lt;SQLSERVERNAME&gt;$。$ 非常重要，可用于标识这是一个计算机帐户。
+> 必须为要写入到的镜像文件创建文件共享，SQL Server 和 SQL Agent 在其下运行的服务需要读取/写入访问权限。如果 SQL Server 服务在网络服务上下文下运行，您可以向共享权限添加主体和镜像 SQL Server 的 &lt;域&gt;\\&lt;SQLSERVERNAME&gt;$。$ 非常重要，可用于标识这是一个计算机帐户。
 
 
 

@@ -10,6 +10,7 @@ ms.translationtype: HT
 ---
 
 # 在 Lync Server 2013 中使用 Lync Server 命令行管理程序安装数据库
+# 在 Lync Server 2013 中使用 Lync Server 命令行管理程序安装数据库
 
  
 
@@ -82,13 +83,16 @@ _**上一次修改主题：** 2016-12-08_
 
 4.  使用 **Install-CsDatabase** cmdlet 安装通过 拓扑生成器配置的数据库。
     
-        Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn <fully qualified domain name of SQL Server> 
-         -DatabasePaths <logfile path>,<database file path> -Report <path to report file>
+	```
+	Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn <fully qualified domain name of SQL Server> 
+	 -DatabasePaths <logfile path>,<database file path> -Report <path to report file>
+	```
 
-        &nbsp;
-    
-        Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn sqlbe.contoso.net 
+        
+    ```
+	Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn sqlbe.contoso.net 
         -Report "C:\Logs\InstallDatabases.html"
+	```
     
     > [!TIP]
     > Report 参数是可选的，但是在记录安装过程时很有用。
