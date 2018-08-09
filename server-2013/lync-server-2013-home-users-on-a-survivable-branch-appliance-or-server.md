@@ -1,5 +1,5 @@
 ﻿---
-title: Lync Server 2013：在 Survivable Branch Appliance 或 Survivable Branch Server 上承载用户
+title: "Lync Server 2013：在 Survivable Branch Appliance 或 Survivable Branch Server 上承载用户"
 TOCTitle: 在 Survivable Branch Appliance 或 Survivable Branch Server 上承载用户
 ms:assetid: faf1ebb9-6d7d-4a58-8ff7-801b7b31d3ba
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Gg413066(v=OCS.15)

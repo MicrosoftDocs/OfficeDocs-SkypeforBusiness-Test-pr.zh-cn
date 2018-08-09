@@ -1,6 +1,6 @@
 ﻿---
-title: 从 Lync Server 2010 群聊或 Office Communications Server 2007 R2 群聊迁移到 Lync Server 2013 持久聊天服务器
-TOCTitle: 从 Lync Server 2010 群聊或 Office Communications Server 2007 R2 群聊迁移到 Lync Server 2013 持久聊天服务器
+title: "从 Office Communications Server 2007 R2 群聊或 Lync Server 2010 群聊迁移到 2013 持久聊天服务器"
+TOCtitle: "从 Office Communications Server 2007 R2 群聊或 Lync Server 2010 群聊迁移到 2013 持久聊天服务器"
 ms:assetid: 5b4d3db1-6eba-4932-b49c-f60bcf9488f9
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Gg615442(v=OCS.15)
 ms:contentKeyID: 49312960

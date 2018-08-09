@@ -1,5 +1,5 @@
 ﻿---
-title: Lync Server 2013：部署 Survivable Branch Appliance 或 Survivable Branch Server - 中央站点任务
+title: "Lync Server 2013: 部署 Survivable Branch Appliance 或 Server - 中央站点任务"
 TOCTitle: 部署 Survivable Branch Appliance 或 Survivable Branch Server - 中央站点任务
 ms:assetid: 0f631a36-fc2e-41cd-8a0d-f27e84f4a89e
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Gg398189(v=OCS.15)
