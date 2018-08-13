@@ -75,12 +75,10 @@ _**上一次修改主题：** 2016-12-08_
 
 11. 颁发证书后，单击“安装此证书”以完成注册过程。
     
-    > [!NOTE]  
-    > 如果证书申请失败并出现错误“Web 浏览器不支持生成证书申请”，可通过三种可能的方法解决该问题：
-    <ol>
-    <li><p>在 Internet Explorer 中启用兼容性视图</p></li>
-    <li><p>在 Internet Explorer 中启用“启用 Intranet 设置”选项</p></li>
-    <li><p>在“Internet Explorer 选项”菜单的“安全”选项卡下方选择“将所有区域重置为默认级别”。</p></li>
-    </ol>
-    
-
+> [!NOTE]  
+> 如果证书申请失败并出现错误“Web 浏览器不支持生成证书申请”，可通过三种可能的方法解决该问题：
+> <ol>
+> <li><p>在 Internet Explorer 中启用兼容性视图</p></li>
+> <li><p>在 Internet Explorer 中启用“启用 Intranet 设置”选项</p></li>
+> <li><p>在“Internet Explorer 选项”菜单的“安全”选项卡下方选择“将所有区域重置为默认级别”。</p></li>
+> </ol>

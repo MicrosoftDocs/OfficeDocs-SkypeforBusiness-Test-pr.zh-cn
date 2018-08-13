@@ -10,8 +10,6 @@ ms.translationtype: HT
 ---
 
 # 在 Lync Server 2013 中使用 Lync Server 命令行管理程序安装数据库
-# 在 Lync Server 2013 中使用 Lync Server 命令行管理程序安装数据库
-
  
 
 _**上一次修改主题：** 2016-12-08_
