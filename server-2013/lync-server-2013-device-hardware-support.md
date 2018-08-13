@@ -33,16 +33,6 @@ _**上一次修改主题：** 2016-12-08_
 
 要了解如何配置模拟网关，请参阅 Lync Server 2010 TechNet 库中的“规划部署模拟设备”，网址为 [http://go.microsoft.com/fwlink/p/?LinkId=268537](http://go.microsoft.com/fwlink/p/?linkid=268537)。（模拟设备在 Lync Server 2013 中的工作方式与它们在 Lync Server 2010 中的相同。）
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果交换机支持，可以配置增强型 9-1-1 (E9-1-1) 的交换机。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果交换机支持，可以配置增强型 9-1-1 (E9-1-1) 的交换机。
 

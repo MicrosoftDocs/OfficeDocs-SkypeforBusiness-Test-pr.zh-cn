@@ -33,18 +33,9 @@ _**上一次修改主题：** 2012-09-21_
 
 7.  在“编辑 Lync Server 用户”页的“电话”下，单击“企业语音”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要通过使用 Lync 限制用户发出音频或视频呼叫，请在“电话”下，单击“禁用音频/视频”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要通过使用 Lync 限制用户发出音频或视频呼叫，请在“电话”下，单击“禁用音频/视频”。
+    
 
 
 8.  单击“提交”。

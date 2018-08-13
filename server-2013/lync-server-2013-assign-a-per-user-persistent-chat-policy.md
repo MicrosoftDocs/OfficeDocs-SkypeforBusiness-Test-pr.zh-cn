@@ -41,68 +41,29 @@ _**上一次修改主题：** 2013-02-22_
     
     4.  根据您选择的用户属性，输入您要用于筛选搜索结果的条件，方法是键入该条件或通过单击下拉列表中的箭头。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>要将其他搜索子句添加到您的查询，请单击“添加筛选器”。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 要将其他搜索子句添加到您的查询，请单击“添加筛选器”。
     
     5.  单击“查找”。
 
 6.  在搜索结果中单击某个用户，再单击“操作”，然后单击“分配策略”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要将相同的每用户持久聊天策略适用于多个用户，请在搜索结果中选择多个用户，然后单击“操作”，再单击“分配策略”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果要将相同的每用户持久聊天策略适用于多个用户，请在搜索结果中选择多个用户，然后单击“操作”，再单击“分配策略”。
 
 
 7.  在“分配策略”的“持久聊天策略”下，执行下列操作之一：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有多个策略可以使用“分配策略”对话框进行配置，因此默认情况下，将为对话框中的每个策略选中“&lt;保留原样&gt;”。如果不对此设置进行任何更改，则将继续使用先前分配给用户的策略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有多个策略可以使用“分配策略”对话框进行配置，因此默认情况下，将为对话框中的每个策略选中“&lt;保留原样&gt;”。如果不对此设置进行任何更改，则将继续使用先前分配给用户的策略。
+    
     
       - 选择“\<自动\>”以允许 Lync Server 2013 自动选择全局级别的策略或站点级别的策略（如果已定义）。
     
       - 单击先前您在“持久聊天策略”页面上定义的每用户持久聊天策略的名称。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>为帮助您确定要分配的策略，请在单击策略名称后单击“查看”以查看策略中定义的用户权限。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 为帮助您确定要分配的策略，请在单击策略名称后单击“查看”以查看策略中定义的用户权限。
 
 
 8.  操作完成后，单击“确定”。
@@ -119,7 +80,7 @@ _**上一次修改主题：** 2013-02-22_
 
 ## 将每用户持久聊天策略分配到多个用户
 
-  - 此命令可用于将每用户持久聊天策略 RedmondUsersPersistentChatPolicy 分配到为 IT 部门服务的所有用户。有关此命令中使用的 LdapFilter 参数的更多信息，请参阅 [Get-CsUser](get-csuser.md) cmdlet 的文档。
+  - 此命令可用于将每用户持久聊天策略 RedmondUsersPersistentChatPolicy 分配到为 IT 部门服务的所有用户。有关此命令中使用的 LdapFilter 参数的更多信息，请参阅 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) cmdlet 的文档。
     
         Get-CsUser -LdapFilter "Department=IT" | Grant-CsPersistentChatPolicy -PolicyName "RedmondUsersPersistentChatPolicy"
 
@@ -129,7 +90,7 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsPersistentChatPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关更多信息，请参阅[Grant-CsPersistentChatPolicy](grant-cspersistentchatpolicy.md) cmdlet 的帮助主题。
+有关更多信息，请参阅[Grant-CsPersistentChatPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsPersistentChatPolicy) cmdlet 的帮助主题。
 
 ## 另请参阅
 

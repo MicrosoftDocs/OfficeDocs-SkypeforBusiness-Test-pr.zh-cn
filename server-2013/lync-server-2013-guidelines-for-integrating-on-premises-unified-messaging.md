@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
 以下是部署企业语音时要考虑的准则和最佳做法：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅当您也使用 UCMA 4 时， Exchange 统一消息 (UM) 才支持 IPv6。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 仅当您也使用 UCMA 4 时， Exchange 统一消息 (UM) 才支持 IPv6。
 
 
   - 部署 Lync Server 2013 Standard Edition Server 或 前端池。有关安装的详细信息，请参阅部署文档中的 [部署 Lync Server 2013](lync-server-2013-deploying-lync-server.md)。
@@ -37,19 +27,9 @@ _**上一次修改主题：** 2016-12-08_
 
   - 在要为用户启用 Exchange UM 的每个 Exchange 统一消息 (UM) 林中部署 Exchange 邮箱服务器角色。有关安装 Exchange 服务器角色的详细信息，请参阅 Microsoft Exchange Server 2013 文档。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>安装 Exchange 统一消息 (UM) 后，将其配置为使用自签名证书。<br />
-    但是，该自签名证书不允许 Lync Server 2013 和 Exchange UM 相互信任，这就是必须从两个服务器都信任的证书颁发机构请求单独证书的原因。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 安装 Exchange 统一消息 (UM) 后，将其配置为使用自签名证书。<br />
+    > 但是，该自签名证书不允许 Lync Server 2013 和 Exchange UM 相互信任，这就是必须从两个服务器都信任的证书颁发机构请求单独证书的原因。
 
 
   - 如果 Lync Server 2013 和 Exchange UM 安装在不同的林中，请将每个 Exchange 林都配置为信任 Lync Server 2013 林，并将 Lync Server 2013 林配置为信任每个 Exchange 林。另外，在 Lync Server 2013 林中的用户对象上设置用户的 Exchange UM 设置，通常使用脚本或跨林工具（如 Identity Lifecycle Manager (ILM)）来完成。
@@ -62,18 +42,8 @@ _**上一次修改主题：** 2016-12-08_
 
 ## 部署冗余 Exchange UM 服务器
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于为组织配置的每个 Exchange UM SIP URI 拨号计划，我们建议您至少为其部署两台运行 Exchange UM 服务的服务器。除了提供扩展容量之外，部署冗余服务还可提供高可用性。如果服务器发生故障，则可将 Lync Server 2013 配置为故障转移到其他服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 对于为组织配置的每个 Exchange UM SIP URI 拨号计划，我们建议您至少为其部署两台运行 Exchange UM 服务的服务器。除了提供扩展容量之外，部署冗余服务还可提供高可用性。如果服务器发生故障，则可将 Lync Server 2013 配置为故障转移到其他服务器。
 
 
 以下示例配置提供 Exchange UM 恢复能力。
@@ -84,25 +54,13 @@ _**上一次修改主题：** 2016-12-08_
 
 在示例 1 中，Tukwila 数据中心启用了 Exchange UM 服务器 1 和 2，Dublin 数据中心启用了 Exchange UM 服务器 3 和 4。如果 Tukwila 发生 Exchange UM 中断，则应将服务器 1 和 2 的域名系统 (DNS) A 记录分别配置为指向服务器 3 和 4。如果 Dublin 发生 Exchange UM 中断，则应将服务器 3 和 4 的 DNS A 记录分别配置为指向服务器 1 和 2。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于示例 1，还应在每台 Exchange UM 服务器上分配以下证书之一：
+> [!NOTE]  
+> 对于示例 1，还应在每台 Exchange UM 服务器上分配以下证书之一：
 <ul>
 <li><p>在使用者替代名称 (SAN) 中使用具有通配符的证书。</p></li>
 <li><p>在 SAN 中使用四台 Exchange UM 服务器的完全限定域名 (FQDN)。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+
 
 
 **示例 2：Exchange UM 恢复能力**

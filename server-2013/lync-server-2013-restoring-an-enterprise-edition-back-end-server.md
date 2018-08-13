@@ -25,54 +25,26 @@ _**上一次修改主题：** 2013-02-18_
 
 如果中央管理存储出现故障，请参阅[还原承载中央管理存储的服务器](lync-server-2013-restoring-the-server-hosting-the-central-management-store.md)。如果不是后端服务器的 Enterprise Edition 成员服务器出现故障，请参阅[还原 Enterprise Edition 成员服务器](lync-server-2013-restoring-an-enterprise-edition-member-server.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议在开始还原之前制作系统的映像副本。您可以在还原过程中出现问题时将该映像作为回滚点。您可能需要在安装操作系统和 SQL Server 之后制作映像副本，然后再还原或重新注册证书。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 建议在开始还原之前制作系统的映像副本。您可以在还原过程中出现问题时将该映像作为回滚点。您可能需要在安装操作系统和 SQL Server 之后制作映像副本，然后再还原或重新注册证书。
 
 
 ## 还原 Enterprise Edition 后端服务器
 
 1.  首先准备与出现故障的计算机具有相同完全限定域名 (FQDN) 的干净或新服务器，接着安装操作系统，然后还原或重新注册证书。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>按照您组织的服务器部署过程来执行该步骤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 按照您组织的服务器部署过程来执行该步骤。
+    
 
 
 2.  使用具有 RTCUniversalServerAdmins 组成员身份的用户帐户登录到要还原的服务器。
 
 3.  安装 SQL Server 2012 或 SQL Server 2008 R2，使实例名称与出现故障前相同。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>根据您的部署，后端服务器可能包含多个并置或独立数据库。按照先前部署服务器时使用的过程来安装 SQL Server，包括 SQL Server 权限和登录名。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 根据您的部署，后端服务器可能包含多个并置或独立数据库。按照先前部署服务器时使用的过程来安装 SQL Server，包括 SQL Server 权限和登录名。
+    
 
 
 4.  安装 SQL Server 后，执行以下操作：
@@ -87,35 +59,16 @@ _**上一次修改主题：** 2013-02-18_
     
     5.  按照“发布拓扑”向导操作。在“创建数据库”页上，选择要重新创建的数据库。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只有独立数据库会显示在“创建数据库”页上。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 只有独立数据库会显示在“创建数据库”页上。
+        
     
     6.  如果要还原镜像的后端，则继续按照向导的其余部分操作，直到出现“创建镜像数据库”的提示。选择要安装的数据库，然后完成该过程。
     
     7.  按照向导的其余部分操作，然后单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可以使用 <strong>Install-CsDatabase</strong> cmdlet 创建每个数据库，使用 <strong>Install-CsMirrorDatabase</strong> cmdlet 配置镜像，而不是运行拓扑生成器。有关详细信息，请参阅 Lync Server 命令行管理程序文档。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 可以使用 <strong>Install-CsDatabase</strong> cmdlet 创建每个数据库，使用 <strong>Install-CsMirrorDatabase</strong> cmdlet 配置镜像，而不是运行拓扑生成器。有关详细信息，请参阅 Lync Server 命令行管理程序文档。
 
 
 5.  执行以下操作以还原用户数据：

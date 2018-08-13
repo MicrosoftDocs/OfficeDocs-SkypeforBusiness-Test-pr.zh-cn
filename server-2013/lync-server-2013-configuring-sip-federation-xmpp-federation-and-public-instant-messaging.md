@@ -17,30 +17,18 @@ _**上一次修改主题：** 2015-03-09_
 
 联盟、公共即时消息连接和可扩展消息传递和状态协议 (XMPP) 定义了一类不同的外部用户 – 联盟用户。联盟 Lync Server 部署或 XMPP 部署的用户对一组有限服务具有访问权限，他们由外部部署进行身份验证。远程用户是 Lync Server 部署的成员，对部署提供的所有服务都具有访问权限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅<a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅<a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。
+
 
 
 公共即时消息连接是是特定类型的联盟，其允许 Lync Server 客户端访问使用 Lync 2013 配置的公共即时消息合作伙伴。以下是当前公共即时消息连接合作伙伴：
 
-  -   
-    America Online
+   America Online
 
-  -   
-    Windows Live
+   Windows Live
 
-  -   
-    Yahoo\!
+   Yahoo\!
 
 利用公共即时消息连接配置，Lync 用户可按以下内容访问公共即时消息连接用户：
 
@@ -64,18 +52,8 @@ XMPP 联盟基于可扩展消息传递和状态协议定义外部部署。利用
 
   - Lync 客户端中 XMPP 联盟联系人的创建
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 已测试 Lync Server 2013 的 XMPP 功能，并且支持该功能与 Google Talk 进行即时消息传递联盟。对于任何其他 XMPP 系统，请与第三方供应商联系，以确认它们是否支持与 Lync Server 2013 联盟以及获取任何部署或疑难解答建议。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Microsoft 已测试 Lync Server 2013 的 XMPP 功能，并且支持该功能与 Google Talk 进行即时消息传递联盟。对于任何其他 XMPP 系统，请与第三方供应商联系，以确认它们是否支持与 Lync Server 2013 联盟以及获取任何部署或疑难解答建议。
 
 
 ## 边缘服务器外部联盟、公共即时消息连接和 XMPP 用户部署过程
@@ -101,19 +79,11 @@ XMPP 联盟基于可扩展消息传递和状态协议定义外部部署。利用
 <td><p>确定要添加到现有边缘部署的选项</p></td>
 <td><p>运行 拓扑生成器以编辑边缘服务器设置并创建和发布拓扑。现有边缘拓扑会将 中央管理存储中的更改复制到边缘服务器。</p></td>
 <td><p>Domain Admins 组和 RTCUniversalServerAdmins 组</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以使用属于本地用户组成员的帐户来编辑拓扑，但发布拓扑需要属于 Domain Admins 组和 RTCUniversalServerAdmins 组的成员的帐户。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 可以使用属于本地用户组成员的帐户来编辑拓扑，但发布拓扑需要属于 Domain Admins 组和 RTCUniversalServerAdmins 组的成员的帐户。
+
 
 </div></td>
 <td><p><a href="lync-server-2013-building-an-edge-and-director-topology.md">在 Lync Server 2013 中构建边缘和控制器拓扑</a></p></td>

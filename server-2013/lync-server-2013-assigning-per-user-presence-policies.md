@@ -42,19 +42,11 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>最大订阅者类别订阅数</p></td>
 <td><p>限制订阅者类别订阅数。例如，当 Communicator 订阅用户的状态时，会获取每个联系人卡片、日历数据、注释、服务和状态类别的类别订阅。</p>
 <p>设置为 0 意味着其他人无法订阅用户或联系人对象。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果设置为较大的数值，则此设置会对性能产生显著的影响，且会有大量用户订阅普通用户的状态。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 如果设置为较大的数值，则此设置会对性能产生显著的影响，且会有大量用户订阅普通用户的状态。
+
 
 </div></td>
 <td><p>整数</p></td>

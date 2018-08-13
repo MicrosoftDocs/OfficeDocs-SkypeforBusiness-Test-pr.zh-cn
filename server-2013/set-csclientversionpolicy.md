@@ -138,5 +138,5 @@ The **Set-CsClientVersionPolicy** cmdlet does not return a value or object. Inst
 [Get-CsClientVersionPolicy](get-csclientversionpolicy.md)  
 [New-CsClientVersionPolicy](new-csclientversionpolicy.md)  
 [Remove-CsClientVersionPolicy](remove-csclientversionpolicy.md)  
-[Set-CsClientVersionPolicy](set-csclientversionpolicy.md)
+[Set-CsClientVersionPolicy](Set-CsClientVersionPolicy.md)
 

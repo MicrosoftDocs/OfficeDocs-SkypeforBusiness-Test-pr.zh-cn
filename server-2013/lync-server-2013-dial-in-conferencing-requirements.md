@@ -31,18 +31,9 @@ _**上一次修改主题：** 2012-09-30_
 
 您可以在中央站点或分支站点部署 PSTN 网关。在分支站点，PSTN 网关可以是独立的，也可以作为 Survivable Branch Appliance 的组件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>电话拨入式会议不使用媒体旁路，因为 A/V 会议服务器不支持媒体旁路。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 电话拨入式会议不使用媒体旁路，因为 A/V 会议服务器不支持媒体旁路。
+
 
 
 有关针对电话拨入式会议规划中介服务器和 PSTN 网关配置的详细信息，请参阅规划文档中的[Lync Server 2013 中中介服务器的组件和拓扑](lync-server-2013-components-and-topologies-for-mediation-server.md)。

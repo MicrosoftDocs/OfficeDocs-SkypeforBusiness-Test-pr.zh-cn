@@ -17,29 +17,20 @@ _**上一次修改主题：** 2012-10-19_
 
 *网络区域* 是在呼叫允许控制、E9-1-1 和媒体旁路的配置中使用的网络中心或网络中枢。使用以下过程创建或修改网络区域。例如，如果已为一个语音功能创建网络区域，则不需要创建新的网络区域；其他高级企业语音功能也将使用这些网络区域。但是，可能需要修改现有的网络区域定义，以应用特定于功能的设置。例如，如果已为 E9-1-1（它不要求有关联的中央站点）创建网络区域，然后部署呼叫允许控制，则需要修改网络区域定义，以指定中央站点。有关详细信息，请参阅 [为 CAC 配置网络区域](lync-server-2013-configure-network-regions-for-cac.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关网络区域定义的任何特定于功能的要求均编档在相应功能的部署主题中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关网络区域定义的任何特定于功能的要求均编档在相应功能的部署主题中。
+
 
 
 有关使用网络区域的详细信息，请参阅 Lync Server 命令行管理程序文档中以下 cmdlet 的相关内容：
 
-  - [New-CsNetworkRegion](new-csnetworkregion.md)
+  - [New-CsNetworkRegion](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkRegion)
 
-  - [Get-CsNetworkRegion](get-csnetworkregion.md)
+  - [Get-CsNetworkRegion](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkRegionLink)
 
-  - [Set-CsNetworkRegion](set-csnetworkregion.md)
+  - [Set-CsNetworkRegion](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsNetworkRegion)
 
-  - [Remove-CsNetworkRegion](remove-csnetworkregion.md)
+  - [Remove-CsNetworkRegion](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkRegion)
 
 ## 创建网络区域
 

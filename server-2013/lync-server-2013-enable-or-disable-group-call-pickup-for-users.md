@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-02-22_
 
 在将组内呼叫应答范围添加到呼叫寄存轨道表中时，您可以根据需要为用户启用和禁用组内呼叫应答。本节介绍如何使用 SEFAUtil 资源工具包工具为用户启用和禁用组内呼叫应答。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SEFAUtil 参数 /enablegrouppickup 可启用组内呼叫应答并分配组号码。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> SEFAUtil 参数 /enablegrouppickup 可启用组内呼叫应答并分配组号码。
+
 
 
 ## 本部分内容

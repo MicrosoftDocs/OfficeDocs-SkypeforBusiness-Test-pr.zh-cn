@@ -21,7 +21,7 @@ _**上一次修改主题：** 2013-02-23_
 
 请注意，您也可以“删除”全局设置。但是，这不会实际删除全局设置，而是将该集合中的所有属性重置为其默认值。例如，默认情况下，将在 CDR 配置设置集合中启用清除。假定您修改全局集合以便禁用清除。如果您稍后删除全局设置，则所有属性都将被重置为其默认值。在此情况下，这意味着将再次启用清除。
 
-可使用 Lync Server 控制面板或 [Remove-CsCdrConfiguration](remove-cscdrconfiguration.md) cmdlet 删除 CDR 配置设置。
+可使用 Lync Server 控制面板或 [Remove-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsCdrConfiguration) cmdlet 删除 CDR 配置设置。
 
 ## 使用 Lync Server 控制面板删除 CDR 配置设置
 
@@ -55,5 +55,5 @@ _**上一次修改主题：** 2013-02-23_
     
         Get-CsCdrConfiguration | Where-Object {$_.EnableCDR -eq $False} | Remove-CsCdrConfiguration
 
-有关详细信息，请参阅 [Remove-CsCdrConfiguration](remove-cscdrconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Remove-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsCdrConfiguration) cmdlet 的帮助主题。
 

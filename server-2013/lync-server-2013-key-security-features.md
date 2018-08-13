@@ -55,18 +55,9 @@ Microsoft Lync Server 2013 提供基于角色的访问控制 (RBAC)，使您能�
 
 Lync Server 2013 不支持在边缘服务器的内部接口上使用网络地址转换 (NAT)，但支持将访问边缘服务、Web 会议边缘服务和 A/V 边缘服务的外部接口置于路由器或防火墙之后，该路由器或防火墙对单一合并和扩展的合并边缘服务器拓扑执行网络地址转换 (NAT)。硬件负载平衡器后面的多台边缘服务器不能使用 NAT。如果多台边缘服务器在其外部接口上使用 NAT，将需要域名系统 (DNS) 负载平衡。反之，使用 DNS 负载平衡让您可以减少边缘服务器池中每台边缘服务器的公共 IP 地址的数量。有关详细信息，请参阅[在 Lync Server 2013 中规划外部用户访问](lync-server-2013-planning-for-external-user-access.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果与具有 Microsoft Office Communications Server 2007 部署的企业建立联盟并且需要在您的企业和联盟企业之间使用音频/视频，则端口要求将采用部署的早期版本的边缘服务器上的那些要求。例如，早期版本所需的端口范围必须为两个企业打开，直到联盟伙伴将其边缘服务器升级到 Lync Server 2013。此时，可以根据新配置检查并减少端口要求。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果与具有 Microsoft Office Communications Server 2007 部署的企业建立联盟并且需要在您的企业和联盟企业之间使用音频/视频，则端口要求将采用部署的早期版本的边缘服务器上的那些要求。例如，早期版本所需的端口范围必须为两个企业打开，直到联盟伙伴将其边缘服务器升级到 Lync Server 2013。此时，可以根据新配置检查并减少端口要求。
+
 
 
 ## 边缘服务器的简化证书

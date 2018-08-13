@@ -29,18 +29,8 @@ Microsoft Lync Server 2013 所含工具可同时简化内部服务器和边缘�
 
 下表概述了边缘服务器部署过程。要审核在部署外部用户访问之前必须做出的规划决策，请参阅 [Lync Server 2013 中的外部用户访问方案](lync-server-2013-scenarios-for-external-user-access.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下表中的信息主要涉及新的部署。如果已在 Lync Server 2010、Office Communications Server 2007 R2 或 Office Communications Server 2007 环境中部署了边缘服务器，请参阅<a href="migration.md">迁移</a>以了解有关迁移到 Lync Server 2013 的详细信息。Office Communications Server 2007 R2 之前的所有版本（包括 Office Communications Server 2007、Live Communications Server 2005 和 Live Communications Server 2003）均不支持迁移。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 下表中的信息主要涉及新的部署。如果已在 Lync Server 2010、Office Communications Server 2007 R2 或 Office Communications Server 2007 环境中部署了边缘服务器，请参阅<a href="migration.md">迁移</a>以了解有关迁移到 Lync Server 2013 的详细信息。Office Communications Server 2007 R2 之前的所有版本（包括 Office Communications Server 2007、Live Communications Server 2005 和 Live Communications Server 2003）均不支持迁移。
 
 
 为了提高边缘服务器的性能和安全性，同时为了方便部署，在部署外围网络和边缘服务器时，请应用以下最佳做法：
@@ -77,19 +67,11 @@ Microsoft Lync Server 2013 所含工具可同时简化内部服务器和边缘�
 </ul>
 <p></p></td>
 <td><p><strong>Domain Admins</strong> 组和 <strong>RTCUniversalServerAdmins</strong> 或 <strong>CsAdmins</strong> 组</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以使用本地 Users 组成员的帐户定义拓扑，但发布拓扑需要使用 <strong>Domain Admins</strong> 组和 <strong>RTCUniversalServerAdmins</strong> 组成员的帐户。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 可以使用本地 Users 组成员的帐户定义拓扑，但发布拓扑需要使用 <strong>Domain Admins</strong> 组和 <strong>RTCUniversalServerAdmins</strong> 组成员的帐户。
+
 
 </div></td>
 <td><p>部署文档中的 <a href="lync-server-2013-building-an-edge-and-director-topology.md">在 Lync Server 2013 中构建边缘和控制器拓扑</a></p></td>
@@ -102,28 +84,15 @@ Microsoft Lync Server 2013 所含工具可同时简化内部服务器和边缘�
 <li><p>配置内部和外部 DNS 记录（IPv4 和 IPv6 的主机 A 和 AAAA），包括配置要部署为边缘服务器的计算机上的 DNS 后缀。</p></li>
 <li><p>（可选）创建并安装公共证书。获取证书所需的时间取决于颁发证书的证书颁发机构 (CA)。如果此时不执行该步骤，则必须在安装边缘服务器期间执行。在获取并安装证书之前，无法启动边缘服务器服务。</p></li>
 <li><p>如果部署支持与 Windows Live、AOL 或 Yahoo! 用户通信，则设置对公共 IM 连接的支持。</p>
-<div class="alert">
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>自 2012 年 9 月 1 日起，新订或续订合同不能再购买 Microsoft Lync 公共 IM 连接用户订阅许可证 (“PIC USL”)。拥有有效许可证的客户可继续与 Yahoo! Messenger 联盟直至服务关闭。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
-<li><p>PIC USL 是一个每用户每月订阅许可证，是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的。Microsoft 之所以能够提供此服务离不开 Yahoo! 的支持，但这项支持的基础协议正在逐步终止。</p></li>
-<li><p>Lync 是一个比以往更强大的工具，它实现了人员跨组织、跨地域的连接。除 Lync 标准 CAL 外，与 Windows Live Messenger 联盟不需要任何附加用户/设备许可证。Skype 联盟将添加到此列表中，以便 Lync 用户能够通过 IM 和语音与数亿用户取得联系。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
 
-</div></li>
+> [!IMPORTANT]  
+> <ul>
+> <li><p>自 2012 年 9 月 1 日起，新订或续订合同不能再购买 Microsoft Lync 公共 IM 连接用户订阅许可证 (“PIC USL”)。拥有有效许可证的客户可继续与 Yahoo! Messenger 联盟直至服务关闭。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
+> <li><p>PIC USL 是一个每用户每月订阅许可证，是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的。Microsoft 之所以能够提供此服务离不开 Yahoo! 的支持，但这项支持的基础协议正在逐步终止。</p></li>
+> <li><p>Lync 是一个比以往更强大的工具，它实现了人员跨组织、跨地域的连接。除 Lync 标准 CAL 外，与 Windows Live Messenger 联盟不需要任何附加用户/设备许可证。Skype 联盟将添加到此列表中，以便 Lync 用户能够通过 IM 和语音与数亿用户取得联系。</p></li>
+> </ul>
+
+</li>
 <li><p>如果您的部署将使用以下内容，请配置 XMPP 支持以及 Office Communications Server 2007、 Office Communications Server 2007 R2、 Lync Server 2010 合作伙伴的联盟支持</p></li>
 <li><p>配置防火墙。</p></li>
 </ol></td>

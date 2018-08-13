@@ -17,7 +17,7 @@ _**上一次修改主题：** 2016-12-08_
 
 承载 持久聊天服务器的每台计算机必须有权访问包含以下组件的现有 Lync Server 2013 拓扑：
 
-  - **Lync Server 2013前端服务器。**前端服务器是会话初始协议 (SIP) 路由的基础，它使得在运行 持久聊天服务器与 持久聊天功能的计算机之间通信成为可能。在开始部署 持久聊天服务器之前，请根据您组织的具体情况验证 Lync Server 2013 Standard Edition 或 Lync Server前端池的部署以及任何其他运行 Lync Server 的内部计算机的部署。
+  - **Lync Server 2013前端服务器。** 前端服务器是会话初始协议 (SIP) 路由的基础，它使得在运行 持久聊天服务器与 持久聊天功能的计算机之间通信成为可能。在开始部署 持久聊天服务器之前，请根据您组织的具体情况验证 Lync Server 2013 Standard Edition 或 Lync Server前端池的部署以及任何其他运行 Lync Server 的内部计算机的部署。
 
 以下几节介绍 持久聊天服务器和存储 持久聊天数据的数据库的特定要求。
 
@@ -55,18 +55,8 @@ _**上一次修改主题：** 2016-12-08_
 
 持久聊天服务器使用 持久聊天数据库存储聊天历史记录、配置和用户设置数据。（可选）它使用 持久聊天合规性数据库存储合规性数据。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>持久聊天数据库 (mgc) 和合规性数据库 (mgccomp) 可以位于同一 SQL Server 实例或不同 SQL Servers 中。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 持久聊天数据库 (mgc) 和合规性数据库 (mgccomp) 可以位于同一 SQL Server 实例或不同 SQL Servers 中。
 
 
 若要准备数据库服务器平台，请确保每台计算机均满足硬件要求，然后安装必备软件。

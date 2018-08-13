@@ -29,36 +29,17 @@ _**上一次修改主题：** 2012-10-10_
 
 4.  在“位置策略”页上，选择要删除的位置策略。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可一次性删除多个位置策略。要执行此操作，请按住 Ctrl 键，同时选择多个策略。或者，要选中全部策略，请单击“编辑”菜单中的“全选”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 可一次性删除多个位置策略。要执行此操作，请按住 Ctrl 键，同时选择多个策略。或者，要选中全部策略，请单击“编辑”菜单中的“全选”。
+    
 
 
 5.  在“编辑”菜单上，单击“删除”。
 
 6.  单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>无法删除“全局”位置策略。如果尝试删除“全局”策略，您将收到一条警告消息，而该策略将重置为其默认值。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 无法删除“全局”位置策略。如果尝试删除“全局”策略，您将收到一条警告消息，而该策略将重置为其默认值。
 
 
 ## 另请参阅

@@ -23,24 +23,15 @@ Lync Server 2013 ExUM Routing 应用程序支持与本地 Exchange 统一消息 
 
 支持以下模式：
 
-  - **本地部署：**Lync Server 2013 和 Exchange UM 均部署在企业内部的本地服务器上。
+  - **本地部署：** Lync Server 2013 和 Exchange UM 均部署在企业内部的本地服务器上。
 
   - **交叉部署 ：** Lync Server 2013 部署在企业内部的本地服务器上，Exchange UM 托管在联机服务提供商的设施上，如 Microsoft Exchange Online 数据中心。
 
   - **混合部署 ：** Lync Server 2013 部署中的某些用户邮箱驻留在企业内部的本地 Exchange 服务器上，另外一些则驻留在托管 Exchange 服务数据中心。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>混合部署可以用作评估用户或将用户分阶段迁移至托管 Exchange UM 期间的过渡性解决方案，或者，如果选择在转移部分用户后将其他用户的 Exchange UM 服务保留在内部，则可以将混合部署用作永久性解决方案。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 混合部署可以用作评估用户或将用户分阶段迁移至托管 Exchange UM 期间的过渡性解决方案，或者，如果选择在转移部分用户后将其他用户的 Exchange UM 服务保留在内部，则可以将混合部署用作永久性解决方案。
+    
 
 
 ## 共享 SIP 地址空间
@@ -49,18 +40,9 @@ Lync Server 2013 ExUM Routing 应用程序支持与本地 Exchange 统一消息 
 
 要将 Lync Server 2013 与托管 Exchange UM 集成，必须配置 *共享 SIP 地址空间* 。在此配置中， Lync Server 2013 和托管 Exchange UM 服务提供商可使用相同的 SIP 域地址空间。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>共享 SIP 地址空间的使用类似于交叉 Lync Server 2013 环境中使用的方法，即，一些用户驻留在本地部署中，一些用户则驻留在托管部署中（如 Lync Online）。在它们之间对 SIP 域进行了拆分。将 Lync Server 2013 与托管 Exchange UM 集成时，应确保将 Exchange UM 服务提供商包括在共享 SIP 地址空间中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 共享 SIP 地址空间的使用类似于交叉 Lync Server 2013 环境中使用的方法，即，一些用户驻留在本地部署中，一些用户则驻留在托管部署中（如 Lync Online）。在它们之间对 SIP 域进行了拆分。将 Lync Server 2013 与托管 Exchange UM 集成时，应确保将 Exchange UM 服务提供商包括在共享 SIP 地址空间中。
+
 
 
 要将共享 SIP 地址空间配置为与 Exchange UM 服务提供商集成，需要按下面所示配置边缘服务器：

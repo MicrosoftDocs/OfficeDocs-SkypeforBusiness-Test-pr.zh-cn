@@ -17,18 +17,8 @@ _**上一次修改主题：** 2013-03-11_
 
 可使用 Lync Server 控制面板将用户分配给特定服务器或池。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>将所有现有用户从运行 Microsoft Office Communications Server 2007 R2 或更早版本的源池移至复杂的 Active Directory 环境中的 Lync Server 2013 目标池可能会导致 Active Directory 复制速度变慢。要避免此问题，可使用搜索筛选器单独移动运行 Microsoft Office Communications Server 2007 R2 或更早版本的池中的部分用户，也可以使用 Lync Server 命令行管理程序通过 cmdlet 移动用户。另外，Lync Server 2013 用户也可以使用筛选器功能。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 将所有现有用户从运行 Microsoft Office Communications Server 2007 R2 或更早版本的源池移至复杂的 Active Directory 环境中的 Lync Server 2013 目标池可能会导致 Active Directory 复制速度变慢。要避免此问题，可使用搜索筛选器单独移动运行 Microsoft Office Communications Server 2007 R2 或更早版本的池中的部分用户，也可以使用 Lync Server 命令行管理程序通过 cmdlet 移动用户。另外，Lync Server 2013 用户也可以使用筛选器功能。
 
 
 ## 将所选用户移至其他服务器或池
@@ -49,18 +39,8 @@ _**上一次修改主题：** 2013-03-11_
 
 8.  （可选）如果目标服务器或池不可用，则选中“强制”复选框。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果选中“强制”，将移动用户帐户，但会删除任何关联的用户数据（例如，用户已安排的会议）。如果不选中，将同时移动帐户和关联数据。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果选中“强制”，将移动用户帐户，但会删除任何关联的用户数据（例如，用户已安排的会议）。如果不选中，将同时移动帐户和关联数据。
 
 
 ## 将所有用户从一个服务器或池移至另一个服务器或池
@@ -79,18 +59,8 @@ _**上一次修改主题：** 2013-03-11_
 
 7.  （可选）如果目标服务器或池不可用，则选中“强制”复选框。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果选中“强制”，将移动用户帐户，但会删除任何关联的用户数据（例如，用户已安排的会议）。如果不选中，将同时移动帐户和关联数据。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果选中“强制”，将移动用户帐户，但会删除任何关联的用户数据（例如，用户已安排的会议）。如果不选中，将同时移动帐户和关联数据。
 
 
 ## 使用筛选器将用户从一个池移至另一个池
@@ -107,18 +77,9 @@ _**上一次修改主题：** 2013-03-11_
 
 6.  在“操作”菜单上，单击“将所有用户移动到池”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>将筛选器应用于现有用户组时，选项“将所有用户移动到池”出现在经过筛选的用户子集上下文中，而不是出现在<strong><em>所有</em></strong> 可能的用户上下文中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 将筛选器应用于现有用户组时，选项“将所有用户移动到池”出现在经过筛选的用户子集上下文中，而不是出现在<strong><em>所有</em></strong> 可能的用户上下文中。
+    
 
 
 7.  在“移动用户”的“源注册器池”中，选择包含要移动的用户帐户的池。
@@ -127,18 +88,8 @@ _**上一次修改主题：** 2013-03-11_
 
 9.  （可选）如果目标服务器或池不可用，则选中“强制”复选框。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果选中“强制”，将移动用户帐户，但会删除任何关联的用户数据（例如，用户已安排的会议和联系人）。如果不选中，将同时移动帐户和关联数据。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果选中“强制”，将移动用户帐户，但会删除任何关联的用户数据（例如，用户已安排的会议和联系人）。如果不选中，将同时移动帐户和关联数据。
 
 
 ## 使用 Lync 命令行管理程序将用户从一个池移至另一个池

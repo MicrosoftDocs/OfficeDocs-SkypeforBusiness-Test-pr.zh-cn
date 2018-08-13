@@ -106,20 +106,10 @@ _**上一次修改主题：** 2016-12-08_
 </table>
 
 
-以后每次启动池时，都应启动 85% 的服务器（如上表所示）。如果无法启动此数量的服务器（但是可以启动足够数量的服务器来避免遭遇池级别仲裁丢失），那么您可以使用 **Reset-CsPoolRegistrarState –ResetType QuorumLossRecovery** cmdlet 来使池从此路由组级别仲裁丢失中恢复，然后继续操作。有关如何使用此 cmdlet 的详细信息，请参阅 [Reset-CsPoolRegistrarState](reset-cspoolregistrarstate.md)。
+以后每次启动池时，都应启动 85% 的服务器（如上表所示）。如果无法启动此数量的服务器（但是可以启动足够数量的服务器来避免遭遇池级别仲裁丢失），那么您可以使用 **Reset-CsPoolRegistrarState –ResetType QuorumLossRecovery** cmdlet 来使池从此路由组级别仲裁丢失中恢复，然后继续操作。有关如何使用此 cmdlet 的详细信息，请参阅 [Reset-CsPoolRegistrarState](https://docs.microsoft.com/en-us/powershell/module/skype/Reset-CsPoolRegistrarState)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于 Lync Server 使用主 SQL 数据库作为见证，如果您关闭主 SQL 并切换到镜像副本，同时关闭足够多的前端服务器，结果正在运行的数量不足（根据上表），那么整个池都将关闭。有关详细信息，请参阅<a href="http://go.microsoft.com/fwlink/?linkid=393672">数据库镜像见证</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由于 Lync Server 使用主 SQL 数据库作为见证，如果您关闭主 SQL 并切换到镜像副本，同时关闭足够多的前端服务器，结果正在运行的数量不足（根据上表），那么整个池都将关闭。有关详细信息，请参阅<a href="http://go.microsoft.com/fwlink/?linkid=393672">数据库镜像见证</a>。
 
 
 ## 池级别仲裁丢失
@@ -201,7 +191,7 @@ _**上一次修改主题：** 2016-12-08_
 
   - 如果上次修补的升级域中的任何服务器遇到问题或未重新启动，请不要移动到下一升级域。如果某个升级内的任何服务器无法启动，这同样适用。请运行 **Get-CsPoolFabricState** 以确保所有路由组都具有一个主要副本和至少一个辅助副本；这将确认所有用户是否具有服务。
 
-  - 如果有些用户具有服务，而某些用户没有，请运行 **Get-CsPoolFabricState** 与 –Verbose 选项来检查具有缺少副本的路由组。不要将重新启动整个池作为第一个故障排除步骤。有关此 cmdlet 的详细信息，请参阅 [Get-CsPoolFabricState](get-cspoolfabricstate.md)。
+  - 如果有些用户具有服务，而某些用户没有，请运行 **Get-CsPoolFabricState** 与 –Verbose 选项来检查具有缺少副本的路由组。不要将重新启动整个池作为第一个故障排除步骤。有关此 cmdlet 的详细信息，请参阅 [Get-CsPoolFabricState](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsPoolFabricState)。
 
   - 确保事件查看器或性能监视器窗口的所有实例均已关闭，以便执行 Windows Fabric 安装/卸载。
 

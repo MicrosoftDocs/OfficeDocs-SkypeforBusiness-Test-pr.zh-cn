@@ -19,18 +19,9 @@ _**上一次修改主题：** 2016-12-08_
 
   - 组件和用户管理包 (Microsoft.LS.2013.Monitoring.ComponentAndUser.mp) 跟踪事件日志中记录的、性能计数器登记的、或呼叫详细信息记录 (CDR) 或用户质量体验 (QoE) 数据库中记录的 Lync Server 问题。对于严重的问题，可将 System Center Operations Manager 配置为立即通过电子邮件、即时消息或短信服务 (SMS) 消息通知管理员。（SMS 是将文本消息从一台移动设备发送到另一台所使用的技术。）
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关配置 Operations Manager 通知的详细信息，请参阅 TechNet 库中的“配置通知”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268785%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=268785&amp;clcid=0x804</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关配置 Operations Manager 通知的详细信息，请参阅 TechNet 库中的“配置通知”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268785%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=268785&amp;clcid=0x804</a>。
+    
 
 
   - 主动监控管理包 (Microsoft.LS.2013.Monitoring.ActiveMonitoring.mp) 主动测试主要 Lync Server 组件，如登录系统、交换即时消息或者向公用电话交换网 (PSTN) 中的电话发出呼叫。这些测试是使用 Lync Server 综合事务 cmdlet 执行的。例如，您可使用 **Test-CsIM** cmdlet 在一对测试用户之间模拟即时消息 (IM) 对话。如果此命令模拟消息对话失败，则将生成警报。
@@ -39,18 +30,9 @@ _**上一次修改主题：** 2016-12-08_
 
 组件和用户管理包仅用于监控 Lync Server 2013。如果您处于安装了 Lync Server 2013 和 Lync Server 2010 的共存方案中，则应继续使用 Lync Server 2010 计算机的 Lync Server 2010 管理包。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2010 的管理包包含 Lync Server 2010 监控管理包和 Lync Server 2010 群聊监控管理包。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2010 的管理包包含 Lync Server 2010 监控管理包和 Lync Server 2010 群聊监控管理包。
+
 
 
 可使用下列任一工具导入管理包：

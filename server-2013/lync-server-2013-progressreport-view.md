@@ -17,18 +17,9 @@ _**上一次修改主题：** 2015-03-09_
 
 ProgressReport 视图会存储有关已完成的会话的信息。只会针对 Lync Server 2013 判定可能对诊断有用的呼叫和会话编写进度报告。此视图是在 Microsoft Lync Server 2013 中引入的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ErrorTime、ErrorReportSeq 和 ProgressReportSeq 字段不一定表示错误，而是表示指示呼叫或消息状态的消息。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> ErrorTime、ErrorReportSeq 和 ProgressReportSeq 字段不一定表示错误，而是表示指示呼叫或消息状态的消息。
+
 
 
 

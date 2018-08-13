@@ -57,21 +57,12 @@ _**上一次修改主题：** 2016-12-08_
 
   - 复制到 Active Directory **msRTCSIP-line** 属性。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>与远程呼叫控制 (RCC) 共存</strong><br />
+    > [!NOTE]  
+    > <strong>与远程呼叫控制 (RCC) 共存</strong><br />
     RCC 是指使用 Lync Server 监视并控制桌面 PBX 电话的功能。控制是通过充当 PBX 网关的服务器路由的。尽管无法同时为用户配置 RCC 和 企业语音，但线路 URI 设置在任一情况下都会指定用户的主要电话号码。<br />
     如果您拥有希望选定用户继续使用的现有 PBX 基础结构，则可在组织中逐步引入 企业语音。有关此部署方案的详细信息，请参阅规划文档中的 <a href="lync-server-2013-direct-sip-deployment-options.md">Lync Server 2013 中的直接 SIP 部署选项</a>。<br />
-    在以前的版本中，仅当也为用户配置了同振功能（传入呼叫同时拨打用户的 PBX 电话和 Communicator）时，才能为该用户同时启用 RCC 和 企业语音。在 Lync Server 2010 中不支持同振。</td>
-    </tr>
-    </tbody>
-    </table>
+    在以前的版本中，仅当也为用户配置了同振功能（传入呼叫同时拨打用户的 PBX 电话和 Communicator）时，才能为该用户同时启用 RCC 和 企业语音。在 Lync Server 2010 中不支持同振。
+    
 
 
 可通过三种方法来填充 **msRTCSIP-line** 属性：
@@ -96,18 +87,8 @@ _**上一次修改主题：** 2016-12-08_
 
   - Tel:5550100（对于企业范围内唯一的分机）
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>即使由通讯簿服务 (ABS) 执行规范化之后，也需要对 Active Directory 域服务中每个用户的主要电话号码进行规范化，这是由于 ABS 无权访问 Active Directory 域服务，因此无法将主要号码复制到 <strong>msRTCSIP-line</strong> 属性。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 即使由通讯簿服务 (ABS) 执行规范化之后，也需要对 Active Directory 域服务中每个用户的主要电话号码进行规范化，这是由于 ABS 无权访问 Active Directory 域服务，因此无法将主要号码复制到 <strong>msRTCSIP-line</strong> 属性。
 
 
 ## 步骤 2. 为用户启用企业语音

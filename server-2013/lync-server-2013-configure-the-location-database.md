@@ -25,18 +25,9 @@ _**上一次修改主题：** 2012-09-17_
 
 3.  发布更新的数据库。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>另外，可以定义可用于代替位置数据库的辅助位置源数据库。有关详细信息，请参阅<a href="lync-server-2013-configure-a-secondary-location-information-service.md">配置辅助位置信息服务</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 另外，可以定义可用于代替位置数据库的辅助位置源数据库。有关详细信息，请参阅<a href="lync-server-2013-configure-a-secondary-location-information-service.md">配置辅助位置信息服务</a>。
+
 
 
 ## 本部分内容

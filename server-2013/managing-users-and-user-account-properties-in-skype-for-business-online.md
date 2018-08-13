@@ -47,19 +47,9 @@ _**上一次修改主题：** 2015-06-22_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Set-CsUser cmdlet 也包括在可供 Skype for Business Online 管理员使用的一组 cmdlet 中。但是，Set-CsUser 当前不能用于管理 Skype for Business Online，设置 AudioVideoDisabled 参数除外。如果您试图运行该 cmdlet 和任何其他参数，命令将会失败，并出现以下类似错误消息：<br />
-无法设置“SipAddress”。此参数在远程租户 PowerShell 中受限制。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]  
+> Set-CsUser cmdlet 也包括在可供 Skype for Business Online 管理员使用的一组 cmdlet 中。但是，Set-CsUser 当前不能用于管理 Skype for Business Online，设置 AudioVideoDisabled 参数除外。如果您试图运行该 cmdlet 和任何其他参数，命令将会失败，并出现以下类似错误消息：<br />
+> 无法设置“SipAddress”。此参数在远程租户 PowerShell 中受限制。
 
 
 音频会议提供商也可使用 Skype for Business Online 管理中心分配给用户帐户或从用户帐户取消分配：

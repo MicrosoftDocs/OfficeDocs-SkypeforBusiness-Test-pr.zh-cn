@@ -19,7 +19,7 @@ _**上一次修改主题：** 2012-10-01_
 
 1.  **需要内部部署还是联机部署？**    Lync Server 支持这两种部署方案。有关做出此决策的详细信息，请参阅本节前面的 [确定如何部署 Lync Server 2013](lync-server-2013-deciding-how-to-deploy-microsoft-lync.md)
 
-2.  **需要物理拓扑还是虚拟拓扑？**Lync Server 支持物理拓扑和虚拟拓扑中的所有工作负荷和服务器角色。物理拓扑与虚拟拓扑在用户容量和可伸缩性上有所不同。有关详细信息，请参阅 [在虚拟服务器上运行 Lync Server](lync-server-2013-running-lync-server-on-virtual-servers.md)。
+2.  **需要物理拓扑还是虚拟拓扑？** Lync Server 支持物理拓扑和虚拟拓扑中的所有工作负荷和服务器角色。物理拓扑与虚拟拓扑在用户容量和可伸缩性上有所不同。有关详细信息，请参阅 [在虚拟服务器上运行 Lync Server](lync-server-2013-running-lync-server-on-virtual-servers.md)。
 
 3.  **即时消息 *(IM)* 和 *状态* 始终处于启用状态。** 在任何 Lync Server 部署中，默认情况下都会安装并启用即时消息 (IM) 和状态工作负荷。通过 IM，用户可以使用实时文本消息进行通信；通过状态，用户可以查看网络上其他用户的状态。用户的状态提供的信息有助于其他用户决定是否应尝试联系该用户以及以何种方式联系。有关详细信息，请参阅规划文档中的 [在 Lync Server 2013 中规划前端服务器、即时消息和状态](lync-server-2013-planning-for-front-end-servers-instant-messaging-and-presence.md)。
 

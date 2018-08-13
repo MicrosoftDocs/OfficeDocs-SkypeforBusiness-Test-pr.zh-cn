@@ -85,18 +85,8 @@ ABSConfig 是一个图形用户界面应用程序，使管理员能够配置与�
 
 在 Lync Server 2013 ABS 配置工具中，可通过取消选中属性的“启用”复选框来删除属性（行）。这与 Lync Server 2010 中的删除行操作具有相同效果。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>“启用”复选框位于最右侧列中；您可能需要向右滚动才能看到该列</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> “启用”复选框位于最右侧列中；您可能需要向右滚动才能看到该列
 
 
 ## 输出
@@ -165,18 +155,8 @@ ABSConfig 使管理员能够快速且轻松地自定义 Lync Server 2013 通讯�
 
 “拓扑信息”选项卡显示在网络配置设置中配置的所有链接。对于每个链接，显示音频和视频带宽容量。此外，以 Kbps 和容量百分比形式显示当前利用的带宽。该工具使用颜色编码突出显示利用率接近容量的链接，这使得管理员可快速隔离此类链接。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果带宽策略服务监视器工具在连接到配置的任何带宽策略服务时遇到故障，则“计算机信息”和“拓扑信息”选项卡不会填充。然而，该工具可能最初连接成功，后来却丢失了与服务的连接。在这种情况下，管理员可能会看到过时的信息。每个选项卡上的“上次更新时间”时间戳允许管理员查看特定带宽策略服务的数据上次更新的时间。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果带宽策略服务监视器工具在连接到配置的任何带宽策略服务时遇到故障，则“计算机信息”和“拓扑信息”选项卡不会填充。然而，该工具可能最初连接成功，后来却丢失了与服务的连接。在这种情况下，管理员可能会看到过时的信息。每个选项卡上的“上次更新时间”时间戳允许管理员查看特定带宽策略服务的数据上次更新的时间。
 
 
 ## 输出
@@ -237,7 +217,7 @@ ABSConfig 使管理员能够快速且轻松地自定义 Lync Server 2013 通讯�
 
   - **WanLinkLogCollector.exe**   此工具使用户能够输入所需信息。
 
-  - **BandwidthUtilizationAnalyzer.xlsm **  WanLinkLogCollector.exe 将启动 Microsoft Excel 电子表格软件报告。此应用程序允许对报告应用筛选器，如本文后面所示。
+  - **BandwidthUtilizationAnalyzer.xlsm**  WanLinkLogCollector.exe 将启动 Microsoft Excel 电子表格软件报告。此应用程序允许对报告应用筛选器，如本文后面所示。
 
 ## 使用带宽用量分析器的阶段
 
@@ -247,18 +227,8 @@ ABSConfig 使管理员能够快速且轻松地自定义 Lync Server 2013 通讯�
 
   - 自定义报告，使用 BandwidthUtilizationAnalyzer.xlsm 执行
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945592.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>强烈建议最终用户不要手动启动 BandwidthUtilizationAnalyzer.xlsm。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 强烈建议最终用户不要手动启动 BandwidthUtilizationAnalyzer.xlsm。
 
 
 ## 启动带宽用量分析器
@@ -273,7 +243,7 @@ ABSConfig 使管理员能够快速且轻松地自定义 Lync Server 2013 通讯�
 
 2.  **指定文件目录**   提供文件位置信息
 
-3.  **收集日志并启动报告查看器 **  执行命令以生成报告
+3.  **收集日志并启动报告查看器**  执行命令以生成报告
 
 ## 步骤 1 - 记录日程表
 
@@ -291,22 +261,12 @@ ABSConfig 使管理员能够快速且轻松地自定义 Lync Server 2013 通讯�
 
   - **服务器日志文件位置** 存储带宽策略服务器日志的文件夹位置。这通常位于 \<文件服务器\>\\\<FE 选择\>\\AppServerFiles\\PDP 中。
 
-  - **临时文件存储位置 ** 生成报告时存储中间文件的临时文件位置。
+  - **临时文件存储位置** 生成报告时存储中间文件的临时文件位置。
 
 ![带宽用量分析中的文件目录](images/JJ945604.d66daeac-1669-45e3-932d-3f6782840c2a(OCS.15).jpg "带宽用量分析中的文件目录")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>确保向工具用户提供对服务器日志和临时文件存储文件夹足够的文件访问权限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 确保向工具用户提供对服务器日志和临时文件存储文件夹足够的文件访问权限。
 
 
 ## 步骤 3 - 收集日志并启动报告查看器
@@ -460,6 +420,7 @@ ABSConfig 使管理员能够快速且轻松地自定义 Lync Server 2013 通讯�
 
 如果此工具在运行 CPS 的相同计算机上运行，则没有要求。如果此工具在远程计算机上运行，Lync Server 2013 使用的 SQL Server 数据库必须配置为允许远程访问。必须为呼叫寄存时间记录器配置 SQL Server 数据库连接字符串才能连接到 SQL Server。此 SQL Server 数据库连接字符串在配置文件 **parkometer.exe.config** 中进行定义。它必须放在 parkometer.exe 所在的相同目录中。以下 XML 文件是一个 parkometer.exe.config 示例。必须配置的参数包括用户名（例如 mydomain\\Administrator）、密码（例如 mypassword）和主机名称（例如 myserver）。
 
+```xml
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
       <appSettings>
@@ -470,6 +431,7 @@ ABSConfig 使管理员能够快速且轻松地自定义 Lync Server 2013 通讯�
     Integrated Security=false;"/>
       </appSettings>
     </configuration>
+```
 
 ## 示例
 
@@ -577,18 +539,8 @@ DBAnalyze 是一个命令行工具，可帮助管理员收集有关 Lync Server 
 
   - **诊断模式**   创建报告，信息涵盖表（记录数、碎片、数据大小和索引大小）、数据和日志文件大小、上次备份时间、运行 Microsoft Office Communications Server 的服务器之间的联系人分布、平均权限数、联系人、容器、订阅、出版物、每个用户的终结点、任何未正确驻留的用户、无法路由的用户、每个用户组织的平均会议数、计划内会议、活动会议和数据库版本。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>运行诊断模式可能会影响服务器性能。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 运行诊断模式可能会影响服务器性能。
 
 
   - **用户数据模式**  为指定用户或者其联系人和权限列表中具有该用户的用户报告联系人、容器、订阅、出版物、权限和联系人组数据。此模式也报告用户组织或受邀加入的会议的摘要数据。
@@ -627,18 +579,8 @@ DBAnalyze 是一个命令行工具，可帮助管理员收集有关 Lync Server 
 
 ![适用于 Dbanalyze.exe 的权限标签。](images/JJ945604.b8931e9e-834e-4dec-8a84-2fc47d1613e9(OCS.15).jpg "适用于 Dbanalyze.exe 的权限标签。")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>/report:disk</strong> 模式要求使用本地管理员帐户。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <strong>/report:disk</strong> 模式要求使用本地管理员帐户。
 
 
 ## 示例
@@ -678,18 +620,8 @@ ImportStorageServiceData 资源工具包工具允许将已从存储服务 (LYSS)
 
 安装 Lync Server 2013 资源工具包工具。该工具在安装了 Lync Server 和 Lync Server 命令行管理程序 并且已加入域的计算机上运行。该工具使用命令行管理程序中的 cmdlet 识别池中的所有前端服务器。其次，必须从池中安装了 **RtcLocal** 数据库的计算机运行该工具。该工具使用此数据库检索池的 WEBSERVICE 文件共享的位置。此外，在使用该工具之前，必须首先在每个前端服务器上以及从中执行该工具的计算机上使用 **Enable-PSRemoting** 启用 Windows PowerShell Remoting。否则，从此工具运行远程 Windows PowerShell 命令将会失败。完成后，可在所有前端服务器上禁用 Windows PowerShell Remoting。最后，调用该工具的帐户或凭据必须对池中执行此工具的 webservice 文件共享具有读/写权限。否则，该工具将失败并出现 IO 权限错误。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows Server 2012 上默认启用 Windows PowerShell Remoting，Windows Server 2008 操作系统 上并不默认启用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Windows Server 2012 上默认启用 Windows PowerShell Remoting，Windows Server 2008 操作系统 上并不默认启用。
 
 
 ## 示例
@@ -1003,7 +935,7 @@ Microsoft Lync Server 2013 通信软件的管理员可以使用网络配置查�
 
 ## 示例
 
-**以图形格式从 Lync Server 2013 中部署加载和查看 CAC 网络拓扑：**Lync Server 2013 管理员可以使用下图所示的“下载网络配置”选项在任何 Lync Server 2013 计算机上加载并查看 CAC 网络拓扑配置。当部署在未与 Lync 配置存储建立连接的计算机上时，该工具将无法下载或查看此类配置。
+**以图形格式从 Lync Server 2013 中部署加载和查看 CAC 网络拓扑：** Lync Server 2013 管理员可以使用下图所示的“下载网络配置”选项在任何 Lync Server 2013 计算机上加载并查看 CAC 网络拓扑配置。当部署在未与 Lync 配置存储建立连接的计算机上时，该工具将无法下载或查看此类配置。
 
 ![下载网络配置。](images/JJ945604.8d126d3f-2545-4f13-a244-974f09614982(OCS.15).jpg "下载网络配置。")
 
@@ -1019,7 +951,7 @@ Microsoft Lync Server 2013 通信软件的管理员可以使用网络配置查�
 
 ![将网络配置另存为图片。](images/JJ945604.145a6fb9-58b1-46b1-bbd5-a661ceba07b4(OCS.15).jpg "将网络配置另存为图片。")
 
-**查看 CAC 网络拓扑配置数据：**Lync Server 2013 管理员可以使用如下所示的“查看网络配置数据”选项以文本格式查看相关的网络配置数据（如网络区域、网络站点、带宽配置文件以及站点子网 IP 地址。
+**查看 CAC 网络拓扑配置数据：** Lync Server 2013 管理员可以使用如下所示的“查看网络配置数据”选项以文本格式查看相关的网络配置数据（如网络区域、网络站点、带宽配置文件以及站点子网 IP 地址。
 
 ![查看网络配置数据。](images/JJ945604.b72a4c21-a042-4d91-bf96-fcb396af0679(OCS.15).jpg "查看网络配置数据。")
 
@@ -1061,7 +993,7 @@ Microsoft Lync Server 2013 通信软件的管理员可以使用网络配置查�
 
 “响应组代理实时”有三个主要功能适用于代理：
 
-  - **登录/注销：**与代理组页面（可从 Lync 2013 访问）不同，“响应组代理实时”仅允许代理一次性登录或注销所有代理组。此应用程序为代理提供三种快速登录或注销的方式：
+  - **登录/注销：** 与代理组页面（可从 Lync 2013 访问）不同，“响应组代理实时”仅允许代理一次性登录或注销所有代理组。此应用程序为代理提供三种快速登录或注销的方式：
     
       - 单击应用程序中的登录/注销（绿色和红色）按钮。
     
@@ -1069,9 +1001,9 @@ Microsoft Lync Server 2013 通信软件的管理员可以使用网络配置查�
     
       - 使用可配置的键盘快捷方式。
 
-  - **组成员身份：**当选中一个代理组时，“响应组代理实时”将在右侧窗格中显示此组的代理列表。如果 Lync 2013 正在此应用程序所在的相同计算机上运行，“响应组代理实时”中将显示状态信息和联系人卡片。代理可以直接从这里发送 IM 或呼叫其他代理。
+  - **组成员身份：** 当选中一个代理组时，“响应组代理实时”将在右侧窗格中显示此组的代理列表。如果 Lync 2013 正在此应用程序所在的相同计算机上运行，“响应组代理实时”中将显示状态信息和联系人卡片。代理可以直接从这里发送 IM 或呼叫其他代理。
 
-  - **实时统计信息：**“响应组代理实时”提供所有代理组的实时统计信息。更新频率为一分钟。当响应组应答呼叫时，将在组名称旁边添加一个可视指示器并显示当前排队等候的呼叫数。将指针暂停在某个组上方将显示最长等待时间。
+  - **实时统计信息：** “响应组代理实时”提供所有代理组的实时统计信息。更新频率为一分钟。当响应组应答呼叫时，将在组名称旁边添加一个可视指示器并显示当前排队等候的呼叫数。将指针暂停在某个组上方将显示最长等待时间。
 
 ## 要求
 
@@ -1127,50 +1059,20 @@ SEFAUtil（辅助扩展功能激活）使 Lync Server 2013 管理员和技术支
 
   - 启用/禁用/修改团队呼叫组设置
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 SEFAUtil 工具新增功能</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lync Server 2013 SEFAUtil 工具新增功能
 
 
   - 启用/禁用/修改同时响铃设置（包括目标）
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 SEFAUtil 工具新增功能</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Lync Server 2013 SEFAUtil 工具新增功能
 
 
   - 启用/禁用/修改组内呼叫应答设置
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 SEFAUtil 工具新增功能</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Lync Server 2013 SEFAUtil 工具新增功能
 
 
 此工具存在以下限制：
@@ -1207,36 +1109,16 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
     
         New-CsTrustedApplicationPool -id <Pool FQDN> -Registrar <Pool Registrar FQDN> -site Site:<Pool Site>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须安装在将用于运行 SEFAUtil 工具的任何计算机上安装 UCMA 3.0。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 必须安装在将用于运行 SEFAUtil 工具的任何计算机上安装 UCMA 3.0。
 
 
 2.  需要在拓扑中为 SEFAUtil 工具定义受信任的应用程序。要将 SEFAUtil 定义为新的受信任的应用程序，请使用 Lync Server 命令行管理程序并执行以下 cmdlet：
     
         New-CsTrustedApplication -ApplicationId sefautil -TrustedApplicationPoolFqdn <Pool FQDN>  -Port 7489
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果需要则可以使用其他端口。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果需要则可以使用其他端口。
 
 
 3.  需要启用拓扑更改。可通过 Lync Server 命令行管理程序执行以下 cmdlet 来启用拓扑更改：
@@ -1261,18 +1143,8 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 
 以下命令显示用户的呼叫处理。`SEFAUtil.exe /server:lyncserver.contoso.com katarina@contoso.com`
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此示例使用 <strong>/server</strong> 开关指定要连接到的 Lync Server。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此示例使用 <strong>/server</strong> 开关指定要连接到的 Lync Server。
 
 
 **输出**
@@ -1359,18 +1231,8 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 
 此示例将删除代理人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当删除了最后一个代理人时，代理人响铃将自动禁用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 当删除了最后一个代理人时，代理人响铃将自动禁用。
 
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removedelegate:joe@contoso.com
@@ -1403,18 +1265,8 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /setsimulringdestination:+14255550126 /enablesimulring
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要更改已经启用了同时响铃的用户的同时响铃目标号码，请带 /enablesimulring 开关使用命令，否则目标号码不会更改。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 要更改已经启用了同时响铃的用户的同时响铃目标号码，请带 /enablesimulring 开关使用命令，否则目标号码不会更改。
 
 
 **输出**
@@ -1446,18 +1298,8 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /addteammember:anders@contoso.com /simulringteam
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>向用户的团队呼叫组添加成员会自动将用户的同时响铃设置切换为同时拨打团队呼叫组。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 向用户的团队呼叫组添加成员会自动将用户的同时响铃设置切换为同时拨打团队呼叫组。
 
 
 **输出**
@@ -1473,18 +1315,8 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removeteammember:anders@contoso.com
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果正在删除的成员是团队呼叫组的唯一成员，那么团队呼叫组同时响铃将自动禁用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果正在删除的成员是团队呼叫组的唯一成员，那么团队呼叫组同时响铃将自动禁用。
 
 
 **输出**
@@ -1514,18 +1346,8 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /simulringteam
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果用户的团队呼叫组没有成员，则不会启用团队呼叫。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果用户的团队呼叫组没有成员，则不会启用团队呼叫。
 
 
 **输出**
@@ -1563,18 +1385,8 @@ SEFAUtil 工具只能在属于受信任应用程序池的一部分的计算机�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /disablegrouppickup
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当为某个用户禁用组内呼叫应答时，分配给该用户的组号码不再保留。如果您随后想为该用户重新启用组内呼叫应答，必须使用 /enablegrouppickup 开关再次分配组号码。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 当为某个用户禁用组内呼叫应答时，分配给该用户的组号码不再保留。如果您随后想为该用户重新启用组内呼叫应答，必须使用 /enablegrouppickup 开关再次分配组号码。
 
 
     User Aor: sip:katarina@contoso.com
@@ -1674,18 +1486,8 @@ SYSPrep.ps1 是一个 Windows PowerShell 脚本，将在 Windows Server 2008 操
 
 1.  将源服务器或池中承载的通知应用程序的未分配号码通知使用的所有音频文件移动到目标服务器或池的文件存储。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>音频文件一旦复制到目标池，将从源池中删除。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 音频文件一旦复制到目标池，将从源池中删除。
 
 
 2.  将为源服务器或池中承载的通知应用程序配置的所有未分配号码通知移动到目标服务器或池。
@@ -1754,18 +1556,8 @@ Web 会议数据工具允许 Lync Server 2013 通信软件的管理员更好地�
 
 4.  当单个用户从一个池移动到另一个池时，移动与该用户相关联的所有 Web 会议数据。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2010 资源工具包工具 支持当单个用户从一个池移动到另一个池时移动与该用户相关联的所有 Web 会议数据。该功能现在已从此工具中弃用，而采用了 <strong>MoveConferenceData</strong> 参数。有关此参数的详细信息，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/gg398528(v=ocs.15)">Move-CsUser</a> cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2010 资源工具包工具 支持当单个用户从一个池移动到另一个池时移动与该用户相关联的所有 Web 会议数据。该功能现在已从此工具中弃用，而采用了 <strong>MoveConferenceData</strong> 参数。有关此参数的详细信息，请参阅 <a href="https://technet.microsoft.com/zh-cn/library/gg398528(v=ocs.15)">Move-CsUser</a> cmdlet。
 
 
 该工具仅删除处于非活动状态的会议的会议数据。活动会议（或正在进行会话的会议）无法删除。
@@ -1803,4 +1595,3 @@ Web 会议数据工具允许 Lync Server 2013 通信软件的管理员更好地�
 ## 摘要
 
 此工具对于需要更精确控制会议数据的管理员而言是一项宝贵资源。
-

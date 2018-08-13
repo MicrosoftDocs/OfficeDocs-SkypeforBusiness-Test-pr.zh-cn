@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 除了服务器平台的硬件和操作系统要求外， Lync Server 2013 还要求在部署的服务器上安装其他软件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关运行 Lync Server 的服务器的平台要求的详细信息，请参阅 <a href="lync-server-2013-server-hardware-platforms.md">适用于 Lync Server 2013 的服务器硬件平台</a>和 <a href="lync-server-2013-server-and-tools-operating-system-support.md">Lync Server 2013 中的服务器和工具操作系统支持</a>。有关客户端计算机和设备的系统要求的详细信息，请参阅规划文档中的 <a href="lync-server-2013-planning-for-clients-and-devices.md">规划 Lync Server 2013 中的客户端和设备</a>。有关管理工具的软件要求的详细信息，请参阅 <a href="lync-server-2013-administrative-tools-software-requirements.md">Lync Server 2013 中的管理工具软件要求</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关运行 Lync Server 的服务器的平台要求的详细信息，请参阅 <a href="lync-server-2013-server-hardware-platforms.md">适用于 Lync Server 2013 的服务器硬件平台</a>和 <a href="lync-server-2013-server-and-tools-operating-system-support.md">Lync Server 2013 中的服务器和工具操作系统支持</a>。有关客户端计算机和设备的系统要求的详细信息，请参阅规划文档中的 <a href="lync-server-2013-planning-for-clients-and-devices.md">规划 Lync Server 2013 中的客户端和设备</a>。有关管理工具的软件要求的详细信息，请参阅 <a href="lync-server-2013-administrative-tools-software-requirements.md">Lync Server 2013 中的管理工具软件要求</a>。
+
 
 
 ## 所有内部服务器角色所需的其他软件

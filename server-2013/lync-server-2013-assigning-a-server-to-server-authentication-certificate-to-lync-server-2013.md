@@ -45,18 +45,8 @@ Set-CsCertificate cmdlet 可获得相关证书并立即将该证书配置为用�
 
 如果不想使用 Windows PowerShell，还可以使用证书 MMC 控制台从一台前端服务器中导出证书，然后在所有其他前端服务器上导入相同证书。如果执行此操作，请确保将私钥连同证书本身一起导出。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在这种情况下，必须在每台前端服务器上执行该过程。以这种方式导出和导入证书时，Lync Server 2013 不会将该证书复制到每台前端服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 在这种情况下，必须在每台前端服务器上执行该过程。以这种方式导出和导入证书时，Lync Server 2013 不会将该证书复制到每台前端服务器。
 
 
 将证书导入到所有前端服务器后，可使用 Lync Server 部署向导而不是 Windows PowerShell 来分配该证书。要使用部署向导分配证书，请在安装了部署向导的计算机上完成以下步骤：

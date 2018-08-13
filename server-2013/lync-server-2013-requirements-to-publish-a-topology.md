@@ -25,18 +25,9 @@ _**上一次修改主题：** 2013-02-21_
 
   - 若要发布 Enterprise Edition 前端池，必须将基于 SQL Server 的后端服务器加入将部署服务器的域，将该后端服务器联机，并为其配置适当的防火墙规则以使其对远程用户可用。有关指定防火墙例外的详细信息，请参阅 [了解 SQL Server 与 Lync Server 2013 一起使用时的防火墙要求](lync-server-2013-understanding-firewall-requirements-for-sql-server.md)。有关配置 SQL Server 的其他详细信息，请参阅 [为 Lync Server 2013 配置 SQL Server](lync-server-2013-configure-sql-server-for-lync-server.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Standard Edition Server 具有将接受已发布配置的并置数据库。必须在 Lync Server 部署向导中首先运行“准备第一台 Standard Edition Server”设置任务。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> Standard Edition Server 具有将接受已发布配置的并置数据库。必须在 Lync Server 部署向导中首先运行“准备第一台 Standard Edition Server”设置任务。
+    
 
 
 ## 另请参阅

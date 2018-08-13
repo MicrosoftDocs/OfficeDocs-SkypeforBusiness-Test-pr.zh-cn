@@ -17,18 +17,9 @@ _**上一次修改主题：** 2014-02-05_
 
 如果将策略配置为支持与联盟伙伴进行通信，则策略将适用于联盟域用户。可以配置一个或多个外部用户访问策略来控制联盟域用户能否与 Lync Server 2013 用户进行协作。要控制联盟用户访问，可以在全局、站点和用户级别配置策略。 在一个策略级别应用的 Lync Server 策略设置可能会覆盖在另一个策略级别应用的设置。Lync Server 策略优先顺序为：用户策略（影响力最大）覆盖站点策略，站点策略覆盖全局策略（影响力最小）。这意味着，策略设置与策略所影响的对象距离越近，它对该对象的影响力越大。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>即使没有为组织启用联盟，也可以配置控制联盟用户访问的策略。但是，只有为组织启用联盟后，配置的策略才会生效。有关启用联盟的详细信息，请参阅部署文档或操作文档中的<a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中启用或禁用远程用户访问</a>。此外，如果指定了某个用户策略用来控制联盟用户访问，则该策略仅应用于已启用 Lync Server 2013 并配置为使用该策略的用户。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 即使没有为组织启用联盟，也可以配置控制联盟用户访问的策略。但是，只有为组织启用联盟后，配置的策略才会生效。有关启用联盟的详细信息，请参阅部署文档或操作文档中的<a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中启用或禁用远程用户访问</a>。此外，如果指定了某个用户策略用来控制联盟用户访问，则该策略仅应用于已启用 Lync Server 2013 并配置为使用该策略的用户。
+
 
 
 ## 配置策略以支持联盟域用户访问
@@ -77,18 +68,8 @@ _**上一次修改主题：** 2014-02-05_
     
         Set-CsExternalAccessPolicy -Identity global -EnableFederationAccess $true -EnableXmppAccess $true -EnableOutsideAccess $true -EnablePublicCloudAccess $true -EnablePublicCloudAudioVideoAccess $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>参数“EnablePublicCloudAudioVideoAccess”在 Lync Server 控制面板中没有对应的选项</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 参数“EnablePublicCloudAudioVideoAccess”在 Lync Server 控制面板中没有对应的选项
 
 
 ## 使用 Windows PowerShell 创建新策略以支持联盟域用户访问
@@ -136,9 +117,9 @@ _**上一次修改主题：** 2014-02-05_
 
 [在 Lync Server 2013 中管理组织的 SIP 联盟域](lync-server-2013-manage-sip-federated-domains-for-your-organization.md)  
 [在 Lync Server 2013 中管理组织的 SIP 联盟提供程序](lync-server-2013-manage-sip-federated-providers-for-your-organization.md)  
-[Set-CsExternalAccessPolicy](set-csexternalaccesspolicy.md)  
-[New-CsExternalAccessPolicy](new-csexternalaccesspolicy.md)  
-[Get-CsExternalAccessPolicy](get-csexternalaccesspolicy.md)  
-[Remove-CsExternalAccessPolicy](remove-csexternalaccesspolicy.md)  
-[Grant-CsExternalAccessPolicy](grant-csexternalaccesspolicy.md)
+[Set-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsExternalAccessPolicy)  
+[New-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsExternalAccessPolicy)  
+[Get-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsExternalAccessPolicy)  
+[Remove-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsExternalAccessPolicy)  
+[Grant-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsExternalAccessPolicy)
 

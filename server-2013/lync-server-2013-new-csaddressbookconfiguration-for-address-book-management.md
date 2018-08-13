@@ -31,5 +31,5 @@ New-CsAddressBookConfiguration cmdlet 会创建新的配置以管理通讯簿的
 
 #### 其他资源
 
-[New-CsAddressBookConfiguration](new-csaddressbookconfiguration.md)
+[New-CsAddressBookConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsAddressBookConfiguration)
 

@@ -142,5 +142,5 @@ By default, the **Grant-CsClientVersionPolicy** cmdlet does not return objects o
 [Get-CsClientVersionPolicy](get-csclientversionpolicy.md)  
 [New-CsClientVersionPolicy](new-csclientversionpolicy.md)  
 [Remove-CsClientVersionPolicy](remove-csclientversionpolicy.md)  
-[Set-CsClientVersionPolicy](set-csclientversionpolicy.md)
+[Set-CsClientVersionPolicy](Set-CsClientVersionPolicy.md)
 

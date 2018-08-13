@@ -19,11 +19,11 @@ _**上一次修改主题：** 2012-10-19_
 
 有关详细信息，请参阅 Lync Server 命令行管理程序文档中有关以下 cmdlet 的内容：
 
-  - [Get-CsNetworkConfiguration](get-csnetworkconfiguration.md)
+  - [Get-CsNetworkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkConfiguration)
 
-  - [Set-CsNetworkConfiguration](set-csnetworkconfiguration.md)
+  - [Set-CsNetworkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsNetworkConfiguration)
 
-  - [Remove-CsNetworkConfiguration](remove-csnetworkconfiguration.md)
+  - [Remove-CsNetworkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkConfiguration)
 
 ## 使用命令行管理程序启用呼叫允许控制
 
@@ -49,18 +49,9 @@ _**上一次修改主题：** 2012-10-19_
 
 5.  在“编辑全局设置”页上，选中“启用呼叫允许控制”复选框。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要在整个部署中禁用呼叫允许控制，请清除此复选框。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果要在整个部署中禁用呼叫允许控制，请清除此复选框。
+    
 
 
 6.  单击“提交”。

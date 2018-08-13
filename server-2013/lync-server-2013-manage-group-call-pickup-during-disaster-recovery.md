@@ -27,7 +27,7 @@ _**上一次修改主题：** 2015-03-09_
 
 故障转移至备份池的过程完成后，必须将呼叫寄存通道表中的组内呼叫应答号码范围重定向至备份池。当故障回复至主池的过程完成后，必须将号码范围重定向回主池。若要重定向组内呼叫应答范围，请使用 **Set-CsCallParkOrbit** cmdlet。
 
-如果您部署具有不同完全限定域名 (FQDN) 的新池来替换主池，则需要将与主池关联的所有组内呼叫应答号码范围重新分配到新池的 FQDN。若要将号码范围重新分配到新池，您可以使用 **Set-CsCallParkOrbit** cmdlet。有关 **Set-CsCallParkOrbit** cmdlet 的详细信息，请参阅 [Set-CsCallParkOrbit](set-cscallparkorbit.md)。
+如果您部署具有不同完全限定域名 (FQDN) 的新池来替换主池，则需要将与主池关联的所有组内呼叫应答号码范围重新分配到新池的 FQDN。若要将号码范围重新分配到新池，您可以使用 **Set-CsCallParkOrbit** cmdlet。有关 **Set-CsCallParkOrbit** cmdlet 的详细信息，请参阅 [Set-CsCallParkOrbit](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCallParkOrbit)。
 
 ## 池故障期间的组内呼叫应答体验
 

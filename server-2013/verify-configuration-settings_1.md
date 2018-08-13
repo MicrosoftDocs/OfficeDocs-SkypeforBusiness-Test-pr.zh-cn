@@ -73,76 +73,26 @@ _**上一次修改主题：** 2015-03-09_
 
 3.  若要确认导入的会议策略，请在左窗格中，依次单击“会议”和“会议策略”，然后确认 Office Communications Server 2007 R2 环境中的所有会议策略都包含在列表中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Office Communications Server 早期版本中的“会议”(Meeting) 策略现在在 Lync Server 2013 中称为会议 (Conferencing) 策略。此外，Office Communications Server 早期版本中的“匿名参与者”设置现在是 Lync Server 2013 会议策略中的一项设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > Office Communications Server 早期版本中的“会议”(Meeting) 策略现在在 Lync Server 2013 中称为会议 (Conferencing) 策略。此外，Office Communications Server 早期版本中的“匿名参与者”设置现在是 Lync Server 2013 会议策略中的一项设置。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Office Communications Server 2007 R2 中，如果会议策略未设置为“对每个用户使用”，则只导入全局策略设置。这种情况下不会导入其他会议策略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在 Office Communications Server 2007 R2 中，如果会议策略未设置为“对每个用户使用”，则只导入全局策略设置。这种情况下不会导入其他会议策略。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 Office Communications Server 2007 R2 会议策略中的“匿名参与者”设置为“对于每个用户强制执行”，则会在迁移期间创建两个会议策略：一个将“AllowAnonymousParticipantsInMeetings”设置为“True”，一个将“AllowAnonymousParticipantsInMeetings”设置为“False”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果 Office Communications Server 2007 R2 会议策略中的“匿名参与者”设置为“对于每个用户强制执行”，则会在迁移期间创建两个会议策略：一个将“AllowAnonymousParticipantsInMeetings”设置为“True”，一个将“AllowAnonymousParticipantsInMeetings”设置为“False”。
 
 
 4.  若要确认导入的拨号计划，请依次单击“语音路由”和“拨号计划”，然后确认 Office Communicator 2007 R2 环境中的所有拨号计划都包含在列表中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Lync Server 2013 中，“位置配置文件”现在称为“拨号计划”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在 Lync Server 2013 中，“位置配置文件”现在称为“拨号计划”。
 
 
 5.  若要确认导入的语音策略，请依次单击“语音路由”和“语音策略”，然后确认 Office Communicator 2007 R2 环境中的所有语音策略都包含在列表中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Office Communications Server 2007 R2 环境中，如果语音策略未设置为“对每个用户使用”，则只导入全局策略设置。这种情况下不会导入其他语音策略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在 Office Communications Server 2007 R2 环境中，如果语音策略未设置为“对每个用户使用”，则只导入全局策略设置。这种情况下不会导入其他语音策略。
 
 
 6.  若要确认导入的语音路由，请依次单击“语音路由”和“路由”，然后确认 Office Communicator 2007 R2 环境中的所有语音路由都包含在列表中。

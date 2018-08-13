@@ -17,18 +17,9 @@ _**上一次修改主题：** 2017-02-07_
 
 要使用 Lync Web App，必须具备以下支持的操作系统和浏览器组合之一。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>某些 Lync Web App功能需要插件，包括基于计算机的语音、视频、共享和查看正在进行的屏幕共享。您可以在加入会议时或者启动以上其中一种功能时安装共享插件。 1</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 某些 Lync Web App功能需要插件，包括基于计算机的语音、视频、共享和查看正在进行的屏幕共享。您可以在加入会议时或者启动以上其中一种功能时安装共享插件。 1
+
 
 
 ## Lync Web App 支持的操作系统和浏览器组合

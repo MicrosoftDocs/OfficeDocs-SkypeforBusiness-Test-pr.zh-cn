@@ -29,18 +29,8 @@ _**上一次修改主题：** 2013-02-21_
 
 您还可以使用 Lync Server 2013标准版 部署 持久聊天服务器。在这种情况下， **PersistentChatService**前端服务器并置在 Standard Edition Server 上，并且您可以将 **PersistentChatStore**后端服务器部署在本地 SQL Server Express 实例上。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我们不支持 持久聊天服务器标准版 以实现高可用性。性能和规模将受到限制。另外，我们只支持新的 持久聊天服务器  Standard Edition Server 部署，并且不支持将 Lync Server 2010群聊服务器升级到 Lync Server 2013持久聊天服务器标准版。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 我们不支持 持久聊天服务器标准版 以实现高可用性。性能和规模将受到限制。另外，我们只支持新的 持久聊天服务器  Standard Edition Server 部署，并且不支持将 Lync Server 2010群聊服务器升级到 Lync Server 2013持久聊天服务器标准版。
 
 
 ## 另请参阅

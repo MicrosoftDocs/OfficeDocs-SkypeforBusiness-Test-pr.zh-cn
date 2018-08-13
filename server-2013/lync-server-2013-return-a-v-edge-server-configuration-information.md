@@ -17,7 +17,7 @@ _**上一次修改主题：** 2012-11-01_
 
 A/V 边缘服务为您的内部用户（已登录到您的组织网络的用户）提供一种与外部用户（未登录到您的组织网络的用户）共享音频和视频的方法。A/V 边缘服务主要通过使用 A/V 边缘配置设置进行管理，即可在站点范围或服务范围进行配置（也就是，可以针对个别 A/V 边缘服务器进行配置）的设置。
 
-要返回有关您的组织中使用的 A/V 边缘配置设置的信息，必须使用 Lync Server 命令行管理程序和 Get-CsAVEdgeConfiguration cmdlet。有关详细信息，请参阅 [Get-CsAVEdgeConfiguration](get-csavedgeconfiguration.md) cmdlet 的帮助主题。
+要返回有关您的组织中使用的 A/V 边缘配置设置的信息，必须使用 Lync Server 命令行管理程序和 Get-CsAVEdgeConfiguration cmdlet。有关详细信息，请参阅 [Get-CsAVEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsAVEdgeConfiguration) cmdlet 的帮助主题。
 
 从 Get-CsAVEdgeConfiguration cmdlet 返回的信息将看起来与以下类似：
 

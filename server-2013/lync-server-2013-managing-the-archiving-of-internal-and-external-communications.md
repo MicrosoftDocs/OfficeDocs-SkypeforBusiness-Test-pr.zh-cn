@@ -25,19 +25,10 @@ _**上一次修改主题：** 2012-10-09_
 
 有关策略如何实现的详细信息（包括策略的层次结构），请参见规划文档、部署文档或操作文档中的[Lync Server 2013 的存档工作原理](lync-server-2013-how-archiving-works.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要控制存档的实现，您必须在存档配置中指定选项，例如，是否存档 IM 或会议、关键模式的用法和清除选项。默认情况下，在全局存档配置或任意站点或池存档配置中未启用任何选项。您应在存档配置中指定所有适当的选项，然后在存档策略中为内部或外部通信启用存档。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md">在 Lync Server 2013 中管理组织、站点和池的存档配置选项</a>。<br />
-如果为部署启用 Microsoft Exchange 集成，则 Exchange 策略可控制是否为驻留在 Exchange 2013 上且其邮箱处于就地保留状态的用户启用存档。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">使用 Exchange 服务器集成设置存档的策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要控制存档的实现，您必须在存档配置中指定选项，例如，是否存档 IM 或会议、关键模式的用法和清除选项。默认情况下，在全局存档配置或任意站点或池存档配置中未启用任何选项。您应在存档配置中指定所有适当的选项，然后在存档策略中为内部或外部通信启用存档。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md">在 Lync Server 2013 中管理组织、站点和池的存档配置选项</a>。<br />
+如果为部署启用 Microsoft Exchange 集成，则 Exchange 策略可控制是否为驻留在 Exchange 2013 上且其邮箱处于就地保留状态的用户启用存档。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">使用 Exchange 服务器集成设置存档的策略</a>。
+
 
 
 ## 本部分内容

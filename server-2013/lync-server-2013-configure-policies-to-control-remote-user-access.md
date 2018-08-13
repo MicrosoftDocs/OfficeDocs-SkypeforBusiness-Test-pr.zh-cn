@@ -17,34 +17,16 @@ _**上一次修改主题：** 2012-10-18_
 
 可以配置一个或多个外部用户访问策略来控制远程用户是否能与内部 Lync Server 用户进行协作。若要控制远程用户访问，可以在全局、站点和用户级别配置策略。站点策略将覆盖全局策略，而用户策略将覆盖站点策略和全局策略。有关可以配置的策略类型的详细信息，请参阅 [管理对 Lync Server 2013 的联盟和外部访问](lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md)。 在一个策略级别应用的 Lync Server 策略设置可能会覆盖在另一个策略级别应用的设置。Lync Server 策略优先顺序为：用户策略（影响力最大）覆盖站点策略，站点策略覆盖全局策略（影响力最小）。这意味着，策略设置与策略所影响的对象距离越近，它对该对象的影响力越大。。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>即使没有为组织启用远程用户访问，也可以配置策略来控制远程用户访问。但是，只有为组织启用远程用户访问后，配置的策略才会生效。有关启用远程用户访问的详细信息，请参阅 <a href="lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md">在 Lync Server 2013 中启用或禁用联盟和公共 IM 连接</a>。此外，如果指定某个用户策略来控制远程用户访问，则该策略仅应用于已启用 Lync Server 并配置为使用该策略的用户。有关指定可从远程位置登录 Lync Server 的用户的详细信息，请参阅 <a href="lync-server-2013-assign-an-external-user-access-policy-to-a-lync-enabled-user.md">在 Lync Server 2013 中将外部用户访问策略分配到启用 Lync 的用户</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 即使没有为组织启用远程用户访问，也可以配置策略来控制远程用户访问。但是，只有为组织启用远程用户访问后，配置的策略才会生效。有关启用远程用户访问的详细信息，请参阅 <a href="lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md">在 Lync Server 2013 中启用或禁用联盟和公共 IM 连接</a>。此外，如果指定某个用户策略来控制远程用户访问，则该策略仅应用于已启用 Lync Server 并配置为使用该策略的用户。有关指定可从远程位置登录 Lync Server 的用户的详细信息，请参阅 <a href="lync-server-2013-assign-an-external-user-access-policy-to-a-lync-enabled-user.md">在 Lync Server 2013 中将外部用户访问策略分配到启用 Lync 的用户</a>。
+
 
 
 按照以下过程配置要用于控制远程用户访问的每个外部访问策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此过程描述如何配置策略以便仅启用与远程用户的通信，但配置为支持远程用户访问的每个策略也可以配置联盟用户访问和公共用户访问。有关配置策略以支持联盟用户的详细信息，请参阅 <a href="lync-server-2013-configure-policies-to-control-federated-user-access.md">在 Lync Server 2013 中配置策略以控制联盟用户访问</a>。有关配置策略以支持公共用户的详细信息，请参阅 <a href="lync-server-2013-create-or-edit-public-sip-federated-providers.md">在 Lync Server 2013 中创建或编辑公共 SIP 联盟提供程序</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此过程描述如何配置策略以便仅启用与远程用户的通信，但配置为支持远程用户访问的每个策略也可以配置联盟用户访问和公共用户访问。有关配置策略以支持联盟用户的详细信息，请参阅 <a href="lync-server-2013-configure-policies-to-control-federated-user-access.md">在 Lync Server 2013 中配置策略以控制联盟用户访问</a>。有关配置策略以支持公共用户的详细信息，请参阅 <a href="lync-server-2013-create-or-edit-public-sip-federated-providers.md">在 Lync Server 2013 中创建或编辑公共 SIP 联盟提供程序</a>。
+
 
 
 ## 配置外部访问策略以支持远程用户访问

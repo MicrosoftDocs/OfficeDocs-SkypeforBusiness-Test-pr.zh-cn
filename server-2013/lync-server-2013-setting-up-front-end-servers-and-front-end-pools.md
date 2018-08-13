@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-10-01_
 
 本节指导您完成安装 Lync Server 2013 以及为 Standard Edition Server 和 前端池设置服务器角色的过程，其中包括 前端服务器和与 前端服务器并置的所有服务器角色。要安装和设置服务器角色，请在每台要安装服务器角色的计算机上运行 Lync Server 部署向导。使用部署向导完成所有四个部署步骤，包括安装本地配置存储、安装 前端服务器、配置证书和启动服务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须先成功发布拓扑，然后才能安装服务器角色。有关发布拓扑的详细信息，请参阅 <a href="lync-server-2013-finalizing-and-implementing-the-topology-design.md">在 Lync Server 2013 中完成和实施拓扑设计</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 必须先成功发布拓扑，然后才能安装服务器角色。有关发布拓扑的详细信息，请参阅 <a href="lync-server-2013-finalizing-and-implementing-the-topology-design.md">在 Lync Server 2013 中完成和实施拓扑设计</a>。
+
 
 
 ## 本部分内容

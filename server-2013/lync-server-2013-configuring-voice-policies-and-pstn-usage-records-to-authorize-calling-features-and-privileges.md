@@ -19,18 +19,9 @@ _**上一次修改主题：** 2012-10-10_
 
 语音策略的作用域可以是 *Site* （定义网络站点的默认功能和权限），也可以是“用户”（定义基于每用户或组分配的功能和权限）。未分配给语音策略的用户将自动分配给全局策略，全局策略是随产品一起安装的默认语音策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关详细信息，请参阅规划文档中的 <a href="lync-server-2013-voice-policies.md">Lync Server 2013 中的语音策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关详细信息，请参阅规划文档中的 <a href="lync-server-2013-voice-policies.md">Lync Server 2013 中的语音策略</a>。
+
 
 
 ## 本部分内容

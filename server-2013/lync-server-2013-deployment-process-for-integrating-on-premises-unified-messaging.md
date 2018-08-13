@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-12-08_
 
 ## 统一消息集成过程
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>与组织的 Exchange 管理员协调，以确认为帮助确保实现顺利而又成功的集成每人所需执行的任务，这一点很重要。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 与组织的 Exchange 管理员协调，以确认为帮助确保实现顺利而又成功的集成每人所需执行的任务，这一点很重要。
 
 
 
@@ -76,13 +66,10 @@ _**上一次修改主题：** 2016-12-08_
 <p>Exchange 组织管理员（如果这不是组织中的第一个 Exchange Server）</p></td>
 <td><p>请参阅适用于您的 Exchange Server 版本的文档：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>Exchange Server 2007 部署文档，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=268694">http://go.microsoft.com/fwlink/p/?LinkId=268694</a>。</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>Exchange Server 2010 或最新的 Service Pack 部署文档，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=268695">http://go.microsoft.com/fwlink/p/?LinkId=268695</a>。</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>Microsoft Exchange Server 2013 规划和部署，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=266569">http://go.microsoft.com/fwlink/p/?LinkId=266569</a>。</p>
 </dd>
 </dl></td>
@@ -149,35 +136,19 @@ _**上一次修改主题：** 2016-12-08_
 <tr class="even">
 <td><p>配置 Lync Server 2013 拨号计划。</p></td>
 <td><p>如果要与 Exchange 2007 SP1 或最新的 Service Pack 或者 Exchange 2010 集成，请创建名称与 Exchange UM 拨号计划完全限定的域名 (FQDN) 匹配的新 企业语音拨号计划。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您需要对每个 UM 拨号计划执行此操作。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 您需要对每个 UM 拨号计划执行此操作。
+
 
 </div>
 <p>如果要与 Exchange 2010 SP1 集成，请确保已配置合适的全局/站点级别或池级别的 企业语音拨号计划。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要与 Exchange 2010 SP1 集成， Lync Server 拨号计划和 Exchange UM SIP 拨号计划的名称则不需要匹配。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 如果要与 Exchange 2010 SP1 集成， Lync Server 拨号计划和 Exchange UM SIP 拨号计划的名称则不需要匹配。
+
 
 </div></td>
 <td><p>RTCUniversalServerAdmins</p></td>
@@ -192,34 +163,17 @@ _**上一次修改主题：** 2016-12-08_
 </ul>
 <p>此工具的工作方式是，扫描 Active Directory 中的 Exchange UM 设置并允许 Lync Server 2013 管理员查看、创建和编辑联系对象。</p></td>
 <td><p>RTCUniversalServerAdmins <em>和</em> RTCUniversalUserAdmins</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要成功运行 ocsumutil.exe，用户必须同时属于这两个组。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]
+> 要成功运行 ocsumutil.exe，用户必须同时属于这两个组。
 
 </div>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要创建联系对象，运行 ocsumutil.exe 的用户必须对存储新联系对象的 Active Directory 组织单位 (OU) 具有正确的权限。可以通过运行 <strong>Grant-CsOUPermission</strong> cmdlet 授予此权限。有关详细信息，请参阅 Lync Server 命令行管理程序文档。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 要创建联系对象，运行 ocsumutil.exe 的用户必须对存储新联系对象的 Active Directory 组织单位 (OU) 具有正确的权限。可以通过运行 <strong>Grant-CsOUPermission</strong> cmdlet 授予此权限。有关详细信息，请参阅 Lync Server 命令行管理程序文档。
+
 
 </div></td>
 <td><p><a href="lync-server-2013-configure-lync-server-2013-to-work-with-unified-messaging-on-microsoft-exchange-server.md">配置 Lync Server 2013 以使用 Microsoft Exchange Server 统一消息</a></p></td>

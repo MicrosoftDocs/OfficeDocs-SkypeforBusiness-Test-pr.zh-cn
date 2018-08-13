@@ -61,19 +61,10 @@ _**上一次修改主题：** 2017-03-09_
 <li><p>在“<strong>启动设置请求</strong>”页面上，单击合适的链接以启动设置请求：</p></li>
 <li><p>在“<strong>指定设置信息</strong>”页面上，输入 <strong>访问边缘服务 FQDN</strong>。例如，<strong>accessedge.contoso.com</strong>。</p></li>
 <li><p>输入至少一个或多个 SIP 域名，然后单击“<strong>添加</strong>”。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要至少一个访问边缘服务器和一个 SIP 域才能完成设置过程。SIP 域和访问边缘服务器必须处于活动状态、正在运行并且在网络上可访问。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]  
+> 需要至少一个访问边缘服务器和一个 SIP 域才能完成设置过程。SIP 域和访问边缘服务器必须处于活动状态、正在运行并且在网络上可访问。
 
 </div></li>
 <li><p>在“<strong>公共 IM 服务提供商</strong>”列表中，选择“<strong>Skype</strong>”，然后单击“<strong>下一步</strong>”以添加联系信息并提交设置请求。</p></li>
@@ -87,19 +78,10 @@ _**上一次修改主题：** 2017-03-09_
 <li><p>在“<strong>启动设置请求</strong>”页面上，单击合适的链接以启动设置请求：</p></li>
 <li><p>在“<strong>指定设置信息</strong>”页面上，输入 <strong>访问边缘服务 FQDN</strong>。例如，<strong>accessedge.contoso.com</strong>。</p></li>
 <li><p>输入至少一个或多个 SIP 域名，然后单击“<strong>添加</strong>”。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要至少一个访问边缘服务器和一个 SIP 域才能完成设置过程。SIP 域和访问边缘服务器必须处于活动状态、正在运行并且在网络上可访问。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]  
+> 需要至少一个访问边缘服务器和一个 SIP 域才能完成设置过程。SIP 域和访问边缘服务器必须处于活动状态、正在运行并且在网络上可访问。
 
 </div></li>
 <li><p>在“<strong>公共 IM 服务提供商</strong>”列表中，选择“<strong>Skype</strong>”，然后单击“<strong>下一步</strong>”以添加联系信息并提交设置请求。</p></li>
@@ -121,18 +103,8 @@ _**上一次修改主题：** 2017-03-09_
 
 需要联盟，Skype 用户才能与您的组织中的 Lync 用户进行通信。公共即时消息连接 (PIC) 是一种联盟类别，必须配置它，您的 Lync 用户才能够与 Skype 用户进行通信。联盟和 PIC 可使用 Lync Server 控制面板进行配置，如下所示。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Live Communication Server 2005 SP1 或 Office Communications Server 2007 不再支持 PIC 联盟。支持 PIC 联盟的平台包括 Lync Server 2013、Lync Server 2010 和 Office Communications Server 2007 R2。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Live Communication Server 2005 SP1 或 Office Communications Server 2007 不再支持 PIC 联盟。支持 PIC 联盟的平台包括 Lync Server 2013、Lync Server 2010 和 Office Communications Server 2007 R2。
 
 
 ## 2\. 配置至少一个策略以支持联盟的用户访问
@@ -143,20 +115,11 @@ _**上一次修改主题：** 2017-03-09_
 
 使用 Lync Server 命令行管理程序，管理员必须配置 Lync 客户端策略以将 Skype 显示为附加 PIC 提供商。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有至少再配置一个策略（步骤 2，此过程前面所述）以支持公共 IM 连接，公共即时消息连接 (PIC) 服务提供商的用户才能参与组织中的 IM 或会议。<br />
-要配置联盟和 PIC，请参阅&quot;启用或禁用联盟和公共 IM 连接&quot;，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=306063">http://go.microsoft.com/fwlink/p/?LinkId=306063</a>。<br />
-要至少配置一个策略以支持联盟的用户访问，请参阅&quot;配置策略以控制公共用户访问&quot;，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=306064">http://go.microsoft.com/fwlink/p/?LinkId=306064</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 只有至少再配置一个策略（步骤 2，此过程前面所述）以支持公共 IM 连接，公共即时消息连接 (PIC) 服务提供商的用户才能参与组织中的 IM 或会议。<br />
+> 要配置联盟和 PIC，请参阅&quot;启用或禁用联盟和公共 IM 连接&quot;，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=306063">http://go.microsoft.com/fwlink/p/?LinkId=306063</a>。<br />
+> 要至少配置一个策略以支持联盟的用户访问，请参阅&quot;配置策略以控制公共用户访问&quot;，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=306064">http://go.microsoft.com/fwlink/p/?LinkId=306064</a>。
+
 
 
 1.  从 Lync Server 前端服务器，打开 Lync Server 命令行管理程序。

@@ -27,16 +27,6 @@ _**上一次修改主题：** 2012-10-19_
 
 5.  （可选）如果贵组织需要 Lync Server 2013 增强状态隐私模式，请在迁移完成后，定义客户端版本策略规则，以便阻止早期客户端版本登录。然后，启用增强状态隐私模式。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在给定服务器池上的每个用户都安装了最新客户端版本之前，请不要启用 Lync 2013 增强状态隐私模式。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在给定服务器池上的每个用户都安装了最新客户端版本之前，请不要启用 Lync 2013 增强状态隐私模式。
 

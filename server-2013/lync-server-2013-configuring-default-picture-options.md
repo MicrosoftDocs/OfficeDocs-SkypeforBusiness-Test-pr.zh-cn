@@ -21,5 +21,5 @@ _**上一次修改主题：** 2013-03-22_
 
     Set-CsPrivacyConfiguration -DisplayPublishedPhotoDefault $False
 
-有关此 cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序 文档中的 [Set-CsPrivacyConfiguration](set-csprivacyconfiguration.md)。
+有关此 cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序 文档中的 [Set-CsPrivacyConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsPrivacyConfiguration)。
 

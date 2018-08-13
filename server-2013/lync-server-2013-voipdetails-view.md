@@ -17,18 +17,8 @@ _**上一次修改主题：** 2015-03-09_
 
 VoIPDetails 视图存储有关对等会话（其中至少有一个用户是 VoIP 用户）的信息。此视图是在 Microsoft Lync Server 2013 中引入的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除了下面列出的列之外，VoIPDetails 视图还包含 <a href="lync-server-2013-sessiondetails-view.md">SessionDetails 视图</a>中的所有列。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 除了下面列出的列之外，VoIPDetails 视图还包含 <a href="lync-server-2013-sessiondetails-view.md">SessionDetails 视图</a>中的所有列。
 
 
 

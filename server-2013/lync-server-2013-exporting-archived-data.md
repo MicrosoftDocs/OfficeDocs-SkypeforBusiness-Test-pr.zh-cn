@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2013-02-23_
 
-存档数据库中存档的数据采用的是不可搜索或不可读格式，但是您可以使用 Export-CsArchivingData cmdlet 从数据库提取记录并将它们保存为 Outlook 电子邮件 (EML) 文件。有关导出存档数据的详细信息，请参阅操作文档中的 [Export-CsArchivingData](export-csarchivingdata.md)。
+存档数据库中存档的数据采用的是不可搜索或不可读格式，但是您可以使用 Export-CsArchivingData cmdlet 从数据库提取记录并将它们保存为 Outlook 电子邮件 (EML) 文件。有关导出存档数据的详细信息，请参阅操作文档中的 [Export-CsArchivingData](https://docs.microsoft.com/en-us/powershell/module/skype/Export-CsArchivingData)。
 
 如果启用 Microsoft Exchange 集成，数据将存档在 Exchange 2013 存储中。存档在 Exchange 2013 中的数据可搜索并且可检测到。有关对集成的 Exchange 2013 和 Lync Server 2013 通信的支持的详细信息，请参阅可支持性文档中的 [Lync Server 2013 中的 Exchange Server 和 SharePoint 集成支持](lync-server-2013-exchange-and-sharepoint-integration-support.md)。有关访问存档在 Exchange 中的数据的详细信息，请参阅 Exchange 2013 文档。
 
@@ -35,7 +35,7 @@ _**上一次修改主题：** 2013-02-23_
     
         Export-CsArchivingData -Identity "ArchivingDatabase:atl-sql-001.litwareinc.com" -StartDate 6/1/2012 -OutputFolder "C:\ArchivingExports" -UserUri "sip:kenmyer@litwareinc.com"
 
-有关详细信息，请参阅 [Export-CsArchivingData](export-csarchivingdata.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Export-CsArchivingData](https://docs.microsoft.com/en-us/powershell/module/skype/Export-CsArchivingData) cmdlet 的帮助主题。
 
 ## 另请参阅
 
@@ -45,6 +45,6 @@ _**上一次修改主题：** 2013-02-23_
 
 #### 其他资源
 
-[Export-CsArchivingData](export-csarchivingdata.md)  
+[Export-CsArchivingData](https://docs.microsoft.com/en-us/powershell/module/skype/Export-CsArchivingData)  
 [管理 Lync Server 2013 存档](lync-server-2013-managing-archiving.md)
 

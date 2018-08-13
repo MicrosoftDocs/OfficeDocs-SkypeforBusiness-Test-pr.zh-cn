@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
 如果已按照规划文档中的[在 Lync Server 2013 中规划 Exchange 统一消息集成](lync-server-2013-planning-for-exchange-unified-messaging-integration.md)所述部署了 Exchange 统一消息 (UM)，并且您需要向组织中的企业语音用户提供 Exchange UM 功能，您可以使用以下过程在运行 Exchange UM 的服务器上配置证书。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于内部证书，运行 Lync Server 2013 的服务器和运行 Microsoft Exchange 的服务器都必须具有互相信任的受信任的根证书颁发机构证书。证书颁发机构 (CA) 可以是同一个证书颁发机构，也可以是其他的证书颁发机构（只要两台服务器都具有已在其信任的根证书颁发机构证书存储中注册的由证书颁发机构颁发的根证书）。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 对于内部证书，运行 Lync Server 2013 的服务器和运行 Microsoft Exchange 的服务器都必须具有互相信任的受信任的根证书颁发机构证书。证书颁发机构 (CA) 可以是同一个证书颁发机构，也可以是其他的证书颁发机构（只要两台服务器都具有已在其信任的根证书颁发机构证书存储中注册的由证书颁发机构颁发的根证书）。
 
 
 Exchange Server 必须配置了服务器证书，才能连接到 Lync Server 2013：
@@ -51,18 +41,9 @@ Exchange Server 必须配置了服务器证书，才能连接到 Lync Server 201
 
 3.  在“下载 CA 证书、证书链或 CRL”下，选择“Base 64 编码方式”，然后单击“下载 CA 证书”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在此步骤还可以指定可分辨编码规则 (DER) 编码。如果选择 DER 编码，则本过程的下一步中和“安装 CA 证书”的步骤 10 中的文件类型为 .p7b，而非 .cer。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在此步骤还可以指定可分辨编码规则 (DER) 编码。如果选择 DER 编码，则本过程的下一步中和“安装 CA 证书”的步骤 10 中的文件类型为 .p7b，而非 .cer。
+    
 
 
 4.  在“文件下载”对话框中单击“保存”，然后将文件保存到服务器上的硬盘中。（文件的扩展名将为 .cer 或 .p7b，具体取决于在上一步中选择的编码。）
@@ -119,18 +100,9 @@ Exchange Server 必须配置了服务器证书，才能连接到 Lync Server 201
 
 6.  在“标识脱机模板的信息”下，在“名称”框中键入 Exchange Server 的完全限定域名 (FQDN)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须输入 Exchange Server 的 FQDN 才能进行通信。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 必须输入 Exchange Server 的 FQDN 才能进行通信。
+    
 
 
 7.  在“密钥选项”下单击“将证书保存在本地计算机证书存储中”复选框。
@@ -155,18 +127,9 @@ Exchange Server 必须配置了服务器证书，才能连接到 Lync Server 201
     
     2.  “导入 Exchange 证书”，网址为 [http://go.microsoft.com/fwlink/?linkid=195496\&clcid=0x804](http://go.microsoft.com/fwlink/?linkid=195496%26clcid=0x804)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>对于证书“使用者名称”，必须输入 Exchange Server 的 FQDN 才能进行通信。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 对于证书“使用者名称”，必须输入 Exchange Server 的 FQDN 才能进行通信。
+    
 
 
 ## 在 Exchange Server 2007 (SP1) 中分配证书
@@ -179,34 +142,16 @@ Exchange Server 必须配置了服务器证书，才能连接到 Lync Server 201
 
 4.  双击该证书以阅读其详细信息并验证该证书是否有效。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在证书作为有效证书显示之前，可能需要花费几分钟。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在证书作为有效证书显示之前，可能需要花费几分钟。
+    
 
 
 5.  重新启动 Microsoft Exchange 统一消息服务。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>运行 Exchange Server 2007 SP1 统一消息的服务器将自动检索正确的证书。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 运行 Exchange Server 2007 SP1 统一消息的服务器将自动检索正确的证书。
+    
 
 
 6.  打开事件查看器并查找事件 ID 1112，该事件指定运行 Exchange Server 2007 SP1 统一消息的服务器已检索到什么证书。

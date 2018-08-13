@@ -39,18 +39,9 @@ DNS 记录可以是 A（主机）记录，也可以是 CNAME 记录，取决于�
     
       - 对于内部 DNS 记录，请在 DNS 服务器的控制台树中，展开 Active Directory 域（例如，contoso.local）所对应的“正向查找区域”。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>此域是安装 Lync Server 2013控制器池和前端池的 Active Directory 域。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 此域是安装 Lync Server 2013控制器池和前端池的 Active Directory 域。
+        
     
       - 对于外部 DNS 记录，请在 DNS 服务器的控制台树中，展开 SIP 域（例如，contoso.com）所对应的“正向查找区域”。
 
@@ -68,18 +59,9 @@ DNS 记录可以是 A（主机）记录，也可以是 CNAME 记录，取决于�
 
 6.  对于内部 DNS 记录，请在 DNS 服务器的控制台树中，展开 SIP 域（例如，contoso.com）所对应的“正向查找区域”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您创建的是外部 DNS 记录，则从第三步开始，已为 SIP 域展开“正向查找区域”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您创建的是外部 DNS 记录，则从第三步开始，已为 SIP 域展开“正向查找区域”。
+    
 
 
 7.  右键单击 SIP 域名，然后单击“新建别名(CNAME)”。
@@ -96,31 +78,12 @@ DNS 记录可以是 A（主机）记录，也可以是 CNAME 记录，取决于�
     
       - 对于外部 DNS 记录，键入或浏览到控制器池的外部 Web 服务 FQDN（例如，lyncwebextdir.contoso.com），然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您未使用控制器，则使用前端池的内部和外部 Web 服务 FQDN，或者，对于单台服务器，使用前端服务器或 Standard Edition Server 的 FQDN。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您未使用控制器，则使用前端池的内部和外部 Web 服务 FQDN，或者，对于单台服务器，使用前端服务器或 Standard Edition Server 的 FQDN。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必须在您的 Lync Server 2013 环境中支持的每个 SIP 域的正向查找区域中创建一条新的自动发现 CNAME 记录。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!IMPORTANT]
+    > 您必须在您的 Lync Server 2013 环境中支持的每个 SIP 域的正向查找区域中创建一条新的自动发现 CNAME 记录。
 
 
 ## 创建 DNS A 记录
@@ -137,18 +100,9 @@ DNS 记录可以是 A（主机）记录，也可以是 CNAME 记录，取决于�
     
       - 对于内部 DNS 记录，请在 DNS 服务器的控制台树中，展开 Active Directory 域（例如，contoso.local）所对应的“正向查找区域”。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>此域是安装 Lync Server 2013控制器池和前端池的 Active Directory 域。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 此域是安装 Lync Server 2013控制器池和前端池的 Active Directory 域。
+        
     
       - 对于外部 DNS 记录，请在 DNS 服务器的控制台树中，展开 SIP 域（例如，contoso.com）所对应的“正向查找区域”。
 
@@ -166,18 +120,9 @@ DNS 记录可以是 A（主机）记录，也可以是 CNAME 记录，取决于�
 
 6.  对于内部 DNS 记录，请在 DNS 服务器的控制台树中，展开 SIP 域（例如，contoso.com）所对应的“正向查找区域”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您创建的是外部 DNS 记录，则从第三步开始，已为 SIP 域展开“正向查找区域”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您创建的是外部 DNS 记录，则从第三步开始，已为 SIP 域展开“正向查找区域”。
+    
 
 
 7.  右键单击 SIP 域名，然后单击“新建主机(A 或 AAAA)”。
@@ -188,36 +133,18 @@ DNS 记录可以是 A（主机）记录，也可以是 CNAME 记录，取决于�
     
       - 对于外部 DNS 记录，请键入 lyncdiscover 作为外部自动发现服务 URL 的主机名。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>假定域名来自在其中定义记录的区域，因此无需将域名作为 A 记录的一部分输入。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 假定域名来自在其中定义记录的区域，因此无需将域名作为 A 记录的一部分输入。
+    
 
 
 9.  在“IP 地址”中，键入 IP 地址，如下所示：
     
       - 对于内部 DNS 记录，键入控制器的内部 Web 服务 IP 地址（或者，如果您使用的是负载平衡器，则键入控制器负载平衡器的虚拟 IP (VIP)）。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您未使用控制器，请键入前端服务器或 Standard Edition Server 的 IP 地址，或者，如果您使用的是负载平衡器，则键入前端池负载平衡器的 VIP。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 如果您未使用控制器，请键入前端服务器或 Standard Edition Server 的 IP 地址，或者，如果您使用的是负载平衡器，则键入前端池负载平衡器的 VIP。
+        
     
       - 对于外部 DNS 记录，请键入反向代理的外部或公用 IP 地址。
 
@@ -225,18 +152,8 @@ DNS 记录可以是 A（主机）记录，也可以是 CNAME 记录，取决于�
 
 11. 若要创建另一条 A 记录，请重复步骤 8 至 10。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必须在您的 Lync Server 2013 环境中支持的每个 SIP 域的正向查找区域中创建一条新的 lyncdiscover 和 lyncdiscoverinternal A 记录。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 您必须在您的 Lync Server 2013 环境中支持的每个 SIP 域的正向查找区域中创建一条新的 lyncdiscover 和 lyncdiscoverinternal A 记录。
 
 
 12. 创建完 A 记录（对于 IPv6 为 AAAA）后，请单击“完成”。

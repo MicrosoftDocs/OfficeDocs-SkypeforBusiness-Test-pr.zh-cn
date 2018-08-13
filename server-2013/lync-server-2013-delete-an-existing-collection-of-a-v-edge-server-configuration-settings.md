@@ -21,7 +21,7 @@ _**上一次修改主题：** 2012-11-01_
 
 但是，可使用 Remove-CsAVEdgeConfiguration cmdlet 删除在站点作用域或服务作用域创建的自定义设置集合。如果您删除站点设置，则相应站点内的 A/V 边缘服务器将由全局设置进行管理。如果您删除服务作用域设置，则相应服务器之后将由其站点设置（如果存在）或由全局设置进行管理（如果没有可用的站点设置）。
 
-有关详细信息，请参阅 [Remove-CsAVEdgeConfiguration](remove-csavedgeconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Remove-CsAVEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsAVEdgeConfiguration) cmdlet 的帮助主题。
 
 ## 重置全局集合
 
@@ -51,5 +51,5 @@ _**上一次修改主题：** 2012-11-01_
 #### 其他资源
 
 [Lync Server 2013 中的音频/视频 (A/V) 边缘服务器](lync-server-2013-audio-video-a-v-edge-servers.md)  
-[Remove-CsAVEdgeConfiguration](remove-csavedgeconfiguration.md)
+[Remove-CsAVEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsAVEdgeConfiguration)
 

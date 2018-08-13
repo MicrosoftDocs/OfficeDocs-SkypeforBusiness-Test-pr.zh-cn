@@ -37,18 +37,9 @@ Windows PowerShell 是一种可用于管理 Skype for Business Online 的命令�
 
 总而言之，您可以使用管理中心或 Windows PowerShell cmdlet 以及合适的参数管理推送通知。两种方法都可行，并且两种方法的效果相当。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关特定 Windows PowerShell 术语（例如，<em>cmdlet</em>、<em>形式参数</em>、<em>参数值</em>和<em>实际参数</em>）的定义，请参阅 <a href="windows-powershell-cmdlets-parameters-and-parameter-values-in-skype-for-business-online.md">Windows PowerShell Cmdlet、参数和参数值</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关特定 Windows PowerShell 术语（例如，<em>cmdlet</em>、<em>形式参数</em>、<em>参数值</em>和<em>实际参数</em>）的定义，请参阅 <a href="windows-powershell-cmdlets-parameters-and-parameter-values-in-skype-for-business-online.md">Windows PowerShell Cmdlet、参数和参数值</a>。
+
 
 
 这会引发一个显而易见的问题：如果 Skype for Business Online 管理中心和 Windows PowerShell 提供完全相同的功能，为什么选择一个而放弃另一个？就这一点而论，为什么您曾经选择在 Windows PowerShell 中键入命令，而不是在管理中心中选择或清除复选框？

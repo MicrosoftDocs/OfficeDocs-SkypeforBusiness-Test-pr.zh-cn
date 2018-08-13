@@ -33,56 +33,23 @@ Lync Server 2013 支持以下数据库管理系统：
         
         我们支持在前端服务器和 Standard Edition 服务器上修补和升级 Microsoft SQL Server。但是，当在前端服务器上执行任何种类的升级或修补时，您必须考虑仲裁要求。有关详细信息，请参阅[在 Lync Server 2013 中升级或更新前端服务器](lync-server-2013-upgrade-or-update-front-end-servers.md)和 [Lync Server 2013 中适用于前端服务器、即时消息和状态的拓扑和组件](lync-server-2013-topologies-and-components-for-front-end-servers-instant-messaging-and-presence.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 会自动在每个 Standard Edition 服务器和每个前端服务器服务器上安装 Microsoft SQL Server 2012 Express（64 位版本）。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 2013 会自动在每个 Standard Edition 服务器和每个前端服务器服务器上安装 Microsoft SQL Server 2012 Express（64 位版本）。
+    
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Lync Server 2013 不支持 SQL Server 的 32 位版本。必须使用 64 位版本。</p></li>
-<li><p>不支持 SQL Server Web 版本和 SQL Server 工作组版本。不能将其与 Lync Server 2013 结合使用。</p></li>
-<li><p>Lync Server 2013 不支持本机数据库镜像。</p></li>
-<li><p>要使用监控服务器角色，应安装 SQL Server Reporting Services。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> <ul>
+> <li><p>Lync Server 2013 不支持 SQL Server 的 32 位版本。必须使用 64 位版本。</p></li>
+> <li><p>不支持 SQL Server Web 版本和 SQL Server 工作组版本。不能将其与 Lync Server 2013 结合使用。</p></li>
+> <li><p>Lync Server 2013 不支持本机数据库镜像。</p></li>
+> <li><p>要使用监控服务器角色，应安装 SQL Server Reporting Services。</p></li>
+> </ul>
 
 在前端池中，后端数据库可以是单台 SQL Server 计算机。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您将 Lync Server 数据库与其他数据库并置在一起，则强烈建议您评估可能影响可用性和性能的所有因素，并请您确保在某个节点失败时剩余节点可处理负载。若要验证故障转移功能，建议您测试所有故障转移方案。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果您将 Lync Server 数据库与其他数据库并置在一起，则强烈建议您评估可能影响可用性和性能的所有因素，并请您确保在某个节点失败时剩余节点可处理负载。若要验证故障转移功能，建议您测试所有故障转移方案。
 
 
 ## 使用 SQL 镜像和 SQL 群集

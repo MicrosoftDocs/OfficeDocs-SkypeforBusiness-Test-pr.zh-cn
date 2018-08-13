@@ -19,18 +19,9 @@ _**上一次修改主题：** 2012-09-18_
 
 电话拨入式访问号码显示在会议邀请和电话拨入式会议设置网页上。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Active Directory 完成对一个新拨入访问号码的复制前，无法使用该拨入访问号码。复制可能需要几个小时。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Active Directory 完成对一个新拨入访问号码的复制前，无法使用该拨入访问号码。复制可能需要几个小时。
+
 
 
 ## 本部分内容

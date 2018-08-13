@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-09-10_
 
 可以指定您自己的要用于保留音乐的音乐文件，而不是指定 Lync Server 2013 附带的默认音乐文件。若要自定义保留音乐，请使用 **Set-CsCallParkServiceMusicOnHoldFile** cmdlet。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您自定义保留音乐并希望多个网站使用同一音乐，则必须为运行呼叫寄存应用程序的每个网站配置音乐文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您自定义保留音乐并希望多个网站使用同一音乐，则必须为运行呼叫寄存应用程序的每个网站配置音乐文件。
+
 
 
 ## 自定义音乐文件
@@ -41,20 +32,10 @@ _**上一次修改主题：** 2012-09-10_
     
         Set-CsCallParkServiceMusicOnHoldFile -Service <ServiceID where the Call Park application resides> -Content <Byte[]>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用 <strong>Get-CsService</strong> cmdlet 可标识服务。有关详细信息，请参阅 <a href="get-csservice.md">Get-CsService</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 使用 <strong>Get-CsService</strong> cmdlet 可标识服务。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsService">Get-CsService</a>。
     
-    以下示例说明了如何以字节数组的形式获取文件 soothingmusic.wma 的内容并将其分配给变量。然后，将音频文件指定为呼叫寄存的保留音乐文件。有关详细信息，请参阅 [Set-CsCallParkServiceMusicOnHoldFile](set-cscallparkservicemusiconholdfile.md)。
+    以下示例说明了如何以字节数组的形式获取文件 soothingmusic.wma 的内容并将其分配给变量。然后，将音频文件指定为呼叫寄存的保留音乐文件。有关详细信息，请参阅 [Set-CsCallParkServiceMusicOnHoldFile](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCallParkServiceMusicOnHoldFile)。
     
         $a = Get-Content -ReadCount 0 -Encoding byte "C:\MoHFiles\soothingmusic.wma"
         Set-CsCallParkServiceMusicOnHoldFile -Service Redmond1-applicationserver-1 -Content $a
@@ -63,6 +44,6 @@ _**上一次修改主题：** 2012-09-10_
 
 #### 其他资源
 
-[Set-CsCallParkServiceMusicOnHoldFile](set-cscallparkservicemusiconholdfile.md)  
-[Get-CsService](get-csservice.md)
+[Set-CsCallParkServiceMusicOnHoldFile](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCallParkServiceMusicOnHoldFile)  
+[Get-CsService](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsService)
 

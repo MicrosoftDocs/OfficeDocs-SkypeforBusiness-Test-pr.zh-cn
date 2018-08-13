@@ -51,20 +51,11 @@ _**上一次修改主题：** 2016-12-08_
 
     Set-ExecutionPolicy RemoteSigned -Force
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在运行上述命令后，您可能会收到以下错误消息：<br />
+> [!NOTE]  
+> 在运行上述命令后，您可能会收到以下错误消息：<br />
 Set-ExecutionPolicy：对注册表项&quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PowerShell\1\ShellIds\Micrsoft.PowerShell&quot;的访问被拒绝。<br />
-如果您未在管理员凭据下运行 Windows PowerShell，则通常会出现此错误消息。关闭您的 Windows PowerShell 会话，并以管理员身份启动新会话。</td>
-</tr>
-</tbody>
-</table>
+如果您未在管理员凭据下运行 Windows PowerShell，则通常会出现此错误消息。关闭您的 Windows PowerShell 会话，并以管理员身份启动新会话。
+
 
 
 要验证是否已正确配置执行策略，请在 Windows PowerShell 提示符处键入以下内容，然后按 Enter：

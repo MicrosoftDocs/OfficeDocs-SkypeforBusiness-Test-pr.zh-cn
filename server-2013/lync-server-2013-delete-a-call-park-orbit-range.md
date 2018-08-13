@@ -45,18 +45,9 @@ _**上一次修改主题：** 2013-02-20_
     
         Remove-CsCallParkOrbit -Identity "Redmond orbit 1"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关更多选项的详细信息，请参阅 <a href="remove-cscallparkorbit.md">Remove-CsCallParkOrbit</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关更多选项的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsCallParkOrbit">Remove-CsCallParkOrbit</a>。
+    
 
 
 ## 另请参阅
@@ -67,6 +58,6 @@ _**上一次修改主题：** 2013-02-20_
 
 #### 其他资源
 
-[Remove-CsCallParkOrbit](remove-cscallparkorbit.md)  
-[Get-CsCallParkOrbit](get-cscallparkorbit.md)
+[Remove-CsCallParkOrbit](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsCallParkOrbit)  
+[Get-CsCallParkOrbit](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsCallParkOrbit)
 

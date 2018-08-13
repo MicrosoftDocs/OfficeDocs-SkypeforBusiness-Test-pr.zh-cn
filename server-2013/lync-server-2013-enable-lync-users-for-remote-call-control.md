@@ -21,20 +21,11 @@ _**上一次修改主题：** 2016-12-08_
 
 如果已具有 Communications Server 2007 R2 或 Communications Server 2007 部署，则在并行迁移过程中， Communicator 2007 R2 和 Communicator 2007 客户端将继续使用“组策略”。但是，如果要将策略设置保留到 Lync 客户端，需要配置等效的 Lync Server 带内设置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要为用户启用远程呼叫控制，则需要同时为用户提供“线路 URI”和“线路服务器 URI”。如 <a href="lync-server-2013-deployment-tasks-for-remote-call-control.md">Lync Server 2013 中远程呼叫控制的部署任务</a>中所述，需要确保使用这些设置的网关所要求的语法。<br />
+> [!NOTE]  
+> 要为用户启用远程呼叫控制，则需要同时为用户提供“线路 URI”和“线路服务器 URI”。如 <a href="lync-server-2013-deployment-tasks-for-remote-call-control.md">Lync Server 2013 中远程呼叫控制的部署任务</a>中所述，需要确保使用这些设置的网关所要求的语法。<br />
 请确保“线路服务器 URI”中的域与您为网关配置静态路由时在 MatchUri 参数中指定的目标域相同。<br />
-“线路 URI”以 E.164 格式指定分配给用户的电话号码，带有“TEL:”前缀（例如，tel:+14255550150）。如果要配置分机号，则格式为 tel:+14255550150;ext=111。如果您之前已配置用户的“线路 URI”，且未更改其值，则在为用户启用远程呼叫控制时，不需要指定“线路 URI”。</td>
-</tr>
-</tbody>
-</table>
+“线路 URI”以 E.164 格式指定分配给用户的电话号码，带有“TEL:”前缀（例如，tel:+14255550150）。如果要配置分机号，则格式为 tel:+14255550150;ext=111。如果您之前已配置用户的“线路 URI”，且未更改其值，则在为用户启用远程呼叫控制时，不需要指定“线路 URI”。
+
 
 
 ## 使用命令行管理程序为启用了 Lync 的用户启用远程呼叫控制

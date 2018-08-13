@@ -159,18 +159,9 @@ _**上一次修改主题：** 2015-03-09_
 
   - Aastra 6725ip 麦克风（USB 音频设备）-V0
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>请记住，如果您运行的是 Lync Server 2013 的已本地化版本，捕获设备的名称可能不相同。美国英语中名为 Aastra 6725ip 麦克风 (Aastra 6725ip)-V0 的设备在法语和西班牙语中可能会有不同的名称。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 请记住，如果您运行的是 Lync Server 2013 的已本地化版本，捕获设备的名称可能不相同。美国英语中名为 Aastra 6725ip 麦克风 (Aastra 6725ip)-V0 的设备在法语和西班牙语中可能会有不同的名称。
+
 
 
 很多时候，您想拥有该级别的详细信息；但在其他时候，您可能仅对多少呼叫在使用普通的 Aastra 麦克风感兴趣，而与型号无关。获得类似此信息的一个方法是将设备报告数据导出到 Microsoft Excel，然后将此数据保存到以逗号分隔的值文件（例如，C:\\Data\\Devices\_Report.csv）中。然后使用一组类似这些的命令，将 .CSV 文件导入到 Windows PowerShell 中，并报告回使用 Aastra 捕获设备所做的呼叫总数：
@@ -228,28 +219,20 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>语音切换原因</strong></p></td>
 <td><p>呼叫必须切换为半双工模式才能防止回声的原因。在半双工模式中，通信一次只能在一个方向进行，与用户在使用对讲机进行通信时的轮流方式相似。选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[所有]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>无</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>错误的时间戳</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>回声</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>DNLP（动态非线性处理器）</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>复杂度低</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>设备状态差</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>AEC 后的回声（回声抑制）</p>
 </dd>
 </dl></td>
@@ -258,25 +241,18 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>回声原因</strong></p></td>
 <td><p>在呼叫中检测到超出接受水平的回声的原因。（在长途通讯中，回声是声音的反射，与朝井底大喊时出现的现象一样。）选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[所有]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>无</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>错误的时间戳</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>AEC 后的回声（回声抑制）</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>ANLP（自适应非线性处理器）</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>DNLP（动态非线性处理器）</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>麦克风剪辑</p>
 </dd>
 </dl></td>
@@ -285,16 +261,12 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>呼叫类型</strong></p></td>
 <td><p>指示发起的呼叫类型。选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[所有]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>客户端呼叫</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>PSTN 呼叫</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>电话会议</p>
 </dd>
 </dl></td>
@@ -303,13 +275,10 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>访问类型</strong></p></td>
 <td><p>指示客户端在发起呼叫时已登录到内部网络还是外部网络。选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[所有]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>内部</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>外部</p>
 </dd>
 </dl></td>
@@ -318,13 +287,10 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>网络类型</strong></p></td>
 <td><p>指示客户端在发起呼叫时已连接到的网络的类型。选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[所有]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>有线</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>无线</p>
 </dd>
 </dl></td>
@@ -333,13 +299,10 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>VPN</strong></p></td>
 <td><p>指示外部客户端在发起呼叫时是否使用了虚拟专用网 (VPN) 连接。选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[所有]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>VPN</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>非 VPN</p>
 </dd>
 </dl></td>
@@ -348,13 +311,10 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>设备类型</strong></p></td>
 <td><p>指示设备的类型。选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>捕获设备</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>呈现设备</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>捕获/呈现设备</p>
 </dd>
 </dl></td>

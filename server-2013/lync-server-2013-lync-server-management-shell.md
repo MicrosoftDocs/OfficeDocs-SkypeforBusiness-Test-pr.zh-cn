@@ -31,19 +31,9 @@ Windows PowerShell 使您可以从命令行管理 Microsoft 应用程序。它�
 
   - 要运行 Lync Server cmdlet，请打开 Lync Server 命令行管理程序。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果打开 Windows PowerShell 窗口，而不是 Lync Server 命令行管理程序，则默认情况下将无法运行 Lync Server cmdlet。要在 Windows PowerShell 中运行 Lync Server cmdlet，请先在 Windows PowerShell 命令提示符处键入以下内容：<br />
-    Import-Module Lync</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+	> 如果打开 Windows PowerShell 窗口，而不是 Lync Server 命令行管理程序，则默认情况下将无法运行 Lync Server cmdlet。要在 Windows PowerShell 中运行 Lync Server cmdlet，请先在 Windows PowerShell 命令提示符处键入以下内容：<br />
+    > Import-Module Lync
 
 
   - Lync Server 命令行管理程序会自动安装在每台 Lync Server Enterprise Edition 前端服务器或 Standard Edition Server 上。

@@ -17,18 +17,8 @@ _**上一次修改主题：** 2013-06-19_
 
 使用 **Disable-CsAdForest** cmdlet 可反向执行林准备步骤。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果在同时部署了早期版本的 Lync Server 的环境中运行 <strong>Disable-CsAdForest</strong> cmdlet，则也会删除早期版本的全局设置。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 如果在同时部署了早期版本的 Lync Server 的环境中运行 <strong>Disable-CsAdForest</strong> cmdlet，则也会删除早期版本的全局设置。
 
 
 ## 使用 cmdlet 反向执行林准备

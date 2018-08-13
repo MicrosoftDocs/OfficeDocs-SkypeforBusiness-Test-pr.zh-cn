@@ -110,18 +110,9 @@ Lync Server 2013 帮助中的每张图（包括屏幕截图、图表、流程图
 
 以下几节提供了有关使残障人士能够更轻松地访问 Windows 的功能、产品和服务的信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中的信息仅适用于许可其在美国使用 Microsoft 产品的用户。如果您在美国境外获得此产品，可以使用您的软件包附带的子公司信息卡或通过访问位于 <a href="http://go.microsoft.com/fwlink/p/?linkid=18139">http://go.microsoft.com/fwlink/p/?linkId=18139</a> 上的“Microsoft 辅助功能”网站，来获得 Microsoft 支持服务的电话号码和地址列表。您可以与子公司联系来了解您所在区域是否提供本节中介绍的产品和服务类型。您可以在 Microsoft 产品网站上的“辅助功能”中了解有关 Microsoft 产品中包括的辅助功能的更多信息。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节中的信息仅适用于许可其在美国使用 Microsoft 产品的用户。如果您在美国境外获得此产品，可以使用您的软件包附带的子公司信息卡或通过访问位于 <a href="http://go.microsoft.com/fwlink/p/?linkid=18139">http://go.microsoft.com/fwlink/p/?linkId=18139</a> 上的“Microsoft 辅助功能”网站，来获得 Microsoft 支持服务的电话号码和地址列表。您可以与子公司联系来了解您所在区域是否提供本节中介绍的产品和服务类型。您可以在 Microsoft 产品网站上的“辅助功能”中了解有关 Microsoft 产品中包括的辅助功能的更多信息。
+
 
 
 ## Windows 的辅助功能

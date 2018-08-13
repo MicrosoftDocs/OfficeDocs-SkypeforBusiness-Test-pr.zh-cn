@@ -31,18 +31,8 @@ _**上一次修改主题：** 2012-11-01_
 
 5.  在“编辑”菜单上，单击“显示详细信息”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>一次只能查看一个位置策略的信息。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 一次只能查看一个位置策略的信息。
 
 
 默认情况下，存在一个名为“全局”的策略，无法将其删除或进行重命名。但是，您可以修改“全局”策略。该策略将应用于所有用户和联系人，除非您创建站点策略或每用户策略。每用户策略必须应用于特定用户。
@@ -57,8 +47,8 @@ _**上一次修改主题：** 2012-11-01_
 
 #### 其他资源
 
-[New-CsLocationPolicy](new-cslocationpolicy.md)  
-[Set-CsLocationPolicy](set-cslocationpolicy.md)  
-[Remove-CsLocationPolicy](remove-cslocationpolicy.md)  
-[Get-CsLocationPolicy](get-cslocationpolicy.md)
+[New-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsLocationPolicy)  
+[Set-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsLocationPolicy)  
+[Remove-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsLocationPolicy)  
+[Get-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsLocationPolicy)
 

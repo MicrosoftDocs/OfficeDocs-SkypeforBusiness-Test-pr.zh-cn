@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
     Some information in this topic pertains to Cumulative Updates for Lync Server 2013: February 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题中涉及容量规划的信息仅与 Lync 2010 Mobile 客户端和 Mobility Service (Mcx) 相关。Lync 2013 Mobile 客户端使用的统一通信 Web API (UCWA) 的容量规划由 Lync Server 2013 规划工具提供。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 本主题中涉及容量规划的信息仅与 Lync 2010 Mobile 客户端和 Mobility Service (Mcx) 相关。Lync 2013 Mobile 客户端使用的统一通信 Web API (UCWA) 的容量规划由 Lync Server 2013 规划工具提供。
 
 
 有两个移动性能计数器可帮助您确定当前使用率，并帮助您针对 Lync Server 2013 Mobility Service (Mcx) 规划容量，以及监控 UCWA 的内存使用情况。对于 UCWA，计数器类别为“LS:WEB – UCWA”。对于 Mobility Service (Mcx)，计数器类别为“LS:WEB - 移动通信服务”。要监控的计数器包括：
@@ -45,18 +35,8 @@ _**上一次修改主题：** 2016-12-08_
 
 Mcx Mobility Service 使用的内存总量 (MB) = 164 + (400 + 134) / 1024 \* **Currently Active Session Count with Active Presence Subscriptions** + 400 / 1024 \* (**Currently Active Session Count** – **Currently Active Session Count with Active Presence Subscriptions**)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Lync Server 2010 容量计算器是一种预填充所有公式的电子表格，计划者可以用其来确定服务器的要求，包括 CPU、内存和硬盘。您可以在以下地址下载电子表格和关联文档：<a href="http://go.microsoft.com/fwlink/?linkid=212657" class="uri">http://go.microsoft.com/fwlink/?linkid=212657</a></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Microsoft Lync Server 2010 容量计算器是一种预填充所有公式的电子表格，计划者可以用其来确定服务器的要求，包括 CPU、内存和硬盘。您可以在以下地址下载电子表格和关联文档：<a href="http://go.microsoft.com/fwlink/?linkid=212657" class="uri">http://go.microsoft.com/fwlink/?linkid=212657</a>
 
 
 前端服务器需要足够的可用内存以在发生故障转移时支持 Mobility Service。您可以使用 **Memory\\Available Mbytes** 计数器监视前端服务器上的当前可用内存，也可以使用前面所述的公式规划您预计 Mobility Service 将使用的内存量。

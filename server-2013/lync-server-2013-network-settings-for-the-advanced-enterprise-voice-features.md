@@ -31,18 +31,9 @@ Lync Server 有以下三个高级 企业语音功能：呼叫允许控制 (CAC)�
 
 网络区域是仅在呼叫允许控制 (CAC)、E9-1-1 和媒体旁路的配置中使用的网络中心或网络中枢。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>网络区域与 Lync Server 电话拨入式会议区域不同，后者需要将电话拨入式会议访问号码与一个或多个 Lync Server 拨号计划相关联。有关电话拨入式会议区域的详细信息，请参阅规划文档中的 <a href="lync-server-2013-dial-in-conferencing-requirements.md">电话拨入式会议要求</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 网络区域与 Lync Server 电话拨入式会议区域不同，后者需要将电话拨入式会议访问号码与一个或多个 Lync Server 拨号计划相关联。有关电话拨入式会议区域的详细信息，请参阅规划文档中的 <a href="lync-server-2013-dial-in-conferencing-requirements.md">电话拨入式会议要求</a>。
+
 
 
 CAC 要求每个网络区域都有一个关联的 Lync Server 中央站点，此站点管理区域内的媒体流量（即，根据已配置的有关是否可以建立实时音频或视频会话的策略来做出决策）。 Lync Server 中央站点不代表地理位置，而是代表配置为一个池或一组池的服务器的逻辑分组。有关中央站点的详细信息，请参阅规划文档中的 [Lync Server 2013 中的参考拓扑](lync-server-2013-reference-topologies.md)。另请参阅可支持性文档中的 [Lync Server 2013 中支持的拓扑](lync-server-2013-supported-topologies.md)。
@@ -57,18 +48,9 @@ CAC 要求每个网络区域都有一个关联的 Lync Server 中央站点，此
 
 网络站点代表地理位置，例如分支机构、地区办事处或总部。每个网络站点都必须与特定网络区域相关联。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>网络站点仅供高级 企业语音功能使用。网络站点与您在 Lync Server 拓扑中配置的分支站点不同。有关分支站点的详细信息，请参阅规划文档中的 <a href="lync-server-2013-reference-topologies.md">Lync Server 2013 中的参考拓扑</a>。另请参阅可支持性文档中的 <a href="lync-server-2013-supported-topologies.md">Lync Server 2013 中支持的拓扑</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 网络站点仅供高级 企业语音功能使用。网络站点与您在 Lync Server 拓扑中配置的分支站点不同。有关分支站点的详细信息，请参阅规划文档中的 <a href="lync-server-2013-reference-topologies.md">Lync Server 2013 中的参考拓扑</a>。另请参阅可支持性文档中的 <a href="lync-server-2013-supported-topologies.md">Lync Server 2013 中支持的拓扑</a>。
+
 
 
 要配置网络站点并将其与网络区域相关联，可以使用 Lync Server 控制面板的“网络配置”部分，或者运行 Lync Server 命令行管理程序**New-CsNetworkSite** 或 **Set-CsNetworkSite** cmdlet。如需获得相关说明，请参阅部署文档中的[在 Lync Server 2013 中创建或修改网络站点](lync-server-2013-create-or-modify-a-network-site.md)，或者参考 Lync Server 命令行管理程序文档。
@@ -79,19 +61,9 @@ CAC 要求每个网络区域都有一个关联的 Lync Server 中央站点，此
 
 例如，可为北美区域中的纽约站点分配以下 IP 子网：172.29.80.0/23、157.57.216.0/25、172.29.91.0/23、172.29.81.0/24。如果通常在底特律工作的 Bob 出差到纽约办事处接受培训，当他打开计算机并连接到网络时，他的计算机将获取分配给纽约的四个范围之一中的 IP 地址，例如 172.29.80.103。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>网络配置期间服务器上指定的 IP 子网必须与客户端计算机提供的格式匹配，这样才能正确地用于媒体旁路。 Lync 客户端将占用其本地 IP 地址并使用关联子网掩码屏蔽 IP 地址。确定与每个客户端相关联的绕过 ID 时，注册器将与每个网络站点相关联的 IP 子网列表和客户端提供的子网进行对比，以检查是否完全匹配。因此，网络配置期间应在服务器上输入实际子网而非虚拟子网，这一点十分重要。（如果是部署呼叫允许控制而非媒体旁路，那么即使配置虚拟子网，呼叫允许控制也将正常工作。）<br />
-例如，如果 Lync 客户端登录到 IP 地址为 172.29.81.57、IP 子网掩码为 255.255.255.0 的计算机上，该客户端将请求与子网 172.29.81.0 关联的绕过 ID。如果子网定义为 172.29.0.0/16，那么即使客户端属于虚拟子网，注册器也不会将此看做匹配，因为注册器会专门查找子网 172.29.81.0。因此，管理员准确输入 Lync 客户端（网络配置期间静态或通过动态主机配置协议 (DHCP) 为子网设置的）提供的子网十分重要。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]  
+> 网络配置期间服务器上指定的 IP 子网必须与客户端计算机提供的格式匹配，这样才能正确地用于媒体旁路。 Lync 客户端将占用其本地 IP 地址并使用关联子网掩码屏蔽 IP 地址。确定与每个客户端相关联的绕过 ID 时，注册器将与每个网络站点相关联的 IP 子网列表和客户端提供的子网进行对比，以检查是否完全匹配。因此，网络配置期间应在服务器上输入实际子网而非虚拟子网，这一点十分重要。（如果是部署呼叫允许控制而非媒体旁路，那么即使配置虚拟子网，呼叫允许控制也将正常工作。）<br />
+> 例如，如果 Lync 客户端登录到 IP 地址为 172.29.81.57、IP 子网掩码为 255.255.255.0 的计算机上，该客户端将请求与子网 172.29.81.0 关联的绕过 ID。如果子网定义为 172.29.0.0/16，那么即使客户端属于虚拟子网，注册器也不会将此看做匹配，因为注册器会专门查找子网 172.29.81.0。因此，管理员准确输入 Lync 客户端（网络配置期间静态或通过动态主机配置协议 (DHCP) 为子网设置的）提供的子网十分重要。
 
 
 ## 将子网与网络站点相关联

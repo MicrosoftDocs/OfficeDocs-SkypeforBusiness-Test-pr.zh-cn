@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-02-22_
 
 您可以使用以下过程来移除 Lync Server 2013 中以前添加的用户帐户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>移除用户将导致您丢失为用户帐户配置的所有设置。如果您要临时禁用用户帐户，请参阅主题<a href="lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md">禁用或重新启用 Lync Server 的用户帐户</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 移除用户将导致您丢失为用户帐户配置的所有设置。如果您要临时禁用用户帐户，请参阅主题<a href="lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md">禁用或重新启用 Lync Server 的用户帐户</a>。
+
 
 
 ## 移除 Lync Server 中的 Lync Server 用户帐户
@@ -59,7 +50,7 @@ _**上一次修改主题：** 2013-02-22_
     
     在此命令运行后，没有办法重新启用该帐户及其以前的设置。您将需要使用 Enable-CsUser cmdlet 为 Ken Myer 创建全新的帐户。
 
-有关详细信息，请参阅 [Disable-CsUser](disable-csuser.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Disable-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Disable-CsUser) cmdlet 的帮助主题。
 
 ## 另请参阅
 

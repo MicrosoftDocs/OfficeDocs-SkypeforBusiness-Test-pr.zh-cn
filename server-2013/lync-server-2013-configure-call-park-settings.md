@@ -17,18 +17,9 @@ _**上一次修改主题：** 2015-03-09_
 
 如果不想使用默认呼叫寄存设置，则也可以自定义该设置。安装呼叫寄存应用程序时，默认情况下将配置全局设置。您可以修改全局设置，也可以指定特定于站点的设置。使用 **New-CsCpsConfiguration** cmdlet 可创建新的特定于站点的设置。使用 **Set-CsCpsConfiguration** cmdlet 可修改现有设置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>寄存呼叫超时且回拨失败时，我们建议您至少为要使用的回退目标配置 <strong>OnTimeoutURI</strong> 选项。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 寄存呼叫超时且回拨失败时，我们建议您至少为要使用的回退目标配置 <strong>OnTimeoutURI</strong> 选项。
+
 
 
 使用 **New-CsCpsConfiguration** cmdlet 或 **Set-CsCpsConfiguration** cmdlet 配置以下任何设置：
@@ -79,18 +70,8 @@ _**上一次修改主题：** 2015-03-09_
     
         New-CsCpsConfiguration -Identity site:<sitename to apply settings> [-CallPickupTimeoutThreshold <hh:mm:ss>] -[EnableMusicOnHold <$true | $false>] [-MaxCallPickupAttempts <number of rings>] [-OnTimeoutURI sip:<sip URI for routing unanswered call>]
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用 <strong>Get-CsSite</strong> cmdlet 可标识站点。有关详细信息，请参阅 Lync Server 命令行管理程序文档。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 使用 <strong>Get-CsSite</strong> cmdlet 可标识站点。有关详细信息，请参阅 Lync Server 命令行管理程序文档。
     
     例如：
     
@@ -104,7 +85,7 @@ _**上一次修改主题：** 2015-03-09_
 
 #### 其他资源
 
-[New-CsCpsConfiguration](new-cscpsconfiguration.md)  
-[Set-CsCpsConfiguration](set-cscpsconfiguration.md)  
-[Get-CsSite](get-cssite.md)
+[New-CsCpsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsCpsConfiguration)  
+[Set-CsCpsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCpsConfiguration)  
+[Get-CsSite](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsSite)
 

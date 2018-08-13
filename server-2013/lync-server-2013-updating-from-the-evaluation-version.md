@@ -43,7 +43,7 @@ _**上一次修改主题：** 2012-06-20_
 
     Get-CsServerVersion
 
-[Get-CsServerVersion](get-csserverversion.md) cmdlet 将分析本地计算机并返回以下内容之一：
+[Get-CsServerVersion](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsServerVersion) cmdlet 将分析本地计算机并返回以下内容之一：
 
   - 已在计算机上安装了 Lync Server 批量许可证密钥，表示无需任何更新。
 

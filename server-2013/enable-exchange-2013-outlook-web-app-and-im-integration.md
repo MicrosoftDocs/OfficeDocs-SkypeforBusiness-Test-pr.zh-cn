@@ -25,30 +25,20 @@ _**上一次修改主题：** 2012-10-19_
     
         Get-CsSite
     
-    这将返回要在其中创建池的 siteName 的 siteID。有关详细信息，请参阅 Lync Server 2013 命令行管理程序文档中的 [Get-CsSite](get-cssite.md)。
+    这将返回要在其中创建池的 siteName 的 siteID。有关详细信息，请参阅 Lync Server 2013 命令行管理程序文档中的 [Get-CsSite](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsSite)。
 
 3.  运行以下 cmdlet：
     
         New-CsTrustedApplicationPool -Identity <E14 CAS FQDN> -ThrottleAsServer $true -TreatAsAuthenticated $true -ComputerFQDN <E14 CAS FQDN> -Site <Site> -Registrar <Pool FQDN in the site> -RequiresReplication $false
     
-    有关详细信息，请参阅 Lync Server 2013 命令行管理程序文档中的 [New-CsTrustedApplicationPool](new-cstrustedapplicationpool.md)。
+    有关详细信息，请参阅 Lync Server 2013 命令行管理程序文档中的 [New-CsTrustedApplicationPool](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrustedApplicationPool)。
     
     应将 Exchange Server FQDN 配置为 Exchange OWA 证书使用者名称 (SN) 或使用者替代名称 (SAN)。
     
     此外，在 Exchange OWA 中验证池的 FQDN 是否受信任。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 CAS 服务器<em>未</em> 并置在运行 Exchange 2013 统一消息 (UM) 的同一服务器上，请跳过此过程中的其余步骤并执行本主题后面的“为 Exchange 2013 CAS 服务器创建受信任应用程序”过程。如果 CAS 服务器并置在运行 Exchange 2013 统一消息 (UM) 的同一服务器上，请完成此过程中的步骤且不要执行本主题后面的“为 Exchange 2013 CAS 服务器创建受信任应用程序”过程。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果 CAS 服务器<em>未</em> 并置在运行 Exchange 2013 统一消息 (UM) 的同一服务器上，请跳过此过程中的其余步骤并执行本主题后面的“为 Exchange 2013 CAS 服务器创建受信任应用程序”过程。如果 CAS 服务器并置在运行 Exchange 2013 统一消息 (UM) 的同一服务器上，请完成此过程中的步骤且不要执行本主题后面的“为 Exchange 2013 CAS 服务器创建受信任应用程序”过程。
 
 
 4.  运行“Enable-CsTopology”。
@@ -69,7 +59,7 @@ _**上一次修改主题：** 2012-10-19_
     
         New-CsTrustedApplication -ApplicationId <AppID String> -TrustedApplicationPoolFqdn <E14 CAS FQDN> -Port <available port number>
     
-    有关详细信息，请参阅 Lync Server 2013 命令行管理程序文档中的主题 [New-CsTrustedApplication](new-cstrustedapplication.md)。
+    有关详细信息，请参阅 Lync Server 2013 命令行管理程序文档中的主题 [New-CsTrustedApplication](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrustedApplication)。
 
 3.  运行“Enable-CsTopology”。
 

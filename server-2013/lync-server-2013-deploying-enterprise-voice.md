@@ -27,18 +27,9 @@ Lync Server 2013企业语音是 Lync Server 2013 基础结构的一部分。
 
 4.  在 拓扑生成器中打开拓扑设计，如部署文档中的 [在 Lync Server 2013 中定义和配置拓扑](lync-server-2013-defining-and-configuring-the-topology.md)中所述。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>拓扑生成器安装是内部池部署过程的一部分。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-install-lync-server-administrative-tools.md">安装 Lync Server 2013 管理工具</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 拓扑生成器安装是内部池部署过程的一部分。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-install-lync-server-administrative-tools.md">安装 Lync Server 2013 管理工具</a>。
+    
 
 
 此外，必须已在与选择部署的参考拓扑对应的中央站点和分支站点中部署 Lync Server Enterprise Edition。必须至少为一个内部池定义、发布和安装文件之后，才能部署 企业语音组件，而且必须使用 拓扑生成器定义和发布内部池。
@@ -47,18 +38,8 @@ Lync Server 2013企业语音是 Lync Server 2013 基础结构的一部分。
 
 要查看阐明示例呼叫允许控制部署（包括网络区域、网络站点和子网）的参考拓扑，请参阅规划文档中的 [示例：在 Lync Server 2013 中收集呼叫允许控制要求](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要在中央站点部署 企业语音，请继续阅读本节中的主题。要在分支站点上部署 企业语音，请跳至部署文档中的 <a href="lync-server-2013-deploying-branch-sites.md">在 Lync Server 2013 中部署分支站点</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 要在中央站点部署 企业语音，请继续阅读本节中的主题。要在分支站点上部署 企业语音，请跳至部署文档中的 <a href="lync-server-2013-deploying-branch-sites.md">在 Lync Server 2013 中部署分支站点</a>。
 
 
 本节包含中介服务器并置到每个前端服务器或 Standard Edition Server 上的部署过程（推荐），以及独立的中介服务器池的部署过程。
@@ -73,41 +54,29 @@ Lync Server 2013企业语音是 Lync Server 2013 基础结构的一部分。
 
 ## 本节内容
 
-  -   
-    [Lync Server 2013 的企业语音先决条件](lync-server-2013-enterprise-voice-prerequisites.md)
+  - [Lync Server 2013 的企业语音先决条件](lync-server-2013-enterprise-voice-prerequisites.md)
 
-  -   
-    [在 Lync Server 2013 中部署中介服务器和定义对等方](lync-server-2013-deploying-mediation-servers-and-defining-peers.md)
+  - [在 Lync Server 2013 中部署中介服务器和定义对等方](lync-server-2013-deploying-mediation-servers-and-defining-peers.md)
 
-  -   
-    [在 Lync Server 2013 中配置中继](lync-server-2013-configuring-trunks.md)
+  - [在 Lync Server 2013 中配置中继](lync-server-2013-configuring-trunks.md)
 
-  -   
-    [在 Lync Server 2013 中配置拨号计划](lync-server-2013-configuring-dial-plans.md)
+  - [在 Lync Server 2013 中配置拨号计划](lync-server-2013-configuring-dial-plans.md)
 
-  -   
-    [在 Lync Server 2013 中配置语音策略、PSTN 用法记录和语音路由](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)
+  - [在 Lync Server 2013 中配置语音策略、PSTN 用法记录和语音路由](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)
 
-  -   
-    [在 Lync Server 2013 中导出和导入语音路由配置](lync-server-2013-exporting-and-importing-voice-routing-configuration.md)
+  - [在 Lync Server 2013 中导出和导入语音路由配置](lync-server-2013-exporting-and-importing-voice-routing-configuration.md)
 
-  -   
-    [在 Lync Server 2013 中测试语音路由](lync-server-2013-test-voice-routing.md)
+  - [在 Lync Server 2013 中测试语音路由](lync-server-2013-test-voice-routing.md)
 
-  -   
-    [在 Lync Server 2013 中发布对语音路由配置所做的待处理更改](lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md)
+  - [在 Lync Server 2013 中发布对语音路由配置所做的待处理更改](lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md)
 
-  -   
-    [部署本地 Exchange UM 以提供 Lync Server 2013 语音邮件](lync-server-2013-deploying-on-premises-exchange-um-to-provide-lync-server-2013-voice-mail.md)
+  - [部署本地 Exchange UM 以提供 Lync Server 2013 语音邮件](lync-server-2013-deploying-on-premises-exchange-um-to-provide-lync-server-2013-voice-mail.md)
 
-  -   
-    [在托管 Exchange UM 上提供 Lync Server 2013 用户语音邮件](lync-server-2013-providing-lync-server-users-voice-mail-on-hosted-exchange-um.md)
+  - [在托管 Exchange UM 上提供 Lync Server 2013 用户语音邮件](lync-server-2013-providing-lync-server-users-voice-mail-on-hosted-exchange-um.md)
 
-  -   
-    [配置本地 Lync Server 2013 与 Exchange Online 的集成](lync-server-2013-configuring-on-premises-lync-server-integration-with-exchange-online.md)
+  - [配置本地 Lync Server 2013 与 Exchange Online 的集成](lync-server-2013-configuring-on-premises-lync-server-integration-with-exchange-online.md)
 
-  -   
-    [在 Lync Server 2013 中部署高级企业语音功能](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
+  - [在 Lync Server 2013 中部署高级企业语音功能](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
     
       - [关于 Lync Server 2013 中的网络区域、站点和子网](lync-server-2013-about-network-regions-sites-and-subnets.md)
     
@@ -123,8 +92,7 @@ Lync Server 2013企业语音是 Lync Server 2013 基础结构的一部分。
     
       - [在 Lync Server 2013 中配置媒体绕过](lync-server-2013-configure-media-bypass.md)
 
-  -   
-    [在 Lync Server 2013 中为用户启用企业语音](lync-server-2013-enable-users-for-enterprise-voice.md)
+  - [在 Lync Server 2013 中为用户启用企业语音](lync-server-2013-enable-users-for-enterprise-voice.md)
 
 ## 另请参阅
 

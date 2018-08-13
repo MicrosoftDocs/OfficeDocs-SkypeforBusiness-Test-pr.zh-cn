@@ -47,18 +47,9 @@ _**上一次修改主题：** 2014-02-07_
 
 14. 单击“提交”，然后单击“全部提交”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只要您创建语音路由测试用例，就必须运行“全部提交”命令以发布配置更改。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中发布对语音路由配置所做的待处理更改</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只要您创建语音路由测试用例，就必须运行“全部提交”命令以发布配置更改。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中发布对语音路由配置所做的待处理更改</a>。
+    
     
     如果要在测试中部署的拨号计划对以加号开头的电话号码（例如 +12065551219）进行规范化，则计划可能导致语音路由测试失败。（拨号计划和语音路由仍将正常工作，实际上 Test-CsDialPlan 也会成功。然而，语音路由测试可能失败。）测试语音路由时要留心这一点。
 

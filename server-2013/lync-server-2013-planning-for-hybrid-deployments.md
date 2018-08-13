@@ -65,34 +65,14 @@ Lync 客户端中支持的功能以及本地和联机环境中可用的功能存
 
   - 本地具有 Lync Server 2013 的 Microsoft Office Communications Server 2007 R2。 Lync Server 2013 联盟 边缘服务器和联盟 边缘服务器中的下一个跃点服务器必须运行 Lync Server 2013，且必须已部署中央管理存储。 边缘服务器和池必须在本地部署。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>尽管此拓扑受支持，但是某些功能可能会受限制。例如，Microsoft Lync Online 用户和本地 Office Communications Server 2007 R2 用户之间的状态信息无法按预期工作。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 尽管此拓扑受支持，但是某些功能可能会受限制。例如，Microsoft Lync Online 用户和本地 Office Communications Server 2007 R2 用户之间的状态信息无法按预期工作。
 
 
   - 应用了 Lync Server 2010 2013 年 3 月累积更新（或最新更新）的 Microsoft Lync Server 2010 和本地安装的 Lync Server 2013 管理工具。联盟 边缘服务器和来自联盟 边缘服务器的下一个跃点服务器必须运行应用了 2013 年 3 月（或最新）累积更新的 Microsoft Lync Server 2010。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 管理工具应安装在有访问权限连接到现有 Lync Server 2010 部署的独立服务器上。可将用户从您的内部部署移动到 Lync Online 的 Move-CsUser cmdlet 必须从连接到您的内部部署的 Lync Server 2013 管理工具运行。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Lync Server 2013 管理工具应安装在有访问权限连接到现有 Lync Server 2010 部署的独立服务器上。可将用户从您的内部部署移动到 Lync Online 的 Move-CsUser cmdlet 必须从连接到您的内部部署的 Lync Server 2013 管理工具运行。
 
 
   - 所有服务器都运行 Lync Server 2013 的 Lync Server 2013 部署。
@@ -228,18 +208,9 @@ Lync 客户端中支持的功能以及本地和联机环境中可用的功能存
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果需要与运行 Office Communications Server 2007 的合作伙伴联盟，您将需要打开入站/出站 RTP/UDP 和 RTP/TCP 端口 50000-59999。有关 A/V 防火墙要求的详细信息，请参阅 <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">确定 Lync Server 2013 的外部 A/V 防火墙和端口要求</a>。有关端口和协议的详细信息，请参阅 <a href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Lync Server 2013 中的端口摘要 - 使用硬件负载平衡器的扩展的合并边缘</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果需要与运行 Office Communications Server 2007 的合作伙伴联盟，您将需要打开入站/出站 RTP/UDP 和 RTP/TCP 端口 50000-59999。有关 A/V 防火墙要求的详细信息，请参阅 <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">确定 Lync Server 2013 的外部 A/V 防火墙和端口要求</a>。有关端口和协议的详细信息，请参阅 <a href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Lync Server 2013 中的端口摘要 - 使用硬件负载平衡器的扩展的合并边缘</a>。
+
 
 
 ## 用户帐户和数据
@@ -248,18 +219,8 @@ Lync 客户端中支持的功能以及本地和联机环境中可用的功能存
 
 当您使用 AD FS 和 Dirsync 在 Lync 本地和 Lync Online 部署之间同步用户帐户时，您需要在您的本地和联机 Lync 部署之间为贵组织中的所有 Lync 帐户同步 AD 帐户，即使用户未移动到 Lync Online 也是如此。如果未同步所有用户，则您的组织中的本地和联机用户之间的通信可能无法按预期工作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果用户是使用 Office 365 的联机门户创建的，则用户帐户将不会与本地 Active Directory 同步，且该用户不会存在于本地 Active Directory 中。如果您已在 Lync Online 中创建用户，并且希望配置与本地 Lync Server 的混合，请参阅本地部署中启用，请参阅<a href="lync-server-2013-moving-users-from-lync-online-to-lync-on-premises.md">在 Lync Server 2013 中将 Lync Online 用户迁移至本地 Lync</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果用户是使用 Office 365 的联机门户创建的，则用户帐户将不会与本地 Active Directory 同步，且该用户不会存在于本地 Active Directory 中。如果您已在 Lync Online 中创建用户，并且希望配置与本地 Lync Server 的混合，请参阅本地部署中启用，请参阅<a href="lync-server-2013-moving-users-from-lync-online-to-lync-on-premises.md">在 Lync Server 2013 中将 Lync Online 用户迁移至本地 Lync</a>。
 
 
 规划混合部署时还应考虑以下用户相关的问题。

@@ -29,18 +29,9 @@ _**上一次修改主题：** 2012-11-01_
 
 5.  在“新建区域链接”的“名称”字段中键入值。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>该值必须在 Lync Server 2013 部署中是唯一的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 该值必须在 Lync Server 2013 部署中是唯一的。
+    
 
 
 6.  从“网络区域 \#1”下拉列表中，选择要链接的两个区域之一。
@@ -75,8 +66,8 @@ _**上一次修改主题：** 2012-11-01_
 
 #### 其他资源
 
-[New-CsNetworkRegionLink](new-csnetworkregionlink.md)  
-[Set-CsNetworkRegionLink](set-csnetworkregionlink.md)  
-[Remove-CsNetworkRegionLink](remove-csnetworkregionlink.md)  
-[Get-CsNetworkRegionLink](get-csnetworkregionlink.md)
+[New-CsNetworkRegionLink](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkRegionLink)  
+[Set-CsNetworkRegionLink](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsNetworkRegionLink)  
+[Remove-CsNetworkRegionLink](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkRegionLink)  
+[Get-CsNetworkRegionLink](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkRegionLink)
 

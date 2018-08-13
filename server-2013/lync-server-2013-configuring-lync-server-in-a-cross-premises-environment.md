@@ -61,19 +61,10 @@ _**上一次修改主题：** 2017-02-21_
 
 脚本完成后，您必须在 Lync Server 2013 和授权服务器之间配置一层信任关系，并在 Exchange 2013 和授权服务器之间配置另一层信任关系。只能通过 Microsoft Online Services cmdlet 做到这一点。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您尚未安装 Microsoft Online Services cmdlet，则您需要先完成两项操作，然后再继续。首先，下载并安装 64 位版本的 Microsoft Online Services 登录助手。完成此安装后，再下载并安装 64 位版本的用于 Windows PowerShell 的 Microsoft Online Services 模块。可在 Office 365 网站上找到有关安装并使用 Microsoft Online Services 模块的详细信息。这些说明将告知您如何配置单一登录、联盟以及 Office 365 与 Active Directory 之间的同步。<br />
-如果您未安装这些 cmdlet，您的脚本将失败，因为 Get-CsTenant cmdlet 不可用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您尚未安装 Microsoft Online Services cmdlet，则您需要先完成两项操作，然后再继续。首先，下载并安装 64 位版本的 Microsoft Online Services 登录助手。完成此安装后，再下载并安装 64 位版本的用于 Windows PowerShell 的 Microsoft Online Services 模块。可在 Office 365 网站上找到有关安装并使用 Microsoft Online Services 模块的详细信息。这些说明将告知您如何配置单一登录、联盟以及 Office 365 与 Active Directory 之间的同步。<br />
+如果您未安装这些 cmdlet，您的脚本将失败，因为 Get-CsTenant cmdlet 不可用。
+
 
 
 在配置 Office 365 并创建针对 Lync Server 2013 和 Exchange 2013 的 Office 365 服务主体后，您需要将您的凭据注册到这些服务主体中。为此，您必须先获取另存为 .CER 文件的 X.509 Base64。然后，将此证书应用于 Office 365 服务主体。

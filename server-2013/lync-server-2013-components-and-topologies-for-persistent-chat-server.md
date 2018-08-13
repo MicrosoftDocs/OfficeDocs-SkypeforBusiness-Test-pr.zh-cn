@@ -27,35 +27,16 @@ _**上一次修改主题：** 2012-10-05_
     
       - 合规性服务，在启用合规性时打开
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Lync Server 2013 中，用于文件上载/下载的 持久聊天 Web 服务现已与 Lync Server 2013前端服务器并置。<br />
-    用于聊天室管理的 持久聊天 Web 服务也已与 Lync Server 2013前端服务器并置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> 在 Lync Server 2013 中，用于文件上载/下载的 持久聊天 Web 服务现已与 Lync Server 2013前端服务器并置。<br />
+    用于聊天室管理的 持久聊天 Web 服务也已与 Lync Server 2013前端服务器并置。
 
 
   - 为承载用于存储聊天室内容、聊天室和类别的 持久聊天内容数据库而承载 SQL Server 后端数据库的服务器（如果使用镜像，则存在多台服务器）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>后端数据库可存储聊天历史记录数据，包括有关创建的类别和 持久聊天聊天室的信息。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 后端数据库可存储聊天历史记录数据，包括有关创建的类别和 持久聊天聊天室的信息。
+    
 
 
   - 如果启用合规性，则为用于承载 持久聊天合规性数据库（其中存储用于合规性目的的合规性事件和聊天内容）的 SQL Server 后端数据库的服务器（如果使用镜像，则有多台服务器）。
@@ -74,18 +55,8 @@ Lync Server 2013 支持多种并置方案，为您提供了极大的灵活性：
 
 对于 Lync Server 2013企业版， 持久聊天服务器无法在 Enterprise Edition Server 上并置。 持久聊天服务器的 SQL Server 数据库可与 企业版前端池的 后端服务器数据库并置。用于 持久聊天合规性的 SQL Server 数据库也还与 企业版 池的 后端服务器数据库并置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>承载 持久聊天数据库的服务器可以承载其他数据库。但是，在考虑将 持久聊天数据库与其他数据库并置时，请注意，如果存储多个用户的消息，则 持久聊天数据库所需的磁盘空间会变得很大。因此，建议不要将 持久聊天数据库与后端数据库并置。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 承载 持久聊天数据库的服务器可以承载其他数据库。但是，在考虑将 持久聊天数据库与其他数据库并置时，请注意，如果存储多个用户的消息，则 持久聊天数据库所需的磁盘空间会变得很大。因此，建议不要将 持久聊天数据库与后端数据库并置。
 
 
 如果将 持久聊天数据库与后端数据库并置，则可将单个 SQL Server 实例用于任意或全部数据库，也可以对每个数据库使用不同的 SQL Server 实例，但存在以下限制：
@@ -108,36 +79,16 @@ Lync Server 2013 支持多种并置方案，为您提供了极大的灵活性：
 
 可以使用 拓扑生成器将 持久聊天服务器添加到 Lync Server 2013 部署中。可向您的拓扑中添加单服务器或多服务器 持久聊天服务器池。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在使用 拓扑生成器创建具有单个服务器的 持久聊天服务器池后，您无法向该池添加其他服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在使用 拓扑生成器创建具有单个服务器的 持久聊天服务器池后，您无法向该池添加其他服务器。
 
 
 ## 单服务器拓扑
 
 持久聊天服务器的最低配置和最简单的部署是单 持久聊天服务器前端服务器拓扑。此部署要求具有一台运行 持久聊天服务器的服务器（如果已启用合规性，该服务器可以运行合规性服务）、一台承载 SQL Server 数据库的服务器，如果有合规性要求，该 SQL Server 数据库用于存储合规性数据。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您不能向作为 拓扑生成器中的单服务器部署启动的 持久聊天服务器池添加其他服务器。即使您使用的是单个服务器，也建议您使用多服务器池拓扑以便稍后添加更多服务器（如有必要）。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您不能向作为 拓扑生成器中的单服务器部署启动的 持久聊天服务器池添加其他服务器。即使您使用的是单个服务器，也建议您使用多服务器池拓扑以便稍后添加更多服务器（如有必要）。
 
 
 下图显示了具有合规性的单个 持久聊天服务器前端服务器拓扑的所有必需组件和可选组件。

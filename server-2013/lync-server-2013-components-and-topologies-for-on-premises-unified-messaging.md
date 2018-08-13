@@ -37,16 +37,7 @@ Lync Server 2013 支持 Exchange UM 集成的以下拓扑：
 
   - 多林（即资源林）。 Lync Server 2013 部署在单林中，然后将用户分布在多个林中。用户的 Exchange UM 属性必须复制到 Lync Server 2013 林。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可在多个林中部署 Exchange。每个 Exchange 组织可以向其用户提供 Exchange UM，也可以在 Lync Server 2013 所属的同一林中部署 Exchange UM。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 可在多个林中部署 Exchange。每个 Exchange 组织可以向其用户提供 Exchange UM，也可以在 Lync Server 2013 所属的同一林中部署 Exchange UM。
+    
 

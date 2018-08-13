@@ -25,22 +25,14 @@ _**上一次修改主题：** 2012-10-29_
 
     Grant-CsOuPermission -ObjectType <User | Computer | InetOrgPerson | Contact | AppContact | Device> -OU <DN of the OU > 
 
+   &nbsp;
+
     Grant-CsOuPermission -ObjectType "user","contact",inetOrgPerson" -OU "ou=Redmond,dc=contoso,dc=net"
 
 有关 **Grant-CsOuPermission** cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关在域根上和在“用户”、“计算机”和“域控制器”这三个容器中创建的 ACE 的详细信息，请参阅<a href="lync-server-2013-changes-made-by-domain-preparation.md">Lync Server 2013 中的域准备所做的更改</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 有关在域根上和在“用户”、“计算机”和“域控制器”这三个容器中创建的 ACE 的详细信息，请参阅<a href="lync-server-2013-changes-made-by-domain-preparation.md">Lync Server 2013 中的域准备所做的更改</a>。
 
 
 ## 本部分内容

@@ -41,26 +41,17 @@ _**上一次修改主题：** 2013-01-30_
 
 配置组内呼叫应答需要以下任一管理角色，具体取决于任务：
 
-  - **CsVoiceAdministrator：**此管理员角色可以创建、配置和管理所有语音相关的设置和策略。
+  - **CsVoiceAdministrator：** 此管理员角色可以创建、配置和管理所有语音相关的设置和策略。
 
-  - **CsUserAdministrator：**此管理员角色可以为用户启用组内呼叫应答。此管理员角色还具有对所有语音配置的只读查看访问权限。
+  - **CsUserAdministrator：** 此管理员角色可以为用户启用组内呼叫应答。此管理员角色还具有对所有语音配置的只读查看访问权限。
 
-  - **CsServerAdministrator：**此管理员角色可以管理、监控服务器和服务，以及排除服务器和服务的故障。
+  - **CsServerAdministrator：** 此管理员角色可以管理、监控服务器和服务，以及排除服务器和服务的故障。
 
-  - **CsAdministrator：**此管理员角色可以执行 CsVoiceAdministrator、CsServerAdministrator 和 CsUserAdministrator 的所有任务。
+  - **CsAdministrator：** 此管理员角色可以执行 CsVoiceAdministrator、CsServerAdministrator 和 CsUserAdministrator 的所有任务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关管理权限的详细信息，请参阅规划文档中的<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中规划基于角色的访问控制</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关管理权限的详细信息，请参阅规划文档中的<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中规划基于角色的访问控制</a>。
+
 
 
 ## 另请参阅

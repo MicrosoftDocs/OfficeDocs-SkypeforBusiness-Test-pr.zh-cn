@@ -19,16 +19,6 @@ _**上一次修改主题：** 2012-10-06_
 
   - 如果出现“主体未设置”错误消息，则说明您尝试添加的主体不可用。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>解决方法 – 无解决方法。此错误消息表示主体不可用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 解决方法 – 无解决方法。此错误消息表示主体不可用。
 

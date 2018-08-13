@@ -27,18 +27,9 @@ _**上一次修改主题：** 2012-09-23_
 
 4.  在 Survivable Branch Appliance 或 Survivable Branch Server 网关上设置备份呼叫路由以指向中央站点的备份注册器池（与中介服务器并置）。（请参阅 Survivable Branch Appliance 或 Survivable Branch Server 供应商文档。）
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此备份呼叫路由设置可帮助确保在 Survivable Branch Appliance 或 Survivable Branch Server 不可用（如正在停机维护中）时，能够对分支用户进行入站呼叫。如果 Survivable Branch Appliance 或 Survivable Branch Server 上的注册器和中介服务器不可用，并且用户是使用中央站点的备份注册器池注册的，入站呼叫仍可路由到该用户。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此备份呼叫路由设置可帮助确保在 Survivable Branch Appliance 或 Survivable Branch Server 不可用（如正在停机维护中）时，能够对分支用户进行入站呼叫。如果 Survivable Branch Appliance 或 Survivable Branch Server 上的注册器和中介服务器不可用，并且用户是使用中央站点的备份注册器池注册的，入站呼叫仍可路由到该用户。
+    
 
 
 **下一步**：[在 Lync Server 2013 中配置语音邮件重新路由设置](lync-server-2013-configure-voice-mail-rerouting-settings.md)

@@ -35,16 +35,7 @@ Lync Server 2013企业语音使用 Exchange 统一消息 (UM) 基础结构来提
 
 Exchange UM 提供了可以让用户在 Exchange 邮箱中接收传入传真的传真功能。有关详细信息，请参阅 Microsoft Exchange Server 文档中的“统一消息”，网址为 [http://go.microsoft.com/fwlink/p/?linkId=135652](http://go.microsoft.com/fwlink/p/?linkid=135652)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由 Exchange UM 服务器提供的传真服务在与 Microsoft Exchange Server 2010、具有最新 Service Pack 的 Exchange 2010 或 Exchange 2013 集成的 Lync Server 部署中不可用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由 Exchange UM 服务器提供的传真服务在与 Microsoft Exchange Server 2010、具有最新 Service Pack 的 Exchange 2010 或 Exchange 2013 集成的 Lync Server 部署中不可用。
+
 

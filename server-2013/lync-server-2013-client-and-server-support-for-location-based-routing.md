@@ -141,18 +141,9 @@ _**上一次修改主题：** 2015-03-09_
 
   
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要为 Lync Mobile 2013 客户端禁用 VoIP，请为启用了基于位置的路由的所有用户分配一个移动策略并禁用 IP 音频/视频设置。有关移动策略的详细信息，请参阅 <a href="new-csmobilitypolicy.md">New-CsMobilityPolicy</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 要为 Lync Mobile 2013 客户端禁用 VoIP，请为启用了基于位置的路由的所有用户分配一个移动策略并禁用 IP 音频/视频设置。有关移动策略的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsMobilityPolicy">New-CsMobilityPolicy</a>。
+
 
 
 ## 另请参阅

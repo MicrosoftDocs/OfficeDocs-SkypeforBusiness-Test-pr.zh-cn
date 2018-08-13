@@ -17,18 +17,9 @@ _**上一次修改主题：** 2014-04-23_
 
 下列过程使用 Lync Server 命令行管理程序 cmdlet 为核心服务的设置和数据创建备份文件。有关本节中使用的工具（包括它们的位置）的详细信息，请参阅[备份和还原要求：工具和权限](lync-server-2013-backup-and-restoration-requirements-tools-and-permissions.md)。有关备份存档和监控数据的详细信息，请参阅[备份存档和监控数据库](lync-server-2013-backing-up-archiving-and-monitoring-databases.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中备份中央管理存储的步骤包括备份存档和监控的设置和配置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节中备份中央管理存储的步骤包括备份存档和监控的设置和配置。
+
 
 
 您可以在本地运行本节所述的 cmdlet，也可以远程运行它们。
@@ -49,18 +40,9 @@ _**上一次修改主题：** 2014-04-23_
     
         Export-CsConfiguration -FileName "C:\Config.zip"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>该步骤会将 Lync Server 拓扑、策略和配置设置导出到一个文件中。无需使用其他步骤来备份拓扑数据。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 该步骤会将 Lync Server 拓扑、策略和配置设置导出到一个文件中。无需使用其他步骤来备份拓扑数据。
+    
 
 
 5.  将备份的中央管理存储配置文件复制到 $Backup\\ 下。

@@ -37,31 +37,11 @@ Lync Server 2013 使用简单 URL 将内部和外部呼叫定向到前端服务�
 
 2.  在“管理访问 URL”框中，输入要用于对 Lync Server 2013 控制面板进行管理访问的简单 URL，然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>建议尽可能使用最简单的 URL 作为管理 URL。最简单的选项是 <strong>https://admin.</strong><em>&lt;domain&gt;</em>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 建议尽可能使用最简单的 URL 作为管理 URL。最简单的选项是 <strong>https://admin.</strong><em>&lt;domain&gt;</em>。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果在初始部署后更改简单 URL，您必须注意哪些更改会影响简单 URL 的域名系统 (DNS) 记录和证书。如果该更改影响简单 URL 的基础，则还必须更改 DNS 记录和证书。例如，将 https://lync.contoso.com/Meet 更改为 https://meet.contoso.com 时，会将基 URL 由 lync.contoso.com 更改为 meet.contoso.com，因此需要更改 DNS 记录和证书，以引用 meet.contoso.com。如果将简单 URL 由 https://lync.contoso.com/Meet 更改为 https://lync.contoso.com/Meetings，其中基 URL lync.contoso.com 保持不变，则无需更改 DNS 或证书。但是，每次更改简单 URL 名称时，都必须在每台控制器和前端服务器上运行 <strong>Enable-CsComputer</strong> cmdlet，以注册该更改。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果在初始部署后更改简单 URL，您必须注意哪些更改会影响简单 URL 的域名系统 (DNS) 记录和证书。如果该更改影响简单 URL 的基础，则还必须更改 DNS 记录和证书。例如，将 https://lync.contoso.com/Meet 更改为 https://meet.contoso.com 时，会将基 URL 由 lync.contoso.com 更改为 meet.contoso.com，因此需要更改 DNS 记录和证书，以引用 meet.contoso.com。如果将简单 URL 由 https://lync.contoso.com/Meet 更改为 https://lync.contoso.com/Meetings，其中基 URL lync.contoso.com 保持不变，则无需更改 DNS 或证书。但是，每次更改简单 URL 名称时，都必须在每台控制器和前端服务器上运行 <strong>Enable-CsComputer</strong> cmdlet，以注册该更改。
 
 
 ## 另请参阅

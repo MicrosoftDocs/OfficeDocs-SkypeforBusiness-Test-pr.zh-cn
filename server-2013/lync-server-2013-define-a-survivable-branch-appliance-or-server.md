@@ -25,34 +25,14 @@ _**上一次修改主题：** 2012-10-07_
 
 3.  右键单击“Survivable Branch Appliance”，然后单击“新建 Survivable Branch Appliance”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>“Survivable Branch Appliance”是定义Survivable Branch Server和 Survivable Branch Appliance 的位置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > “Survivable Branch Appliance”是定义Survivable Branch Server和 Survivable Branch Appliance 的位置。
 
 
 4.  在“定义 Survivable Branch Appliance”对话框中，单击“FQDN”，键入要在该分支站点上部署的 Survivable Branch Appliance 或Survivable Branch Server的完全限定的域名 (FQDN)，然后单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要定义 Survivable Branch Appliance，则在“FQDN”中输入的名称必须与分配给“servicePrincipalName”属性的 Survivable Branch Appliance FQDN 相同。有关详细信息，请参阅<a href="lync-server-2013-add-a-survivable-branch-appliance-to-active-directory.md">在 Lync Server 2013 中向 Active Directory 中添加 Survivable Branch Appliance</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果要定义 Survivable Branch Appliance，则在“FQDN”中输入的名称必须与分配给“servicePrincipalName”属性的 Survivable Branch Appliance FQDN 相同。有关详细信息，请参阅<a href="lync-server-2013-add-a-survivable-branch-appliance-to-active-directory.md">在 Lync Server 2013 中向 Active Directory 中添加 Survivable Branch Appliance</a>。
 
 
 5.  单击“前端池”，再单击该 Survivable Branch Appliance 或Survivable Branch Server将连接到的中央站点上的前端服务器（用户服务池），然后单击“下一步”。
@@ -61,36 +41,17 @@ _**上一次修改主题：** 2012-10-07_
 
 7.  单击“网关 FQDN 或 IP 地址”，然后键入与 Survivable Branch Appliance 或Survivable Branch Server关联并用于路由入站或出站 PSTN 呼叫的对等网关的 FQDN 或 IP 地址。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要定义 Survivable Branch Appliance，这是 Survivable Branch Appliance 内的中介服务器为建立 PSTN 连接而连接的网关。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果要定义 Survivable Branch Appliance，这是 Survivable Branch Appliance 内的中介服务器为建立 PSTN 连接而连接的网关。
 
 
 8.  单击“IP/PSTN 网关的侦听端口”，然后接受默认端口。
 
 9.  在“SIP 传输协议”中，单击 Survivable Branch Appliance 或Survivable Branch Server使用的传输协议，然后单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>出于安全考虑，强烈建议使用传输层安全性 (TLS)。如果要定义 Survivable Branch Appliance，请参考 Survivable Branch Appliance 供应商文档，以验证 Survivable Branch Appliance 是否支持 TLS 协议。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 出于安全考虑，强烈建议使用传输层安全性 (TLS)。如果要定义 Survivable Branch Appliance，请参考 Survivable Branch Appliance 供应商文档，以验证 Survivable Branch Appliance 是否支持 TLS 协议。
+    
 
 
 10. 在控制台树中，右键单击新的 Survivable Branch Appliance 或 Survivable Branch Server，再单击“拓扑”，然后单击“发布”。

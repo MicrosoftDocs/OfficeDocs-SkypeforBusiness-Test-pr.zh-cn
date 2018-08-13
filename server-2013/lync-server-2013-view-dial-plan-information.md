@@ -27,18 +27,8 @@ _**上一次修改主题：** 2012-11-01_
 
 4.  在“拨号计划”页上，双击某个拨号计划名称。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>一次只能查看一个拨号计划的信息。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 一次只能查看一个拨号计划的信息。
 
 
 ## 使用 Windows PowerShell Cmdlet 查看拨号计划

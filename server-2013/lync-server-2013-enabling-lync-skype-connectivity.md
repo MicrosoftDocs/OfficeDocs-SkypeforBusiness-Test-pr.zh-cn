@@ -25,18 +25,8 @@ _**上一次修改主题：** 2016-12-08_
 
 ![显示 PIC](images/Dn440170.451b94e3-0b38-488c-835f-1f25690e8074(OCS.15).jpg "显示 PIC")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Live Communication Server 2005 SP1 或 Office Communications Server 2007 不再支持 PIC 联盟。支持 PIC 联盟的平台包括 Lync Server 2013、Lync Server 2010 和 Office Communications Server 2007 R2。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Live Communication Server 2005 SP1 或 Office Communications Server 2007 不再支持 PIC 联盟。支持 PIC 联盟的平台包括 Lync Server 2013、Lync Server 2010 和 Office Communications Server 2007 R2。
 
 
 ## 2\. 配置至少一个策略以支持联盟的用户访问
@@ -49,18 +39,9 @@ _**上一次修改主题：** 2016-12-08_
 
 使用 Lync Server 命令行管理程序，管理员必须配置 Lync 客户端策略以将 Skype 显示为附加 PIC 提供商。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有至少再配置一个策略（步骤 2，此过程前面所述）以支持公共 IM 连接，公共即时消息连接 (PIC) 服务提供商的用户才能参与组织中的 IM、音频或视频会议。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 只有至少再配置一个策略（步骤 2，此过程前面所述）以支持公共 IM 连接，公共即时消息连接 (PIC) 服务提供商的用户才能参与组织中的 IM、音频或视频会议。
+
 
 
 1.  要配置联盟和 PIC，请参阅"启用或禁用联盟和公共 IM 连接"，网址为 [http://go.microsoft.com/fwlink/p/?LinkId=306063](http://go.microsoft.com/fwlink/p/?linkid=306063)。

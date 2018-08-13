@@ -17,34 +17,15 @@ _**上一次修改主题：** 2016-12-08_
 
 若要部署和管理组内呼叫应答，您需要使用 SEFAUtil 资源工具包工具。该工具是 Lync Server 2013 资源工具包工具的一部分。在安装 SEFAUtil 之前，您的拓扑中必须有一个受信任的应用程序池，将 SEFAUtil 指定为受信任应用程序，然后启用该拓扑。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 统一通信托管 API (UCMA) 3.0 核心 SDK 必须安装在您计划运行 SEFAUtil 工具的任何计算机上。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Microsoft 统一通信托管 API (UCMA) 3.0 核心 SDK 必须安装在您计划运行 SEFAUtil 工具的任何计算机上。
 
 
 您可以在您的部署中的任何前端池中运行 SEFAUtil。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关运行 SEFAUtil 的更多详细信息，请参阅 Technet 博客文章“如何运行 SEFAutil？”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=278940" class="uri">http://go.microsoft.com/fwlink/?linkid=278940</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关运行 SEFAUtil 的更多详细信息，请参阅 Technet 博客文章“如何运行 SEFAutil？”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=278940" class="uri">http://go.microsoft.com/fwlink/?linkid=278940</a>。
+
 
 
 ## 部署 SEFAUtil
@@ -61,18 +42,9 @@ _**上一次修改主题：** 2016-12-08_
     
         New-CsTrustedApplication -ApplicationId sefautil -TrustedApplicationPoolFqdn <Pool FQDN>  -Port 7489
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如有需要，您可以使用其他端口。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如有需要，您可以使用其他端口。
+    
 
 
 5.  启用包含您的更改的拓扑。在命令行中运行：
@@ -85,18 +57,9 @@ _**上一次修改主题：** 2016-12-08_
     
     1.  使用管理员权限从 Windows 命令提示符处运行该工具以在您的部署中显示用户的呼叫转接设置。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>该工具位于 \Program Files\Microsoft Lync Server 2013\Reskit 下。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 该工具位于 \Program Files\Microsoft Lync Server 2013\Reskit 下。
+        
     
     2.  显示用户的呼叫转接设置。在命令行中运行：
         

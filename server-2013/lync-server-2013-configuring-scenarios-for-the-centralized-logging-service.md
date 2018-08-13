@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
 方案定义了范围（即，全局、站点、池或计算机）以及要在集中日志记录服务中使用的提供程序。通过使用方案，可以启用或禁用对提供程序（例如，S4、SIPStack、IM 和 Presence）进行的跟踪。通过配置方案，可将针对给定逻辑集合的、满足某个特定问题条件的所有提供程序组合在一起。如果您发现需要修改方案以满足故障排除和日志记录需求，Lync Server 2013 调试工具为您提供了一个包含名为 *Edit-CsClsScenario* 的功能的名为 *ClsController.psm1* 的 Windows PowerShell 模块。此模块的用途是编辑命名的方案的属性。本主题提供了此模块的工作方式的示例。Lync Server 2013 调试工具可从以下链接下载：[http://go.microsoft.com/fwlink/?LinkId=285257](http://go.microsoft.com/fwlink/?linkid=285257)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于任何给定的范围（站点、全局、池或计算机），您可以在任何给定时间最多运行两个方案。若要确定当前正在运行的方案，请使用 Windows PowerShell 和 <a href="get-csclsscenario.md">Get-CsClsScenario</a>。通过使用 Windows PowerShell 和 <a href="set-csclsscenario.md">Set-CsClsScenario</a>，您可以动态更改正在运行的方案。可以在日志记录会话期间修改正在运行的方案，以调整或优化所收集的数据以及源提供程序。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 对于任何给定的范围（站点、全局、池或计算机），您可以在任何给定时间最多运行两个方案。若要确定当前正在运行的方案，请使用 Windows PowerShell 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsScenario">Get-CsClsScenario</a>。通过使用 Windows PowerShell 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsScenario">Set-CsClsScenario</a>，您可以动态更改正在运行的方案。可以在日志记录会话期间修改正在运行的方案，以调整或优化所收集的数据以及源提供程序。
 
 
 若要使用 Lync Server 命令行管理程序运行集中日志记录服务功能，您必须是 CsAdministrator 或 CsServerAdministrator 基于角色的访问控制 (RBAC) 安全组的成员，或是包含这两个组之一的自定义 RBAC 角色。若要返回分配了此 cmdlet 的所有 RBAC 角色（包括您自己创建的任何自定义 RBAC 角色）的列表，请从 Lync Server 命令行管理程序或 Windows PowerShell 提示符处运行以下命令：
@@ -49,25 +39,15 @@ _**上一次修改主题：** 2016-12-08_
     
     （可选）可以使用 –Name 和 –Parent 参数。定义 Name 参数可对方案进行唯一标识。如果使用 Name，则还必须使用 Parent 将方案添加到全局或站点范围中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果使用 Name 和 Parent 参数，则无法使用 <strong>–Identity</strong> 参数。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果使用 Name 和 Parent 参数，则无法使用 <strong>–Identity</strong> 参数。
 
 
 ## 使用 New-CsClsScenario cmdlet 创建新的方案
 
 1.  启动 Lync Server 命令行管理程序：依次单击“开始”、“所有程序”和“Microsoft Lync Server 2013”，然后单击“Lync Server 命令行管理程序”。
 
-2.  若要为日志记录会话创建新的方案，请使用 [New-CsClsProvider](new-csclsprovider.md) 并定义方案的名称（即，对方案进行唯一标识的方式）。从 WPP 中选择日志记录格式的类型（即，Windows 软件跟踪预处理器和其默认值）、EventLog（即，Windows 事件日志格式）或 IISLog（即，基于 IIS 日志文件格式的 ASCII 格式文件）。然后，定义级别（如本主题中的“日志记录级别”下所述）和标志（如本主题中的“标志”下所述）。
+2.  若要为日志记录会话创建新的方案，请使用 [New-CsClsProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClsProvider) 并定义方案的名称（即，对方案进行唯一标识的方式）。从 WPP 中选择日志记录格式的类型（即，Windows 软件跟踪预处理器和其默认值）、EventLog（即，Windows 事件日志格式）或 IISLog（即，基于 IIS 日志文件格式的 ASCII 格式文件）。然后，定义级别（如本主题中的“日志记录级别”下所述）和标志（如本主题中的“标志”下所述）。
     
     对于此示例方案，我们将 LyssProvider 用作示例提供程序变量。
     
@@ -91,18 +71,9 @@ _**上一次修改主题：** 2016-12-08_
     
         New-CsClsScenario -Identity "site:Redmond/CollectDataScenario" -Provider @{Add=$LyssProvider, $ABServerProvider,  $SIPStackProvider}
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>众所周知，在 Windows PowerShell 中，用于使用 <code>@{&lt;variable&gt;=&lt;value1&gt;, &lt;value2&gt;, &lt;value&gt;...}</code> 创建值的哈希表的约定称为“展开”。有关 Windows PowerShell 中的展开的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=267760%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=267760&amp;clcid=0x804</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 众所周知，在 Windows PowerShell 中，用于使用 <code>@{&lt;variable&gt;=&lt;value1&gt;, &lt;value2&gt;, &lt;value&gt;...}</code> 创建值的哈希表的约定称为“展开”。有关 Windows PowerShell 中的展开的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=267760%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=267760&amp;clcid=0x804</a>。
+    
 
 
 ## 使用 Set-CsClsScenario cmdlet 修改现有方案
@@ -147,54 +118,24 @@ _**上一次修改主题：** 2016-12-08_
 
 1.  启动 Lync Server 命令行管理程序：依次单击“开始”、“所有程序”和“Microsoft Lync Server 2013”，然后单击“Lync Server 命令行管理程序”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>ClsController.psm1 模块是作为单独的 Web 下载提供的。此模块是 Lync Server 2013 调试工具的一部分。默认情况下，调试工具将安装到目录 C:\Program Files\Lync Server 2013\Debugging Tools 中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > ClsController.psm1 模块是作为单独的 Web 下载提供的。此模块是 Lync Server 2013 调试工具的一部分。默认情况下，调试工具将安装到目录 C:\Program Files\Lync Server 2013\Debugging Tools 中。
 
 
 2.  在 Windows PowerShell 中，键入：
     
         Import-Module "C:\Program Files\Lync Server 2013\Debugging Tools\ClsController.psm1"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>成功加载模块可使您返回 Windows PowerShell 命令提示符。若要确认已加载此模块且 Edit-CsClsScenario 可用，请键入 <code>Get-Help Edit-CsClsScenario</code>。您应看到 EditCsClsScenario 的语法的基本概要。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 成功加载模块可使您返回 Windows PowerShell 命令提示符。若要确认已加载此模块且 Edit-CsClsScenario 可用，请键入 <code>Get-Help Edit-CsClsScenario</code>。您应看到 EditCsClsScenario 的语法的基本概要。
 
 
 3.  若要卸载模块，请键入：
     
         Remove-Module ClsController
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>成功卸载模块可使您返回 Windows PowerShell 命令提示符。若要确认已卸载此模块，请键入 <code>Get-Help Edit-CsClsScenario</code>。Windows PowerShell 将尝试找到此 cmdlet 和失败的帮助。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 成功卸载模块可使您返回 Windows PowerShell 命令提示符。若要确认已卸载此模块，请键入 <code>Get-Help Edit-CsClsScenario</code>。Windows PowerShell 将尝试找到此 cmdlet 和失败的帮助。
 
 
 ## 使用 Edit-ClsController 模块从方案中删除现有提供程序

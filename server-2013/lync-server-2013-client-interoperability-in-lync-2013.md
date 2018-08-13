@@ -144,18 +144,9 @@ _**上一次修改主题：** 2016-03-04_
 
 下表比较了在客户端登录到 Lync Server 2013 或 Lync Server 2010 的对等会话中功能的可用性。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Web App 和 Lync 2010 Attendee 只是会议类客户端，不包括在此表中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Web App 和 Lync 2010 Attendee 只是会议类客户端，不包括在此表中。
+
 
 
 
@@ -266,25 +257,12 @@ _**上一次修改主题：** 2016-03-04_
 </table>
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>自 2012 年 9 月 1 日起，Microsoft Lync 公共 IM 连接用户订阅许可证 (PIC USL) 将不再用于购买新的或续订协议。具有活动许可证的客户将能继续与 Yahoo! Messenger 联盟，直到服务关闭日期。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
-<li><p>PIC USL 是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的每用户、每月订阅许可证。Microsoft 是否能够提供此服务视 Yahoo! 的支持而定，将不续订 Yahoo! 的底层协议。</p></li>
-<li><p>与以往相比，Lync 是一个更强大的工具，可用于跨多个组织进行联系以及与世界各地的各个用户进行联系。与 Windows Live Messenger 联盟无需 Lync Standard CAL 之外的其他任何用户/设备许可证。Skype 联盟将添加到此列表，使 Lync 用户能够通过 IM 和语音与数亿人联系。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> <ul>
+> <li><p>自 2012 年 9 月 1 日起，Microsoft Lync 公共 IM 连接用户订阅许可证 (PIC USL) 将不再用于购买新的或续订协议。具有活动许可证的客户将能继续与 Yahoo! Messenger 联盟，直到服务关闭日期。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
+> <li><p>PIC USL 是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的每用户、每月订阅许可证。Microsoft 是否能够提供此服务视 Yahoo! 的支持而定，将不续订 Yahoo! 的底层协议。</p></li>
+> <li><p>与以往相比，Lync 是一个更强大的工具，可用于跨多个组织进行联系以及与世界各地的各个用户进行联系。与 Windows Live Messenger 联盟无需 Lync Standard CAL 之外的其他任何用户/设备许可证。Skype 联盟将添加到此列表，使 Lync 用户能够通过 IM 和语音与数亿人联系。</p></li>
+> </ul>
 
 
 1 在 Office Communicator 2007 R2 中，仅桌面共享（而非程序共享）可用。
@@ -411,18 +389,9 @@ Lync Server 2013 提供了新的会议功能，当用户的帐户移动到 Lync 
 
   - **Office Communicator 2007 R2 会议外接程序**   同时为 Office Live Meeting 会议和 Office Communicator 2007 R2 会议提供日程安排功能。 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不能在 Lync Server 2013 上安排 Live Meeting 会议。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 不能在 Lync Server 2013 上安排 Live Meeting 会议。
+
 
 
 

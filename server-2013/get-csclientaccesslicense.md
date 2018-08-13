@@ -51,18 +51,9 @@ You might also encounter instances when the **Get-CsClientAccessLicense** cmdlet
 
 \* If a user joins a conference using a PSTN phone, a single license usage will be recorded for that call. However, no license is actually required to join a conference using a PSTN phone.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>For more information, and for ways to work around these issues, see the <a href="lync-server-2013-release-notes.md">Lync Server 2013 发行说明</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> For more information, and for ways to work around these issues, see the <a href="lync-server-2013-release-notes.md">Lync Server 2013 发行说明</a>.
+
 
 
 To return a list of all the role-based access control (RBAC) roles this cmdlet has been assigned to (including any custom RBAC roles you have created yourself), run the following command from the Windows PowerShell 命令行接口 prompt:

@@ -47,16 +47,7 @@ _**上一次修改主题：** 2012-01-16_
         
             Get-CsKerberosAccountAssignment -Filter "*Redmond"
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>指定 Filter 参数的 *SiteName 将返回有关在站点标识符的任何位置包含指定的站点名称的所有站点（例如，在站点标识符中包含字符串 Redmond 的所有站点）的相关信息。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 指定 Filter 参数的 *SiteName 将返回有关在站点标识符的任何位置包含指定的站点名称的所有站点（例如，在站点标识符中包含字符串 Redmond 的所有站点）的相关信息。
+        
 

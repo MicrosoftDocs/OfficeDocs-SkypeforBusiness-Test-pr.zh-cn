@@ -23,18 +23,8 @@ IP 电话清单报告会报告有关您的组织中目前所使用的 IP 电话�
 
 此外，IP 电话清单报告不会报告不同类型的电话总数摘要。例如，假设您拥有 105 个 Polycom CX600 电话。该报告不会告知您拥有 105 个此类电话；相反，您只会看到 105 个单独的 Polycom Cx600 条目。知道有 105 个 Polycom Cx600 条目的唯一方法是手动计算其中每一个条目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>或者，导出数据，然后使用 Microsoft Excel 或 Windows PowerShell 为您进行计数。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 或者，导出数据，然后使用 Microsoft Excel 或 Windows PowerShell 为您进行计数。
 
 
 ## 访问 IP 电话清单报告

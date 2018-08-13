@@ -23,6 +23,8 @@ _**上一次修改主题：** 2016-12-08_
 
     Set-CSAccessEdgeConfiguration -AllowOutsideUsers 1 -AllowFederatedUsers 1 -UseDnsSrvRouting
 
+   &nbsp;
+
     New-CSHostingProvider -Identity LyncOnline -ProxyFqdn "sipfed.online.lync.com" -Enabled $true -EnabledSharedAddressSpace $true -HostsOCSUsers $true -VerificationLevel UseSourceVerification -IsLocal $false -AutodiscoverUrl https://webdir.online.lync.com/Autodiscover/AutodiscoverService.svc/root
 
 ## 针对共享 SIP 地址空间配置您的 Skype for Business Online 租户
@@ -41,19 +43,25 @@ Move-CsUser : HostedMigration 错误: Error=(510), 描述=(没有为此用户的
 
     Import-Module LyncOnlineConnector
 
+   &nbsp;
+
     $cred = Get-Credential
+
+   &nbsp;
 
     $CSSession = New-CsOnlineSession -Credential $cred
 
+   &nbsp;
+
     Import-PSSession $CSSession -AllowClobber
 
-有关如何建立与 Skype for Business Online 的远程 PowerShell 会话的详细信息，请参阅[使用 Windows PowerShell 连接到 Lync Online](connecting-to-skype-for-business-online-by-using-windows-powershell.md)。
+有关如何建立与 Skype for Business Online 的远程 PowerShell 会话的详细信息，请参阅[使用 Windows PowerShell 连接到 Lync Online](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
 
-有关如何使用 Skype for Business Online PowerShell 模块的详细信息，请参阅 [使用 Windows PowerShell 管理 Lync Online](skype-for-business-online-using-windows-powershell-to-manage-your-tenant.md)。
+有关如何使用 Skype for Business Online PowerShell 模块的详细信息，请参阅 [使用 Windows PowerShell 管理 Lync Online](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
 
 ## 另请参阅
 
 #### 其他资源
 
-[New-CsHostingProvider](new-cshostingprovider.md)
+[New-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsHostingProvider)
 

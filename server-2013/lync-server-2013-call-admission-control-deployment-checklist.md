@@ -19,18 +19,9 @@ _**上一次修改主题：** 2012-10-22_
 
   - 如果已部署一台或多台边缘服务器，则必须将每个外部接口 IP 地址添加到网络配置设置中的子网列表，其中位掩码为 32。还应该将此子网（IP 地址）与在其中部署 A/V 边缘服务的地理位置的网络站点 ID 关联。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>边缘服务器无需实现 CAC。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 边缘服务器无需实现 CAC。
+    
 
 
   - 确保已启用 CAC，方法是通过 Lync Server 控制面板或运行[启用呼叫允许控制](lync-server-2013-enable-call-admission-control.md)中所指定的 cmdlet。

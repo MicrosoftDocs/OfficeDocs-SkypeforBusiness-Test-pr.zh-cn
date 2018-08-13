@@ -332,6 +332,6 @@ The **Set-CsWebServiceConfiguration** cmdlet does not return a value or object. 
 #### 其他资源
 
 [Get-CsWebServiceConfiguration](get-cswebserviceconfiguration.md)  
-[New-CsWebServiceConfiguration](new-cswebserviceconfiguration.md)  
+[New-CsWebServiceConfiguration](New-CsWebServiceConfiguration.md)  
 [Remove-CsWebServiceConfiguration](remove-cswebserviceconfiguration.md)
 

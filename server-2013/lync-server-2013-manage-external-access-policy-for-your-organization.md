@@ -25,18 +25,8 @@ _**上一次修改主题：** 2013-10-07_
 
   - **用户策略** 可以创建并配置一个或多个用户策略以将对远程用户访问的支持限制为特定用户。用户策略配置将覆盖全局策略和站点策略，但是仅限于分配了该用户策略的特定用户。例如，即使在全局策略和站点策略中启用了远程用户访问，仍然可以指定禁用远程用户访问的用户策略，然后将该用户策略分配给特定用户。如果创建用户策略，则必须将其应用于一个或多个用户，此后该策略才能生效。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在一个策略级别应用的 Lync Server 策略设置可能会覆盖在另一个策略级别应用的设置。Lync Server 策略优先顺序为：用户策略（影响力最大）覆盖站点策略，站点策略覆盖全局策略（影响力最小）。这意味着，策略设置与策略所影响的对象距离越近，它对该对象的影响力越大。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 在一个策略级别应用的 Lync Server 策略设置可能会覆盖在另一个策略级别应用的设置。Lync Server 策略优先顺序为：用户策略（影响力最大）覆盖站点策略，站点策略覆盖全局策略（影响力最小）。这意味着，策略设置与策略所影响的对象距离越近，它对该对象的影响力越大。
 
 
 这些选项包括以下类型的外部访问：
@@ -45,57 +35,25 @@ _**上一次修改主题：** 2013-10-07_
     
     作为一种选择，如果您先选择“启用与联盟用户的通信”，则可以选择“启用与 XMPP 联盟伙伴的通信”。XMPP 联盟是与使用可扩展消息传递和状态协议 (XMPP) 的组织的联盟。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果启用 XMPP 联盟，您还必须选择在拓扑生成器的边缘池配置节中部署“XMPP 联盟”。对 XMPP 联盟进行配置时，将在边缘服务器上部署一个 XMPP 代理并在前端服务器上部署一个 XMPP 网关。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果启用 XMPP 联盟，您还必须选择在拓扑生成器的边缘池配置节中部署“XMPP 联盟”。对 XMPP 联盟进行配置时，将在边缘服务器上部署一个 XMPP 代理并在前端服务器上部署一个 XMPP 网关。
+    
 
 
   - **启用与远程用户的通信**    如果您希望组织中位于防火墙之外的用户（如远程工作者和正在旅行的用户）能够通过 Internet 连接到 Lync Server，请启用此选项。
 
   - **启用与公共用户的通信**    如果您希望内部用户能够与公共 IM 提供程序联系人（如 Windows Live、Yahoo\! 和 America Online (AOL) 提供的联系人）进行通信，请启用此选项。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><ul>
-    <li><p>自 2012 年 9 月 1 日起，新订或续订合同不能再购买 Microsoft Lync 公共 IM 连接用户订阅许可证 (“PIC USL”)。拥有有效许可证的客户可继续与 Yahoo! Messenger 联盟直至服务关闭。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
-    <li><p>PIC USL 是一个每用户每月订阅许可证，是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的。Microsoft 之所以能够提供此服务离不开 Yahoo! 的支持，但这项支持的基础协议正在逐步终止。</p></li>
-    <li><p>Lync 是一个比以往更强大的工具，它实现了人员跨组织、跨地域的连接。除 Lync 标准 CAL 外，与 Windows Live Messenger 联盟不需要任何附加用户/设备许可证。Skype 联盟将添加到此列表中，以便 Lync 用户能够通过 IM 和语音与数亿用户取得联系。</p></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> <ul>
+    > <li><p>自 2012 年 9 月 1 日起，新订或续订合同不能再购买 Microsoft Lync 公共 IM 连接用户订阅许可证 (“PIC USL”)。拥有有效许可证的客户可继续与 Yahoo! Messenger 联盟直至服务关闭。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
+    > <li><p>PIC USL 是一个每用户每月订阅许可证，是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的。Microsoft 之所以能够提供此服务离不开 Yahoo! 的支持，但这项支持的基础协议正在逐步终止。</p></li>
+    > <li><p>Lync 是一个比以往更强大的工具，它实现了人员跨组织、跨地域的连接。除 Lync 标准 CAL 外，与 Windows Live Messenger 联盟不需要任何附加用户/设备许可证。Skype 联盟将添加到此列表中，以便 Lync 用户能够通过 IM 和语音与数亿用户取得联系。</p></li>
+    > </ul>
 
+> [!NOTE]  
+> 除了启用外部用户访问支持外，还必须在用户可以使用任何类型的外部用户访问之前，配置策略以控制组织中外部用户访问的使用。有关为外部用户访问创建、配置和应用策略的详细信息，请参阅 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中启用或禁用远程用户访问</a>。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除了启用外部用户访问支持外，还必须在用户可以使用任何类型的外部用户访问之前，配置策略以控制组织中外部用户访问的使用。有关为外部用户访问创建、配置和应用策略的详细信息，请参阅 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中启用或禁用远程用户访问</a>。</td>
-</tr>
-</tbody>
-</table>
 
 
 **使用 Windows PowerShell cmdlet 查看外部访问策略**

@@ -29,18 +29,8 @@ _**上一次修改主题：** 2013-03-26_
 
   - 当出现故障或中断时，您需要将 **$Backup** 引用的位置中的数据还原到新的或干净的计算机。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>该还原过程不会将数据还原到现有服务器状态。即，该过程要求服务器是干净的或新的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> 该还原过程不会将数据还原到现有服务器状态。即，该过程要求服务器是干净的或新的。
 
 
   - 要使您的用户和会议信息能够恢复到故障点，您可以实施具有已配对前端池的灾难恢复拓扑，如[在 Lync Server 2013 中规划高可用性和灾难恢复](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md)中所述。除此选项之外，Lync Server 仅支持其数据库的简单恢复模式。使用简单恢复模式，数据库将恢复到上次完整备份点，这意味着您无法将数据库还原到故障点或特定时间点。对于许多组织而言，简单恢复模式是最佳选择，因为 Lync Server 后端数据库 (RTCXDS.mdf) 实际上小于事务日志文件，并且远远小于典型业务线数据库应用程序的日志文件。
@@ -59,18 +49,9 @@ _**上一次修改主题：** 2013-03-26_
 
   - 通常，如果服务器承载有服务器角色，则运行 Lync Server 部署向导的步骤 1 至步骤 4，以安装本地配置文件，安装服务器角色组件，分配证书，然后启动服务。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果服务器承载有与服务器角色并置的数据库，则运行 Lync Server 部署向导的步骤 2 以重新创建数据库。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果服务器承载有与服务器角色并置的数据库，则运行 Lync Server 部署向导的步骤 2 以重新创建数据库。
+    
 
 
   - 如果服务器承载有数据库，则还原备份的数据。

@@ -23,32 +23,12 @@ Lync Server 2013 自动发现服务是最初在 Microsoft Lync Server 2010 中�
 
 理解自动发现响应文档（包括 Web 服务如何通过此文档将功能传达到客户端）的最佳方法是从 Lync Web 服务自动发现响应文档中仔细分析和定义典型响应中的每一行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在随后的详细信息中，用户已经通过响应身份验证请求向主服务器进行了身份验证。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在随后的详细信息中，用户已经通过响应身份验证请求向主服务器进行了身份验证。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 自动发现 Web 服务是在 <strong>Microsoft Developer Network</strong> (MSDN) 库的<strong>开放性规范</strong>一节的 <strong>Microsoft Office 协议</strong>中定义的。有关详细信息，请参阅完整的规范文档“Lync 自动发现 Web 服务协议”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=273839" class="uri">http://go.microsoft.com/fwlink/?linkid=273839</a>。有关身份验证的详细信息，请参阅“OC 身份验证 Web 服务协议”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=279015" class="uri">http://go.microsoft.com/fwlink/?linkid=279015</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync 自动发现 Web 服务是在 <strong>Microsoft Developer Network</strong> (MSDN) 库的<strong>开放性规范</strong>一节的 <strong>Microsoft Office 协议</strong>中定义的。有关详细信息，请参阅完整的规范文档“Lync 自动发现 Web 服务协议”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=273839" class="uri">http://go.microsoft.com/fwlink/?linkid=273839</a>。有关身份验证的详细信息，请参阅“OC 身份验证 Web 服务协议”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=279015" class="uri">http://go.microsoft.com/fwlink/?linkid=279015</a>。
 
 
 ## Lync Server Web 服务自动发现响应
@@ -91,11 +71,15 @@ Lync Server 2013 自动发现服务是最初在 Microsoft Lync Server 2010 中�
 
     <SipServerInternalAccess fqdn="pool01.contoso.com" port="5061"/>
 
+   &nbsp;
+
     <SipServerExternalAccess fqdn="sip.contoso.com" port="5061"/>
 
 SipServerInternalAccess 和 SipServerExternalAccess 当前未使用。将保留这些条目以供将来使用。
 
     <SipClientInternalAccess fqdn=" pool01.contoso.com" port="443"/>
+
+   &nbsp;
 
     <SipClientExternalAccess fqdn="sip.contoso.com " port="443"/>
 
@@ -103,11 +87,15 @@ SipClientInternalAccess 和 SipClientExternalAccess 描述内部或外部客户�
 
     <Link token="Internal/Autodiscover" href="https://webinternal.contoso.net/Autodiscover/AutodiscoverService.svc/root"/>
 
+   &nbsp;
+
     <Link token ="External/Autodiscover" href="https://webexternal.contoso.com/Autodiscover/AutodiscoverService.svc/root"/>
 
 `Autodiscover` 引用包含自动发现服务的服务入口点。标记属性包含服务名称，href 是一个为可在其中找到该服务的客户端而定义的 URL。外部网络中的客户端使用 `External/Autodiscover`。自动发现服务作为部署过程的一部分进行安装。`Internal/Autodiscover` 当前未使用，且将保留以供将来使用。
 
     <Link token="Internal/AuthBroker" href="https://webinternal.contoso.net/Reach/sip.svc"/>
+
+   &nbsp;
 
     <Link token="External/AuthBroker" href="https://webexternal.contoso.com/Reach/sip.svc"/>
 
@@ -115,11 +103,15 @@ SipClientInternalAccess 和 SipClientExternalAccess 描述内部或外部客户�
 
     <Link token="Internal/WebScheduler" href="https://webinternal.contoso.net/Scheduler"/>
 
+   &nbsp;
+
     <Link token="External/WebScheduler" href="https://webexternal.contoso.com/Scheduler"/>
 
 `WebScheduler` 标记引用这些 URL 以便客户端访问基于 Web 的 Lync Server 会议计划。当前，仅使用了 `External/WebScheduler`。WebScheduler 作为您的内部 Lync Server 2013 部署 Web 服务的部署过程的一部分进行安装。
 
     <Link token="Internal/Mcx" href="https://webexternal.contoso.net/Mcx/McxService.svc"/>
+
+   &nbsp;
 
     <Link token="External/Mcx" href="https://webexternal.contoso.com/Mcx/McxService.svc"/>
 
@@ -127,7 +119,11 @@ SipClientInternalAccess 和 SipClientExternalAccess 描述内部或外部客户�
 
     <Link token="Internal/Ucwa" href="https://webinternal.contoso.net/ucwa/v1/applications"/>
 
+   &nbsp;
+
     <Link token="External/Ucwa" href="https://webexternal.contoso.com/ucwa/v1/applications"/>
+
+   &nbsp;
 
     <Link token="Ucwa" href="https://webexternal.contoso.com/ucwa/v1/applications"/>
 
@@ -135,7 +131,11 @@ SipClientInternalAccess 和 SipClientExternalAccess 描述内部或外部客户�
 
     <Link token="Internal/XFrame" href="https://webinternal.contoso.net/Autodiscover/XFrame/XFrame.html"/>
 
+   &nbsp;
+
     <Link token="External/XFrame" href="https://webexternal.contoso.com/Autodiscover/XFrame/XFrame.html"/>
+
+   &nbsp;
 
     <Link token="XFrame" href="https://webexternal.contoso.com/Autodiscover/XFrame/XFrame.html"/>
 

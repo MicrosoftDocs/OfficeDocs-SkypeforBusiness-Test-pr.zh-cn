@@ -21,18 +21,8 @@ _**上一次修改主题：** 2015-03-09_
 
 如果您的部署包括 Lync Server 2013  边缘服务器或 边缘池安装，则可以通过许多用于外部用户访问，以及用于与其他 SIP 联盟域成员、SIP 联盟提供商和 XMPP 联盟用户进行通信的选项大大扩展可能的通信类型的范围。在设置 边缘服务器或 边缘池后，可启用要提供的外部用户访问类型和配置控制外部访问的策略。在 Lync Server 2013 中，可以根据任务要求使用 Lync Server 控制面板和/或 Lync Server 命令行管理程序启用和配置外部用户访问和策略。有关这些管理工具的详细信息，请参阅操作文档中的 [Lync Server 2013 管理工具](lync-server-2013-lync-server-administrative-tools.md)、 [Lync Server 命令行管理程序](lync-server-2013-lync-server-management-shell.md)和 [安装 Lync Server 2013 管理工具](lync-server-2013-install-lync-server-administrative-tools.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在为外部用户访问设计您的配置和策略时，您必须了解策略的优先级以及如何应用这些策略。 在一个策略级别应用的 Lync Server 策略设置可能会覆盖在另一个策略级别应用的设置。Lync Server 策略优先顺序为：用户策略（影响力最大）覆盖站点策略，站点策略覆盖全局策略（影响力最小）。这意味着，策略设置与策略所影响的对象距离越近，它对该对象的影响力越大。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 在为外部用户访问设计您的配置和策略时，您必须了解策略的优先级以及如何应用这些策略。 在一个策略级别应用的 Lync Server 策略设置可能会覆盖在另一个策略级别应用的设置。Lync Server 策略优先顺序为：用户策略（影响力最大）覆盖站点策略，站点策略覆盖全局策略（影响力最小）。这意味着，策略设置与策略所影响的对象距离越近，它对该对象的影响力越大。
 
 
 默认情况下，即使已为组织启用对外部用户访问的支持，也不会将任何策略配置为支持外部用户访问（包括远程用户访问、联盟用户访问）。要控制外部用户访问的使用，必须配置一个或多个策略，同时指定每个策略支持的外部用户访问类型。其中包括以下外部访问策略：
@@ -73,26 +63,12 @@ _**上一次修改主题：** 2015-03-09_
 
 按[在 Lync Server 2013 中配置策略以控制公共用户访问](lync-server-2013-configure-policies-to-control-public-user-access.md)、[在 Lync Server 2013 中启用或禁用联盟和公共 IM 连接](lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md)和[在 Lync Server 2013 中创建或编辑公共 SIP 联盟提供程序](lync-server-2013-create-or-edit-public-sip-federated-providers.md)主题中所述配置相应设置。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>自 2012 年 9 月 1 日起，新订或续订合同不能再购买 Microsoft Lync 公共 IM 连接用户订阅许可证 (“PIC USL”)。拥有有效许可证的客户可继续与 Yahoo! Messenger 联盟直至服务关闭。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
-<li><p>PIC USL 是一个每用户每月订阅许可证，是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的。Microsoft 之所以能够提供此服务离不开 Yahoo! 的支持，但这项支持的基础协议正在逐步终止。</p></li>
-<li><p>Lync 是一个比以往更强大的工具，它实现了人员跨组织、跨地域的连接。除 Lync 标准 CAL 外，与 Windows Live Messenger 联盟不需要任何附加用户/设备许可证。Skype 联盟将添加到此列表中，以便 Lync 用户能够通过 IM 和语音与数亿用户取得联系。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> <ul>
+> <li><p>自 2012 年 9 月 1 日起，新订或续订合同不能再购买 Microsoft Lync 公共 IM 连接用户订阅许可证 (“PIC USL”)。拥有有效许可证的客户可继续与 Yahoo! Messenger 联盟直至服务关闭。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
+> <li><p>PIC USL 是一个每用户每月订阅许可证，是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的。Microsoft 之所以能够提供此服务离不开 Yahoo! 的支持，但这项支持的基础协议正在逐步终止。</p></li>
+> <li><p>Lync 是一个比以往更强大的工具，它实现了人员跨组织、跨地域的连接。除 Lync 标准 CAL 外，与 Windows Live Messenger 联盟不需要任何附加用户/设备许可证。Skype 联盟将添加到此列表中，以便 Lync 用户能够通过 IM 和语音与数亿用户取得联系。</p></li>
+> </ul>
 
 **是否要允许用户与 SIP 联盟提供商（运行 Microsoft Office 365、 Microsoft Lync Online 和 Microsoft Lync Online 2010 的宿主提供商）进行通信？**
 
@@ -173,19 +149,11 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>匿名用户对会议的访问权限</p></td>
 <td><p></p></td>
 <td><p><a href="lync-server-2013-assign-conferencing-policies-to-support-anonymous-users.md">在 Lync Server 2013 中分配会议策略以支持匿名用户</a></p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您还必须考虑“配置策略”下的以下配置设置：<a href="lync-server-2013-create-or-modify-a-conferencing-policy.md">在 Lync Server 2013 中创建或修改会议策略</a>和<a href="lync-server-2013-conferencing-policy-settings-reference.md">在 Lync Server 2013 中会议策略设置参考</a></td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 您还必须考虑“配置策略”下的以下配置设置：<a href="lync-server-2013-create-or-modify-a-conferencing-policy.md">在 Lync Server 2013 中创建或修改会议策略</a>和<a href="lync-server-2013-conferencing-policy-settings-reference.md">在 Lync Server 2013 中会议策略设置参考</a>
+
 
 </div></td>
 <td><p></p></td>

@@ -17,18 +17,8 @@ _**上一次修改主题：** 2015-03-09_
 
 自动发现是一项灵活的服务，因为该服务允许通过 HTTP 或 HTTPS 进行通信。要实现此目的，必须正确配置承载自动发现服务的服务器所使用的域名系统 (DNS) 和证书。[证书摘要 - 自动发现](lync-server-2013-certificate-summary-autodiscover.md)中介绍了相关证书要求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 客户端的 DNS 查找逻辑遵循特定的解析顺序。您应该始终在您的 DNS 中包括 lyncdiscoverinternal.&lt;域&gt; 和 lyncdiscover.&lt;域&gt;。排除 lyncdiscoverinternal.&lt;域&gt; 记录将导致内部客户端无法连接到所需服务或接受错误的自动发现响应。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Lync Server 客户端的 DNS 查找逻辑遵循特定的解析顺序。您应该始终在您的 DNS 中包括 lyncdiscoverinternal.&lt;域&gt; 和 lyncdiscover.&lt;域&gt;。排除 lyncdiscoverinternal.&lt;域&gt; 记录将导致内部客户端无法连接到所需服务或接受错误的自动发现响应。
 
 
 ### 内部 DNS 记录
@@ -93,32 +83,14 @@ _**上一次修改主题：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>外部流量将通过反向代理。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 外部流量将通过反向代理。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>移动设备客户端不支持来自不同域的多个安全套接字层 (SSL) 证书。因此，不支持通过 HTTPS 对其他域进行 CNAME 重定向。例如，不支持通过 HTTPS 将 lyncdiscover.contoso.com 的 DNS CNAME 记录重定向到 director.contoso.net 地址。在此类拓扑中，移动设备客户端需要对第一个请求使用 HTTP，以便通过 HTTP 解析 CNAME 重定向。之后，后续请求会使用 HTTPS。若要支持此方案，您需要使用针对端口 80 (HTTP) 的 Web 发布规则配置反向代理。有关详细信息，请参阅<a href="lync-server-2013-configuring-the-reverse-proxy-for-mobility.md">在 Lync Server 2013 中配置反向代理以实现移动功能</a>中的“创建针对端口 80 的 Web 发布规则”。支持通过 HTTPS 对同一域进行 CNAME 重定向。在这种情况下，目标域的证书涵盖了原始域。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 移动设备客户端不支持来自不同域的多个安全套接字层 (SSL) 证书。因此，不支持通过 HTTPS 对其他域进行 CNAME 重定向。例如，不支持通过 HTTPS 将 lyncdiscover.contoso.com 的 DNS CNAME 记录重定向到 director.contoso.net 地址。在此类拓扑中，移动设备客户端需要对第一个请求使用 HTTP，以便通过 HTTP 解析 CNAME 重定向。之后，后续请求会使用 HTTPS。若要支持此方案，您需要使用针对端口 80 (HTTP) 的 Web 发布规则配置反向代理。有关详细信息，请参阅<a href="lync-server-2013-configuring-the-reverse-proxy-for-mobility.md">在 Lync Server 2013 中配置反向代理以实现移动功能</a>中的“创建针对端口 80 的 Web 发布规则”。支持通过 HTTPS 对同一域进行 CNAME 重定向。在这种情况下，目标域的证书涵盖了原始域。
+
 
 
 ## 另请参阅

@@ -19,18 +19,9 @@ _**上一次修改主题：** 2014-05-14_
 
 可以使用 Lync Server 控制面板或 Active Directory 用户和计算机管理单元来搜索用户。下面的过程介绍了如何使用 Lync Server 控制面板搜索用户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在包括中央林拓扑的环境中，按照用户的电子邮件地址搜索用户时，搜索结果可能不准确。可以改为通过指定 SIP 地址前缀（例如，sip:name）来搜索用户，然后添加搜索筛选器并选择包含部分电子邮件地址的 SIP 地址，或使用 <strong>Get-CSUser</strong> cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在包括中央林拓扑的环境中，按照用户的电子邮件地址搜索用户时，搜索结果可能不准确。可以改为通过指定 SIP 地址前缀（例如，sip:name）来搜索用户，然后添加搜索筛选器并选择包含部分电子邮件地址的 SIP 地址，或使用 <strong>Get-CSUser</strong> cmdlet。
+
 
 
 ## 搜索一个或多个用户

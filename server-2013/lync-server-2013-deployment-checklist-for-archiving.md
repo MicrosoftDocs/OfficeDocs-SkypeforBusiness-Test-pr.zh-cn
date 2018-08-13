@@ -27,18 +27,8 @@ _**上一次修改主题：** 2015-03-09_
 
 如果在一个前端池或 Standard Edition 服务器中启用存档，则应为部署中的所有其他前端池和 Standard Edition 服务器启用存档。这是因为需要存档通信内容的用户可能会受邀参加其他池中承载的组 IM 对话或会议。如果承载对话或会议的池上没有启用存档，则无法存档完整会话。在这些情况下，仍可以为启用了存档的 IM 的用户进行存档，但不能为会议内容文件以及会议加入或离开事件存档。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果由于合规性原因，存档在您的组织中非常关键，请务必在适当级别部署存档、配置策略和其他选项，并为相应的所有用户启用存档（在为 Lync Server 2013 启用这些用户之前）。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果由于合规性原因，存档在您的组织中非常关键，请务必在适当级别部署存档、配置策略和其他选项，并为相应的所有用户启用存档（在为 Lync Server 2013 启用这些用户之前）。
 
 
 ## 存档部署过程
@@ -68,19 +58,11 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>若要使用 Microsoft Exchange 集成（使用 Exchange 2013 为部分或所有用户进行存档存储），您需要一个现有 Exchange 2013 部署。</p></li>
 <li><p>若要使用单独的存档数据库（使用 SQL Server 数据库）为部分或所有用户进行存档存储，需要将存储存档数据的服务器上的 SQL Server。</p></li>
 </ul>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>存档在企业池的前端服务器和 Standard Edition 服务器上运行。除了需要安装这些服务器外，没有额外的软硬件要求。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 存档在企业池的前端服务器和 Standard Edition 服务器上运行。除了需要安装这些服务器外，没有额外的软硬件要求。
+
 
 </div></td>
 <td><p>属于本地 Administrators 组成员的域用户。</p></td>

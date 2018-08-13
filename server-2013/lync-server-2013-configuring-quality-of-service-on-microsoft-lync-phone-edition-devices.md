@@ -33,18 +33,9 @@ _**上一次修改主题：** 2012-11-01_
 
 针对服务质量，只有其中一个属性很重要：VoiceDiffServTag。VoiceDiffServTag 代表分配给来自于 Lync Phone Edition 设备的语音流量的 DSCP 值。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 中不再支持 Voice8021p 参数。该参数仍适用于与 Microsoft Lync Server 2010 的向后兼容；但是，它对与 Lync Server 2013 一起使用的设备没有影响。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 中不再支持 Voice8021p 参数。该参数仍适用于与 Microsoft Lync Server 2010 的向后兼容；但是，它对与 Lync Server 2013 一起使用的设备没有影响。
+
 
 
 在大多数网络中，标记 VoiceDiffServTag 为 40 的 Lync Phone Edition 数据包不应造成任何问题。但是，40 并不是通常用于音频流量的值；音频流量几乎始终用 DSCP 代码 46 进行标记。为了在整个网络中保持一致性，您可能想要将 UC 电话的 VoiceDiffServTag 属性更改为 46。

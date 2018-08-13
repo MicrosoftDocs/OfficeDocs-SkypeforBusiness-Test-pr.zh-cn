@@ -31,18 +31,8 @@ _**上一次修改主题：** 2013-02-17_
 
 以下过程介绍，在您尚未安装来自知识库文章 2290617 的更新的情况下，如何更改 IIS 7.0 上的 ASP.NET 并发请求数和线程数的最大值。但是，即使您安装了来自知识库文章 2290617 的更新，您也应使用该文章提供的文档以仅对移动功能的内部和外部 IIS 应用程序池应用相同的更改。在此情况下，可以对 ASP.NET 设置使用单独的配置文件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用以下过程来更改最大值，则所做的更改将影响所有 IIS 应用程序池。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果使用以下过程来更改最大值，则所做的更改将影响所有 IIS 应用程序池。
 
 
 有关配置这些设置的详细信息，请参阅 [http://go.microsoft.com/fwlink/?linkid=234537\&clcid=0x804](http://go.microsoft.com/fwlink/?linkid=234537%26clcid=0x804)。

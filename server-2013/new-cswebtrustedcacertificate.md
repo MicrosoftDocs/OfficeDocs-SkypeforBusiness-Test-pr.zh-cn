@@ -94,6 +94,6 @@ The **New-CsWebTrustedCACertificate** cmdlet creates new instances of the Micros
 
 #### 其他资源
 
-[New-CsWebServiceConfiguration](new-cswebserviceconfiguration.md)  
+[New-CsWebServiceConfiguration](New-CsWebServiceConfiguration.md)  
 [Set-CsWebServiceConfiguration](set-cswebserviceconfiguration.md)
 

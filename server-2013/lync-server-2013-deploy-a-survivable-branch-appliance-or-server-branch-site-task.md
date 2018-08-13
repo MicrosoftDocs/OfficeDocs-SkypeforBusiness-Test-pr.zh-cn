@@ -1,5 +1,5 @@
 ﻿---
-title: Lync Server 2013：部署 Survivable Branch Appliance 或 Survivable Branch Server - 分支站点任务
+title: "Lync Server 2013: 部署 Survivable Branch Appliance 或 Server - 分支站点任务"
 TOCTitle: 部署 Survivable Branch Appliance 或 Survivable Branch Server - 分支站点任务
 ms:assetid: 7989ba29-0419-46dd-892c-4ad3238afd56
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Gg398599(v=OCS.15)
@@ -17,18 +17,8 @@ _**上一次修改主题：** 2014-10-28_
 
 成功完成 [使用 Lync Server 2013 部署 Survivable Branch Appliance 或 Survivable Branch Server - 中央站点任务](lync-server-2013-deploying-a-survivable-branch-appliance-or-server-central-site-tasks.md)中的任务后，在分支站点执行本主题中所述的两个过程之一。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要执行此过程，您必须是 RTCUniversalSBATechnicians 组的成员。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 要执行此过程，您必须是 RTCUniversalSBATechnicians 组的成员。
 
 
 ## 部署 Survivable Branch Appliance
@@ -39,18 +29,9 @@ _**上一次修改主题：** 2014-10-28_
 
   - 在运行 Windows Server 2008 或 Windows Server 2008 R2 的计算机上，像安装其他任何 Lync Server 2013 服务器角色一样安装 Microsoft Lync Server 2010。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关安装 Lync Server 的信息，请参阅部署文档中的 <a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关安装 Lync Server 的信息，请参阅部署文档中的 <a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a>。
+    
 
 
 **下一步**：[在 Lync Server 2013 中为用户配置分支站点恢复能力](lync-server-2013-configuring-users-for-branch-site-resiliency.md)

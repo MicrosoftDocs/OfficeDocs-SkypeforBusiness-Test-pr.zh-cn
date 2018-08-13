@@ -31,18 +31,8 @@ _**上一次修改主题：** 2012-12-03_
 
 6.  在边缘服务器上，单击部署向导中“步骤 3：请求、安装或分配证书”旁边的“再次运行”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您第一次部署边缘服务器，您将看到“运行”而不是“再次运行”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果您第一次部署边缘服务器，您将看到“运行”而不是“再次运行”。
 
 
 7.  在“可用的证书任务”页上，单击“创建新的证书请求”。
@@ -73,18 +63,8 @@ _**上一次修改主题：** 2012-12-03_
 
 17. 在“配置其他使用者替代名称”页上，指定所需的任何其他使用者替代名称
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果安装了 XMPP 代理，则默认情况下域名（如 contoso.com）填充在 SAN 条目中。如果您需要更多条目，请在此步骤中添加它们。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果安装了 XMPP 代理，则默认情况下域名（如 contoso.com）填充在 SAN 条目中。如果您需要更多条目，请在此步骤中添加它们。
 
 
 18. 在“请求摘要”页上，检查要用于生成请求的证书信息。
@@ -98,42 +78,42 @@ _**上一次修改主题：** 2012-12-03_
 22. 在接收、导入和分配公共证书后，您必须停止边缘服务器服务，然后重新启动它。为此，请在 Lync Server 管理控制台中键入：
     
         Stop-CsWindowsService
+
+       &nbsp;
     
         Start-CsWindowsService
 
 23. 要为 XMPP 联盟配置 DNS，需要将以下 SRV 记录添加到外部 DNS:\_xmpp-server.\_tcp.\<域名\>。SRV 记录将使用端口值 5269 解析到边缘服务器的访问边缘 FQDN。另外，您还可以配置一个指向访问边缘服务器的 IP 地址的 "A" 主机记录（例如，xmpp.contoso.com）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您在多个站点中具有边缘池，则建议为 XMPP 联盟添加多个 SRV 记录。请为您组织中的每个边缘池添加一个 SRV 记录，然后为其中每个 SRV 记录提供不同的优先级。当所有边缘池都在运行时，XMPP 请求将全部由具有第一优先级的边缘池处理，但如果该边缘池关闭，您随后不必添加新 SRV 记录来重新获得 XMPP 联盟功能。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果您在多个站点中具有边缘池，则建议为 XMPP 联盟添加多个 SRV 记录。请为您组织中的每个边缘池添加一个 SRV 记录，然后为其中每个 SRV 记录提供不同的优先级。当所有边缘池都在运行时，XMPP 请求将全部由具有第一优先级的边缘池处理，但如果该边缘池关闭，您随后不必添加新 SRV 记录来重新获得 XMPP 联盟功能。
 
 
 24. 配置一个新外部访问策略来启用所有用户，方法是在前端服务器上打开 Lync Server 命令行管理程序并键入：
     
         New-CsExternalAccessPolicy -Identity <name of policy to create.  If site scope, prepend with 'site:'> -EnableFederationAcces $true -EnablePublicCloudAccess $true
+
+       &nbsp;
     
         New-CsExternalAccessPolicy -Identity FedPic -EnableFederationAcces $true -EnablePublicCloudAccess $true
+
+       &nbsp;
     
         Get-CsUser | Grant-CsExternalAccessPolicy -PolicyName FedPic
     
     通过键入以下命令为外部用户启用 XMPP 访问：
     
         Set-CsExternalAccessPolicy -Identity <name of the policy being used> EnableXmppAccess $true
+
+       &nbsp;
     
         Set-CsExternalAccessPolicy -Identity FedPic -EnableXmppAccess $true
 
 25. 在部署 XMPP 代理的 边缘服务器上，打开命令提示符或 Windows PowerShell™ 命令行接口并键入以下命令：
     
         Netstat -ano | findstr 5269
+
+       &nbsp;
     
         Netstat -ano | findstr 23456
     
@@ -167,18 +147,8 @@ _**上一次修改主题：** 2012-12-03_
 
 10. 发布拓扑。有关详细信息，请参阅 [在 Lync Server 2013 中发布拓扑](lync-server-2013-publish-your-topology.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可能发现您需要重新启动 边缘服务器，但这不是必需的且通常没有必要。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 您可能发现您需要重新启动 边缘服务器，但这不是必需的且通常没有必要。
 
 
 11. 使用之前使用的 netstat 进程，确认 边缘服务器现在正在端口 5269 和端口 23456 上侦听会话或已在这些端口上建立会话。

@@ -19,18 +19,8 @@ _**上一次修改主题：** 2013-02-21_
 
 在安装或使用 Lync Server 2013 管理工具之前，请务必查看基础结构、操作系统、软件和管理员权限要求。有关基础结构要求的详细信息，请参阅[Lync Server 2013 中的管理工具基础结构要求](lync-server-2013-administrative-tools-infrastructure-requirements.md)。有关安装 Lync Server 2013 管理工具的操作系统和软件要求的详细信息，请参阅[Lync Server 2013 中的服务器和工具操作系统支持](lync-server-2013-server-and-tools-operating-system-support.md)、[Lync Server 2013 的其他软件要求](lync-server-2013-additional-software-requirements.md)和[Lync Server 2013 中的其他服务器支持和要求](lync-server-2013-additional-server-support-and-requirements.md)。有关安装和使用这些工具所需的用户权限的详细信息，请参阅[Lync Server 2013 的安装和管理所需的管理员权限](lync-server-2013-administrator-rights-and-permissions-required-for-setup-and-administration.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果组织要求您在系统驱动器之外的某个驱动器上定位 Internet Information Services (IIS) 和所有 Web Services，您可以在“安装”对话框中更改 Lync Server 文件的安装位置路径。如果您将安装文件（包括 OCSCore.msi）安装到此路径，则其余的 Lync Server 2013 文件也将部署到该驱动器。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果组织要求您在系统驱动器之外的某个驱动器上定位 Internet Information Services (IIS) 和所有 Web Services，您可以在“安装”对话框中更改 Lync Server 文件的安装位置路径。如果您将安装文件（包括 OCSCore.msi）安装到此路径，则其余的 Lync Server 2013 文件也将部署到该驱动器。
 
 
 ## 安装 Lync Server 2013 管理工具
@@ -43,18 +33,8 @@ _**上一次修改主题：** 2013-02-21_
 
 4.  在“Microsoft Lync Server 2013 安装位置”页上，单击“确定”。如果要将文件安装至其他位置，请将此路径更改为相应的位置或驱动器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果组织要求您在系统驱动器之外的某个驱动器上定位 Internet Information Services (IIS) 和所有 Web 服务，您可以在“安装”对话框中更改 Lync Server 2013 文件的安装位置路径。如果您将安装文件（包括 OCSCore.msi）安装到此路径，则其余的 Lync Server 2013 文件也将部署到该驱动器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果组织要求您在系统驱动器之外的某个驱动器上定位 Internet Information Services (IIS) 和所有 Web 服务，您可以在“安装”对话框中更改 Lync Server 2013 文件的安装位置路径。如果您将安装文件（包括 OCSCore.msi）安装到此路径，则其余的 Lync Server 2013 文件也将部署到该驱动器。
 
 
 5.  在“最终用户许可协议”页上，查看许可条款，单击“我接受”，然后单击“确定”。必须完成此步骤，才能继续安装。

@@ -19,54 +19,26 @@ _**上一次修改主题：** 2015-03-09_
 
 域名系统 (DNS) 负载平衡可平衡 Lync Server 2013 独有的网络流量，例如 SIP 流量和媒体流量。前端池、边缘池、控制器池和独立的中介池都支持 DNS 负载平衡。配置为使用 DNS 负载平衡的池必须定义两个完全限定的域名 (FQDN)：一个是常规池 FQDN（例如 pool1.contoso.com），由 DNS 负载平衡使用并解析为池中服务器的物理 IP；另一个 FQDN 用于池的 Web 服务（例如 web1.contoso.net），并解析为池的虚拟 IP 地址。有关 DNS 负载平衡的详细信息，请参阅规划文档中的 [Lync Server 2013 中的 DNS 负载平衡](lync-server-2013-dns-load-balancing.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要使客户端能够提供 HTTPS 流量，仍然需要硬件负载平衡。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 要使客户端能够提供 HTTPS 流量，仍然需要硬件负载平衡。
+
 
 
 使用 DNS 负载平衡之前，必须执行以下操作：
 
 1.  覆盖内部 Web 服务池 FQDN。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果决定使用自定义的 FQDN 覆盖内部 Web 服务，则每个 FQDN 都必须不同于任何其他前端池、控制器或控制器池。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果决定使用自定义的 FQDN 覆盖内部 Web 服务，则每个 FQDN 都必须不同于任何其他前端池、控制器或控制器池。
 
 
 2.  创建 DNS A 主机记录以将池 FQDN 解析为池中所有服务器的 IP 地址。
 
 3.  启用 IP 地址随机选择，或启用循环（对于 Windows Server DNS）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下应启用循环。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 默认情况下应启用循环。
+    
 
 
 ## 覆盖内部 Web 服务 FQDN
@@ -148,18 +120,9 @@ _**上一次修改主题：** 2015-03-09_
     
     ![“DNS 轮循机制”对话框](images/Gg398251.e7bf6125-8d78-4460-8401-0a8e7e21d305(OCS.15).jpg "“DNS 轮循机制”对话框")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下应启用此功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 默认情况下应启用此功能。
+
 
 
 ## 另请参阅

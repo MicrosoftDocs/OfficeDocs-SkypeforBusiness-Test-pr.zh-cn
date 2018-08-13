@@ -17,32 +17,12 @@ _**上一次修改主题：** 2014-10-20_
 
 网络中的每个子网必须与特定网络站点相关联。这是因为子网信息用于在启动新会话时确定终结点所在的网络站点。当已知参与会话的每一方的位置时，高级 企业语音功能可以应用该信息确定如何处理呼叫设置或路由。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须将部署中音频/视频边缘服务器的所有已配置公用 IP 地址添加到网络配置设置中。这些 IP 地址是作为掩码为 32 的子网进行添加的。关联的网络站点应与相应的已配置网络站点相对应。例如，对应于中央站点 Chicago 中 A/V 边缘服务器的公用 IP 地址的 NetworkSiteID 应为 Chicago。有关公用 IP 地址的详细信息，请参阅规划文档中的 <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">确定 Lync Server 2013 的外部 A/V 防火墙和端口要求</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 必须将部署中音频/视频边缘服务器的所有已配置公用 IP 地址添加到网络配置设置中。这些 IP 地址是作为掩码为 32 的子网进行添加的。关联的网络站点应与相应的已配置网络站点相对应。例如，对应于中央站点 Chicago 中 A/V 边缘服务器的公用 IP 地址的 NetworkSiteID 应为 Chicago。有关公用 IP 地址的详细信息，请参阅规划文档中的 <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">确定 Lync Server 2013 的外部 A/V 防火墙和端口要求</a>。
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>生成关键运行状况指示器 (KHI) 警报，指定存在于网络中但不与子网关联的 IP 地址列表，或指定包含 IP 地址的子网不与网络站点相关联。该警报在 8 小时内只产生一次。相关的警报信息和示例如下所示：<br />
+> [!NOTE]  
+> 生成关键运行状况指示器 (KHI) 警报，指定存在于网络中但不与子网关联的 IP 地址列表，或指定包含 IP 地址的子网不与网络站点相关联。该警报在 8 小时内只产生一次。相关的警报信息和示例如下所示：<br />
 <strong>来源：</strong>CS 带宽策略服务（核心）<br />
 <strong>事件编号：</strong>36034<br />
 <strong>级别 ：</strong>2<br />
@@ -53,34 +33,22 @@ _**上一次修改主题：** 2014-10-20_
 <ol>
 <li><p>确保 IP 地址 10.121.248.226 与子网 10.121.248.0/24 相关联，IP 地址 10.121.249.20 与子网 10.121.249.0/24 相关联。</p></li>
 <li><p>确保子网 10.121.248.0/24 和 10.121.249.0/24 分别与一个网络站点相关联。</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+</ol>
+
 
 
 有关使用网络子网的详细信息，请参阅 Lync Server 命令行管理程序文档中以下 cmdlet 的相关内容：
 
-  - [New-CsNetworkSubnet](new-csnetworksubnet.md)
+  - [New-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkSubnet)
 
-  - [Get-CsNetworkSubnet](get-csnetworksubnet.md)
+  - [Get-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkSubnet)
 
-  - [Set-CsNetworkSubnet](set-csnetworksubnet.md)
+  - [Set-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsNetworkSubnet)
 
-  - [Remove-CsNetworkSubnet](remove-csnetworksubnet.md)
+  - [Remove-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkSubnet)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要使用大量子网，建议使用逗号分隔值 (CSV) 文件将子网与站点相关联。CSV 文件必须包含以下四列： <strong>IPAddress</strong>、 <strong>掩码</strong>、 <strong>说明</strong>、 <strong>NetworkSiteID</strong>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 如果要使用大量子网，建议使用逗号分隔值 (CSV) 文件将子网与站点相关联。CSV 文件必须包含以下四列： <strong>IPAddress</strong>、 <strong>掩码</strong>、 <strong>说明</strong>、 <strong>NetworkSiteID</strong>。
 
 
 ## 使用命令行管理程序将子网与网络站点相关联
@@ -135,18 +103,9 @@ _**上一次修改主题：** 2014-10-20_
 
 7.  单击“网络站点 ID”，然后选择要向其中添加此子网的站点的站点 ID。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果尚未创建网络站点，该列表将为空。有关过程的详细信息，请参阅 <a href="lync-server-2013-create-or-modify-a-network-site.md">在 Lync Server 2013 中创建或修改网络站点</a>。还可以通过运行 <strong>Get-CsNetworkSite</strong> cmdlet 检索部署的站点 ID。有关详细信息，请参阅 Lync Server 命令行管理程序文档。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果尚未创建网络站点，该列表将为空。有关过程的详细信息，请参阅 <a href="lync-server-2013-create-or-modify-a-network-site.md">在 Lync Server 2013 中创建或修改网络站点</a>。还可以通过运行 <strong>Get-CsNetworkSite</strong> cmdlet 检索部署的站点 ID。有关详细信息，请参阅 Lync Server 命令行管理程序文档。
+    
 
 
 8.  （可选）单击“说明”，然后键入其他信息来说明此子网。

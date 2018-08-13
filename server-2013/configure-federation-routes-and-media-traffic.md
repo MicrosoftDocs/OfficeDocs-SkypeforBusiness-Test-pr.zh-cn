@@ -19,46 +19,16 @@ _**上一次修改主题：** 2012-10-15_
 
 使用下列过程可将单站点部署的联盟路由和媒体流量路由从 Lync Server 2010 边缘服务器和控制器转换到 Lync Server 2013 边缘服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>更改联盟路由和媒体流量需要安排 Lync Server 2013 和 Lync Server 2010 边缘服务器的维护停机时间。整个转换过程还意味着服务中断期间无法进行联盟访问。应将停机时间安排在预计用户活动最少的时间段内。还应向最终用户提供包含丰富信息的通知。相应地规划这次服务中断并正确设置组织的期望。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 更改联盟路由和媒体流量需要安排 Lync Server 2013 和 Lync Server 2010 边缘服务器的维护停机时间。整个转换过程还意味着服务中断期间无法进行联盟访问。应将停机时间安排在预计用户活动最少的时间段内。还应向最终用户提供包含丰富信息的通知。相应地规划这次服务中断并正确设置组织的期望。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果旧 Lync Server 2010 边缘服务器配置为对访问边缘服务、Web 会议边缘服务和 A/V 边缘服务使用相同的 FQDN，则本节中的过程不受支持。如果旧边缘服务配置为使用相同的 FQDN，则必须首先将所有用户从 Lync Server 2010 迁移到 Lync Server 2013，接着停用 Lync Server 2010 边缘服务器，然后在 Lync Server 2013 边缘服务器上启用联盟。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果旧 Lync Server 2010 边缘服务器配置为对访问边缘服务、Web 会议边缘服务和 A/V 边缘服务使用相同的 FQDN，则本节中的过程不受支持。如果旧边缘服务配置为使用相同的 FQDN，则必须首先将所有用户从 Lync Server 2010 迁移到 Lync Server 2013，接着停用 Lync Server 2010 边缘服务器，然后在 Lync Server 2013 边缘服务器上启用联盟。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果通过 Lync Server 2013 边缘服务器路由您的 XMPP 联盟，则旧 Lync Server 2010 用户将无法与 XMPP 联盟伙伴进行通信，直到将所有用户移动到 Lync Server 2013，已配置 XMPP 策略和证书，已在 Lync Server 2013 上配置 XMPP 联盟伙伴，及已更新最后的 DNS 条目为止。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果通过 Lync Server 2013 边缘服务器路由您的 XMPP 联盟，则旧 Lync Server 2010 用户将无法与 XMPP 联盟伙伴进行通信，直到将所有用户移动到 Lync Server 2013，已配置 XMPP 策略和证书，已在 Lync Server 2013 上配置 XMPP 联盟伙伴，及已更新最后的 DNS 条目为止。
 
 
 ## 从 Lync Server 2013 站点中删除旧联盟关联
@@ -169,18 +139,9 @@ _**上一次修改主题：** 2012-10-15_
 
 2.  展开节点，右键单击列出的 边缘服务器，然后单击“编辑属性”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只能对单个 边缘池启用联盟。如果具有多个边缘池，请选择一个用作联盟 边缘池。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只能对单个 边缘池启用联盟。如果具有多个边缘池，请选择一个用作联盟 边缘池。
+    
 
 
 3.  在“常规”页上，确认已选中“为此边缘池启用联盟(端口 5061)”设置。
@@ -211,20 +172,11 @@ _**上一次修改主题：** 2012-10-15_
 
 3.  稍待片刻以便在部署中的所有池间执行 Active Directory 复制。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可能会看到以下消息：<br />
-    <strong>警告: 拓扑包含多个联盟边缘服务器。在迁移到产品的更高版本时，可能会出现这种情况。在这种情况下，只有一个边缘服务器处于活动状态以用于联盟。请确保外部 DNS SRV 记录指向正确的边缘服务器。如果要将多个联盟边缘服务器部署为同时处于活动状态(非迁移情况下)，请确保所有联盟伙伴都在使用 Lync Server，并确保外部 DNS SRV 记录列出了所有已启用联盟的边缘服务器。</strong><br />
-    该警告是预期警告，可以放心地忽略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可能会看到以下消息：<br />
+    > <strong>警告: 拓扑包含多个联盟边缘服务器。在迁移到产品的更高版本时，可能会出现这种情况。在这种情况下，只有一个边缘服务器处于活动状态以用于联盟。请确保外部 DNS SRV 记录指向正确的边缘服务器。如果要将多个联盟边缘服务器部署为同时处于活动状态(非迁移情况下)，请确保所有联盟伙伴都在使用 Lync Server，并确保外部 DNS SRV 记录列出了所有已启用联盟的边缘服务器。</strong><br />
+    该警告是预期警告，可以放心地忽略。
+    
 
 
 ## 配置 Lync Server 2013 边缘服务器
@@ -233,18 +185,9 @@ _**上一次修改主题：** 2012-10-15_
 
 2.  更新外部防火墙路由规则或硬件负载平衡器设置以将外部访问（通常端口为 443）和联盟（通常端口为 5061）的 SIP 流量发送到 Lync Server 2013边缘服务器，而不是旧 边缘服务器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您没有硬件负载平衡器，则需要更新联盟的 DNS A 记录，以将其解析为新的 Lync Server 访问边缘服务器。若要在中断最少的情况下完成此操作，请减小外部 Lync Server 访问边缘 FQDN 的 TLL 值，以便在更新 DNS 以指向新的 Lync Server 访问边缘时，将快速更新联盟和远程访问。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您没有硬件负载平衡器，则需要更新联盟的 DNS A 记录，以将其解析为新的 Lync Server 访问边缘服务器。若要在中断最少的情况下完成此操作，请减小外部 Lync Server 访问边缘 FQDN 的 TLL 值，以便在更新 DNS 以指向新的 Lync Server 访问边缘时，将快速更新联盟和远程访问。
+    
 
 
 3.  接下来，从每台 边缘服务器计算机停止“Lync Server 访问边缘”。

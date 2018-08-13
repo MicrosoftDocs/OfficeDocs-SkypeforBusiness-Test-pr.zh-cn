@@ -17,20 +17,11 @@ _**上一次修改主题：** 2012-12-12_
 
 您的控制器池、前端池和反向代理的证书需要其他使用者替代名称条目来支持与 Lync 客户端进行安全连接。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可使用 <strong>Get-CsCertificate</strong> cmdlet 查看有关当前分配的证书的信息。但是，默认视图将截断证书的属性并且不会显示 SubjectAlternativeNames 属性中的所有值。您可使用 <strong>Get-CsCertificate</strong>、<strong>Request-</strong>CsCertificate 和 <strong>Set-CsCertificate</strong> cmdlet 查看部分信息以及请求和分配证书。但是，如果您不确定当前证书上使用者替代名称 (SAN) 的属性，则这不是最佳使用方法。若要查看证书和所有属性成员，则建议使用 <em>Microsoft 管理控制台 (MMC)</em> 中的证书管理单元或使用 Lync Server 部署向导。在 Lync Server 部署向导中，您可使用证书向导查看证书属性。下列过程中详细介绍了使用 Lync Server 命令行管理程序和 <em>Microsoft 管理控制台 (MMC)</em> 查看、请求和分配证书的过程。若要使用 Lync Server 部署向导，如果您已部署可选控制器或控制器池，请参阅此处的详细信息：<a href="lync-server-2013-configure-certificates-for-the-director.md">在 Lync Server 2013 中为控制器配置证书</a>。有关前端服务器或前端池，请参阅此处的详细信息：<a href="lync-server-2013-configure-certificates-for-servers.md">在 Lync Server 2013 中为服务器配置证书</a>。<br />
+> [!NOTE]  
+> 您可使用 <strong>Get-CsCertificate</strong> cmdlet 查看有关当前分配的证书的信息。但是，默认视图将截断证书的属性并且不会显示 SubjectAlternativeNames 属性中的所有值。您可使用 <strong>Get-CsCertificate</strong>、<strong>Request-</strong>CsCertificate 和 <strong>Set-CsCertificate</strong> cmdlet 查看部分信息以及请求和分配证书。但是，如果您不确定当前证书上使用者替代名称 (SAN) 的属性，则这不是最佳使用方法。若要查看证书和所有属性成员，则建议使用 <em>Microsoft 管理控制台 (MMC)</em> 中的证书管理单元或使用 Lync Server 部署向导。在 Lync Server 部署向导中，您可使用证书向导查看证书属性。下列过程中详细介绍了使用 Lync Server 命令行管理程序和 <em>Microsoft 管理控制台 (MMC)</em> 查看、请求和分配证书的过程。若要使用 Lync Server 部署向导，如果您已部署可选控制器或控制器池，请参阅此处的详细信息：<a href="lync-server-2013-configure-certificates-for-the-director.md">在 Lync Server 2013 中为控制器配置证书</a>。有关前端服务器或前端池，请参阅此处的详细信息：<a href="lync-server-2013-configure-certificates-for-servers.md">在 Lync Server 2013 中为服务器配置证书</a>。<br />
 此过程中的初始步骤为准备步骤，以便为您确定当前证书扮演的角色。默认情况下，证书没有 lyncdiscover.&lt;sipdomain&gt; 或 lyncdiscoverinternal.&lt;内部域名&gt; 项，除非您之前安装了 Mobility Service 或提前准备了证书。此过程使用示例 SIP 域名“contoso.com”和示例内部域名“contoso.net”。<br />
-Lync Server 2013 和 Lync Server 2010 的默认证书配置为对于 Default（对于 Web 服务之外的所有用途）、WebServicesExternal 和 WebServicesInternal 用途使用单个证书（名为“默认”）。可选配置是对每种用途使用单独的证书。可使用 Lync Server 命令行管理程序和 Windows PowerShell cmdlet 管理证书，也可以使用 Lync Server 部署向导中的证书向导进行管理。</td>
-</tr>
-</tbody>
-</table>
+Lync Server 2013 和 Lync Server 2010 的默认证书配置为对于 Default（对于 Web 服务之外的所有用途）、WebServicesExternal 和 WebServicesInternal 用途使用单个证书（名为“默认”）。可选配置是对每种用途使用单独的证书。可使用 Lync Server 命令行管理程序和 Windows PowerShell cmdlet 管理证书，也可以使用 Lync Server 部署向导中的证书向导进行管理。
+
 
 
 ## 使用 Lync Server 命令行管理程序更新具有新的使用者替代名称的证书
@@ -67,18 +58,8 @@ Lync Server 2013 和 Lync Server 2010 的默认证书配置为对于 Default（�
 
 8.  如果证书位于此计算机上，请选择“本地计算机”。如果证书位于其他计算机上，请选择“其他计算机”，键入计算机的完全限定域名或单击“输入要选择的对象名称”中的“浏览”，键入计算机的名称。单击“检查名称”。解析计算机的名称时，计算机名称将带下划线。单击“确定”，然后单击“完成”。单击“确定”以提交选项并关闭“添加或删除管理单元”对话框。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果证书未显示在控制台中，则确保未选择“用户”或“服务”。必须选择“计算机”，否则将无法找到正确的证书。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果证书未显示在控制台中，则确保未选择“用户”或“服务”。必须选择“计算机”，否则将无法找到正确的证书。
 
 
 9.  若要查看证书的属性，请展开“证书”、“个人”，然后选择“证书”。选择要查看的证书，右键单击证书并选择“打开”。

@@ -17,18 +17,8 @@ _**上一次修改主题：** 2014-06-24_
 
 Microsoft Lync Server 2013 使管理员可以选择将即时消息和 Web 会议脚本存档到用户的 Microsoft Exchange Server 2013 邮箱中，而非 SQL Server 数据库中。如果启用此选项，则会将脚本写入用户邮箱中的“清除”文件夹。“清除”文件夹是“可恢复邮件”文件夹下的一个隐藏文件夹。尽管此文件夹对最终用户不可见，但它由 Exchange 搜索引擎编制索引，因此可通过 Exchange 邮箱搜索和/或 Microsoft SharePoint Server 2013 来发现此文件夹。因为信息存储在 Exchange“就地保留”功能（负责存档电子邮件和其他 Exchange 通信）所用的同一文件夹中，所以管理员可使用单个工具搜索为用户存档的所有电子通信记录。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要完全禁用 Lync 对话存档，您还必须禁用 Lync 对话历史记录。有关详细信息，请参阅以下主题：<a href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">在 Lync Server 2013 中管理内部通信和外部通信的存档</a>、<a href="new-csclientpolicy.md">New-CsClientPolicy</a> 和 <a href="set-csclientpolicy.md">Set-CsClientPolicy</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 要完全禁用 Lync 对话存档，您还必须禁用 Lync 对话历史记录。有关详细信息，请参阅以下主题：<a href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">在 Lync Server 2013 中管理内部通信和外部通信的存档</a>、<a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientPolicy">New-CsClientPolicy</a> 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPolicy">Set-CsClientPolicy</a>。
 
 
 若要将脚本存档到 Exchange 2013，您必须首先在两台服务器之间配置服务器到服务器身份验证。配置服务器到服务器身份验证后，即可在 Microsoft Lync Server 2013 中执行下列任务（请注意，根据您的设置和配置，您可能不需要完成所有这些任务）：
@@ -57,18 +47,9 @@ EnableExchangeArchiving 属性是一个布尔值：将 EnableExchangeArchiving �
 
     Set-CsArchivingConfiguration -Identity "global" -EnableArchiving ImOnly -EnableExchangeArchiving $False
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果 EnableArchiving 属性设置为“无”，则 Lync Server 根本不会存档即时消息和 Web 会议脚本。在本例中，服务器只会忽略为 EnableExchangeArchiving 配置的值。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果 EnableArchiving 属性设置为“无”，则 Lync Server 根本不会存档即时消息和 Web 会议脚本。在本例中，服务器只会忽略为 EnableExchangeArchiving 配置的值。
+
 
 
 还可以使用 Lync Server 控制面板启用（或禁用） Exchange 存档。为此，请完成以下过程：
@@ -81,18 +62,9 @@ EnableExchangeArchiving 属性是一个布尔值：将 EnableExchangeArchiving �
 
 4.  选择要存档的项目后，选中“Exchange Server 集成”复选框以启用 Exchange 存档。若要禁用 Exchange 存档，请清除此复选框。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果“存档设置”设置为“禁用存档”，则“Exchange Server 集成”复选框不可用。必须先启用存档，然后才能启用 Exchange 存档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果“存档设置”设置为“禁用存档”，则“Exchange Server 集成”复选框不可用。必须先启用存档，然后才能启用 Exchange 存档。
+
 
 
 如果 Lync Server 2013 和 Exchange 2013 位于同一林中，则通过 Exchange 就地保留策略来管理单个用户的存档（或至少在 Exchange 2013 上有电子邮件帐户的用户的存档）。如果您的用户驻留在以前版本的 Exchange 上，将通过 Lync Server 存档策略来管理这些用户的存档。请注意，仅在 Exchange 2013 上有帐户的用户可以将其 Lync 脚本存档到 Exchange。

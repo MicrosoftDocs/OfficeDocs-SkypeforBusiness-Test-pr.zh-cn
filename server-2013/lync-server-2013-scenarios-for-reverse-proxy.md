@@ -37,18 +37,8 @@ _**上一次修改主题：** 2013-01-21_
 
 2.  Lync Server 2013 外部 Web 服务（部署在 前端服务器和/或 控制器上）将连接至端口 TCP 4443 上的反向代理，并将使用 SSL/TLS 连接。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>建议对于 HTTP 流量，默认的外部 Web 服务侦听端口为 TCP 8080，而对于 HTTPS 流量则为 TCP 4443。您可以使用 拓扑生成器覆盖默认设置并定义自己的外部 Web 服务侦听端口。务必注意，反向代理与外部 Web 服务通信，而外部客户端与反向代理通信。外部客户端与端口 TCP 443 上的反向代理通信，但您可以重新定义反向代理与外部 Web 服务通信所在的端口。通过 拓扑生成器中覆盖默认的 Web 服务侦听端口的选项，您可以解决基础结构中可能产生的侦听端口冲突。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 建议对于 HTTP 流量，默认的外部 Web 服务侦听端口为 TCP 8080，而对于 HTTPS 流量则为 TCP 4443。您可以使用 拓扑生成器覆盖默认设置并定义自己的外部 Web 服务侦听端口。务必注意，反向代理与外部 Web 服务通信，而外部客户端与反向代理通信。外部客户端与端口 TCP 443 上的反向代理通信，但您可以重新定义反向代理与外部 Web 服务通信所在的端口。通过 拓扑生成器中覆盖默认的 Web 服务侦听端口的选项，您可以解决基础结构中可能产生的侦听端口冲突。
 
 
 3.  Lync Server 2013 外部 Web 服务将从客户端中获得未经修改的主机头，用于识别客户端正在尝试使用的服务和 Web 服务器目录。请求应看似来自反向代理
@@ -65,18 +55,9 @@ _**上一次修改主题：** 2013-01-21_
     
       - Office Web Apps Server，当会议被定义并配置为 Lync Server 拓扑的一部分时
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Office Web Apps Server 是一个单独的角色服务器，并未被配置为外部 Web 服务的一部分。此服务器单独发布用于客户端访问。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> Office Web Apps Server 是一个单独的角色服务器，并未被配置为外部 Web 服务的一部分。此服务器单独发布用于客户端访问。
+        
 
 
 5.  定义每个服务的 SSL 桥接。外部端口 TCP 443 映射到 TCP 4443 的外部 Web 服务端口。对于未加密的 HTTP，端口 TCP 80 映射到外部 Web 服务端口 TCP 8080

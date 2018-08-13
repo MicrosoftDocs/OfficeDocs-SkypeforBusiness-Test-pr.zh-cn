@@ -88,7 +88,7 @@ _**上一次修改主题：** 2016-12-08_
     [Remove-CsHostedVoicemailPolicy](remove-cshostedvoicemailpolicy.md)
 
   -   
-    [Set-CsHostedVoicemailPolicy](set-cshostedvoicemailpolicy.md)
+    [Set-CsHostedVoicemailPolicy](Set-CsHostedVoicemailPolicy.md)
 
 **[响应组应用程序 Cmdlet](lync-server-2013-response-group-application-cmdlets.md)**
 

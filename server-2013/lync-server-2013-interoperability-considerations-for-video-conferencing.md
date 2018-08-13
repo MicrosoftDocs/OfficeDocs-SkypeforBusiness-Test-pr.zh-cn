@@ -37,17 +37,8 @@ _**上一次修改主题：** 2012-10-02_
 
   - 对于多方会议，视频分辨率和视频会议功能与旧池中的旧客户端的体验相同。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当旧服务器托管 Lync Server 2013 客户端时，可以配置视频会议带宽，以便池中的所有用户都仅接收低分辨率视频，而发送高分辨率视频。例如，在媒体配置中将 MaxVideoRateAllowed 设置为 CIF-250K，并在会议策略中将 VideoBitRateKb 设置为 2000 kbps。此情形下的实际结果是池中的用户无法使用高分辨率。<br />
-因为 MaxVideoRateAllowed 不再用于 Lync Server 2013 客户端，所以它无法阻止 Lync Server 2013 客户端请求高分辨率视频。在池中的所有用户的会议策略中将 VideoBitRateKb 设置为与 MaxVideoRateAllowed 相同的值（即，将 CIF 设置为 250 kbps，或将 VGA 设置为 600 kbps，将 HD 设置为 1500 kbps）。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 当旧服务器托管 Lync Server 2013 客户端时，可以配置视频会议带宽，以便池中的所有用户都仅接收低分辨率视频，而发送高分辨率视频。例如，在媒体配置中将 MaxVideoRateAllowed 设置为 CIF-250K，并在会议策略中将 VideoBitRateKb 设置为 2000 kbps。此情形下的实际结果是池中的用户无法使用高分辨率。<br />
+因为 MaxVideoRateAllowed 不再用于 Lync Server 2013 客户端，所以它无法阻止 Lync Server 2013 客户端请求高分辨率视频。在池中的所有用户的会议策略中将 VideoBitRateKb 设置为与 MaxVideoRateAllowed 相同的值（即，将 CIF 设置为 250 kbps，或将 VGA 设置为 600 kbps，将 HD 设置为 1500 kbps）。
+
 

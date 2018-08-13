@@ -29,18 +29,8 @@ _**上一次修改主题：** 2016-12-08_
 
   - CustomStateURL 参数指定配置文件的位置。在 Lync 2013 中，SIP 高安全性模式默认为启用状态，因此您需要将自定义状态配置文件存储在已启用 HTTPS 的 Web 服务器上。否则，Lync 2013 客户端将无法连接到该文件。例如，有效地址将为 `https://lspool.corp.contoso.com/ClientConfigFolder/CustomPresence.xml`。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>然而在生产环境中不建议使用它，您可使用 EnableSIPHighSecurityMode 注册表设置在客户端中禁用 SIP 高安全性模式，从而测试位于非 HTTPS 文件共享中的配置文件。然后，您可使用 CustomStateURL 注册表设置为配置文件指定一个非 HTTPS 位置。请注意，Lync 2013 服从 Lync 2010 注册表设置，但注册表配置单元已更新。您将按如下方式创建注册表设置：
+> [!NOTE]  
+> 然而在生产环境中不建议使用它，您可使用 EnableSIPHighSecurityMode 注册表设置在客户端中禁用 SIP 高安全性模式，从而测试位于非 HTTPS 文件共享中的配置文件。然后，您可使用 CustomStateURL 注册表设置为配置文件指定一个非 HTTPS 位置。请注意，Lync 2013 服从 Lync 2010 注册表设置，但注册表配置单元已更新。您将按如下方式创建注册表设置：
 <ul>
 <li><p>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\15.0\Lync\EnableSIPHighSecurityMode</p>
 <p>类型：DWORD</p>
@@ -48,10 +38,8 @@ _**上一次修改主题：** 2016-12-08_
 <li><p>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\15.0\Lync\CustomStateURL</p>
 <p>类型：String (REG_SZ)</p>
 <p>值数据（示例）：file://\\lspool.corp.contoso.com\LSFileShare\ClientConfigFolder\Presence.xml 或 file:///c:/LSFileShare/ClientConfigFolder/Group_1_Pres.xml</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+
 
 
 通过在 XML 配置文件中指定一个或多个区域设置 ID (LCID) 架构来本地化自定义状态。本主题后面会显示本地化为英语 - 美国 (1033)、挪威语 - 博克马尔语 (1044)、法语 - 法国 (1036) 和土耳其语 (1055) 的示例。有关 LCID 列表，请参阅由 Microsoft 指定的区域设置 ID，网址为 <http://go.microsoft.com/fwlink/?linkid=157331>。
@@ -92,24 +80,12 @@ _**上一次修改主题：** 2016-12-08_
 
 5.  使用 **Grant-CSClientPolicy** cmdlet 将此新策略分配给用户。
 
-有关详细信息，请参阅 Lync Server 命令行管理程序文档中的 [New-CsClientPolicy](new-csclientpolicy.md) 和 [Grant-CsClientPolicy](grant-csclientpolicy.md)。
+有关详细信息，请参阅 Lync Server 命令行管理程序文档中的 [New-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientPolicy) 和 [Grant-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsClientPolicy)。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
+> [!NOTE]  
+> <ul>
 <li><p>默认情况下，Lync Server 2013 每三个小时更新一次客户端策略和设置。</p></li>
 <li><p>如果您希望继续从早期版本中使用组策略设置，例如 CustomStateURL，则当这些设置位于新的策略注册表配置单元 (HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\15.0\Lync) 中时，Lync 2013 将对这些设置进行识别。但是，基于服务器的客户端策略优先。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+
 

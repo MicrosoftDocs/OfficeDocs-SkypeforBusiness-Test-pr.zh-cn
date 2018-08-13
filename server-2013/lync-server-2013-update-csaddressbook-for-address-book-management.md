@@ -21,23 +21,15 @@ _**上一次修改主题：** 2012-11-01_
 
 Update-CsAddressBook cmdlet 可替代 Office Communications Server 中的 **abserver.exe –syncNow** 命令。该 cmdlet 的用途是立即启动同步，而不是等到安排的时间才启动。第一个示例命令更新组织中的所有通讯簿。第二个示例命令仅更新与定义的服务器关联的通讯簿。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 中，Lync Server 用户复制程序将从 Active Directory 选取所做的更改并基于配置的时间间隔更新 Lync Server 用户数据库。Lync Server 用户复制程序还快速将更改传播到 RTCab 数据库，而无需管理员运行 Update-CSAddressBook。如果启用了通讯簿文件下载，则管理员只需要运行 Update-CSAddressBook。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 中，Lync Server 用户复制程序将从 Active Directory 选取所做的更改并基于配置的时间间隔更新 Lync Server 用户数据库。Lync Server 用户复制程序还快速将更改传播到 RTCab 数据库，而无需管理员运行 Update-CSAddressBook。如果启用了通讯簿文件下载，则管理员只需要运行 Update-CSAddressBook。
 
 
 例如：
 
     Update-CsAddressBook
+
+   &nbsp;
 
     Update-CsAddressBook -Fqdn atl-abs-001.contoso.com
 
@@ -47,5 +39,5 @@ Update-CsAddressBook cmdlet 可替代 Office Communications Server 中的 **abse
 
 #### 其他资源
 
-[Update-CsAddressBook](update-csaddressbook.md)
+[Update-CsAddressBook](https://docs.microsoft.com/en-us/powershell/module/skype/Update-CsAddressBook)
 

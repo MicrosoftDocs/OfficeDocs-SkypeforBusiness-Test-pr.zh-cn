@@ -33,39 +33,17 @@ _**上一次修改主题：** 2017-05-03_
 
 这些表指示对 Lync Server 2013 内部部署中的 Lync 用户可用的功能。除非另行说明，否则这些功能也可用于 Lync Online 和 Office 365 用户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关 Lync 2013 移动客户端中的功能可用性的详细信息，请参阅<a href="lync-server-2013-mobile-client-comparison-tables.md">Lync Server 2013 的移动客户端比较表</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 有关 Lync 2013 移动客户端中的功能可用性的详细信息，请参阅<a href="lync-server-2013-mobile-client-comparison-tables.md">Lync Server 2013 的移动客户端比较表</a>。
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
+> [!NOTE]  
+> <ul>
 <li><p>有关 Lync Online 订阅计划的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=282430">http://go.microsoft.com/fwlink/p/?LinkId=282430</a> 中的 Lync Online 服务说明。</p></li>
 <li><p>Lync Server 2013 支持以下以前发布的客户端：Lync 2010、Lync 2010 移动、Lync Phone Edition 和 Lync 2010 Attendant。有关这些客户端的信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=213798">http://go.microsoft.com/fwlink/p/?LinkID=213798</a> 中“客户端比较表”的 Lync 2010 版本。</p></li>
 <li><p>Lync 2013 客户端支持虚拟桌面基础结构 (VDI) 环境中的音频和视频。有关 VDI 环境中的 Lync 2013 功能的详细信息，请参阅 <a href="lync-server-2013-supported-virtualization-technologies-and-known-limitations.md">Lync Server 2013 中支持的虚拟化技术和已知限制</a>。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+
 
 
 ## 增强状态支持
@@ -887,25 +865,13 @@ _**上一次修改主题：** 2017-05-03_
 
 ## 会议支持
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
+> [!NOTE]  
+> <ul>
 <li><p>Lync Online 独立计划 1 中不提供 Lync 会议功能。</p></li>
 <li><p>在 Lync-to-Lync 会话中，Lync Online 计划 1 用户可以在受到有权访问共享功能的用户的邀请时参与桌面共享和应用程序共享。</p></li>
 <li><p>有关详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=282430" class="uri">http://go.microsoft.com/fwlink/?linkid=282430</a> 中的 Lync Online 服务说明。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+
 
 
 
@@ -1397,18 +1363,9 @@ _**上一次修改主题：** 2017-05-03_
 
 ## 电话支持
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有某些 Lync Online 订阅计划具有 Lync 语音功能。有关详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=282430" class="uri">http://go.microsoft.com/fwlink/?linkid=282430</a> 上的 Lync Online 服务说明中的“Lync 语音功能”主题。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 只有某些 Lync Online 订阅计划具有 Lync 语音功能。有关详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=282430" class="uri">http://go.microsoft.com/fwlink/?linkid=282430</a> 上的 Lync Online 服务说明中的“Lync 语音功能”主题。
+
 
 
 

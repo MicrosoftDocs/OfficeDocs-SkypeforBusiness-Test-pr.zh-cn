@@ -31,18 +31,9 @@ _**上一次修改主题：** 2013-02-14_
 
   - **ASP.NET\\Requests Queued**（应始终为零）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果满足或超出这些值，则应重新审视并重新计算您的容量规划，以确定承载 Web 服务的计算机的正确 CPU 大小、内核数和内存。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果满足或超出这些值，则应重新审视并重新计算您的容量规划，以确定承载 Web 服务的计算机的正确 CPU 大小、内核数和内存。
+
 
 
 **对于 Mobility Service (Mcx)：**
@@ -59,18 +50,9 @@ _**上一次修改主题：** 2013-02-14_
 
   - **ASP.NET\\Requests Queued**（应始终为零）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果满足或超出这些值，则应重新审视并重新计算您的容量规划，以确定承载 Web 服务的计算机的正确 CPU 大小、内核数和内存。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果满足或超出这些值，则应重新审视并重新计算您的容量规划，以确定承载 Web 服务的计算机的正确 CPU 大小、内核数和内存。
+
 
 
 ## 另请参阅

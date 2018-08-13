@@ -45,18 +45,9 @@ _**上一次修改主题：** 2016-12-08_
 
 确定部署集中 SIP 中继还是分布式 SIP 中继之前需要进行成本效益分析。在某些情况下，即使并不必需，选择分布式部署模型可能会比较有益。在完全集中的部署中，所有分支站点流量均通过 WAN 链路路由。如果您不想支付 WAN 链路所需的带宽费用，则可能需要使用分布式 SIP 中继。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关使用分布式 SIP 中继的原因和方法的详细信息，请参阅规划文档中的 <a href="lync-server-2013-branch-site-sip-trunking.md">Lync Server 2013 中的分支站点 SIP 中继</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关使用分布式 SIP 中继的原因和方法的详细信息，请参阅规划文档中的 <a href="lync-server-2013-branch-site-sip-trunking.md">Lync Server 2013 中的分支站点 SIP 中继</a>。
+
 
 
 ## 支持的 SIP 中继连接类型

@@ -75,14 +75,14 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="even">
 <td><p>使用 Mcx 移动服务测试 Lync 2010 Mobile 的移动部署。</p></td>
 <td><p>运行 <strong>Test-CsMcxP2PIM</strong> 以测试将即时消息从一个用户发送给另一个用户的情况。</p>
-<p>有关选项的完整列表，请参阅 <a href="test-csmcxp2pim.md">Test-CsMcxP2PIM</a> 的 Lync Server 命令行管理程序 cmdlet 文档。</p></td>
+<p>有关选项的完整列表，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsMcxP2PIM">Test-CsMcxP2PIM</a> 的 Lync Server 命令行管理程序 cmdlet 文档。</p></td>
 <td><p>CsAdministrator</p></td>
 <td><p><a href="lync-server-2013-verifying-your-mobility-deployment.md">在 Lync Server 2013 中验证您的移动功能部署</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>使用 UCWA Web 组件测试 Lync 2013 移动客户端的移动部署</p></td>
 <td><p>使用 <strong>Test-CsUcwaConference</strong> cmdlet 来测试和验证预定义测试用户或一对实际用户是否可以使用 UCWA 创建和参与会议。</p>
-<p>有关选项的完整列表，请参阅 <a href="test-csucwaconference.md">Test-CsUcwaConference</a> 的 Lync Server 命令行管理程序 cmdlet 文档。</p></td>
+<p>有关选项的完整列表，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsUcwaConference">Test-CsUcwaConference</a> 的 Lync Server 命令行管理程序 cmdlet 文档。</p></td>
 <td><p>CsAdministrator</p></td>
 <td><p><a href="lync-server-2013-verifying-your-mobility-deployment.md">在 Lync Server 2013 中验证您的移动功能部署</a></p></td>
 </tr>
@@ -95,20 +95,12 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>如果您希望通过 Wi-Fi 网络支持推送通知，请为 TCP 端口 5223 配置出站防火墙规则。</p></li>
 <li><p>使用 <strong>Set-CsPushNotificationConfiguration</strong> cmdlet 启用 Apple 推送通知服务 (APNS) 和 Microsoft 推送通知服务 (MPNS) 的推送通知。默认情况下，此功能已禁用。</p></li>
 <li><p>使用 <strong>Test-CsFederatedPartner</strong> cmdlet 测试联盟配置，并使用 <strong>Test-CsMCXPushNotification</strong> cmdlet 测试推送通知。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>推送通知用于 Apple 设备和 Windows Phone 上的 Lync 2010 Mobile 客户端<br />
-推送通知仅对 Windows Phone 上的 Lync 2013 移动客户端是必需的</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 推送通知用于 Apple 设备和 Windows Phone 上的 Lync 2010 Mobile 客户端<br />
+推送通知仅对 Windows Phone 上的 Lync 2013 移动客户端是必需的
+
 
 </div></li>
 </ul></td>

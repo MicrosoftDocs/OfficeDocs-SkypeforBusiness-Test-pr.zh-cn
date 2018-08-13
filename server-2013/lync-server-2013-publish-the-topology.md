@@ -19,32 +19,14 @@ _**上一次修改主题：** 2013-10-01_
 
 在 拓扑生成器中定义拓扑后，必须将该拓扑发布到中央管理存储。中央管理存储提供定义、设置、维护、管理、描述和运行 Lync Server 2013 部署所需的数据的强大图式化存储。它还会验证数据，以确保配置的一致性。对此配置数据的所有更改都在中央管理存储进行，这样可以消除“不同步”问题。数据的只读副本将复制到拓扑中的所有服务器，包括边缘服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SQL Server 至少需要 20 GB 的可用空间才能成功发布初始拓扑并创建中央管理服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> SQL Server 至少需要 20 GB 的可用空间才能成功发布初始拓扑并创建中央管理服务器。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅限 Enterprise Edition：为了发布该拓扑，基于 SQL Server 的后端服务器必须处于联机状态，并且可以通过启用的防火墙例外规则访问。有关指定防火墙例外的详细信息，请参阅 <a href="lync-server-2013-understanding-firewall-requirements-for-sql-server.md">了解 SQL Server 与 Lync Server 2013 一起使用时的防火墙要求</a>。有关配置 SQL Server 的详细信息，请参阅 <a href="lync-server-2013-configure-sql-server-for-lync-server.md">为 Lync Server 2013 配置 SQL Server</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 仅限 Enterprise Edition：为了发布该拓扑，基于 SQL Server 的后端服务器必须处于联机状态，并且可以通过启用的防火墙例外规则访问。有关指定防火墙例外的详细信息，请参阅 <a href="lync-server-2013-understanding-firewall-requirements-for-sql-server.md">了解 SQL Server 与 Lync Server 2013 一起使用时的防火墙要求</a>。有关配置 SQL Server 的详细信息，请参阅 <a href="lync-server-2013-configure-sql-server-for-lync-server.md">为 Lync Server 2013 配置 SQL Server</a>。
+
 
 
 ## 发布拓扑
@@ -59,18 +41,9 @@ _**上一次修改主题：** 2013-10-01_
 
 5.  在“创建数据库”页上，选择要发布的数据库。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您没有创建数据库的相应权限，可以清除这些数据库旁边的复选框，稍后可以由具有相应权限的用户创建数据库。有关详细信息，请参阅 <a href="lync-server-2013-deployment-permissions-for-sql-server.md">Lync Server 2013 中 SQL Server 的部署权限</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 如果您没有创建数据库的相应权限，可以清除这些数据库旁边的复选框，稍后可以由具有相应权限的用户创建数据库。有关详细信息，请参阅 <a href="lync-server-2013-deployment-permissions-for-sql-server.md">Lync Server 2013 中 SQL Server 的部署权限</a>。
+    
 
 
 6.  也可以单“高级”。通过高级 SQL Server 数据文件放置选项，您可以在以下选项之间进行选择：

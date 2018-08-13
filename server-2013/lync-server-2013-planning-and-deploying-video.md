@@ -23,18 +23,9 @@ Lync Server 2013 引入了以下新视频功能：
 
   - **H.264 视频**   H.264 视频编解码器现在是在 Lync 2013 客户端上编码视频时采用的默认编解码器。H.264 视频支持范围更广的分辨率和帧速率，并改进了视频可伸缩性。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 仍支持 VC1 编解码器，以保持与早期版本的 Lync 的互操作性。有关新视频编解码器的详细信息和背景信息，请参阅 Jeff Schertz 的博客文章“Lync 2013 中的视频互操作性”，网址为 <a href="http://blog.schertz.name/2012/07/video-interoperability-in-lync-2013/" class="uri">http://blog.schertz.name/2012/07/video-interoperability-in-lync-2013/</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> Lync Server 2013 仍支持 VC1 编解码器，以保持与早期版本的 Lync 的互操作性。有关新视频编解码器的详细信息和背景信息，请参阅 Jeff Schertz 的博客文章“Lync 2013 中的视频互操作性”，网址为 <a href="http://blog.schertz.name/2012/07/video-interoperability-in-lync-2013/" class="uri">http://blog.schertz.name/2012/07/video-interoperability-in-lync-2013/</a>。
+    
 
 
 本节介绍如何在 Lync Server 2013 中管理视频的带宽以及如何配置视频功能。

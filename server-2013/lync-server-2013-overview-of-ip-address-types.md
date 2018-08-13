@@ -25,18 +25,9 @@ _**上一次修改主题：** 2015-03-09_
 
 以下各节概述了各种 Lync Server 功能在三种配置之间的兼容性。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅 IPv6 的客户端或服务器配置只受选项卡或验证的支持。仅 IPv6 配置在生产部署中不受支持。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 仅 IPv6 的客户端或服务器配置只受选项卡或验证的支持。仅 IPv6 配置在生产部署中不受支持。
+
 
 
 ## 客户端注册
@@ -347,18 +338,9 @@ _**上一次修改主题：** 2015-03-09_
 
 包括呼叫许可控制 (CAC)、增强型 9-1-1 (E9-1-1) 或媒体旁路的部署必须配置为仅 IPv4 或双协议栈实现。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在双协议栈部署中，即使 Lync 客户端使用 IPv6 连接到 Lync Server， Lync 也尽力映射相应的 IPv4 地址以支持 E9-1-1。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在双协议栈部署中，即使 Lync 客户端使用 IPv6 连接到 Lync Server， Lync 也尽力映射相应的 IPv4 地址以支持 E9-1-1。
+
 
 
 不支持使用 IPv6 地址的 位置信息服务。

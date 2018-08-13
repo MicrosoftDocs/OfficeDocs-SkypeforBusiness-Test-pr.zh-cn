@@ -27,18 +27,8 @@ _**上一次修改主题：** 2013-02-23_
 
 4.  在“子网”页上，单击要查看的子网。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>一次只能查看一个子网。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 一次只能查看一个子网。
 
 
 5.  在“编辑”菜单上，单击“显示详细信息…”。
@@ -61,7 +51,7 @@ _**上一次修改主题：** 2013-02-23_
         NetworkSiteID : Redmond
         SubnetID      : 172.11.15.0
 
-有关详细信息，请参阅 [Get-CsNetworkSubnet](get-csnetworksubnet.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Get-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkSubnet) cmdlet 的帮助主题。
 
 ## 另请参阅
 

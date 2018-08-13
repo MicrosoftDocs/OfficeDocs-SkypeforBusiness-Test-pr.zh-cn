@@ -35,18 +35,9 @@ _**上一次修改主题：** 2016-12-08_
 
 6.  从 TPM 管理控制台中，验证您的 TPM 规范版本是否至少为 1.2
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您收到一个对话框表明找不到兼容的受信任的平台模块 (TPM)，请验证计算机是否具有兼容的 TPM 模块以及是否在系统 BIOS 中启用了它。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您收到一个对话框表明找不到兼容的受信任的平台模块 (TPM)，请验证计算机是否具有兼容的 TPM 模块以及是否在系统 BIOS 中启用了它。
+    
 
 
 7.  关闭 TPM 管理控制台
@@ -55,18 +46,9 @@ _**上一次修改主题：** 2016-12-08_
     
         TpmVscMgr create /name MyVSC /pin default /adminkey random /generate
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>要在创建虚拟智能卡时提供自定义 PIN 值，请使用 /pin 提示符。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 要在创建虚拟智能卡时提供自定义 PIN 值，请使用 /pin 提示符。
+    
 
 
 9.  从命令提示符处，通过运行以下命令来打开计算机管理控制台：

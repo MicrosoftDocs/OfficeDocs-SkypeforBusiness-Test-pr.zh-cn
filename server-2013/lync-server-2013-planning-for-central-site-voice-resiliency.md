@@ -45,18 +45,9 @@ _**上一次修改主题：** 2015-03-09_
 
 1.  客户端可通过 DNS SRV 记录发现 Lync Server。在 Lync Server 2013 中，可以将 DNS SRV 记录配置为向 DNS SRV 查询返回多个 FQDN。例如，如果企业 Contoso 具有三个中央站点（北美、欧洲和亚太），且每个中央站点有一个控制器池，则 DNS SRV 记录可以指向每个位置中的控制器池 FQDN。只要其中一个位置上的控制器池可用，客户端就可以连接到第一个跃点 Lync Server。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可以选择使用 控制器池。可以改用 前端池。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 可以选择使用 控制器池。可以改用 前端池。
+    
 
 
 2.  控制器池会通知 Lync 客户端有关用户的主注册器池和备份注册器池的情况。

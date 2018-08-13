@@ -17,25 +17,13 @@ _**上一次修改主题：** 2016-12-08_
 
 适用于移动客户端的 Lync 2013 为您的组织中从智能手机或运行 Windows Mobile Professional Edition 的电话进行连接的用户提供即时消息 (IM)、增强状态和电话服务。可以通过将您的用户指向其移动电话的应用程序市场来指导用户安装 Lync 2013。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 还支持适用于移动客户端的 Lync 2010。有关详细信息，请参阅 Lync Server 2010 TechNet 库中的下列文章：
+> [!NOTE]  
+> Lync Server 2013 还支持适用于移动客户端的 Lync 2010。有关详细信息，请参阅 Lync Server 2010 TechNet 库中的下列文章：
 <ul>
 <li><p>“规划移动客户端”，网址为：<a href="http://go.microsoft.com/fwlink/?linkid=235955" class="uri">http://go.microsoft.com/fwlink/?linkid=235955</a>。</p></li>
 <li><p>“部署移动客户端”，网址为：<a href="http://go.microsoft.com/fwlink/?linkid=236068" class="uri">http://go.microsoft.com/fwlink/?linkid=236068</a>。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+
 
 
 ## 本部分内容

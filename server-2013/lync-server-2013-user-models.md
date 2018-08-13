@@ -81,28 +81,13 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>50% 的联系人在组织内。这些用户中的 10% 为远程用户，从防火墙以外连接。</p></li>
 <li><p>40% 的联系人为公共云用户（例如 AOL、Yahoo! 、MSN 或 Google Talk 用户）。</p></li>
 <li><p>10% 的联系人来自联盟伙伴。</p>
-<div class="alert">
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>自 2012 年 9 月 1 日起，新订或续订合同不能再购买 Microsoft Lync 公共 IM 连接用户订阅许可证 (“PIC USL”)。拥有有效许可证的客户可继续与 Yahoo! Messenger 联盟直至服务关闭。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
-<li><p>PIC USL 是一个每用户每月订阅许可证，是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的。Microsoft 之所以能够提供此服务离不开 Yahoo! 的支持，但这项支持的基础协议正在逐步终止。</p></li>
-<li><p>Lync 是一个比以往更强大的工具，它实现了人员跨组织、跨地域的连接。除 Lync 标准 CAL 外，与 Windows Live Messenger 联盟不需要任何附加用户/设备许可证。Skype 联盟将添加到此列表中，以便 Lync 用户能够通过 IM 和语音与数亿用户取得联系。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
 
-</div></li>
+> [!IMPORTANT]  
+> <ul>
+> <li><p>自 2012 年 9 月 1 日起，新订或续订合同不能再购买 Microsoft Lync 公共 IM 连接用户订阅许可证 (“PIC USL”)。拥有有效许可证的客户可继续与 Yahoo! Messenger 联盟直至服务关闭。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
+> <li><p>PIC USL 是一个每用户每月订阅许可证，是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的。Microsoft 之所以能够提供此服务离不开 Yahoo! 的支持，但这项支持的基础协议正在逐步终止。</p></li>
+> <li><p>Lync 是一个比以往更强大的工具，它实现了人员跨组织、跨地域的连接。除 Lync 标准 CAL 外，与 Windows Live Messenger 联盟不需要任何附加用户/设备许可证。Skype 联盟将添加到此列表中，以便 Lync 用户能够通过 IM 和语音与数亿用户取得联系。</p></li>
+> </ul></li>
 </ul>
 <p>未使用公共云连接的用户平均拥有 50 个联系人。在这些用户中：</p>
 <ul>
@@ -253,19 +238,10 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>会议媒体混合</p></td>
 <td><p>75% 的会议为 Web 会议，其中包括音频以及一些其他协作形式。</p>
 <p>这些会议的其他协作方式如下：</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>这些数字合计达 100% 以上，因为一个会议可以有多种协作方式。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 这些数字合计达 100% 以上，因为一个会议可以有多种协作方式。
 
 </div>
 <ul>

@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-11-01_
 
 为一个或多个中介服务器安装文件，配置出站呼叫路由，并选择性地部署一个或多个高级 企业语音功能之后，可以使用以下过程让用户可以使用 企业语音发出呼叫：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在以下过程中，只有第一个过程可以使用 Lync Server 控制面板执行。对于其余过程，只能使用 Lync Server 命令行管理程序。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在以下过程中，只有第一个过程可以使用 Lync Server 控制面板执行。对于其余过程，只能使用 Lync Server 命令行管理程序。
+
 
 
   - 为用户帐户启用 企业语音。

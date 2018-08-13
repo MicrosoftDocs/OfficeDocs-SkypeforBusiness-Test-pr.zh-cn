@@ -25,34 +25,16 @@ _**上一次修改主题：** 2012-10-18_
 
 2.  在 Lync Server 命令行管理程序 中，使用 **New-CSVoiceMailReroutingConfiguration** cmdlet 将 AA 电话号码设置为 Survivable Branch Appliance 或 Survivable Branch Server 上语音邮件重新路由配置中的 Exchange UM 自动助理电话号码。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果以后需要修改语音邮件重新路由设置，请使用 <strong>Set-CsVoiceMailReRoutingConfiguration</strong> cmdlet 执行相应的操作。有关 <strong>New-</strong> 和 <strong>Set-CSVoiceMailReroutingConfiguration</strong> 的详细信息，请参阅相应的 Shell 帮助主题。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果以后需要修改语音邮件重新路由设置，请使用 <strong>Set-CsVoiceMailReRoutingConfiguration</strong> cmdlet 执行相应的操作。有关 <strong>New-</strong> 和 <strong>Set-CSVoiceMailReroutingConfiguration</strong> 的详细信息，请参阅相应的 Shell 帮助主题。
+    
 
 
 3.  将对应于分支用户的 Exchange UM 拨号计划的 Exchange UM 订阅者访问号码设置为 Survivable Branch Appliance 或 Survivable Branch Server 上语音邮件重新路由配置中的 Exchange UM 订阅者访问号码。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>对 Exchange UM 用户的拨号计划进行配置，以便只有一个拨号计划与 WAN 中断期间需要访问“获取语音邮件”功能的所有分支用户相关联。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 对 Exchange UM 用户的拨号计划进行配置，以便只有一个拨号计划与 WAN 中断期间需要访问“获取语音邮件”功能的所有分支用户相关联。
+    
 
 
 Survivable Branch Appliance 或 Survivable Branch Server 的 **后续步骤** ： [在 Lync Server 2013 中在 Survivable Branch Appliance 或 Survivable Branch Server 上承载用户](lync-server-2013-home-users-on-a-survivable-branch-appliance-or-server.md)。

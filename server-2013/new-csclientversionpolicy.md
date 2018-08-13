@@ -134,5 +134,5 @@ The **New-CsClientVersionPolicy** cmdlet creates new instances of the Microsoft.
 [Get-CsClientVersionPolicy](get-csclientversionpolicy.md)  
 [Grant-CsClientVersionPolicy](grant-csclientversionpolicy.md)  
 [Remove-CsClientVersionPolicy](remove-csclientversionpolicy.md)  
-[Set-CsClientVersionPolicy](set-csclientversionpolicy.md)
+[Set-CsClientVersionPolicy](Set-CsClientVersionPolicy.md)
 

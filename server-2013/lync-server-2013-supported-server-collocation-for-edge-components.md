@@ -23,16 +23,6 @@ _**上一次修改主题：** 2012-09-08_
 
   - 反向代理
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>反向代理不需要专用于仅为 Lync Server 2013 提供服务。例如，您可以提供服务来发布 Lync Server Web 服务，并同时为另一个与 Lync Server 完全不相关的网站提供已发布的网站。如果在外围网络中已有反向代理服务器来支持其他服务，则可以将其用于 Lync Server 2013。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 反向代理不需要专用于仅为 Lync Server 2013 提供服务。例如，您可以提供服务来发布 Lync Server Web 服务，并同时为另一个与 Lync Server 完全不相关的网站提供已发布的网站。如果在外围网络中已有反向代理服务器来支持其他服务，则可以将其用于 Lync Server 2013。
 

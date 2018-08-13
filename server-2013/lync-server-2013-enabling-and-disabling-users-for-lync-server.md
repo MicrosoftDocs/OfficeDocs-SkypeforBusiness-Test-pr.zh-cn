@@ -30,6 +30,6 @@ _**上一次修改主题：** 2012-11-01_
 #### 其他资源
 
 [在 Lync Server 2013 中管理用户](lync-server-2013-managing-users-in-lync-server.md)  
-[Enable-CsUser](enable-csuser.md)  
-[Disable-CsUser](disable-csuser.md)
+[Enable-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Enable-CsUser)  
+[Disable-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Disable-CsUser)
 

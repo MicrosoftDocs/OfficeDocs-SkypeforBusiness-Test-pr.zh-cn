@@ -19,32 +19,13 @@ _**上一次修改主题：** 2012-10-09_
 
 有关存档配置的工作方式的详细信息（包括全局、站点和池配置的层次结构），请参阅规划文档、部署文档或操作文档中的[Lync Server 2013 的存档工作原理](lync-server-2013-how-archiving-works.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您应在存档配置中指定所有适当的选项，然后再启用存档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您应在存档配置中指定所有适当的选项，然后再启用存档。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要启用存档，您必须指定存档策略以控制全局级别（适当情况下还包括站点和用户级别）的内部和外部通信的存档。如果配置用户级别策略，还必须向特定用户分配用户策略。有关创建和配置存档策略的详细信息，请参阅操作文档中的<a href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">在 Lync Server 2013 中管理内部通信和外部通信的存档</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]
+> 若要启用存档，您必须指定存档策略以控制全局级别（适当情况下还包括站点和用户级别）的内部和外部通信的存档。如果配置用户级别策略，还必须向特定用户分配用户策略。有关创建和配置存档策略的详细信息，请参阅操作文档中的<a href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">在 Lync Server 2013 中管理内部通信和外部通信的存档</a>。
 
 
 ## 在站点级别配置存档选项

@@ -27,18 +27,8 @@ _**上一次修改主题：** 2013-02-23_
 
 4.  在“站点”页上，单击要查看的站点。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>一次只能查看一个站点的信息。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 一次只能查看一个站点的信息。
 
 
 5.  在“编辑”菜单上，单击“显示详细信息”。
@@ -63,7 +53,7 @@ _**上一次修改主题：** 2013-02-23_
         BWPolicyProfileID :
         LocationPolicy    :
 
-有关详细信息，请参阅 [Get-CsNetworkSite](get-csnetworksite.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Get-CsNetworkSite](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkSite) cmdlet 的帮助主题。
 
 ## 另请参阅
 

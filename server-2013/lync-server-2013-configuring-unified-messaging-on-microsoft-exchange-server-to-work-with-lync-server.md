@@ -15,36 +15,17 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2016-12-08_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您想要使用 Exchange 统一消息 (UM) 为 企业语音用户提供呼叫应答、Outlook Voice Access 或自动助理服务，请阅读规划文档中的 <a href="lync-server-2013-planning-for-exchange-unified-messaging-integration.md">在 Lync Server 2013 中规划 Exchange 统一消息集成</a>，然后按照本节中的说明进行操作。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果您想要使用 Exchange 统一消息 (UM) 为 企业语音用户提供呼叫应答、Outlook Voice Access 或自动助理服务，请阅读规划文档中的 <a href="lync-server-2013-planning-for-exchange-unified-messaging-integration.md">在 Lync Server 2013 中规划 Exchange 统一消息集成</a>，然后按照本节中的说明进行操作。
 
 
 要配置 Exchange 统一消息 (UM) 与 企业语音一起使用，您需要执行以下任务：
 
   - 在运行 Exchange 统一消息 (UM) 服务的服务器上配置证书
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>向所有 UM SIP URI 拨号计划添加所有客户端访问和邮箱服务器。否则，出站呼叫路由将无法正常工作。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 向所有 UM SIP URI 拨号计划添加所有客户端访问和邮箱服务器。否则，出站呼叫路由将无法正常工作。
+    
 
 
   - 创建一个或多个 UM SIP URI 拨号计划，根据需要还可以创建订阅者访问电话号码，然后创建对应的 Lync Server 拨号计划。
@@ -75,18 +56,9 @@ _**上一次修改主题：** 2016-12-08_
 
   - 集成步骤同时在运行统一消息服务的 Exchange Server 角色上和运行 Lync Server 2013 的服务器上执行。执行 Lync Server 2013 集成步骤之前应先执行 Exchange Server 统一消息集成步骤。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>要查看在哪些服务器上执行了哪些集成步骤并且由哪些管理员角色执行，请参阅<a href="lync-server-2013-deployment-process-for-integrating-on-premises-unified-messaging.md">集成本地统一消息与 Lync Server 2013 的部署过程</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 要查看在哪些服务器上执行了哪些集成步骤并且由哪些管理员角色执行，请参阅<a href="lync-server-2013-deployment-process-for-integrating-on-premises-unified-messaging.md">集成本地统一消息与 Lync Server 2013 的部署过程</a>。
+    
 
 
 每台运行 Exchange UM 的服务器上都必须具有以下工具：

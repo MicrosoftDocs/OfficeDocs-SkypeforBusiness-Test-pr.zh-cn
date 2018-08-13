@@ -29,8 +29,7 @@ Lync Server 2013 支持从以下任意一种环境中进行迁移：
 
 Lync Server 2013 仅支持以下迁移方法：
 
-  -   
-    **并行迁移。**在并行迁移中， Lync Server 2013 与现有 Microsoft Lync Server 2010 或 Office Communications Server 2007 R2 部署并排部署，然后将操作转移到新服务器，并将用户移动到 Lync Server 2013。采用这种方法时，在迁移过程中需要使用其他服务器平台（包括硬件和软件），并且新配置中的系统名称和池名称与原配置中的不同。如果需要回滚到先前版本，可以将操作切换回先前的服务器。
+   **并行迁移。**在并行迁移中， Lync Server 2013 与现有 Microsoft Lync Server 2010 或 Office Communications Server 2007 R2 部署并排部署，然后将操作转移到新服务器，并将用户移动到 Lync Server 2013。采用这种方法时，在迁移过程中需要使用其他服务器平台（包括硬件和软件），并且新配置中的系统名称和池名称与原配置中的不同。如果需要回滚到先前版本，可以将操作切换回先前的服务器。
 
 不支持在 Active Directory 域服务 林间迁移。
 
@@ -52,18 +51,8 @@ Lync Server 2013 可与 Lync Server 2010 部署或 Office Communications Server 
 
 拓扑生成器将显示以下消息来通知您此问题：“SQL 服务器 \[服务器的 FQDN\] 已包含承载角色 "用户存储" 的 SQL 实例”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要为您的 Lync Server 2013 部署部署新的服务器角色，则应该首先升级现有部署（如迁移文档和部署文档中所述），然后部署新服务器角色（如规划文档和部署文档中所述）。如果要迁移先前版本的群聊，请在完成从 Lync Server 2010 或 Office Communications Server 2007 R2 迁移所有其他组件的过程后，最后迁移群聊。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果要为您的 Lync Server 2013 部署部署新的服务器角色，则应该首先升级现有部署（如迁移文档和部署文档中所述），然后部署新服务器角色（如规划文档和部署文档中所述）。如果要迁移先前版本的群聊，请在完成从 Lync Server 2010 或 Office Communications Server 2007 R2 迁移所有其他组件的过程后，最后迁移群聊。
 
 
 有关具体的共存要求，以及有关 Lync Server 2010 或 Office Communications Server 2007 R2 与 Lync Server 2013 组件的共存和迁移的其他详细信息，请参阅迁移文档中的 [从 Lync Server 2010 迁移到 Lync Server 2013](migration-from-lync-server-2010-to-lync-server-2013.md) 和 [从 Office Communications Server 2007 R2 迁移至 Lync Server 2013](migration-from-office-communications-server-2007-r2-to-lync-server-2013.md)。有关客户端的混合版本支持的详细信息，请参阅 [Lync Server 2013 先前部署中支持的客户端](lync-server-2013-supported-clients-from-previous-deployments.md)。

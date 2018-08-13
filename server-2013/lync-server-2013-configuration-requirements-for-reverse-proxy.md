@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-03-05_
 
 Lync Server 2013 会对来自外部客户端，然后传递至承载于控制器、控制器池、前端服务器或前端池上的外部 Web 服务的通信强制实施若干要求。如果您为用户提供会议服务，则反向代理还负责发布 Office Web Apps Server。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 不指定您必须使用的具体反向代理。Lync Server 2013 只定义反向代理必须满足的各项操作要求。通常，您已部署在基础结构中的反向代理能够满足这些要求。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 不指定您必须使用的具体反向代理。Lync Server 2013 只定义反向代理必须满足的各项操作要求。通常，您已部署在基础结构中的反向代理能够满足这些要求。
+
 
 
 ## 反向代理要求

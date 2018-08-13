@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-10-19_
 
 如果配置了对联盟伙伴的支持，您可以管理可与组织联盟的特定域。您将一个或多个特定外部域配置为允许的联盟域。要执行此操作，请将每个域添加到允许域列表中。即使组织启用了伙伴发现，但如果域是需要与 1,000 个以上的用户通信或每秒需要发送 20 多条消息的联盟伙伴，也请执行此操作。如果组织未启用伙伴发现，则只有添加到允许域列表的外部域的用户才能与组织内的用户一起参与 IM 会话和会议。如果要将对联盟域的访问限制为运行联盟伙伴的访问边缘服务的特定服务器，可以为允许域列表中的每个域指定运行访问边缘服务的服务器的域名。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此过程描述如何配置对特定域的支持，但是实施对联盟用户的支持还需要组织启用对联盟用户的支持，并配置和应用策略以控制可与联盟用户协作的用户。有关启用对联盟用户的支持的详细信息，请参阅 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中启用或禁用远程用户访问</a>。有关配置用于控制联盟的策略的详细信息，请参阅 <a href="lync-server-2013-configure-policies-to-control-federated-user-access.md">在 Lync Server 2013 中配置策略以控制联盟用户访问</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此过程描述如何配置对特定域的支持，但是实施对联盟用户的支持还需要组织启用对联盟用户的支持，并配置和应用策略以控制可与联盟用户协作的用户。有关启用对联盟用户的支持的详细信息，请参阅 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中启用或禁用远程用户访问</a>。有关配置用于控制联盟的策略的详细信息，请参阅 <a href="lync-server-2013-configure-policies-to-control-federated-user-access.md">在 Lync Server 2013 中配置策略以控制联盟用户访问</a>。
+
 
 
 ## 将外部域添加到允许域列表中
@@ -45,20 +36,11 @@ _**上一次修改主题：** 2012-10-19_
     
       - 在“域名（或 FQDN）”中，键入联盟伙伴域的名称。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>此名称必须是唯一的，并且不能与运行访问边缘服务的服务器的允许域的已有名称相同。该名称的长度不能超过 256 个字符。<br />
-        搜索联盟伙伴域名时执行后缀匹配。例如，如果键入 <strong>contoso.com</strong> ，搜索还将返回域 <strong>it.contoso.com</strong> 。<br />
-        无法同时阻止和允许联盟合作伙伴域。 Lync Server 2013 将阻止此类事件发生，从而不必同步列表。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 此名称必须是唯一的，并且不能与运行访问边缘服务的服务器的允许域的已有名称相同。该名称的长度不能超过 256 个字符。<br />
+        > 搜索联盟伙伴域名时执行后缀匹配。例如，如果键入 <strong>contoso.com</strong> ，搜索还将返回域 <strong>it.contoso.com</strong> 。<br />
+        > 无法同时阻止和允许联盟合作伙伴域。 Lync Server 2013 将阻止此类事件发生，从而不必同步列表。
+        
     
       - 如果要将对此联盟域的访问限制为运行访问边缘服务的特定服务器的用户，请在“访问边缘服务 (FQDN)”中键入运行访问边缘服务的联盟域的服务器的 FQDN。
     

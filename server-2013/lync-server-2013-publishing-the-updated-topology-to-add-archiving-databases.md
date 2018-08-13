@@ -21,18 +21,9 @@ _**上一次修改主题：** 2012-10-01_
 
 1.  在运行 Lync Server 2013 或安装有 Lync Server 管理工具的计算机上，使用为本地 Users 组成员的帐户（或具有同等用户权限的帐户）登录。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以使用为本地 Users 组成员的帐户定义拓扑，但要发布拓扑（向拓扑中添加服务器时需要），您必须使用为“Domain Admins”组和“RTCUniversalServerAdmins”组成员的帐户，且该帐户对您要用于 Lync Server 2013 文件存储的文件共享具有完全控制权限（即读取、写入和修改）（以便拓扑生成器可以配置必需的随机访问控制列表 (DACL)），或者使用具有同等权限的帐户。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 您可以使用为本地 Users 组成员的帐户定义拓扑，但要发布拓扑（向拓扑中添加服务器时需要），您必须使用为“Domain Admins”组和“RTCUniversalServerAdmins”组成员的帐户，且该帐户对您要用于 Lync Server 2013 文件存储的文件共享具有完全控制权限（即读取、写入和修改）（以便拓扑生成器可以配置必需的随机访问控制列表 (DACL)），或者使用具有同等权限的帐户。
+    
 
 
 2.  使用拓扑生成器打开在前面的部分中创建的拓扑。
@@ -43,33 +34,14 @@ _**上一次修改主题：** 2012-10-01_
 
 5.  在“创建数据库”页上，确认已经选择了数据库，然后单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果没有创建数据库所需的相应权限，则可以取消数据库的选择，并且具有相应权限的人可以创建数据库。有关所需的管理员权限的详细信息，请参阅部署文档中的 <a href="lync-server-2013-deployment-permissions-for-sql-server.md">Lync Server 2013 中 SQL Server 的部署权限</a>。<br />
-    只有专用 SQL Server 上的数据库才能使用拓扑生成器进行安装。与其他服务器组件并置的 SQL Server 上的数据库必须通过在该计算机上运行本地安装程序进行安装。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 如果没有创建数据库所需的相应权限，则可以取消数据库的选择，并且具有相应权限的人可以创建数据库。有关所需的管理员权限的详细信息，请参阅部署文档中的 <a href="lync-server-2013-deployment-permissions-for-sql-server.md">Lync Server 2013 中 SQL Server 的部署权限</a>。<br />
+    > 只有专用 SQL Server 上的数据库才能使用拓扑生成器进行安装。与其他服务器组件并置的 SQL Server 上的数据库必须通过在该计算机上运行本地安装程序进行安装。
+    
 
 
 6.  在“发布向导完成”页上，确认已成功发布拓扑，然后单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>发布拓扑后，必须配置存档选项和策略，然后才能存档任何内容。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-configuring-support-for-archiving.md">配置存档支持</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 发布拓扑后，必须配置存档选项和策略，然后才能存档任何内容。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-configuring-support-for-archiving.md">配置存档支持</a>。
 

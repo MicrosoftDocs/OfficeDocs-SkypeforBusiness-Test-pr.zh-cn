@@ -29,6 +29,8 @@ _**上一次修改主题：** 2014-05-29_
 
     $creds=Get-Credential
 
+   &nbsp;
+
     Move-CsUser -Identity username@contoso.com -Target sipfed.online.lync.com -Credential $creds -HostedMigrationOverrideUrl <URL>
 
 为 **HostedMigrationOverrideUrl** 参数指定的 URL 的格式必须为托管迁移服务在其中运行的池的 URL，格式如下：*Https://\<Pool FQDN\>/HostedMigration/hostedmigrationService.svc*。
@@ -57,7 +59,7 @@ _**上一次修改主题：** 2014-05-29_
 
 ## 将用户移至 Lync Online
 
-您可以通过使用带有 –Filter 参数的 [Get-CsUser](get-csuser.md) cmdlet 选择具有分配给用户帐户的特定属性（例如 RegistrarPool）的用户来移动多个用户。然后，您可以将返回的用户通过管道传递到 [Move-CsUser](move-csuser.md) cmdlet，如下面的示例所示。
+您可以通过使用带有 –Filter 参数的 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) cmdlet 选择具有分配给用户帐户的特定属性（例如 RegistrarPool）的用户来移动多个用户。然后，您可以将返回的用户通过管道传递到 [Move-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Move-CsUser) cmdlet，如下面的示例所示。
 
     Get-CsUser -Filter {UserProperty -eq "UserPropertyValue"} | Move-CsUser -Target sipfed.online.lync.com -Credential $creds -HostedMigrationOverrideUrl <URL>
 

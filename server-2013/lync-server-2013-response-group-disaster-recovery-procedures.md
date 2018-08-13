@@ -39,18 +39,8 @@ _**上一次修改主题：** 2016-12-08_
     
         Import-CsRgsConfiguration -Destination "service:ApplicationServer:backup.contoso.com" -FileName "C:\RgsExportPrimary.zip" -ReplaceExistingSettings
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您未替换备份池中的设置，并且无法恢复主池，则主池设置将会丢失。有关详细信息，请参阅 <a href="lync-server-2013-planning-for-response-group-disaster-recovery.md">在 Lync Server 2013 中规划响应组灾难恢复</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 如果您未替换备份池中的设置，并且无法恢复主池，则主池设置将会丢失。有关详细信息，请参阅 <a href="lync-server-2013-planning-for-response-group-disaster-recovery.md">在 Lync Server 2013 中规划响应组灾难恢复</a>。
 
 
 4.  通过显示导入的响应组来验证导入是否成功。导入的响应组仍归主池所有。请执行以下操作：
@@ -99,18 +89,8 @@ _**上一次修改主题：** 2016-12-08_
     
         Get-CsRgsWorkflow -Identity "service:ApplicationServer:<backup pool FQDN>" -ShowAll
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必须使用 –ShowAll 参数或 –Owner 参数。如果没有使用其中任一参数，则导入到备份池的响应组不会在 cmdlet 返回的结果中列出。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 您必须使用 –ShowAll 参数或 –Owner 参数。如果没有使用其中任一参数，则导入到备份池的响应组不会在 cmdlet 返回的结果中列出。
 
 
 5.  通过呼叫导入的响应组并验证呼叫是否正确处理来验证导入是否成功。
@@ -119,18 +99,8 @@ _**上一次修改主题：** 2016-12-08_
 
 7.  像往常一样管理和修改导入的响应组。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>响应组位于备份池中时，您需要使用 Lync Server 命令行管理程序来管理它们。您不能使用 Lync Server 控制面板来管理导入到备份池的响应组。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 响应组位于备份池中时，您需要使用 Lync Server 命令行管理程序来管理它们。您不能使用 Lync Server 控制面板来管理导入到备份池的响应组。
 
 
 8.  在恢复主池并完成故障回复之后，导出已导入备份池的主池响应组。在命令行中键入：
@@ -145,18 +115,9 @@ _**上一次修改主题：** 2016-12-08_
     
         Import-CsRgsConfiguration -Destination "service:ApplicationServer:primary.contoso.com" -OverwriteOwner -FileName "C:\RgsExportPrimaryUpdated.zip"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果在恢复期间重建池，则无论完全限定域名 (FQDN) 相同还是不同，您都需要使用 –OverwriteOwner 参数。根据经验法则，在将响应组导回到主池时，您可以始终使用 –OverwriteOwner 参数。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 如果在恢复期间重建池，则无论完全限定域名 (FQDN) 相同还是不同，您都需要使用 –OverwriteOwner 参数。根据经验法则，在将响应组导回到主池时，您可以始终使用 –OverwriteOwner 参数。
+    
     
     如果您部署一个新池（具有相同或不同的 FQDN）来替换主池，并且想要针对新池使用备份池中的应用程序级别设置，请包括 –ReplaceExistingSettings 参数。在命令行中键入：
     
@@ -166,18 +127,8 @@ _**上一次修改主题：** 2016-12-08_
     
         Import-CsRgsConfiguration -Destination "service:ApplicationServer:newprimary.contoso.com" -OverwriteOwner -FileName "C:\RgsExportPrimaryUpdated.zip" -ReplaceExistingSettings
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您不想将新池的应用程序级别设置和默认保持音乐音频文件替换为备份池中的设置，则新池将使用默认应用程序级别设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果您不想将新池的应用程序级别设置和默认保持音乐音频文件替换为备份池中的设置，则新池将使用默认应用程序级别设置。
 
 
 10. 通过显示导入的响应组配置来验证导回至主池是否成功。请执行以下操作：
@@ -232,16 +183,7 @@ _**上一次修改主题：** 2016-12-08_
     
         Export-CsRgsConfiguration -Source "service:ApplicationServer:backup.contoso.com" -Owner "service:ApplicationServer:primary.contoso.com" -FileName "C:\RgsExportPrimaryUpdated.zip" -RemoveExportedConfiguration
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此步骤将使用导出的配置创建新文件，然后将该文件从备份池中删除。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 此步骤将使用导出的配置创建新文件，然后将该文件从备份池中删除。
+    
 

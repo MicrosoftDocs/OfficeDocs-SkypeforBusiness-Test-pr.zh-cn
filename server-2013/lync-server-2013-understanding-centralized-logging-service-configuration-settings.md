@@ -25,18 +25,8 @@ _**上一次修改主题：** 2015-03-09_
 
     Get-CsClsConfiguration
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以缩小或扩大返回的配置设置的作用域，方法是定义 <code>-Identity</code> 和一个作用域（如“Site:Redmond”）以仅返回 Redmond 站点的 CsClsConfiguration。如果要获得有关给定部分的配置的详细信息，则可以在输出和其他 Windows PowerShell cmdlet 之间建立管道。例如，若要获得有关站点“Redmond”的配置中定义的方案的详细信息，请键入：<code>Get-CsClsConfiguration -Identity &quot;site:Redmond&quot; | Select-Object -ExpandPropery Scenarios</code></td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 您可以缩小或扩大返回的配置设置的作用域，方法是定义 <code>-Identity</code> 和一个作用域（如“Site:Redmond”）以仅返回 Redmond 站点的 CsClsConfiguration。如果要获得有关给定部分的配置的详细信息，则可以在输出和其他 Windows PowerShell cmdlet 之间建立管道。例如，若要获得有关站点“Redmond”的配置中定义的方案的详细信息，请键入：<code>Get-CsClsConfiguration -Identity &quot;site:Redmond&quot; | Select-Object -ExpandPropery Scenarios</code>
 
 
 ![来自 Get-CsClsConfiguration 的示例输出。](images/JJ688138.23f98ddc-fc48-499a-b6c5-752611f2a0b0(OCS.15).jpg "来自 Get-CsClsConfiguration 的示例输出。")
@@ -132,8 +122,8 @@ _**上一次修改主题：** 2015-03-09_
 
 #### 其他资源
 
-[Set-CsClsConfiguration](set-csclsconfiguration.md)  
-[Remove-CsClsConfiguration](remove-csclsconfiguration.md)  
-[New-CsClsConfiguration](new-csclsconfiguration.md)  
-[Get-CsClsConfiguration](get-csclsconfiguration.md)
+[Set-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration)  
+[Remove-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsClsConfiguration)  
+[New-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClsConfiguration)  
+[Get-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsConfiguration)
 

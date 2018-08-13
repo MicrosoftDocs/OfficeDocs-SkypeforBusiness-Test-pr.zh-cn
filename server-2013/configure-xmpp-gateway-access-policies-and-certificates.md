@@ -23,18 +23,9 @@ XMPP 联盟可根据可扩展消息传递和状态协议 (XMPP) 定义外部部�
 
 当您将策略配置为支持可扩展消息传递和状态协议 (XMPP) 联盟伙伴时，这些策略适用于 XMPP 联盟域的用户，但不适用于会话初始协议 (SIP) 即时消息 (IM) 服务提供者（例如，Windows Live）或 SIP 联盟域的用户。您可以针对要允许您的用户添加联系人并与之进行通信的每个 XMPP 联盟域配置 XMPP 联盟伙伴。在制定好这些策略之后，您需要配置 XMPP 网关证书。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要开始 XMPP 网关迁移，您需要部署 Lync Server 2013 XMPP 网关，并配置访问策略以启用 Lync Server 2013 XMPP 网关的用户。在执行这些步骤之前，必须将所有用户都移至 Lync Server 2013 部署。有关详细信息，请参阅 <a href="configure-xmpp-gateway-on-lync-server-2013.md">在 Lync Server 2013 上配置 XMPP 网关</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 要开始 XMPP 网关迁移，您需要部署 Lync Server 2013 XMPP 网关，并配置访问策略以启用 Lync Server 2013 XMPP 网关的用户。在执行这些步骤之前，必须将所有用户都移至 Lync Server 2013 部署。有关详细信息，请参阅 <a href="configure-xmpp-gateway-on-lync-server-2013.md">在 Lync Server 2013 上配置 XMPP 网关</a>。
+
 
 
 ## 配置外部访问策略以启用 Lync Server 2013 XMPP 网关的用户

@@ -29,18 +29,9 @@ _**上一次修改主题：** 2016-12-08_
 
 Lync Server 架构扩展会在所有域中进行复制，因此会影响网络流量。请在网络利用率较低时运行架构准备。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果需要将 Microsoft? Office Communicator Mobile 2007 R2 for Java 和 Microsoft? Office Communicator Mobile for Nokia 1.0 移动客户端的支持添加到 Lync Server 2013 部署中，您需要在 Lync Server 2013 安装期间为 Microsoft Office Communications Server 2007 R2 准备 Active Directory 架构。有关必要的软件和文档，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=207172%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=207172&amp;clcid=0x804</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果需要将 Microsoft? Office Communicator Mobile 2007 R2 for Java 和 Microsoft? Office Communicator Mobile for Nokia 1.0 移动客户端的支持添加到 Lync Server 2013 部署中，您需要在 Lync Server 2013 安装期间为 Microsoft Office Communications Server 2007 R2 准备 Active Directory 架构。有关必要的软件和文档，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=207172%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=207172&amp;clcid=0x804</a>。
+
 
 
 ## ADSI Edit

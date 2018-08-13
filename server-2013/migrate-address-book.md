@@ -31,18 +31,8 @@ _**上一次修改主题：** 2012-10-09_
 
 如果在 Lync Server 2010 环境中自定义了通讯簿规范化规则，则必须将自定义的规则迁移到试点池。如果未自定义通讯簿规范化规则，则通讯簿服务没有要迁移的内容。 Lync Server 2013 的默认规范化规则与 Lync Server 2010 的默认规则相同。请按照本节后面的过程来迁移自定义规范化规则。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的组织使用远程呼叫控制并且您自定义了通讯簿规范化规则，则必须首先执行本主题中的过程，然后才能使用远程呼叫控制。要执行该过程，需要具有 RTCUniversalServerAdmins 组成员的身份或同等权限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您的组织使用远程呼叫控制并且您自定义了通讯簿规范化规则，则必须首先执行本主题中的过程，然后才能使用远程呼叫控制。要执行该过程，需要具有 RTCUniversalServerAdmins 组成员的身份或同等权限。
 
 
 **UseNormalizationRules 设置为 False**
@@ -53,18 +43,8 @@ _**上一次修改主题：** 2012-10-09_
 
 1.  在通讯簿共享文件夹的根目录下查找 Company\_Phone\_Number\_Normalization\_Rules.txt 文件，并将它复制到 Lync Server 2013 试点池中通讯簿共享文件夹的根目录下。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>示例“通讯簿服务”规范化规则已安装在您的 ABS Web 组件文件目录中。路径为 <strong>$installedDriveLetter:\Program Files\Microsoft Lync Server 2013\Web Components\Address Book Files\Files\ Sample_Company_Phone_Number_Normalization_Rules.txt</strong>。可以将此文件复制到通讯簿共享文件夹的根目录，并将其重命名为 <strong>Company_Phone_Number_Normalization_Rules.txt</strong>。例如， <strong>$serverX</strong> 中共享的通讯簿，路径将类似于：<strong>\\$serverX \LyncFileShare\2-WebServices-1\ABFiles</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 示例“通讯簿服务”规范化规则已安装在您的 ABS Web 组件文件目录中。路径为 <strong>$installedDriveLetter:\Program Files\Microsoft Lync Server 2013\Web Components\Address Book Files\Files\ Sample_Company_Phone_Number_Normalization_Rules.txt</strong>。可以将此文件复制到通讯簿共享文件夹的根目录，并将其重命名为 <strong>Company_Phone_Number_Normalization_Rules.txt</strong>。例如， <strong>$serverX</strong> 中共享的通讯簿，路径将类似于：<strong>\\$serverX \LyncFileShare\2-WebServices-1\ABFiles</strong>。
 
 
 2.  使用文本编辑器（如“记事本”）打开 Company\_Phone\_Number\_Normalization\_Rules.txt 文件。

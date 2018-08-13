@@ -41,35 +41,16 @@ _**上一次修改主题：** 2017-03-09_
     
     三个公用 IP 地址将分配到此网络适配器，例如为访问边缘分配 131.107.155.10，为 Web 会议边缘分配 131.107.155.20，为 AV 边缘分配 131.107.155.30。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>虽然可以对所有三个边缘服务接口使用一个 IP 地址，但不建议这样做。虽然这样能节省 IP 地址，但每个服务需要不同的端口号。默认端口号为 443/TCP，这将确保大多数远程防火墙允许通信。针对访问边缘、Web 会议边缘和 AV 边缘分别将端口值更改为 5061/TCP、444/TCP 和 443/TCP（举例而言）可能导致远程用户遇到问题，即，他们所用的防火墙不允许通过 5061/TCP 和 444/TCP 进行通信。此外，使用三个不同的 IP 地址将使故障排除更加轻松，因为这样能筛选 IP 地址。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 虽然可以对所有三个边缘服务接口使用一个 IP 地址，但不建议这样做。虽然这样能节省 IP 地址，但每个服务需要不同的端口号。默认端口号为 443/TCP，这将确保大多数远程防火墙允许通信。针对访问边缘、Web 会议边缘和 AV 边缘分别将端口值更改为 5061/TCP、444/TCP 和 443/TCP（举例而言）可能导致远程用户遇到问题，即，他们所用的防火墙不允许通过 5061/TCP 和 444/TCP 进行通信。此外，使用三个不同的 IP 地址将使故障排除更加轻松，因为这样能筛选 IP 地址。
+    
     
     访问边缘公用 IP 地址是默认网关设置为公共路由器的主要 IP 地址 (131.107.155.1)。
     
     Web 会议和 A/V 边缘公用 IP 地址是 Windows Server 中 **本地区域连接属性**的 **Internet 协议版本 4 (TCP/IPv4)** 和 **Internet 协议版本 6 (TCP/IPv6)** 属性的 **高级** 部分中的其他 IP 地址。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用两个网络适配器配置 边缘服务器是两个选项之一。另一个选项是对 边缘服务器的内部端使用一个网络适配器，对该服务器的外部端使用三个网络适配器。此选项的主要优点是每个 边缘服务器服务具有不同的网络适配器，当需要进行故障排除时，这就可能实现更简明的数据收集</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 使用两个网络适配器配置 边缘服务器是两个选项之一。另一个选项是对 边缘服务器的内部端使用一个网络适配器，对该服务器的外部端使用三个网络适配器。此选项的主要优点是每个 边缘服务器服务具有不同的网络适配器，当需要进行故障排除时，这就可能实现更简明的数据收集
 
 
 ### 单个合并边缘所需的 DNS 记录和公用 IP 地址（示例）
@@ -130,18 +111,8 @@ _**上一次修改主题：** 2017-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>上表中列出的记录以 <em>.net</em> 扩展名或 <em>.com</em> 扩展名显示，以便在未使用裂脑 DNS 时突出显示需要驻留这些记录的区域。如果使用裂脑 DNS，则所有记录将位于同一区域中，唯一的区别在于它们是位于内部版本还是外部版本。有关详细信息，请参阅<a href="lync-server-2013-determine-dns-requirements.md">确定 Lync Server 2013 的 DNS 要求</a>中的“裂脑 DNS”。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 上表中列出的记录以 <em>.net</em> 扩展名或 <em>.com</em> 扩展名显示，以便在未使用裂脑 DNS 时突出显示需要驻留这些记录的区域。如果使用裂脑 DNS，则所有记录将位于同一区域中，唯一的区别在于它们是位于内部版本还是外部版本。有关详细信息，请参阅<a href="lync-server-2013-determine-dns-requirements.md">确定 Lync Server 2013 的 DNS 要求</a>中的“裂脑 DNS”。
 
 
 ## 联盟所需的记录
@@ -168,19 +139,10 @@ _**上一次修改主题：** 2017-03-09_
 <td><p>_sipfederationtls._tcp.contoso.com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>用于实现您与其他潜在联盟伙伴的称为“允许的 SIP 域”的联盟（在以前版本中称为增强联盟）的自动 DNS 发现所需的 SIP 访问边缘外部接口。根据需要对包含启用了 Lync 的用户的所有 SIP 域重复</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 SRV 记录是移动性和推送通知交换所必需的</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]
+> 此 SRV 记录是移动性和推送通知交换所必需的
 
 </div></td>
 </tr>

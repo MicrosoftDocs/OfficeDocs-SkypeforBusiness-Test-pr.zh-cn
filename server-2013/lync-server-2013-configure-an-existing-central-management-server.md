@@ -23,16 +23,7 @@ _**上一次修改主题：** 2013-02-21_
 
 2.  使用 **Update-CsAdminRole** cmdlet 更新存储在 中央管理服务器中的基于角色的访问控制 (RBAC) 角色。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>除非出错，否则不应有任何输出。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 除非出错，否则不应有任何输出。
+    
 

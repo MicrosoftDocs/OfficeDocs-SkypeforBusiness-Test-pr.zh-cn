@@ -53,16 +53,6 @@ _**上一次修改主题：** 2013-02-19_
     
       - 按照向导中的步骤操作，直到出现“创建镜像数据库”提示。选择要安装的数据库并完成此过程。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>可使用 <strong>Install-CsMirrorDatabase</strong> cmdlet 配置镜像，而不是运行拓扑生成器。有关详细信息，请参阅 Lync Server 命令行管理程序文档。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 可使用 <strong>Install-CsMirrorDatabase</strong> cmdlet 配置镜像，而不是运行拓扑生成器。有关详细信息，请参阅 Lync Server 命令行管理程序文档。
 

@@ -33,20 +33,11 @@ _**上一次修改主题：** 2012-09-08_
     
       - 在“域名（或 FQDN）”中，键入要阻止的联盟伙伴域的名称。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>该名称的长度不能超过 256 个字符。<br />
-        搜索联盟伙伴域名时执行后缀匹配。例如，如果键入 <strong>contoso.com</strong> ，搜索还将返回域 <strong>it.contoso.com</strong> 。<br />
-        无法同时阻止和允许联盟合作伙伴域。 Lync Server 2013 将阻止此类事件发生，从而不必同步列表。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 该名称的长度不能超过 256 个字符。<br />
+        > 搜索联盟伙伴域名时执行后缀匹配。例如，如果键入 <strong>contoso.com</strong> ，搜索还将返回域 <strong>it.contoso.com</strong> 。<br />
+        > 无法同时阻止和允许联盟合作伙伴域。 Lync Server 2013 将阻止此类事件发生，从而不必同步列表。
+        
     
       - （可选）在“注释”中，键入要与其他系统管理员共享的有关此配置的信息。
 

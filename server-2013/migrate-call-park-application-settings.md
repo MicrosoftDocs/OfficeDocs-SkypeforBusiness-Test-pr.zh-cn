@@ -19,6 +19,8 @@ _**上一次修改主题：** 2012-10-19_
 
     Xcopy <Source: Lync Server 2010 Pool CPS File Store Path> <Destination: Lync Server 2013 Pool CPS File Store Path>
 
+   &nbsp;
+
     Example usage:  Xcopy "<Lync Server 2010 File Store Path>\OcsFileStore\coX-ApplicationServer-X\AppServerFiles\CPS\"  "<Lync Server 2013 File Store Path>\OcsFileStore\coX-ApplicationServer-X\AppServerFiles\CPS\" 
 
 将所有自定义音频文件复制到 Lync Server 2013 文件存储后，必须配置 Lync Server 2013 池的呼叫寄存应用程序设置，且必须将与 Lync Server 2010 池关联的呼叫寄存轨道范围重新分配给 Lync Server 2013 池。
@@ -31,18 +33,8 @@ _**上一次修改主题：** 2012-10-19_
 
 2.  在命令行中键入：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的 Lync Server 2013 呼叫寄存应用程序设置与旧 Lync Server 2010 设置相同，则可以跳过运行此步骤。如果 Lync Server 2013 和 Lync Server 2010 环境的呼叫寄存应用程序设置不同，请使用下面的 cmdlet 作为模板来更新这些更改。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 如果您的 Lync Server 2013 呼叫寄存应用程序设置与旧 Lync Server 2010 设置相同，则可以跳过运行此步骤。如果 Lync Server 2013 和 Lync Server 2010 环境的呼叫寄存应用程序设置不同，请使用下面的 cmdlet 作为模板来更新这些更改。
     
         Set-CsCpsConfiguration -Identity "<LS2013 Call Park Service ID>" -CallPickupTimeoutThreshold "<LS2010 CPS TimeSpan>" -EnableMusicOnHold "<LS2010 CPS value>" -MaxCallPickupAttempts "<LS2010 CPS pickup attempts>" -OnTimeoutURI "<LS2010 CPS timeout URI>"
 

@@ -17,19 +17,10 @@ _**上一次修改主题：** 2013-02-23_
 
 如果已为用户启用 Lync Server 2013，并且已为驻留在 Lync Server 2013 上的用户创建了一个或多个用户存档策略，则可以通过为特定用户或用户组应用相应的策略来实现对其的存档支持。例如，如果创建支持内部通信存档的策略，则可以将其应用于至少一个用户或用户组以支持该用户的 Lync Server 2013 通信的存档。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果为部署启用 Microsoft Exchange 集成，Exchange 就地保留策略将控制是否为驻留在 Exchange 2013 上且其邮箱使用就地保留的用户启用存档。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">使用 Exchange 服务器集成设置存档的策略</a>。<br />
-您应在存档配置中指定所有适当的选项，然后再启用存档。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md">在 Lync Server 2013 中管理组织、站点和池的存档配置选项</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果为部署启用 Microsoft Exchange 集成，Exchange 就地保留策略将控制是否为驻留在 Exchange 2013 上且其邮箱使用就地保留的用户启用存档。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">使用 Exchange 服务器集成设置存档的策略</a>。<br />
+> 您应在存档配置中指定所有适当的选项，然后再启用存档。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md">在 Lync Server 2013 中管理组织、站点和池的存档配置选项</a>。
+
 
 
 使用本主题中的过程将以前创建的存档用户策略应用于一个或多个用户帐户或用户组。
@@ -46,18 +37,9 @@ _**上一次修改主题：** 2013-02-23_
 
 5.  在“编辑 Lync Server 用户”中的“存档策略”下，选择要应用的存档用户策略。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>“&lt;自动&gt;”设置将应用默认服务器安装设置。服务器将自动应用这些设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > “&lt;自动&gt;”设置将应用默认服务器安装设置。服务器将自动应用这些设置。
+    
 
 
 6.  单击“提交”。
@@ -74,7 +56,7 @@ _**上一次修改主题：** 2013-02-23_
 
 ## 向多个用户分配每用户存档策略
 
-  - 此命令向帐户驻留在注册器池 atl-cs-001.litwareinc.com 的所有用户分配每用户存档策略 RedmondArchivingPolicy。有关此命令中使用的 Filter 参数的详细信息，请参阅 [Get-CsUser](get-csuser.md) cmdlet 文档。
+  - 此命令向帐户驻留在注册器池 atl-cs-001.litwareinc.com 的所有用户分配每用户存档策略 RedmondArchivingPolicy。有关此命令中使用的 Filter 参数的详细信息，请参阅 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) cmdlet 文档。
     
         Get-CsUser -Filter {RegistrarPool -eq "atl-cs-001.litwareinc.com"} | Grant-CsArchivingPolicy -PolicyName "RedmondArchivingPolicy"
 
@@ -84,7 +66,7 @@ _**上一次修改主题：** 2013-02-23_
     
         Grant-CsArchivingPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关详细信息，请参阅 [Grant-CsArchivingPolicy](grant-csarchivingpolicy.md) cmdlet 文档。
+有关详细信息，请参阅 [Grant-CsArchivingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsArchivingPolicy) cmdlet 文档。
 
 ## 另请参阅
 

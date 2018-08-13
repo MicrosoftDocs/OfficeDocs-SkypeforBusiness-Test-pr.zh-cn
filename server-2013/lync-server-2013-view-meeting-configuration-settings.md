@@ -60,5 +60,5 @@ _**上一次修改主题：** 2013-02-23_
         CustomFooterText                :
         AllowConferenceRecording        : True
 
-有关详细信息，请参阅 [Get-CsMeetingConfiguration](get-csmeetingconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Get-CsMeetingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsMeetingConfiguration) cmdlet 的帮助主题。
 

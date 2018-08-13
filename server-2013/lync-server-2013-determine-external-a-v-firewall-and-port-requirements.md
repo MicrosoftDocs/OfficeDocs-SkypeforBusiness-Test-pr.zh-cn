@@ -143,18 +143,8 @@ _**上一次修改主题：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Office Communications Server 2007 所需的配置略有不同。TCP 和 UDP 的 50,000-59,999 端口范围必须对入站和出站方向开放。此要求仅针对 Office Communicator 2007。 Office Communications Server 2007 R2、 Lync Server 2010 和 Lync Server 2013 只要求 TCP 范围 50,000-59,999 对出站方向开放。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Microsoft Office Communications Server 2007 所需的配置略有不同。TCP 和 UDP 的 50,000-59,999 端口范围必须对入站和出站方向开放。此要求仅针对 Office Communicator 2007。 Office Communications Server 2007 R2、 Lync Server 2010 和 Lync Server 2013 只要求 TCP 范围 50,000-59,999 对出站方向开放。
 
 
 ## 外部用户访问的 NAT 要求
@@ -163,18 +153,8 @@ NAT 过去通常是路由功能，但可以为 NAT 配置较新的设备（如�
 
 Lync Server 2013通信软件对往返于边缘内部接口的流量不支持 NAT，但对边缘外部接口支持 NAT，需要以下 NAT 行为。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须为传入和传出流量配置对称 NAT。对称 NAT 就是本主题中描述的 NAT 技术。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 必须为传入和传出流量配置对称 NAT。对称 NAT 就是本主题中描述的 NAT 技术。
 
 
 本文档使用表和图形中的首字母缩写词 ChangeDST 和 ChangeSRC 来定义以下所需行为：

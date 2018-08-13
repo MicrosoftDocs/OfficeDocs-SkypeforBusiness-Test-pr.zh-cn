@@ -33,18 +33,9 @@ Lync 2013 for Windows Phone 是 Windows Phone Marketplace 中提供的一种用�
 
 3.  点击空字段，输入 Exchange Web 服务的完全限定域名 (FQDN) 或 URL。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以指定 Exchange Web 服务服务器的完全限定域名 (FQDN) 或完整 URL。如果您指定 FQDN，则自动添加协议 (https://) 和 Exchange Web 服务路径 (/ews/exchange.asmx)。如果您的 Exchange Web 服务路径不同，您可以指定完整 URL。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以指定 Exchange Web 服务服务器的完全限定域名 (FQDN) 或完整 URL。如果您指定 FQDN，则自动添加协议 (https://) 和 Exchange Web 服务路径 (/ews/exchange.asmx)。如果您的 Exchange Web 服务路径不同，您可以指定完整 URL。
+    
 
 
 4.  关闭该屏幕。

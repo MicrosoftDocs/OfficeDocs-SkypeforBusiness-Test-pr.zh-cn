@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-02-23_
 
 按照以下步骤删除个人标识号 (PIN) 策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>无法删除全局 PIN 策略。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 无法删除全局 PIN 策略。
+
 
 
 ## 在 Lync Server 2013 控制面板中删除 PIN 策略
@@ -67,5 +58,5 @@ _**上一次修改主题：** 2013-02-23_
     
         et-CsPinPolicy | Where-Object {$_.AllowCommonPatterns -eq $True} | Remove-CsPinPolicy
 
-有关详细信息，请参阅 [Remove-CsPinPolicy](remove-cspinpolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Remove-CsPinPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsPinPolicy) cmdlet 的帮助主题。
 

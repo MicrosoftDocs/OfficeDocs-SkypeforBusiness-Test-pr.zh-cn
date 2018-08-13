@@ -27,18 +27,8 @@ _**上一次修改主题：** 2013-02-23_
 
 4.  在“区域链接”页上，单击要查看的区域链接。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您一次只能查看一个区域链接的相关信息。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 您一次只能查看一个区域链接的相关信息。
 
 
 5.  从“编辑”菜单中选择“显示详细信息”。
@@ -61,7 +51,7 @@ _**上一次修改主题：** 2013-02-23_
         NetworkRegionID1    : Pacific Northwest
         NetworkRegionID2    : California
 
-有关详细信息，请参阅[Get-CsNetworkRegionLink](get-csnetworkregionlink.md)。
+有关详细信息，请参阅[Get-CsNetworkRegionLink](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkRegionLink)。
 
 ## 另请参阅
 

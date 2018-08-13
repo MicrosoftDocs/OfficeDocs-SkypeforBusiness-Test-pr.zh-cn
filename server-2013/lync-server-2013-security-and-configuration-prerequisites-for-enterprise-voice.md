@@ -25,40 +25,22 @@ _**上一次修改主题：** 2012-10-18_
 
   - 执行配置任务的管理员必须具有足够的权限：
     
-      - **CsVoiceAdministrator：**此管理员角色可以执行语音配置任务、管理语音应用程序以及将语音策略分配给最终用户。
+      - **CsVoiceAdministrator：** 此管理员角色可以执行语音配置任务、管理语音应用程序以及将语音策略分配给最终用户。
     
-      - **CsUserAdministrator：**此管理员角色可以管理用户属性，如为用户启用企业语音。此管理员角色还可以分配每用户策略（存档策略例外）、移动用户以及管理公用区域电话和模拟设备。
+      - **CsUserAdministrator：** 此管理员角色可以管理用户属性，如为用户启用企业语音。此管理员角色还可以分配每用户策略（存档策略例外）、移动用户以及管理公用区域电话和模拟设备。
     
-      - **CsAdministrator：**此管理员角色可以执行 CsVoiceAdministrator 和 CsUserAdministrator 的所有任务。
+      - **CsAdministrator：** 此管理员角色可以执行 CsVoiceAdministrator 和 CsUserAdministrator 的所有任务。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>通过委派，无须开放对资源的多余访问权限，即可让更多管理员参与 Lync Server 的部署</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 通过委派，无须开放对资源的多余访问权限，即可让更多管理员参与 Lync Server 的部署
+    
 
 
   - 使用 Microsoft 或第三方证书颁发机构 (CA) 基础结构，部署并配置了管理密钥基础结构 (MKI)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关 Lync Server 中证书要求的详细信息，请参阅规划文档中的<a href="lync-server-2013-certificate-infrastructure-requirements.md">Lync Server 2013 的证书基础结构要求</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 有关 Lync Server 中证书要求的详细信息，请参阅规划文档中的<a href="lync-server-2013-certificate-infrastructure-requirements.md">Lync Server 2013 的证书基础结构要求</a>。
+    
 
 
 ## 用户配置
@@ -67,18 +49,9 @@ _**上一次修改主题：** 2012-10-18_
 
 如果此时要执行全新的企业语音工作负荷部署，则在开始部署过程之前，为计划要对其启用企业语音的每个用户指定一个主电话号码。作为管理员，应确保此号码是唯一的。在实现之前，必须对所有主电话号码进行规范化（使用正确的格式），并使用 Lync Server 控制面板将其复制到每个用户的“线路 URI”属性。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关企业语音部署所需的主电话号码示例，请参阅规划文档中<a href="lync-server-2013-dial-plans-and-normalization-rules.md">Lync Server 2013 中的拨号计划和规范化规则</a>的<a href="lync-server-2013-dial-plans-and-normalization-rules.md">Lync Server 2013 中的拨号计划和规范化规则</a>一节。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关企业语音部署所需的主电话号码示例，请参阅规划文档中<a href="lync-server-2013-dial-plans-and-normalization-rules.md">Lync Server 2013 中的拨号计划和规范化规则</a>的<a href="lync-server-2013-dial-plans-and-normalization-rules.md">Lync Server 2013 中的拨号计划和规范化规则</a>一节。
+
 
 
 ## 后续步骤：安装文件或配置 PSTN 连接

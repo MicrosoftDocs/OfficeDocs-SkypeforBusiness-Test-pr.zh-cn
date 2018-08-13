@@ -27,32 +27,13 @@ Lync Server 2013 支持用于所有 边缘服务器服务的 IPv6 寻址。如�
 
 边缘服务器引入了完全集成的 XMPP 代理（部署在边缘服务器上）和 XMPP 网关（部署在前端服务器上）。可将 XMPP 联盟作为可选组件来部署。添加和配置 XMPP 代理和 XMPP 网关将允许 Microsoft Lync 2013 用户从基于 XMPP 的合作伙伴中为即时消息 (IM) 和状态添加联系人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当前， 边缘服务器中的 XMPP 服务只在 Lync Server 客户端与基于 XMPP 的联系人之间提供 IM 和状态。此外，只在一个站点中承载 XMPP。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 当前， 边缘服务器中的 XMPP 服务只在 Lync Server 客户端与基于 XMPP 的联系人之间提供 IM 和状态。此外，只在一个站点中承载 XMPP。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 已测试 Lync Server 2013 的 XMPP 功能，并且支持该功能与 Google Talk 进行即时消息传递联盟。对于任何其他 XMPP 系统，请与第三方供应商联系，以确认它们是否支持与 Lync Server 2013 联盟以及获取任何部署或疑难解答建议。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> Microsoft 已测试 Lync Server 2013 的 XMPP 功能，并且支持该功能与 Google Talk 进行即时消息传递联盟。对于任何其他 XMPP 系统，请与第三方供应商联系，以确认它们是否支持与 Lync Server 2013 联盟以及获取任何部署或疑难解答建议。
 
 
 ## 对回滚音频/视频身份验证和服务器到服务器身份验证证书的支持
@@ -63,24 +44,14 @@ Lync Server 2013 支持用于所有 边缘服务器服务的 IPv6 寻址。如�
 
 服务器到服务器身份验证由请求并应用于部署中所有服务器的全局证书管理。此证书负责验证 Lync Server 2013 中服务器的身份以及验证 Exchange 2013 和 Microsoft SharePoint Server 2013 的身份。有关服务器到服务器身份验证的工作原理的详细信息，请参阅 [在 Lync Server 2013 中管理服务器到服务器身份验证 (Oauth) 和合作伙伴应用程序](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md)。音频/视频身份验证过程和服务器到服务器身份验证过程之间一个非常重要的差异是身份验证或令牌的生存期。对于音频/视频身份验证，身份验证将在 8 小时之后过期。服务器到服务器身份验证的生存期为 24 小时。您必须针对每种证书类型进行相应规划。
 
-Lync Server 2013 的新增功能是在当前证书过期前提供替换的音频/视频身份验证证书和服务器到服务器身份验证证书。之后将使用新证书生成新的令牌或新的身份验证请求，但保留旧证书来验证当前会话和身份验证。此功能适用于有效阻止令牌和证书过期导致的几乎所有故障。有关此功能以及其配置方式的详细信息，请参阅 [在 Set-CsCertificate 中使用滚动分期 AV 和 OAuth 证书](lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-set-cscertificate.md)
+Lync Server 2013 的新增功能是在当前证书过期前提供替换的音频/视频身份验证证书和服务器到服务器身份验证证书。之后将使用新证书生成新的令牌或新的身份验证请求，但保留旧证书来验证当前会话和身份验证。此功能适用于有效阻止令牌和证书过期导致的几乎所有故障。有关此功能以及其配置方式的详细信息，请参阅 [在 Set-CsCertificate 中使用滚动分期 AV 和 OAuth 证书](lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCertificate)
 
 ## 减少对基于 Cookie 的关联的依赖
 
 在之前版本的 Lync Server 和 Office Communications Server 中，基于 Cookie 的关联由 Web 服务用于确保维持客户端和 Web 服务会话的状态。 Lync Server 2013 Web 服务使用内置关联机制来评估基于 Cookie 的关联的大部分要求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在将所有客户端迁移到即将到来的 Microsoft Lync Mobile 客户端之前， Microsoft Lync 2010 Mobile 客户端必须使用基于 Cookie 的关联并且需要配置基于 Cookie 的关联（尚未确定发布日期）。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 在将所有客户端迁移到即将到来的 Microsoft Lync Mobile 客户端之前， Microsoft Lync 2010 Mobile 客户端必须使用基于 Cookie 的关联并且需要配置基于 Cookie 的关联（尚未确定发布日期）。
 
 
 有关 Lync Server 2013 中基于 Cookie 的关联的详细信息，请参阅 [Lync Server 2013 中外部用户访问所需的组件](lync-server-2013-components-required-for-external-user-access.md)。
@@ -93,18 +64,9 @@ Lync Server 2013 中的自动发现功能使客户端可查找可用于通信的
 
 在 2011 年 11 月版的 Lync Server 2010 的累积更新中引入，Lync Server 2013 中的 Mobility Service 允许使用受支持的 Apple iOS、Android、Windows Phone 运行 Lync Mobile 的移动电话和平板设备或 Nokia 移动设备执行发送和接收即时消息、查看联系人和查看状态等活动。此外，移动设备还支持某些企业语音功能，例如，“单击加入会议”、“单位电话呼叫”、“一号通”、“语音邮件”和“错过的呼叫通知”。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Mobility Service 使用反向代理和在前端服务器上部署的已发布服务。无需对边缘服务器进行任何更改。至少需要来自运行 Lync Server 访问边缘服务的服务器的出站 SIP/TCP/5061。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Mobility Service 使用反向代理和在前端服务器上部署的已发布服务。无需对边缘服务器进行任何更改。至少需要来自运行 Lync Server 访问边缘服务的服务器的出站 SIP/TCP/5061。
+
 
 
 ## 控制器角色为可选角色

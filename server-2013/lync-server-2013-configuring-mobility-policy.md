@@ -35,18 +35,9 @@ Lync Server 2013 提供了移动策略，这些策略确定谁可以使用移动
 
   - 必须为用户分配已将“EnableOutsideVoice”选项设置为 True 的移动策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>未启用企业语音的用户可以使用其移动设备来发出 Lync 到 Lync IP 语音 (VoIP) 呼叫，也可以在其移动设备上使用“单击以加入”链接来加入会议（如果您为这些用户分配了语音策略的适当选项）。有关详细信息，请参阅<a href="lync-server-2013-defining-your-mobility-requirements.md">定义您的 Lync Server 2013 移动要求</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 未启用企业语音的用户可以使用其移动设备来发出 Lync 到 Lync IP 语音 (VoIP) 呼叫，也可以在其移动设备上使用“单击以加入”链接来加入会议（如果您为这些用户分配了语音策略的适当选项）。有关详细信息，请参阅<a href="lync-server-2013-defining-your-mobility-requirements.md">定义您的 Lync Server 2013 移动要求</a>。
+
 
 
 有关为用户启用 Lync Server 2013 的详细信息，请参阅 [禁用或重新启用 Lync Server 的用户帐户](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md)。有关为用户启用 企业语音的详细信息，请参阅 [在 Lync Server 2013 中为用户启用企业语音](lync-server-2013-enable-users-for-enterprise-voice.md)。有关设置语音策略选项的详细信息，请参阅 [在 Lync Server 2013 中修改语音策略和配置 PSTN 用法记录](lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md)。
@@ -61,18 +52,9 @@ Lync Server 2013 提供了移动策略，这些策略确定谁可以使用移动
     
         Set-CsMobilityPolicy -EnableMobility $False -EnableOutsideVoice $False
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可禁用单位电话呼叫功能，而不禁用对移动功能的访问。但是，您无法在不禁用单位电话呼叫功能的情况下禁用移动功能。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可禁用单位电话呼叫功能，而不禁用对移动功能的访问。但是，您无法在不禁用单位电话呼叫功能的情况下禁用移动功能。
+    
 
 
 ## 按网站修改移动策略
@@ -117,9 +99,9 @@ Lync Server 2013 提供了移动策略，这些策略确定谁可以使用移动
 
 #### 其他资源
 
-[New-CsMobilityPolicy](new-csmobilitypolicy.md)  
-[Set-CsMobilityPolicy](set-csmobilitypolicy.md)  
-[Get-CsMobilityPolicy](get-csmobilitypolicy.md)  
-[Grant-CsMobilityPolicy](grant-csmobilitypolicy.md)  
-[Remove-CsMobilityPolicy](remove-csmobilitypolicy.md)
+[New-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsMobilityPolicy)  
+[Set-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsMobilityPolicy)  
+[Get-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsMobilityPolicy)  
+[Grant-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsMobilityPolicy)  
+[Remove-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsMobilityPolicy)
 

@@ -25,18 +25,8 @@ _**上一次修改主题：** 2012-10-06_
 
     New-CsPersistentChatAddin -PersistentChatPoolFqdn <String> -Name <String> -Url<String>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅当有多个 持久聊天服务器池时，才需要 PersistentChatPoolFqdn &lt;String&gt;。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 仅当有多个 持久聊天服务器池时，才需要 PersistentChatPoolFqdn &lt;String&gt;。
 
 
 获取外接程序

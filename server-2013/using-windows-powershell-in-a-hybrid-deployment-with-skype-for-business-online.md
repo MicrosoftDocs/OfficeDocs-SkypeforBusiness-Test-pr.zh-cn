@@ -56,18 +56,8 @@ _**上一次修改主题：** 2015-06-22_
 
     Import-PSSession $session -AllowClobber
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AllowClobber 参数可确保导入所有 Skype for Business Online cmdlet，包括名称与常规 Lync Server cmdlet 相同的那些 cmdlet。这些 cmdlet 数量庞大，因为大多数 Skype for Business Online cmdlet（包括 <a href="get-csmeetingconfiguration.md">Get-CsMeetingConfiguration</a>、<a href="new-csexumcontact.md">New-CsExUmContact</a>、<a href="remove-csvoicepolicy.md">Remove-CsVoicePolicy</a> 等）都具有内部部署对等项。成对的 cmdlet（例如，Lync Server<strong>Get-CsMeetingConfiguration</strong> cmdlet 和 Skype for Business Online<strong>Get-CsMeetingConfiguration</strong> cmdlet）是相同的：您使用哪个 cmdlet 无关紧要。使用 AllowClobber 参数的唯一理由是阻止警告消息出现在您的屏幕上。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> AllowClobber 参数可确保导入所有 Skype for Business Online cmdlet，包括名称与常规 Lync Server cmdlet 相同的那些 cmdlet。这些 cmdlet 数量庞大，因为大多数 Skype for Business Online cmdlet（包括 <a href="get-csmeetingconfiguration.md">Get-CsMeetingConfiguration</a>、<a href="new-csexumcontact.md">New-CsExUmContact</a>、<a href="remove-csvoicepolicy.md">Remove-CsVoicePolicy</a> 等）都具有内部部署对等项。成对的 cmdlet（例如，Lync Server<strong>Get-CsMeetingConfiguration</strong> cmdlet 和 Skype for Business Online<strong>Get-CsMeetingConfiguration</strong> cmdlet）是相同的：您使用哪个 cmdlet 无关紧要。使用 AllowClobber 参数的唯一理由是阻止警告消息出现在您的屏幕上。
 
 
 此时，您可以开始管理 Lync Server 和 Skype for Business Online 的内部部署版本。目前，您可能也有一个重要问题：如何区别 Lync Server 策略和设置与 Skype for Business Online 策略和设置？例如，您可能想要更改全局会议配置设置。为此，请运行此命令：

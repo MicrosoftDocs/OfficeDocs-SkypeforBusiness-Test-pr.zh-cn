@@ -27,18 +27,9 @@ _**上一次修改主题：** 2012-11-01_
 
 1.  在运行 Lync Server 2013 或其上安装有 Lync Server 管理工具的计算机上，使用具有本地 Users 组成员身份的帐户（或具有同等用户权限的帐户）登录。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以使用具有本地 Users 组成员身份的帐户定义拓扑，但要发布拓扑（向拓扑中添加组件时需要），您必须使用具有“Domain Admins”组和“RTCUniversalServerAdmins”组成员身份的帐户，且该帐户对您要用于 Lync Server 2013 文件存储的文件共享具有完全控制权限（即读取、写入和修改）（以便拓扑生成器可以配置必需的自定义访问控制列表 (DACL)），或者使用具有同等权限的帐户。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以使用具有本地 Users 组成员身份的帐户定义拓扑，但要发布拓扑（向拓扑中添加组件时需要），您必须使用具有“Domain Admins”组和“RTCUniversalServerAdmins”组成员身份的帐户，且该帐户对您要用于 Lync Server 2013 文件存储的文件共享具有完全控制权限（即读取、写入和修改）（以便拓扑生成器可以配置必需的自定义访问控制列表 (DACL)），或者使用具有同等权限的帐户。
+    
 
 
 2.  启动拓扑生成器。
@@ -91,32 +82,12 @@ _**上一次修改主题：** 2012-11-01_
     
       - 若要切换到 Microsoft Exchange 集成以将存档数据和文件存储到 Exchange 2013 服务器上（如果您的部署中的所有用户都驻留在 Exchange 2013 服务器上），请删除存档数据库的所有信息。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的任何 Lync 用户未驻留在 Exchange 2013 服务器上，请不要删除 SQL Server 存储信息。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> 如果您的任何 Lync 用户未驻留在 Exchange 2013 服务器上，请不要删除 SQL Server 存储信息。
 
 
 8.  若要保存配置，请单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>仅在发布新拓扑之后，您在拓扑生成器中进行的更改才会生效。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-publishing-the-updated-topology-to-add-archiving-databases.md">发布更新的拓扑以添加存档数据库</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> 仅在发布新拓扑之后，您在拓扑生成器中进行的更改才会生效。有关详细信息，请参阅部署文档中的<a href="lync-server-2013-publishing-the-updated-topology-to-add-archiving-databases.md">发布更新的拓扑以添加存档数据库</a>。
 

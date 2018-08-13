@@ -15,19 +15,9 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2016-12-08_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有迁移最初部署本地 Lync 之前在 Lync Online 中启用 Lync 的用户帐户时才需要执行这些步骤。要迁移最初为本地 Lync 启用的用户，以便将其迁移至 Lync Online，请参阅 <a href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">管理混合 Lync Server 2013 部署中的用户</a>。<br />
-此外，所迁移的全部用户都必须拥有本地 Active Directory 帐户。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 只有迁移最初部署本地 Lync 之前在 Lync Online 中启用 Lync 的用户帐户时才需要执行这些步骤。要迁移最初为本地 Lync 启用的用户，以便将其迁移至 Lync Online，请参阅 <a href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">管理混合 Lync Server 2013 部署中的用户</a>。<br />
+> 此外，所迁移的全部用户都必须拥有本地 Active Directory 帐户。
 
 
 ## 将最初在 Lync Online 中启用的用户帐户迁移到本地 Lync
@@ -41,6 +31,8 @@ _**上一次修改主题：** 2016-12-08_
       - 在本地部署中，在 Lync Server 命令行管理程序 内键入以下 cmdlet，为 Lync Online 创建托管提供者：
         
             Set-CSAccessEdgeConfiguration -AllowOutsideUsers 1 -AllowFederatedUsers 1 -UseDnsSrvRouting -EnablePartnerDiscovery $true
+
+           &nbsp;
         
             New-CSHostingProvider -Identity LyncOnline -Name LyncOnlin -ProxyFqdn "sipfed.online.lync.com" -Enabled $true -EnabledSharedAddressSpace $true -HostsOCSUsers $true -VerificationLevel UseSourceVerification -IsLocal $false -AutodiscoverUrl https://webdir.online.lync.com/Autodiscover/AutodiscoverService.svc/root
 
@@ -108,6 +100,8 @@ _**上一次修改主题：** 2016-12-08_
     要移动单个用户，请键入：
     
         $cred = Get-Credential
+
+       &nbsp;
     
         Move-CsUser -Identity <username>@contoso.com -Target "<fe-pool>.contoso.com" -Credential $cred -HostedMigrationOverrideURL <URL>
     
@@ -139,18 +133,9 @@ _**上一次修改主题：** 2016-12-08_
         
         `https://admin0a.online.lync.com/HostedMigration/hostedmigrationservice.svc`
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>rtcxds 数据库事务日志文件的默认大小上限为 16 GB。如果您要一次性移动大量用户，特别是在启用镜像的情况下，这样的大小可能不够。为解决此问题，您可以扩大文件大小，或者定期备份日志文件。如需了解详细信息，请参阅 <a href="http://support.microsoft.com/kb/2756725" class="uri">http://support.microsoft.com/kb/2756725</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > rtcxds 数据库事务日志文件的默认大小上限为 16 GB。如果您要一次性移动大量用户，特别是在启用镜像的情况下，这样的大小可能不够。为解决此问题，您可以扩大文件大小，或者定期备份日志文件。如需了解详细信息，请参阅 <a href="http://support.microsoft.com/kb/2756725" class="uri">http://support.microsoft.com/kb/2756725</a>。
+    
 
 
 8.  这是一个可选步骤。如果您需要集成 Exchange 2013 Online，则需要使用额外的托管服务提供商。有关详细信息，请参阅 [配置本地 Lync Server 2013 与 Exchange Online 的集成](lync-server-2013-configuring-on-premises-lync-server-integration-with-exchange-online.md)。

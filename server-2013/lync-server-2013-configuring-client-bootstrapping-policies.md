@@ -52,10 +52,8 @@ _**上一次修改主题：** 2016-12-08_
 <td><p>禁止自动上载登录失败日志 (DisableAutomaticSendTracing)</p></td>
 <td><p>自动将登录失败日志上载到 Lync Server 以进行分析。如果登录成功，则不会自动上载任何日志。如果未配置此策略，则会出现下列情况：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>对于 Lync Online 用户：自动上载登录失败日志。</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>对于 Lync 本地用户：在上载之前将为用户显示一个确认对话框。</p>
 </dd>
 </dl>
@@ -161,18 +159,9 @@ _**上一次修改主题：** 2016-12-08_
     
     `%systemroot%\sysvol\domain\policies\PolicyDefinitions`
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此过程假定您需要管理域中的多台计算机。在此情况下，您将模板存储在主域控制器上的 Sysvol 文件夹中的中央存储中。这将为域管理模板提供复制的中央存储位置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此过程假定您需要管理域中的多台计算机。在此情况下，您将模板存储在主域控制器上的 Sysvol 文件夹中的中央存储中。这将为域管理模板提供复制的中央存储位置。
+    
 
 
 2.  为您将使用的每种语言创建一个子文件夹。这些子文件夹将包含特定语言的 ADML 资源文件。例如，在以下位置为美国英语 (EN-US) 创建一个子文件夹：

@@ -35,18 +35,8 @@ Enterprise Edition 池中的前端服务器组织到 *升级域* 中。升级域
     
     1.  使用 `Stop-CsWindowsService -Graceful -Verbose` cmdlet 停止与您将要升级的前端服务器的新连接。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您在计划的服务器停机时间内执行这些服务器升级，则可以不带 -<strong>Graceful</strong> 参数运行此 cmdlet，如下所示：<strong>Stop-CsWindowsService</strong>。这将立即关闭服务，而不等待填充所有现有服务请求。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 如果您在计划的服务器停机时间内执行这些服务器升级，则可以不带 -<strong>Graceful</strong> 参数运行此 cmdlet，如下所示：<strong>Stop-CsWindowsService</strong>。这将立即关闭服务，而不等待填充所有现有服务请求。
     
     2.  升级与此升级域相关联的服务器。
     

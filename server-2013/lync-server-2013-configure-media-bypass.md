@@ -19,18 +19,9 @@ _**上一次修改主题：** 2016-12-08_
 
 本节还假设您已定义了至少一个对等网关来提供 PSTN 连接，如[在 Lync Server 2013 拓扑生成器中定义网关](lync-server-2013-define-a-gateway-in-topology-builder.md)中所述。如果您连接到的对等方是 SIP 中继提供商的 SBC，请确保该提供商是合格的提供商，且支持媒体旁路。例如，很多 SIP 中继提供商仅允许其 SBC 接收来自中介服务器的流量。如果这样，则不得为出现故障的中继启用旁路。同时，只有您的组织向 SIP 中继提供商显示其内部网络 IP 地址后，您才能启用媒体旁路。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>媒体旁路将不会与每个 PSTN 网关、IP-PBX 和 SBC 进行交互操作。Microsoft 与认证合作伙伴一起对一组 PSTN 网关和 SBC 进行了测试，另外也对 Cisco IP-PBX 进行了一些测试。媒体旁路仅支持 <a href="http://go.microsoft.com/fwlink/p/?linkid=214406">http://go.microsoft.com/fwlink/p/?linkId=214406</a> 上的“统一通信开放式互操作性程序 – Lync Server”中列出的产品和版本。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 媒体旁路将不会与每个 PSTN 网关、IP-PBX 和 SBC 进行交互操作。Microsoft 与认证合作伙伴一起对一组 PSTN 网关和 SBC 进行了测试，另外也对 Cisco IP-PBX 进行了一些测试。媒体旁路仅支持 <a href="http://go.microsoft.com/fwlink/p/?linkid=214406">http://go.microsoft.com/fwlink/p/?linkId=214406</a> 上的“统一通信开放式互操作性程序 – Lync Server”中列出的产品和版本。
+
 
 
 本节介绍如何启用媒体旁路，以减少中介服务器所需的处理。启用媒体旁路之前，请确保您的环境符合支持媒体旁路所需的条件，如规划文档中的[在 Lync Server 2013 中规划媒体旁路](lync-server-2013-planning-for-media-bypass.md)中所述。同时确保使用[在 Lync Server 2013 中规划媒体旁路](lync-server-2013-planning-for-media-bypass.md)中的信息决定是否启用媒体旁路全局设置，从而始终绕过中介服务器，或使用站点和区域信息决定是否绕过中介服务器。

@@ -19,7 +19,6 @@ _**上一次修改主题：** 2015-03-09_
 
 如果部署企业服务器，则池中必须有最少数量的 前端服务器一直运行。下表总结了这些要求。
 
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -60,18 +59,8 @@ _**上一次修改主题：** 2015-03-09_
 </table>
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于 Lync Server 2013，无论何时在池中添加或删除前端服务器，均必须重新启动服务。删除和添加服务器应作为独立操作来完成。例如，如果要添加两台前端服务器，并删除两台前端服务器，请使用以下过程：
+> [!NOTE]  
+> 对于 Lync Server 2013，无论何时在池中添加或删除前端服务器，均必须重新启动服务。删除和添加服务器应作为独立操作来完成。例如，如果要添加两台前端服务器，并删除两台前端服务器，请使用以下过程：
 <ol>
 <li><p>删除两台前端服务器。</p></li>
 <li><p>发布并重新激活拓扑。</p></li>
@@ -79,10 +68,8 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>添加两台前端服务器。</p></li>
 <li><p>发布并重新激活拓扑。</p></li>
 <li><p>重新启动服务。</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+</ol>
+
 
 
 定义拓扑之后，请使用以下过程为站点定义 前端池。有关定义拓扑的详细信息，请参阅 [在 Lync Server 2013 拓扑生成器中定义和配置拓扑](lync-server-2013-define-and-configure-a-topology-in-topology-builder.md)。
@@ -95,9 +82,7 @@ _**上一次修改主题：** 2015-03-09_
 
 3.  在“定义此池中的计算机”页上，输入此池中第一台前端服务器的计算机 FQDN，然后单击“添加”。对要添加到此池中的任何其他计算机（最多 8 台）重复此步骤，然后单击“下一步”。
 
-4.  
-    
-    在“选择功能”页上，选中希望此前端池具有的功能的复选框。例如，如果您仅部署即时消息 (IM) 和状态功能，可以选中“会议”复选框以允许多方 IM，但不能选中“电话拨入式 (PSTN) 会议”、“企业语音”或“呼叫允许控制”复选框，因为它们代表语音、视频和协作会议功能。
+4.  在“选择功能”页上，选中希望此前端池具有的功能的复选框。例如，如果您仅部署即时消息 (IM) 和状态功能，可以选中“会议”复选框以允许多方 IM，但不能选中“电话拨入式 (PSTN) 会议”、“企业语音”或“呼叫允许控制”复选框，因为它们代表语音、视频和协作会议功能。
     
       - **会议**   此选项启用一组丰富的功能，包括：
         
@@ -117,18 +102,9 @@ _**上一次修改主题：** 2015-03-09_
     
       - **监控**   通过监控服务器可以收集描述网络和终结点上的媒体质量的数值数据、与 VoIP 呼叫、IM 消息、A/V 对话、会议、应用程序共享和文件传输有关的用法信息，以及失败呼叫的呼叫错误和故障排除信息。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要在部署中启用 CAC，则需要在每个中央站点的一个池中启用 CAC。如果要部署语音功能或 A/V 会议，建议使用 CAC。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果要在部署中启用 CAC，则需要在每个中央站点的一个池中启用 CAC。如果要部署语音功能或 A/V 会议，建议使用 CAC。
+    
     
     下表显示了可用功能（顶部）和为用户提供的功能（左侧）。表中的选择是为组织启用这些功能所需选择的内容。
     
@@ -191,18 +167,9 @@ _**上一次修改主题：** 2015-03-09_
     
       - 如果计划将 中介服务器部署为独立服务器，则清除相应的复选框。在部署 前端服务器完成之后，将以单独的部署步骤部署 中介服务器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>我们建议在可能时并置中介服务器。有关对并置或单独的中介服务器的支持的详细信息，请参阅规划文档中的 <a href="lync-server-2013-components-and-topologies-for-mediation-server.md">Lync Server 2013 中中介服务器的组件和拓扑</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 我们建议在可能时并置中介服务器。有关对并置或单独的中介服务器的支持的详细信息，请参阅规划文档中的 <a href="lync-server-2013-components-and-topologies-for-mediation-server.md">Lync Server 2013 中中介服务器的组件和拓扑</a>。
+    
 
 
 6.  通过“将服务器角色与此前端池关联”页可以定义服务器角色并将服务器角色与 前端池关联。以下角色可用：
@@ -239,77 +206,28 @@ _**上一次修改主题：** 2015-03-09_
     
       - 要定义新文件共享，请选择“定义新的文件共享”，在“文件服务器 FQDN”框中，输入要放置文件共享的现有文件服务器的 FQDN，然后在“文件共享”框中输入文件共享的名称。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 的文件共享不能位于 前端服务器上。请注意，在此示例中，文件共享位于基于 SQL Server 的后端服务器上。根据组织要求，这可能不是最佳位置，文件服务器可能是更好的选择。可以在尚未创建文件共享的情况下定义文件共享。在发布拓扑之前，您将需要在定义的位置创建文件共享。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Lync Server 2013 的文件共享不能位于 前端服务器上。请注意，在此示例中，文件共享位于基于 SQL Server 的后端服务器上。根据组织要求，这可能不是最佳位置，文件服务器可能是更好的选择。可以在尚未创建文件共享的情况下定义文件共享。在发布拓扑之前，您将需要在定义的位置创建文件共享。
 
 
 9.  在“指定 Web 服务 URL”页上，执行以下一项或两项操作：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>基 URL 指的是 URL 的 Web 服务标识减去 https://。例如，如果池的 Web 服务的完整 URL 为 https://pool01.contoso.net，则基 URL 为 pool01.contoso.net。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 基 URL 指的是 URL 的 Web 服务标识减去 https://。例如，如果池的 Web 服务的完整 URL 为 https://pool01.contoso.net，则基 URL 为 pool01.contoso.net。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您拥有多个 前端池或 前端服务器，则外部 Web 服务 FQDN 必须是唯一的。例如，如果将 前端服务器的外部 Web 服务 FQDN 定义为 <strong>pool01.contoso.com</strong>，则不能将 <strong>pool01.contoso.com</strong> 用于另一个 前端池或 前端服务器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果您拥有多个 前端池或 前端服务器，则外部 Web 服务 FQDN 必须是唯一的。例如，如果将 前端服务器的外部 Web 服务 FQDN 定义为 <strong>pool01.contoso.com</strong>，则不能将 <strong>pool01.contoso.com</strong> 用于另一个 前端池或 前端服务器。
     
     1.  如果要配置 DNS 负载平衡，请选中“覆盖内部 Web 服务池 FQDN”复选框，在“内部基 URL”中输入内部基 URL（必须不同于池 FQDN，例如，“internal-\<基 URL\>”）。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果决定使用自定义的 FQDN 替代内部 Web 服务，则每个 FQDN 必须与任何其他前端池、控制器或控制器池的不同。定义 URL 或完全限定的域名时<strong>仅使用标准字符</strong>（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线。外部 DNS 和公共 CA 通常不支持在 URL 或 FQDN 中使用非标准字符（即，当必须向证书中的使用者名称或使用者替代名称分配 URL 或 FQDN 时）。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!WARNING]  
+		> 如果决定使用自定义的 FQDN 替代内部 Web 服务，则每个 FQDN 必须与任何其他前端池、控制器或控制器池的不同。定义 URL 或完全限定的域名时<strong>仅使用标准字符</strong>（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线。外部 DNS 和公共 CA 通常不支持在 URL 或 FQDN 中使用非标准字符（即，当必须向证书中的使用者名称或使用者替代名称分配 URL 或 FQDN 时）。
     
     2.  （可选）在“外部基 URL”中输入外部基 URL。您可以输入外部基 URL 以将其与内部域命名区分开来。例如，内部域是 contoso.net，但外部域名是 contoso.com。则可以使用 contoso.com 域名来定义 URL。如果是反向代理，这也很重要。外部基 URL 域名应该与反向代理的 FQDN 域名相同。即时消息和状态需要对前端池的 HTTP 访问。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>要使用 DNS 负载平衡，必须创建相应的 DNS 记录。有关详细信息，请参阅 <a href="lync-server-2013-configure-dns-for-load-balancing.md">在 Lync Server 2013 中配置 DNS 负载平衡</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 要使用 DNS 负载平衡，必须创建相应的 DNS 记录。有关详细信息，请参阅 <a href="lync-server-2013-configure-dns-for-load-balancing.md">在 Lync Server 2013 中配置 DNS 负载平衡</a>。
+    
 
 
 10. 如果在“选择功能”页上选择“会议”，请在“选择 Office Web Apps 服务器”页上选择“将池与 Office Web Apps 服务器关联”，然后单击“新建”（或从下拉列表中选择现有 Office Web Apps Server）。
@@ -320,18 +238,9 @@ _**上一次修改主题：** 2015-03-09_
     
     如果在内部防火墙的外部部署 Office Web Apps Server，则选择选项“在外部网络（即外围/Internet）中部署 Office Web Apps 服务器”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关详细信息，请参阅 <a href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">配置与 Office Web Apps Server 和 Lync Server 2013 的集成</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关详细信息，请参阅 <a href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">配置与 Office Web Apps Server 和 Lync Server 2013 的集成</a>。
+    
 
 
 12. 在“定义存档 SQL 存储”页上，选择一个现有实例或 SQL Server，或定义新实例来存储与存档数据关联的数据。

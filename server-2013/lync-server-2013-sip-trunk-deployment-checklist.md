@@ -23,18 +23,9 @@ _**上一次修改主题：** 2012-09-21_
 
   - 完全限定域名 (FQDN)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>服务提供商可能会要求您连接到多个 ITSP 网关。在这种情况下，必须配置每个 ITSP 网关与池中每个 中介服务器之间的连接。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 服务提供商可能会要求您连接到多个 ITSP 网关。在这种情况下，必须配置每个 ITSP 网关与池中每个 中介服务器之间的连接。
+
 
 
 您提供给服务提供商的信息取决于您的 SIP 中继连接类型：
@@ -51,18 +42,9 @@ _**上一次修改主题：** 2012-09-21_
 
 2.  如果 ITSP 支持传输层安全性 (TLS)，则 ITSP 必须为您提供证书。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SIP 可与实时传输协议 (RTP) 或安全实时传输协议 (SRTP) 结合使用，这些协议用于管理 IP 语音 (VoIP) 呼叫中的实际语音数据。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> SIP 可与实时传输协议 (RTP) 或安全实时传输协议 (SRTP) 结合使用，这些协议用于管理 IP 语音 (VoIP) 呼叫中的实际语音数据。
+
 
 
 ## 部署过程

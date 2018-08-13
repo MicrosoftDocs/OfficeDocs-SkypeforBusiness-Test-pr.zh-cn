@@ -21,18 +21,8 @@ _**上一次修改主题：** 2016-06-22_
 
 将本部分用作解决 Lync Server 部署的安全性问题的起点。它提供了用于评估和管理最常见的安全风险的常规准则和最佳做法。每个主题的结尾还列出了其他一些产品和安全资源。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>安全性是持续不断演化的主题。随着新的威胁和解决方案的出现，过时的文档、解决方案、方法和过程应替换为最新材料。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 安全性是持续不断演化的主题。随着新的威胁和解决方案的出现，过时的文档、解决方案、方法和过程应替换为最新材料。
 
 
 ## 本部分内容

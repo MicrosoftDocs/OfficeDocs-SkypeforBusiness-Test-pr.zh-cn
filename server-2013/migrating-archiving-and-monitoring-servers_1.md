@@ -25,18 +25,8 @@ _**上一次修改主题：** 2012-10-02_
 
   - 在旧部署和 Lync Server 2013 部署共存的阶段， Office Communications Server 2007 R2 版本的存档服务器和监控服务器收集驻留在 Office Communications Server 2007 R2 池上的用户的数据。 Lync Server 2013 版本的存档服务器和监控服务器收集驻留在 Lync Server 2013 池上的用户的数据。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>迁移阶段将旧边缘服务器与新 Lync Server 2013 试点池结合使用时， Office Communications Server 2007 R2 版本的存档服务器继续收集驻留在 Office Communications Server 2007 R2 池上的用户的数据， Lync Server 2013 版本的存档服务器收集驻留在 Lync Server 2013 池上的用户的数据。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 迁移阶段将旧边缘服务器与新 Lync Server 2013 试点池结合使用时， Office Communications Server 2007 R2 版本的存档服务器继续收集驻留在 Office Communications Server 2007 R2 池上的用户的数据， Lync Server 2013 版本的存档服务器收集驻留在 Lync Server 2013 池上的用户的数据。
 
 
   - 如果将第三方存档和监控解决方案与存档服务器和监控服务器结合使用，请咨询供应商，了解何时需要将第三方解决方案与 Lync Server 2013 集成以及如何集成。

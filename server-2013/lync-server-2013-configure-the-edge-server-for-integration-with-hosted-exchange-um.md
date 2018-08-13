@@ -25,22 +25,12 @@ _**上一次修改主题：** 2015-01-23_
 
 有关详细信息，请参阅 Lync Server 命令行管理程序文档中有关以下 cmdlet 的内容：
 
-  - [Set-CsAccessEdgeConfiguration](set-csaccessedgeconfiguration.md)
+  - [Set-CsAccessEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsAccessEdgeConfiguration)
 
-  - [New-CsHostingProvider](new-cshostingprovider.md)
+  - [New-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsHostingProvider)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在执行这些步骤之前，您必须先为托管 Exchange 服务创建一条外部 DNS SRV 记录。有关详细信息，请参阅 <a href="lync-server-2013-create-a-dns-srv-record-for-integration-with-hosted-exchange-um.md">为与托管 Exchange UM 的集成创建 DNS SRV 记录</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在执行这些步骤之前，您必须先为托管 Exchange 服务创建一条外部 DNS SRV 记录。有关详细信息，请参阅 <a href="lync-server-2013-create-a-dns-srv-record-for-integration-with-hosted-exchange-um.md">为与托管 Exchange UM 的集成创建 DNS SRV 记录</a>。
 
 
 ## 为联盟配置边缘服务器
@@ -79,18 +69,9 @@ _**上一次修改主题：** 2015-01-23_
     
       - **EnabledSharedAddressSpace** 指示是否在共享 SIP 地址空间（拆分域）方案中使用此承载服务提供商。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>在将 <code>EnableSharedAddressSpace</code> 设置为 True 之前，请尝试在内部解析联盟 SRV 记录。如果此记录无法在内部解析，那么您需要在内部 DNS 中创建记录 _sipfederationtls._tcp.&lt;domain&gt; 和 _sip._tls.&lt;domain&gt;。这些记录应指向边缘服务器的访问接口的外部 IP 地址。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 在将 <code>EnableSharedAddressSpace</code> 设置为 True 之前，请尝试在内部解析联盟 SRV 记录。如果此记录无法在内部解析，那么您需要在内部 DNS 中创建记录 _sipfederationtls._tcp.&lt;domain&gt; 和 _sip._tls.&lt;domain&gt;。这些记录应指向边缘服务器的访问接口的外部 IP 地址。
+        
     
       - **HostsOCSUsers** 指示承载服务提供商是否用于承载 Lync Server 2013 帐户。如果设置为 **False** ，则提供商承载其他帐户类型，例如 Microsoft Exchange 帐户。
     
@@ -112,5 +93,5 @@ _**上一次修改主题：** 2015-01-23_
 
 #### 其他资源
 
-[New-CsHostingProvider](new-cshostingprovider.md)
+[New-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsHostingProvider)
 

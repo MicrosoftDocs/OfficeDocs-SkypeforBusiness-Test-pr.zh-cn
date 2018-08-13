@@ -96,20 +96,11 @@ _**上一次修改主题：** 2014-12-19_
     
         Test-CsOuPermission -ObjectType "user","contact" -OU "cn=Bellevue,dc=contoso,dc=net" -Domain "contoso.net"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>请注意，如果在锁定的 Active Directory 环境中的目录林根级域上运行域准备，则 Lync Server 需要具有对 Active Directory 的“架构”和“配置”容器的访问权限。<br />
-    如果从 AD DS 中的“架构”或“配置”容器中删除了经过身份验证的默认用户权限，则只允许 Schema Admins 组（适用于“架构”容器）或 Enterprise Admins 组（适用于“配置”容器）的成员访问给定的容器。由于 Setup.exe、 Lync Server 命令行管理程序 cmdlets 和 Lync Server 控制面板需要具有对这些容器的访问权限，因此除非运行安装的用户具有与 Schema Admins 和 Enterprise Admins 组成员身份等效的用户权限，否则管理工具的设置和安装将失败。<br />
-    要解决此问题，必须向 RTCUniversalGlobalWriteGroup 组授予对“架构”和“配置”容器的读取和写入访问权限。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 请注意，如果在锁定的 Active Directory 环境中的目录林根级域上运行域准备，则 Lync Server 需要具有对 Active Directory 的“架构”和“配置”容器的访问权限。<br />
+    > 如果从 AD DS 中的“架构”或“配置”容器中删除了经过身份验证的默认用户权限，则只允许 Schema Admins 组（适用于“架构”容器）或 Enterprise Admins 组（适用于“配置”容器）的成员访问给定的容器。由于 Setup.exe、 Lync Server 命令行管理程序 cmdlets 和 Lync Server 控制面板需要具有对这些容器的访问权限，因此除非运行安装的用户具有与 Schema Admins 和 Enterprise Admins 组成员身份等效的用户权限，否则管理工具的设置和安装将失败。<br />
+    > 要解决此问题，必须向 RTCUniversalGlobalWriteGroup 组授予对“架构”和“配置”容器的读取和写入访问权限。
+    
 
 
 

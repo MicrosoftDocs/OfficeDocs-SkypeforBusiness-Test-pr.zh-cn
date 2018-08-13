@@ -43,19 +43,10 @@ _**上一次修改主题：** 2016-12-08_
 <td><p>使用者替代名称</p></td>
 <td><p>池 FQDN</p></td>
 <td><p>webext.contoso.com</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用者名称还必须存在于使用者替代名称中。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]
+> 使用者名称还必须存在于使用者替代名称中。
 
 </div></td>
 </tr>
@@ -67,19 +58,11 @@ _**上一次修改主题：** 2016-12-08_
 <tr class="even">
 <td><p>使用者替代名称</p></td>
 <td><p>会议简单 URL</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>所有会议简单 URL 都必须位于使用者替代名称中。每个 SIP 域必须至少有一个活动会议简单 URL。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 所有会议简单 URL 都必须位于使用者替代名称中。每个 SIP 域必须至少有一个活动会议简单 URL。
+
 
 </div></td>
 <td><p>meet.contoso.com</p></td>
@@ -98,19 +81,11 @@ _**上一次修改主题：** 2016-12-08_
 <td><p>使用者替代名称</p></td>
 <td><p>外部自动发现服务 URL</p></td>
 <td><p>lyncdiscover.contoso.com</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在使用 Microsoft Exchange Server，则也需要为 Exchange 自动发现和 Web 服务 URL 配置反向代理规则。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 如果您在使用 Microsoft Exchange Server，则也需要为 Exchange 自动发现和 Web 服务 URL 配置反向代理规则。
+
 
 </div></td>
 </tr>
@@ -118,50 +93,22 @@ _**上一次修改主题：** 2016-12-08_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果内部部署包含多个 Standard Edition Server 或前端池，则必须为每个外部 Web 场 FQDN 配置 Web 发布规则，并且还需为其配置证书和 Web 侦听器，或者获取使用者替代名称包含所有池使用的名称的证书，将其分配给 Web 侦听器，并在多个 Web 发布规则中共享。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果内部部署包含多个 Standard Edition Server 或前端池，则必须为每个外部 Web 场 FQDN 配置 Web 发布规则，并且还需为其配置证书和 Web 侦听器，或者获取使用者替代名称包含所有池使用的名称的证书，将其分配给 Web 侦听器，并在多个 Web 发布规则中共享。
+
 
 
 ## 创建证书请求
 
 请在反向代理上创建证书请求。您可以在另一台计算机上创建请求，但是在从公共证书颁发机构收到证书之后，您必须导出证书及私钥，并将其导入到反向代理中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>证书请求或证书签名请求 (CSR) 是指向受信任的公共证书颁发机构 (CA) 发出的请求以便验证请求计算机的公钥并签名。当生成证书时，将创建一个公钥和一个私钥。仅公钥会进行共享和签名。顾名思义，公钥对任何公共请求可用。公钥供需要安全地交换信息并验证计算机的身份的客户端、服务器和其他请求使用。私钥受到安全保护，仅由创建密钥对以解密通过公钥进行加密的消息的计算机使用。私钥可以用于其他用途。对于反向代理用途，主要用途是数据译码。其次，另一用途是证书密钥级别的证书身份验证，仅限于验证请求者是否拥有计算机的公钥或者您用于其公钥的计算机是否是所声称的计算机。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 证书请求或证书签名请求 (CSR) 是指向受信任的公共证书颁发机构 (CA) 发出的请求以便验证请求计算机的公钥并签名。当生成证书时，将创建一个公钥和一个私钥。仅公钥会进行共享和签名。顾名思义，公钥对任何公共请求可用。公钥供需要安全地交换信息并验证计算机的身份的客户端、服务器和其他请求使用。私钥受到安全保护，仅由创建密钥对以解密通过公钥进行加密的消息的计算机使用。私钥可以用于其他用途。对于反向代理用途，主要用途是数据译码。其次，另一用途是证书密钥级别的证书身份验证，仅限于验证请求者是否拥有计算机的公钥或者您用于其公钥的计算机是否是所声称的计算机。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您同时规划 边缘服务器 证书和反向代理证书，则应该会注意到，两个证书的诸多要求非常相似。当您配置并请求 边缘服务器 证书时，请组合使用 边缘服务器 和反向代理使用者替代名称。如果您导出证书和私钥并将导出的文件复制到反向代理，然后导入证书/密钥对，并在将来的过程中根据需要进行分配，那么您可以对反向代理使用相同的证书。请参阅边缘服务器<a href="lync-server-2013-plan-for-edge-server-certificates.md">在 Lync Server 2013 中规划边缘服务器证书</a>和反向代理<a href="lync-server-2013-certificate-summary-reverse-proxy.md">Lync Server 2013 中的证书摘要 - 反向代理</a>的证书要求。 确保使用可导入的私钥创建证书。对于池化的边缘服务器，需要使用可导入的私钥创建证书和证书请求，因此这是正常做法，边缘服务器 的 Lync Server 部署向导 中的证书向导将允许您设置“使私钥可以导出”标志。从公共证书颁发机构收到证书请求之后，您将导出证书和私钥。有关如何创建和导出证书及私钥的详细信息，请参阅主题<a href="lync-server-2013-set-up-certificates-for-the-external-edge-interface.md">为 Lync Server 2013 的外部边缘接口设置证书</a>中的部分“为池中的边缘服务器导出包含私钥的证书”。证书扩展名的类型应为 <strong>.pfx</strong>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]
+> 如果您同时规划 边缘服务器 证书和反向代理证书，则应该会注意到，两个证书的诸多要求非常相似。当您配置并请求 边缘服务器 证书时，请组合使用 边缘服务器 和反向代理使用者替代名称。如果您导出证书和私钥并将导出的文件复制到反向代理，然后导入证书/密钥对，并在将来的过程中根据需要进行分配，那么您可以对反向代理使用相同的证书。请参阅边缘服务器<a href="lync-server-2013-plan-for-edge-server-certificates.md">在 Lync Server 2013 中规划边缘服务器证书</a>和反向代理<a href="lync-server-2013-certificate-summary-reverse-proxy.md">Lync Server 2013 中的证书摘要 - 反向代理</a>的证书要求。 确保使用可导入的私钥创建证书。对于池化的边缘服务器，需要使用可导入的私钥创建证书和证书请求，因此这是正常做法，边缘服务器 的 Lync Server 部署向导 中的证书向导将允许您设置“使私钥可以导出”标志。从公共证书颁发机构收到证书请求之后，您将导出证书和私钥。有关如何创建和导出证书及私钥的详细信息，请参阅主题<a href="lync-server-2013-set-up-certificates-for-the-external-edge-interface.md">为 Lync Server 2013 的外部边缘接口设置证书</a>中的部分“为池中的边缘服务器导出包含私钥的证书”。证书扩展名的类型应为 <strong>.pfx</strong>。
 
 
 要在将分配证书和私钥的计算机上生成证书签名请求，请执行以下操作：
@@ -222,16 +169,6 @@ _**上一次修改主题：** 2016-12-08_
 
 20. 找到您在上一个步骤中保存的请求文件。向公共证书颁发机构提交。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Microsoft 已识别了符合统一通信用途要求的公共 CA。以下知识库文件中维护了一个列表。<a href="http://go.microsoft.com/fwlink/?linkid=282625">http://go.microsoft.com/fwlink/?LinkId=282625</a></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > Microsoft 已识别了符合统一通信用途要求的公共 CA。以下知识库文件中维护了一个列表。<a href="http://go.microsoft.com/fwlink/?linkid=282625">http://go.microsoft.com/fwlink/?LinkId=282625</a>
 

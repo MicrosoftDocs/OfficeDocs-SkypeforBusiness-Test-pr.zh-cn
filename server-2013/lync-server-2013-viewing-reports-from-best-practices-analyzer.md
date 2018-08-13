@@ -33,18 +33,8 @@ _**上一次修改主题：** 2012-09-21_
 
 1.  使用作为本地用户帐户成员的帐户登录到安装了最佳做法分析器的计算机。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>虽然可使用作为本地 Administrators 组成员的帐户查看扫描结果，但除非您具有适当的用户权限，否则无法运行扫描。有关详细信息，请参阅<a href="lync-server-2013-group-memberships-and-user-rights-requirements-for-best-practices-analyzer.md">最佳做法分析器的组成员身份和用户权限要求</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 虽然可使用作为本地 Administrators 组成员的帐户查看扫描结果，但除非您具有适当的用户权限，否则无法运行扫描。有关详细信息，请参阅<a href="lync-server-2013-group-memberships-and-user-rights-requirements-for-best-practices-analyzer.md">最佳做法分析器的组成员身份和用户权限要求</a>。
 
 
 2.  单击“开始”，指向“所有程序”，再单击“Microsoft Lync Server 2013”，然后单击“最佳做法分析器”。
@@ -55,33 +45,13 @@ _**上一次修改主题：** 2012-09-21_
     
       - 若要从本地存储的扫描结果列表中查看报告，请单击扫描的名称，然后单击“查看该扫描的报告”。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>最佳做法分析器从文件夹 <em>&lt;systemDrive&gt;</em>\Documents and Settings\<em>&lt;user&gt;</em>\Application Data\Microsoft\RtcBPA 中创建本地文件的列表。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 最佳做法分析器从文件夹 <em>&lt;systemDrive&gt;</em>\Documents and Settings\\<em>&lt;user&gt;</em>\Application Data\Microsoft\RtcBPA 中创建本地文件的列表。
     
       - 若要查看存储在另一个位置的扫描结果报告，请单击“导入扫描”，找到包含扫描结果的文件，然后单击“打开”。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果此计算机上的最佳做法分析器的版本与已用来收集导入文件中的数据的版本不匹配，则计算机上的工具可能会在此文件导入后再次对其进行分析。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 如果此计算机上的最佳做法分析器的版本与已用来收集导入文件中的数据的版本不匹配，则计算机上的工具可能会在此文件导入后再次对其进行分析。
 
 
 5.  在“查看最佳实践报告”页上，执行下列操作之一：
@@ -92,16 +62,6 @@ _**上一次修改主题：** 2012-09-21_
     
       - 若要查看其他报告，请单击“其他报告”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关最佳做法分析器报告以及这些报告标识的问题的详细信息，请参阅<a href="lync-server-2013-viewing-and-working-with-reports-created-by-best-practices-analyzer.md">查看和使用由最佳做法分析器创建的报告</a>和<a href="lync-server-2013-analyzing-and-resolving-issues-identified-by-best-practices-analyzer.md">分析和解决由最佳做法分析器标识的问题</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 有关最佳做法分析器报告以及这些报告标识的问题的详细信息，请参阅<a href="lync-server-2013-viewing-and-working-with-reports-created-by-best-practices-analyzer.md">查看和使用由最佳做法分析器创建的报告</a>和<a href="lync-server-2013-analyzing-and-resolving-issues-identified-by-best-practices-analyzer.md">分析和解决由最佳做法分析器标识的问题</a>。
 

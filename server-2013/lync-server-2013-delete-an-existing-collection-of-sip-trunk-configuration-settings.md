@@ -23,7 +23,7 @@ SIP 中继配置设置定义了中介服务器和服务提供商的公用电话�
 
   - 每个中继上是否需要安全实时协议 (SRTP) 加密。
 
-在安装 Microsoft Lync Server 2013 时，将为您创建 SIP 中继配置设置的全局集合。此全局集合设置无法删除。但是，您可以使用 Lync Server 控制面板或 [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md) cmdlet 将全局集合中的属性“重置”为其默认值。例如，如果已将 Enable3pccRefer 属性设置为 True，则当您重置全局集合时，Enable3pccRefer 属性将还原为其默认值 False。
+在安装 Microsoft Lync Server 2013 时，将为您创建 SIP 中继配置设置的全局集合。此全局集合设置无法删除。但是，您可以使用 Lync Server 控制面板或 [Remove-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrunkConfiguration) cmdlet 将全局集合中的属性“重置”为其默认值。例如，如果已将 Enable3pccRefer 属性设置为 True，则当您重置全局集合时，Enable3pccRefer 属性将还原为其默认值 False。
 
 管理员还可以在站点作用域或服务作用域（针对单个 PSTN 网关）创建自定义中继配置设置；这些自定义设置可以删除。在删除这些自定义设置时，请注意以下事项：
 
@@ -67,5 +67,5 @@ SIP 中继配置设置定义了中介服务器和服务提供商的公用电话�
     
         Get-CsTrunkConfiguration | Where-Object {$_.EnableBypass -eq $True} | Remove-CsTrunkConfiguration
 
-有关详细信息，请参阅 [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Remove-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrunkConfiguration) cmdlet 的帮助主题。
 

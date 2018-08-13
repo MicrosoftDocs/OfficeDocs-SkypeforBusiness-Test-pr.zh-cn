@@ -130,6 +130,6 @@ This cmdlet returns an object of type Microsoft.Rtc.Management.WritableConfig.Po
 
 [New-CsHostedVoicemailPolicy](new-cshostedvoicemailpolicy.md)  
 [Remove-CsHostedVoicemailPolicy](remove-cshostedvoicemailpolicy.md)  
-[Set-CsHostedVoicemailPolicy](set-cshostedvoicemailpolicy.md)  
+[Set-CsHostedVoicemailPolicy](Set-CsHostedVoicemailPolicy.md)  
 [Grant-CsHostedVoicemailPolicy](grant-cshostedvoicemailpolicy.md)
 

@@ -57,32 +57,13 @@ _**上一次修改主题：** 2013-11-11_
 
 可以并置文件共享与数据库，如本节后面所述。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 中，可以选择为您的部署中的部分或所有用户将存档存储与 Exchange 2013 存储集成。但您无法将任何运行 Lync Server 的服务器或组件部署到与 Exchange 存储相同的服务器上。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 中，可以选择为您的部署中的部分或所有用户将存档存储与 Exchange 2013 存储集成。但您无法将任何运行 Lync Server 的服务器或组件部署到与 Exchange 存储相同的服务器上。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尽管支持并置数据库，但数据库的大小增长非常快。例如，当您考虑将存档数据库与其他数据库并置时，您应了解，如果您要对多个用户的消息进行存档，则存档数据库所需的磁盘空间会变得很大。因此，不建议并置多个数据库，特别是将存档数据库、 持久聊天数据库或 持久聊天合规性数据库与后端数据库并置。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]
+> 尽管支持并置数据库，但数据库的大小增长非常快。例如，当您考虑将存档数据库与其他数据库并置时，您应了解，如果您要对多个用户的消息进行存档，则存档数据库所需的磁盘空间会变得很大。因此，不建议并置多个数据库，特别是将存档数据库、 持久聊天数据库或 持久聊天合规性数据库与后端数据库并置。
 
 
 ## 文件共享
@@ -101,18 +82,9 @@ _**上一次修改主题：** 2013-11-11_
 
 单个文件共享可用于多个前端池、Standard Edition 服务器（全部位于同一站点）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 中，监控和存档功能使用 Lync Server 文件共享作为前端服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 中，监控和存档功能使用 Lync Server 文件共享作为前端服务器。
+
 
 
 ## 其他组件

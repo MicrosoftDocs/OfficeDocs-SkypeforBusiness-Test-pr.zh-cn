@@ -17,20 +17,11 @@ _**上一次修改主题：** 2012-09-21_
 
 与 **Test-CsTopology** cmdlet 相似，最佳做法分析器提供了验证 Lync Server 2013 是否在全局级别正常运行的方法。默认情况下，最佳做法分析器（如 cmdlet）将检查整个 Lync Server 2013 基础结构，并验证所需服务是否在运行以及是否为这些服务和在安装 Lync Server 2013 时创建的通用安全组设置了适当的用户权限。
 
-除了验证 Lync Server 整体的有效性，**Test-CsTopology** 还将检查特定服务的有效性。有关使用此 cmdlet 测试特定服务的详细信息，请参阅 Lync Server 命令行管理程序文档中的[Test-CsTopology](test-cstopology.md)。使用以下信息可帮助解决您的拓扑问题。
+除了验证 Lync Server 整体的有效性，**Test-CsTopology** 还将检查特定服务的有效性。有关使用此 cmdlet 测试特定服务的详细信息，请参阅 Lync Server 命令行管理程序文档中的[Test-CsTopology](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsTopology)。使用以下信息可帮助解决您的拓扑问题。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>最佳做法分析器可能无法访问和扫描您的边缘服务器，具体取决于您的边缘服务器的配置和任何相关外围网络设置（包括防火墙设置和权限）。如果将边缘服务器包含在扫描中并且报告指示访问边缘服务器时出现问题，请清除“边缘服务器”复选框并重新运行扫描以防止报告中出现问题。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 最佳做法分析器可能无法访问和扫描您的边缘服务器，具体取决于您的边缘服务器的配置和任何相关外围网络设置（包括防火墙设置和权限）。如果将边缘服务器包含在扫描中并且报告指示访问边缘服务器时出现问题，请清除“边缘服务器”复选框并重新运行扫描以防止报告中出现问题。
+
 
 
 ## 解决拓扑问题

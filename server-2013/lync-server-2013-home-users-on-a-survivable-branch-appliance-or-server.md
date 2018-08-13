@@ -1,5 +1,5 @@
 ﻿---
-title: Lync Server 2013：在 Survivable Branch Appliance 或 Survivable Branch Server 上承载用户
+title: "Lync Server 2013：在 Survivable Branch Appliance 或 Survivable Branch Server 上承载用户"
 TOCTitle: 在 Survivable Branch Appliance 或 Survivable Branch Server 上承载用户
 ms:assetid: faf1ebb9-6d7d-4a58-8ff7-801b7b31d3ba
 ms:mtpsurl: https://technet.microsoft.com/zh-cn/library/Gg413066(v=OCS.15)
@@ -29,26 +29,17 @@ _**上一次修改主题：** 2014-12-10_
 
 2.  在 Lync Server 命令行管理程序中，运行 cmdlet **Move-CsUser** 以承载用户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>还可以使用 Lync Server 控制面板验证先决条件并承载用户。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 还可以使用 Lync Server 控制面板验证先决条件并承载用户。
+
 
 
 ## 另请参阅
 
 #### 其他资源
 
-[Test-CsPstnOutboundCall](test-cspstnoutboundcall.md)  
-[Get-CsVoicePolicy](get-csvoicepolicy.md)  
-[Get-CsVoicemailReroutingConfiguration](get-csvoicemailreroutingconfiguration.md)  
-[Move-CsUser](move-csuser.md)
+[Test-CsPstnOutboundCall](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsPstnOutboundCall)  
+[Get-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsVoicePolicy)  
+[Get-CsVoicemailReroutingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsVoicemailReroutingConfiguration)  
+[Move-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Move-CsUser)
 

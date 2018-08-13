@@ -222,5 +222,5 @@ None. Instead, the **Set-CsMeetingRoom** cmdlet modifies existing instances of t
 [Disable-CsMeetingRoom](disable-csmeetingroom.md)  
 [Enable-CsMeetingRoom](enable-csmeetingroom.md)  
 [Get-CsMeetingRoom](get-csmeetingroom.md)  
-[Move-CsMeetingRoom](move-csmeetingroom.md)
+[Move-CsMeetingRoom](Move-CsMeetingRoom.md)
 
