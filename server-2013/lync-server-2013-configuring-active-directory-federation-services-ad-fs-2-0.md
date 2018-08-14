@@ -44,7 +44,7 @@ _**上一次修改主题：** 2016-12-08_
     
 
     ```
-    $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
+    $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");'
     ```
     ```    
     Set-ADFSRelyingPartyTrust -TargetName LyncPool01-PassiveAuth 
