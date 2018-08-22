@@ -124,7 +124,7 @@ _**上一次修改主题：** 2013-09-11_
       - 要使用预定义工作时间日程表，请单击“使用预设日程表”，然后从下拉列表中选择要使用的日程表。
         
         > [!NOTE]  
-    > 之前您必须至少已定义一个预设日程表才能选择该选项。可使用 <strong>New-CSRgsHoursOfBusiness</strong> cmdlet 来定义预设日程表。有关详细信息，请参阅 <a href="lync-server-2013-optional-define-response-group-business-hours.md">（可选）在 Lync Server 2013 中定义响应组工作时间</a>。选择预设日程表时，“天”、“开放”和“关闭”中会自动填写响应组可以应答的日期和时间。
+        > 之前您必须至少已定义一个预设日程表才能选择该选项。可使用 <strong>New-CSRgsHoursOfBusiness</strong> cmdlet 来定义预设日程表。有关详细信息，请参阅 <a href="lync-server-2013-optional-define-response-group-business-hours.md">（可选）在 Lync Server 2013 中定义响应组工作时间</a>。选择预设日程表时，“天”、“开放”和“关闭”中会自动填写响应组可以应答的日期和时间。
         
     
       - 要使用仅适用于该工作流的自定义日程表，请单击“使用自定义日程表”。
