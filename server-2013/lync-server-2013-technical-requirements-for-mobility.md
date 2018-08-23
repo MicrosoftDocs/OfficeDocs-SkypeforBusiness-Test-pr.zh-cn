@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-12-08_
 
 移动用户会遇到各种需要特殊规划的移动应用程序方案。例如，当某个用户不在工作场所时，可以通过 3G 网络进行连接来开始使用移动应用程序，然后在到达工作场所后切换到企业 Wi-Fi 网络，在离开工作场所后又切换回 3G 网络。您需要规划您的环境以支持此类网络转换并确保实现一致的用户体验。本节介绍了支持移动应用程序和移动资源的自动发现必须满足的基础结构要求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然移动应用程序还可以连接到其他 Lync Server 2013 服务，但将所有移动应用程序 Web 请求发送到同一外部 Web 完全限定域名 (FQDN) 这一要求仅适用于 Lync Server 2013 Mobility Service。其他移动服务不需要此配置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 虽然移动应用程序还可以连接到其他 Lync Server 2013 服务，但将所有移动应用程序 Web 请求发送到同一外部 Web 完全限定域名 (FQDN) 这一要求仅适用于 Lync Server 2013 Mobility Service。其他移动服务不需要此配置。
 
 
 如果使用随 Lync Server 2013 一起提供的 Lync Mobile，硬件负载平衡器中的 Cookie 关联的要求会显著减少，并且会替换传输控制协议 (TCP) 关联。Cookie 关联仍可使用，但 Web 服务不再需要它。
@@ -48,20 +38,11 @@ Lync Server 2013 支持 Lync 2010 Mobile 和 Lync 2013 移动客户端的移动�
 
 在使用自动发现时，移动设备会使用 DNS 来定位资源。在 DNS 查找期间，首先会尝试使用与内部 DNS 记录 (lyncdiscoverinternal.*\<internal domain name\>*) 关联的 FQDN 进行连接。如果无法使用内部 DNS 记录进行连接，则尝试使用外部 DNS 记录 (lyncdiscover.*\<sipdomain\>*) 进行连接。网络内部的移动设备会连接到内部自动发现服务 URL，而网络外部的移动设备会连接到外部自动发现服务 URL。外部自动发现请求将穿过反向代理。Lync Server 2013 自动发现服务将返回用户的主池的所有 Web 服务 URL，包括移动服务（Mcx 和 UCWA）URL。但是，内部移动服务 URL 和外部移动服务 URL 都与外部 Web 服务 FQDN 关联。因此，不管移动设备是位于网络的内部还是外部，该设备始终会穿过反向代理连接到外部 Lync Server 2013 移动服务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您的部署可能包括供内部和外部使用的多个不同命名空间，了解这一点很重要。您的 SIP 域名可能与内部部署域名不同。例如，您的 SIP 域可能是 <strong>contoso.com</strong>，而您的内部部署可能是 <strong>contoso.net</strong>。登录到 Lync Server 的用户将使用 SIP 域名，如 <strong>john@contoso.com</strong>。当对外部 Web 服务（在 拓扑生成器池中定义为<strong>外部 Web 服务</strong>）寻址时，域名和 SIP 域名将与 DNS 中定义的一致。当对内部 Web 服务（在 拓扑生成器池中定义为<strong>内部 Web 服务</strong>），内部 Web 服务的默认名称将为前端服务器、前端池、控制器或控制器池的 FQDN。您可以选择覆盖内部 Web 服务名称。您应该对内部 Web 服务使用内部域名（而不是 SIP 域名）并定义 DNS 主机 A（或者，对于 IPv6，则为 AAAA）记录以反映被覆盖的名称。例如，默认内部 Web 服务 FQDN 可能是 <strong>pool01.contoso.net</strong>。被覆盖的内部 Web 服务 FQDN 可能是 <strong>webpool.contoso.net</strong>。以这种方式定义 Web 服务有助于确保观测到服务的内部和外部位置（而不是使用服务的用户的位置）。<br />
-但是，由于 Web 服务是在 拓扑生成器中定义的，且内部 Web 服务名称可以覆盖（只要生成的 Web 服务名称、用来验证该名称的证书和用来定义该名称的 DNS 记录一致），因此您可以使用所需的任何域名（包括 SIP 域名）定义内部 Web 服务。最终，IP 地址的名称解决方案由 DNS 主机记录和一致的命名空间确定。<br />
-对于本主题和示例，内部域名用于说明拓扑和 DNS 定义。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您的部署可能包括供内部和外部使用的多个不同命名空间，了解这一点很重要。您的 SIP 域名可能与内部部署域名不同。例如，您的 SIP 域可能是 <strong>contoso.com</strong>，而您的内部部署可能是 <strong>contoso.net</strong>。登录到 Lync Server 的用户将使用 SIP 域名，如 <strong>john@contoso.com</strong>。当对外部 Web 服务（在 拓扑生成器池中定义为<strong>外部 Web 服务</strong>）寻址时，域名和 SIP 域名将与 DNS 中定义的一致。当对内部 Web 服务（在 拓扑生成器池中定义为<strong>内部 Web 服务</strong>），内部 Web 服务的默认名称将为前端服务器、前端池、控制器或控制器池的 FQDN。您可以选择覆盖内部 Web 服务名称。您应该对内部 Web 服务使用内部域名（而不是 SIP 域名）并定义 DNS 主机 A（或者，对于 IPv6，则为 AAAA）记录以反映被覆盖的名称。例如，默认内部 Web 服务 FQDN 可能是 <strong>pool01.contoso.net</strong>。被覆盖的内部 Web 服务 FQDN 可能是 <strong>webpool.contoso.net</strong>。以这种方式定义 Web 服务有助于确保观测到服务的内部和外部位置（而不是使用服务的用户的位置）。<br />
+> 但是，由于 Web 服务是在 拓扑生成器中定义的，且内部 Web 服务名称可以覆盖（只要生成的 Web 服务名称、用来验证该名称的证书和用来定义该名称的 DNS 记录一致），因此您可以使用所需的任何域名（包括 SIP 域名）定义内部 Web 服务。最终，IP 地址的名称解决方案由 DNS 主机记录和一致的命名空间确定。<br />
+> 对于本主题和示例，内部域名用于说明拓扑和 DNS 定义。
+
 
 
 下图说明了使用内部和外部 DNS 配置时针对移动服务和自动发现服务的移动应用程序 Web 请求流。

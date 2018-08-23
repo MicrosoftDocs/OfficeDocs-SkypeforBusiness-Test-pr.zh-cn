@@ -219,28 +219,20 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>语音切换原因</strong></p></td>
 <td><p>呼叫必须切换为半双工模式才能防止回声的原因。在半双工模式中，通信一次只能在一个方向进行，与用户在使用对讲机进行通信时的轮流方式相似。选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[所有]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>无</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>错误的时间戳</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>回声</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>DNLP（动态非线性处理器）</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>复杂度低</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>设备状态差</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>AEC 后的回声（回声抑制）</p>
 </dd>
 </dl></td>
@@ -249,25 +241,18 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>回声原因</strong></p></td>
 <td><p>在呼叫中检测到超出接受水平的回声的原因。（在长途通讯中，回声是声音的反射，与朝井底大喊时出现的现象一样。）选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[所有]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>无</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>错误的时间戳</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>AEC 后的回声（回声抑制）</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>ANLP（自适应非线性处理器）</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>DNLP（动态非线性处理器）</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>麦克风剪辑</p>
 </dd>
 </dl></td>
@@ -276,16 +261,12 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>呼叫类型</strong></p></td>
 <td><p>指示发起的呼叫类型。选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[所有]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>客户端呼叫</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>PSTN 呼叫</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>电话会议</p>
 </dd>
 </dl></td>
@@ -294,13 +275,10 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>访问类型</strong></p></td>
 <td><p>指示客户端在发起呼叫时已登录到内部网络还是外部网络。选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[所有]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>内部</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>外部</p>
 </dd>
 </dl></td>
@@ -309,13 +287,10 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>网络类型</strong></p></td>
 <td><p>指示客户端在发起呼叫时已连接到的网络的类型。选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[所有]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>有线</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>无线</p>
 </dd>
 </dl></td>
@@ -324,13 +299,10 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>VPN</strong></p></td>
 <td><p>指示外部客户端在发起呼叫时是否使用了虚拟专用网 (VPN) 连接。选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[所有]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>VPN</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>非 VPN</p>
 </dd>
 </dl></td>
@@ -339,13 +311,10 @@ _**上一次修改主题：** 2015-03-09_
 <td><p><strong>设备类型</strong></p></td>
 <td><p>指示设备的类型。选择下列选项之一：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>捕获设备</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>呈现设备</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>捕获/呈现设备</p>
 </dd>
 </dl></td>

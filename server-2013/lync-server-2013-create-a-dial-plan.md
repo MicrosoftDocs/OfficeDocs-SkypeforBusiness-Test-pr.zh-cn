@@ -48,20 +48,11 @@ _**上一次修改主题：** 2013-10-24_
 
 6.  “简单名称”字段会使用与“名称”字段中显示的相同名称预先填充。您可以选择编辑该字段来指定描述性更强的名称，以反映应用该拨号计划的站点、服务或用户。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此“简单名称”必须在 Lync Server 部署中的所有拨号计划中是唯一的。该名称不能超过 256 个 Unicode 字符，每个 Unicode 字符可以是字母或数字字符、连字符 (-)、句点 (.) 或下划线 (_)。<br />
-    <strong>不支持的</strong>字符包括空格和 RFC 3966 (http://www.ietf.org/rfc/rfc3966.txt) 中定义的保留字符。“简单名称”中<strong>不支持的</strong>保留字符包括：<br />
-    &quot;;&quot; &quot;/&quot; &quot;?&quot; &quot;:&quot; &quot;@&quot; &quot;&amp;&quot; &quot;=&quot; &quot;+&quot; &quot;$&quot; &quot;,&quot;</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 此“简单名称”必须在 Lync Server 部署中的所有拨号计划中是唯一的。该名称不能超过 256 个 Unicode 字符，每个 Unicode 字符可以是字母或数字字符、连字符 (-)、句点 (.) 或下划线 (_)。<br />
+    > <strong>不支持的</strong>字符包括空格和 RFC 3966 (http://www.ietf.org/rfc/rfc3966.txt) 中定义的保留字符。“简单名称”中<strong>不支持的</strong>保留字符包括：<br />
+    > &quot;;&quot; &quot;/&quot; &quot;?&quot; &quot;:&quot; &quot;@&quot; &quot;&amp;&quot; &quot;=&quot; &quot;+&quot; &quot;$&quot; &quot;,&quot;
+
 
 
 7.  （可选）在“说明”字段中，您可以键入有关拨号计划的其他描述性信息。
@@ -99,19 +90,9 @@ _**上一次修改主题：** 2013-10-24_
 
 11. 验证拨号计划的规范化规则是否已按正确顺序排列。要更改规则在列表中的位置，请突出显示相应的规则名称，然后单击向上箭头或向下箭头。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 按照从上到下的顺序遍历规范化规则列表，并使用第一个与拨打号码相匹配的规则。如果要配置拨号计划以使拨打号码可以匹配多个规范化规则，请确保限制较严格的规则排在限制较宽松的规则上方。<br />
-    默认“全部保留”规范化规则 <strong>^(\d{11})$</strong> 匹配任意 11 位号码。例如，如果添加与以 1425 开头的 11 位号码相匹配的规范化规则，则请确保“全部保留”排在更加严格的 <strong>^(1425\d{7})$</strong> 规则的下面。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Lync Server 按照从上到下的顺序遍历规范化规则列表，并使用第一个与拨打号码相匹配的规则。如果要配置拨号计划以使拨打号码可以匹配多个规范化规则，请确保限制较严格的规则排在限制较宽松的规则上方。<br />
+    > 默认“全部保留”规范化规则 <strong>^(\d{11})$</strong> 匹配任意 11 位号码。例如，如果添加与以 1425 开头的 11 位号码相匹配的规范化规则，则请确保“全部保留”排在更加严格的 <strong>^(1425\d{7})$</strong> 规则的下面。
 
 
 12. （可选）输入一个号码来测试拨号计划，然后单击“执行”。测试结果会显示在“输入要测试的号码”下。

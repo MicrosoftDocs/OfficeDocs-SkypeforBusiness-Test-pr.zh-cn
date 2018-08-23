@@ -15,18 +15,8 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2016-12-08_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关硬件要求的详细信息，请参阅<a href="lync-server-2013-server-hardware-platforms.md">适用于 Lync Server 2013 的服务器硬件平台</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关硬件要求的详细信息，请参阅<a href="lync-server-2013-server-hardware-platforms.md">适用于 Lync Server 2013 的服务器硬件平台</a>。
 
 
 Standard Edition Server 和 Enterprise Edition Server 共享相同的软件要求。
@@ -49,18 +39,8 @@ Standard Edition Server 和 Enterprise Edition Server 可以使用以下任意�
 
 在 Standard Edition Server 或 Enterprise Edition 前端服务器上安装操作系统软件。应用所有更新以使操作系统达到最新更新以及与组织标准一致的必需更新级别。有关操作要求的更多详细信息，请参阅可支持性文档中的 [Lync Server 2013 中的服务器和工具操作系统支持](lync-server-2013-server-and-tools-operating-system-support.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要使 Lync Server 2013 可在 Windows Server 2012 R2 上正常工作，您可能需要在 Windows Server 中更改一个注册表项的值。您可能需要此更改以使证书可以正常工作，并使客户可以通过 Survivable Branch Appliance 注册。如需了解详细信息，请参阅 <a href="http://support.microsoft.com/kb/2901554" class="uri">http://support.microsoft.com/kb/2901554</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要使 Lync Server 2013 可在 Windows Server 2012 R2 上正常工作，您可能需要在 Windows Server 中更改一个注册表项的值。您可能需要此更改以使证书可以正常工作，并使客户可以通过 Survivable Branch Appliance 注册。如需了解详细信息，请参阅 <a href="http://support.microsoft.com/kb/2901554" class="uri">http://support.microsoft.com/kb/2901554</a>。
 
 
 ## 用于 Lync Server 2013 的其他软件
@@ -77,18 +57,8 @@ Standard Edition Server 和 Enterprise Edition Server 可以使用以下任意�
 
 Lync Server 2013 需要在将加入 Lync Server 拓扑的每台计算机上安装 Windows PowerShell 3.0。有关安装 Windows PowerShell 3.0 的详细信息，请参阅 [为 Lync Server 2013 安装 Windows PowerShell 3.0](lync-server-2013-installing-windows-powershell-3-0.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Windows Server 2008 R2 SP1 中，在安装 Microsoft .NET Framework 4.5 之前，无法安装 Windows PowerShell 命令行接口 3.0。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Windows Server 2008 R2 SP1 中，在安装 Microsoft .NET Framework 4.5 之前，无法安装 Windows PowerShell 命令行接口 3.0。
 
 
 ## Microsoft .NET Framework 4.5

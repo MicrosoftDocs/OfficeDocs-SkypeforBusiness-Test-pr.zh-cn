@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
 Lync Server 支持下表中列出的所有电话。请注意，并非所有受支持的电话都可运行 Lync Phone Edition（某些电话只能运行早期版本）。通过该表可了解哪些电话可运行 Lync Phone Edition 以及获取有关所有受支持的电话的详细信息的位置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支持三种类型的电话：桌面电话（话筒 IP 或 USB 设备，供员工在其工位上使用）、会议设备（免提 IP 或 USB 电话，专门在会议室中使用）和公用区域电话（IP 电话，用于共享区域（如会议厅、厨房、工厂车间和共享工作区），并可进行自定义设置，以提供不同的 Lync Phone Edition 功能组）。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 支持三种类型的电话：桌面电话（话筒 IP 或 USB 设备，供员工在其工位上使用）、会议设备（免提 IP 或 USB 电话，专门在会议室中使用）和公用区域电话（IP 电话，用于共享区域（如会议厅、厨房、工厂车间和共享工作区），并可进行自定义设置，以提供不同的 Lync Phone Edition 功能组）。
 
 
 有关为使用 Lync 而优化的所有设备的详细比较表，请参阅“适用于 Microsoft Lync 的电话和设备”，网址为 [http://go.microsoft.com/fwlink/?linkid=208938\&clcid=0x804](http://go.microsoft.com/fwlink/?linkid=208938%26clcid=0x804)。此网站中的电话比较表包括定价信息和技术规格。
@@ -102,16 +92,6 @@ Lync Server 支持下表中列出的所有电话。请注意，并非所有受�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>还将提供对模拟设备的支持。有关详细信息，请参阅 Lync Server 2010 TechNet 库中的<a href="http://go.microsoft.com/fwlink/?linkid=257502%26clcid=0x804">规划部署模拟设备</a>。（Lync Phone Edition 在 Lync Server 2013 和 Lync Server 2010 中的工作方式相同）。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 还将提供对模拟设备的支持。有关详细信息，请参阅 Lync Server 2010 TechNet 库中的<a href="http://go.microsoft.com/fwlink/?linkid=257502%26clcid=0x804">规划部署模拟设备</a>。（Lync Phone Edition 在 Lync Server 2013 和 Lync Server 2010 中的工作方式相同）。
 

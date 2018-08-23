@@ -133,7 +133,8 @@ Get-CsAdminRole | Where-Object {$\_.Cmdlets –match "Reset-CsPoolRegistrarState
 <p>The <code>QuorumLossRecovery</code> option can help your pool recover from replica-level quorum loss, but for it to work, the pool cannot be at the more severe level of pool-level quorum loss. For more information, see <a href="lync-server-2013-topologies-and-components-for-front-end-servers-instant-messaging-and-presence.md">Lync Server 2013 中适用于前端服务器、即时消息和状态的拓扑和组件</a>.</p>
 <p>* <strong>FullReset</strong> – performs the same type of reset as <code>QuorumLossRecovery</code> but, in addition, rebuilds the local Lync Server databases. This type of reset can be potentially long and resource-intensive. Use this option only when you have changed the number of 前端服务器 in a pool, such as 2-to-Any, 1-to-Any, Any-to-2, or Any-to-1.. <strong>Do not use this option for troubleshooting or resolving service startup issues.</strong></p>
 <p>Note that using this cmdlet with either the ServiceReset or FullReset options will affect users who are signed in, while using the QuorumLossRecovery option does not impact users.</p>
-<div class="alert">
+<div>
+
 > [!IMPORTANT]
 > Using the FullReset option when attempting to restart a pool will sometimes result in failure, and the pool will not actually restart. Because of that, it is recommended that you first try to restart the pool using one of the other ResetType options. If that fails, please consult Microsoft support personnel before using the FullReset option. Typically FullReset is only used when changing a topology from a pool with a single Front End server to a pool with multiple Front End servers.
 

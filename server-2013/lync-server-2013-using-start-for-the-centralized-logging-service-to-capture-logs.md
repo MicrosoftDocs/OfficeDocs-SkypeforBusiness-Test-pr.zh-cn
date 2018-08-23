@@ -23,18 +23,8 @@ _**上一次修改主题：** 2013-02-21_
 
 集中日志记录服务提供两种发出命令的方式。有许多主题专门讨论了如何通过 Lync Server 命令行管理程序使用 Windows PowerShell。能够使用一些复杂配置和命令的能力有利于 Windows PowerShell 使用集中日志记录服务。因为通过 Lync Server 命令行管理程序使用 Windows PowerShell 对于 Lync Server 中的所有函数而言极为普遍，所以我们只讨论 Windows PowerShell 命令。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您决定使用命令行提供的一组有限命令，可以通过键入 <code>ClsController.exe</code> 使用 CLSController.exe 获得帮助。默认情况下，<strong>ClsController.exe</strong> 安装在目录 C:\Program Files\Microsoft Lync Server 2013\ClsAgent中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您决定使用命令行提供的一组有限命令，可以通过键入 <code>ClsController.exe</code> 使用 CLSController.exe 获得帮助。默认情况下，<strong>ClsController.exe</strong> 安装在目录 C:\Program Files\Microsoft Lync Server 2013\ClsAgent中。
 
 
 ## 使用基本命令通过 Windows PowerShell 运行 Start-CsClsLogging

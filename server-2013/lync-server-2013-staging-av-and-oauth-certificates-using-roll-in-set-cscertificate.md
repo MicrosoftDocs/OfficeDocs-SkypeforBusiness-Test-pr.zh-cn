@@ -17,25 +17,11 @@ _**上一次修改主题：** 2012-11-13_
 
 音频/视频 (A/V) 通信是 Microsoft Lync Server 2013 的重要组成部分。诸如应用程序共享以及音频和视频会议之类的功能都依赖于分配给 A/V 边缘服务（具体说就是 A/V 身份验证服务）的证书。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ol>
-<li><p>这一新功能设计用于 A/V 边缘服务和 <em>OAuthTokenIssuer</em> 证书。其他证书类型可与 A/V 边缘服务和 OAuth 证书类型一起设置，但不会从 A/V 边缘服务证书将具有的共存行为中获益。</p></li>
-<li><p>用于管理 Microsoft Lync Server 2013 证书的 Lync Server 命令行管理程序 PowerShell cmdlet 将 A/V 边缘服务证书称为 <em>AudioVideoAuthentication</em> 证书类型，将 OAuthServer 证书称为 <em>OAuthTokenIssuer</em> 类型。在本主题的其余部分，为了唯一地标识这些证书，将按同一标识符类型 <em>AudioVideoAuthentication</em> 和 <em>OAuthTokenIssuer</em> 引用这些证书。</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> <ol>
+> <li><p>这一新功能设计用于 A/V 边缘服务和 <em>OAuthTokenIssuer</em> 证书。其他证书类型可与 A/V 边缘服务和 OAuth 证书类型一起设置，但不会从 A/V 边缘服务证书将具有的共存行为中获益。</p></li>
+> <li><p>用于管理 Microsoft Lync Server 2013 证书的 Lync Server 命令行管理程序 PowerShell cmdlet 将 A/V 边缘服务证书称为 <em>AudioVideoAuthentication</em> 证书类型，将 OAuthServer 证书称为 <em>OAuthTokenIssuer</em> 类型。在本主题的其余部分，为了唯一地标识这些证书，将按同一标识符类型 <em>AudioVideoAuthentication</em> 和 <em>OAuthTokenIssuer</em> 引用这些证书。</p></li>
+> </ol>
 
 A/V 身份验证服务负责颁发供客户端和其他 A/V 使用者使用的令牌。这些令牌是根据证书上的属性生成的，当证书到期时，会断开连接并需要用新证书生成的新令牌重新连接。Lync Server 2013 中的一项新功能可缓解此问题，通过此功能，可以在旧证书到期之前暂存新证书并允许这两个证书在一段时间内继续发挥作用。此功能使用 Set-CsCertificate Lync Server 命令行管理程序 cmdlet 中更新的功能。新参数 –Roll 以及现有参数 –EffectiveDate 会将新 AudioVideoAuthentication 证书置于证书存储中。旧 AudioVideoAuthentication 证书仍将保留，以便根据该证书验证颁发的令牌。随着新 AudioVideoAuthentication 证书的就绪，将发生以下一系列事件：
 

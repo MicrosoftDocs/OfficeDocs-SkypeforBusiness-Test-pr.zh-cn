@@ -52,10 +52,8 @@ _**上一次修改主题：** 2016-12-08_
 <td><p>禁止自动上载登录失败日志 (DisableAutomaticSendTracing)</p></td>
 <td><p>自动将登录失败日志上载到 Lync Server 以进行分析。如果登录成功，则不会自动上载任何日志。如果未配置此策略，则会出现下列情况：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>对于 Lync Online 用户：自动上载登录失败日志。</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>对于 Lync 本地用户：在上载之前将为用户显示一个确认对话框。</p>
 </dd>
 </dl>

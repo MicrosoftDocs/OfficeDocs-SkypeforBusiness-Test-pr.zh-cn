@@ -45,18 +45,8 @@ _**上一次修改主题：** 2012-09-26_
 
 要查看有关合并的池的更多详细信息，请使用 **Get-CsPool** cmdlet。除拓扑生成器和 Lync Server 2013 控制面板中提供的信息外，此 cmdlet 还显示在 Lync Server 2013 池上运行的服务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在拓扑生成器中运行合并向导后发布拓扑时，会议目录将合并到 Lync Server 2013。可通过运行 <strong>Get-CsConferenceDirectory</strong> cmdlet 来验证会议目录。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在拓扑生成器中运行合并向导后发布拓扑时，会议目录将合并到 Lync Server 2013。可通过运行 <strong>Get-CsConferenceDirectory</strong> cmdlet 来验证会议目录。
 
 
 ## 查看合并的池中的服务

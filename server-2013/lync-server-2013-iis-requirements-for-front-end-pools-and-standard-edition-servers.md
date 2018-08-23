@@ -167,16 +167,6 @@ Lync Server 要求安装以下 IIS 模块：
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg399038.security(OCS.15).gif" title="security" alt="security" />安全性 注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须使用 IIS 管理性管理单元分配由 IIS Web 组件服务器使用的证书。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 必须使用 IIS 管理性管理单元分配由 IIS Web 组件服务器使用的证书。
 

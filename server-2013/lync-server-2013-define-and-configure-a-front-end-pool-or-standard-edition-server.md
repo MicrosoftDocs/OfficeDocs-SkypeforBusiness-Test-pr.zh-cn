@@ -220,18 +220,8 @@ _**上一次修改主题：** 2015-03-09_
     
     1.  如果要配置 DNS 负载平衡，请选中“覆盖内部 Web 服务池 FQDN”复选框，在“内部基 URL”中输入内部基 URL（必须不同于池 FQDN，例如，“internal-\<基 URL\>”）。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果决定使用自定义的 FQDN 替代内部 Web 服务，则每个 FQDN 必须与任何其他前端池、控制器或控制器池的不同。定义 URL 或完全限定的域名时<strong>仅使用标准字符</strong>（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线。外部 DNS 和公共 CA 通常不支持在 URL 或 FQDN 中使用非标准字符（即，当必须向证书中的使用者名称或使用者替代名称分配 URL 或 FQDN 时）。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!WARNING]  
+		> 如果决定使用自定义的 FQDN 替代内部 Web 服务，则每个 FQDN 必须与任何其他前端池、控制器或控制器池的不同。定义 URL 或完全限定的域名时<strong>仅使用标准字符</strong>（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线。外部 DNS 和公共 CA 通常不支持在 URL 或 FQDN 中使用非标准字符（即，当必须向证书中的使用者名称或使用者替代名称分配 URL 或 FQDN 时）。
     
     2.  （可选）在“外部基 URL”中输入外部基 URL。您可以输入外部基 URL 以将其与内部域命名区分开来。例如，内部域是 contoso.net，但外部域名是 contoso.com。则可以使用 contoso.com 域名来定义 URL。如果是反向代理，这也很重要。外部基 URL 域名应该与反向代理的 FQDN 域名相同。即时消息和状态需要对前端池的 HTTP 访问。
     

@@ -52,7 +52,8 @@ _**上一次修改主题：** 2016-12-08_
 <li><p>根据 Outlook 日历闲/忙信息发布状态</p></li>
 <li><p>联系人列表（通过统一联系人存储）</p>
 <p>有关详细信息，请参阅<a href="lync-server-2013-configuring-lync-server-to-use-the-unified-contact-store.md">将 Microsoft Lync Server 2013 配置为使用统一联系人存储</a></p>
-<div class="alert">
+<div>
+
 > [!NOTE]
 > 需要 Exchange 2013。<br />
 > 需要 Lync 2013 桌面客户端。
@@ -60,19 +61,10 @@ _**上一次修改主题：** 2016-12-08_
 </div></li>
 <li><p>Lync 2013 客户端和 Lync Web App 中的高分辨率联系人照片。</p>
 <p>有关详细信息，请参阅<a href="lync-server-2013-configuring-the-use-of-high-resolution-photos.md">在 Microsoft Lync Server 2013 中配置使用高分辨率照片</a></p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要 Exchange 2013。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 需要 Exchange 2013。
 
 </div></li>
 <li><p>会议委派</p>
@@ -80,35 +72,17 @@ _**上一次修改主题：** 2016-12-08_
 <li><p>错过的对话历史记录和呼叫日志写入到用户的 Exchange 邮箱</p></li>
 <li><p>在 Exchang 中存档内容（IM 和会议）</p>
 <p>有关详细信息，请参阅<a href="lync-server-2013-deployment-checklist-for-archiving.md">Lync Server 2013 中存档的部署清单</a></p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要 Exchange 2013。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 需要 Exchange 2013。
 
 </div></li>
 <li><p>搜索存档内容</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要 Exchange 2013。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 需要 Exchange 2013。
 
 </div></li>
 <li><p>语音邮件</p>
@@ -126,19 +100,10 @@ _**上一次修改主题：** 2016-12-08_
 <li><p>在移动客户端中加入联机会议</p></li>
 <li><p>根据 Outlook 日历闲/忙信息发布状态</p></li>
 <li><p>联系人列表（通过统一联系人存储）。有关详细信息，请参阅 <a href="lync-server-2013-configuring-lync-server-to-use-the-unified-contact-store.md">将 Microsoft Lync Server 2013 配置为使用统一联系人存储</a></p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅 Lync Server 2013。需要 Lync 2013 桌面客户端。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 仅 Lync Server 2013。需要 Lync 2013 桌面客户端。
 
 </div></li>
 <li><p>Lync 2013 客户端和 Lync Web App 中的高分辨率联系人照片。</p>
@@ -160,19 +125,10 @@ _**上一次修改主题：** 2016-12-08_
 <li><p>移动客户端中的 IM/状态</p></li>
 <li><p>错过的对话历史记录和呼叫日志写入到用户的 Exchange 邮箱</p></li>
 <li><p>Lync 2013 客户端中的高分辨率联系人照片。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要 Microsoft Exchange Server 2013。当用户驻留在 Skype for Business Online 上时， Lync Web App 中不支持。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 需要 Microsoft Exchange Server 2013。当用户驻留在 Skype for Business Online 上时， Lync Web App 中不支持。
 
 </div></li>
 <li><p>在移动客户端中加入联机会议</p></li>
@@ -190,19 +146,10 @@ _**上一次修改主题：** 2016-12-08_
 <li><p>根据 Outlook 日历闲/忙信息发布状态</p></li>
 <li><p>错过的对话历史记录和呼叫日志写入到用户的 Exchange 邮箱</p></li>
 <li><p>联系人列表（通过统一联系人存储）</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要 Lync Server 2013 客户端</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 需要 Lync Server 2013 客户端
 
 </div></li>
 <li><p>Lync 2013 客户端和 Lync Web App 中的高分辨率联系人照片</p></li>

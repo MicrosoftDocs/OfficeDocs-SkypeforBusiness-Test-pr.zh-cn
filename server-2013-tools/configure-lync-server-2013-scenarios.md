@@ -25,18 +25,8 @@ We have provided example Lync Server 命令行管理程序 scripts that may be u
 > Take care in reviewing and understanding the examples provided. Scripts will overwrite any existing settings in the topology.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945596.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>For details about using Windows PowerShell and the Lync Server 命令行管理程序, see the Lync Server 2013 Windows PowerShell Blog at <a href="http://go.microsoft.com/fwlink/?linkid=203150">http://go.microsoft.com/fwlink/?LinkId=203150</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> For details about using Windows PowerShell and the Lync Server 命令行管理程序, see the Lync Server 2013 Windows PowerShell Blog at <a href="http://go.microsoft.com/fwlink/?linkid=203150">http://go.microsoft.com/fwlink/?LinkId=203150</a>.
 
 
 ## Stress and Performance Tool Client Version Monikers

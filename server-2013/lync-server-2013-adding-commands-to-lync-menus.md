@@ -72,7 +72,7 @@ HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\15.0\\Lync\\CustomCommands
 <td><p>ApplicationType</p></td>
 <td><p>DWORD</p></td>
 <td><p>0 = 可执行文件（默认）</p>
-<div class="alert">
+<div>
 
 > [!NOTE]  
 > 需要 ApplicationInstallPath。
@@ -85,7 +85,7 @@ HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\15.0\\Lync\\CustomCommands
 <td><p>ApplicationInstallPath</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>可执行文件的完整路径。</p>
-<div class="alert">
+<div>
 
 > [!NOTE]  
 > 如果 ApplicationType 为 0（可执行文件），则必须指定完整路径。

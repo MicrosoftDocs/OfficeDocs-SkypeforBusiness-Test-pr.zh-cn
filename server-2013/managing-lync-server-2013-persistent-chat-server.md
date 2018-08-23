@@ -19,18 +19,8 @@ _**上一次修改主题：** 2012-10-11_
 
 持久聊天聊天室的内容主要包括短文本消息，但也可以包括称为 *文章* 的较长消息，以及超链接、图释和上载的文档。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 2013 客户端不支持文件上载和下载；但 Lync Server 2013持久聊天服务器仍支持这两个功能。旧版 群聊客户端可以发布和查看文件，但如果通过 Lync 2013 客户端访问相同的聊天室，则前者无法访问这些文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync 2013 客户端不支持文件上载和下载；但 Lync Server 2013持久聊天服务器仍支持这两个功能。旧版 群聊客户端可以发布和查看文件，但如果通过 Lync 2013 客户端访问相同的聊天室，则前者无法访问这些文件。
 
 
 聊天室的访问由成员身份列表控制。完整聊天室历史记录可供任何成员按时间顺序查阅或进行全文搜索。有关使用 持久聊天客户端的详细信息，请参阅规划文档中的 [在 Lync Server 2013 中规划客户端](lync-server-2013-planning-for-clients.md)和部署文档中的 [在 Lync Server 2013 中部署客户端和设备](lync-server-2013-deploying-clients-and-devices.md)。

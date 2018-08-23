@@ -53,25 +53,11 @@ _**上一次修改主题：** 2016-12-08_
 
 Lync Server 控制面板会自动安装在每台 Lync Server 前端服务器或 Standard Edition Server 上。在此版本中，您可以远程管理边缘服务器。您还可以在另一台计算机上安装 Lync Server 控制面板，如从其上集中管理 Lync Server 的管理控制台。有关详细信息，请参阅 [安装 Lync Server 2013 管理工具](lync-server-2013-install-lync-server-administrative-tools.md)。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>要使用 Lync Server 控制面板配置设置，必须使用分配给 CsAdministrator 角色的帐户登录。有关 Lync Server 2013 中提供的预定义管理角色的详细信息，请参阅<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中规划基于角色的访问控制</a>。</p></li>
-<li><p>要使用 Lync Server 控制面板配置设置，还必须使用的屏幕分辨率至少为 1024 x 768 的计算机。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> <ul>
+> <li><p>要使用 Lync Server 控制面板配置设置，必须使用分配给 CsAdministrator 角色的帐户登录。有关 Lync Server 2013 中提供的预定义管理角色的详细信息，请参阅<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中规划基于角色的访问控制</a>。</p></li>
+> <li><p>要使用 Lync Server 控制面板配置设置，还必须使用的屏幕分辨率至少为 1024 x 768 的计算机。</p></li>
+> </ul>
 
 ## Lync Server 命令行管理程序
 

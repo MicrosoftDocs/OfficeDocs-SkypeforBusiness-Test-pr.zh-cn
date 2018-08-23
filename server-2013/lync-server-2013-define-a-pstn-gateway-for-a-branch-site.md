@@ -17,26 +17,12 @@ _**上一次修改主题：** 2012-09-21_
 
 请在中央站点执行此过程，中央站点至少包含一个 前端池或 Standard Edition Server。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>执行该过程之前，必须满足以下条件：
-<ul>
-<li><p>必须在中央站点安装 Lync Server 2013通信软件。</p></li>
-<li><p>必须在中央站点部署 中介服务器。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> 执行该过程之前，必须满足以下条件：
+> <ul>
+> <li><p>必须在中央站点安装 Lync Server 2013通信软件。</p></li>
+> <li><p>必须在中央站点部署 中介服务器。</p></li>
+> </ul>
 
 ## 定义 PSTN 网关
 

@@ -45,31 +45,17 @@ _**上一次修改主题：** 2016-12-08_
 > 仅在主、镜像和见证（如果需要）服务器都属于同一个域时，可使用 拓扑生成器或 cmdlet 设置和删除 SQL 镜像。如果您需要在不同域中的服务器之间设置 SQL 镜像，请参阅 SQL Server 文档。
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只要更改后端数据库镜像关系，就必须重新启动池中的所有前端服务器。<br />
-对于镜像的更改（如更改镜像位置），您必须使用 拓扑生成器执行以下三个步骤：
-<ol>
-<li><p>从旧镜像服务器中删除镜像。</p></li>
-<li><p>向新镜像服务器中添加镜像。</p></li>
-<li><p>发布拓扑。</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> 只要更改后端数据库镜像关系，就必须重新启动池中的所有前端服务器。<br />
+> 对于镜像的更改（如更改镜像位置），您必须使用 拓扑生成器执行以下三个步骤：
+> <ol>
+> <li><p>从旧镜像服务器中删除镜像。</p></li>
+> <li><p>向新镜像服务器中添加镜像。</p></li>
+> <li><p>发布拓扑。</p></li>
+> </ol>
 
 > [!NOTE]  
-> 必须为要写入到的镜像文件创建文件共享，SQL Server 和 SQL Agent 在其下运行的服务需要读取/写入访问权限。如果 SQL Server 服务在网络服务上下文下运行，您可以向共享权限添加主体和镜像 SQL Server 的 &lt;域&gt;\&lt;SQLSERVERNAME&gt;$。$ 非常重要，可用于标识这是一个计算机帐户。
+> 必须为要写入到的镜像文件创建文件共享，SQL Server 和 SQL Agent 在其下运行的服务需要读取/写入访问权限。如果 SQL Server 服务在网络服务上下文下运行，您可以向共享权限添加主体和镜像 SQL Server 的 &lt;域&gt;\\&lt;SQLSERVERNAME&gt;$。$ 非常重要，可用于标识这是一个计算机帐户。
 
 
 

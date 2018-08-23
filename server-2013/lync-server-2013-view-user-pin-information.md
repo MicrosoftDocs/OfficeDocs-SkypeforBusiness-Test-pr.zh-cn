@@ -17,18 +17,8 @@ _**上一次修改主题：** 2013-02-23_
 
 要以经过身份验证的用户身份加入电话拨入式会议，具有 Active Directory 域服务 (AD DS) 凭据的 Lync Server 2013 用户需要个人标识号 (PIN)。您可以从 Lync Server 2013 控制面板查看用户的 PIN 信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以查看 PIN 状态信息（如是否已设置 PIN 或上次更改 PIN 的时间），但无法通过查看 PIN 状态来查看当前 PIN。如果用户丢失了其 PIN，您可以按照<a href="lync-server-2013-set-a-user-s-dial-in-conferencing-pin.md">在 Lync Server 2013 中设置用户的电话拨入式会议 PIN</a> 中的过程重置它</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您可以查看 PIN 状态信息（如是否已设置 PIN 或上次更改 PIN 的时间），但无法通过查看 PIN 状态来查看当前 PIN。如果用户丢失了其 PIN，您可以按照<a href="lync-server-2013-set-a-user-s-dial-in-conferencing-pin.md">在 Lync Server 2013 中设置用户的电话拨入式会议 PIN</a> 中的过程重置它
 
 
 ## 在 Lync Server 控制面板中查看用户的 PIN

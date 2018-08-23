@@ -61,7 +61,7 @@ _**上一次修改主题：** 2017-03-09_
 <li><p>在“<strong>启动设置请求</strong>”页面上，单击合适的链接以启动设置请求：</p></li>
 <li><p>在“<strong>指定设置信息</strong>”页面上，输入 <strong>访问边缘服务 FQDN</strong>。例如，<strong>accessedge.contoso.com</strong>。</p></li>
 <li><p>输入至少一个或多个 SIP 域名，然后单击“<strong>添加</strong>”。</p>
-<div class="alert">
+<div>
 
 > [!IMPORTANT]  
 > 需要至少一个访问边缘服务器和一个 SIP 域才能完成设置过程。SIP 域和访问边缘服务器必须处于活动状态、正在运行并且在网络上可访问。
@@ -78,7 +78,7 @@ _**上一次修改主题：** 2017-03-09_
 <li><p>在“<strong>启动设置请求</strong>”页面上，单击合适的链接以启动设置请求：</p></li>
 <li><p>在“<strong>指定设置信息</strong>”页面上，输入 <strong>访问边缘服务 FQDN</strong>。例如，<strong>accessedge.contoso.com</strong>。</p></li>
 <li><p>输入至少一个或多个 SIP 域名，然后单击“<strong>添加</strong>”。</p>
-<div class="alert">
+<div>
 
 > [!IMPORTANT]  
 > 需要至少一个访问边缘服务器和一个 SIP 域才能完成设置过程。SIP 域和访问边缘服务器必须处于活动状态、正在运行并且在网络上可访问。

@@ -38,11 +38,9 @@ _**上一次修改主题：** 2017-05-03_
 
 
 > [!NOTE]  
-> <ul>
-<li><p>有关 Lync Online 订阅计划的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=282430">http://go.microsoft.com/fwlink/p/?LinkId=282430</a> 中的 Lync Online 服务说明。</p></li>
-<li><p>Lync Server 2013 支持以下以前发布的客户端：Lync 2010、Lync 2010 移动、Lync Phone Edition 和 Lync 2010 Attendant。有关这些客户端的信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=213798">http://go.microsoft.com/fwlink/p/?LinkID=213798</a> 中“客户端比较表”的 Lync 2010 版本。</p></li>
-<li><p>Lync 2013 客户端支持虚拟桌面基础结构 (VDI) 环境中的音频和视频。有关 VDI 环境中的 Lync 2013 功能的详细信息，请参阅 <a href="lync-server-2013-supported-virtualization-technologies-and-known-limitations.md">Lync Server 2013 中支持的虚拟化技术和已知限制</a>。</p></li>
-</ul>
+> <ul><li><p>有关 Lync Online 订阅计划的详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=282430">http://go.microsoft.com/fwlink/p/?LinkId=282430</a> 中的 Lync Online 服务说明。</p></li>
+> <li><p>Lync Server 2013 支持以下以前发布的客户端：Lync 2010、Lync 2010 移动、Lync Phone Edition 和 Lync 2010 Attendant。有关这些客户端的信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=213798">http://go.microsoft.com/fwlink/p/?LinkID=213798</a> 中“客户端比较表”的 Lync 2010 版本。</p></li>
+> <li><p>Lync 2013 客户端支持虚拟桌面基础结构 (VDI) 环境中的音频和视频。有关 VDI 环境中的 Lync 2013 功能的详细信息，请参阅 <a href="lync-server-2013-supported-virtualization-technologies-and-known-limitations.md">Lync Server 2013 中支持的虚拟化技术和已知限制</a>。</p></li></ul>
 
 
 
@@ -866,11 +864,9 @@ _**上一次修改主题：** 2017-05-03_
 ## 会议支持
 
 > [!NOTE]  
-> <ul>
-<li><p>Lync Online 独立计划 1 中不提供 Lync 会议功能。</p></li>
-<li><p>在 Lync-to-Lync 会话中，Lync Online 计划 1 用户可以在受到有权访问共享功能的用户的邀请时参与桌面共享和应用程序共享。</p></li>
-<li><p>有关详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=282430" class="uri">http://go.microsoft.com/fwlink/?linkid=282430</a> 中的 Lync Online 服务说明。</p></li>
-</ul>
+> <ul><li><p>Lync Online 独立计划 1 中不提供 Lync 会议功能。</p></li>
+> <li><p>在 Lync-to-Lync 会话中，Lync Online 计划 1 用户可以在受到有权访问共享功能的用户的邀请时参与桌面共享和应用程序共享。</p></li>
+> <li><p>有关详细信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=282430" class="uri">http://go.microsoft.com/fwlink/?linkid=282430</a> 中的 Lync Online 服务说明。</p></li></ul>
 
 
 

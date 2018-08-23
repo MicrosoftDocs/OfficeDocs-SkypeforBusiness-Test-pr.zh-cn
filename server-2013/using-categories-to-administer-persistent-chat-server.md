@@ -17,36 +17,16 @@ _**上一次修改主题：** 2013-10-01_
 
 持久聊天服务器部署可以托管许多并发 持久聊天聊天室。聊天室可以组织到服务器上的一组类别中。每个聊天室属于一个类别，并继承该类别的一些设置。这种组织方式可创建一种非常有用的结构以基于对话的业务目的识别对话，并有助于委托管理和简化控制。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尽管聊天室的许多管理功能在运行 持久聊天（ Lync 客户端）的计算机上对于用户都可用，但 持久聊天管理员（ <strong>cspersistentchatadministrator</strong> 角色中）必须使用 Lync Server 控制面板或 Windows PowerShell cmdlet 创建或管理类别。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 尽管聊天室的许多管理功能在运行 持久聊天（ Lync 客户端）的计算机上对于用户都可用，但 持久聊天管理员（ <strong>cspersistentchatadministrator</strong> 角色中）必须使用 Lync Server 控制面板或 Windows PowerShell cmdlet 创建或管理类别。
 
 
 持久聊天管理员使用 Lync Server 控制面板或 Windows PowerShell cmdlet 创建和管理类别，并为组织中的用户设计聊天室的访问权限。
 
 持久聊天 室管理员能够管理一个或多个聊天室，可以使用 Lync 客户端启动聊天室管理 Web 应用程序创建和管理聊天室（或者客户可以创建自定义解决方案和要调用的工作流）。 持久聊天管理员还可以使用 Lync Server 控制面板或 Windows PowerShell cmdlet 创建和管理聊天室。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>持久聊天 聊天室的名称不能与 持久聊天 类别相同。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 持久聊天 聊天室的名称不能与 持久聊天 类别相同。
 
 
 除了更改聊天室类别之外，聊天室管理员还可以更改所有聊天室属性。不能限制其执行以下操作：

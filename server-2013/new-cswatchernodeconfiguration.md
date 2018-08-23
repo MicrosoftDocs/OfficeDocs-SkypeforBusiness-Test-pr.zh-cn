@@ -17,18 +17,8 @@ _**上一次修改主题：** 2017-04-05_
 
 Assigns a new collection of watcher node configuration settings to a pool. Watcher nodes are computers that periodically use Microsoft System Center Operations Manager and Lync Server 2013 synthetic transactions to verify that Lync Server components are working as expected. 此 cmdlet 是在 Lync Server 2013 中引入的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>The <strong>New-CsWatcherNodeConfiguration</strong> command should only be executed on the Trusted Application Server you are designating as a Watcher Node.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> The <strong>New-CsWatcherNodeConfiguration</strong> command should only be executed on the Trusted Application Server you are designating as a Watcher Node.
 
 
 ## 语法

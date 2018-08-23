@@ -29,18 +29,8 @@ _**上一次修改主题：** 2012-09-30_
 
 在会议期间，您可以在多监视器环境中共享整个桌面、单个应用程序或各个监视器。除了查看内容之外，其他与会者还可以请求控制您的屏幕并在获得许可的情况下交互操作内容（包括滚动和编辑）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此外，查看会议的参与者可以在会议期间接管和开始共享内容</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此外，查看会议的参与者可以在会议期间接管和开始共享内容
 
 
 ## PowerPoint 共享

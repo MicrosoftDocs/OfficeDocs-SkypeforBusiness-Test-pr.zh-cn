@@ -95,7 +95,8 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>如果您希望通过 Wi-Fi 网络支持推送通知，请为 TCP 端口 5223 配置出站防火墙规则。</p></li>
 <li><p>使用 <strong>Set-CsPushNotificationConfiguration</strong> cmdlet 启用 Apple 推送通知服务 (APNS) 和 Microsoft 推送通知服务 (MPNS) 的推送通知。默认情况下，此功能已禁用。</p></li>
 <li><p>使用 <strong>Test-CsFederatedPartner</strong> cmdlet 测试联盟配置，并使用 <strong>Test-CsMCXPushNotification</strong> cmdlet 测试推送通知。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 推送通知用于 Apple 设备和 Windows Phone 上的 Lync 2010 Mobile 客户端<br />
 推送通知仅对 Windows Phone 上的 Lync 2013 移动客户端是必需的

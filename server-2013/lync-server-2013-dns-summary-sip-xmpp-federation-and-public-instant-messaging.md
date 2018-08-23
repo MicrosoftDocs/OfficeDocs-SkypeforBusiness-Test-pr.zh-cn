@@ -51,7 +51,8 @@ DNS 记录摘要表描述开放或可发现联盟所需要的条目。如果不�
 <td><p>_sipfederationtls._tcp.contoso.com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>其他潜在联盟合作伙伴借助自动 DNS 发现技术发现您的联盟所需的访问边缘服务外部接口（称为“允许的 SIP 域”，在以前版本中称为“增强联盟”）。根据需要对具有已启用 Lync 的用户的所有 SIP 域重复此操作。</p>
-<div class="alert">
+<div>
+
 > [!IMPORTANT]
 > 移动性和推送通知交换所需要此 SRV 记录。当存在多个 SIP 域时，请为将具有 Lync Mobile 客户端的每个域创建并发布一条 SRV 记录。如果部署支持的每个 SIP 域没有显式 SRV 记录，推送通知服务和 Apple 推送通知服务可能无法按预期运行。
 

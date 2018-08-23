@@ -41,7 +41,8 @@ _**上一次修改主题：** 2015-03-09_
 <p>例如，如果您同时使用 DNS 负载平衡和硬件负载平衡器，则需要为 DNS 负载平衡池中的每个前端服务器创建一个 A 记录，并为指向硬件负载平衡器的虚拟 IP 的内部 Web 服务创建一个 A 记录：</p>
 <ul>
 <li><p>DNS 负载平衡：   Pool01.contoso.net   池的 IP 地址   10.10.10.5</p>
-<div class="alert">
+<div>
+
 > [!WARNING]
 > 每个前端服务器也将具有一个单独的 A 记录：
 
@@ -76,7 +77,8 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="even">
 <td><p>统一通信 (UC) 设备发现设备更新 Web 服务</p></td>
 <td><p>有一条名为 ucupdates-r2.&lt;SIP 域&gt; 的内部 A 记录，解析为承载设备更新 Web 服务的前端池的 IP 地址。在打开了 UC 设备但用户从未登录到该设备的情况下，该设备通过此 A 记录可以发现承载设备更新 Web 服务的前端池并获得更新。否则，该设备在用户首次登录时通过带内设置获得此信息。</p>
-<div class="alert">
+<div>
+
 > [!IMPORTANT]
 > 如果 Lync Server 2010 中已部署设备更新 Web 服务，则已创建名为 ucupdates.<em>&lt;SIP 域&gt;</em> 的内部 A 记录。对于 Microsoft Office Communications Server 2007 R2，必须另外创建一条名为 ucupdates-r2.<em>&lt;SIP 域&gt;</em> 的 DNS A 记录。
 

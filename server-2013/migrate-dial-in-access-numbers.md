@@ -39,18 +39,8 @@ _**上一次修改主题：** 2012-10-19_
 > 在停用 Lync Server 2010 池之前必须执行此过程。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议您在网络使用率较低时移动拨入访问号码，以免服务出现短暂中断。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 建议您在网络使用率较低时移动拨入访问号码，以免服务出现短暂中断。
 
 
 **确认和移动拨入访问号码**

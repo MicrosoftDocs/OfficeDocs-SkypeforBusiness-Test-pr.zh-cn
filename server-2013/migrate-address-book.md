@@ -31,18 +31,8 @@ _**上一次修改主题：** 2012-10-09_
 
 如果在 Lync Server 2010 环境中自定义了通讯簿规范化规则，则必须将自定义的规则迁移到试点池。如果未自定义通讯簿规范化规则，则通讯簿服务没有要迁移的内容。 Lync Server 2013 的默认规范化规则与 Lync Server 2010 的默认规则相同。请按照本节后面的过程来迁移自定义规范化规则。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的组织使用远程呼叫控制并且您自定义了通讯簿规范化规则，则必须首先执行本主题中的过程，然后才能使用远程呼叫控制。要执行该过程，需要具有 RTCUniversalServerAdmins 组成员的身份或同等权限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您的组织使用远程呼叫控制并且您自定义了通讯簿规范化规则，则必须首先执行本主题中的过程，然后才能使用远程呼叫控制。要执行该过程，需要具有 RTCUniversalServerAdmins 组成员的身份或同等权限。
 
 
 **UseNormalizationRules 设置为 False**

@@ -47,21 +47,24 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>sip.contoso.com</p>
 <p>webcon.contoso.com</p>
 <p>contoso.com</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 支持 contoso.com XMPP 命名空间
 
 
 </div>
 <p>sip.fabrikam.com</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 支持 fabrikam.com SIP 命名空间
 
 
 </div>
 <p>fabrikam.com</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 支持 fabrikam.com XMPP 命名空间
 
@@ -73,7 +76,8 @@ _**上一次修改主题：** 2015-03-09_
 <li><p>Web 会议边缘服务</p></li>
 <li><p>A/V 边缘服务</p></li>
 </ul>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 从技术上来说，证书不分配给 A/V 边缘。安全通信和身份验证通过媒体中继身份验证服务 (MRAS) 进行管理。MRAS 使用分配给边缘服务器内部接口的证书。
 

@@ -83,9 +83,7 @@ _**上一次修改主题：** 2016-12-08_
 有关详细信息，请参阅 Lync Server 命令行管理程序文档中的 [New-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientPolicy) 和 [Grant-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsClientPolicy)。
 
 > [!NOTE]  
-> <ul>
-<li><p>默认情况下，Lync Server 2013 每三个小时更新一次客户端策略和设置。</p></li>
-<li><p>如果您希望继续从早期版本中使用组策略设置，例如 CustomStateURL，则当这些设置位于新的策略注册表配置单元 (HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\15.0\Lync) 中时，Lync 2013 将对这些设置进行识别。但是，基于服务器的客户端策略优先。</p></li>
-</ul>
+> <ul><li><p>默认情况下，Lync Server 2013 每三个小时更新一次客户端策略和设置。</p></li>
+< <li><p>如果您希望继续从早期版本中使用组策略设置，例如 CustomStateURL，则当这些设置位于新的策略注册表配置单元 (HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\15.0\Lync) 中时，Lync 2013 将对这些设置进行识别。但是，基于服务器的客户端策略优先。</p></li></ul>
 
 
