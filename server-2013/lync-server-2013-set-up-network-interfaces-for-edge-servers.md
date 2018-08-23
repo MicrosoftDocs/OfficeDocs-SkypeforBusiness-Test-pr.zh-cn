@@ -17,9 +17,11 @@ _**上一次修改主题：** 2012-09-08_
 
 每台边缘服务器均是具有面向外部和内部的接口的多宿主计算机。适配器域名系统 (DNS) 设置取决于外围网络中是否有 DNS 服务器。如果外围中存在 DNS 服务器，则这些服务器必须有一个包含有关下一个跃点服务器或池（即，控制器或指定的前端池）的一个或多个 DNS A 记录的区域，而对于外部查询，则会对其他公共 DNS 服务器进行名称查找。如果外围中不存在 DNS 服务器，则边缘服务器将使用外部 DNS 服务器解析 Internet 名称查找，并且每个边缘服务器会使用 HOST 将下一个跃点服务器名称解析为 IP 地址。
 
-<div class="alert"><div class="contentTableWrapper"><table summary="table"><tbody><tr><th align="left" scope="col"><img id="security" alt="security" src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="security" xmlns="" class="cl_IC101171">安全性 注意： </th></tr><tr><td>
-					为安全起见，建议不要让边缘服务器访问位于内部网络的 DNS 服务器。
-				</td></tr></tbody></table></div></div>
+<table>
+<thead>
+<tr class="header">
+<th><img src="images/Gg399038.security(OCS.15).gif" title="security" alt="security" />安全性 注意： </th></tr>
+<tr><td>为安全起见，建议不要让边缘服务器访问位于内部网络的 DNS 服务器。</td></tr></tbody></table>
 
 
 ## 配置接口（外围网络中存在 DNS 服务器）
