@@ -1,4 +1,4 @@
-﻿---
+---
 title: Lync Server 2013：移动客户端比较表
 TOCTitle: 移动客户端比较表
 ms:assetid: f3ba3379-afe4-4bc8-a038-9dff9dfd3bff
@@ -39,11 +39,10 @@ _**上一次修改主题：** 2016-12-08_
 
 > [!NOTE]  
 > <ul>
-<li><p>对于面向最终用户的联机帮助和资源，请参阅“适用于移动客户端的 Microsoft Lync 2013”，网址为：<a href="http://go.microsoft.com/fwlink/?linkid=286237">http://go.microsoft.com/fwlink/?LinkId=286237</a>。</p></li>
-<li><p>若要比较其他 Lync 2013 客户端中提供的功能，请参阅<a href="lync-server-2013-desktop-client-comparison-tables.md">Lync Server 2013 的客户端比较表</a>。</p></li>
-<li><p>Lync Server 2013 还支持 Lync 2010 移动应用程序。有关详细信息，请参阅 Lync Server 2010 文档中的“移动客户端比较表”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=234777" class="uri">http://go.microsoft.com/fwlink/?linkid=234777</a>。</p></li>
-</ul>
-
+> <li><p>对于面向最终用户的联机帮助和资源，请参阅“适用于移动客户端的 Microsoft Lync 2013”，网址为：<a href="http://go.microsoft.com/fwlink/?linkid=286237">http://go.microsoft.com/fwlink/?LinkId=286237</a>。</p></li>
+> <li><p>若要比较其他 Lync 2013 客户端中提供的功能，请参阅<a href="lync-server-2013-desktop-client-comparison-tables.md">Lync Server 2013 的客户端比较表</a>。</p></li>
+> <li><p>Lync Server 2013 还支持 Lync 2010 移动应用程序。有关详细信息，请参阅 Lync Server 2010 文档中的“移动客户端比较表”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=234777" class="uri">http://go.microsoft.com/fwlink/?linkid=234777</a>。</p></li>
+> </ul>
 
 
 ## 登录、推送通知和常规功能
@@ -1640,4 +1639,3 @@ _**上一次修改主题：** 2016-12-08_
 </tr>
 </tbody>
 </table>
-
