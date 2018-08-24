@@ -25,18 +25,9 @@ _**上一次修改主题：** 2013-02-23_
 
 3.  在左侧导航栏中，单击“客户端”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下，选中“客户端版本策略”选项卡。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 默认情况下，选中“客户端版本策略”选项卡。
+    
 
 
 4.  在“客户端版本策略”页上，执行下列操作之一：
@@ -63,5 +54,5 @@ _**上一次修改主题：** 2013-02-23_
     
         New-CsClientVersionPolicy -Identity "RedmondClientVersionPolicy"
 
-有关详细信息，请参阅 [Set-CsClientVersionPolicy](set-csclientversionpolicy.md) cmdlet 和 [New-CsClientVersionPolicy](new-csclientversionpolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Set-CsClientVersionPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientVersionPolicy) cmdlet 和 [New-CsClientVersionPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientVersionPolicy) cmdlet 的帮助主题。
 

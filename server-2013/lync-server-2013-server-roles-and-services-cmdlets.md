@@ -27,7 +27,7 @@ _**上一次修改主题：** 2016-12-08_
     [Get-CsAddressBookConfiguration](get-csaddressbookconfiguration.md)
 
   -   
-    [New-CsAddressBookConfiguration](new-csaddressbookconfiguration.md)
+    [New-CsAddressBookConfiguration](New-CsAddressBookConfiguration.md)
 
   -   
     [Remove-CsAddressBookConfiguration](remove-csaddressbookconfiguration.md)
@@ -356,7 +356,7 @@ _**上一次修改主题：** 2016-12-08_
     [Get-CsWebServiceConfiguration](get-cswebserviceconfiguration.md)
 
   -   
-    [New-CsWebServiceConfiguration](new-cswebserviceconfiguration.md)
+    [New-CsWebServiceConfiguration](New-CsWebServiceConfiguration.md)
 
   -   
     [Remove-CsWebServiceConfiguration](remove-cswebserviceconfiguration.md)

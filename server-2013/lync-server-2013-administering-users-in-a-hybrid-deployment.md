@@ -19,23 +19,15 @@ _**上一次修改主题：** 2014-05-29_
 
 ## 将用户移回本地部署
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节仅适用于最初为本地 Lync 创建和启用，随后从本地部署迁移到 Lync Online 的用户。如果您希望迁移先前在 Lync Online 中创建的用户（但并未为 Lync 本地部署启用），请参阅 <a href="lync-server-2013-moving-users-from-lync-online-to-lync-on-premises.md">在 Lync Server 2013 中将 Lync Online 用户迁移至本地 Lync</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 本节仅适用于最初为本地 Lync 创建和启用，随后从本地部署迁移到 Lync Online 的用户。如果您希望迁移先前在 Lync Online 中创建的用户（但并未为 Lync 本地部署启用），请参阅 <a href="lync-server-2013-moving-users-from-lync-online-to-lync-on-premises.md">在 Lync Server 2013 中将 Lync Online 用户迁移至本地 Lync</a>。
 
 
   - 运行以下 cmdlet，将用户从 Lync Online 移回本地 Lync：
     
         $cred=Get-Credential
+
+       &nbsp;
     
         Move-CsUser -Identity username@contoso.com -Target localpool.contoso.com -Credential $cred -HostedMigrationOverrideUrl <URL>
 

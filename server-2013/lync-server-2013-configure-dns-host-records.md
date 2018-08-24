@@ -29,31 +29,12 @@ _**上一次修改主题：** 2012-10-01_
 
 5.  单击“IP 地址”，为 前端池键入负载平衡器虚拟 IP (VIP)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在使用控制器池的部署中，简单 URL 的主机 (A) 记录应指向控制器负载平衡器的 VIP。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在使用控制器池的部署中，简单 URL 的主机 (A) 记录应指向控制器负载平衡器的 VIP。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果只部署一台 Enterprise Edition Server 或控制器（连接到不带负载平衡器的拓扑中），或者部署一台 Standard Edition Server，请键入该 Enterprise Edition Server、Standard Edition Server 或控制器的 IP 地址。如果在一个池中部署多台 Enterprise Edition Server 或控制器，则需要使用负载平衡器。负载平衡器不与 Standard Edition Server 一起使用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果只部署一台 Enterprise Edition Server 或控制器（连接到不带负载平衡器的拓扑中），或者部署一台 Standard Edition Server，请键入该 Enterprise Edition Server、Standard Edition Server 或控制器的 IP 地址。如果在一个池中部署多台 Enterprise Edition Server 或控制器，则需要使用负载平衡器。负载平衡器不与 Standard Edition Server 一起使用。
+    
 
 
 6.  单击“添加主机”，然后单击“确定”。

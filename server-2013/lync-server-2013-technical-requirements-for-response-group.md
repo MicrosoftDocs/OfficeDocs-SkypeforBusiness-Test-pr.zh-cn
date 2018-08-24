@@ -47,32 +47,12 @@ _**上一次修改主题：** 2016-12-08_
 
   - **端口 8404**   用于在服务器之间通信
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此端口用于 Match Making 服务，且在拥有多台 前端服务器的池中部署 响应组应用程序时，该端口是必需的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 此端口用于 Match Making 服务，且在拥有多台 前端服务器的池中部署 响应组应用程序时，该端口是必需的。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>这些端口是默认设置，您可以使用 <strong>Set-CsApplicationServer</strong> cmdlet 更改。有关此 cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 这些端口是默认设置，您可以使用 <strong>Set-CsApplicationServer</strong> cmdlet 更改。有关此 cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档。
 
 
 ## 音频文件要求
@@ -105,18 +85,8 @@ Windows Media 音频文件格式要求 Windows Media Format Runtime 安装在运
 
 响应组配置工具支持下表所述的操作系统和 Web 浏览器的组合。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支持 32 位或 64 位版本的操作系统。仅支持 32 位版本的 Internet Explorer。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 支持 32 位或 64 位版本的操作系统。仅支持 32 位版本的 Internet Explorer。
 
 
 ### 支持的操作系统和 Web 浏览器
@@ -168,18 +138,8 @@ Windows Media 音频文件格式要求 Windows Media Format Runtime 安装在运
 
 此代理控制台支持下表所述的操作系统和 Web 浏览器的组合。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支持 32 位或 64 位版本的操作系统。仅支持 32 位版本的 Internet Explorer。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 支持 32 位或 64 位版本的操作系统。仅支持 32 位版本的 Internet Explorer。
 
 
 ### 支持的操作系统和 Web 浏览器

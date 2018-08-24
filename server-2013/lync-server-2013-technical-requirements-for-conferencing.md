@@ -49,18 +49,8 @@ _**上一次修改主题：** 2016-12-08_
 
 这些端口是默认设置，您可以使用 **Set-CsApplicationServer** cmdlet 更改。有关此 cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>池中同一应用程序的所有实例都采用同一个 SIP 侦听端口。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 池中同一应用程序的所有实例都采用同一个 SIP 侦听端口。
 
 
 ### 电话拨入式会议所使用的端口
@@ -99,18 +89,8 @@ _**上一次修改主题：** 2016-12-08_
 
 电话拨入式会议设置页支持下表所述的操作系统和 Web 浏览器的组合。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>但支持 32 位和 64 位版本的操作系统。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 但支持 32 位和 64 位版本的操作系统。
 
 
 ### 支持的操作系统和 Web 浏览器

@@ -19,18 +19,9 @@ Lync Server 2013 引入了新的 new cmdlet 支持，用于将响应组从一个
 
 使用以下过程中的步骤将响应组从一个前端池移动到另一个具有不同 FQDN 的前端池。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在共存环境中，您只能在 Lync Server 2013前端池之间移动响应组。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在共存环境中，您只能在 Lync Server 2013前端池之间移动响应组。
+
 
 
 ## 将响应组移动到具有不同 FQDN 的池
@@ -59,18 +50,9 @@ Lync Server 2013 引入了新的 new cmdlet 支持，用于将响应组从一个
     
         Import-CsRgsConfiguration -Destination "service:ApplicationServer:destination.contoso.com" -FileName "C:\RgsExportSource.zip" -OverwriteOwner -ReplaceExistingSettings
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>应用程序级设置包括默认保持音乐配置、默认保持音乐音频文件、代理回拨宽限期以及呼叫上下文配置。要查看这些配置，请运行 <strong>Get-CsRgsConfiguration</strong> cmdlet。有关此 cmdlet 的详细信息，请参阅 <a href="get-csrgsconfiguration.md">Get-CsRgsConfiguration</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 应用程序级设置包括默认保持音乐配置、默认保持音乐音频文件、代理回拨宽限期以及呼叫上下文配置。要查看这些配置，请运行 <strong>Get-CsRgsConfiguration</strong> cmdlet。有关此 cmdlet 的详细信息，请参阅 <a href="https://docs.microsoft.com/powershell/module/skype/Get-CsRgsConfiguration">Get-CsRgsConfiguration</a>。
+    
 
 
 4.  通过执行以下操作以显示导入的响应组配置来验证导入是否成功：

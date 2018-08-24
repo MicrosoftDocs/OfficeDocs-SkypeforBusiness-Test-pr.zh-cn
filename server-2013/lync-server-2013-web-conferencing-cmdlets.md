@@ -80,7 +80,7 @@ _**上一次修改主题：** 2016-12-08_
 
   - [Get-CsMeetingRoom](get-csmeetingroom.md)
 
-  - [Move-CsMeetingRoom](move-csmeetingroom.md)
+  - [Move-CsMeetingRoom](Move-CsMeetingRoom.md)
 
   - [Set-CsMeetingRoom](set-csmeetingroom.md)
 

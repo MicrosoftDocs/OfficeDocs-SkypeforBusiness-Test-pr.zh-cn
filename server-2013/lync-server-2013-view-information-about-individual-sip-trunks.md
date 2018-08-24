@@ -17,7 +17,7 @@ _**上一次修改主题：** 2013-02-21_
 
 SIP 中继用来将 Microsoft Lync Server 2013 IP 语音电话网络与公用电话交换网进行连接。在本产品的以前版本中，中继用来将出站呼叫从中介服务器路由到 PSTN 网关，并且每个网关仅限于一个中继。因此，PSTN 网关和 SIP 中继基本上完全相同。对于管理员而言，这意味着他们只需通过查看有关相关联的 PSTN 网关的信息，即可查看有关个别 SIP 中继的信息。
 
-但是，在 Lync Server 2013 中，现在可以将多个中继分配给一个 PSTN 网关；这意味着网关和中继不再是一个并且相同。而这意味着管理员必须使用新的 [Get-CsTrunk](get-cstrunk.md) cmdlet，才能查看有关个别 SIP 中继的信息。
+但是，在 Lync Server 2013 中，现在可以将多个中继分配给一个 PSTN 网关；这意味着网关和中继不再是一个并且相同。而这意味着管理员必须使用新的 [Get-CsTrunk](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsTrunk) cmdlet，才能查看有关个别 SIP 中继的信息。
 
 可以从 Lync Server 2013 命令行管理程序或从 Windows PowerShell 的远程会话中运行 Get-CsTrunk cmdlet。有关使用远程 Windows PowerShell 连接到 Lync Server 的详细信息，请参阅 Lync Server Windows PowerShell 博客文章“快速入门：使用远程 PowerShell 管理 Microsoft Lync Server 2010”，网址为 [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)。
 

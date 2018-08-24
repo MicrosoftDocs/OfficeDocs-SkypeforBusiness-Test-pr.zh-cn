@@ -21,30 +21,16 @@ Lync 2013 for iPhone 和 Lync 2013 for iPad 是用户可安装的应用程序，
 
 您可以指示用户通过从其设备访问 App Store 来安装 Lync 2013 for iPhone 和 Lync 2013 for iPad。也可以在线访问面向各种设备的 App Store。
 
-  - 可以从 \< http://www.apple.com/iphone/from-the-app-store/\> 上的 App Store 下载 Lync for iPhone
+  - 可以从 \< http://www.apple.com/iphone/from-the-app-store/<span/>\> 上的 App Store 下载 Lync for iPhone
 
-  - 可以从 \< http://www.apple.com/ipad/from-the-app-store/\> 上的 App Store 下载 Lync for iPad
+  - 可以从 \< http://www.apple.com/ipad/from-the-app-store/<span/>\> 上的 App Store 下载 Lync for iPad
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>尚未安装 Lync 2013 应用而尝试从会议邀请加入 Lync 会议的 iPhone 用户将被重定向到“加入启动器”页面。此页中包含用于安装 Lync 2013 应用的链接。但是该链接并不将用户定向到 App Store，而是打开一个空白的 Safari 浏览器页面。用户可以执行下面两个操作之一来解决此问题：
-<ul>
-<li><p>使用“主页”按钮将该 Safari 页面发送到后台，然后重新打开 Safari。显示“在 App Store 中打开此页”的通知时，点击“打开”定向到 App Store 中的 Lync 2013 下载。</p></li>
-<li><p>手动打开 App Store，搜索“Lync 2013”，然后下载该应用。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> 尚未安装 Lync 2013 应用而尝试从会议邀请加入 Lync 会议的 iPhone 用户将被重定向到“加入启动器”页面。此页中包含用于安装 Lync 2013 应用的链接。但是该链接并不将用户定向到 App Store，而是打开一个空白的 Safari 浏览器页面。用户可以执行下面两个操作之一来解决此问题：
+> <ul>
+> <li><p>使用“主页”按钮将该 Safari 页面发送到后台，然后重新打开 Safari。显示“在 App Store 中打开此页”的通知时，点击“打开”定向到 App Store 中的 Lync 2013 下载。</p></li>
+> <li><p>手动打开 App Store，搜索“Lync 2013”，然后下载该应用。</p></li>
+> </ul>
 
 ## 验证移动客户端安装
 

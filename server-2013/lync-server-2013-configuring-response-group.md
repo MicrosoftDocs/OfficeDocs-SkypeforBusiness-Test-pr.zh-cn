@@ -21,18 +21,8 @@ _**上一次修改主题：** 2016-12-08_
 
 本节指导您完成 Lync Server 2013响应组的配置过程。假设您已阅读与 响应组相关的规划部分，并部署了 企业语音的 Enterprise Edition Server 或 Standard Edition Server。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关通过使用 Lync Server 命令行管理程序创建 响应组的详细信息（包括示例脚本），请参阅“使用 Lync Server 命令行管理程序创建第一个响应组”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=204108">http://go.microsoft.com/fwlink/p/?linkId=204108</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 有关通过使用 Lync Server 命令行管理程序创建 响应组的详细信息（包括示例脚本），请参阅“使用 Lync Server 命令行管理程序创建第一个响应组”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=204108">http://go.microsoft.com/fwlink/p/?linkId=204108</a>。
 
 
 ## 本部分内容

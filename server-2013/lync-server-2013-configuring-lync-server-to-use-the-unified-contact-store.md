@@ -17,18 +17,9 @@ _**上一次修改主题：** 2014-02-07_
 
 利用统一的联系人存储库，用户可以维护单个联系人列表，然后使这些联系人适用于多个应用程序，包括 Microsoft Lync 2013、Microsoft Outlook 2013 和 Microsoft Outlook Web App 2013。在为某个用户启用统一的联系人存储库后，该用户的联系人不会存储在 Microsoft Lync Server 2013 中，并且稍后将使用 SIP 协议进行检索。相反，该用户的联系人将存储在 Microsoft Exchange Server 2013 中并通过使用 Exchange Web 服务进行检索。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>从技术上说，联系人信息将存储在用户的 Exchange 2013 邮箱中包含的一对文件夹中。联系人本身将存储在一个对最终用户可见的名为 Lync Contacts 的文件夹中；有关联系人的元数据将存储在一个对最终用户不可见的子文件夹中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 从技术上说，联系人信息将存储在用户的 Exchange 2013 邮箱中包含的一对文件夹中。联系人本身将存储在一个对最终用户可见的名为 Lync Contacts 的文件夹中；有关联系人的元数据将存储在一个对最终用户不可见的子文件夹中。
+
 
 
 ## 为用户启用统一的联系人存储库
@@ -53,7 +44,7 @@ _**上一次修改主题：** 2014-02-07_
 
 分配此策略后，Lync Server 会开始将用户的联系人迁移到统一联系人存储中。完成迁移后，用户的联系人将存储在 Exchange 而非 Lync Server 中。如果用户在迁移完成时登录到 Lync 2013，则将出现一个消息框，并要求用户注销 Lync 并重新登录以便最终完成此过程。如果未向用户分配此每用户策略，则用户的联系人不会存储到统一联系人存储中。这是因为这些用户受全局策略管理，而全局策略中已禁止使用统一联系人存储。
 
-通过从 Lync Server 命令行管理程序中运行 [Test-CsUnifiedContactStore](test-csunifiedcontactstore.md) cmdlet，您可以验证是否已将用户的联系人成功迁移到统一的联系人存储库中：
+通过从 Lync Server 命令行管理程序中运行 [Test-CsUnifiedContactStore](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsUnifiedContactStore) cmdlet，您可以验证是否已将用户的联系人成功迁移到统一的联系人存储库中：
 
     Test-CsUnifiedContactStore -UserSipAddress "sip:kenmyer@litwareinc.com" -TargetFqdn "atl-cs-001.litwareinc.com"
 
@@ -71,25 +62,16 @@ _**上一次修改主题：** 2014-02-07_
 
 上面的命令将新策略分配给用户 Ken Myer，并且还阻止将 Ken 的联系人迁移到统一的联系人存储库中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在某些情况下，只需取消分配用户的当前用户服务策略即可达到相同的效果。例如，假定 Ken Myer 具有启用统一的联系人存储库的每用户用户服务策略，但您的全局策略禁止使用统一的联系人存储库。在此情况下，您可以取消分配 Ken 的每用户服务策略。在执行此操作后，Ken 将自动由全局策略管理，因此他将不再能够访问统一的联系人存储库。<br />
+> [!NOTE]  
+> 在某些情况下，只需取消分配用户的当前用户服务策略即可达到相同的效果。例如，假定 Ken Myer 具有启用统一的联系人存储库的每用户用户服务策略，但您的全局策略禁止使用统一的联系人存储库。在此情况下，您可以取消分配 Ken 的每用户服务策略。在执行此操作后，Ken 将自动由全局策略管理，因此他将不再能够访问统一的联系人存储库。<br />
 若要取消分配之前已分配的每用户策略，请使用如前所示的相同命令，但此时需将 PolicyName 参数设置为 null 值：<br />
-Grant-CsUserServicesPolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null</td>
-</tr>
-</tbody>
-</table>
+Grant-CsUserServicesPolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null
+
 
 
 在使用统一的联系人存储库时，请务必记住术语“阻止将 Ken 的联系人迁移到统一的联系人存储库中”。仅为 Ken 分配一个新的用户服务策略并不会将其联系人从统一的联系人存储库中移出。当用户登录到 Lync Server 2013 时，系统将检查用户的用户服务策略以查看其联系人是否应保留在统一的联系人存储库中。如果回答为“是”（即，在 UcsAllowed 属性设置为 $True 的情况下），则这些联系人将被迁移到统一的联系人存储库中（假定这些联系人尚未包含在统一的联系人存储库中）。如果回答是“否”，则 Lync Server 只需忽略用户的联系人，然后继续执行其下一个任务。这意味着，Lync Server 不会自动将用户的联系人从统一的联系人存储库中移出，无论 UcsAllowed 属性的值如何都是如此。
 
-这还意味着，在为用户分配一个新的用户服务策略后，您必须运行 [Invoke-CsUcsRollback](invoke-csucsrollback.md) cmdlet 才能将用户的联系人从 Exchange 2013 中移出并返回到 Lync Server 2013。例如，在为 Ken Myer 分配一个新的用户服务策略后，可使用以下命令将用户的联系人从统一的联系人存储库中移出：
+这还意味着，在为用户分配一个新的用户服务策略后，您必须运行 [Invoke-CsUcsRollback](https://docs.microsoft.com/en-us/powershell/module/skype/Invoke-CsUcsRollback) cmdlet 才能将用户的联系人从 Exchange 2013 中移出并返回到 Lync Server 2013。例如，在为 Ken Myer 分配一个新的用户服务策略后，可使用以下命令将用户的联系人从统一的联系人存储库中移出：
 
     Invoke-CsUcsRollback -Identity "Ken Myer"
 

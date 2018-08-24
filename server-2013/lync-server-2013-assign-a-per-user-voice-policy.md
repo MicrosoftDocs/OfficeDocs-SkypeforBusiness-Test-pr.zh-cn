@@ -29,18 +29,9 @@ _**上一次修改主题：** 2013-02-22_
 
 5.  在“编辑 Lync Server 用户”中的“语音策略”下，选择要应用的用户策略。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>“&lt;自动&gt;”设置将应用默认服务器或全局策略设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > “&lt;自动&gt;”设置将应用默认服务器或全局策略设置。
+    
 
 
 ## 使用 Lync Server 命令行管理程序分配用户特定的语音策略
@@ -73,7 +64,7 @@ _**上一次修改主题：** 2013-02-22_
 
 ## 向多个用户分配每用户语音策略
 
-  - 此命令向在 Active Directory 的 Finance OU 中拥有帐户的所有用户分配每用户语音策略 FinanceVoicePolicy。有关此命令中使用的 OU 参数的详细信息，请参阅 [Get-CsUser](get-csuser.md) cmdlet 的文档。
+  - 此命令向在 Active Directory 的 Finance OU 中拥有帐户的所有用户分配每用户语音策略 FinanceVoicePolicy。有关此命令中使用的 OU 参数的详细信息，请参阅 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) cmdlet 的文档。
     
         Get-CsUser -OU "ou=Finance,ou=North America,dc=litwareinc,dc=com" | Grant-CsVoicePolicy -PolicyName "FinanceVoicePolicy"
 
@@ -83,7 +74,7 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsVoicePolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关详细信息，请参阅 [Grant-CsVoicePolicy](grant-csvoicepolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Grant-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsVoicePolicy) cmdlet 的帮助主题。
 
 ## 另请参阅
 

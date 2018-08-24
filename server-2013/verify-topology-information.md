@@ -25,18 +25,8 @@ _**上一次修改主题：** 2012-09-26_
 
 3.  验证您合并的池和服务器的 FQDN 是否显示。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在前端服务器或 Standard Edition Server 上并置的服务器角色的 <strong>BackCompatSite</strong> 中不会显示任何信息。仅会显示在 Office Communications Server 2007 R2 和 Lync Server 2013 之间实现互操作性所需的服务器角色。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 在前端服务器或 Standard Edition Server 上并置的服务器角色的 <strong>BackCompatSite</strong> 中不会显示任何信息。仅会显示在 Office Communications Server 2007 R2 和 Lync Server 2013 之间实现互操作性所需的服务器角色。
 
 
 ![拓扑生成器 -“BackCompatSite”对话框](images/JJ205243.62751c76-f018-4c6d-bb48-c61ef8974d31(OCS.15).jpg "拓扑生成器 -“BackCompatSite”对话框")
@@ -55,18 +45,8 @@ _**上一次修改主题：** 2012-09-26_
 
 要查看有关合并的池的更多详细信息，请使用 **Get-CsPool** cmdlet。除拓扑生成器和 Lync Server 2013 控制面板中提供的信息外，此 cmdlet 还显示在 Lync Server 2013 池上运行的服务。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在拓扑生成器中运行合并向导后发布拓扑时，会议目录将合并到 Lync Server 2013。可通过运行 <strong>Get-CsConferenceDirectory</strong> cmdlet 来验证会议目录。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在拓扑生成器中运行合并向导后发布拓扑时，会议目录将合并到 Lync Server 2013。可通过运行 <strong>Get-CsConferenceDirectory</strong> cmdlet 来验证会议目录。
 
 
 ## 查看合并的池中的服务

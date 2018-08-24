@@ -259,19 +259,10 @@ Get-CsAdminRole | Where-Object {$\_.Cmdlets –match "Set-CsClientPolicy"}
 <td><p><em>DisableOneNote12Integration</em></p></td>
 <td><p>Optional</p></td>
 <td><p>System.Boolean</p></td>
-<td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>This setting applies to the Lync 2010 Client only. Lync 2013 or higher clients do not implement this setting. To disable Shared Notes in conference, refer to <a href="set-csconferencingpolicy.md">Set-CsConferencingPolicy</a> parameter AllowSharedNotes.</td>
-</tr>
-</tbody>
-</table>
+<td><div>
+
+> [!NOTE]  
+> This setting applies to the Lync 2010 Client only. Lync 2013 or higher clients do not implement this setting. To disable Shared Notes in conference, refer to <a href="set-csconferencingpolicy.md">Set-CsConferencingPolicy</a> parameter AllowSharedNotes.
 
 </div>
 <p>When set to True, the ability to start Microsoft OneNote from within Lync (and the ability to automatically link instant message sessions and OneNote notes) is disabled. When set to False, the option Take Notes Using One Note is enabled in Lync. In addition, if you locate an instant message transcript in Microsoft Outlook’s Conversation History you can retrieve any OneNote notes associated with that conversation just by clicking the Edit conversation notes button.</p>
@@ -606,35 +597,22 @@ Get-CsAdminRole | Where-Object {$\_.Cmdlets –match "Set-CsClientPolicy"}
 <p>1110000</p>
 <p>After the binary value has been constructed it must then be converted to a decimal value before being assigned to SearchPrefixFlags. To convert a binary number to a decimal number you can use the following Windows PowerShell command:</p>
 <p>[Convert]::ToInt32(&quot;1110111&quot;, 2)</p>
-<div class="alert">
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Manual registry key creation is required for the search prefix flags to be implemented. A SearchPrefixFlags key must be created for either the machine or user as in the following examples. The &quot;119&quot; value is the integer equivalent of a &quot;1110111&quot; SearchPrefixFlags binary. The integer you enter will be based on your own search preferences.<br />
-Use the appropriate Office version in the registry keys.
-<ul>
-<li><p>14.0 – Office 2010</p></li>
-</ul>
-<code>HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Communicator\SearchPrefixFlags</code>
-<ul>
-<li><p>15.0 – Office 2013</p></li>
-<li><p>16.0 – Office 2016</p></li>
-</ul>
-<code>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\&lt;Office Version&gt;\Lync\SearchPrefixFlags --&gt; DWORD 119</code><br />
-<code>HKEY_LOCAL_USER\SOFTWARE\Policies\Microsoft\Office\&lt;Office Version&gt;\Lync\SearchPrefixFlags --&gt; DWORD 119</code></td>
-</tr>
-</tbody>
-</table>
 
-</div></td>
+> [!NOTE]  
+> Manual registry key creation is required for the search prefix flags to be implemented. A SearchPrefixFlags key must be created for either the machine or user as in the following examples. The &quot;119&quot; value is the integer equivalent of a &quot;1110111&quot; SearchPrefixFlags binary. The integer you enter will be based on your own search preferences.<br />
+Use the appropriate Office version in the registry keys.
+> <ul>
+> <li><p>14.0 – Office 2010</p></li>
+> </ul>
+> <code>HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Communicator\SearchPrefixFlags</code>
+> <ul>
+> <li><p>15.0 – Office 2013</p></li>
+> <li><p>16.0 – Office 2016</p></li>
+> </ul>
+> <code>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\&lt;Office Version&gt;\Lync\SearchPrefixFlags --&gt; DWORD 119</code><br />
+> <code>HKEY_LOCAL_USER\SOFTWARE\Policies\Microsoft\Office\&lt;Office Version&gt;\Lync\SearchPrefixFlags --&gt; DWORD 119</code>
+
+</td>
 </tr>
 <tr class="even">
 <td><p><em>ShowManagePrivacyRelationships</em></p></td>

@@ -19,18 +19,9 @@ _**上一次修改主题：** 2012-09-11_
 
   - 呼叫启用 呼叫寄存的用户，并使该用户寄存此呼叫。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果执行该测试之前刚刚在语音策略中启用 呼叫寄存，则寄存此呼叫的用户需要从 Lync Server 中注销然后重新登录，才能查看转接呼叫列表中的 呼叫寄存选项。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 如果执行该测试之前刚刚在语音策略中启用 呼叫寄存，则寄存此呼叫的用户需要从 Lync Server 中注销然后重新登录，才能查看转接呼叫列表中的 呼叫寄存选项。
+    
 
 
   - 拨打通道号码以取回此呼叫。

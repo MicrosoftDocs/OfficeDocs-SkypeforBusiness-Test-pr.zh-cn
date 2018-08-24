@@ -37,18 +37,8 @@ _**上一次修改主题：** 2012-10-04_
 
 4.  展开“SQL 存储”，右键单击与 Standard Edition 前端服务器关联的 SQL Server 数据库，然后单击“删除”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>必须从 Standard Edition 前端服务器中删除并置的 SQL Server 数据库的定义。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 必须从 Standard Edition 前端服务器中删除并置的 SQL Server 数据库的定义。
 
 
 5.  发布拓扑，检查复制状态，然后根据需要运行 Lync Server 部署向导。

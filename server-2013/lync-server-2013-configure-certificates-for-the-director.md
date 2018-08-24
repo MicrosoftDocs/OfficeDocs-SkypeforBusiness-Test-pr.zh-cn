@@ -15,18 +15,8 @@ ms.translationtype: HT
 
 _**上一次修改主题：** 2012-09-08_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在运行证书向导时，请确保您使用作为组（已为其分配您将使用的证书模板类型的适当权限）的成员的帐户进行登录。默认情况下， Lync Server 2013 证书请求将使用 Web 服务器证书模板。如果您使用作为 RTCUniversalServerAdmins 组的成员的帐户来通过此模板请求证书，请确保已为该组分配使用此模板所需的注册权限。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在运行证书向导时，请确保您使用作为组（已为其分配您将使用的证书模板类型的适当权限）的成员的帐户进行登录。默认情况下， Lync Server 2013 证书请求将使用 Web 服务器证书模板。如果您使用作为 RTCUniversalServerAdmins 组的成员的帐户来通过此模板请求证书，请确保已为该组分配使用此模板所需的注册权限。
 
 
 每个控制器都需要默认证书、Web 内部证书和 Web 外部证书。有关控制器的证书要求的详细信息，请参阅规划文档中的 [Lync Server 2013 中内部服务器的证书要求](lync-server-2013-certificate-requirements-for-internal-servers.md)。
@@ -57,18 +47,9 @@ _**上一次修改主题：** 2012-09-08_
 
 11. 在“使用者名称/使用者替代名称”页上，单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用者替代名称列表应包含要安装控制器的计算机的名称（如果是单个控制器）或控制器池名称，以及为组织配置的简单 URL 名称。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 使用者替代名称列表应包含要安装控制器的计算机的名称（如果是单个控制器）或控制器池名称，以及为组织配置的简单 URL 名称。
+    
 
 
 12. 在“使用者替代名称(SAN)的 SIP 域设置”页上，为希望控制器处理的所有域选择“已配置的 SIP 域”，然后单击“下一步”。
@@ -83,18 +64,9 @@ _**上一次修改主题：** 2012-09-08_
 
 17. 在“证书分配”页上，单击“下一步”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要查看证书，请在列表中双击相应的证书。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果要查看证书，请在列表中双击相应的证书。
+    
 
 
 18. 在“证书分配摘要”页上，单击“下一步”。

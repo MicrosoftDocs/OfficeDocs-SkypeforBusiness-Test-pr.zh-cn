@@ -31,34 +31,16 @@ _**上一次修改主题：** 2012-09-25_
 
 4.  Exchange 管理员将电话号码分配给自动助理和订阅者访问的相应 Exchange UM 拨号计划。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于存在内部部署，因此不需要在联系人对象上配置任何 Lync Server 2013 拨号计划设置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由于存在内部部署，因此不需要在联系人对象上配置任何 Lync Server 2013 拨号计划设置。
+
 
 
 ## 配置托管的联系人对象
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须先部署应用于 Lync Server 2013 联系人对象的托管语音邮件策略，然后才能为这些联系人对象启用托管 Exchange UM。策略可以是全局策略、站点级别策略或每用户策略，只要策略适用于要启用的联系人对象。有关详细信息，请参阅 <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的托管语音邮件策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 必须先部署应用于 Lync Server 2013 联系人对象的托管语音邮件策略，然后才能为这些联系人对象启用托管 Exchange UM。策略可以是全局策略、站点级别策略或每用户策略，只要策略适用于要启用的联系人对象。有关详细信息，请参阅 <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的托管语音邮件策略</a>。
+
 
 
 要在交叉部署中配置托管的自动助理和订阅者访问联系人对象，必须使用以下 cmdlet：

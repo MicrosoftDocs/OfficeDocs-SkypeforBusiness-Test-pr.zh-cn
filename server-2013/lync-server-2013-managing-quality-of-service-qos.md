@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 服务质量 (QoS) 是某些组织中所使用的一种网络技术，目的是有助于针对音频和视频通信提供最佳的最终用户体验。QoS 最常用于带宽有限的网络上：其中大量的网络数据包争用相对数量较小的可用带宽。服务质量为管理员提供一种为承载音频或视频数据的数据包分配较高优先级的方法。通过为这些数据包提供较高的优先级，与涉及诸如文件传输、Web 浏览或数据库备份等内容的网络会话相比，音频和视频通信可能会以更快的速度完成，并且发生更少的中断。这是因为针对用于文件传输或数据库备份的网络数据包分配了“最佳效果”优先级。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>一般而言，服务质量仅适用于内部网络上的通信会话。在实施 QoS 时，您可以将服务器和路由器配置为支持数据包标记；但是，应以特定的方式将这些设备配置为支持数据包标记。您不能假设将在 Internet 或其他网络上支持服务质量。即使在其他网络上支持服务质量，也不能保证以配置您的网络上的服务的相同方式来配置 QoS。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 一般而言，服务质量仅适用于内部网络上的通信会话。在实施 QoS 时，您可以将服务器和路由器配置为支持数据包标记；但是，应以特定的方式将这些设备配置为支持数据包标记。您不能假设将在 Internet 或其他网络上支持服务质量。即使在其他网络上支持服务质量，也不能保证以配置您的网络上的服务的相同方式来配置 QoS。
+
 
 
 Microsoft Lync Server 2013 不需要服务质量；如果您目前未使用 QoS，则不需要在安装 Lync Server 2013 之前先安装该服务。如果在您的网络上发生大量的数据包丢失，建议用来缓解此问题的方法是添加额外的带宽。如果无法添加更多的带宽，您可能想要改为实施服务质量。
@@ -51,16 +42,7 @@ Lync Server 2013 提供对服务质量的完全支持：这意味着已使用 Qo
 
   - [在 Microsoft Lync Phone Edition 设备上配置服务质量](lync-server-2013-configuring-quality-of-service-on-microsoft-lync-phone-edition-devices.md)。默认情况下，会针对 Lync Phone Edition 设备启用 QoS。但是，您可能想要更改默认 DSCP 值，以确保您的组织中的所有音频数据包均使用相同的 DSCP 代码。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用 Microsoft Windows Server 2012 或 Windows Server 2012 R2，您可能会对可用于在该平台上管理服务质量的新的一组 Windows PowerShell cmdlet 感兴趣。有关详细信息，请参阅“Windows PowerShell 中的网络服务质量 Cmdlet”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=285379">http://go.microsoft.com/fwlink/p/?LinkId=285379</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果使用 Microsoft Windows Server 2012 或 Windows Server 2012 R2，您可能会对可用于在该平台上管理服务质量的新的一组 Windows PowerShell cmdlet 感兴趣。有关详细信息，请参阅“Windows PowerShell 中的网络服务质量 Cmdlet”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=285379">http://go.microsoft.com/fwlink/p/?LinkId=285379</a>。
+
 

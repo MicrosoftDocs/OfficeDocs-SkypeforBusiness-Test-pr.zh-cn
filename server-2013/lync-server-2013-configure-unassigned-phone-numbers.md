@@ -19,18 +19,8 @@ _**上一次修改主题：** 2012-11-01_
 
 配置未分配号码表的方式取决于要使用该表的方式。可以使用组织的所有有效分机、仅使用未分配的分机或使用这两类号码的组合来配置该表。未分配号码表可以同时包含已分配和未分配的号码，但仅当呼叫者拨打当前未分配号码时，才会调用该表。如果在未分配号码表中包含所有有效分机，则可以指定某人离开组织时所执行的操作，而无需重新配置该表。如果在该表中包含未分配的分机，则可以为特定号码定制所执行的操作。例如，如果更改客户服务台的分机，则可以在该表中包含旧的客户服务号码并将其分配给提供新号码的通知。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在配置未分配号码表之前，必须已定义一个或多个通知，或已设置 Exchange UM 自动助理。有关创建通知的详细信息，请参阅<a href="lync-server-2013-create-an-announcement.md">在 Lync Server 2013 中创建通知</a>。若要查看是否已配置 Exchange UM 设置，请运行 <strong>Get-CsExUmContact</strong> cmdlet。有关详细信息，请参阅 <a href="get-csexumcontact.md">Get-CsExUmContact</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在配置未分配号码表之前，必须已定义一个或多个通知，或已设置 Exchange UM 自动助理。有关创建通知的详细信息，请参阅<a href="lync-server-2013-create-an-announcement.md">在 Lync Server 2013 中创建通知</a>。若要查看是否已配置 Exchange UM 设置，请运行 <strong>Get-CsExUmContact</strong> cmdlet。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsExUmContact">Get-CsExUmContact</a>。
 
 
 ## 本部分内容

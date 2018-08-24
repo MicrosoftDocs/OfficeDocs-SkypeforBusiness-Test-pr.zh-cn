@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 通讯簿服务是 Lync Server企业版 或 Standard Edition Server 部署的一部分，将默认安装。通讯簿服务使用的数据库 RTCab 在 SQL Server 中创建（对于 企业版，这是后端 SQL Server；对于 Standard Edition Server，这是并置的 SQL Server）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关使用 <strong>ADSI Edit</strong> 编辑 Active Directory 域服务 对象属性的信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=330427">ADSI Edit</a>。有关资源工具包中专用于通讯簿服务的工具的信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=330429">Microsoft Lync Server 2013 资源工具包工具</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关使用 <strong>ADSI Edit</strong> 编辑 Active Directory 域服务 对象属性的信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=330427">ADSI Edit</a>。有关资源工具包中专用于通讯簿服务的工具的信息，请参阅 <a href="http://go.microsoft.com/fwlink/?linkid=330429">Microsoft Lync Server 2013 资源工具包工具</a>。
+
 
 
 ## 通讯簿服务器电话号码规范化
@@ -250,18 +241,9 @@ Lync Server 需要标准化的 RFC 3966/E.164 电话号码。要使用非结构�
 
 在早期版本的 Lync Server 中，当向 Active Directory 应用更改时，管理员将需要运行 **Update -CSUserDatabase** 和 **Update –CSAddressBook**Windows PowerShell cmdlet 以立即保留对 Lync Server 用户数据库和 RTCab 数据库的更改。在 Lync Server 2013 中，Lync Server 用户复制程序将从 Active Directory 选取更改并根据配置的间隔更新 Lync Server 用户数据库。Lync Server 用户复制程序还会快速传播对 RTCab 数据库的更改，此时管理员不必运行 Update-CSAddressBook。如果启用了地址簿 Web 查询，则这些更改将由 Lync 客户端在搜索结果中反映。如果启用了地址簿文件下载，则管理员只需运行 Update -CSAddressBook。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，Lync Server 用户复制程序每 5 分钟自动运行一次。您可以使用 Set -CSUserReplicatorConfiguration -ReplicationCycleInterval &lt;&gt; 配置此间隔。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 默认情况下，Lync Server 用户复制程序每 5 分钟自动运行一次。您可以使用 Set -CSUserReplicatorConfiguration -ReplicationCycleInterval &lt;&gt; 配置此间隔。
+
 
 
 ## 筛选通讯簿
@@ -270,18 +252,8 @@ Lync Server 需要标准化的 RFC 3966/E.164 电话号码。要使用非结构�
 
 可以使用某些标志位定义用于通讯簿服务器属性的筛选器。例如，某些标志位的状态可以将属性标识为包含属性或排除属性。用户复制程序筛选出包含排除属性的联系人，并筛选出不包含包含属性的联系人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关筛选通讯簿的详细信息，请参阅<a href="lync-server-2013-address-book-server-cmdlets.md">通讯簿服务器 Cmdlet</a> 和<a href="http://go.microsoft.com/fwlink/?linkid=330430">筛选 Lync 2013 通讯簿</a></td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 有关筛选通讯簿的详细信息，请参阅<a href="https://technet.microsoft.com/en-us/library/gg415643(v=ocs.15)">通讯簿服务器 Cmdlet</a> 和<a href="http://go.microsoft.com/fwlink/?linkid=330430">筛选 Lync 2013 通讯簿</a>
 
 
 目前，存在三种不同的筛选器。下表列出了这些筛选器。
@@ -315,18 +287,9 @@ Lync Server 需要标准化的 RFC 3966/E.164 电话号码。要使用非结构�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果同时设置了 0x4000（排除属性）和 0x8000（包含属性）标志位，0x4000 位将覆盖 0x8000 位，并且将排除联系人。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果同时设置了 0x4000（排除属性）和 0x8000（包含属性）标志位，0x4000 位将覆盖 0x8000 位，并且将排除联系人。
+
 
 
 尽管可以筛选通讯簿以仅包含特定用户，但是限制条目不会限制其他用户联系筛选出的用户或查看其状态的能力。通过输入用户的完整登录名，用户始终可以查找通讯簿中不存在的用户，手动向这些用户发送即时消息或者手动发起呼叫。此外，还可以在 Outlook 中找到用户的联系人信息。
@@ -335,30 +298,11 @@ Lync Server 需要标准化的 RFC 3966/E.164 电话号码。要使用非结构�
 
 修改 AbAttribute 表后，可以通过运行 cmdlet **Update-CsUserDatabase** 命令刷新 AbUserEntry 表中的数据。UR 复制完成后，可以通过手动运行 cmdlet **UpdateCsAddressBook** 命令更新通讯簿服务器文件存储中的文件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>无法以管理方式配置通讯簿服务器所在的前端服务器。在部署期间选定一个前端服务器，通常是部署的第一个前端服务器。出现故障时，通讯簿服务将转移至另一个前端服务器，并且不需要进行管理。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 无法以管理方式配置通讯簿服务器所在的前端服务器。在部署期间选定一个前端服务器，通常是部署的第一个前端服务器。出现故障时，通讯簿服务将转移至另一个前端服务器，并且不需要进行管理。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果合并或修改了多林部署或父/子部署的基础结构（例如，在移动至 Lync Server 之前合并基础结构），可能导致某些用户执行通讯簿服务下载和通讯簿 Web 查询时失败。在包含多个域或林的部署中时，将在出现此问题的用户对象上填充 <strong>MsRTCSIP-OriginatorSid</strong> 属性。为了解决此问题，必须在这些对象上将 <strong>MsRTCSIP-OriginatorSid</strong> 属性设置为 NULL。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果合并或修改了多林部署或父/子部署的基础结构（例如，在移动至 Lync Server 之前合并基础结构），可能导致某些用户执行通讯簿服务下载和通讯簿 Web 查询时失败。在包含多个域或林的部署中时，将在出现此问题的用户对象上填充 <strong>MsRTCSIP-OriginatorSid</strong> 属性。为了解决此问题，必须在这些对象上将 <strong>MsRTCSIP-OriginatorSid</strong> 属性设置为 NULL。
 

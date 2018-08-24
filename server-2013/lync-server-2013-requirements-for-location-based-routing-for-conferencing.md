@@ -19,18 +19,9 @@ _**上一次修改主题：** 2016-12-08_
 
   - 必须在您的拓扑中的所有服务器或池上部署 Lync Server 2013 累积更新 2。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的拓扑中的 Lync 服务器或池未安装 Lync Server 2013 累积更新 2 或更高版本，则无法确保能够强制实施 Lync 会议的基于位置的路由。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您的拓扑中的 Lync 服务器或池未安装 Lync Server 2013 累积更新 2 或更高版本，则无法确保能够强制实施 Lync 会议的基于位置的路由。
+
 
 
   - Lync Server 2013 基于位置的路由是基于位置的路由会议应用程序的先决条件。有关配置 Lync Server 2013 基于位置的路由的详细信息，请参阅[配置基于位置的路由](lync-server-2013-configuring-location-based-routing.md)。

@@ -53,18 +53,9 @@ PCD 在最后一个网络跃点很弱的情况（例如，公共 WiFi 网络上�
 
   - Windows 8 现代应用 ([http://go.microsoft.com/fwlink/?LinkId=322110](http://go.microsoft.com/fwlink/p/?linkid=322110))
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Office 365 Lync 用户可以使用 PCD 的两个版本。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Office 365 Lync 用户可以使用 PCD 的两个版本。
+
 
 
 如果想要使用 PCD 的以前版本，请参阅以下内容：
@@ -75,18 +66,9 @@ PCD 在最后一个网络跃点很弱的情况（例如，公共 WiFi 网络上�
 
 ## Lync PCD 系统要求
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PCD 要求在 Lync Server 部署中安装统一通信 Web API (UCWA) 并配置为支持移动客户端。UCWA 随 Lync Server 一起安装。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> PCD 要求在 Lync Server 部署中安装统一通信 Web API (UCWA) 并配置为支持移动客户端。UCWA 随 Lync Server 一起安装。
+
 
 
 ## Windows 桌面应用要求

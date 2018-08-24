@@ -23,7 +23,7 @@ _**上一次修改主题：** 2012-11-01_
 
 ## 相关部分
 
-[受信任应用程序 Cmdlet](lync-server-2013-trusted-applications-cmdlets.md)
+[受信任应用程序 Cmdlet](https://docs.microsoft.com/en-us/powershell/module/skype/?view=skype-ps)
 
 ## 另请参阅
 

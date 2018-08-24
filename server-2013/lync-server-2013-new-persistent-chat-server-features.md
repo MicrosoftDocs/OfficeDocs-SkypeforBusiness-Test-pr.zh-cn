@@ -57,11 +57,11 @@ Lync Server 2013持久聊天服务器在 Microsoft Office 365 中不可用。此
 
 持久聊天服务器现在是一个服务器角色。在 Microsoft Lync Server 2010 中， 群聊服务器是 Microsoft Lync Server 2010 的第三方受信任的应用程序。可以使用 拓扑生成器将 持久聊天添加到 Lync Server 2013 拓扑中。在 Lync Server 2013 中，将使用以下三个新的服务器角色实现 持久聊天服务器功能：
 
-  - **PersistentChatService ：**这是 持久聊天的前端角色。在 标准版 部署中，与任何其他 Lync Server 角色类似， 持久聊天服务器服务角色并置在由引导程序部署的 Standard Edition Server 上。在 企业版 部署中，与任何其他 Lync Server 角色类似， 持久聊天服务角色由引导程序部署在独立计算机上。
+  - **PersistentChatService ：** 这是 持久聊天的前端角色。在 标准版 部署中，与任何其他 Lync Server 角色类似， 持久聊天服务器服务角色并置在由引导程序部署的 Standard Edition Server 上。在 企业版 部署中，与任何其他 Lync Server 角色类似， 持久聊天服务角色由引导程序部署在独立计算机上。
 
-  - **PersistentChatStore ：**与 持久聊天内容数据库（在其中存储所有聊天内容）相对应的后端服务器。
+  - **PersistentChatStore ：** 与 持久聊天内容数据库（在其中存储所有聊天内容）相对应的后端服务器。
 
-  - **PersistentChatComplianceStore ：**与 持久聊天合规性数据库（在其中存储所有合规性事件）相对应的后端服务器角色。
+  - **PersistentChatComplianceStore ：** 与 持久聊天合规性数据库（在其中存储所有合规性事件）相对应的后端服务器角色。
 
 这些 持久聊天服务器角色是可选的，只有需要全面的 持久聊天服务器功能的客户才需要安装它们。只有选择部署 持久聊天合规性时才需要 **PersistentChatComplianceStore** 角色。
 
@@ -75,18 +75,8 @@ Lync Server 2013持久聊天服务器在 Microsoft Office 365 中不可用。此
 
 此外，为了支持 持久聊天聊天室中的文件上载和下载， 持久聊天服务器包含了 Web 服务。以前，此服务并置在 持久聊天服务器、 前端服务器，以及要作为必备组件安装的所需 Internet Information Services (IIS) 上。在 Lync Server 2013持久聊天服务器中，文件上载/下载 Web 服务与 Lync Server 2013前端服务器并置在一起。作为一种副作用， Internet Information Services (IIS) 不再是 持久聊天服务器的必备组件。在 Internet Information Services (IIS) 管理器中，将文件上载/下载 Web 服务标识为 **PersistentChat**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有 前端服务器是 标准版前端服务器时， <strong>PersistentChatService</strong> 角色才能与 Lync Server 2013前端服务器 在同一台服务器上运行。 <strong>PersistentChatService</strong> 角色无法独立于 Lync Server 2013前端服务器运行。它只能安装在 Lync Server 2013 部署的上下文中。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 只有 前端服务器是 标准版前端服务器时， <strong>PersistentChatService</strong> 角色才能与 Lync Server 2013前端服务器 在同一台服务器上运行。 <strong>PersistentChatService</strong> 角色无法独立于 Lync Server 2013前端服务器运行。它只能安装在 Lync Server 2013 部署的上下文中。
 
 
 在 持久聊天服务器中，已淘汰查找服务。在 Lync Server 2010 群聊中，查找服务在每台 群聊服务器前端服务器上运行，并且执行至任一频道服务器的路由。 Lync Server 2013 依赖使用联系人对象的路由，在这种路由方式中，每个 持久聊天服务器池由一个联系人对象表示， Lync Server前端服务器使用该对象标识并将请求路由到相应的 持久聊天服务器池和该池中运行 持久聊天服务器的计算机之一。
@@ -97,31 +87,12 @@ Lync Server 2013持久聊天服务器在 Microsoft Office 365 中不可用。此
 
   - 每台 持久聊天服务器前端服务器上的 持久聊天服务和合规性服务共享的消息队列（也称为 MSMQ）队列现在是仅由这两项服务共享的专用队列。所有合规性服务将写入同一个合规性后端数据库。此外，它们都从该数据库中进行读取，以便将数据发送到其适配器实例。合规性后端服务器用新的后端服务器角色表示。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>与在早期版本中相同，所有合规性数据仅处理一次。该数据可以由在各个 Lync Server 2013持久聊天服务器计算机上运行的合规性服务所调用的任何配器实例进行处理。在 持久聊天服务器中，任一适配器实例都可处理这些数据。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 与在早期版本中相同，所有合规性数据仅处理一次。该数据可以由在各个 Lync Server 2013持久聊天服务器计算机上运行的合规性服务所调用的任何配器实例进行处理。在 持久聊天服务器中，任一适配器实例都可处理这些数据。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关安装消息队列的信息，请参阅部署文档中的 <a href="lync-server-2013-install-operating-systems-and-prerequisite-software-on-servers.md">在服务器上安装适用于 Lync Server 2013 的操作系统和必备软件</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关安装消息队列的信息，请参阅部署文档中的 <a href="lync-server-2013-install-operating-systems-and-prerequisite-software-on-servers.md">在服务器上安装适用于 Lync Server 2013 的操作系统和必备软件</a>。
+    
 
 
 在 Lync Server 2013 中，对高可用性和灾难恢复方面都进行了改进：

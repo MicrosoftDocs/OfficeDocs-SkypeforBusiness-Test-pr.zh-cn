@@ -25,16 +25,7 @@ _**上一次修改主题：** 2012-10-01_
 
 3.  在“正在执行命令”页上，任务状态显示为已完成时，单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>还可以使用 bootstrapper.exe 或 <strong>Enable-CsComputer</strong> 来重新激活服务器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 还可以使用 bootstrapper.exe 或 <strong>Enable-CsComputer</strong> 来重新激活服务器。
+    
 

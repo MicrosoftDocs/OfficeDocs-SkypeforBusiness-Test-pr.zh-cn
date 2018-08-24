@@ -19,18 +19,9 @@ _**上一次修改主题：** 2012-09-05_
 
 PBX 与 Lync Server 2013 之间的集成使启用了远程呼叫控制的用户可通过以下方式使用 Lync 2013 用户界面 (UI) 来控制 PBX 电话上的呼叫：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>最终，承载用户 PBX 电话的 PBX 的功能将决定可供该用户使用的远程呼叫控制功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 最终，承载用户 PBX 电话的 PBX 的功能将决定可供该用户使用的远程呼叫控制功能。
+
 
 
   - 发出传出呼叫
@@ -39,18 +30,9 @@ PBX 与 Lync Server 2013 之间的集成使启用了远程呼叫控制的用户�
 
   - 使用即时消息应答传入呼叫
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>也就是说，呼叫者的电话号码可以与即时消息地址相关联，该地址可以来自组织的全局地址列表 (GAL)、被叫方的 Lync 联系人列表，或者联盟伙伴组织。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 也就是说，呼叫者的电话号码可以与即时消息地址相关联，该地址可以来自组织的全局地址列表 (GAL)、被叫方的 Lync 联系人列表，或者联盟伙伴组织。
+    
 
 
   - 转接呼叫

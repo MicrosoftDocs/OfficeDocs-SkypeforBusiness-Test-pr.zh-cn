@@ -21,18 +21,9 @@ _**上一次修改主题：** 2012-09-08_
 
 您可以实现单个 控制器服务器或 控制器池池。 控制器始终是单独的服务器或池，不与 Lync Server 2013 中的其他任何服务器角色并置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您未部署控制器，前端服务器或前端池将假定控制器角色。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您未部署控制器，前端服务器或前端池将假定控制器角色。
+
 
 
 必须对 控制器池进行负载平衡。可选择下列方法之一：

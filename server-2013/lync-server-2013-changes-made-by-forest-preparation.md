@@ -209,18 +209,9 @@ _**上一次修改主题：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>*</strong>非继承的 ACE 不会授予对这些容器下的子对象的访问权限。继承的 ACE 将授予对这些容器下的子对象的访问权限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <strong>*</strong>非继承的 ACE 不会授予对这些容器下的子对象的访问权限。继承的 ACE 将授予对这些容器下的子对象的访问权限。
+
 
 
 在配置容器上的配置命名上下文中，林准备将执行以下任务：

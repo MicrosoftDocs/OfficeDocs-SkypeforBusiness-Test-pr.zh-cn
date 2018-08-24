@@ -29,36 +29,17 @@ _**上一次修改主题：** 2013-03-26_
     
     响应组应用程序只能为每个池存储一组应用程序级别设置。可通过 **Get-CsRgsConfiguration** cmdlet 访问这些设置。这些设置包括默认的保持音乐配置、默认的保持音乐音频文件、代理回响宽限期和呼叫上下文配置。可通过使用 **ReplaceExistingSettings** 参数的 **Import-CsRgsConfiguration** cmdlet 将这些设置从一个池传输到另一个池，但此操作将覆盖目标池中的任何应用程序级别设置。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在单独的位置，保存已用于配置响应组应用程序的所有原始音频文件（即，任何录制或保持音乐文件）的备份副本。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 在单独的位置，保存已用于配置响应组应用程序的所有原始音频文件（即，任何录制或保持音乐文件）的备份副本。
     
     如果池中有已为呼叫寄存上载的任何自定义保持音乐文件，应将这些文件的副本保存在其他位置。这些文件不会作为 Lync Server 2013 灾难恢复过程的一部分进行备份，并且将在上载到池的文件毁坏、损坏或清除时丢失。
     
         Xcopy  <Source: Pool A CPS File Store Path>  <Destination>
         Example: Xcopy  "<Pool A File Store Path>\LyncFileStore\coX-ApplicationServer-X\AppServerFiles\CPS\"  "<Destination:  Backup location 1>"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>呼叫寄存应用程序只能为每个池存储一组设置和一个自定义的保持音乐音频文件。可通过 <strong>Get-CsCpsConfiguration</strong> cmdlet 访问这些设置。因为呼叫寄存的灾难恢复机制依赖备份池的呼叫寄存应用程序，所以在灾难发生时不会备份或保留主池的设置。如果主池丢失，则无法恢复这些设置，并且在部署新池来替代主池时，将需要重新配置呼叫寄存设置和任何自定义的保持音乐音频文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 呼叫寄存应用程序只能为每个池存储一组设置和一个自定义的保持音乐音频文件。可通过 <strong>Get-CsCpsConfiguration</strong> cmdlet 访问这些设置。因为呼叫寄存的灾难恢复机制依赖备份池的呼叫寄存应用程序，所以在灾难发生时不会备份或保留主池的设置。如果主池丢失，则无法恢复这些设置，并且在部署新池来替代主池时，将需要重新配置呼叫寄存设置和任何自定义的保持音乐音频文件。
+    
 
 
   - 如果您配置任何通知作为未分配号码语音功能的一部分，建议您将在初始配置过程中使用的任何原始音频文件的副本保存在其他位置。如果您没有如此做，则可以在音频文件导入到的服务器或池的文件存储中获得所配置的音频文件的副本。这些文件不会作为 Lync Server 2013 灾难恢复过程的一部分进行备份，并且将在上载到池的文件毁坏、损坏或清除时丢失。若要从服务器或池的文件存储中复制用于配置未分配号码语音功能的所有音频文件，请使用：

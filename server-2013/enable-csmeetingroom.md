@@ -177,6 +177,6 @@ The **Enable-CsMeetingRoom** cmdlet creates new instances of the Microsoft.Rtc.M
 
 [Disable-CsMeetingRoom](disable-csmeetingroom.md)  
 [Get-CsMeetingRoom](get-csmeetingroom.md)  
-[Move-CsMeetingRoom](move-csmeetingroom.md)  
+[Move-CsMeetingRoom](Move-CsMeetingRoom.md)  
 [Set-CsMeetingRoom](set-csmeetingroom.md)
 

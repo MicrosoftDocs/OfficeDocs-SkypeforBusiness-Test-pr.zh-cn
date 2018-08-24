@@ -42,7 +42,7 @@ Exchange 统一消息 (UM) 综合事务验证测试用户是否能连接到驻�
 
 ## 持久聊天综合事务
 
-若要使用持久聊天综合事务，管理员必须先创建一个通道并向测试用户授予使用该通道的权限。可以使用 [Test-CsPersistentChatMessage](test-cspersistentchatmessage.md) cmdlet 正确配置这些测试用户：
+若要使用持久聊天综合事务，管理员必须先创建一个通道并向测试用户授予使用该通道的权限。可以使用 [Test-CsPersistentChatMessage](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsPersistentChatMessage) cmdlet 正确配置这些测试用户：
 
     $cred1 = Get-Credential "litwareinc\kenmyer"
     $cred2 = Get-Credential "litwareinc\pilar"
@@ -61,7 +61,7 @@ Exchange 统一消息 (UM) 综合事务验证测试用户是否能连接到驻�
 
 ## PSTN 对等呼叫综合事务
 
-[Test-CsPstnPeerToPeerCall](test-cspstnpeertopeercall.md) 综合事务验证是否能通过公用电话交换网 (PSTN) 发出和接收呼叫。
+[Test-CsPstnPeerToPeerCall](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsPstnPeerToPeerCall) 综合事务验证是否能通过公用电话交换网 (PSTN) 发出和接收呼叫。
 
 若要运行此综合事务，管理员必须：
 

@@ -108,6 +108,6 @@ This cmdlet returns an object of type Microsoft.Rtc.Management.WritableConfig.Se
 
 [New-CsTrunkConfiguration](new-cstrunkconfiguration.md)  
 [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md)  
-[Set-CsTrunkConfiguration](set-cstrunkconfiguration.md)  
+[Set-CsTrunkConfiguration](Set-CsTrunkConfiguration.md)  
 [Test-CsTrunkConfiguration](test-cstrunkconfiguration.md)
 

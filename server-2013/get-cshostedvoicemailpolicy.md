@@ -19,11 +19,13 @@ Retrieves a hosted voice mail policy. 此 cmdlet 是在 Lync Server 2010 中引�
 
 ## 语法
 
-    Get-CsHostedVoicemailPolicy [-Identity <XdsIdentity>] <COMMON PARAMETERS>
+``` PowerShell
+Get-CsHostedVoicemailPolicy [-Identity <XdsIdentity>] <COMMON PARAMETERS>
 
-    Get-CsHostedVoicemailPolicy [-Filter <String>] <COMMON PARAMETERS>
+Get-CsHostedVoicemailPolicy [-Filter <String>] <COMMON PARAMETERS>
 
-    COMMON PARAMETERS: [-LocalStore <SwitchParameter>] [-Tenant <Guid>]
+COMMON PARAMETERS: [-LocalStore <SwitchParameter>] [-Tenant <Guid>]
+```
 
 ## Examples
 
@@ -31,25 +33,33 @@ Retrieves a hosted voice mail policy. 此 cmdlet 是在 Lync Server 2010 中引�
 
 This command returns all defined hosted voice mail policies for the Lync Server implementation.
 
-    Get-CsHostedVoicemailPolicy
+``` PowerShell
+CsHostedVoicemailPolicy
+```
 
 ## EXAMPLE 2
 
 This command returns the policy settings for the per-user hosted voice mail policy ExRedmond.
 
-    Get-CsHostedVoicemailPolicy -Identity ExRedmond
+``` PowerShell
+Get-CsHostedVoicemailPolicy -Identity ExRedmond
+```
 
 ## EXAMPLE 3
 
 This command returns the policy settings for all per-user hosted voice mail policies (policies beginning with the tag scope).
 
-    Get-CsHostedVoicemailPolicy -Filter tag:*
+``` PowerShell
+Get-CsHostedVoicemailPolicy -Filter tag:*
+```
 
 ## EXAMPLE 4
 
 This command returns the hosted voice mail policy for the Lync Online tenant with the tenant ID 73d355dd-ce5d-4ab9-bf49-7b822c18dd98.
 
-    Get-CsHostedVoicemailPolicy -Tenant "73d355dd-ce5d-4ab9-bf49-7b822c18dd98"
+``` PowerShell
+Get-CsHostedVoicemailPolicy -Tenant "73d355dd-ce5d-4ab9-bf49-7b822c18dd98"
+```
 
 ## Detailed Description
 
@@ -60,9 +70,6 @@ A user must be enabled for Exchange UM hosted voice mail for this policy to take
 Who can run this cmdlet: By default, members of the following groups are authorized to run the **Get-CsHostedVoicemailPolicy** cmdlet locally: RTCUniversalUserAdmins, RTCUniversalServerAdmins. To return a list of all the role-based access control (RBAC) roles this cmdlet has been assigned to (including any custom RBAC roles you have created yourself), run the following command from the Windows PowerShell prompt:
 
 Get-CsAdminRole | Where-Object {$\_.Cmdlets –match "Get-CsHostedVoicemailPolicy"}
-
-``` 
-```
 
 ## 参数
 
@@ -130,6 +137,6 @@ This cmdlet returns an object of type Microsoft.Rtc.Management.WritableConfig.Po
 
 [New-CsHostedVoicemailPolicy](new-cshostedvoicemailpolicy.md)  
 [Remove-CsHostedVoicemailPolicy](remove-cshostedvoicemailpolicy.md)  
-[Set-CsHostedVoicemailPolicy](set-cshostedvoicemailpolicy.md)  
+[Set-CsHostedVoicemailPolicy](Set-CsHostedVoicemailPolicy.md)  
 [Grant-CsHostedVoicemailPolicy](grant-cshostedvoicemailpolicy.md)
 

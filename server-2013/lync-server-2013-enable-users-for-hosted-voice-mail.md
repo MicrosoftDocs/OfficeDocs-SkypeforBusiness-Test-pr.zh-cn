@@ -19,20 +19,10 @@ _**上一次修改主题：** 2012-09-24_
 
 有关详细信息，请参阅规划文档中的 [Lync Server 2013 中的托管 Exchange 用户管理](lync-server-2013-hosted-exchange-user-management.md)。
 
-有关 [Set-CsUser](set-csuser.md) cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档。
+有关 [Set-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsUser) cmdlet 的详细信息，请参阅 Lync Server 命令行管理程序文档。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在可以为 Lync Server 2013 用户启用托管语音邮件之前，必须已部署应用于其用户帐户的托管语音邮件策略。有关详细信息，请参阅 <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的托管语音邮件策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 在可以为 Lync Server 2013 用户启用托管语音邮件之前，必须已部署应用于其用户帐户的托管语音邮件策略。有关详细信息，请参阅 <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的托管语音邮件策略</a>。
 
 
 ## 为用户启用托管语音邮件
@@ -57,16 +47,7 @@ _**上一次修改主题：** 2012-09-24_
         
           - 用户的 Active Directory 域服务显示名称（例如，Ken Myer）。如果将显示名称用作 Identity 值，可以使用星号 (\*) 通配符。例如，Identity "\* Smith" 将返回显示名称以字符串值“Smith”结尾的所有用户。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>用户的 Active Directory SAM 帐户名不能用作 Identity 值，因为 SAM 帐户名在林中不一定是唯一的。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 用户的 Active Directory SAM 帐户名不能用作 Identity 值，因为 SAM 帐户名在林中不一定是唯一的。
+        
 

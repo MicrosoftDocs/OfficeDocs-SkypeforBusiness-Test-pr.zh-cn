@@ -40,18 +40,9 @@ _**上一次修改主题：** 2012-11-01_
 
     Set-CsMediaConfiguration -Identity site:Redmond -EnableQoS $True
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您是否需要在站点范围启用 QoS？要视情况而定。分配给站点范围的设置的优先于分配给全局范围的设置。假设您在全局范围启用了 QoS 但在站点范围（为 Redmond 站点）禁用了 QoS。在这种情况下，将为 Redmond 站点禁用服务质量；这是因为站点设置的优先级高。要为 Redmond 站点启用 QoS，您必须使用应用于该站点的媒体配置设置执行此操作。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您是否需要在站点范围启用 QoS？要视情况而定。分配给站点范围的设置的优先于分配给全局范围的设置。假设您在全局范围启用了 QoS 但在站点范围（为 Redmond 站点）禁用了 QoS。在这种情况下，将为 Redmond 站点禁用服务质量；这是因为站点设置的优先级高。要为 Redmond 站点启用 QoS，您必须使用应用于该站点的媒体配置设置执行此操作。
+
 
 
 如果您要同时为所有媒体配置设置（不管范围为何）启用 QoS，请从 Lync Server 命令行管理程序中运行此命令：

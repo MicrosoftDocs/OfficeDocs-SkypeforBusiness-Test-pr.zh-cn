@@ -75,18 +75,9 @@ _**上一次修改主题：** 2014-05-12_
 
   - 将 **EnableMultiviewJoin** 选项设置为 **False**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要在 Lync Server 2013 中支持包含 1000 个用户的大型会议，则需要将会议计划程序的会议策略中的 <strong>AllowLargeMeetings</strong> 设置设为 True。若将此设置设为 True，则 Lync 体验将在用户参加超大型会议时针对此类会议进行优化。具体而言，在大型会议中， Lync 不显示完整会议参与者列表的初始或更新情况，对于客户端和 Lync Server 2013 而言，这是一个性能瓶颈。相反， Lync 仅显示有关用户和会议演示者列表的信息。 Lync 仍将正确显示大型会议中可用的参与者的总数。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要在 Lync Server 2013 中支持包含 1000 个用户的大型会议，则需要将会议计划程序的会议策略中的 <strong>AllowLargeMeetings</strong> 设置设为 True。若将此设置设为 True，则 Lync 体验将在用户参加超大型会议时针对此类会议进行优化。具体而言，在大型会议中， Lync 不显示完整会议参与者列表的初始或更新情况，对于客户端和 Lync Server 2013 而言，这是一个性能瓶颈。相反， Lync 仅显示有关用户和会议演示者列表的信息。 Lync 仍将正确显示大型会议中可用的参与者的总数。
+
 
 
 若要禁用大型会议中不需要的会议功能，需要使用此处指定的所有会议策略设置（“最大会议规模”设置除外）。

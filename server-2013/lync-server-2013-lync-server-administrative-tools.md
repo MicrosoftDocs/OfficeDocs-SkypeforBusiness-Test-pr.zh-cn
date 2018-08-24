@@ -53,25 +53,11 @@ _**上一次修改主题：** 2016-12-08_
 
 Lync Server 控制面板会自动安装在每台 Lync Server 前端服务器或 Standard Edition Server 上。在此版本中，您可以远程管理边缘服务器。您还可以在另一台计算机上安装 Lync Server 控制面板，如从其上集中管理 Lync Server 的管理控制台。有关详细信息，请参阅 [安装 Lync Server 2013 管理工具](lync-server-2013-install-lync-server-administrative-tools.md)。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>要使用 Lync Server 控制面板配置设置，必须使用分配给 CsAdministrator 角色的帐户登录。有关 Lync Server 2013 中提供的预定义管理角色的详细信息，请参阅<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中规划基于角色的访问控制</a>。</p></li>
-<li><p>要使用 Lync Server 控制面板配置设置，还必须使用的屏幕分辨率至少为 1024 x 768 的计算机。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> <ul>
+> <li><p>要使用 Lync Server 控制面板配置设置，必须使用分配给 CsAdministrator 角色的帐户登录。有关 Lync Server 2013 中提供的预定义管理角色的详细信息，请参阅<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中规划基于角色的访问控制</a>。</p></li>
+> <li><p>要使用 Lync Server 控制面板配置设置，还必须使用的屏幕分辨率至少为 1024 x 768 的计算机。</p></li>
+> </ul>
 
 ## Lync Server 命令行管理程序
 
@@ -81,18 +67,8 @@ Lync Server 控制面板会自动安装在每台 Lync Server 前端服务器或 
 
 通过在产品运行期间捕获来自产品的日志记录和跟踪信息， Lync Server 日志记录工具可帮助进行故障排除。可以使用此工具在任何 Lync Server 服务器角色上运行调试会话。有关日志记录工具的详细信息，请参阅 TechNet 库中的 Lync Server 2010 日志记录工具文档，网址为 <http://go.microsoft.com/fwlink/?linkid=199265>。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议在所有情况下，所有通过 Lync Server 日志记录工具进行的日志记录收集工作都使用 集中日志记录服务。虽然 Lync Server 日志记录工具仍可运行，但如果 集中日志记录服务已在运行，它会产生干扰或者表现得基本无效。您只能单独使用 集中日志记录服务或 Lync Server 日志记录工具，切勿两个同时使用。有关 集中日志记录服务以及为何应以独占方式使用它的详细信息，请参阅 <a href="lync-server-2013-using-the-centralized-logging-service.md">使用集中日志记录服务</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 建议在所有情况下，所有通过 Lync Server 日志记录工具进行的日志记录收集工作都使用 集中日志记录服务。虽然 Lync Server 日志记录工具仍可运行，但如果 集中日志记录服务已在运行，它会产生干扰或者表现得基本无效。您只能单独使用 集中日志记录服务或 Lync Server 日志记录工具，切勿两个同时使用。有关 集中日志记录服务以及为何应以独占方式使用它的详细信息，请参阅 <a href="lync-server-2013-using-the-centralized-logging-service.md">使用集中日志记录服务</a>。
 
 
 ## 本节内容

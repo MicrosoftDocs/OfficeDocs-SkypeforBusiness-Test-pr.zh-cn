@@ -23,19 +23,10 @@ Lync Server 2013 和 Lync 2013 可以安全、无缝地与其他应用程序和�
 
   - 来自 Lync 的存档内容（如 IM 和会议内容）可以存储在 Exchange 存储中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 支持与 Microsoft Exchange Server 和 SharePoint 的早期版本集成，但这些早期版本并不支持所有功能，如存档存储与 Microsoft Exchange 的集成。<br />
-如果要将用户迁移至 Exchange 2013，则可临时同时使用 Exchange 存储和 Lync Server 存储，同时完成迁移。不支持永久同时使用 Exchange 和 Lync Server 存储。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 支持与 Microsoft Exchange Server 和 SharePoint 的早期版本集成，但这些早期版本并不支持所有功能，如存档存储与 Microsoft Exchange 的集成。<br />
+如果要将用户迁移至 Exchange 2013，则可临时同时使用 Exchange 存储和 Lync Server 存储，同时完成迁移。不支持永久同时使用 Exchange 和 Lync Server 存储。
+
 
 
 Lync Server 2013 与 Exchange 2013 和 SharePoint Server 的集成需要在运行 Lync Server 2013、 Microsoft Exchange Server 和 SharePoint Server 的服务器之间进行服务器到服务器身份验证。 Lync Server 2013 支持用于服务器到服务器身份验证和授权的 OAuth (Open Authorization) 协议。对于在两台 Microsoft 服务器之间进行的本地服务器到服务器身份验证，无需使用第三方令牌服务器。 Lync Server 2013、 Exchange 2013 和 SharePoint 具有内置的令牌服务器，可用于彼此之间的身份验证用途。例如， Lync Server 2013 可以发出并自行签署安全令牌，并在与 Exchange 2013 通信时使用该令牌。在此情况下，无需使用第三方令牌服务器。
@@ -46,18 +37,9 @@ Lync Server 2013 支持两种服务器到服务器身份验证方案。其中包
 
   - 一对 Office 组件（例如，在 Microsoft Exchange 365 与 Microsoft Lync Server 365 之间或 Microsoft Lync Server 365 与 Microsoft SharePoint 365 之间）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 版本中不支持本地服务器与 Office 365 组件之间的服务器到服务器身份验证。此外，这意味着不能在 Lync Server 2013 与 Microsoft Exchange 365 的本地安装之间设置服务器到服务器身份验证。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 版本中不支持本地服务器与 Office 365 组件之间的服务器到服务器身份验证。此外，这意味着不能在 Lync Server 2013 与 Microsoft Exchange 365 的本地安装之间设置服务器到服务器身份验证。
+
 
 
 有关服务器到服务器身份验证的详细信息，请参阅部署文档或操作文档中的 [在 Lync Server 2013 中管理服务器到服务器身份验证 (Oauth) 和合作伙伴应用程序](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md)。

@@ -103,18 +103,8 @@ In the Logging Tool, when you have ended the debug session, click Analyze Log Fi
 
 To help organize the performance of as-needed tasks, see As-Needed Operations Checklist.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>For detailed administration and management procedures, see the Microsoft Lync Server 2013 Administration Guide.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> For detailed administration and management procedures, see the Microsoft Lync Server 2013 Administration Guide.
 
 
 ## Backup (and restore) policies or configuration settings

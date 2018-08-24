@@ -32,18 +32,8 @@ _**上一次修改主题：** 2013-02-20_
     
         New-CsClientPolicy -Identity "NewCommonAreaPhonePolicy" - EnableHotdesking $True
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建此策略后，必须将它分配给适当的公共区域电话。有关详细信息，请参阅<a href="lync-server-2013-assign-policies-to-a-common-area-phone.md">向公共区域电话分配策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 创建此策略后，必须将它分配给适当的公共区域电话。有关详细信息，请参阅<a href="lync-server-2013-assign-policies-to-a-common-area-phone.md">向公共区域电话分配策略</a>。
 
 
 ## 禁用公用办公桌
@@ -52,5 +42,5 @@ _**上一次修改主题：** 2013-02-20_
     
         Set-CsClientPolicy -Identity "CommonAreaPhonePolicy" - EnableHotdesking $False
 
-有关详细信息，请参阅 [New-CsClientPolicy](new-csclientpolicy.md) cmdlet 和 [Set-CsClientPolicy](set-csclientpolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [New-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientPolicy) cmdlet 和 [Set-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPolicy) cmdlet 的帮助主题。
 

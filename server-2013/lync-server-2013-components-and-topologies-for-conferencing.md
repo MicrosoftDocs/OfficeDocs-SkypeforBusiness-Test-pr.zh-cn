@@ -41,18 +41,9 @@ Lync Server 2013 使用 Office Web Apps和 Office Web Apps Server处理 PowerPoi
     
       - 会话边界控制器 (SBC)（用于通过配置 SIP 中继进行连接的 Internet 电话服务提供商）
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果还要部署 企业语音，则 中介服务器和 PSTN 网关是 企业语音部署的一部分。如果不部署 企业语音，则需要为电话拨入式会议部署至少一台 中介服务器，以及至少一个 PSTN 网关、IP-PBX 或 SBC。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果还要部署 企业语音，则 中介服务器和 PSTN 网关是 企业语音部署的一部分。如果不部署 企业语音，则需要为电话拨入式会议部署至少一台 中介服务器，以及至少一个 PSTN 网关、IP-PBX 或 SBC。
+    
 
 
   - **文件存储** 文件存储用于录制的名称音频文件。文件存储是每个 企业版 或 标准版 部署中的标准组件。
@@ -79,18 +70,9 @@ Lync Server 2013 使用 Office Web Apps和 Office Web Apps Server处理 PowerPoi
 
 可以在中央站点上部署 应用程序服务、 会议助理应用程序和 会议通知应用程序，但不能在分支站点上部署。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果部署电话拨入式会议，那么必须在每个部署 Lync Server 2013 会议的池中部署电话拨入式会议。无需在每个池中分配访问号码，但必须在每个池中部署电话拨入式会议功能。当用户呼叫一个池中的访问号码以加入另一个池中的 Lync Server 2013 会议时，此要求支持记录名称功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果部署电话拨入式会议，那么必须在每个部署 Lync Server 2013 会议的池中部署电话拨入式会议。无需在每个池中分配访问号码，但必须在每个池中部署电话拨入式会议功能。当用户呼叫一个池中的访问号码以加入另一个池中的 Lync Server 2013 会议时，此要求支持记录名称功能。
+
 
 
 ## Lync Server 2013 和 Office Web Apps 的受支持的拓扑
@@ -111,16 +93,7 @@ Lync Server 2013 提供下列方法来配置 Office Web Apps Server。根据您�
 
 无论您选择什么拓扑，打开正确的防火墙端口至关重要。必须确保 Office Web Apps Server、负载平衡器或 Lync Server 上的防火墙不会阻止 DNS 名称、IP 地址和端口。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>提供对 Office Web Apps Server 外部访问权限的另一选项是在外围网络中部署服务器。如果选择执行此操作，请记住， Office Web Apps Server 安装要求该服务器计算机是 Active Directory 域的成员。除非您的网络策略允许外围网络中的计算机是 Active Directory 域成员，否则，建议您不要在外围网络中安装 Office Web Apps Server。但是，应该在内部网络中安装 Office Web Apps Server，并提供外部用户通过反向代理服务器的访问权限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 提供对 Office Web Apps Server 外部访问权限的另一选项是在外围网络中部署服务器。如果选择执行此操作，请记住， Office Web Apps Server 安装要求该服务器计算机是 Active Directory 域的成员。除非您的网络策略允许外围网络中的计算机是 Active Directory 域成员，否则，建议您不要在外围网络中安装 Office Web Apps Server。但是，应该在内部网络中安装 Office Web Apps Server，并提供外部用户通过反向代理服务器的访问权限。
+
 

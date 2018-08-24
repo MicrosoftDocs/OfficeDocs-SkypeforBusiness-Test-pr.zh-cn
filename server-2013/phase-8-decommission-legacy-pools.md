@@ -19,40 +19,23 @@ _**上一次修改主题：** 2016-12-08_
 
 有关删除 Lync Server 2010 服务器和服务器角色的详细介绍以及停用 Lync Server 2010 部署的分步指南，请参阅“卸载 Microsoft Lync Server 2010 和删除服务器角色”，可从 [http://go.microsoft.com/fwlink/p/?linkId=246227](http://go.microsoft.com/fwlink/p/?linkid=246227) 下载本文。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关在停用旧环境之前迁移和升级 Microsoft 统一通信托管 API (UCMA) 应用程序的信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=269555">http://go.microsoft.com/fwlink/p/?LinkId=269555</a></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 有关在停用旧环境之前迁移和升级 Microsoft 统一通信托管 API (UCMA) 应用程序的信息，请参阅 <a href="http://go.microsoft.com/fwlink/p/?linkid=269555">http://go.microsoft.com/fwlink/p/?LinkId=269555</a>
 
 
 ## 本部分内容
 
-  -   
-    [更新 DNS SRV 记录](update-dns-srv-records.md)
+  - [更新 DNS SRV 记录](update-dns-srv-records.md)
 
-  -   
-    [将 Lync Server 2010 中央管理服务器移动到 Lync Server 2013](move-the-lync-server-2010-central-management-server-to-lync-server-2013.md)
+  - [将 Lync Server 2010 中央管理服务器移动到 Lync Server 2013](move-the-lync-server-2010-central-management-server-to-lync-server-2013.md)
 
-  -   
-    [移动会议目录](move-lync-server-2010-conference-directories-to-lync-server-2013.md)
+  - [移动会议目录](move-lync-server-2010-conference-directories-to-lync-server-2013.md)
 
-  -   
-    [删除存档服务器关联](remove-the-archiving-server-association.md)
+  - [删除存档服务器关联](remove-the-archiving-server-association.md)
 
-  -   
-    [删除监视服务器关联](remove-the-monitoring-server-association.md)
+  - [删除监视服务器关联](remove-the-monitoring-server-association.md)
 
-  -   
-    [删除 Enterprise Edition 前端服务器或 Standard Edition 前端服务器](remove-the-enterprise-edition-front-end-server-or-standard-edition-front-end-server.md)
+  - [删除 Enterprise Edition 前端服务器或 Standard Edition 前端服务器](remove-the-enterprise-edition-front-end-server-or-standard-edition-front-end-server.md)
 
-  -   
-    [删除后端服务器上的 SQL Server 实例和数据库](remove-sql-server-instances-and-databases-on-the-back-end-server.md)
+  - [删除后端服务器上的 SQL Server 实例和数据库](remove-sql-server-instances-and-databases-on-the-back-end-server.md)
 

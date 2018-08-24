@@ -29,18 +29,9 @@ _**上一次修改主题：** 2012-10-08_
 
 5.  在“新建区域路由”的“名称”字段中键入值。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>该值必须在 Microsoft Lync Server 2013 部署中是唯一的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 该值必须在 Microsoft Lync Server 2013 部署中是唯一的。
+    
 
 
 6.  从“网络区域 \#1”下拉列表中，选择要通过此路由进行连接的两个区域之一。
@@ -49,18 +40,9 @@ _**上一次修改主题：** 2012-10-08_
 
 8.  使用“网络区域链接”列表框向路由添加区域链接。单击“添加”按钮以显示“区域链接”页面。单击某个区域链接将其添加到此路由，然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>继续单击“添加”按钮添加更多链接，还可选择某个链接，然后单击“删除”删除该链接。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 继续单击“添加”按钮添加更多链接，还可选择某个链接，然后单击“删除”删除该链接。
+    
 
 
 9.  单击“提交”。

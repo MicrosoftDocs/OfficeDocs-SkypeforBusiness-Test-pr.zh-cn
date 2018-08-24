@@ -57,16 +57,6 @@ _**上一次修改主题：** 2012-09-26_
     
     ![使用 Identity 筛选器的 Get-CsUser cmdlet 的输出](images/JJ205401.bc5d4672-8068-4475-b882-dbd305c801a9(OCS.15).jpg "使用 Identity 筛选器的 Get-CsUser cmdlet 的输出")  
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关 <strong>Get-CsUser</strong> cmdlet 的详细信息，请运行：<strong>Get-Help Get-CsUser –Detailed</strong></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 有关 <strong>Get-CsUser</strong> cmdlet 的详细信息，请运行：<strong>Get-Help Get-CsUser –Detailed</strong>
 

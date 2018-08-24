@@ -10,41 +10,20 @@ ms.translationtype: HT
 ---
 
 # 在 Lync Server 2013 中使用 Lync Server 命令行管理程序安装数据库
-
  
 
 _**上一次修改主题：** 2016-12-08_
 
 服务器管理员和 SQL Server 管理员之间角色和职责的分离可能会导致实现中出现延迟。 Lync Server 2013 使用基于角色的访问控制 (RBAC) 来解决这些难题。在某些实例中，SQL Server 管理员必须管理在 RBAC 之外基于 SQL Server 的服务器上安装数据库。 Lync Server 2013 命令行管理程序为 SQL Server 管理员提供了一种运行 Windows PowerShell cmdlet（旨在通过正确的数据和日志文件配置数据库）的方法。有关详细信息，请参阅 [Lync Server 2013 中 SQL Server 的部署权限](lync-server-2013-deployment-permissions-for-sql-server.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>以下过程假定至少安装了 Microsoft SQL Server 2012 和 Microsoft SQL Server 2012 ADOMD.NET 的 Lync Server 2013 OCSCore.msi、SQL Server Native Client (sqlncli.msi) Microsoft SQL Server 2012 管理对象、CLR 类型。OCSCore.msi 位于安装媒体的 \Setup\AMD64\Setup 目录中。其余组件位于 \Setup\amd64 中。此外，已成功完成 Lync Server 2013 的 Active Directory 准备工作。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 以下过程假定至少安装了 Microsoft SQL Server 2012 和 Microsoft SQL Server 2012 ADOMD.NET 的 Lync Server 2013 OCSCore.msi、SQL Server Native Client (sqlncli.msi) Microsoft SQL Server 2012 管理对象、CLR 类型。OCSCore.msi 位于安装媒体的 \Setup\AMD64\Setup 目录中。其余组件位于 \Setup\amd64 中。此外，已成功完成 Lync Server 2013 的 Active Directory 准备工作。
 
 
 **Install-CsDatabase** 是用于安装数据库的 Windows PowerShell cmdlet。 **Install-CsDatabase** cmdlet 有大量参数，此处只讨论其中的一部分。有关可能的参数的详细信息，请参阅 Lync Server 2013 命令行管理程序文档。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为避免性能问题和可能出现的超时问题，引用基于 SQL Server 的服务器时请始终使用完全限定域名 (FQDN)。避免只引用主机名。例如，使用 sqlbe01.contoso.net，避免使用 SQLBE01。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 为避免性能问题和可能出现的超时问题，引用基于 SQL Server 的服务器时请始终使用完全限定域名 (FQDN)。避免只引用主机名。例如，使用 sqlbe01.contoso.net，避免使用 SQLBE01。
 
 
 对于安装数据库而言， **Install-CsDatabase** 使用三种主要的方法将数据库放入准备好的基于 SQL Server 的服务器：
@@ -65,24 +44,19 @@ _**上一次修改主题：** 2016-12-08_
 
 3.  使用 **Install-CsDatabase** cmdlet 安装 中央管理存储。
     
-        Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn <fully qualified domain name of SQL Server> 
-        -SqlInstanceName <named instance> -DatabasePaths <logfile path>,<database file path> 
-        -Report <path to report file>
+      ```
+      Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn <fully qualified domain name of SQL Server> 
+      -SqlInstanceName <named instance> -DatabasePaths <logfile path>,<database file path> 
+       -Report <path to report file>
+      ```  
+
+        
+      ```
+      Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn sqlbe.contoso.net -SqlInstanceName rtc -DatabasePaths "C:\CSDB-Logs","C:\CSDB-CMS" -Report "C:\Logs\InstallDatabases.html"
+      ```
     
-        Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn sqlbe.contoso.net -SqlInstanceName rtc -DatabasePaths "C:\CSDB-Logs","C:\CSDB-CMS" -Report "C:\Logs\InstallDatabases.html"
-    
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Report 参数是可选的，但是在记录安装过程时很有用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Report 参数是可选的，但是在记录安装过程时很有用。
 
 
 4.  **Install-CsDatabase –DatabasePaths** 最多可以使用六个路径参数，其中每个参数均定义了“SQL Server 数据和日志文件放置”中定义的驱动器的路径。依据 Lync Server 2013 中的数据库配置的逻辑规则，驱动器会解析为两个、四个或六个桶。根据您的 SQL Server 配置和桶的数目，您将提供两条、四条或六条路径。
@@ -99,42 +73,27 @@ _**上一次修改主题：** 2016-12-08_
 
 2.  在任意计算机上，使用管理凭据进行登录，以便在基于 SQL Server 的服务器上创建数据库。请参阅主题[Lync Server 2013 中 SQL Server 的部署权限](lync-server-2013-deployment-permissions-for-sql-server.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>为了能够配置基于 SQL Server 的数据库，请确保用于运行此处描述的步骤的 SQL Server 管理员帐户也是运行 SQL Server 并保留中央管理服务器角色的服务器上的 sysadmins 组（或等效组）的成员。这对于检查任何其他需要 SQL Server 数据库安装或配置的 Lync Server 2013 池特别重要。例如，如果您部署的是另一个池 (pool02)，而 pool01 保留了中央管理服务器角色，则 SQL Server sysadmin 组（或等效组）必须同时具有这两个基于 SQL Server 的数据库的权限。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 为了能够配置基于 SQL Server 的数据库，请确保用于运行此处描述的步骤的 SQL Server 管理员帐户也是运行 SQL Server 并保留中央管理服务器角色的服务器上的 sysadmins 组（或等效组）的成员。这对于检查任何其他需要 SQL Server 数据库安装或配置的 Lync Server 2013 池特别重要。例如，如果您部署的是另一个池 (pool02)，而 pool01 保留了中央管理服务器角色，则 SQL Server sysadmin 组（或等效组）必须同时具有这两个基于 SQL Server 的数据库的权限。
 
 
 3.  打开 Lync Server 2013 命令行管理程序（如果尚未打开）。
 
 4.  使用 **Install-CsDatabase** cmdlet 安装通过 拓扑生成器配置的数据库。
     
-        Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn <fully qualified domain name of SQL Server> 
-         -DatabasePaths <logfile path>,<database file path> -Report <path to report file>
-    
-        Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn sqlbe.contoso.net 
+	```
+	Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn <fully qualified domain name of SQL Server> 
+	 -DatabasePaths <logfile path>,<database file path> -Report <path to report file>
+	```
+
+        
+    ```
+	Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn sqlbe.contoso.net 
         -Report "C:\Logs\InstallDatabases.html"
+	```
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Report 参数是可选的，但是在记录安装过程时很有用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Report 参数是可选的，但是在记录安装过程时很有用。
 
 
 5.  完成数据库安装后，关闭 Lync Server 2013 命令行管理程序。
@@ -145,18 +104,8 @@ _**上一次修改主题：** 2016-12-08_
 
 2.  在任意计算机上，使用管理凭据进行登录，以便在基于 SQL Server 的服务器上创建数据库。请参阅主题[Lync Server 2013 中 SQL Server 的部署权限](lync-server-2013-deployment-permissions-for-sql-server.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>为了能够配置基于 SQL Server 的数据库，请确保用于运行此处描述的步骤的 SQL Server 管理员帐户也是运行 SQL Server 并保留中央管理服务器角色的服务器上的 sysadmins 组（或等效组）的成员。这对于检查任何其他需要 SQL Server 数据库安装或配置的 Lync Server 池特别重要。例如，如果您部署的是另一个池 (pool02)，而 pool01 保留了中央管理服务器角色，则 SQL Server sysadmin 组（或等效组）必须同时具有这两个基于 SQL Server 的数据库的权限。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 为了能够配置基于 SQL Server 的数据库，请确保用于运行此处描述的步骤的 SQL Server 管理员帐户也是运行 SQL Server 并保留中央管理服务器角色的服务器上的 sysadmins 组（或等效组）的成员。这对于检查任何其他需要 SQL Server 数据库安装或配置的 Lync Server 池特别重要。例如，如果您部署的是另一个池 (pool02)，而 pool01 保留了中央管理服务器角色，则 SQL Server sysadmin 组（或等效组）必须同时具有这两个基于 SQL Server 的数据库的权限。
 
 
 3.  打开 Lync Server 命令行管理程序（如果尚未打开）。

@@ -49,18 +49,9 @@ _**上一次修改主题：** 2012-10-20_
 
     C:\Tools\Watchernode.msi Authentication=Negotiate
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如上所述，还可以从命令窗口运行 Watchernode.msi。若要打开命令窗口，请单击“开始”，右键单击“命令提示符”，然后单击“以管理员身份运行”。命令窗口打开后，键入如上所示的相同命令。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如上所述，还可以从命令窗口运行 Watchernode.msi。若要打开命令窗口，请单击“开始”，右键单击“命令提示符”，然后单击“以管理员身份运行”。命令窗口打开后，键入如上所示的相同命令。
+
 
 
 任何时候如果无法将观察程序节点设置为一个受信任应用程序池，都将使用协商模式。在此模式中，管理员需要管理观察程序节点上的测试用户密码。

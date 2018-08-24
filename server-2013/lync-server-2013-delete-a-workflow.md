@@ -31,18 +31,9 @@ _**上一次修改主题：** 2012-11-01_
 
 6.  在服务列表中，单击所需的服务，然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此时将打开“响应组配置工具”网页。还可以直接在 Web 浏览器中通过连接到 <strong>https://<em>&lt;webPoolFqdn&gt;</em>/RgsConfig</strong> 打开“响应组配置工具”网页。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此时将打开“响应组配置工具”网页。还可以直接在 Web 浏览器中通过连接到 <strong>https://<em>&lt;webPoolFqdn&gt;</em>/RgsConfig</strong> 打开“响应组配置工具”网页。
+    
 
 
 7.  在“管理现有工作流”下，找到要删除的工作流，然后在“操作”下，单击“删除”。

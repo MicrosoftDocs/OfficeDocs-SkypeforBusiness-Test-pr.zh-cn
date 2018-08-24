@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-11-01_
 
 Lync Server 2013 支持来自 Lync 客户端和 Lync Phone Edition 设备的增强型 9-1-1 (E9-1-1) 呼叫。在配置 Lync Server 2013 的 E9-1-1 时，从 Lync 2013 或 Lync Phone Edition 发出的紧急呼叫包括 位置信息服务数据库中的紧急响应位置 (ERL) 信息。使用本节中的过程可管理位置策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关部署高级 企业语音功能（例如 E9-1-1 和 位置信息服务）的详细信息，请参阅 <a href="lync-server-2013-deploying-advanced-enterprise-voice-features.md">在 Lync Server 2013 中部署高级企业语音功能</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关部署高级 企业语音功能（例如 E9-1-1 和 位置信息服务）的详细信息，请参阅 <a href="lync-server-2013-deploying-advanced-enterprise-voice-features.md">在 Lync Server 2013 中部署高级企业语音功能</a>。
+
 
 
 ## 本部分内容

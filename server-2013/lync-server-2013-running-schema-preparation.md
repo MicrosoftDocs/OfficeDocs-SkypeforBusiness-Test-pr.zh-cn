@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 您可使用安装程序或 Lync Server 命令行管理程序 cmdlet 准备 Active Directory 架构。展开 Active Directory 架构的 cmdlet 为 **Install-CsAdServerSchema**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>架构准备 cmdlet ( <strong>Install-CsAdServerSchema</strong>) 必须访问架构主机，这就要求运行远程注册表服务并启用远程注册表项。如果无法在架构主机上启用远程注册表服务，可以在架构主机上本地运行该 cmdlet。有关注册表远程访问的详细信息，请参阅 Microsoft 知识库文章 314837“如何管理对注册表的远程访问”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=125769">http://go.microsoft.com/fwlink/p/?linkId=125769</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 架构准备 cmdlet ( <strong>Install-CsAdServerSchema</strong>) 必须访问架构主机，这就要求运行远程注册表服务并启用远程注册表项。如果无法在架构主机上启用远程注册表服务，可以在架构主机上本地运行该 cmdlet。有关注册表远程访问的详细信息，请参阅 Microsoft 知识库文章 314837“如何管理对注册表的远程访问”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=125769">http://go.microsoft.com/fwlink/p/?linkId=125769</a>。
+
 
 
 完成架构准备之后，在继续林准备之前手动验证是否复制了架构分区。有关详细信息，请参阅 [在 Lync Server 2013 中验证 Active Directory 架构复制](lync-server-2013-verifying-schema-replication.md)。

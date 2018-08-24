@@ -19,7 +19,16 @@ Creates a new collection of User Replicator configuration settings. The User Rep
 
 ## 语法
 
-    New-CsUserReplicatorConfiguration -Identity <XdsIdentity> [-ADDomainNamingContextList <PSListModifier>] [-Confirm [<SwitchParameter>]] [-Force <SwitchParameter>] [-InMemory <SwitchParameter>] [-ReplicationCycleInterval <TimeSpan>] [-WhatIf [<SwitchParameter>]]
+``` PowerShell
+New-CsUserReplicatorConfiguration
+    -Identity <XdsIdentity>
+    [-ADDomainNamingContextList <PSListModifier>]
+    [-Confirm [<SwitchParameter>]]
+    [-Force <SwitchParameter>]
+    [-InMemory <SwitchParameter>]
+    [-ReplicationCycleInterval <TimeSpan>]
+    [-WhatIf [<SwitchParameter>]]
+```
 
 ## Examples
 
@@ -27,13 +36,17 @@ Creates a new collection of User Replicator configuration settings. The User Rep
 
 The command shown in Example 1 creates a new collection of User Replicator configuration settings for the service Registrar:atl-cs-001.litwareinc.com. Because no additional parameters are specified, the new collection will use the default user replicator values.
 
-    New-CsUserReplicatorConfiguration -Identity "service:Registrar:atl-cs-001.litwareinc.com"
+``` PowerShell
+New-CsUserReplicatorConfiguration -Identity "service:Registrar:atl-cs-001.litwareinc.com"
+```
 
 ## EXAMPLE 2
 
 Example 2 also creates a new collection of user replicator configuration settings for the service Registrar:atl-cs-001.litwareinc.com. In this case, however, the ADDomainNamingContextList is added, along with the distinguished names of the two domains to synchronize with: fabrikam.com and contoso.com. This new collection of user replicator configuration settings will only configure with those two domains, even if other domains are available.
 
-    New-CsUserReplicatorConfiguration -Identity "service:Registrar:atl-cs-001.litwareinc.com" -ADDomaiNamingContextList @{Add="dc=fabrikam,dc=com","dc=contoso.com"}
+``` PowerShell
+New-CsUserReplicatorConfiguration -Identity "service:Registrar:atl-cs-001.litwareinc.com" -ADDomaiNamingContextList @{Add="dc=fabrikam,dc=com","dc=contoso.com"}
+```
 
 ## Detailed Description
 
@@ -48,9 +61,6 @@ New User Replicator configurations settings are created using the **New-CsUserRe
 Who can run this cmdlet: By default, members of the following groups are authorized to run the **New-CsUserReplicatorConfiguration** cmdlet: RTCUniversalServerAdmins. To return a list of all the role-based access control (RBAC) roles this cmdlet has been assigned to (including any custom RBAC roles you have created yourself) run the following command from the Windows PowerShell prompt:
 
 Get-CsAdminRole | Where-Object {$\_.Cmdlets –match "New-CsUserReplicatorConfiguration"}
-
-``` 
-```
 
 ## 参数
 

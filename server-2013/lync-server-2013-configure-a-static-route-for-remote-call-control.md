@@ -25,18 +25,8 @@ _**上一次修改主题：** 2012-09-22_
 
 3.  要创建静态路由，并将其置于变量 $TLSRoute 或 $TCPRoute 中，请执行以下操作之一：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>要匹配某个域的子域，可在 MatchUri 参数中指定通配符值。例如， <strong>*.contoso.net</strong> 。该值与以后缀 <strong>contoso.net</strong> 结尾的任何域匹配。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 要匹配某个域的子域，可在 MatchUri 参数中指定通配符值。例如， <strong>*.contoso.net</strong> 。该值与以后缀 <strong>contoso.net</strong> 结尾的任何域匹配。
     
       - 对于传输层安全性 (TLS) 连接，请在命令提示符处键入以下内容：
         
@@ -52,18 +42,9 @@ _**上一次修改主题：** 2012-09-22_
     
       - 对于传输控制协议 (TCP) 连接，请在命令提示符处键入以下内容：
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果指定完全限定域名 (FQDN)，则必须首先配置域名系统 (DNS) A 记录。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 如果指定完全限定域名 (FQDN)，则必须首先配置域名系统 (DNS) A 记录。
+        
         
             $TCPRoute = New-CsStaticRoute -TCPRoute -Destination <gateway IP address or FQDN> -Port <gateway SIP listening port> -MatchUri <destination domain>
         
@@ -86,6 +67,8 @@ _**上一次修改主题：** 2012-09-22_
 4.  要将新创建的静态路由保留在 中央管理存储中，请根据需要运行以下各项之一：
     
         Set-CsStaticRoutingConfiguration -Route @{Add=$TLSRoute}
+
+       &nbsp;
     
         Set-CsStaticRoutingConfiguration -Route @{Add=$TCPRoute}
 

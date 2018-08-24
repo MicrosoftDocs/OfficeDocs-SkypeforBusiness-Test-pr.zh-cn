@@ -19,37 +19,19 @@ _**上一次修改主题：** 2012-10-22_
 
 配置受信任服务器身份验证的第一步是创建受信任应用程序池以承载观察程序节点计算机。在创建受信任应用程序池后，您必须对观察程序节点上的综合事务进行配置，使其作为受信任应用程序运行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>受信任的应用程序是指获得了受信任的状态且作为 Lync Server 2013 的一部分运行的应用程序，但它不是产品的内置部分。受信任的状态意味着，每次运行该应用程序时，将不会要求其进行身份验证。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 受信任的应用程序是指获得了受信任的状态且作为 Lync Server 2013 的一部分运行的应用程序，但它不是产品的内置部分。受信任的状态意味着，每次运行该应用程序时，将不会要求其进行身份验证。
+
 
 
 若要创建受信任的应用程序池，请打开 Lync Server 2013 命令行管理程序并运行与以下内容类似的命令：
 
     New-CsTrustedApplicationPool -Identity atl-watcher-001.litwareinc.com -Registrar atl-cs-001.litwareinc.com -ThrottleAsServer $True -TreatAsAuthenticated $True -OutboundOnly $False -RequiresReplication $True -ComputerFqdn atl-watcher-001.litwareinc.com -Site Redmond
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要了解上述命令中使用的参数的详细信息，请在 Lync Server 命令行管理程序提示符处键入以下内容：<br />
-Get-Help New-CsTrustedApplicationPool -Full | more</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 要了解上述命令中使用的参数的详细信息，请在 Lync Server 命令行管理程序提示符处键入以下内容：<br />
+Get-Help New-CsTrustedApplicationPool -Full | more
+
 
 
 在创建受信任的应用程序池之后，可将观察程序节点计算机配置为将综合事务作为受信任的应用程序运行。这可以通过使用 **New-CsTrustedApplication** cmdlet 和类似于以下内容的命令来实现的：
@@ -76,18 +58,9 @@ Get-Help New-CsTrustedApplicationPool -Full | more</td>
 
 2.  在 Lync Server 部署向导中，单击“安装或更新 Lync Server 系统”，然后单击标题“请求、安装或分配证书”下方的“运行”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果禁用“运行”按钮，则您可能需要先单击“安装本地配置存储”下方的“运行”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果禁用“运行”按钮，则您可能需要先单击“安装本地配置存储”下方的“运行”。
+    
 
 
 3.  执行下列操作之一：
@@ -108,18 +81,9 @@ Get-Help New-CsTrustedApplicationPool -Full | more</td>
     
         C:\Tools\Watchernode.msi Authentication=TrustedServer
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您还可以从命令窗口运行 Watchernode.msi。若要打开命令窗口，请单击“开始”，右键单击“命令提示符”，然后单击“以管理员身份运行”。在打开命令窗口后，键入相同的上述命令。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您还可以从命令窗口运行 Watchernode.msi。若要打开命令窗口，请单击“开始”，右键单击“命令提示符”，然后单击“以管理员身份运行”。在打开命令窗口后，键入相同的上述命令。
+    
 
 
 请注意，上述命令 Authentication=TrustedServer 中的名称/值对是区分大小写的。您必须如上所示准确地键入该命令。以下命令就是由于没有使用正确的字母大小写而失败了：

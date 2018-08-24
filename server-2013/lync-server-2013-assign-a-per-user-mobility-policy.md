@@ -41,68 +41,29 @@ _**上一次修改主题：** 2013-02-22_
     
     4.  根据所选用户属性，通过键入条件或单击下拉列表中的箭头输入用于筛选搜索结果的条件。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>要向查询中添加附加搜索子句，请单击“添加筛选器”。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 要向查询中添加附加搜索子句，请单击“添加筛选器”。
     
     5.  单击“查找”。
 
 6.  在搜索结果中单击某个用户，再单击“操作”，然后单击“分配策略”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您希望将相同的每用户移动策略应用于多个用户，请在搜索结果中选择多个用户，单击“操作”，然后单击“分配策略”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果您希望将相同的每用户移动策略应用于多个用户，请在搜索结果中选择多个用户，单击“操作”，然后单击“分配策略”。
 
 
 7.  在“分配策略”中的“移动策略”下，执行以下操作之一：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>由于在“分配策略”中可配置多种策略，对话框中的每种策略默认选择“&lt;保持原样&gt;”。对此设置不做更改则继续使用之前分配给该用户的策略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 由于在“分配策略”中可配置多种策略，对话框中的每种策略默认选择“&lt;保持原样&gt;”。对此设置不做更改则继续使用之前分配给该用户的策略。
+    
     
       - 选择“\<自动\>”可允许 Lync Server 2013 自动选择全局级别策略或站点级别策略（如果已定义）。
     
       - 单击之前在“移动策略”页上定义的每用户移动策略的名称。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>为帮助您确定要分配的策略，请在单击策略名称后单击“查看”以查看策略中定义的用户权限。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 为帮助您确定要分配的策略，请在单击策略名称后单击“查看”以查看策略中定义的用户权限。
 
 
 8.  完成后，单击“确定”。
@@ -119,7 +80,7 @@ _**上一次修改主题：** 2013-02-22_
 
 ## 为多个用户分配每用户移动策略
 
-  - 以下命令为当前已分配策略 NorthAmericaMobilityPolicy 的所有用户分配每用户移动策略 RedmondMobilityPolicy。有关此命令中使用的 Filter 参数的详细信息，请参阅 [Get-CsUser](get-csuser.md)。
+  - 以下命令为当前已分配策略 NorthAmericaMobilityPolicy 的所有用户分配每用户移动策略 RedmondMobilityPolicy。有关此命令中使用的 Filter 参数的详细信息，请参阅 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser)。
     
         Get-CsUser -Filter {MobilityPolicy -eq "NorthAmericaMobilityPolicy"} | Grant-CsMobilityPolicy -PolicyName "RedmondMobilityPolicy"
 
@@ -129,7 +90,7 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsMobilityPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关详细信息，请参阅 [Grant-CsMobilityPolicy](grant-csmobilitypolicy.md)。
+有关详细信息，请参阅 [Grant-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsMobilityPolicy)。
 
 ## 另请参阅
 

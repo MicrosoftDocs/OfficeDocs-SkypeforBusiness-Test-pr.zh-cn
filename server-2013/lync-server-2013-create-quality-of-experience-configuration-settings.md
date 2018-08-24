@@ -19,7 +19,7 @@ _**上一次修改主题：** 2015-03-09_
 
 安装 Microsoft Lync Server 2013 时，将为您创建单一的全局 QoE 配置设置集合。管理员还具有创建站点作用域的自定义设置的选项。使用这些站点作用域设置时，它们将优先于全局设置。例如，如果您为 Redmond 站点创建了站点作用域设置，则这些设置（而不是全局设置）将用于管理 Redmond 内的 QoE。
 
-QoE 配置设置可使用 Lync Server 控制面板或 [New-CsQoEConfiguration](new-csqoeconfiguration.md) cmdlet 创建。如果您要使用 Lync Server 控制面板创建新设置，则下列选项将可供您使用：
+QoE 配置设置可使用 Lync Server 控制面板或 [New-CsQoEConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsQoEConfiguration) cmdlet 创建。如果您要使用 Lync Server 控制面板创建新设置，则下列选项将可供您使用：
 
 
 <table>
@@ -60,18 +60,9 @@ QoE 配置设置可使用 Lync Server 控制面板或 [New-CsQoEConfiguration](n
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>New-CsQoEConfiguration cmdlet 包含 Lync Server 控制面板中未提供的其他选项。有关详细信息，请参阅 <a href="new-csqoeconfiguration.md">New-CsQoEConfiguration</a> 帮助主题。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> New-CsQoEConfiguration cmdlet 包含 Lync Server 控制面板中未提供的其他选项。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsQoEConfiguration">New-CsQoEConfiguration</a> 帮助主题。
+
 
 
 ## 使用 Lync Server 控制面板创建 QoE 配置设置
@@ -118,5 +109,5 @@ QoE 配置设置可使用 Lync Server 控制面板或 [New-CsQoEConfiguration](n
     
         New-CsQoEConfiguration -Identity "site:Redmond" -KeepQoEDataForDays 30 -PurgeHourOfDay 3
 
-有关详细信息，请参阅 [New-CsQoEConfiguration](new-csqoeconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [New-CsQoEConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsQoEConfiguration) cmdlet 的帮助主题。
 

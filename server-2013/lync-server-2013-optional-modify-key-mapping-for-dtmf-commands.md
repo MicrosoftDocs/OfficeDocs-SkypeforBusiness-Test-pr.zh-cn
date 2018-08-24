@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-09-30_
 
 电话拨入式会议用户可以在电话小键盘上按键以执行双音多频 (DTMF) 命令。通过 DTMF 命令，拨入会议的用户可以使用其电话上的小键盘控制会议设置（例如，将自己静音和取消静音，或者锁定和解锁会议）。可以使用 cmdlet 修改用于 DTMF 命令的键。此步骤是可选的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关这些 cmdlet 和可能的 DTMF 选项的详细信息，请参阅 Lync Server 命令行管理程序文档或 Lync Server 命令行管理程序命令行帮助。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关这些 cmdlet 和可能的 DTMF 选项的详细信息，请参阅 Lync Server 命令行管理程序文档或 Lync Server 命令行管理程序命令行帮助。
+
 
 
 ## 修改 DTMF 命令的键映射

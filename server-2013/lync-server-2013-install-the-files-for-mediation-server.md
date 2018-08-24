@@ -21,18 +21,9 @@ _**上一次修改主题：** 2012-08-06_
 
 在此站点上，如果已部署 前端池或 Standard Edition Server 上并置的 中介服务器，可跳过本主题，而继续执行 [在 Lync Server 2013 中配置中继](lync-server-2013-configuring-trunks.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主题假设您已按部署文档的 <a href="lync-server-2013-define-a-mediation-server-in-topology-builder.md">在 Lync Server 2013 拓扑生成器中定义中介服务器</a>和 <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中发布拓扑</a>中所述定义和发布独立的 中介服务器池，且已确定 中介服务器池中的计算机满足 <a href="lync-server-2013-software-prerequisites-for-enterprise-voice.md">Lync Server 2013 中企业语音的软件先决条件</a>和 <a href="lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md">Lync Server 2013 中企业语音的安全性和配置先决条件</a>中所述的先决条件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主题假设您已按部署文档的 <a href="lync-server-2013-define-a-mediation-server-in-topology-builder.md">在 Lync Server 2013 拓扑生成器中定义中介服务器</a>和 <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中发布拓扑</a>中所述定义和发布独立的 中介服务器池，且已确定 中介服务器池中的计算机满足 <a href="lync-server-2013-software-prerequisites-for-enterprise-voice.md">Lync Server 2013 中企业语音的软件先决条件</a>和 <a href="lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md">Lync Server 2013 中企业语音的安全性和配置先决条件</a>中所述的先决条件。
+
 
 
 ## 为独立的中介服务器池安装文件

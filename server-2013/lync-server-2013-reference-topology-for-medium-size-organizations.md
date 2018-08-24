@@ -55,26 +55,12 @@ _**上一次修改主题：** 2013-10-07_
     
       - 您的用户可以与公共 IM 服务（包括以下任意或所有服务：Windows Live、AOL、Yahoo\! 和 Google Talk）的用户交换即时消息。与这些服务建立公共 IM 连接可能需要单独的许可证。
         
-        <table>
-        <colgroup>
-        <col style="width: 100%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td><ul>
-        <li><p>自 2012 年 9 月 1 日起，新订或续订合同不能再购买 Microsoft Lync 公共 IM 连接用户订阅许可证 (“PIC USL”)。拥有有效许可证的客户可继续与 Yahoo! Messenger 联盟直至服务关闭。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
-        <li><p>PIC USL 是一个每用户每月订阅许可证，是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的。Microsoft 之所以能够提供此服务离不开 Yahoo! 的支持，但这项支持的基础协议正在逐步终止。</p></li>
-        <li><p>Lync 是一个比以往更强大的工具，它实现了人员跨组织、跨地域的连接。除 Lync 标准 CAL 外，与 Windows Live Messenger 联盟不需要任何附加用户/设备许可证。Skype 联盟将添加到此列表中，以便 Lync 用户能够通过 IM 和语音与数亿用户取得联系。</p></li>
-        </ul></td>
-        </tr>
-        </tbody>
-        </table>
-
+        > [!IMPORTANT]  
+		> <ul>
+        > <li><p>自 2012 年 9 月 1 日起，新订或续订合同不能再购买 Microsoft Lync 公共 IM 连接用户订阅许可证 (“PIC USL”)。拥有有效许可证的客户可继续与 Yahoo! Messenger 联盟直至服务关闭。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
+        > <li><p>PIC USL 是一个每用户每月订阅许可证，是 Lync Server 或 Office Communications Server 与 Yahoo! Messenger 联盟所必需的。Microsoft 之所以能够提供此服务离不开 Yahoo! 的支持，但这项支持的基础协议正在逐步终止。</p></li>
+        > <li><p>Lync 是一个比以往更强大的工具，它实现了人员跨组织、跨地域的连接。除 Lync 标准 CAL 外，与 Windows Live Messenger 联盟不需要任何附加用户/设备许可证。Skype 联盟将添加到此列表中，以便 Lync 用户能够通过 IM 和语音与数亿用户取得联系。</p></li>
+        > </ul>
 
   - **可以添加控制器。** 如果此组织希望增强安全性以抵御拒绝服务攻击，也可以部署控制器池。在 Lync Server 中， 控制器是一个可选的单独服务器角色，它不承载用户帐户，也不提供状态或会议服务。控制器可用作内部的下一跃点服务器， 边缘服务器会将发往内部服务器的入站 SIP 流量路由到它。 控制器预先对入站请求进行身份验证，并将其重定向至用户的主池或主服务器。控制器进行的预先身份验证允许放弃来自部署中未知的用户帐户的请求。 控制器有助于使前端服务器免遭恶意流量（如拒绝服务 (DoS) 攻击）的侵袭。如果在此类攻击中网络中涌入大量无效外部流量，则这些流量将会在 控制器处终止。
 

@@ -33,18 +33,8 @@ _**上一次修改主题：** 2013-02-23_
     
       - 若要编辑某个现有集合中的任意设置，请依次单击该集合、“编辑”菜单和“显示详细信息”，然后进行更改。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若要继续使用全局集合的默认设置，请依次单击全局集合、“编辑”菜单、“删除”和“确定”。这不会删除全局集合，而只是将设置重置为默认值。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 若要继续使用全局集合的默认设置，请依次单击全局集合、“编辑”菜单、“删除”和“确定”。这不会删除全局集合，而只是将设置重置为默认值。
 
 
 5.  单击“提交”。
@@ -73,7 +63,7 @@ _**上一次修改主题：** 2013-02-23_
     
         New-CsUCPhoneConfiguration -Identity "site:Redmond" -EnforcePhoneLock $True -MinPhonePinLength 8
 
-有关详细信息，请参阅 [New-CsUCPhoneConfiguration](new-csucphoneconfiguration.md)。
+有关详细信息，请参阅 [New-CsUCPhoneConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsUCPhoneConfiguration)。
 
 ## 另请参阅
 

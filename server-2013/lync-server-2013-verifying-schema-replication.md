@@ -23,18 +23,8 @@ _**上一次修改主题：** 2012-10-29_
 
 2.  依次单击“开始”、“管理工具”、“ADSI Edit”以打开 ADSI Edit。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此外，还可以从命令行运行 <strong>adsiedit.msc</strong> 。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 此外，还可以从命令行运行 <strong>adsiedit.msc</strong> 。
 
 
 3.  在 Microsoft 管理控制台 (MMC) 树中，单击“ADSI Edit”（如果尚未选中）。

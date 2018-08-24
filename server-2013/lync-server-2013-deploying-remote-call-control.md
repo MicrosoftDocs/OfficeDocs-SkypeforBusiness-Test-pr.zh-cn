@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-10-20_
 
 本节指导您完成为组织用户部署远程呼叫控制功能的过程。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然远程呼叫控制功能可用于在组织的防火墙之外的远程用户，但是有关部署外部访问方案的详细信息不在本文档的范围之内。有关部署外部用户访问的详细信息，请参阅部署文档中的 <a href="lync-server-2013-deploying-external-user-access.md">在 Lync Server 2013 中部署外部用户访问</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 虽然远程呼叫控制功能可用于在组织的防火墙之外的远程用户，但是有关部署外部访问方案的详细信息不在本文档的范围之内。有关部署外部用户访问的详细信息，请参阅部署文档中的 <a href="lync-server-2013-deploying-external-user-access.md">在 Lync Server 2013 中部署外部用户访问</a>。
+
 
 
 ## 本部分内容

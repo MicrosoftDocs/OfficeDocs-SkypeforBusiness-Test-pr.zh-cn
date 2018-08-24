@@ -31,7 +31,7 @@ _**上一次修改主题：** 2015-03-09_
 
     New-CsVoiceRoutingPolicy -Identity <voice routing policy ID> -Name <voice routing policy name> -PstnUsages <usages>
 
-有关详细信息，请参阅 [New-CsVoiceRoutingPolicy](new-csvoiceroutingpolicy.md)。
+有关详细信息，请参阅 [New-CsVoiceRoutingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsVoiceRoutingPolicy)。
 
 对于此示例，下表和 Windows PowerShell 命令阐释了两个语音路由策略以及此方案中定义的相关联的 PSTN 用法。出于说明目的，该表中仅包括特定于基于位置的路由的设置。
 
@@ -123,7 +123,7 @@ _**上一次修改主题：** 2015-03-09_
 
     New-CsTrunkConfiguration -Identity < trunk configuration ID>
 
-有关详细信息，请参阅 [New-CsTrunkConfiguration](new-cstrunkconfiguration.md)。
+有关详细信息，请参阅 [New-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrunkConfiguration)。
 
 对于此示例，以下 Windows PowerShell 命令说明了如何为此方案中定义的部署中的每个 Trunk 创建一个 Trunk 配置。
 
@@ -136,7 +136,7 @@ _**上一次修改主题：** 2015-03-09_
 
     Set-CsTrunkConfiguration -Identity <trunk configuration ID> -EnableLocationRestriction $true -NetworkSiteID <site ID>
 
-有关详细信息，请参阅 [New-CsTrunkConfiguration](new-cstrunkconfiguration.md)。
+有关详细信息，请参阅 [New-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrunkConfiguration)。
 
 在此示例中，为与德里和海得拉巴中的 PSTN 网关相关联的每个 Trunk 启用了基于位置的路由：
 
@@ -201,7 +201,7 @@ _**上一次修改主题：** 2015-03-09_
 
     Set-CsVoicePolicy -Identity <voice policy ID> -PreventPSTNTollBypass <$true|$false>
 
-有关详细信息，请参阅 [New-CsVoicePolicy](new-csvoicepolicy.md)。
+有关详细信息，请参阅 [New-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsVoicePolicy)。
 
 对于此示例，下表和 Windows PowerShell 命令说明了如何通过此方案中定义的德里和海得拉巴语音策略防止 PSTN 收费绕路情形。出于说明目的，该表中仅包括特定于基于位置的路由的设置。
 
@@ -249,20 +249,11 @@ _**上一次修改主题：** 2015-03-09_
 
     Set-CsRoutingConfiguration -EnableLocationBasedRouting $true
 
-有关详细信息，请参阅 [Set-CsRoutingConfiguration](set-csroutingconfiguration.md)。
+有关详细信息，请参阅 [Set-CsRoutingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRoutingConfiguration)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然基于位置的路由必须通过全局配置启用，但是只将为已按照本文档中指定的内容配置了基于位置的路由的那些站点、用户和 Trunk 强制实施要应用的一组规则。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 虽然基于位置的路由必须通过全局配置启用，但是只将为已按照本文档中指定的内容配置了基于位置的路由的那些站点、用户和 Trunk 强制实施要应用的一组规则。
+
 
 
 

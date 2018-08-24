@@ -42,32 +42,14 @@ Lync Server 2013 支持在中断期间对未分配号码的呼叫的通知。在
 
 要在中断期间使用 通知应用程序，您需要通过执行本节中所述的任务，在备份池中重新创建通知配置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建议在故障转移到备份池之后再执行这些任务，因为一执行步骤 2，备份池就会拥有未分配号码范围。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 建议在故障转移到备份池之后再执行这些任务，因为一执行步骤 2，备份池就会拥有未分配号码范围。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于使用 Exchange UM 自动助理电话号码的号码范围，不需要这些步骤。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 对于使用 Exchange UM 自动助理电话号码的号码范围，不需要这些步骤。
+
 
 
 **在备份池中重新创建通知配置**
@@ -78,18 +60,9 @@ Lync Server 2013 支持在中断期间对未分配号码的呼叫的通知。在
     
     2.  通过使用 **New-CsAnnouncement** cmdlet 并为备份池指定 Parent 参数，重新创建每个通知。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关使用这些参数在备份池中创建通知的详细信息，请参阅 <a href="lync-server-2013-create-an-announcement.md">在 Lync Server 2013 中创建通知</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关使用这些参数在备份池中创建通知的详细信息，请参阅 <a href="lync-server-2013-create-an-announcement.md">在 Lync Server 2013 中创建通知</a>。
+    
 
 
 2.  在备份池中重新创建所有通知之后，将使用主池中通知的所有未分配号码范围重定向到备份池中重新创建的通知。
@@ -102,18 +75,9 @@ Lync Server 2013 支持在中断期间对未分配号码的呼叫的通知。在
 
 在主池可用的情况下，您需要将由于中断发生更改的未分配号码范围重定向到主池。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于使用 Exchange UM 自动助理电话号码的号码范围，不需要这些步骤。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 对于使用 Exchange UM 自动助理电话号码的号码范围，不需要这些步骤。
+
 
 
 **还原主池中的通知**

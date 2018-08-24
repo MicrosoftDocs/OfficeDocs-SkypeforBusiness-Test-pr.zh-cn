@@ -152,6 +152,6 @@ The **Get-CsMeetingRoom** cmdlet returns instances of the Microsoft.Rtc.Manageme
 
 [Disable-CsMeetingRoom](disable-csmeetingroom.md)  
 [Enable-CsMeetingRoom](enable-csmeetingroom.md)  
-[Move-CsMeetingRoom](move-csmeetingroom.md)  
+[Move-CsMeetingRoom](Move-CsMeetingRoom.md)  
 [Set-CsMeetingRoom](set-csmeetingroom.md)
 

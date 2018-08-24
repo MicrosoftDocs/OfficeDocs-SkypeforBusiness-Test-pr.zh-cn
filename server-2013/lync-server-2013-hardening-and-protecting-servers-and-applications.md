@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 您应根据特定组件的最佳做法强化和保护操作系统及应用程序。本节介绍如何强化应用程序服务器和使用组策略来实现安全锁定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您还可以强化和保护用于 Microsoft Lync Server 2013 部署的数据库。有关详细信息，请参阅 <a href="lync-server-2013-hardening-and-protecting-databases.md">强化和保护 Lync Server 2013 数据库</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您还可以强化和保护用于 Microsoft Lync Server 2013 部署的数据库。有关详细信息，请参阅 <a href="lync-server-2013-hardening-and-protecting-databases.md">强化和保护 Lync Server 2013 数据库</a>。
+
 
 
 ## 保护应用程序服务器

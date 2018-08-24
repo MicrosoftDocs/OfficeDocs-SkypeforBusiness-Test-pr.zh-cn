@@ -19,18 +19,9 @@ _**上一次修改主题：** 2012-10-05_
 
 如果您没有使用 规划工具，请按照本节的主题中的过程，首先添加分支站点，然后通过定义 IP/公用电话交换网 (PSTN) 网关和/或配置 SIP 中继（包含或不包含媒体旁路）来设置语音基础结构。将专用交换机 (PBX) 连接到分支站点是另一种选项。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要提供分支站点恢复能力，则必须在分支站点部署 Survivable Branch Appliance、 Survivable Branch Server 或 Standard Edition Server。有关详细信息，请根据需要参阅部署文档中的 <a href="lync-server-2013-deploying-a-survivable-branch-appliance-or-server.md">使用 Lync Server 2013 部署 Survivable Branch Appliance 或 Survivable Branch Server</a>或 <a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果要提供分支站点恢复能力，则必须在分支站点部署 Survivable Branch Appliance、 Survivable Branch Server 或 Standard Edition Server。有关详细信息，请根据需要参阅部署文档中的 <a href="lync-server-2013-deploying-a-survivable-branch-appliance-or-server.md">使用 Lync Server 2013 部署 Survivable Branch Appliance 或 Survivable Branch Server</a>或 <a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a>。
+
 
 
 ## 本部分内容

@@ -27,18 +27,8 @@ _**上一次修改主题：** 2012-10-02_
 
 5.  在“指定边缘类型”中，输入边缘服务器配置的类型，然后单击“下一步”。此示例使用“单个边缘服务器”选项。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>“扩展边缘部署”不是支持的配置。必须先将“扩展边缘服务器”转换为“单个边缘服务器”或“负载平衡合并边缘”服务器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > “扩展边缘部署”不是支持的配置。必须先将“扩展边缘服务器”转换为“单个边缘服务器”或“负载平衡合并边缘”服务器。
 
 
 6.  在“指定内部边缘设置”中，根据需要输入边缘池内部 FQDN 和端口的相关信息，然后单击“下一步”。
@@ -47,18 +37,8 @@ _**上一次修改主题：** 2012-10-02_
 
 7.  在“指定外部边缘”中，输入边缘服务器的 Web 会议 FQDN 信息。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在单击“下一步”之前，先执行该过程的下一步。请务必不要错过此步骤，这一点非常重要。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 在单击“下一步”之前，先执行该过程的下一步。请务必不要错过此步骤，这一点非常重要。
 
 
 8.  如果计划将此旧式 Office Communications Server 2007 R2 边缘服务器用于联盟，请选中“此边缘池用于联盟和公共 IM 连接”复选框。如果已部署多台边缘服务器，则将只为其中一台边缘服务器启用联盟。如果未选中此复选框，但之后决定要启用联盟，则必须运行拓扑生成器合并向导，并再次发布拓扑。
@@ -87,16 +67,6 @@ _**上一次修改主题：** 2012-10-02_
 
 17. “发布向导”完成时，单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>请务必完成下一主题（ <a href="import-policies-and-settings.md">导入策略和设置</a>）的任务，以此确保将旧策略设置导入到 Lync Server 2013 中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 请务必完成下一主题（ <a href="import-policies-and-settings.md">导入策略和设置</a>）的任务，以此确保将旧策略设置导入到 Lync Server 2013 中。
 

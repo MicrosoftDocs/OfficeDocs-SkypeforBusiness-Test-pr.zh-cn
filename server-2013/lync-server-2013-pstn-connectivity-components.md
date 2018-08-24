@@ -45,18 +45,9 @@ PSTN 网关是在企业语音基础结构与 PSTN 或 PBX 之间转换信号和�
 
   - 时分多路复用 (TDM) PBX，使用单独的 PSTN 网关。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>媒体旁路将不会与每个 PSTN 网关、IP-PBX 和 SBC 进行交互操作。Microsoft 与认证合作伙伴一起对一组 PSTN 网关和 SBC 进行了测试，另外也对 Cisco IP-PBX 进行了一些测试。媒体旁路仅支持 <a href="http://go.microsoft.com/fwlink/p/?linkid=214406">http://go.microsoft.com/fwlink/p/?linkId=214406</a> 上的“统一通信开放式互操作性程序 – Lync Server”中列出的产品和版本。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 媒体旁路将不会与每个 PSTN 网关、IP-PBX 和 SBC 进行交互操作。Microsoft 与认证合作伙伴一起对一组 PSTN 网关和 SBC 进行了测试，另外也对 Cisco IP-PBX 进行了一些测试。媒体旁路仅支持 <a href="http://go.microsoft.com/fwlink/p/?linkid=214406">http://go.microsoft.com/fwlink/p/?linkId=214406</a> 上的“统一通信开放式互操作性程序 – Lync Server”中列出的产品和版本。
+
 
 
 有关提供企业语音解决方案的合作伙伴的详细信息，请访问 Microsoft 统一通信合作伙伴网站，网址为 [http://go.microsoft.com/fwlink/p/?linkId=202836](http://go.microsoft.com/fwlink/p/?linkid=202836)。

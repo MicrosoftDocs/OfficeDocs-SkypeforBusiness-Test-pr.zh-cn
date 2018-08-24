@@ -96,6 +96,6 @@ Returns a value of type Microsoft.Rtc.Management.Voice.TrunkConfigurationTestRes
 
 [New-CsTrunkConfiguration](new-cstrunkconfiguration.md)  
 [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md)  
-[Set-CsTrunkConfiguration](set-cstrunkconfiguration.md)  
+[Set-CsTrunkConfiguration](Set-CsTrunkConfiguration.md)  
 [Get-CsTrunkConfiguration](get-cstrunkconfiguration.md)
 

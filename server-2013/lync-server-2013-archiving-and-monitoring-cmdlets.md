@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 通过存档和监控 cmdlet，管理员可以管理即时消息和会议会话存档、记录呼叫详细信息，以及使用用户体验质量 (QoE) 监控 Microsoft Lync Server 2013。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关 cmdlet 的其他信息，请参阅 Lync Server Windows PowerShell 博客，网址为：<a href="http://go.microsoft.com/fwlink/?linkid=263432%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=263432&amp;clcid=0x804</a>。每个博客的内容及其 URL 如有更改，恕不另行通知。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关 cmdlet 的其他信息，请参阅 Lync Server Windows PowerShell 博客，网址为：<a href="http://go.microsoft.com/fwlink/?linkid=263432%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=263432&amp;clcid=0x804</a>。每个博客的内容及其 URL 如有更改，恕不另行通知。
+
 
 
 ## 存档和监控 Cmdlet

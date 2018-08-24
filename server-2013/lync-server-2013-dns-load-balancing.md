@@ -51,18 +51,8 @@ DNS 负载平衡仅支持运行 Lync Server 2013 或 Lync Server 2010 的服务�
 
   - 要支持 DNS 负载平衡使用的 FQDN，必须设置 DNS，以便将池 FQDN（例如 pool01.contoso.com）解析为该池中所有服务器的 IP 地址（例如，192.168.1.1、192.168.1.2 等）。您应该仅包含当前部署的服务器的 IP 地址。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果有多个前端池或前端服务器，则外部 Web 服务 FQDN 必须是唯一的。例如，如果将前端服务器的外部 Web 服务 FQDN 定义为 <strong>pool01.contoso.com</strong>，则不能将 <strong>pool01.contoso.com</strong> 用于另一个前端池或前端服务器。如果您还部署控制器，则为任何控制器或控制器池定义的外部 Web 服务 FQDN 必须与任何其他控制器或控制器池以及任何前端池或前端服务器的不同。如果决定使用自定义的 FQDN 覆盖内部 Web 服务，则每个 FQDN 都必须不同于任何其他前端池、控制器或控制器池。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果有多个前端池或前端服务器，则外部 Web 服务 FQDN 必须是唯一的。例如，如果将前端服务器的外部 Web 服务 FQDN 定义为 <strong>pool01.contoso.com</strong>，则不能将 <strong>pool01.contoso.com</strong> 用于另一个前端池或前端服务器。如果您还部署控制器，则为任何控制器或控制器池定义的外部 Web 服务 FQDN 必须与任何其他控制器或控制器池以及任何前端池或前端服务器的不同。如果决定使用自定义的 FQDN 覆盖内部 Web 服务，则每个 FQDN 都必须不同于任何其他前端池、控制器或控制器池。
 
 
 ## 边缘服务器池中的 DNS 负载平衡
@@ -75,25 +65,11 @@ DNS 负载平衡仅支持运行 Lync Server 2013 或 Lync Server 2010 的服务�
 
   - 除了与基于 XMPP 的提供商和服务器（例如 Google Talk）进行即时消息交换外，也与使用公共即时消息 (IM) 服务 AOL 和 Yahoo\! 的用户进行即时消息交换。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><ul>
-    <li><p>Google Talk 目前是唯一受支持的 XMPP 合作伙伴。</p></li>
-    <li><p>自 2012 年 9 月 1 日起，新订或续订合同不能再购买 Microsoft Lync 公共 IM 连接用户订阅许可证 (“PIC USL”)。拥有有效许可证的客户可继续与 Yahoo! Messenger 联盟直至服务关闭。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
-
+    > [!IMPORTANT]  
+	> <ul>
+    > <li><p>Google Talk 目前是唯一受支持的 XMPP 合作伙伴。</p></li>
+    > <li><p>自 2012 年 9 月 1 日起，新订或续订合同不能再购买 Microsoft Lync 公共 IM 连接用户订阅许可证 (“PIC USL”)。拥有有效许可证的客户可继续与 Yahoo! Messenger 联盟直至服务关闭。AOL 和 Yahoo! 的生命周期结束日期已宣布，为 2014 年 6 月。有关详细信息，请参阅 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公共即时消息连接支持</a>。</p></li>
+    > </ul>
 
 只要池中的所有边缘服务器都在运行，这些方案就会正常工作；但是如果某台边缘服务器不可用，则发送到该服务器的对这些方案的所有请求都将失败，而不会路由到其他边缘服务器。
 

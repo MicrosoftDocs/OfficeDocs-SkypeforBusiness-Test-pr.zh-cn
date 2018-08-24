@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
 要使用 Lync Room System (LRS) 管理 Web 门户，您需要安装或配置以下先决条件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果服务器配置了 Kerberos 和 NTLM 身份验证，并且 LRS 在未加入域的计算机上运行，则 Kerberos 身份验证将会失败，并且用户在管理门户中看不到 LRS 的状态。要解决此问题，请为服务器配置 NTLM 身份验证或者 NTLM 和 TLS-DSK 身份验证（无 Kerberos），或者将 LRS 计算机加入域。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果服务器配置了 Kerberos 和 NTLM 身份验证，并且 LRS 在未加入域的计算机上运行，则 Kerberos 身份验证将会失败，并且用户在管理门户中看不到 LRS 的状态。要解决此问题，请为服务器配置 NTLM 身份验证或者 NTLM 和 TLS-DSK 身份验证（无 Kerberos），或者将 LRS 计算机加入域。
 
 
 1.  在 Lync Server 拓扑中安装 2013 年 7 月的 Lync Server 2013 累积更新。

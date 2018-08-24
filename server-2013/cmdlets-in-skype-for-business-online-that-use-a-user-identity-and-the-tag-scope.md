@@ -25,19 +25,9 @@ _**上一次修改主题：** 2015-06-22_
 
 此命令失败是因为无需分配全局策略。如果希望使用全局策略管理用户，请确保不要向该用户分配每用户策略。如果未向用户分配每用户策略，则将使用全局策略自动管理用户。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果以前向用户分配了每用户策略，而您希望取消分配该策略并通过全局策略管理该用户，该怎么办？在这种情况下，请首先使用以下语法，它将通过授予该用户 null 策略来取消分配每用户策略：<br />
-Grant-CsVoicePolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果以前向用户分配了每用户策略，而您希望取消分配该策略并通过全局策略管理该用户，该怎么办？在这种情况下，请首先使用以下语法，它将通过授予该用户 null 策略来取消分配每用户策略：<br />
+> Grant-CsVoicePolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null
 
 
 其次，请记住，每用户策略是在标记作用域创建的。但是，在指定策略名称时，您可以忽略标记 **prefix**。这两个命令是一致的：
@@ -51,22 +41,22 @@ Grant-CsVoicePolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null</td>
 
 以下 cmdlet 使用用户标识和标记作用域：
 
-  - [Grant-CsClientPolicy](grant-csclientpolicy.md)
+  - [Grant-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsClientPolicy)
 
-  - [Grant-CsConferencingPolicy](grant-csconferencingpolicy.md)
+  - [Grant-CsConferencingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsConferencingPolicy)
 
-  - [Grant-CsDialPlan](grant-csdialplan.md)
+  - [Grant-CsDialPlan](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsDialPlan)
 
-  - [Grant-CsExternalAccessPolicy](grant-csexternalaccesspolicy.md)
+  - [Grant-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsExternalAccessPolicy)
 
-  - [Grant-CsHostedVoicemailPolicy](grant-cshostedvoicemailpolicy.md)
+  - [Grant-CsHostedVoicemailPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsHostedVoicemailPolicy)
 
-  - [Grant-CsVoicePolicy](grant-csvoicepolicy.md)
+  - [Grant-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsVoicePolicy)
 
 ## 另请参阅
 
 #### 概念
 
 [标识、作用域和租户](identities-scopes-and-tenants-in-skype-for-business-online.md)  
-[Lync Online Cmdlet](the-skype-for-business-online-cmdlets.md)
+[Lync Online Cmdlet](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 

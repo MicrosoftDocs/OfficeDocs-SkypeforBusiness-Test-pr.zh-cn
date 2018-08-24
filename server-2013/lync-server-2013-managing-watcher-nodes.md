@@ -25,20 +25,11 @@ _**上一次修改主题：** 2012-10-20_
 
     Set-CsWatcherNodeConfiguration -Identity "atl-watcher-001.litwareinc.com" -Enabled $True
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Enabled 属性可用于启用或禁用观察程序节点。如果要永久删除观察程序节点，请使用 <strong>Remove-CsWatcherNodeConfiguration</strong> cmdlet：<br />
+> [!NOTE]  
+> Enabled 属性可用于启用或禁用观察程序节点。如果要永久删除观察程序节点，请使用 <strong>Remove-CsWatcherNodeConfiguration</strong> cmdlet：<br />
 Remove-CsWatcherNodeConfiguration –Identity &quot;atl-watcher-001.litwareinc.com&quot;<br />
-此命令将删除指定计算机中的所有观察程序节点配置设置，这将防止计算机自动运行综合事务。但是，此命令不会卸载 System Center 代理文件或 Lync Server 2013 系统文件。</td>
-</tr>
-</tbody>
-</table>
+此命令将删除指定计算机中的所有观察程序节点配置设置，这将防止计算机自动运行综合事务。但是，此命令不会卸载 System Center 代理文件或 Lync Server 2013 系统文件。
+
 
 
 默认情况下，观察程序节点在执行其测试时使用组织的外部 URL。但是，还可将观察程序节点配置为使用组织的内部 URL。这使管理员可验证位于外围网络内的用户的 URL 访问权限。若要将观察程序节点配置为使用内部 URL 而不是外部 URL，请将 UseInternalWebUrls 属性设置为 True ($True)：

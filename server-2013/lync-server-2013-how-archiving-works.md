@@ -49,9 +49,9 @@ Lync Server 也不存档持久聊天对话。要存档持久聊天对话，必�
 
 部署每台前端服务器时将自动在该服务器上安装存档，但存档在您配置之前不会启用。配置存档的方式由存档的部署方式决定：
 
-  - **使用 Microsoft Exchange 集成的存档。**如果您的用户驻留在 Exchange 2013 上，并且其邮箱已被置于就地保留状态，则可以选择此选项以将 Lync Server 2013 存储与 Exchange 存储集成。如果您选择 Microsoft Exchange 集成选项，则可使用 Exchange 2013 策略和配置来控制这些用户的 Lync Server 2013 数据存档。
+  - **使用 Microsoft Exchange 集成的存档。** 如果您的用户驻留在 Exchange 2013 上，并且其邮箱已被置于就地保留状态，则可以选择此选项以将 Lync Server 2013 存储与 Exchange 存储集成。如果您选择 Microsoft Exchange 集成选项，则可使用 Exchange 2013 策略和配置来控制这些用户的 Lync Server 2013 数据存档。
 
-  - **使用 Lync Server 存档数据库的存档。**如果您的用户未驻留在 Exchange 2013 上或其邮箱未被置于就地保留状态，或者您不希望对部署中的任意或所有用户使用 Microsoft Exchange 集成，则可使用 SQL Server 部署 Lync Server 存档数据库来存储这些用户的存档数据。在此情况下，Lync Server 2013 存档策略和配置将决定是否启用存档及其实现方式。若要使用 Lync Server 2013，则必须向您的拓扑添加适当的 SQL Server 数据库并发布该拓扑。
+  - **使用 Lync Server 存档数据库的存档。** 如果您的用户未驻留在 Exchange 2013 上或其邮箱未被置于就地保留状态，或者您不希望对部署中的任意或所有用户使用 Microsoft Exchange 集成，则可使用 SQL Server 部署 Lync Server 存档数据库来存储这些用户的存档数据。在此情况下，Lync Server 2013 存档策略和配置将决定是否启用存档及其实现方式。若要使用 Lync Server 2013，则必须向您的拓扑添加适当的 SQL Server 数据库并发布该拓扑。
 
 ## 使用 Microsoft Exchange 集成时存档设置
 
@@ -85,18 +85,9 @@ Lync Server 2013 存档策略包括以下内容：
 
 有关在部署存档时如何设置初始存档策略的详细信息，请参阅部署文档中的[配置和分配存档策略](lync-server-2013-configuring-and-assigning-archiving-policies.md)。有关部署后使用存档策略启用和禁用通信的详细信息，请参阅操作文档中的[在 Lync Server 2013 中管理内部通信和外部通信的存档](lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您实现这两个 Lync Server 2013 存档数据库并启用 Microsoft Exchange 集成，则 Exchange 2013 策略将重写 Lync Server 存档策略，但仅针对驻留在 Exchange 2013 上且其邮箱已被置于就地保留状态的用户执行此操作。Lync 存档仅取决于 Microsoft Exchange 就地保留策略。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您实现这两个 Lync Server 2013 存档数据库并启用 Microsoft Exchange 集成，则 Exchange 2013 策略将重写 Lync Server 存档策略，但仅针对驻留在 Exchange 2013 上且其邮箱已被置于就地保留状态的用户执行此操作。Lync 存档仅取决于 Microsoft Exchange 就地保留策略。
+
 
 
 ## 有哪些可供选择的配置存档选项？
@@ -127,18 +118,9 @@ Lync Server 2013 存档策略包括以下内容：
     
       - 在导出存档数据（如果启用 Microsoft Exchange 集成，还包括上载到 Exchange 的数据）后。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您启用 Microsoft Exchange 集成，则清除驻留在 Exchange 2013 上的用户及其处于就地保留状态的邮箱的过程由 Exchange 进行控制。该唯一限制针对存储在 Lync Server 文件共享中的会议文件。如果您选择在已导出存档数据后，或者选择在指定的最长天数（如果您指定了最长保留天数）后清除数据，则仅在导出文件（上载到 Exchange）后才从文件共享中清除这些文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您启用 Microsoft Exchange 集成，则清除驻留在 Exchange 2013 上的用户及其处于就地保留状态的邮箱的过程由 Exchange 进行控制。该唯一限制针对存储在 Lync Server 文件共享中的会议文件。如果您选择在已导出存档数据后，或者选择在指定的最长天数（如果您指定了最长保留天数）后清除数据，则仅在导出文件（上载到 Exchange）后才从文件共享中清除这些文件。
+    
 
 
 默认情况下不启用任何存档选项。您可以使用 Lync Server 2013 控制面板管理存档配置。
@@ -157,9 +139,9 @@ Lync Server 2013 存档策略包括以下内容：
 
 通过 Lync Server 2013 命令行管理程序，您可以使用 cmdlet 实现 Lync Server 2013 控制面板中未提供的选项。这些选项包括：
 
-  - **存档重复消息**。有关详细信息，请参阅操作文档中的 [New-CsArchivingConfiguration](new-csarchivingconfiguration.md) 和 [Set-CsArchivingConfiguration](set-csarchivingconfiguration.md)。
+  - **存档重复消息**。有关详细信息，请参阅操作文档中的 [New-CsArchivingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsArchivingConfiguration) 和 [Set-CsArchivingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsArchivingConfiguration)。
 
-  - **导出存档数据**。有关详细信息，请参阅 [Export-CsArchivingData](export-csarchivingdata.md)
+  - **导出存档数据**。有关详细信息，请参阅 [Export-CsArchivingData](https://docs.microsoft.com/en-us/powershell/module/skype/Export-CsArchivingData)
 
 ## 如何访问存档数据？
 

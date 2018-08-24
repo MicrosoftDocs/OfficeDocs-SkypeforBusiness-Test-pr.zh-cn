@@ -69,18 +69,9 @@ Lync Server 2013 支持包含只读域控制器或只读全局编录服务器的
 
 Lync Server 不支持单标签域。例如，支持具有名为 **contoso.local** 的根域的林，但不支持名为 **local** 的根域。有关详细信息，请参阅 Microsoft 知识库文章 300684“关于如何为使用单标签 DNS 名称的域配置 Windows 的信息”，网址为 <http://go.microsoft.com/fwlink/?linkid=143752>。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 不支持重命名域。如果需要重命名部署有 Lync Server 的域，则需要先卸载 Lync Server，然后重命名域，最后重新安装 Lync Server。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 不支持重命名域。如果需要重命名部署有 Lync Server 的域，则需要先卸载 Lync Server，然后重命名域，最后重新安装 Lync Server。
+
 
 
 ## 锁定的 AD DS 环境

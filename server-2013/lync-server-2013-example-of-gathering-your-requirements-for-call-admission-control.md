@@ -47,18 +47,9 @@ _**上一次修改主题：** 2015-03-09_
     
     ![包含 3 个网络区域的网络拓扑的示例](images/Gg425827.08937347-250f-488f-ba5f-c256e6afcd8b(OCS.15).jpg "包含 3 个网络区域的网络拓扑的示例")  
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>多协议标签交换 (MPLS) 网络应代表一个网络区域，在该网络区域中，每个物理位置都具有一个相应的网络站点。有关详细信息，请参阅规划文档中的“<a href="lync-server-2013-call-admission-control-on-an-mpls-network.md">具有 Lync Server 2013 的 MPLS 网络上的呼叫允许控制</a>”主题。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 多协议标签交换 (MPLS) 网络应代表一个网络区域，在该网络区域中，每个物理位置都具有一个相应的网络站点。有关详细信息，请参阅规划文档中的“<a href="lync-server-2013-call-admission-control-on-an-mpls-network.md">具有 Lync Server 2013 的 MPLS 网络上的呼叫允许控制</a>”主题。
+    
     
     在上述示例网络拓扑中，存在三个网络区域，每个网络区域都具有一个管理 CAC 的 Lync Server 中央站点。按地理距离选择网络区域相应的中央站点。由于网络区域内的媒体流量最多，按地理距离选择中央站点使网络区域能够独立运行，因此即使其他中央站点不可用，网络区域也可以继续正常工作。
     
@@ -95,18 +86,9 @@ _**上一次修改主题：** 2015-03-09_
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>根据您的 Lync Server 拓扑，同一中央站点可分配给多个网络区域。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 根据您的 Lync Server 拓扑，同一中央站点可分配给多个网络区域。
+    
 
 
 3.  对于每个网络区域，标识其 WAN 连接不受带宽限制的所有网络站点（办公室或位置）。由于这些站点不受带宽限制，因此无需对其应用 CAC 带宽策略。
@@ -276,32 +258,12 @@ _**上一次修改主题：** 2015-03-09_
 
 6.  对于网络中的每个子网，指定其关联的网络站点。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>即使网络站点不受带宽限制，网络中的每个子网也必须与一个网络站点相关联。这是因为呼叫允许控制使用子网信息来确定终结点所在的网络站点。确定会话双方的位置后，呼叫允许控制可以确定是否有足够的带宽来建立呼叫。当通过没有带宽限制的链路建立会话时，会生成警报。<br />
-    如果部署音频/视频边缘服务器，则每台边缘服务器的公共 IP 地址都必须与部署边缘服务器的网络站点关联。必须将 A/V 边缘服务器的每个公共 IP 地址作为子网掩码为 32 的子网添加到网络配置设置中。例如，如果在芝加哥部署 A/V 边缘服务器，则为这些服务器的每个外部 IP 地址创建一个子网掩码为 32 的子网，并将网络站点芝加哥与这些子网相关联。有关公共 IP 地址的详细信息，请参阅规划文档中的 <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">确定 Lync Server 2013 的外部 A/V 防火墙和端口要求</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 即使网络站点不受带宽限制，网络中的每个子网也必须与一个网络站点相关联。这是因为呼叫允许控制使用子网信息来确定终结点所在的网络站点。确定会话双方的位置后，呼叫允许控制可以确定是否有足够的带宽来建立呼叫。当通过没有带宽限制的链路建立会话时，会生成警报。<br />
+    > 如果部署音频/视频边缘服务器，则每台边缘服务器的公共 IP 地址都必须与部署边缘服务器的网络站点关联。必须将 A/V 边缘服务器的每个公共 IP 地址作为子网掩码为 32 的子网添加到网络配置设置中。例如，如果在芝加哥部署 A/V 边缘服务器，则为这些服务器的每个外部 IP 地址创建一个子网掩码为 32 的子网，并将网络站点芝加哥与这些子网相关联。有关公共 IP 地址的详细信息，请参阅规划文档中的 <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">确定 Lync Server 2013 的外部 A/V 防火墙和端口要求</a>。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>生成关键运行状况指示器 (KHI) 警报，指定存在于网络中但不与子网关联的 IP 地址列表，或指定包含 IP 地址的子网不与网络站点关联。该警报在 8 小时内只产生一次。相关的警报信息和示例如下所示：<br />
+    > [!NOTE]  
+    > 生成关键运行状况指示器 (KHI) 警报，指定存在于网络中但不与子网关联的 IP 地址列表，或指定包含 IP 地址的子网不与网络站点关联。该警报在 8 小时内只产生一次。相关的警报信息和示例如下所示：<br />
     <strong>来源：</strong>CS 带宽策略服务（核心）<br />
     <strong>事件编号：</strong>36034<br />
     <strong>级别 ：</strong>2<br />
@@ -312,10 +274,8 @@ _**上一次修改主题：** 2015-03-09_
     <ol>
     <li><p>确保 IP 地址 10.121.248.226 与子网 10.121.248.0/24 相关联，IP 地址 10.121.249.20 与子网 10.121.249.0/24 相关联。</p></li>
     <li><p>确保子网 10.121.248.0/24 和 10.121.249.0/24 分别与一个网络站点相关联。</p></li>
-    </ol></td>
-    </tr>
-    </tbody>
-    </table>
+    </ol>
+    
     
     ### 网络站点和关联子网（带宽单位：kbps）
     
@@ -473,18 +433,9 @@ _**上一次修改主题：** 2015-03-09_
 
 8.  定义每对网络区域之间的路由。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>北美和 APAC 区域之间的路由需要两个链路，因为没有直接连接这两个区域的区域链路。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 北美和 APAC 区域之间的路由需要两个链路，因为没有直接连接这两个区域的区域链路。
+    
     
     ### 区域路由
     
@@ -584,16 +535,7 @@ _**上一次修改主题：** 2015-03-09_
 
 收集所需信息之后，可使用 Lync Server 命令行管理程序或 Lync Server 控制面板执行 CAC 部署。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然可以使用 Lync Server 控制面板执行大多数网络配置任务，但是创建子网和站点间链路时，必须使用 Lync Server 命令行管理程序。有关详细信息，请参阅有关 <strong>New-CsNetworkSubnet</strong> cmdlet 和 <strong>New-CsNetworkIntersitePolicy</strong> cmdlet 的 Lync Server 命令行管理程序文档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 虽然可以使用 Lync Server 控制面板执行大多数网络配置任务，但是创建子网和站点间链路时，必须使用 Lync Server 命令行管理程序。有关详细信息，请参阅有关 <strong>New-CsNetworkSubnet</strong> cmdlet 和 <strong>New-CsNetworkIntersitePolicy</strong> cmdlet 的 Lync Server 命令行管理程序文档。
+
 

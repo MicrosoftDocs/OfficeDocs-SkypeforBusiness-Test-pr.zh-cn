@@ -17,20 +17,11 @@ _**上一次修改主题：** 2013-02-12_
 
 即使移动应用程序处于非活动状态，也可以向移动设备发送推送通知（以徽章、图标或警告的形式）。推送通知会将一些事件（例如，新的或错过的 IM 邀请和语音邮件）告知用户。 Lync Server 2013 Mobility Service 会将通知发送到基于云的 Lync Server 推送通知服务，然后该服务会将通知发送到 Apple 推送通知服务 (APNS)（对于运行 Lync 2010 Mobile 客户端的 Apple 设备）或 Microsoft 推送通知服务 (MPNS)（对于运行 Lync 2010 Mobile 或 Lync 2013 Mobile 客户端的 Windows Phone 设备）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您将 Windows Phone 与 Lync 2010 Mobile 或 Lync 2013 Mobile 客户端一起使用，则推送通知是一个重要的考虑因素。<br />
-如果您在 Apple 设备上使用 Lync 2010 Mobile，则推送通知是一个重要的考虑因素。<br />
-如果您在 Apple 设备上使用 Lync 2013 Mobile，您将不再需要推送通知。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您将 Windows Phone 与 Lync 2010 Mobile 或 Lync 2013 Mobile 客户端一起使用，则推送通知是一个重要的考虑因素。<br />
+> 如果您在 Apple 设备上使用 Lync 2010 Mobile，则推送通知是一个重要的考虑因素。<br />
+> 如果您在 Apple 设备上使用 Lync 2013 Mobile，您将不再需要推送通知。
+
 
 
 通过执行下列操作，将您的拓扑配置为支持推送通知：
@@ -39,18 +30,9 @@ _**上一次修改主题：** 2013-02-12_
 
   - 如果您的环境包含一台 Office Communications Server 2007 R2边缘服务器，则您需要设置与 push.lync.com 的直接 SIP 联盟。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Push.lync.com 是一个适用于推送通知服务的 Microsoft Office 365 域。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Push.lync.com 是一个适用于推送通知服务的 Microsoft Office 365 域。
+    
 
 
   - 若要启用推送通知，您需要运行 **Set-CsPushNotificationConfiguration** cmdlet。默认情况下，推送通知已关闭。
@@ -71,18 +53,9 @@ _**上一次修改主题：** 2013-02-12_
     
         New-CsHostingProvider -Identity "LyncOnline" -Enabled $True -ProxyFqdn "sipfed.online.lync.com" -VerificationLevel UseSourceVerification
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您不能与一个宿主提供程序建立多个联盟关系。也就是说，如果您已设置一个与 sipfed.online.lync.com 建立了联盟关系的宿主提供程序，则请不要为其添加其他宿主提供程序，即使该宿主提供程序的标识不是 LyncOnline 也是如此。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您不能与一个宿主提供程序建立多个联盟关系。也就是说，如果您已设置一个与 sipfed.online.lync.com 建立了联盟关系的宿主提供程序，则请不要为其添加其他宿主提供程序，即使该宿主提供程序的标识不是 LyncOnline 也是如此。
+    
 
 
 4.  在 Lync Online 上设置组织与推送通知服务之间的宿主提供程序联盟。在命令行中键入：
@@ -147,6 +120,6 @@ _**上一次修改主题：** 2013-02-12_
 
 #### 其他资源
 
-[Test-CsFederatedPartner](test-csfederatedpartner.md)  
-[Test-CsMcxPushNotification](test-csmcxpushnotification.md)
+[Test-CsFederatedPartner](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsFederatedPartner)  
+[Test-CsMcxPushNotification](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsMcxPushNotification)
 

@@ -27,18 +27,8 @@ _**上一次修改主题：** 2013-02-22_
 
 4.  在“PSTN 用法”页上，突出显示要查看的 PSTN 用法记录，单击“编辑”，然后单击“显示详细信息”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>所选 PSTN 用法记录的只读页面会显示关联的路由和关联的语音策略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 所选 PSTN 用法记录的只读页面会显示关联的路由和关联的语音策略。
 
 
 ## 使用 Windows PowerShell cmdlet 查看 PSTN 用法信息
@@ -56,7 +46,7 @@ _**上一次修改主题：** 2013-02-22_
         Identity : Global
         Usage    : {Internal, Local, Long Distance}
 
-有关详细信息，请参阅 [Get-CsPstnUsage](get-cspstnusage.md)。
+有关详细信息，请参阅 [Get-CsPstnUsage](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsPstnUsage)。
 
 ## 另请参阅
 

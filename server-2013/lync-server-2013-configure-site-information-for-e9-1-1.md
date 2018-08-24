@@ -23,18 +23,9 @@ _**上一次修改主题：** 2012-10-03_
 
 有关网络站点的详细信息，请参阅[Lync Server 2013 的 Lync Server 网站](lync-server-2013-sites.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果为其他语音功能创建网络站点，并要使用相同的站点配置 E9-1-1，则可以修改要用于 E9-1-1 的站点。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果为其他语音功能创建网络站点，并要使用相同的站点配置 E9-1-1，则可以修改要用于 E9-1-1 的站点。
+
 
 
 ## 本部分内容

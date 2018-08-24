@@ -105,7 +105,7 @@ This cmdlet does not return a value. It removes an object of type Microsoft.Rtc.
 #### 其他资源
 
 [New-CsTrunkConfiguration](new-cstrunkconfiguration.md)  
-[Set-CsTrunkConfiguration](set-cstrunkconfiguration.md)  
+[Set-CsTrunkConfiguration](Set-CsTrunkConfiguration.md)  
 [Get-CsTrunkConfiguration](get-cstrunkconfiguration.md)  
 [Test-CsTrunkConfiguration](test-cstrunkconfiguration.md)
 

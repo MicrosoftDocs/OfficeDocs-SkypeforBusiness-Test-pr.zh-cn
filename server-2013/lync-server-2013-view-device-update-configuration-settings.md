@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
 您可以使用 Lync Server 命令行管理程序和 **Get-CsDeviceUpdateConfiguration** cmdlet 来查看设备更新服务配置设置。可以从 Lync Server 2013 命令行管理程序或从 Windows PowerShell 的远程会话中运行此 cmdlet。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关使用远程 Windows PowerShell 连接到 Lync Server 的详细信息，请参阅 Lync Server Windows PowerShell 博客文章“快速入门：使用远程 PowerShell 管理 Microsoft Lync Server 2010”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关使用远程 Windows PowerShell 连接到 Lync Server 的详细信息，请参阅 Lync Server Windows PowerShell 博客文章“快速入门：使用远程 PowerShell 管理 Microsoft Lync Server 2010”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</a>。
 
 
 
@@ -50,5 +40,5 @@ _**上一次修改主题：** 2016-12-08_
         LogFlushInterval       : 00:05:00
         LogCleanUpTimeOfDay    :
 
-有关此 cmdlet 的详细信息，请参阅 [Get-CsDeviceUpdateConfiguration](get-csdeviceupdateconfiguration.md) 上的帮助主题。
+有关此 cmdlet 的详细信息，请参阅 [Get-CsDeviceUpdateConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsDeviceUpdateConfiguration) 上的帮助主题。
 

@@ -49,68 +49,29 @@ _**上一次修改主题：** 2013-02-22_
     
     4.  根据所选的用户属性，通过键入条件或单击下拉列表中的箭头输入用于筛选搜索结果的条件。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>要向查询中添加附加搜索子句，请单击“添加筛选器”。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 要向查询中添加附加搜索子句，请单击“添加筛选器”。
     
     5.  单击“查找”。
 
 6.  在搜索结果中单击某个用户，再单击“操作”，然后单击“分配策略”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您希望将相同的每用户位置策略应用于多个用户，请在搜索结果中选择多个用户，单击“操作”，然后单击“分配策略”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果您希望将相同的每用户位置策略应用于多个用户，请在搜索结果中选择多个用户，单击“操作”，然后单击“分配策略”。
 
 
 7.  在“分配策略”中的“位置策略”下，执行下列操作之一：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有多个策略可以使用“分配策略”对话框进行配置，因此默认情况下，将为对话框中的每个策略选中“&lt;保留原样&gt;”。如果不对此设置进行任何更改，则将继续使用先前分配给用户的策略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有多个策略可以使用“分配策略”对话框进行配置，因此默认情况下，将为对话框中的每个策略选中“&lt;保留原样&gt;”。如果不对此设置进行任何更改，则将继续使用先前分配给用户的策略。
+    
     
       - 允许 Lync Server 2013 自动选择全局级别的策略或子网级别的策略（如果已定义）。
     
       - 单击先前通过运行 **New-CsLocationPolicy** cmdlet 定义的每用户位置策略的名称。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>为帮助您确定要分配的策略，请在单击策略名称后单击“查看”以查看策略中定义的用户权限。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 为帮助您确定要分配的策略，请在单击策略名称后单击“查看”以查看策略中定义的用户权限。
 
 
 8.  完成后，单击“确定”。
@@ -127,7 +88,7 @@ _**上一次修改主题：** 2013-02-22_
 
 ## 将每用户位置策略分配给多个用户
 
-  - 此命令将每用户位置策略 AccountingDepartmentLocationPolicy 分配给就职于 Accounting 部门的所有用户。有关此命令中使用的 LdapFilter 参数的详细信息，请参阅 [Get-CsUser](get-csuser.md) cmdlet 的文档。
+  - 此命令将每用户位置策略 AccountingDepartmentLocationPolicy 分配给就职于 Accounting 部门的所有用户。有关此命令中使用的 LdapFilter 参数的详细信息，请参阅 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) cmdlet 的文档。
     
         Get-CsUser -LdapFilter "Department=Accounting" | Grant-CsLocationPolicy -PolicyName "AccountingDepartmentLocationPolicy"
 
@@ -137,5 +98,5 @@ _**上一次修改主题：** 2013-02-22_
     
         Grant-CsLocationPolicy -Identity "Ken Myer" -PolicyName $Null
 
-有关详细信息，请参阅 [Grant-CsLocationPolicy](grant-cslocationpolicy.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Grant-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsLocationPolicy) cmdlet 的帮助主题。
 

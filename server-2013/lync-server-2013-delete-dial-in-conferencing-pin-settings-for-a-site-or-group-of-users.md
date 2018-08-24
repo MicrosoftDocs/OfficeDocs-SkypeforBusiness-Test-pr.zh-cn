@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-10-18_
 
 按照以下步骤删除用户级别或站点级别的 PIN 策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>无法删除全局 PIN 策略。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 无法删除全局 PIN 策略。
+
 
 
 ## 删除用户或站点 PIN 策略

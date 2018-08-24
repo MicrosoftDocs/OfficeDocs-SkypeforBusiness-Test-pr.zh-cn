@@ -39,18 +39,9 @@ Lync Server 2013 引入了多个可增强会议功能的新功能，如下面列
     
     在视频会议中，用户可以同时看到多达 5 个会议参与者的视频。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>图库视图经历过有高达 75 个参与者的会议。当会议增加到超过 75 个参与者时，会经历回复到单个视图。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 图库视图经历过有高达 75 个参与者的会议。当会议增加到超过 75 个参与者时，会经历回复到单个视图。
+    
 
 
   - **HD 视频**

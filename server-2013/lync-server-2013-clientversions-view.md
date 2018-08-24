@@ -17,18 +17,9 @@ _**上一次修改主题：** 2015-03-09_
 
 ClientVersions 视图存储已参与数据库中记录的会话的各种客户端类型和版本的相关信息。视图中的每条记录都代表一个客户端版本。此视图在 Microsoft Lync Server 2013 中引入。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>某些列可能有多条记录。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 某些列可能有多条记录。
+
 
 
 

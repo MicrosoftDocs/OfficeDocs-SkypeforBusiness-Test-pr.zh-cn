@@ -21,22 +21,12 @@ _**上一次修改主题：** 2012-09-24_
 
 有关配置联系人对象的详细信息，请参阅 Lync Server 命令行管理程序文档中以下 cmdlet 的相关内容：
 
-  - [New-CsExUmContact](new-csexumcontact.md)
+  - [New-CsExUmContact](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsExUmContact)
 
-  - [Set-CsExUmContact](set-csexumcontact.md)
+  - [Set-CsExUmContact](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsExUmContact)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必须先部署应用于 Lync Server 2013 联系人对象的托管语音邮件策略，然后才能为这些联系人对象启用托管 Exchange UM。有关详细信息，请参阅 <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的托管语音邮件策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 必须先部署应用于 Lync Server 2013 联系人对象的托管语音邮件策略，然后才能为这些联系人对象启用托管 Exchange UM。有关详细信息，请参阅 <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的托管语音邮件策略</a>。
 
 
 ## 为托管 Exchange UM 创建 AA 或 SA 联系人对象
@@ -46,6 +36,8 @@ _**上一次修改主题：** 2012-09-24_
 2.  运行 New-CsExUmContact cmdlet 创建部署所需的任何联系人对象。例如，运行以下命令创建 AA 和 SA 联系人对象：
     
         New-CsExUmContact -SipAddress "sip:exumaa1@fabrikam.com" -RegistrarPool "RedmondPool.litwareinc.com" -OU "HostedExUM Integration" -DisplayNumber "+14255550101" -AutoAttendant $True
+
+       &nbsp;
     
         New-CsExUmContact -SipAddress "sip:exumsa1@fabrikam.com" -RegistrarPool "RedmondPool.litwareinc.com" -OU "HostedExUM Integration" -DisplayNumber "+14255550101"
     
@@ -55,18 +47,9 @@ _**上一次修改主题：** 2012-09-24_
     
       - **RegistrarPool** 指定运行 Registrar 服务的池的完全限定域名 (FQDN)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>不能将 Exchange UM 联系人对象移动到 Lync Server 2013 之前的 Lync Server 2013 部署所包含的池中。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 不能将 Exchange UM 联系人对象移动到 Lync Server 2013 之前的 Lync Server 2013 部署所包含的池中。
+        
     
       - **OU** 指定此联系人对象将位于的 Active Directory 组织单位。
     

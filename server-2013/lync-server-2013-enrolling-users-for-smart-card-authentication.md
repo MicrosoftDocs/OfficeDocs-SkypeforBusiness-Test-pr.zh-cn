@@ -27,18 +27,9 @@ _**上一次修改主题：** 2016-12-08_
 
 3.  浏览到“证书颁发机构 Web 注册”页面（如 https://MyCA.contoso.com/certsrv）。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您正在使用 Internet Explorer 10，则可能需要在兼容模式下查看此网站。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您正在使用 Internet Explorer 10，则可能需要在兼容模式下查看此网站。
+    
 
 
 4.  在“欢迎”页面上，选择“申请证书”。
@@ -77,40 +68,17 @@ _**上一次修改主题：** 2016-12-08_
 
 10. 出现提示时，输入用于创建虚拟智能卡的 PIN。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认虚拟智能卡 PIN 值是“12345678”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 默认虚拟智能卡 PIN 值是“12345678”。
+    
 
 
 11. 颁发证书后，单击“安装此证书”以完成注册过程。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果证书申请失败并出现错误“Web 浏览器不支持生成证书申请”，可通过三种可能的方法解决该问题：
-    <ol>
-    <li><p>在 Internet Explorer 中启用兼容性视图</p></li>
-    <li><p>在 Internet Explorer 中启用“启用 Intranet 设置”选项</p></li>
-    <li><p>在“Internet Explorer 选项”菜单的“安全”选项卡下方选择“将所有区域重置为默认级别”。</p></li>
-    </ol></td>
-    </tr>
-    </tbody>
-    </table>
-
+> [!NOTE]  
+> 如果证书申请失败并出现错误“Web 浏览器不支持生成证书申请”，可通过三种可能的方法解决该问题：
+> <ol>
+> <li><p>在 Internet Explorer 中启用兼容性视图</p></li>
+> <li><p>在 Internet Explorer 中启用“启用 Intranet 设置”选项</p></li>
+> <li><p>在“Internet Explorer 选项”菜单的“安全”选项卡下方选择“将所有区域重置为默认级别”。</p></li>
+> </ol>

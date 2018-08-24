@@ -315,19 +315,11 @@ _**上一次修改主题：** 2015-03-09_
 <td><p>msRTCSIP-EnableBestEffortNotify（作废）</p></td>
 <td><p>此属性控制服务器是否生成 Best Effort NOTIFY (BENOTIFY) 请求（而不是 NOTIFY 请求）以响应来自客户端的 SUBSCRIBE 请求。BENOTIFY 是对订阅通知握手的性能增强扩展，在此过程中，服务器将生成 BENOTIFY 请求，而不是通常的 NOTIFY 请求。其性能优点在于，BENOTIFY 请求不需要来自客户端的 200 OK 响应，而 NOTIFY 请求则需要。</p>
 <p>有效值为 <strong>TRUE</strong> 或 <strong>FALSE</strong>。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Live Communications Server 2003 不支持 BENOTIFY 请求。在 Live Communications Server 2005 和第三方服务器上运行的某些服务器应用程序是用 Live Communications Server 2003 服务器 API 编写的，若要与这些应用程序进行互操作，可通过将此属性的值设置为 <strong>FALSE</strong> 来禁用 BENOTIFY 请求。BENOTIFY 目前不是 IETF（Internet 工程任务组）SIP 标准化过程的一部分。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> Live Communications Server 2003 不支持 BENOTIFY 请求。在 Live Communications Server 2005 和第三方服务器上运行的某些服务器应用程序是用 Live Communications Server 2003 服务器 API 编写的，若要与这些应用程序进行互操作，可通过将此属性的值设置为 <strong>FALSE</strong> 来禁用 BENOTIFY 请求。BENOTIFY 目前不是 IETF（Internet 工程任务组）SIP 标准化过程的一部分。
+
 
 </div></td>
 <td><p>Live Communications Server 2005 中的新增类。</p>

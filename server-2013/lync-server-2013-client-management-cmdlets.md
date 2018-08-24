@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 客户端管理主要包括确定允许哪些客户端应用程序（如 Microsoft Lync 2013）登录到 Lync Server 2013，以及确定这些客户端应用程序登录后可使用哪些功能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关 cmdlet 的其他信息，请参阅 Lync Server Windows PowerShell 博客，网址为：<a href="http://go.microsoft.com/fwlink/?linkid=263432%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=263432&amp;clcid=0x804</a>。每个博客的内容及其 URL 如有更改，恕不另行通知。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关 cmdlet 的其他信息，请参阅 Lync Server Windows PowerShell 博客，网址为：<a href="http://go.microsoft.com/fwlink/?linkid=263432%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=263432&amp;clcid=0x804</a>。每个博客的内容及其 URL 如有更改，恕不另行通知。
+
 
 
 ## 客户端管理 Cmdlet
@@ -78,7 +69,7 @@ _**上一次修改主题：** 2016-12-08_
     [Remove-CsClientVersionPolicy](remove-csclientversionpolicy.md)
 
   -   
-    [Set-CsClientVersionPolicy](set-csclientversionpolicy.md)
+    [Set-CsClientVersionPolicy](Set-CsClientVersionPolicy.md)
 
   -   
     [Get-CsClientVersionPolicyRule](get-csclientversionpolicyrule.md)

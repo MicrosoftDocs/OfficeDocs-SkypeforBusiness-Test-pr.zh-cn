@@ -25,18 +25,9 @@ _**上一次修改主题：** 2013-06-24_
 
 如果稍后要暂时或永久阻止联盟域用户访问，则可以为组织禁用联盟。可以使用本节中的过程为组织启用或禁用联盟用户访问，包括指定组织所支持的相应联盟选项。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>为组织启用联盟只能指定运行访问边缘服务的服务器支持路由到联盟域。只有至少再配置一个策略以支持联盟用户访问，联盟域中的用户才能参与组织中的 IM 或会议。只有至少再配置一个策略以支持公共 IM 连接，公共 IM 服务提供商的用户才能参与组织中的 IM 或会议。只有配置提供路由信息的托管语音邮件策略，Lync Server 才能使用托管 Exchange 服务向邮箱位于托管 Exchange 服务上的用户提供呼叫应答、Outlook Voice Access（包括语音邮件）或自助服务。有关配置策略以与其他组织中的联盟域用户进行通信的详细信息，请参阅操作文档中的 <a href="lync-server-2013-manage-sip-federated-domains-for-your-organization.md">在 Lync Server 2013 中管理组织的 SIP 联盟域</a>。此外，如果要支持与 IM 服务提供商用户的通信，必须配置支持此类通信的策略，还必须配置对要支持的各个服务提供商的支持。有关详细信息，请参阅操作文档中的 <a href="lync-server-2013-manage-sip-federated-providers-for-your-organization.md">在 Lync Server 2013 中管理组织的 SIP 联盟提供程序</a>。有关创建托管语音邮件策略的详细信息，请参阅部署文档中的 <a href="lync-server-2013-manage-hosted-voice-mail-policies.md">在 Lync Server 2013 中管理托管的语音邮件策略</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 为组织启用联盟只能指定运行访问边缘服务的服务器支持路由到联盟域。只有至少再配置一个策略以支持联盟用户访问，联盟域中的用户才能参与组织中的 IM 或会议。只有至少再配置一个策略以支持公共 IM 连接，公共 IM 服务提供商的用户才能参与组织中的 IM 或会议。只有配置提供路由信息的托管语音邮件策略，Lync Server 才能使用托管 Exchange 服务向邮箱位于托管 Exchange 服务上的用户提供呼叫应答、Outlook Voice Access（包括语音邮件）或自助服务。有关配置策略以与其他组织中的联盟域用户进行通信的详细信息，请参阅操作文档中的 <a href="lync-server-2013-manage-sip-federated-domains-for-your-organization.md">在 Lync Server 2013 中管理组织的 SIP 联盟域</a>。此外，如果要支持与 IM 服务提供商用户的通信，必须配置支持此类通信的策略，还必须配置对要支持的各个服务提供商的支持。有关详细信息，请参阅操作文档中的 <a href="lync-server-2013-manage-sip-federated-providers-for-your-organization.md">在 Lync Server 2013 中管理组织的 SIP 联盟提供程序</a>。有关创建托管语音邮件策略的详细信息，请参阅部署文档中的 <a href="lync-server-2013-manage-hosted-voice-mail-policies.md">在 Lync Server 2013 中管理托管的语音邮件策略</a>。
+
 
 
 ## 为组织启用或禁用联盟用户访问

@@ -19,18 +19,8 @@ _**上一次修改主题：** 2012-10-22_
 
 [在 Lync Server 2013 中部署外部用户访问](lync-server-2013-deploying-external-user-access.md)中涵盖了 XMPP 的部署和配置。通过在防火墙上定义端口和协议规则、配置证书和添加 DNS 记录来规划组织中的 XMPP 支持。本节中的以下主题总结了成功为部署规划 XMPP 联盟所需的信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 已测试 Lync Server 2013 的 XMPP 功能，并且支持该功能与 Google Talk 进行即时消息传递联盟。对于任何其他 XMPP 系统，请与第三方供应商联系，以确认它们是否支持与 Lync Server 2013 联盟以及获取任何部署或疑难解答建议。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Microsoft 已测试 Lync Server 2013 的 XMPP 功能，并且支持该功能与 Google Talk 进行即时消息传递联盟。对于任何其他 XMPP 系统，请与第三方供应商联系，以确认它们是否支持与 Lync Server 2013 联盟以及获取任何部署或疑难解答建议。
 
 
 ## 本部分内容
@@ -51,7 +41,7 @@ _**上一次修改主题：** 2012-10-22_
 #### 其他资源
 
 [在 Lync Server 2013 中管理组织的 XMPP 联盟伙伴](lync-server-2013-manage-xmpp-federated-partners-for-your-organization.md)  
-[Get-CsExternalAccessPolicy](get-csexternalaccesspolicy.md)  
-[Get-CsXmppAllowedPartner](get-csxmppallowedpartner.md)  
-[Get-CsXmppGatewayConfiguration](get-csxmppgatewayconfiguration.md)
+[Get-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsExternalAccessPolicy)  
+[Get-CsXmppAllowedPartner](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsXmppAllowedPartner)  
+[Get-CsXmppGatewayConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsXmppGatewayConfiguration)
 

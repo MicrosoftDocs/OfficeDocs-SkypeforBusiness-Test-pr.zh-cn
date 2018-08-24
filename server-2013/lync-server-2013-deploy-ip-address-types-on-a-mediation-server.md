@@ -29,18 +29,9 @@ _**上一次修改主题：** 2016-07-28_
     
       - **使用所有配置 IP 地址**。如果您希望允许使用计算机上定义的任何 IP 地址，请选择此选项。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>这是针对 IP 版本 6 (IPv6) 配置的建议选项。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 这是针对 IP 版本 6 (IPv6) 配置的建议选项。
+        
     
       - **将服务用途限制为所选 IP 地址**。选择此选项可指定要在新服务器上使用的特定地址。如果选择此选项，则必须为主 IP 地址输入值。
     
@@ -48,16 +39,7 @@ _**上一次修改主题：** 2016-07-28_
     
       - **PSTN IP 地址**。在前端服务器上并置中介服务器时定义一个 PSTN IP 地址。该地址必须符合选择的地址类型的格式。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>用以支持适用于 Lync Server 2013 的 PSTN IP 地址配置的额外网络接口卡 (NIC) 的安装不受支持。有关适用于 Lync Server 2013 的受支持的 NIC 配置的详细信息，请参阅 <a href="lync-server-2013-server-hardware-platforms.md">适用于 Lync Server 2013 的服务器硬件平台</a>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 用以支持适用于 Lync Server 2013 的 PSTN IP 地址配置的额外网络接口卡 (NIC) 的安装不受支持。有关适用于 Lync Server 2013 的受支持的 NIC 配置的详细信息，请参阅 <a href="lync-server-2013-server-hardware-platforms.md">适用于 Lync Server 2013 的服务器硬件平台</a>。
+        
 

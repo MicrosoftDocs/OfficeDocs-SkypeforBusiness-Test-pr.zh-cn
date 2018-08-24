@@ -57,16 +57,7 @@ _**上一次修改主题：** 2013-02-18_
     
     3.  在“数据库角色成员身份”中，选择“ServerRole”权限，然后单击“确定”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>无需重新启动存档服务或监控服务。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 无需重新启动存档服务或监控服务。
+    
 

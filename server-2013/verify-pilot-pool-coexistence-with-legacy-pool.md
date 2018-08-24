@@ -35,18 +35,8 @@ _**上一次修改主题：** 2012-09-29_
 
 ![“选择 URL”对话框](images/JJ205420.b1f8e650-9c3c-4563-a403-5069f198342f(OCS.15).png "“选择 URL”对话框")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 上，必须先将 Silverlight 升级到 Silverlight 版本 5，然后才能使用 Lync Server 控制面板。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 在 Lync Server 2013 上，必须先将 Silverlight 升级到 Silverlight 版本 5，然后才能使用 Lync Server 控制面板。
 
 
 此拓扑现在包含 Lync Server 2010 和 Lync Server 2013 服务器角色。

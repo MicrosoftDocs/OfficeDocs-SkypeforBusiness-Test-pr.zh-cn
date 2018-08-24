@@ -17,36 +17,16 @@ _**上一次修改主题：** 2016-12-08_
 
 使用以下流程图确定域名系统 (DNS) 要求。对于 2013 年 2 月版的 Lync Server 2013 累积更新，如有变化会在应用处注明。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Lync Server 2013 支持使用 IPv6 寻址。要使用 IPv6 地址，还必须提供 IPv6 DNS 支持和配置 DNS 主机 AAAA（称为“4 A”）记录。在使用 IPv4 和 IPv6 的部署中，最好为 IPv4 配置和维护 A 记录，并为 IPv6 配置主机 AAAA。即使您的部署已完全转换为 IPv6，当外部用户仍在使用 IPv4 时，也仍需要 IPv4 DNS 主机记录。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Microsoft Lync Server 2013 支持使用 IPv6 寻址。要使用 IPv6 地址，还必须提供 IPv6 DNS 支持和配置 DNS 主机 AAAA（称为“4 A”）记录。在使用 IPv4 和 IPv6 的部署中，最好为 IPv4 配置和维护 A 记录，并为 IPv6 配置主机 AAAA。即使您的部署已完全转换为 IPv6，当外部用户仍在使用 IPv4 时，也仍需要 IPv4 DNS 主机记录。
 
 
 **确定 DNS 要求流程图**
 
 ![DNS 要求流程图](images/Gg398758.175782ac-363e-408a-912f-8991bf152970(OCS.15).jpg "DNS 要求流程图")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认情况下，未加入域的计算机的计算机名称是主机名称，而不是完全限定域名 (FQDN)。拓扑生成器使用 FQDN，而非主机名称。因此，必须在要部署为未加入域的边缘服务器的计算机名称上配置 DNS 后缀。在分配 Lync Server、边缘服务器和池的 FQDN 时，<strong>仅使用标准字符</strong>（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线字符。外部 DNS 和公共 CA 通常不支持在 FQDN 中使用非标准字符（当必须向证书中的 SN 分配 FQDN 时）。有关其他详细信息，请参阅<a href="lync-server-2013-configure-dns-host-records.md">配置 Lync Server 2013 的 DNS 主机记录</a></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 默认情况下，未加入域的计算机的计算机名称是主机名称，而不是完全限定域名 (FQDN)。拓扑生成器使用 FQDN，而非主机名称。因此，必须在要部署为未加入域的边缘服务器的计算机名称上配置 DNS 后缀。在分配 Lync Server、边缘服务器和池的 FQDN 时，<strong>仅使用标准字符</strong>（包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线字符。外部 DNS 和公共 CA 通常不支持在 FQDN 中使用非标准字符（当必须向证书中的 SN 分配 FQDN 时）。有关其他详细信息，请参阅<a href="lync-server-2013-configure-dns-host-records.md">配置 Lync Server 2013 的 DNS 主机记录</a>
 
 
 ## Lync 客户端如何定位服务
@@ -85,53 +65,25 @@ Lync Windows 应用商店应用使用以下两个记录，因此完全改变了�
 
 如果已安装 2013 年 2 月版的 Lync Server 2013 累积更新，则自动发现服务还将返回对内部/UCWA、外部/UCWA 和 UCWA 的引用。这些条目是指统一通信 Web API (UCWA) Web 组件。目前，只使用条目 UCWA，它提供对该 Web 组件 URL 的引用。UCWA 由 Lync 2013 Mobile 客户端使用，而不是由 Lync 2010 Mobile 客户端所用的 Mcx Mobility Service 使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建 SRV 记录时，请务必记住，这些记录必须指向在其中创建了 DNS SRV 记录的同一域中的 DNS A 和 AAAA（如果您使用的是 IPv6 寻址）记录。例如，如果 SRV 记录位于 contoso.com，则它所指向的 A 和 AAAA（如果您使用的是 IPv6 寻址）记录不能位于 fabrikam.com 中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 创建 SRV 记录时，请务必记住，这些记录必须指向在其中创建了 DNS SRV 记录的同一域中的 DNS A 和 AAAA（如果您使用的是 IPv6 寻址）记录。例如，如果 SRV 记录位于 contoso.com，则它所指向的 A 和 AAAA（如果您使用的是 IPv6 寻址）记录不能位于 fabrikam.com 中。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>默认配置是使所有移动客户端流量通过外部网站。您可以修改设置，以便仅返回内部 URL（如果这更符合您的需求）。在此配置下，仅当用户位于企业网络内部时才能在其移动设备上使用 Lync 移动应用程序。若要定义此配置，需要使用 <strong>Set-CsMcxConfiguration</strong> cmdlet。</td>
-</tr>
-</tbody>
-</table>
+
+> [!TIP]
+> 默认配置是使所有移动客户端流量通过外部网站。您可以修改设置，以便仅返回内部 URL（如果这更符合您的需求）。在此配置下，仅当用户位于企业网络内部时才能在其移动设备上使用 Lync 移动应用程序。若要定义此配置，需要使用 <strong>Set-CsMcxConfiguration</strong> cmdlet。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然移动应用程序还可以连接到其他 Lync Server 2013 服务（如通讯簿服务），但仅为 Mobility Service 将内部移动应用程序 Web 请求转到外部 Web FQDN。其他服务请求（如通讯簿请求）不需要此配置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 虽然移动应用程序还可以连接到其他 Lync Server 2013 服务（如通讯簿服务），但仅为 Mobility Service 将内部移动应用程序 Web 请求转到外部 Web FQDN。其他服务请求（如通讯簿请求）不需要此配置。
+
 
 
 移动设备支持手动发现服务。在此情况下，每个用户必须使用整个内部和外部自动发现服务 URI（包括协议和路径）配置移动设备设置，如下所示：
 
-  - https://*\<ExtPoolFQDN\>*/Autodiscover/autodiscoverservice.svc/Root（用于外部访问）
+  - htt<span></span>ps://<span></span>*\<ExtPoolFQDN\>*/Autodiscover/autodiscoverservice.svc/Root（用于外部访问）
 
-  - https://*\<IntPoolFQDN\>*/AutoDiscover/AutoDiscover.svc/Root（用于内部访问）
+  - h<span></span>ttps://<span></span>*\<IntPoolFQDN\>*/AutoDiscover/AutoDiscover.svc/Root（用于内部访问）
 
 建议使用自动发现而非手动发现。但是，手动设置对解决移动设备连接问题很有用。
 
@@ -139,18 +91,8 @@ Lync Windows 应用商店应用使用以下两个记录，因此完全改变了�
 
 拆分式 DNS 以名称编号得名，例如，拆分 DNS 或水平拆分 DNS。它仅仅描述其中具有相同命名空间的两个 DNS 区域（其中一个 DNS 区域仅为内部请求提供服务，而另一个 DNS 区域仅为外部请求提供服务）的 DNS 配置。但是，内部 DNS 所包含的许多 DNS SRV 和 A 记录不包含在外部 DNS 中，反之亦然。如果内部和外部 DNS 中存在相同的 DNS 记录（例如，www.contoso.com），则根据启动 DNS 查询的位置（内部或外部）不同，返回的 IP 地址也将不同。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>当前，移动性（或者更具体讲，LyncDiscover 和 LyncDiscoverInternal DNS 记录）不支持拆分式 DNS。必须在外部 DNS 服务器上定义 LyncDiscover，在内部 DNS 服务器上定义 LyncDiscoverInternal。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 当前，移动性（或者更具体讲，LyncDiscover 和 LyncDiscoverInternal DNS 记录）不支持拆分式 DNS。必须在外部 DNS 服务器上定义 LyncDiscover，在内部 DNS 服务器上定义 LyncDiscoverInternal。
 
 
 出于这些主题的目的，将使用术语“拆分式 DNS”。
@@ -213,18 +155,9 @@ Lync Windows 应用商店应用使用以下两个记录，因此完全改变了�
 
   - **组策略对象** 使用组策略对象 (GPO) 填充正确的服务器值。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此选项不会启用自动配置，但可以自动化手动配置的过程，因此，使用这种方法时不需要与自动配置关联的 SRV 记录。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此选项不会启用自动配置，但可以自动化手动配置的过程，因此，使用这种方法时不需要与自动配置关联的 SRV 记录。
+    
 
 
   - **匹配内部区域** 在内部 DNS 中创建一个与外部 DNS 区域匹配的区域（例如，contoso.com），并创建与用于自动配置的 Lync Server 2013 池对应的 DNS A 和 AAAA（如果使用的是 IPv6 寻址）记录。例如，如果用户驻留在 pool01.contoso.net 上，却使用 bob@contoso.com 登录 Lync，则创建一个名为 contoso.com 的内部 DNS 区域，并在其内部为 pool01.contoso.com 创建 DNS A 和 AAAA（如果使用的是 IPv6 寻址）记录。
@@ -249,34 +182,16 @@ Lync Windows 应用商店应用使用以下两个记录，因此完全改变了�
         dnscmd . /recordadd pool01.fabrikam.com. @ A 192.168.10.91
         dnscmd . /recordadd pool01.contoso.com. @ AAAA <IPv6 address>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>前端池 FQDN 出现两次，但两次的 IP 地址不同。这是因为使用了 DNS 负载平衡，但如果使用硬件负载平衡，则只有一个前端池条目。并且，前端池 FQDN 值因 contoso.com 示例和 fabrikam.com 示例的不同而变化，但 IP 地址保持不变。这是因为从任一 SIP 域登录的用户都对自动配置使用相同的前端池。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 前端池 FQDN 出现两次，但两次的 IP 地址不同。这是因为使用了 DNS 负载平衡，但如果使用硬件负载平衡，则只有一个前端池条目。并且，前端池 FQDN 值因 contoso.com 示例和 fabrikam.com 示例的不同而变化，但 IP 地址保持不变。这是因为从任一 SIP 域登录的用户都对自动配置使用相同的前端池。
+
 
 
 有关详细信息，请参阅 DMTF 博客文章“Communicator 自动配置和拆分式 DNS”，网址为 <http://go.microsoft.com/fwlink/?linkid=200707>。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每个博客的内容及其 URL 如有更改，恕不另行通知。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 每个博客的内容及其 URL 如有更改，恕不另行通知。
+
 
 
 ## 为灾难恢复配置域名系统 (DNS)
@@ -398,18 +313,9 @@ Lync Windows 应用商店应用使用以下两个记录，因此完全改变了�
 
   - 如果客户端尝试了所有缓存的条目，但连接仍未成功，则通知用户当前没有可用的运行 Lync Server 2013 的服务器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>基于 DNS 的负载平衡不同于 DNS 循环 (DNS RR)，后者通常是指依靠 DNS 提供与池中服务器对应的不同顺序的 IP 地址来进行负载平衡。通常 DNS RR 只启用负载分配，而不启用故障转移。例如，如果到由 DNS A 和 AAAA（如果使用的是 IPv6 寻址）查询返回的一个 IP 地址的连接失败，则连接失败。因此，DNS 循环自身的可靠性低于基于 DNS 的负载平衡。您可以将 DNS 循环与 DNS 负载平衡结合使用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 基于 DNS 的负载平衡不同于 DNS 循环 (DNS RR)，后者通常是指依靠 DNS 提供与池中服务器对应的不同顺序的 IP 地址来进行负载平衡。通常 DNS RR 只启用负载分配，而不启用故障转移。例如，如果到由 DNS A 和 AAAA（如果使用的是 IPv6 寻址）查询返回的一个 IP 地址的连接失败，则连接失败。因此，DNS 循环自身的可靠性低于基于 DNS 的负载平衡。您可以将 DNS 循环与 DNS 负载平衡结合使用。
+
 
 
 DNS 负载平衡用于以下方面：

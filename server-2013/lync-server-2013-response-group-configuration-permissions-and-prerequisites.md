@@ -110,18 +110,9 @@ _**上一次修改主题：** 2016-12-08_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>(1)</strong> Active Directory 域服务 用户对象必须是所列的指定 Active Directory 安全组的成员。管理员或其他具有向安全组中添加用户的适当权限的委托 Active Directory 组成员（例如，管理员、帐户操作员）必须向所列安全组或组中添加用户对象，用户才能执行所列功能。<strong>(2)</strong> 仅对于 CsResponseGroupAdministrator 已分派给 CsResponseGroupManager 的工作流。<strong>(3)</strong> 响应组管理员可将 CsResponseGroupManager 的其他成员分派给当前管理员已管理的工作流。<strong>(4)</strong> CsViewOnlyAdministrator 只能运行谓词“Get”Lync Server 命令行管理程序 cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <strong>(1)</strong> Active Directory 域服务 用户对象必须是所列的指定 Active Directory 安全组的成员。管理员或其他具有向安全组中添加用户的适当权限的委托 Active Directory 组成员（例如，管理员、帐户操作员）必须向所列安全组或组中添加用户对象，用户才能执行所列功能。<strong>(2)</strong> 仅对于 CsResponseGroupAdministrator 已分派给 CsResponseGroupManager 的工作流。<strong>(3)</strong> 响应组管理员可将 CsResponseGroupManager 的其他成员分派给当前管理员已管理的工作流。<strong>(4)</strong> CsViewOnlyAdministrator 只能运行谓词“Get”Lync Server 命令行管理程序 cmdlet。
+
 
 
 ## 响应组配置先决条件
@@ -178,18 +169,9 @@ _**上一次修改主题：** 2016-12-08_
 
 仅当您的组织需要支持 Yi、Meng 或 Zang 字符时，本节才适用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关 Yi、Meng 和 Zang 字符是什么以及它们对部署非常重要的原因的信息，请参阅有关 GB18030 字符集的信息 <a href="http://go.microsoft.com/fwlink/?linkid=240223%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=240223&amp;clcid=0x804</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关 Yi、Meng 和 Zang 字符是什么以及它们对部署非常重要的原因的信息，请参阅有关 GB18030 字符集的信息 <a href="http://go.microsoft.com/fwlink/?linkid=240223%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=240223&amp;clcid=0x804</a>。
+
 
 
 要支持 Yi、Meng 或 Zang 字符，需要修改 Rgsconfig 数据库的排序规则。在每个 Rgsconfig 数据库的下列各表中更改“Name”列的排序规则：

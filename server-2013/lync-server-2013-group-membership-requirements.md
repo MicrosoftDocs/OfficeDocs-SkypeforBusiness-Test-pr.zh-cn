@@ -33,38 +33,21 @@ _**上一次修改主题：** 2015-03-09_
 <tr class="odd">
 <td><p><strong>Setup.exe</strong> – 用于启动 Lync Server 2013 管理工具安装的可执行文件。</p></td>
 <td><p>运行可执行文件的计算机上本地 Administrators 组的成员。用于读取 Active Directory 域服务 中信息的 Domain Users 组的成员。需要该级别的权限是因为，在本地计算机上自动安装所需的 MSI 软件包需要允许读取和写入受保护的本地计算机资源（如 Program Files 目录）和受保护注册表（如 Local Machine 配置单元）的权限。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您还可以将安装权限委派给那些不会获得 Domain Admins 组成员身份的用户或组。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-granting-setup-permissions.md">在 Lync Server 2013 中授予安装权限</a>。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!TIP]
+> 您还可以将安装权限委派给那些不会获得 Domain Admins 组成员身份的用户或组。有关详细信息，请参阅部署文档中的 <a href="lync-server-2013-granting-setup-permissions.md">在 Lync Server 2013 中授予安装权限</a>。
 
 </div></td>
 </tr>
 <tr class="even">
 <td><p><strong>Deploy.exe</strong> – deploy.exe 由 setup.exe 调用，负责为服务器角色部署软件组件。</p></td>
 <td><p>运行可执行文件的计算机上本地 Administrators 组的成员。用于读取 AD DS 中信息的 Domain Users 组的成员。需要该级别的权限是因为，在本地计算机上自动安装所需的 MSI 软件包需要允许读取和写入受保护的本地计算机资源（如 Program Files 目录）和受保护注册表（如 Local Machine 配置单元）的权限。需要具有 RtcUniversalReadOnlyAdmins 组中的成员身份才能读取 中央管理存储。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您运行的是 Windows Vista 操作系统或 Windows 7 操作系统，那么用户帐户控制 (UAC) 就会提示您继续安装。如果使用标准用户帐户登录，那么在提示要求您提供具有软件安装权限的帐户时，就需要具有本地 Administrators 组成员身份的用户来提供凭据。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 如果您运行的是 Windows Vista 操作系统或 Windows 7 操作系统，那么用户帐户控制 (UAC) 就会提示您继续安装。如果使用标准用户帐户登录，那么在提示要求您提供具有软件安装权限的帐户时，就需要具有本地 Administrators 组成员身份的用户来提供凭据。
+
 
 </div></td>
 </tr>

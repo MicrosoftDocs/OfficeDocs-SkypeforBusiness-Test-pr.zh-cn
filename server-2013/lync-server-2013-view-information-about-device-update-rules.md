@@ -17,18 +17,8 @@ _**上一次修改主题：** 2013-02-23_
 
 查看有关已导入的设备更新规则的详细信息，包括更新适用于的设备的类型、型号和品牌；更新的版本和类型；更新的区域设置和池。信息可用于所有已导入的设备更新规则：等待批准、已部署（已批准）、已撤消（已恢复）的规则，以及已决定不使用（重置）的规则。可从 Lync Server 控制面板或 Windows PowerShell 中访问此信息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关如何导入、批准、重置、恢复以及删除规则的详细信息，请参阅<a href="lync-server-2013-device-update-rules.md">Lync Server 2013 中的设备更新规则</a>中所列的主题。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关如何导入、批准、重置、恢复以及删除规则的详细信息，请参阅<a href="lync-server-2013-device-update-rules.md">Lync Server 2013 中的设备更新规则</a>中所列的主题。
 
 
 ## 使用 Lync Server 控制面板查看设备更新规则
@@ -43,18 +33,8 @@ _**上一次修改主题：** 2013-02-23_
 
 还可以使用 Windows PowerShell 和 **Get-CsDeviceUpdateRule** cmdlet 查看有关您的所有设备更新规则的详细信息。可以从 Lync Server 2013 命令行管理程序或从 Windows PowerShell 的远程会话中运行此 cmdlet。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关使用远程 Windows PowerShell 连接到 Lync Server 的详细信息，请参阅 Lync Server Windows PowerShell 博客文章“快速入门：使用远程 PowerShell 管理 Microsoft Lync Server 2010”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关使用远程 Windows PowerShell 连接到 Lync Server 的详细信息，请参阅 Lync Server Windows PowerShell 博客文章“快速入门：使用远程 PowerShell 管理 Microsoft Lync Server 2010”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</a>。
 
 
 ## 查看您的所有设备更新规则
@@ -83,5 +63,5 @@ _**上一次修改主题：** 2013-02-23_
     
         Get-CsDeviceUpdateRule -Filter "service:WebServer:atl-cs-001.litwareinc.com*"
 
-有关详细信息，请参阅 [Get-CsDeviceUpdateRule](get-csdeviceupdaterule.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Get-CsDeviceUpdateRule](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsDeviceUpdateRule) cmdlet 的帮助主题。
 

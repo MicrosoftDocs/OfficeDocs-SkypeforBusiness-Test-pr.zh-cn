@@ -23,38 +23,27 @@ _**上一次修改主题：** 2016-12-08_
 
 本文档包含以下各节：
 
-  -   
-    Lync 2013 客户端
+  - Lync 2013 客户端
 
-  -   
-    Lync Server
+  - Lync Server
 
-  -   
-    安装
+  - 安装
 
-  -   
-    移动性
+  - 移动性
 
-  -   
-    会议
+  - 会议
 
-  -   
-    企业语音
+  - 企业语音
 
-  -   
-    状态
+  - 状态
 
-  -   
-    响应组应用程序和呼叫寄存应用程序
+  - 响应组应用程序和呼叫寄存应用程序
 
-  -   
-    Lync Server 控制面板、拓扑生成器和规划工具
+  - Lync Server 控制面板、拓扑生成器和规划工具
 
-  -   
-    本地化
+  - 本地化
 
-  -   
-    版权信息
+  - 版权信息
 
 ## Lync 2013 客户端
 
@@ -90,9 +79,12 @@ Lync Server 存储服务使用 Windows Fabric 进行复制。如果在主前端�
 
 若要解决此问题，请在为部署更改 IP 地址配置后重新启动 Lync Server 服务。为此，请在 Lync Server 命令行管理程序中运行以下 cmdlet：
 
-    Stop-CsWindowsService -graceful
-
-    Start-CsWindowsService
+  ```
+  Stop-CsWindowsService -graceful
+  ```
+  ```
+  Start-CsWindowsService
+  ```
 
 ## Lync Server 2013 管理包中不再提供电话拨入式会议综合事务 cmdlet (3212342)
 
@@ -347,6 +339,8 @@ Windows Fabric 安装失败，因为 Fabric 跟踪是采用时间格式 HH:MM:SS
 1.  启动 Windows PowerShell 并返回以下 cmdlet：
     
         New-PSDrive -Name HKU -PSProvider Registry -Root HKEY_USERS
+
+       &nbsp;
     
         $a="HKU:\.Default\Control Panel\International"
 
@@ -514,18 +508,9 @@ Windows Fabric 安装失败，因为 Fabric 跟踪是采用时间格式 HH:MM:SS
 
 ## 在某些情况下，配置为使用 IPv4 和 IPv6 双协议栈的计算机上运行的 Lync 客户端可能不支持依赖计算机的 IP 子网的功能，例如 E911、媒体绕过、呼叫允许控制和基于位置的路由 (3335508)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。
+
 
 
 **问题：**
@@ -582,18 +567,9 @@ Windows Fabric 安装失败，因为 Fabric 跟踪是采用时间格式 HH:MM:SS
 
 ## 与取回方建立呼叫期间，呼叫者可能会听到一秒的保持音乐 (3334097)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。
+
 
 
 **问题：**
@@ -678,18 +654,9 @@ Lync Server 2013响应组代理只能通过 Lync Server 2010 代理控制台登�
 
 ## 规划工具限制（3331056 和 3331059）
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。
+
 
 
 **问题：**
@@ -780,18 +747,8 @@ Lync Server 2013响应组代理只能通过 Lync Server 2010 代理控制台登�
 
 3.  发布拓扑。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只要更改后端数据库镜像关系，就必须重新启动池中的所有 前端服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 只要更改后端数据库镜像关系，就必须重新启动池中的所有 前端服务器。
 
 
 ## 管理员尝试删除包含具有关联的见证存储的前端池的部署时， 拓扑生成器中返回验证错误 (3199266)
@@ -854,18 +811,9 @@ Lync Server 2013响应组代理只能通过 Lync Server 2010 代理控制台登�
 
 ## 通讯簿中的索引在某些语言中未按预期工作 (3336047)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。
+
 
 
 如果用户的属性包含索引字段，并且该字段仅包含无法编制索引的字符，则该用户不会显示在通讯簿中执行的搜索中。
@@ -916,18 +864,9 @@ Lync Server 2013响应组代理只能通过 Lync Server 2010 代理控制台登�
 
 ## 在某些 Web 浏览器中使用 Lync Web Scheduler、Dial-In、Join Launcher、持久聊天聊天室管理和 OCTab 时，对阿塞拜疆语和乌兹别克语区域设置的支持是有限的 (3336748)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本节中的信息与 2013 年 2 月版 Lync Server 2013 累积更新相关。
+
 
 
 **问题：**
@@ -983,4 +922,3 @@ Safari 浏览器中不支持乌兹别克语（拉丁文）区域设置。
 Microsoft、Windows、Windows Live、Active Directory、Internet Explorer、MSN、Outlook 和 SQL Server 是 Microsoft Corporation 在美国和/或其他国家/地区的注册商标或商标。
 
 所有其他商标归其各自的所有者所有。
-

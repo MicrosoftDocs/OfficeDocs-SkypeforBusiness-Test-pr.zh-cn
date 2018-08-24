@@ -17,25 +17,13 @@ _**上一次修改主题：** 2017-03-07_
 
 在虚拟桌面基础结构 (VDI) 环境中，虚拟机和用户的本地计算机必须满足本节中概述的要求。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关如何安装和部署虚拟化环境的详细信息，请咨询虚拟化解决方案提供商。有关基于 Hyper-V 和远程桌面服务部署虚拟化环境的信息，请参阅 Microsoft TechNet 库中的以下文章：
+> [!NOTE]  
+> 有关如何安装和部署虚拟化环境的详细信息，请咨询虚拟化解决方案提供商。有关基于 Hyper-V 和远程桌面服务部署虚拟化环境的信息，请参阅 Microsoft TechNet 库中的以下文章：
 <ul>
 <li><p>Hyper-V（网址为 <a href="http://go.microsoft.com/fwlink/?linkid=247514" class="uri">http://go.microsoft.com/fwlink/?linkid=247514</a>）</p></li>
 <li><p>Windows Server 2008 R2 的远程桌面服务（网址为 <a href="http://go.microsoft.com/fwlink/?linkid=247513" class="uri">http://go.microsoft.com/fwlink/?linkid=247513</a>）</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+</ul>
+
 
 
 以下是对数据中心计算机上运行的虚拟机的要求：

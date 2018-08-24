@@ -41,18 +41,9 @@ _**上一次修改主题：** 2012-10-15_
 
 11. 单击“提交”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>创建新的带宽策略配置文件不会自动强制实施带宽限制。必须先将策略配置文件与站点相关联。有关如何将策略配置文件与站点相关联的详细信息，请参阅<a href="lync-server-2013-creating-or-modifying-network-sites.md">创建或修改网络站点</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 创建新的带宽策略配置文件不会自动强制实施带宽限制。必须先将策略配置文件与站点相关联。有关如何将策略配置文件与站点相关联的详细信息，请参阅<a href="lync-server-2013-creating-or-modifying-network-sites.md">创建或修改网络站点</a>。
+    
 
 
 ## 修改带宽策略配置文件
@@ -71,18 +62,9 @@ _**上一次修改主题：** 2012-10-15_
 
 7.  单击“提交”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>修改带宽策略配置文件时，会立即更新与此带宽策略配置文件关联的所有网络站点的带宽限制。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 修改带宽策略配置文件时，会立即更新与此带宽策略配置文件关联的所有网络站点的带宽限制。
+    
 
 
 ## 另请参阅
@@ -94,7 +76,7 @@ _**上一次修改主题：** 2012-10-15_
 #### 其他资源
 
 [在 Lync Server 2013 中配置呼叫允许控制](lync-server-2013-configure-call-admission-control.md)  
-[New-CsNetworkBandwidthPolicyProfile](new-csnetworkbandwidthpolicyprofile.md)  
-[Set-CsNetworkBandwidthPolicyProfile](set-csnetworkbandwidthpolicyprofile.md)  
-[Get-CsNetworkBandwidthPolicyProfile](get-csnetworkbandwidthpolicyprofile.md)
+[New-CsNetworkBandwidthPolicyProfile](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkBandwidthPolicyProfile)  
+[Set-CsNetworkBandwidthPolicyProfile](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsNetworkBandwidthPolicyProfile)  
+[Get-CsNetworkBandwidthPolicyProfile](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkBandwidthPolicyProfile)
 

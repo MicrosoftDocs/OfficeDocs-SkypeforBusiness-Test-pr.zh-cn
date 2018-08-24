@@ -27,18 +27,9 @@ _**上一次修改主题：** 2017-03-03_
 
 3.  当您关闭您的远程会话时，下载的项目将从您的计算机的内存中删除。例如，您可以使用 **Get-CsTenant** cmdlet 启动 Windows PowerShell 的远程会话，然后关闭该会话。如果重新启动 Windows PowerShell，则 **Get-CsTenant** cmdlet 将不再可用。要获取对 **Get-CsTenant** cmdlet 的访问权限，您需要重新连接到 Skype for Business Online。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用混合部署，则应按照<a href="using-windows-powershell-in-a-hybrid-deployment-with-skype-for-business-online.md">在混合部署中使用 Windows PowerShell</a>中所述的过程执行操作。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您使用混合部署，则应按照<a href="using-windows-powershell-in-a-hybrid-deployment-with-skype-for-business-online.md">在混合部署中使用 Windows PowerShell</a>中所述的过程执行操作。
+
 
 
 要创建与 Skype for Business Online 的远程连接，请首先在您的本地计算机上启动新的 Windows PowerShell 会话。如果您运行 Windows 7、Windows Server 2008 R2、Windows Server 2012 或 Windows Server 2012 R2 上，请执行下列操作：
@@ -53,18 +44,9 @@ Windows PowerShell 控制台显示后，您必须创建 Windows PowerShell 凭�
 
     $credential = Get-Credential
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在此示例中，您的用户名和密码将存储在变量 $credential 中。您可以将此变量命名为任何所需内容，前提是它遵守 Windows PowerShell 的变量规则。但是，您必须使用某种变量才能存储用户名和密码。否则，您创建的凭据对象在创建之后的片刻就会消失。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在此示例中，您的用户名和密码将存储在变量 $credential 中。您可以将此变量命名为任何所需内容，前提是它遵守 Windows PowerShell 的变量规则。但是，您必须使用某种变量才能存储用户名和密码。否则，您创建的凭据对象在创建之后的片刻就会消失。
+
 
 
 按 Enter 之后，您应会看到“Windows PowerShell 凭据”对话框：
@@ -85,36 +67,18 @@ Windows PowerShell 将通过向您显示以下类似内容来作出响应：
     --------                            --------
     kenmyer@litwareinc.com              System.Security.SecureString
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>记住，<strong>Get-Credential</strong> cmdlet 接受您键入的任何凭据，不尝试验证您是否输入了有效的用户名和密码。只有当您试图登录 Skype for Business Online 时，才执行此验证。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 记住，<strong>Get-Credential</strong> cmdlet 接受您键入的任何凭据，不尝试验证您是否输入了有效的用户名和密码。只有当您试图登录 Skype for Business Online 时，才执行此验证。
+
 
 
 在创建凭据对象之后，您可以创建一个与 Skype for Business Online 建立连接的新远程 Windows PowerShell 会话。为此，请在 Windows PowerShell 提示符下键入以下命令，然后按 Enter：
 
     $session = New-CsOnlineSession -Credential $credential
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>$session 是一个用于保留信息的变量，在这种情况下为有关与 Skype for Business Online 的连接的信息。再说一下，您可以为此变量指定任何名称，只要该名称符合 Windows PowerShell 变量名称准则（例如，名称不应包括空格或标点符号）。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> $session 是一个用于保留信息的变量，在这种情况下为有关与 Skype for Business Online 的连接的信息。再说一下，您可以为此变量指定任何名称，只要该名称符合 Windows PowerShell 变量名称准则（例如，名称不应包括空格或标点符号）。
+
 
 
 确保如上所示准确地键入命令（变量名称可能例外）。请注意，您的 Skype for Business Online 域的名称无关紧要。不管您的域名如何，**New-CsOnlineSession** cmdlet 都会将您连接到 Office 365 并使用提供的凭据帮您登录。进行连接和身份验证之后，您将基于提供的凭据自动重定向到合适的 URI。
@@ -179,18 +143,9 @@ ModuleType 为 Script 的模块是包含 Skype for Business Online cmdlet 的模
 
 如果您在关闭 Windows PowerShell 控制台之前忘记删除会话（或者控制台意外关闭），则不会发生任何情况。处于非活动状态 15 分钟后，会话将自动断开连接。但是，默认情况下，每个 Skype for Business Online 管理员仅允许同时与 Skype for Business Online 建立三个连接。如果您关闭 Windows PowerShell 控制台而不删除会话，该关闭的会话仍将计为一个连接，即使此时未使用也是如此。（它将继续计为一个连接直至超时。）例如，您可能打开并关闭 Windows PowerShell 控制台三次，每次都没有删除 Skype for Business Online 会话。如果您打开 Windows PowerShell 并试图建立第四个连接，您的命令将挂起，不建立任何连接。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果试图建立连接时 Windows PowerShell 挂起，请按 Ctrl-C 终止停滞的命令。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果试图建立连接时 Windows PowerShell 挂起，请按 Ctrl-C 终止停滞的命令。
+
 
 
 各个管理员只能同时与 Skype for Business Online 租户建立三个连接，而组织可以同时有九个连接。这意味着三个管理员有三个同时连接，或者九个管理员与 Skype for Business Online 建立一个连接等等。然而，再说一次，单个管理员拥有的活动会话不能超过三个。

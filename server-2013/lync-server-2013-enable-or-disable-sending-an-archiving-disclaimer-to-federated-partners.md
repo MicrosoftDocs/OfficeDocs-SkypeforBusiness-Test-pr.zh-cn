@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-02-23_
 
 在部署边缘服务器并为组织启用联盟时，应该已经指定了是否自动向联盟伙伴发送存档免责声明。如果要对外部通信进行存档，应启用发送存档免责声明。使用本主题中的过程更改此配置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>以下过程假定您已为组织启用联盟。有关启用联盟的详细信息，请参阅部署文档或操作文档中的 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中启用或禁用远程用户访问</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 以下过程假定您已为组织启用联盟。有关启用联盟的详细信息，请参阅部署文档或操作文档中的 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中启用或禁用远程用户访问</a>。
+
 
 
 ## 启用或禁用向联盟伙伴发送存档免责声明

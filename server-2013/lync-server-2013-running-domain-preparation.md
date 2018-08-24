@@ -71,18 +71,9 @@ _**上一次修改主题：** 2013-04-16_
     
         Get-CsAdDomain -Domain domain1.contoso.net -GlobalSettingsDomainController dc01.domain1.contoso.com
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>参数 GlobalSettingsDomainController 用于指出存储全局设置的位置。如果设置存储在“系统”容器中（通常在全局设置尚未迁移到“配置”容器的升级部署中是这种情况），则定义 Active Directory 林的根中的某个域控制器。如果全局设置存储在“配置”容器中（通常在新部署或设置已迁移到“配置”容器的升级部署中是这种情况），则定义林中的任何域控制器。如果未指定此参数，则 cmdlet 会假定设置存储在“配置”容器中，并引用 AD DS 中的任何域控制器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 参数 GlobalSettingsDomainController 用于指出存储全局设置的位置。如果设置存储在“系统”容器中（通常在全局设置尚未迁移到“配置”容器的升级部署中是这种情况），则定义 Active Directory 林的根中的某个域控制器。如果全局设置存储在“配置”容器中（通常在新部署或设置已迁移到“配置”容器的升级部署中是这种情况），则定义林中的任何域控制器。如果未指定此参数，则 cmdlet 会假定设置存储在“配置”容器中，并引用 AD DS 中的任何域控制器。
+    
     
     如果不指定 **Domain** 参数，则默认为本地域。
     

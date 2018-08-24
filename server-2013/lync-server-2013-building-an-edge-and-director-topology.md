@@ -25,18 +25,9 @@ _**上一次修改主题：** 2012-09-08_
 
 有关这些工具的详细信息，请参阅[Lync Server 2013 中外部用户访问的部署清单](lync-server-2013-deployment-checklist-for-external-user-access.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果以前已使用 拓扑生成器定义完整的拓扑（包括边缘拓扑），则可以跳过本节中的 <a href="lync-server-2013-define-your-edge-topology.md">在 Lync Server 2013 中定义边缘拓扑</a>和 <a href="lync-server-2013-publish-your-topology.md">在 Lync Server 2013 中发布拓扑</a>任务，但需要完成 <a href="lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md">导出 Lync Server 2013 拓扑并将其复制到外部媒体以用于边缘安装</a>任务。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果以前已使用 拓扑生成器定义完整的拓扑（包括边缘拓扑），则可以跳过本节中的 <a href="lync-server-2013-define-your-edge-topology.md">在 Lync Server 2013 中定义边缘拓扑</a>和 <a href="lync-server-2013-publish-your-topology.md">在 Lync Server 2013 中发布拓扑</a>任务，但需要完成 <a href="lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md">导出 Lync Server 2013 拓扑并将其复制到外部媒体以用于边缘安装</a>任务。
+
 
 
 ## 本部分内容

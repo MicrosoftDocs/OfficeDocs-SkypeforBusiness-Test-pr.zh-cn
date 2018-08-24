@@ -33,10 +33,10 @@ This command creates a new hosted voice mail policy named ExRedmond. (The fact t
 
 The commands shown in Example 2 are a variation of the command shown in Example 1; in this case, however, the new hosted voicemail policy is assigned to the Lync Online tenant with the tenant ID 73d355dd-ce5d-4ab9-bf49-7b822c18dd98. To create a new policy for a Lync Online tenant you must include the InMemory parameter and store the resulting policy in a variable. That’s what happens in the first command, with the new policy stored in a variable named $x. Note, too that you must set the Identity to Global and the Tenant parameter to the appropriate tenant ID.
 
-To create the new policy, the second command then calls the **Set-CsHostedVoiceMailPolicy** cmdlet along with the Instance parameter and the Tenant parameter.
+To create the new policy, the second command then calls the **Set-CsHostedVoicemailPolicy** cmdlet along with the Instance parameter and the Tenant parameter.
 
     $x = New-CsHostedVoiceMailPolicy -Identity global -Tenant "73d355dd-ce5d-4ab9-bf49-7b822c18dd98" -Destination ExUM.fabrikam.com -Description "Hosted voicemail policy for Redmond users." -Organization "corp1.litwareinc.com, corp2.litwareinc.com"
-    Set-CsHostedVoiceMailPolicy -Instance $x -Tenant "73d355dd-ce5d-4ab9-bf49-7b822c18dd98"
+    Set-CsHostedVoicemailPolicy -Instance $x -Tenant "73d355dd-ce5d-4ab9-bf49-7b822c18dd98"
 
 ## Detailed Description
 
@@ -145,7 +145,7 @@ This cmdlet creates an object of type Microsoft.Rtc.Management.WritableConfig.Po
 #### 其他资源
 
 [Remove-CsHostedVoicemailPolicy](remove-cshostedvoicemailpolicy.md)  
-[Set-CsHostedVoicemailPolicy](set-cshostedvoicemailpolicy.md)  
+[Set-CsHostedVoicemailPolicy](Set-CsHostedVoicemailPolicy.md)  
 [Get-CsHostedVoicemailPolicy](get-cshostedvoicemailpolicy.md)  
 [Grant-CsHostedVoicemailPolicy](grant-cshostedvoicemailpolicy.md)
 

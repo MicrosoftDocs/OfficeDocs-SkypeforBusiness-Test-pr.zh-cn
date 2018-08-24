@@ -19,32 +19,14 @@ _**上一次修改主题：** 2011-07-17_
 
 创建拨入访问号码前，必须首先规划电话拨入式会议区域，然后配置区域的拨号计划。有关区域的详细信息，请参阅规划文档中的 [电话拨入式会议要求](lync-server-2013-dial-in-conferencing-requirements.md)。有关为电话拨入式会议配置拨号计划的详细信息，请参阅 [在 Lync Server 2013 中配置电话拨入式会议的拨号计划](lync-server-2013-configure-dial-plans-for-dial-in-conferencing.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Active Directory 域服务 (AD DS) 完成对一个新拨入访问号码的复制前，无法使用该拨入访问号码。复制可能需要几个小时才能完成。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Active Directory 域服务 (AD DS) 完成对一个新拨入访问号码的复制前，无法使用该拨入访问号码。复制可能需要几个小时才能完成。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>创建拨入访问号码后，可以修改 Active Directory 联系人对象的显示名称，以便用户可以更加轻松地识别正确的访问号码。可使用 <strong>Set-CsDialInConferencingAccessNumber</strong> cmdlet 修改显示名称。不应手动修改 Active Directory 对象。有关修改访问号码的详细信息，请参阅 Lync Server 命令行管理程序文档，了解 <strong>Set-CsDialInConferencingAccessNumber</strong> cmdlet 的相关内容。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 创建拨入访问号码后，可以修改 Active Directory 联系人对象的显示名称，以便用户可以更加轻松地识别正确的访问号码。可使用 <strong>Set-CsDialInConferencingAccessNumber</strong> cmdlet 修改显示名称。不应手动修改 Active Directory 对象。有关修改访问号码的详细信息，请参阅 Lync Server 命令行管理程序文档，了解 <strong>Set-CsDialInConferencingAccessNumber</strong> cmdlet 的相关内容。
+
 
 
 ## 本部分内容

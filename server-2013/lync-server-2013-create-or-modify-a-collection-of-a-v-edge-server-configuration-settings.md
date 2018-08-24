@@ -25,7 +25,7 @@ _**上一次修改主题：** 2012-11-01_
 
   - 全局作用域的设置仅当未在单个服务器上配置服务设置和服务器所在的网站没有网站设置的情况下使用。
 
-随后，可使用 Set-CsAVEdgeConfiguration cmdlet 修改任何设置。有关详细信息，请参阅 [New-CsAVEdgeConfiguration](new-csavedgeconfiguration.md) 和 [Set-CsAVEdgeConfiguration](set-csavedgeconfiguration.md) cmdlet 的帮助主题。
+随后，可使用 Set-CsAVEdgeConfiguration cmdlet 修改任何设置。有关详细信息，请参阅 [New-CsAVEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsAVEdgeConfiguration) 和 [Set-CsAVEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsAVEdgeConfiguration) cmdlet 的帮助主题。
 
 ## 在站点作用域创建新的 A/V 边缘配置设置
 
@@ -61,6 +61,6 @@ _**上一次修改主题：** 2012-11-01_
 #### 其他资源
 
 [Lync Server 2013 中的音频/视频 (A/V) 边缘服务器](lync-server-2013-audio-video-a-v-edge-servers.md)  
-[New-CsAVEdgeConfiguration](new-csavedgeconfiguration.md)  
-[Set-CsAVEdgeConfiguration](set-csavedgeconfiguration.md)
+[New-CsAVEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsAVEdgeConfiguration)  
+[Set-CsAVEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsAVEdgeConfiguration)
 

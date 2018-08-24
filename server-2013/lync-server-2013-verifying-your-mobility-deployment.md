@@ -61,6 +61,6 @@ _**上一次修改主题：** 2013-02-12_
 
 #### 其他资源
 
-[Test-CsMcxP2PIM](test-csmcxp2pim.md)  
-[Test-CsUcwaConference](test-csucwaconference.md)
+[Test-CsMcxP2PIM](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsMcxP2PIM)  
+[Test-CsUcwaConference](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsUcwaConference)
 

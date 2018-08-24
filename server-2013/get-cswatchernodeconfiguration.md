@@ -17,18 +17,9 @@ _**上一次修改主题：** 2017-04-05_
 
 Returns information about the watcher node configuration settings in use in your organization. Watcher nodes are computers that periodically use Microsoft System Center Operations Manager and Lync Server 2013 synthetic transactions to verify that Lync Server components are working as expected. The watcher node configuration settings let you know which pools have been associated with a watcher node. 此 cmdlet 是在 Lync Server 2013 中引入的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>This command must be run on the dedicated Trusted Application Server previously configured as a watcher node using the <strong>New-CsWatcherNodeConfiguration</strong> command otherwise the output will display a null result.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> This command must be run on the dedicated Trusted Application Server previously configured as a watcher node using the <strong>New-CsWatcherNodeConfiguration</strong> command otherwise the output will display a null result.
+
 
 
 ## 语法

@@ -59,7 +59,7 @@ Microsoft Lync Server 2013 与 Exchange 统一消息 (UM) 协同工作，以实�
     [Remove-CsHostedVoicemailPolicy](remove-cshostedvoicemailpolicy.md)
 
   -   
-    [Set-CsHostedVoicemailPolicy](set-cshostedvoicemailpolicy.md)
+    [Set-CsHostedVoicemailPolicy](Set-CsHostedVoicemailPolicy.md)
 
   -   
     [Get-CsVoicemailReroutingConfiguration](get-csvoicemailreroutingconfiguration.md)

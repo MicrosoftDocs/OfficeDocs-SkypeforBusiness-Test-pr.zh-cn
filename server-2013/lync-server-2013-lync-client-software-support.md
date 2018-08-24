@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 本节总结了 Lync 2013 和 Lync 2013 联机会议外接程序的软件支持。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支持在 Outlook 消息和协作客户端中进行会议管理的 Lync 2013 联机会议外接程序 将自动随 Lync 2013 一起安装。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 支持在 Outlook 消息和协作客户端中进行会议管理的 Lync 2013 联机会议外接程序 将自动随 Lync 2013 一起安装。
+
 
 
 ### Lync 2013 和 Lync 2013 联机会议外接程序的软件要求
@@ -51,19 +42,11 @@ _**上一次修改主题：** 2016-12-08_
 <p>Windows 8</p>
 <p>Windows 7 操作系统</p>
 <p>带有最新 Service Pack 的 Windows Server 2008 R2</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Windows Vista 或 Windows XP（任何版本）上不支持 Lync 2013 和 Lync 2013 联机会议外接程序</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 在 Windows Vista 或 Windows XP（任何版本）上不支持 Lync 2013 和 Lync 2013 联机会议外接程序
+
 
 </div></td>
 </tr>
@@ -78,19 +61,11 @@ _**上一次修改主题：** 2016-12-08_
 <p>Internet Explorer 8 Internet 浏览器</p>
 <p>Internet Explorer 7 Internet 浏览器</p>
 <p>Mozilla Firefox Web 浏览器</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果将 Lync 与 Microsoft Exchange Online 一起使用，并且您的组织已部署身份验证 HTTP 代理，则需要 Internet Explorer 9 或 Internet Explorer 8。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 如果将 Lync 与 Microsoft Exchange Online 一起使用，并且您的组织已部署身份验证 HTTP 代理，则需要 Internet Explorer 9 或 Internet Explorer 8。
+
 
 </div></td>
 </tr>

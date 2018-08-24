@@ -17,18 +17,9 @@ _**上一次修改主题：** 2016-12-08_
 
 具有 Lync Server 内部部署的组织必须满足以下要求才能支持 Lync Windows 应用商店应用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>对于 Lync Server 2010，请在所有服务器上运行 Lync Server 2010 的 2012 年 2 月累积更新（可在 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2670352" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2670352</a> 上获得）或更高版本。为使用户能够加入会议，请在服务器上运行 Lync Server 2010 的 2012 年 10 月累积更新（可在 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2737915" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2737915</a> 上获得）。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 对于 Lync Server 2010，请在所有服务器上运行 Lync Server 2010 的 2012 年 2 月累积更新（可在 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2670352" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2670352</a> 上获得）或更高版本。为使用户能够加入会议，请在服务器上运行 Lync Server 2010 的 2012 年 10 月累积更新（可在 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2737915" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2737915</a> 上获得）。
+
 
 
   - 在服务器上启用自动发现、Lync Web App 和 Web 票证服务。
@@ -41,7 +32,7 @@ _**上一次修改主题：** 2016-12-08_
 
   - 在企业中配置 HTTP 代理以允许与 HTTP 流量相关的 Lync 服务器。如有必要，请添加自动发现、Lync Web App 和 Web 票证服务例外。
 
-  - 在客户端上，安装 Windows 8.1 和 Lync Windows 应用商店应用 的最新版本以解决当使用多个域时通常会发生的问题（例如，当 SIP URI 是 **userA@domainZ.com**，但是边缘服务器是 **sip.domainX.com** 时）。
+  - 在客户端上，安装 Windows 8.1 和 Lync Windows 应用商店应用 的最新版本以解决当使用多个域时通常会发生的问题（例如，当 SIP URI 是 <strong>userA@domainZ.com</strong>，但是边缘服务器是 **sip.domainX.com** 时）。
 
 如果您的组织订阅了 Lync Online 或 Office 365，并且您正在使用自己的域名，您必须执行一些额外步骤来为您的网络设置 Lync 服务器自动发现。移动设备上的 Lync Windows 应用商店应用和 Lync 的网络配置要求相同。请按照 Office 365 wiki 文章“设置 Lync 移动设备”中的说明“设置您的网络”进行操作，网址为：[http://go.microsoft.com/fwlink/?LinkId=271822](http://go.microsoft.com/fwlink/?linkid=271822)。
 

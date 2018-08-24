@@ -120,7 +120,7 @@ The **Get-CsAddressBookConfiguration** cmdlet returns instances of the Microsoft
 
 #### 其他资源
 
-[New-CsAddressBookConfiguration](new-csaddressbookconfiguration.md)  
+[New-CsAddressBookConfiguration](New-CsAddressBookConfiguration.md)  
 [Remove-CsAddressBookConfiguration](remove-csaddressbookconfiguration.md)  
 [Set-CsAddressBookConfiguration](set-csaddressbookconfiguration.md)
 

@@ -23,18 +23,8 @@ Lync Server 2013 自动发现服务运行于控制器和前端池服务器上，
 
   - **在端口 443 上发布**   外部 Web 服务发布规则使用的证书上的使用者替代名称列表必须为您组织中的每个 SIP 域包含一个 `lyncdiscover.<sipdomain>` 条目。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>对于从已部署了 Mobility 的 Lync Server 2010 进行的新安装或升级，您或者已将端口 80 用于 Mobility Service 的自动发现，或者已重新颁发已具有适当使用者名称和使用者替代名称的证书。检查您的控制器和前端服务器上的证书来确认您选择了哪条路径。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 对于从已部署了 Mobility 的 Lync Server 2010 进行的新安装或升级，您或者已将端口 80 用于 Mobility Service 的自动发现，或者已重新颁发已具有适当使用者名称和使用者替代名称的证书。检查您的控制器和前端服务器上的证书来确认您选择了哪条路径。
 
 
 ### 反向代理服务器的防火墙详细信息：外部接口

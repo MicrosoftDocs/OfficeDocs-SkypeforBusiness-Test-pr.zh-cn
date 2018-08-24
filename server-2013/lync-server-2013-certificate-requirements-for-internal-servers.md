@@ -17,18 +17,8 @@ _**上一次修改主题：** 2017-02-17_
 
 运行 Lync Server 并且需要证书的内部服务器包括 Standard Edition 服务器、Enterprise Edition 前端服务器、中介服务器和控制器。下表显示了这些服务器的证书要求。可以使用 Lync Server 证书向导请求这些证书。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>与前端池、前端服务器或控制器上简单 URL 关联的使用者替代名称支持通配符证书。有关通配符证书支持的详细信息，请参阅<a href="lync-server-2013-wildcard-certificate-support.md">Lync Server 2013 中的通配符证书支持</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 与前端池、前端服务器或控制器上简单 URL 关联的使用者替代名称支持通配符证书。有关通配符证书支持的详细信息，请参阅<a href="lync-server-2013-wildcard-certificate-support.md">Lync Server 2013 中的通配符证书支持</a>。
 
 
 虽然我们建议对内部服务器选择内部企业证书颁发机构 (CA)，但您也可以选择公共 CA。有关符合以下条件的公共 CA 的列表：提供符合统一通信 (UC) 证书特定要求的证书以及与 Microsoft 一起合作处理 Lync Server 证书向导，请参阅 Microsoft 知识库文章 929395“Exchange Server 和 Communications Server 的统一通信证书合作伙伴”，网址为 [http://go.microsoft.com/fwlink/?linkid=202834\&clcid=0x804](http://go.microsoft.com/fwlink/?linkid=202834%26clcid=0x804)。
@@ -41,32 +31,14 @@ _**上一次修改主题：** 2017-02-17_
 
 请注意，使用证书向导请求证书时会自动配置服务器增强型密钥使用 (EKU)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每个证书友好名称在计算机存储中必须是唯一的。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 每个证书友好名称在计算机存储中必须是唯一的。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您已在 DNS 中配置 sipinternal.contoso.com 或 sipexternal.contoso.com，您需要将它们添加到证书的“使用者可选名称”中。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您已在 DNS 中配置 sipinternal.contoso.com 或 sipexternal.contoso.com，您需要将它们添加到证书的“使用者可选名称”中。
+
 
 
 ### Standard Edition 服务器的证书

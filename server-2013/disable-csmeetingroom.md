@@ -126,6 +126,6 @@ None. Instead, the **Disable-CsMeetingRoom** cmdlet deletes instance of the Micr
 
 [Enable-CsMeetingRoom](enable-csmeetingroom.md)  
 [Get-CsMeetingRoom](get-csmeetingroom.md)  
-[Move-CsMeetingRoom](move-csmeetingroom.md)  
+[Move-CsMeetingRoom](Move-CsMeetingRoom.md)  
 [Set-CsMeetingRoom](set-csmeetingroom.md)
 

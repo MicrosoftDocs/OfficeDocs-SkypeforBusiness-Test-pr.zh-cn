@@ -17,18 +17,8 @@ _**上一次修改主题：** 2016-12-08_
 
 使用 Lync Server 2010，可将被呼叫者的电话号码（即呼叫的电话号码）从 E.164 格式转换为*中继对等方*（即关联的网关、专用交换机 (PBX) 或 SIP 中继）需要的本地拨号格式。为此，必须定义一个或多个转换规则，以便在将请求 URI 路由至中继对等方之前对其执行转换。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>将一个或多个转换规则与企业语音中继配置进行关联的功能可用作在中继对等方上配置转换规则的<em>备选方法</em>。如果已在中继对等方上配置转换规则，则不要将任何转换规则与企业语音中继配置相关联，因为这两个规则可能会发生冲突。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 将一个或多个转换规则与企业语音中继配置进行关联的功能可用作在中继对等方上配置转换规则的<em>备选方法</em>。如果已在中继对等方上配置转换规则，则不要将任何转换规则与企业语音中继配置相关联，因为这两个规则可能会发生冲突。
 
 
 可以使用以下任一方法创建或修改转换规则：
@@ -37,18 +27,9 @@ _**上一次修改主题：** 2016-12-08_
 
   - 手动编写正则表达式以定义匹配模式和转换规则。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关如何编写正则表达式的信息，请参阅“.NET Framework 正则表达式”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=140927%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=140927&amp;clcid=0x804</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关如何编写正则表达式的信息，请参阅“.NET Framework 正则表达式”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=140927%26clcid=0x804" class="uri">http://go.microsoft.com/fwlink/?linkid=140927&amp;clcid=0x804</a>。
+
 
 
 ## 本部分内容

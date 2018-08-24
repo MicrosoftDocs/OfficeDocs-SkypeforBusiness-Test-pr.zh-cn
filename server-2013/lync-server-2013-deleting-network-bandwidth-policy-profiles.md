@@ -27,34 +27,15 @@ _**上一次修改主题：** 2012-11-01_
 
 4.  在“带宽策略”页上，单击要删除的带宽策略配置文件。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可一次性删除多个配置文件。要执行此操作，请按住 Ctrl 键，同时选择多个配置文件。或者，要选择全部配置文件，请单击“编辑”菜单中的“全选”。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 可一次性删除多个配置文件。要执行此操作，请按住 Ctrl 键，同时选择多个配置文件。或者，要选择全部配置文件，请单击“编辑”菜单中的“全选”。
+    
 
 
 5.  在“编辑”菜单上，单击“删除”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不能删除与网络站点关联的带宽策略配置文件。只有先删除配置文件与网络站点之间的关联，然后才能将配置文件删除。有关如何修改网络站点的详细信息，请参阅<a href="lync-server-2013-creating-or-modifying-network-sites.md">创建或修改网络站点</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 不能删除与网络站点关联的带宽策略配置文件。只有先删除配置文件与网络站点之间的关联，然后才能将配置文件删除。有关如何修改网络站点的详细信息，请参阅<a href="lync-server-2013-creating-or-modifying-network-sites.md">创建或修改网络站点</a>。
 
 
 ## 另请参阅
@@ -67,5 +48,5 @@ _**上一次修改主题：** 2012-11-01_
 #### 其他资源
 
 [在 Lync Server 2013 中配置呼叫允许控制](lync-server-2013-configure-call-admission-control.md)  
-[Remove-CsNetworkBandwidthPolicyProfile](remove-csnetworkbandwidthpolicyprofile.md)
+[Remove-CsNetworkBandwidthPolicyProfile](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkBandwidthPolicyProfile)
 

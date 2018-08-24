@@ -19,18 +19,9 @@ _**上一次修改主题：** 2016-12-08_
 
 当会议参与者的视频不可用时，如果您部署了高分辨率照片（Lync Server 2013 中的新功能），则可增强用户的库视图体验。高分辨率照片提供了对存储在 Active Directory 域服务 中的较小、分辨率有限的联系人照片的替换。高分辨率照片存储在用户的 Exchange 2013 邮箱中，因此需要您将 Lync Server 2013 与 Exchange 2013 集成。有关详细信息，请参阅 NextHop 博客文章“集成 Exchange 2013 和 Lync Server 2013”，网址为 [http://go.microsoft.com/fwlink/?linkid=260987\&clcid=0x804](http://go.microsoft.com/fwlink/?linkid=260987%26clcid=0x804)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每个博客的内容及其 URL 如有更改，恕不另行通知。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 每个博客的内容及其 URL 如有更改，恕不另行通知。
+
 
 
 您可使用 Lync Server 2013 控制面板或下列 cmdlet 之一查看或修改库视图参数：

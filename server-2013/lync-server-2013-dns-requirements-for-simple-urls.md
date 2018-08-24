@@ -23,18 +23,9 @@ Lync Server 支持以下三种简单 URL：会议、拨入和管理。必须设�
 
 在选项 1 中，为每个简单 URL 创建新的基 URL。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>用户单击简单 URL 会议链接时，DNS A 记录解析为的服务器会确定启动正确的客户端软件。客户端软件启动后，会自动与承载会议的池进行通信。这样，无论简单 URL DNS A 记录会解析为哪个服务器或池，用户都会定向到承载会议内容的相应服务器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 用户单击简单 URL 会议链接时，DNS A 记录解析为的服务器会确定启动正确的客户端软件。客户端软件启动后，会自动与承载会议的池进行通信。这样，无论简单 URL DNS A 记录会解析为哪个服务器或池，用户都会定向到承载会议内容的相应服务器。
+
 
 
 ### 简单 URL 选项 1
@@ -154,24 +145,17 @@ Lync Server 支持以下三种简单 URL：会议、拨入和管理。必须设�
          Pool1InternalWebFQDN.contoso.com
          Pool2InternalWebFQDN.contoso.com
 
+&nbsp;
+
     Meet-ext.geolb.contoso.com
          Pool1ExternalWebFQDN.contoso.com
          Pool2ExternalWebFQDN.contoso.com
 
 然后，创建将“会议”简单 URL（如 meet.contoso.com）解析到两个 GeoDNS 地址的 CNAME 记录。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的网络使用 <em>发夹</em>（通过外部链接路由所有简单 URL 通信，包括来自您组织内部的通信），您可以只配置外部 GeoDNS 地址并将“会议”简单 URL 仅解析到该外部地址。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您的网络使用 <em>发夹</em>（通过外部链接路由所有简单 URL 通信，包括来自您组织内部的通信），您可以只配置外部 GeoDNS 地址并将“会议”简单 URL 仅解析到该外部地址。
+
 
 
 使用此方法时，您可以将每个 GeoDNS 地址配置为使用循环方法向两个池分发请求，或主要连接到一个池（如地理位置上接近的池）并仅在连接失败的情况下使用另一个池。

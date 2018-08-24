@@ -87,19 +87,11 @@ _**上一次修改主题：** 2016-12-08_
 <tr class="even">
 <td><p>A/V 会议</p></td>
 <td><p>假定最大会议大小为 250 个用户，并且一次只运行一个此类大型会议，那么 前端池提供的 A/V 会议服务支持池的会议。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此外，您还可以支持用户数在 250 和 1000 个之间的大型会议，方法是部署带有两个 前端服务器的单独 前端池以承载大型会议。有关详细信息，请参阅 <a href="lync-server-2013-supporting-large-meetings.md">使用 Lync Server 2013 支持大型会议</a>。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 此外，您还可以支持用户数在 250 和 1000 个之间的大型会议，方法是部署带有两个 前端服务器的单独 前端池以承载大型会议。有关详细信息，请参阅 <a href="lync-server-2013-supporting-large-meetings.md">使用 Lync Server 2013 支持大型会议</a>。
+
 
 </div></td>
 </tr>
@@ -131,18 +123,9 @@ _**上一次修改主题：** 2016-12-08_
 
 ## 前端服务器
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此服务器角色不支持扩展池。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此服务器角色不支持扩展池。
+
 
 
 在 前端池中，假如对该池中的所有用户都启用了该超线程，并且服务器硬件符合 [适用于 Lync Server 2013 的服务器硬件平台](lync-server-2013-server-hardware-platforms.md)中的建议，则应为驻留在该池中的每 6,660 个用户部署一台 前端服务器。假如对一个 前端池中的所有用户都启用了该超线程，则该池中的最大用户数为 80,000。如果站点上的用户数超过 80,000，则可部署多个 前端池。
@@ -163,18 +146,8 @@ _**上一次修改主题：** 2016-12-08_
 
   - 组织的用法与用户模型明显不同，如明显具有更多的会议流量。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 中，状态数据库现在承载于 前端服务器上，而在 Lync Server 2010 中，该数据库承载于 后端服务器上，两者不同。这意味着无论 前端服务器承载的用户数如何， 前端服务器的磁盘性能和容量都不应低于本主题前面列出的建议和 <a href="lync-server-2013-server-hardware-platforms.md">适用于 Lync Server 2013 的服务器硬件平台</a>中的建议。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在 Lync Server 2013 中，状态数据库现在承载于 前端服务器上，而在 Lync Server 2010 中，该数据库承载于 后端服务器上，两者不同。这意味着无论 前端服务器承载的用户数如何， 前端服务器的磁盘性能和容量都不应低于本主题前面列出的建议和 <a href="lync-server-2013-server-hardware-platforms.md">适用于 Lync Server 2013 的服务器硬件平台</a>中的建议。
 
 
 鉴于如 [Lync Server 2013 中的用户模型](lync-server-2013-user-models.md)中所定义的用户模型，下表显示了 IM 和状态的平均带宽。
@@ -200,18 +173,9 @@ _**上一次修改主题：** 2016-12-08_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要提高前端服务器上的并置 A/V 会议和中介服务器功能的媒体性能，应在前端服务器的网络适配器上启用接收方缩放 (RSS)。通过启用 RSS，服务器上的多个处理器能够以并行方式处理传入数据包。有关详细信息，请参阅“Windows Server 2008 中的接收方伸缩改进”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268731" class="uri">http://go.microsoft.com/fwlink/?linkid=268731</a>。有关如何启用 RSS 的详细信息，请参阅网络适配器文档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 要提高前端服务器上的并置 A/V 会议和中介服务器功能的媒体性能，应在前端服务器的网络适配器上启用接收方缩放 (RSS)。通过启用 RSS，服务器上的多个处理器能够以并行方式处理传入数据包。有关详细信息，请参阅“Windows Server 2008 中的接收方伸缩改进”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268731" class="uri">http://go.microsoft.com/fwlink/?linkid=268731</a>。有关如何启用 RSS 的详细信息，请参阅网络适配器文档。
+
 
 
 ## 会议最大值
@@ -228,52 +192,25 @@ _**上一次修改主题：** 2016-12-08_
 
 ## 边缘服务器
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此服务器角色不支持扩展池。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此服务器角色不支持扩展池。
+
 
 
 应为将远程访问站点的每 12,000 个用户部署一台 边缘服务器。为实现高可用性，建议至少部署两台 边缘服务器。这些建议假定 边缘服务器的硬件符合 [适用于 Lync Server 2013 的服务器硬件平台](lync-server-2013-server-hardware-platforms.md)中的建议。
 
 在计算 边缘服务器的用户数时，请将分支机构中与此站点的 前端池关联的 Survivable Branch Appliance 和 Survivable Branch Server 上驻留的用户包括在内。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要提高边缘服务器上的 A/V 会议边缘服务的性能，应在边缘服务器的网络适配器上启用接收方缩放 (RSS)。通过启用 RSS，服务器上的多个处理器能够以并行方式处理传入数据包。有关详细信息，请参阅“Windows Server 2008 中的接收方伸缩改进”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268731" class="uri">http://go.microsoft.com/fwlink/?linkid=268731</a>。有关如何启用 RSS 的详细信息，请参阅网络适配器文档。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 要提高边缘服务器上的 A/V 会议边缘服务的性能，应在边缘服务器的网络适配器上启用接收方缩放 (RSS)。通过启用 RSS，服务器上的多个处理器能够以并行方式处理传入数据包。有关详细信息，请参阅“Windows Server 2008 中的接收方伸缩改进”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268731" class="uri">http://go.microsoft.com/fwlink/?linkid=268731</a>。有关如何启用 RSS 的详细信息，请参阅网络适配器文档。
+
 
 
 ## 控制器
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此服务器角色不支持扩展池。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此服务器角色不支持扩展池。
+
 
 
 如果部署了 控制器服务器角色，则建议为将并行访问站点的每 12,000 个远程用户部署一台 控制器。为实现高可用性，建议至少部署两台 控制器。这些建议假定 边缘服务器的硬件符合 [适用于 Lync Server 2013 的服务器硬件平台](lync-server-2013-server-hardware-platforms.md)中的建议。
@@ -282,18 +219,9 @@ _**上一次修改主题：** 2016-12-08_
 
 ## 中介服务器
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此服务器角色不支持扩展池。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此服务器角色不支持扩展池。
+
 
 
 如果将 中介服务器与 前端服务器并置， 中介服务器将在池中的每台 前端服务器上运行，并且应为池中的用户提供足够的容量。
@@ -338,18 +266,9 @@ _**上一次修改主题：** 2016-12-08_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>虽然性能测试使用的是内存为 32 GB 的服务器，但内存为 16 GB 的服务器也可用作独立 中介服务器，并且足以提供此表中显示的性能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 虽然性能测试使用的是内存为 32 GB 的服务器，但内存为 16 GB 的服务器也可用作独立 中介服务器，并且足以提供此表中显示的性能。
+
 
 
 ### 中介服务器容量（与 前端服务器并置的 中介服务器）70% 内部用户，30% 外部用户，无绕过呼叫容量（由 中介服务器执行的媒体处理）
@@ -374,32 +293,14 @@ _**上一次修改主题：** 2016-12-08_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此数量远小于独立的 中介服务器的数量，因为除语音呼叫所需的转码之外， 前端服务器还必须处理驻留在其上的 6600 个用户的其他功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此数量远小于独立的 中介服务器的数量，因为除语音呼叫所需的转码之外， 前端服务器还必须处理驻留在其上的 6600 个用户的其他功能。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>要提高中介服务器的性能，应在中介服务器的网络适配器上启用接收方缩放 (RSS)。通过启用 RSS，服务器上的多个处理器能够以并行方式处理传入数据包。有关详细信息，请参阅“Windows Server 2008 中的接收方伸缩改进”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268731" class="uri">http://go.microsoft.com/fwlink/?linkid=268731</a>。有关如何启用 RSS 的详细信息，请参阅网络适配器文档。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 要提高中介服务器的性能，应在中介服务器的网络适配器上启用接收方缩放 (RSS)。通过启用 RSS，服务器上的多个处理器能够以并行方式处理传入数据包。有关详细信息，请参阅“Windows Server 2008 中的接收方伸缩改进”，网址为 <a href="http://go.microsoft.com/fwlink/?linkid=268731" class="uri">http://go.microsoft.com/fwlink/?linkid=268731</a>。有关如何启用 RSS 的详细信息，请参阅网络适配器文档。
+
 
 
 ## 后端服务器

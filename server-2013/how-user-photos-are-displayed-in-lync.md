@@ -121,22 +121,13 @@ Lync 2010 引入了在 Lync 个人资料中包含显示给其他 Lync 用户的�
 
 ## Lync 2010 客户端如何获取图片
 
-在 Lync 2010 中，用户照片由通讯簿服务在服务器上管理。Lync 客户端首先查询服务器上通过通讯组列表扩展 Web 服务公开的通讯簿 Web 查询 (ABWQ) 服务。客户端接收图像文件，然后将其复制到用户的缓冲中，避免在每次需要显示图片时重新下载。查询返回的属性值也会存储在对应用户缓存的通讯簿服务条目中。通讯簿服务每隔 24 小时删除全部缓存的图像，也就是说服务器缓存中的新用户图像最多可能要经过 24 小时才能得到更新。您可以使用 [Update-CsAddressBook](update-csaddressbook.md) cmdlet 强制更新缓存。
+在 Lync 2010 中，用户照片由通讯簿服务在服务器上管理。Lync 客户端首先查询服务器上通过通讯组列表扩展 Web 服务公开的通讯簿 Web 查询 (ABWQ) 服务。客户端接收图像文件，然后将其复制到用户的缓冲中，避免在每次需要显示图片时重新下载。查询返回的属性值也会存储在对应用户缓存的通讯簿服务条目中。通讯簿服务每隔 24 小时删除全部缓存的图像，也就是说服务器缓存中的新用户图像最多可能要经过 24 小时才能得到更新。您可以使用 [Update-CsAddressBook](https://docs.microsoft.com/en-us/powershell/module/skype/Update-CsAddressBook) cmdlet 强制更新缓存。
 
 状态中包含的用户照片还有相关的哈希值，Lync 客户端利用此哈希值确定是否有更新的图像可用。在状态中使用的图像文件发生更改时，客户端将自动获得通知。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于照片并未存储在 GalContacts.db 数据库中，因此用户照片的下载不依赖于客户端策略 (<a href="http://go.microsoft.com/fwlink/p/?linkid=507508">Set-CsClientPolicy</a>) 中的 <strong>AddressBookAvailability</strong> 设置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由于照片并未存储在 GalContacts.db 数据库中，因此用户照片的下载不依赖于客户端策略 (<a href="http://go.microsoft.com/fwlink/p/?linkid=507508">Set-CsClientPolicy</a>) 中的 <strong>AddressBookAvailability</strong> 设置。
+
 
 
 ABWQ 服务的查询包括以下属性：
@@ -191,30 +182,27 @@ Lync 2013 为用户照片引入了高分辨率图像支持。Lync 2013 还支持
 
 通过客户端策略设置启用“显示网站中的图片”选项后，即可在 Lync 2013 中使用该选项。客户端版本必须高于 15.0.4535.1002，该版本安装有 [2013 年 11 月版 Lync 累积更新](http://go.microsoft.com/fwlink/p/?linkid=509908)。用户可能需要注销后再次登录才能在客户端中看到更改。
 
-您可以在 Lync Server 命令行管理程序 中运行 [Set-CsClientPolicy](set-csclientpolicy.md) 策略，将客户端策略设置为启用“显示网站中的图片”设置。以下示例 cmdlet 展示了如何在您的部署中以全局方式为所有用户设置此策略：
+您可以在 Lync Server 命令行管理程序 中运行 [Set-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPolicy) 策略，将客户端策略设置为启用“显示网站中的图片”设置。以下示例 cmdlet 展示了如何在您的部署中以全局方式为所有用户设置此策略：
 
     $pe=New-CsClientPolicyEntry -Name EnablePresencePhotoOptions -Value True
 
+   &nbsp;
+
     $po=Get-CsClientPolicy -Identity Global
 
+   &nbsp;
+
     $po.PolicyEntry.Add($pe)
+
+   &nbsp;
 
     Set-CsClientPolicy -Instance $po
 
 图像上载到用户邮箱时，Exchange 会自动创建可在客户端应用程序中使用的较低分辨率图像版本。AD DS 中的用户照片也会更新。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 AD DS 中更新图像文件时，将创建一个 48 x 48 像素的图像，供 AD DS 的 thumbnailPhoto 使用。任何现有图像都将被此图像所取代。如果您先前在 AD DS 中添加了一个 96 x 96 的图像，则会被这个新的 48 x 48 图像所取代。只有在您的环境中仍有用户使用 Lync 2010 客户端时，才应注意这一点，因为该版本的客户端将从 AD DS 获取用户照片。如果组织内确有 Lync 2010 客户端，您可以导入 96 x 96 像素的图像，取代 AD DS 创建的图像。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 AD DS 中更新图像文件时，将创建一个 48 x 48 像素的图像，供 AD DS 的 thumbnailPhoto 使用。任何现有图像都将被此图像所取代。如果您先前在 AD DS 中添加了一个 96 x 96 的图像，则会被这个新的 48 x 48 图像所取代。只有在您的环境中仍有用户使用 Lync 2010 客户端时，才应注意这一点，因为该版本的客户端将从 AD DS 获取用户照片。如果组织内确有 Lync 2010 客户端，您可以导入 96 x 96 像素的图像，取代 AD DS 创建的图像。
+
 
 
 ## Lync 2013 中的用户照片支持

@@ -25,16 +25,7 @@ _**上一次修改主题：** 2012-10-01_
 
   - 必须在 Lync Server 2013 和 Exchange 2013 之间配置服务器到服务器的身份验证。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关在 Lync Server 2013 和 Exchange 2013 之间设置身份验证的详细要求，请参阅操作文档中的 <a href="lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md">在 Lync Server 2013 中管理服务器到服务器身份验证 (Oauth) 和合作伙伴应用程序</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 有关在 Lync Server 2013 和 Exchange 2013 之间设置身份验证的详细要求，请参阅操作文档中的 <a href="lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md">在 Lync Server 2013 中管理服务器到服务器身份验证 (Oauth) 和合作伙伴应用程序</a>。
+    
 

@@ -35,18 +35,9 @@ Alice 的邮箱和 Exchange UM 服务位于某个托管 Exchange 服务提供商
 
   - Alice 的用户帐户的 msExchUCVoiceMailSettings 属性中设置的值通知 ExUM 路由应用程序，在托管语音邮件策略中检查路由详细信息。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>msExchUCVoiceMailSettings 属性的值可以由 Exchange 服务提供商或 Lync Server 2013 管理员进行设置。在上图显示的示例中，值 (CsHostedVoiceMail=1) 由 Lync Server 2013 管理员设置，以便为 Alice 启用托管语音邮件。有关此属性的详细信息，请参阅 <a href="lync-server-2013-hosted-exchange-user-management.md">Lync Server 2013 中的托管 Exchange 用户管理</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > msExchUCVoiceMailSettings 属性的值可以由 Exchange 服务提供商或 Lync Server 2013 管理员进行设置。在上图显示的示例中，值 (CsHostedVoiceMail=1) 由 Lync Server 2013 管理员设置，以便为 Alice 启用托管语音邮件。有关此属性的详细信息，请参阅 <a href="lync-server-2013-hosted-exchange-user-management.md">Lync Server 2013 中的托管 Exchange 用户管理</a>。
+    
 
 
   - 分配给 Alice 的用户帐户的托管语音邮件策略提供了路由详细信息：
@@ -55,31 +46,13 @@ Alice 的邮箱和 Exchange UM 服务位于某个托管 Exchange 服务提供商
     
       - 组织由租户 ID 进行标识，租户 ID 是位于 ls.ExUm.*\<hostedExchangeServer\>*.com 上 Exchange Server 租户的 SIP 消息的路由 FQDN（本例中为 corp.contoso.com 和 corp.litwareinc.com）。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Exchange Online 的 FQDN 为 exap.um.outlook.com。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> Exchange Online 的 FQDN 为 exap.um.outlook.com。
+        
         
         有关详细信息，请参阅 [Lync Server 2013 中的托管语音邮件策略](lync-server-2013-hosted-voice-mail-policies.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果用户帐户中同时存在 msExchUCVoiceMailSettings 属性和 UM 代理地址设置，则优先使用 msExchUCVoiceMailSettings 属性。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果用户帐户中同时存在 msExchUCVoiceMailSettings 属性和 UM 代理地址设置，则优先使用 msExchUCVoiceMailSettings 属性。
+
 

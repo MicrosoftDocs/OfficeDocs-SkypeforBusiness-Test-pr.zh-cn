@@ -112,7 +112,7 @@ This cmdlet does not return an object. It removes an object of type Microsoft.Rt
 #### 其他资源
 
 [New-CsHostedVoicemailPolicy](new-cshostedvoicemailpolicy.md)  
-[Set-CsHostedVoicemailPolicy](set-cshostedvoicemailpolicy.md)  
+[Set-CsHostedVoicemailPolicy](Set-CsHostedVoicemailPolicy.md)  
 [Get-CsHostedVoicemailPolicy](get-cshostedvoicemailpolicy.md)  
 [Grant-CsHostedVoicemailPolicy](grant-cshostedvoicemailpolicy.md)
 

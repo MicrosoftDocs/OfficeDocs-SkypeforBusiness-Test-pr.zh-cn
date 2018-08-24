@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-02-23_
 
 客户端版本配置设置用于全局或针对特定站点打开或关闭客户端版本控制。全局客户端版本配置随 Lync Server 2013 一起安装，用于启用或禁用整个服务器部署的客户端版本控制。在启用全局配置时，您的所有现有客户端版本策略将在用户尝试登录时生效。如果不希望进行任何客户端版本控制，则可以禁用全局客户端版本配置。您可以从 Lync Server 2013 控制面板或 Lync Server 2013 命令行管理程序中启用或禁用客户端版本控制。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由于匿名用户未与用户、站点或服务关联，因此匿名用户仅受全局级别策略的影响。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由于匿名用户未与用户、站点或服务关联，因此匿名用户仅受全局级别策略的影响。
+
 
 
 ## 使用 Lync Server 控制面板启用或禁用客户端版本控制
@@ -61,5 +52,5 @@ _**上一次修改主题：** 2013-02-23_
     
         Set-CsClientVersionConfiguration -Identity "site:Redmond" -Enabled $True
 
-有关详细信息，请参阅 [Set-CsClientVersionConfiguration](set-csclientversionconfiguration.md) cmdlet 的帮助主题。
+有关详细信息，请参阅 [Set-CsClientVersionConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientVersionConfiguration) cmdlet 的帮助主题。
 

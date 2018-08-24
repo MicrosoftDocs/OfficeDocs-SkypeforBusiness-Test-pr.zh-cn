@@ -29,18 +29,8 @@ Lync Server 部署中的音频/视频 (A/V) 网络要求包括以下内容：
 
   - 如果使用 DNS 负载平衡部署单个边缘服务器或边缘池，则可以配置外部防火墙作为 NAT。不能配置内部防火墙作为 NAT。有关这些要求的详细信息，请参阅规划文档中的[确定 Lync Server 2013 的外部 A/V 防火墙和端口要求](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果具有边缘池并且正在使用硬件负载平衡器，则必须在每个边缘服务器上使用公用 IP 地址，并且不能对服务器或 NAT 设备上的池使用 NAT（例如，防火墙或其他将产生 NAT 入站或出站流量的基础架构设备）。有关详细信息，请参阅“规划外部用户访问”文档中的<a href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Lync Server 2013 中的端口摘要 - 使用硬件负载平衡器的扩展的合并边缘</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 如果具有边缘池并且正在使用硬件负载平衡器，则必须在每个边缘服务器上使用公用 IP 地址，并且不能对服务器或 NAT 设备上的池使用 NAT（例如，防火墙或其他将产生 NAT 入站或出站流量的基础架构设备）。有关详细信息，请参阅“规划外部用户访问”文档中的<a href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Lync Server 2013 中的端口摘要 - 使用硬件负载平衡器的扩展的合并边缘</a>。
 
 
   - 如果您的组织使用了服务质量 (QoS) 基础结构，则媒体子系统应设计为在此现有基础结构中工作。

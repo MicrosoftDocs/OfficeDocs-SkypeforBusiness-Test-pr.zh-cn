@@ -17,32 +17,13 @@ _**上一次修改主题：** 2014-01-02_
 
 所有运行 Lync Server 的服务器都必须满足某些最低系统要求。 Lync Server 的系统要求包括服务器硬件、要安装在每台服务器上的操作系统，以及相关的软件要求（例如，必须在服务器上安装的 Windows 更新和其他软件）。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 仅提供 64 位版本，要求使用 64 位硬件和 64 位版本的 Windows Server。但 Microsoft Lync Server 2013 规划工具例外，它提供了 32 位版本。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Lync Server 仅提供 64 位版本，要求使用 64 位硬件和 64 位版本的 Windows Server。但 Microsoft Lync Server 2013 规划工具例外，它提供了 32 位版本。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关 Active Directory 支持、支持的拓扑、服务器并置和其他支持问题的详细信息，请参阅<a href="lync-server-2013-supportability.md">Lync Server 2013 的可支持性</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关 Active Directory 支持、支持的拓扑、服务器并置和其他支持问题的详细信息，请参阅<a href="lync-server-2013-supportability.md">Lync Server 2013 的可支持性</a>。
+
 
 
 ## 本部分内容

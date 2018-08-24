@@ -31,5 +31,5 @@ New-CsWebServiceConfiguration cmdlet 为组织中的 Web 服务定义新配置�
 
 #### 其他资源
 
-[New-CsWebServiceConfiguration](new-cswebserviceconfiguration.md)
+[New-CsWebServiceConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsWebServiceConfiguration)
 

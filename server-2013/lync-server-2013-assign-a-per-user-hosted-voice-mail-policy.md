@@ -43,16 +43,7 @@ _**上一次修改主题：** 2010-11-07_
     
       - 用户的 Active Directory 域服务显示名称（例如，Ken Myer）。如果将显示名称用作 Identity 值，可以使用星号 (\*) 通配符。例如，Identity "\* Smith" 将返回显示名称以字符串值“Smith”结尾的所有用户。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>用户的 Active Directory SAM 帐户名不能用作 Identity 值，因为 SAM 帐户名在林中不一定是唯一的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 用户的 Active Directory SAM 帐户名不能用作 Identity 值，因为 SAM 帐户名在林中不一定是唯一的。
+    
 

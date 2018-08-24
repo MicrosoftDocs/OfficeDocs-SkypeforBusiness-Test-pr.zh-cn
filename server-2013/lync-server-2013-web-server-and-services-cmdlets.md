@@ -48,7 +48,7 @@ _**上一次修改主题：** 2016-12-08_
     [Get-CsWebServiceConfiguration](get-cswebserviceconfiguration.md)
 
   -   
-    [New-CsWebServiceConfiguration](new-cswebserviceconfiguration.md)
+    [New-CsWebServiceConfiguration](New-CsWebServiceConfiguration.md)
 
   -   
     [Remove-CsWebServiceConfiguration](remove-cswebserviceconfiguration.md)

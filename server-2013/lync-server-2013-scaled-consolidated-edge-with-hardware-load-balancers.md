@@ -21,18 +21,9 @@ _**上一次修改主题：** 2016-12-08_
 
 下图未显示 控制器，其是在 边缘服务器和您的 前端池或服务器之间的内部网络中部署的一个可选服务器角色。有关 控制器拓扑的详细信息，请参阅 [Lync Server 2013 中控制器所需的组件](lync-server-2013-components-required-for-the-director.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>所显示的图涉及 IP 寻址的方向和示例，但并不表示正确传入和传出流量的实际通信流。该图显示了可能的流量的高级视图。通信流的详细信息在通信流与传入（至侦听端口）和传出（至目标服务器或客户端）有关时显示在每种方案的“端口摘要”图中。例如，TCP 443 只是实际入站（至边缘服务器或服务器代理），并且只是来自协议 (TCP) 的双向流。此外，该图显示随 NAT（网络地址转换）的出现而发生更改的流量的性质（入站更改目标地址，出站更改源地址）。显示的示例外部和内部防火墙以及服务器接口仅作参考之用。最终，将显示示例默认网关和路由关系（如果适用）。还要注意，该图使用 <em>.com</em> DNS 区域表示反向代理和边缘服务器的外部 DNS 区域，并且 <em>.net</em> DNS 区域表示内部 DNS 区域。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 所显示的图涉及 IP 寻址的方向和示例，但并不表示正确传入和传出流量的实际通信流。该图显示了可能的流量的高级视图。通信流的详细信息在通信流与传入（至侦听端口）和传出（至目标服务器或客户端）有关时显示在每种方案的“端口摘要”图中。例如，TCP 443 只是实际入站（至边缘服务器或服务器代理），并且只是来自协议 (TCP) 的双向流。此外，该图显示随 NAT（网络地址转换）的出现而发生更改的流量的性质（入站更改目标地址，出站更改源地址）。显示的示例外部和内部防火墙以及服务器接口仅作参考之用。最终，将显示示例默认网关和路由关系（如果适用）。还要注意，该图使用 <em>.com</em> DNS 区域表示反向代理和边缘服务器的外部 DNS 区域，并且 <em>.net</em> DNS 区域表示内部 DNS 区域。
+
 
 
 Microsoft Lync Server 2013 的新增功能是对 IPv6 寻址的支持。与 IPv4 寻址非常相似，必须以一种适当的方式分配 IPv6 地址，使这些地址属于所分配的 IPv6 地址空间的一部分。本主题中的地址仅用作示例。您必须获取将在您的部署中正常运行、提供正确的范围并将与内部和外部寻址进行互操作的 IPv6 地址。 Windows Server 提供了一种对转换 IPv6 操作和 IPv4 至 IPv6 通信（称为 *双协议栈* ）而言都非常重要的功能。双协议栈是面向 IPv4 和 IPv6 的一种单独且独特的网络堆栈。双协议栈可允许您同时为 IPv4 和 IPv6 分配寻址，并允许服务器根据其他主机和客户端的要求与这些主机和客户端进行通信。
@@ -41,18 +32,8 @@ Microsoft Lync Server 2013 的新增功能是对 IPv6 寻址的支持。与 IPv4
 
 存在 IPv6 的网络地址转换技术 (NAT)，以允许 NAT IPv6 转换为 IPv4（通常称为 NAT64）以及 NAT IPv6 转换为 IPv6（通常称为 NAT66）。NAT 技术的存在意味着针对 Lync Server边缘服务器 存在的五种方案仍有效。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>IPv6 是一个复杂的主题，需要您的网络团队和 Internet 提供商进行仔细地规划，以确保您在 Windows 服务器级别和 Lync Server 2013 级别分配的地址按预期工作。请参阅本主题结尾处的链接，以了解有关 IPv6 寻址和规划的其他资源。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> IPv6 是一个复杂的主题，需要您的网络团队和 Internet 提供商进行仔细地规划，以确保您在 Windows 服务器级别和 Lync Server 2013 级别分配的地址按预期工作。请参阅本主题结尾处的链接，以了解有关 IPv6 寻址和规划的其他资源。
 
 
 **硬件负载平衡器配置**
@@ -63,18 +44,8 @@ Microsoft Lync Server 2013 的新增功能是对 IPv6 寻址的支持。与 IPv4
 
 ![扩展合并边缘拓扑](images/Gg398478.3a57cd0d-8de4-4ecc-a783-4dff5b3456a2(OCS.15).jpg "扩展合并边缘拓扑")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用的是呼叫允许控制 (CAC)，那么仍必须将 IPv4 地址分配给 边缘服务器内部接口。CAC 使用 IPv4 地址并且必须使它们可用于操作。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如果您使用的是呼叫允许控制 (CAC)，那么仍必须将 IPv4 地址分配给 边缘服务器内部接口。CAC 使用 IPv4 地址并且必须使它们可用于操作。
 
 
 ## 本部分内容

@@ -25,51 +25,22 @@ _**上一次修改主题：** 2014-02-04_
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows PowerShell 为您提供了无法使用 CLSController.exe 提供的更多选项和其他配置选项。CLSController 提供了快速、简洁地运行命令的方法，但限于对 CLSController 可用的命令集。Windows PowerShell 不是仅限于对 CLSController 的命令处理器可用的命令集，并提供了更广泛的命令集和更丰富的选项集。例如，CLSController.exe 为您提供了针对 –Computers 和 –pools 的作用域选项。利用 Windows PowerShell，您可以在大多数命令中指示计算机或池，当定义新方案（CLSController 具有有限数量的用户不可修改的方案）时，您可以定义站点或全局作用域。Windows PowerShell 的此强大功能支持您为方案定义站点或全局作用域，但限制到计算机或池的实际登录。<br />
-可在 Windows PowerShell 或 CLSController 中运行的命令行命令之间存在根本差异。Windows PowerShell 提供了大量配置和定义方案的方法，并提供了大量以一种有意义的方式对故障排除方案重复使用这些方案的方法。尽管 CLSController 提供了快速有效的发出命令和获得结果的方法，但 CLSController 的命令集受到您从命令行获得的有限数量的命令的限制。与 Windows PowerShell cmdlet 不同，CLSController 无法定义新方案，无法管理站点或全局级别的作用域，还具有无法动态配置的有限命令集的很多其他限制。CLSController 提供了一种快速执行方法，而 Windows PowerShell 提供了一种将集中日志记录服务功能扩展到超出 CLSController 能提供的功能的范围的方法。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Windows PowerShell 为您提供了无法使用 CLSController.exe 提供的更多选项和其他配置选项。CLSController 提供了快速、简洁地运行命令的方法，但限于对 CLSController 可用的命令集。Windows PowerShell 不是仅限于对 CLSController 的命令处理器可用的命令集，并提供了更广泛的命令集和更丰富的选项集。例如，CLSController.exe 为您提供了针对 –Computers 和 –pools 的作用域选项。利用 Windows PowerShell，您可以在大多数命令中指示计算机或池，当定义新方案（CLSController 具有有限数量的用户不可修改的方案）时，您可以定义站点或全局作用域。Windows PowerShell 的此强大功能支持您为方案定义站点或全局作用域，但限制到计算机或池的实际登录。<br />
+可在 Windows PowerShell 或 CLSController 中运行的命令行命令之间存在根本差异。Windows PowerShell 提供了大量配置和定义方案的方法，并提供了大量以一种有意义的方式对故障排除方案重复使用这些方案的方法。尽管 CLSController 提供了快速有效的发出命令和获得结果的方法，但 CLSController 的命令集受到您从命令行获得的有限数量的命令的限制。与 Windows PowerShell cmdlet 不同，CLSController 无法定义新方案，无法管理站点或全局级别的作用域，还具有无法动态配置的有限命令集的很多其他限制。CLSController 提供了一种快速执行方法，而 Windows PowerShell 提供了一种将集中日志记录服务功能扩展到超出 CLSController 能提供的功能的范围的方法。
 
 
-可以使用 –Computers 参数在 [Search-CsClsLogging](search-csclslogging.md)、[Show-CsClsLogging](show-csclslogging.md)、[Start-CsClsLogging](start-csclslogging.md)、[Stop-CsClsLogging](stop-csclslogging.md)、[Sync-CsClsLogging](sync-csclslogging.md) 和 [Update-CsClsLogging](update-csclslogging.md) 命令执行期间定义单个计算机的作用域。–Computers 参数接受目标计算机的以逗号分隔的完全限定域名 (FQDN) 的列表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>还可以定义–Pools 和您要对其运行日志记录命令的以逗号分隔的池的列表。</td>
-</tr>
-</tbody>
-</table>
+可以使用 –Computers 参数在 [Search-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Search-CsClsLogging)、[Show-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Show-CsClsLogging)、[Start-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Start-CsClsLogging)、[Stop-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Stop-CsClsLogging)、[Sync-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Sync-CsClsLogging) 和 [Update-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Update-CsClsLogging) 命令执行期间定义单个计算机的作用域。–Computers 参数接受目标计算机的以逗号分隔的完全限定域名 (FQDN) 的列表。
+
+> [!TIP]
+> 还可以定义–Pools 和您要对其运行日志记录命令的以逗号分隔的池的列表。
 
 
 站点和全局作用域在 **New-**、**Set-** 和 **Remove-**集中日志记录服务 cmdlet 中定义。以下示例演示了如何设置站点和全局作用域。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>显示的命令可能包含其他章节中涵盖的参数和概念。示例命令旨在演示如何使用 <strong>–Identity</strong> 参数定义作用域，还包含了其他参数来保证完整性和指定作用域。有关 <strong>Set-CsClsConfiguration</strong> cmdlet 的详细信息，请参阅操作文档中的 <a href="set-csclsconfiguration.md">Set-CsClsConfiguration</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 显示的命令可能包含其他章节中涵盖的参数和概念。示例命令旨在演示如何使用 <strong>–Identity</strong> 参数定义作用域，还包含了其他参数来保证完整性和指定作用域。有关 <strong>Set-CsClsConfiguration</strong> cmdlet 的详细信息，请参阅操作文档中的 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration">Set-CsClsConfiguration</a>。
 
 
 ## 检索当前集中日志记录服务配置
@@ -136,18 +107,9 @@ cmdlet **Get-CsClsConfiguration** 始终显示作为给定作用域的配置的�
     
         Set-CsClsConfiguration -Identity "site/Redmond" -EtlFileRolloverSizeMB 40 -EtlFileFolder "C:\LogFiles\Tracing" 
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如示例中所示，日志文件的默认位置是 %TEMP%\Tracing。但是，由于实际上是 CLSAgent 写入该文件，而且 CLSAgent 以 Network Service 的身份运行，因此 %TEMP% 变量将展开到 %WINDIR%\ServiceProfiles\NetworkService\AppData\Local。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如示例中所示，日志文件的默认位置是 %TEMP%\Tracing。但是，由于实际上是 CLSAgent 写入该文件，而且 CLSAgent 以 Network Service 的身份运行，因此 %TEMP% 变量将展开到 %WINDIR%\ServiceProfiles\NetworkService\AppData\Local。
+    
 
 
 该命令指示 Redmond 站点中的每个计算机和池中的 CLSAgent 将跟踪文件上的滚动值的大小设置为 40 MB。其他站点中的计算机和池不会受该命令的影响，并将继续使用当前配置的跟踪日志滚动值（默认定义的 (20 MB) 或在日志记录会话开始时定义的）。
@@ -160,18 +122,9 @@ cmdlet **Get-CsClsConfiguration** 始终显示作为给定作用域的配置的�
     
         New-CsClsConfiguration -Identity <scope and name> [CsClsConfiguration options for this site]
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>利用 New-CsClsConfiguration，可以访问大量可选配置设置。有关配置选项的详细信息，请参阅 <a href="get-csclsconfiguration.md">Get-CsClsConfiguration</a> 和<a href="lync-server-2013-understanding-centralized-logging-service-configuration-settings.md">了解日志记录服务配置设置</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 利用 New-CsClsConfiguration，可以访问大量可选配置设置。有关配置选项的详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsConfiguration">Get-CsClsConfiguration</a> 和<a href="lync-server-2013-understanding-centralized-logging-service-configuration-settings.md">了解日志记录服务配置设置</a>。
+    
     
     例如，要创建用于定义缓存文件的网络文件夹、日志文件的滚动时间段和日志文件的滚动大小的新配置，您将键入：
     
@@ -191,18 +144,9 @@ cmdlet **Get-CsClsConfiguration** 始终显示作为给定作用域的配置的�
     
         Remove-CsClsConfiguration -Identity "site:Redmond"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>这是在过程“创建新的集中日志记录服务配置”中创建的新配置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 这是在过程“创建新的集中日志记录服务配置”中创建的新配置。
+    
 
 
 如果选择删除站点级配置，站点将使用全局设置。
@@ -216,8 +160,8 @@ cmdlet **Get-CsClsConfiguration** 始终显示作为给定作用域的配置的�
 #### 其他资源
 
 [使用 PowerShell 管理集中日志记录服务配置设置](lync-server-2013-managing-the-centralized-logging-service-configuration-settings.md)  
-[Set-CsClsConfiguration](set-csclsconfiguration.md)  
-[Get-CsClsConfiguration](get-csclsconfiguration.md)  
-[New-CsClsConfiguration](new-csclsconfiguration.md)  
-[Remove-CsClsConfiguration](remove-csclsconfiguration.md)
+[Set-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration)  
+[Get-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsConfiguration)  
+[New-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClsConfiguration)  
+[Remove-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsClsConfiguration)
 

@@ -27,18 +27,9 @@ Lync Server 2013 语音路由将目标电话号码与一个或多个公用电话
 
 4.  双击语音路由以查看语音路由列表中的其他属性，或选择路由并单击“编辑”。然后单击“显示详细信息”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>一次只能查看一个路由的详细信息。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 一次只能查看一个路由的详细信息。
+    
 
 
 **使用 Windows PowerShell 查看语音路由**
@@ -61,18 +52,9 @@ Lync Server 2013 语音路由将目标电话号码与一个或多个公用电话
         SuppressCallerId  :
         AlternateCallerId :
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有关详细信息，请参阅规划文档中的 <a href="lync-server-2013-voice-routes.md">Lync Server 2013 中的语音路由</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有关详细信息，请参阅规划文档中的 <a href="lync-server-2013-voice-routes.md">Lync Server 2013 中的语音路由</a>。
+
 
 
 ## 本部分内容

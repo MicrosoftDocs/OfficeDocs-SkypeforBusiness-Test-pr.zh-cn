@@ -60,7 +60,7 @@ SIP 中继配置设置定义了中介服务器和服务提供商的公用电话�
 <tr class="even">
 <td><p>加密支持级别</p></td>
 <td><p>SRTPMode</p></td>
-<td><p>指示用于保护中介服务器与服务提供商的 PSTN 网关、IP-PBX 或 SBC 之间的媒体流量的支持级别。对于媒体旁路情况，该值必须与媒体配置中的 EncryptionLevel 设置兼容。可使用 <a href="new-csmediaconfiguration.md">New-CsMediaConfiguration</a> 和 <a href="set-csmediaconfiguration.md">Set-CsMediaConfiguration</a> cmdlet 设置媒体配置。</p>
+<td><p>指示用于保护中介服务器与服务提供商的 PSTN 网关、IP-PBX 或 SBC 之间的媒体流量的支持级别。对于媒体旁路情况，该值必须与媒体配置中的 EncryptionLevel 设置兼容。可使用 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsMediaConfiguration">New-CsMediaConfiguration</a> 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsMediaConfiguration">Set-CsMediaConfiguration</a> cmdlet 设置媒体配置。</p>
 <p>允许的值包括：</p>
 <ul>
 <li><p>Required：必须使用 SRTP 加密。</p></li>
@@ -145,18 +145,9 @@ SIP 中继配置设置定义了中介服务器和服务提供商的公用电话�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server CsTrunkConfiguration cmdlet 支持 Lync Server 控制面板中未显示的其他属性。有关详细信息，请参阅 <a href="new-cstrunkconfiguration.md">New-CsTrunkConfiguration</a> cmdlet 的帮助主题。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server CsTrunkConfiguration cmdlet 支持 Lync Server 控制面板中未显示的其他属性。有关详细信息，请参阅 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrunkConfiguration">New-CsTrunkConfiguration</a> cmdlet 的帮助主题。
+
 
 
 ## 使用 Lync Server 控制面板创建新的中继配置设置

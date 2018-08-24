@@ -19,18 +19,8 @@ _**上一次修改主题：** 2016-12-08_
 
 Lync Server 部署向导可指导您完成每一项 Active Directory 准备任务。部署向导运行 Lync Server 命令行管理程序 cmdlet。对于单域、单林拓扑或其他类似拓扑的环境，此工具很有用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>可以在域控制器运行某些 32 位版本操作系统的林或域中部署 Lync Server（有关详细信息，请参阅 <a href="lync-server-2013-active-directory-infrastructure-requirements.md">Lync Server 2013 的 Active Directory 基础结构要求</a>）。但是，不能在这些环境中使用 Lync Server 部署向导运行架构、林和域准备，因为部署向导和支持文件仅提供了 64 位版本。可以改为在 32 位域控制器上使用 ldifde.exe 和 associated .ldf 文件来准备架构、林和域。请参阅本主题稍后的“使用 Cmdlet 和 Ldifde.exe”一节。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 可以在域控制器运行某些 32 位版本操作系统的林或域中部署 Lync Server（有关详细信息，请参阅 <a href="lync-server-2013-active-directory-infrastructure-requirements.md">Lync Server 2013 的 Active Directory 基础结构要求</a>）。但是，不能在这些环境中使用 Lync Server 部署向导运行架构、林和域准备，因为部署向导和支持文件仅提供了 64 位版本。可以改为在 32 位域控制器上使用 ldifde.exe 和 associated .ldf 文件来准备架构、林和域。请参阅本主题稍后的“使用 Cmdlet 和 Ldifde.exe”一节。
 
 
 可以使用 Lync Server 命令行管理程序 cmdlet 远程运行任务，也可以将其用于更为复杂的环境。
@@ -43,66 +33,30 @@ Lync Server 部署向导可指导您完成每一项 Active Directory 准备任�
 
   - Lync Server 核心组件 (OCScore.msi)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果计划使用 Lync Server 命令行管理程序 执行 Active Directory 准备，则必须先运行 Lync Server 部署向导以安装核心组件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 如果计划使用 Lync Server 命令行管理程序 执行 Active Directory 准备，则必须先运行 Lync Server 部署向导以安装核心组件。
+    
 
 
   - Microsoft .NET Framework 4.5
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>对于 Windows Server 2012 和 Windows Server 2012 R2，将使用服务器管理器安装和激活 .NET Framework 4.5。有关详细信息，请参阅<a href="lync-server-2013-additional-software-requirements.md">Lync Server 2013 的其他软件要求</a>中的“Microsoft .NET Framework 4.5”。对于 Windows Server 2008 R2，请从 Microsoft 网站下载 <a href="http://www.microsoft.com/en-us/download/details.aspx?id=30653">.Net Framework 4.5</a> 并安装。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 对于 Windows Server 2012 和 Windows Server 2012 R2，将使用服务器管理器安装和激活 .NET Framework 4.5。有关详细信息，请参阅<a href="lync-server-2013-additional-software-requirements.md">Lync Server 2013 的其他软件要求</a>中的“Microsoft .NET Framework 4.5”。对于 Windows Server 2008 R2，请从 Microsoft 网站下载 <a href="http://www.microsoft.com/en-us/download/details.aspx?id=30653">.Net Framework 4.5</a> 并安装。
+    
 
 
   - 远程服务器管理工具 (RSAT)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果在成员服务器而不是域控制器上运行 Active Directory 准备步骤，则需要使用某些 RSAT 工具。从服务器管理器中的“AD DS 和 AD LDS 工具”节点安装 AD DS 管理单元、命令行工具和 Windows PowerShell 的 Active Directory 模块。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 如果在成员服务器而不是域控制器上运行 Active Directory 准备步骤，则需要使用某些 RSAT 工具。从服务器管理器中的“AD DS 和 AD LDS 工具”节点安装 AD DS 管理单元、命令行工具和 Windows PowerShell 的 Active Directory 模块。
+    
 
 
   - Microsoft Visual C++ 11 可再发行软件包
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果计算机中尚未安装此必备软件，安装程序会提示您进行安装。将为您提供此软件包，不需要单独购买。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 如果计算机中尚未安装此必备软件，安装程序会提示您进行安装。将为您提供此软件包，不需要单独购买。
+    
 
 
   - Windows PowerShell 3.0（64 位）
@@ -219,18 +173,9 @@ Lync Server 部署向导中的“准备架构”步骤和 **Install-CsAdServerSc
 
 4.  VersionSchema.ldf
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>这四个 .ldf 文件位于安装介质或下载的 \Support\Schema 目录中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 这四个 .ldf 文件位于安装介质或下载的 \Support\Schema 目录中。
+
 
 
 要在充当架构主机的域控制器上使用 Ldifde.exe 导入这四个架构文件，请使用以下格式：
@@ -241,18 +186,9 @@ Lync Server 部署向导中的“准备架构”步骤和 **Install-CsAdServerSc
 
     ldifde -i -v -k -s DC1 -f ServerSchema.ldf -c DC=X "DC=contoso,DC=com" -j C:\BatchImportLogFile -b Administrator contoso password
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅当以其他用户身份登录时才使用 b 参数。有关所需用户权限的详细信息，请参阅本主题前面的“管理员权限和角色”一节。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 仅当以其他用户身份登录时才使用 b 参数。有关所需用户权限的详细信息，请参阅本主题前面的“管理员权限和角色”一节。
+
 
 
 要在架构主机以外的域控制器上使用 Ldifde.exe 导入这四个架构文件，请使用以下格式：

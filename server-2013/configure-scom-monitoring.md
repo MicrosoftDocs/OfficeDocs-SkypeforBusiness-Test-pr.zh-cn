@@ -38,21 +38,14 @@ _**上一次修改主题：** 2012-10-04_
 2.  在命令行中键入：
     
         New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health"
+
+       &nbsp;
     
         New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health\CentralDiscoveryCandidate"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在您编辑注册表时，如果已存在注册表项，则您可能会遇到一个指示命令失败的错误。如果遇到此错误，可以安全地将其忽略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在您编辑注册表时，如果已存在注册表项，则您可能会遇到一个指示命令失败的错误。如果遇到此错误，可以安全地将其忽略。
+    
 
 
 **将主 System Center Operations Manager 管理服务器配置为覆盖候选中央发现观察程序节点。**

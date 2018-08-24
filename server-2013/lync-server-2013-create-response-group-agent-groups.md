@@ -21,18 +21,9 @@ _**上一次修改主题：** 2012-09-12_
 
 不登录到组或从组注销的代理称为 *非正式代理* 。非正式代理登录到 Lync Server 后，将自动登录到组，但无法从组注销。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>仅本地用户可成为代理。如果一个代理从本地移至联机，则 响应组呼叫将不会被路由到该代理。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 仅本地用户可成为代理。如果一个代理从本地移至联机，则 响应组呼叫将不会被路由到该代理。
+
 
 
 ## 本部分内容

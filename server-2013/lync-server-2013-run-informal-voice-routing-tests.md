@@ -57,44 +57,23 @@ _**上一次修改主题：** 2012-08-07_
     
     2.  请注意，“保存语音路由测试用例信息”对话框中的其余字段都是只读字段，并且预填充非正式测试配置和结果。确认这是要为测试用例保存的配置。
         
-        <table>
-        <colgroup>
-        <col style="width: 100%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>测试结果中的值用于预填充“保存语音路由测试用例信息”对话框中的字段，如下所示：
-        <ul>
-        <li><p>“预期转换”使用“规范化号码”字段中的值进行预填充。</p></li>
-        <li><p>“预期路由”使用“第一个路由”字段中的值进行预填充。</p></li>
-        <li><p>“预期 PSTN 用法记录”使用“第一个 PSTN 用法”字段中的值进行预填充。</p></li>
-        </ul>
-        如果在测试运行期间未找到上述任何值的匹配内容，“保存语音路由测试用例信息”对话框中的对应字段将为空。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+		> 测试结果中的值用于预填充“保存语音路由测试用例信息”对话框中的字段，如下所示：
+        > <ul>
+        > <li><p>“预期转换”使用“规范化号码”字段中的值进行预填充。</p></li>
+        > <li><p>“预期路由”使用“第一个路由”字段中的值进行预填充。</p></li>
+        > <li><p>“预期 PSTN 用法记录”使用“第一个 PSTN 用法”字段中的值进行预填充。</p></li>
+        > </ul>
+        > 如果在测试运行期间未找到上述任何值的匹配内容，“保存语音路由测试用例信息”对话框中的对应字段将为空。
+        
     
     3.  单击“确定”保存测试用例，或单击“取消”返回“查看语音路由测试用例信息”对话框以在保存前进一步完善测试。
 
 11. 单击“提交”，然后单击“全部提交”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>任何时候创建语音路由测试用例，都必须运行“全部提交”命令以发布测试用例。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中发布对语音路由配置所做的待处理更改</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+	> 任何时候创建语音路由测试用例，都必须运行“全部提交”命令以发布测试用例。有关详细信息，请参阅操作文档中的<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中发布对语音路由配置所做的待处理更改</a>。
+    
 
 
 ## 另请参阅

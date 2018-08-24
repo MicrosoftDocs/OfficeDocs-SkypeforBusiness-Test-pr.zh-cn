@@ -21,27 +21,14 @@ _**上一次修改主题：** 2016-12-08_
 
 2013 年 6 月 Lync Server 2013 累积更新 针对 Lync Windows 应用商店应用客户端增加了多重身份验证支持。当外部用户登录到 Lync 会议时，除了用户名和密码以外，您可能需要其他身份验证方法（如智能卡或 PIN）来对他们进行身份验证。要启用多重身份验证，请部署 Active Directory 联合身份验证服务 (AD FS) 联盟服务器并在 Lync Server 2013 中启用被动身份验证。在配置 AD FS 之后，会向尝试加入 Lync 会议的外部用户呈现 AD FS 多重身份验证网页，该网页包含用户名和密码质询，以及您已配置的任何其他身份验证方法。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您计划为 Lync Windows 应用商店应用配置 AD FS 以进行多重身份验证，以下是一些重要注意事项：
-<ul>
-<li><p>至少需要具有 2013 年 6 月 Lync Server 2013 累积更新 的 Lync Server 2013。 Lync 2013 桌面客户端不需要 2013 年 6 月 Lync Server 2013 累积更新，因此它可能会显示被动身份验证正在工作，因为 Lync 2013 客户端能够进行身份验证。但是，Lync Windows 应用商店应用客户端的身份验证过程无法完成，不会显示任何通知或错误消息。</p></li>
-<li><p>服务器必须进行配置，以便被动身份验证是提供的唯一身份验证类型。</p></li>
-<li><p>如果您使用硬件负载平衡器，请启用负载平衡器上的 Cookie 持久性，以便来自 Lync Windows 应用商店应用 客户端的所有请求均由同一前端服务器进行处理。</p></li>
-<li><p>在 Lync Server 与 AD FS 服务器之间建立信赖方信任时，请分配足够长的令牌使用时间，以跨越 Lync 会议的最大长度。通常，240 分钟的令牌使用时间就足够了。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您计划为 Lync Windows 应用商店应用配置 AD FS 以进行多重身份验证，以下是一些重要注意事项：
+> <ul>
+> <li><p>至少需要具有 2013 年 6 月 Lync Server 2013 累积更新 的 Lync Server 2013。 Lync 2013 桌面客户端不需要 2013 年 6 月 Lync Server 2013 累积更新，因此它可能会显示被动身份验证正在工作，因为 Lync 2013 客户端能够进行身份验证。但是，Lync Windows 应用商店应用客户端的身份验证过程无法完成，不会显示任何通知或错误消息。</p></li>
+> <li><p>服务器必须进行配置，以便被动身份验证是提供的唯一身份验证类型。</p></li>
+> <li><p>如果您使用硬件负载平衡器，请启用负载平衡器上的 Cookie 持久性，以便来自 Lync Windows 应用商店应用 客户端的所有请求均由同一前端服务器进行处理。</p></li>
+> <li><p>在 Lync Server 与 AD FS 服务器之间建立信赖方信任时，请分配足够长的令牌使用时间，以跨越 Lync 会议的最大长度。通常，240 分钟的令牌使用时间就足够了。</p></li>
+> </ul>
 
 
 **配置多重身份验证**
@@ -61,8 +48,12 @@ _**上一次修改主题：** 2016-12-08_
 5.  设置以下信赖方规则：
     
         $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.contoso.com/authorization/claims/permit", Value = "true");'$IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.contoso.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);'
+
+       &nbsp;
     
         Set-ADFSRelyingPartyTrust -TargetName ContosoApp -IssuanceAuthorizationRules $IssuanceAuthorizationRules -IssuanceTransformRules $IssuanceTransformRules
+
+       &nbsp;
     
         Set-CsWebServiceConfiguration -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
 

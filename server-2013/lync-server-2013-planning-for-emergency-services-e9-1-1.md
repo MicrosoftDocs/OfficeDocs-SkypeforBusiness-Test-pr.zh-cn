@@ -17,18 +17,9 @@ _**上一次修改主题：** 2012-10-17_
 
 在美国， Lync Server 2013 支持在 企业语音部署中使用增强型 9-1-1 (E9-1-1) 服务。E9-1-1 是一项紧急派发功能，对于来自办公楼和其他多租户设施的呼叫，该功能可将 9-1-1 呼叫与紧急响应位置 (ERL) 相关联，紧急响应位置包含市政（即街道）地址和其他更具体的位置信息，例如楼层号。通过使用提供的 ERL，公共安全应答点 (PSAP) 可以立即向需要帮助的呼叫者派发第一批响应方，从而降低因疏忽而将响应方指向不正确或模糊不清的位置的风险。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 有三项高级 企业语音功能：呼叫允许控制、紧急服务 (E9-1-1) 和媒体旁路。有关这三项功能共同的规划信息的概述，请参阅 <a href="lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md">Lync Server 2013 中高级企业语音功能的网络设置</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 有三项高级 企业语音功能：呼叫允许控制、紧急服务 (E9-1-1) 和媒体旁路。有关这三项功能共同的规划信息的概述，请参阅 <a href="lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md">Lync Server 2013 中高级企业语音功能的网络设置</a>。
+
 
 
 ## 本部分内容

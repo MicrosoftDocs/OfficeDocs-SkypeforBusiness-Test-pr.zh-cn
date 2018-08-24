@@ -17,18 +17,9 @@ _**上一次修改主题：** 2013-02-23_
 
 按照以下步骤删除用户级别或站点级别的会议策略。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>无法删除全局会议策略。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 无法删除全局会议策略。
+
 
 
 ## 删除站点或用户会议策略
@@ -63,5 +54,5 @@ _**上一次修改主题：** 2013-02-23_
     
         Get-CsConferencingPolicy | Where-Object {$_.AllowExternalUsersToRecordMeetings -eq $True} | Remove-CsConferencingPolicy
 
-有关详细信息，请参阅 [Remove-CsConferencingPolicy](remove-csconferencingpolicy.md)。
+有关详细信息，请参阅 [Remove-CsConferencingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsConferencingPolicy)。
 

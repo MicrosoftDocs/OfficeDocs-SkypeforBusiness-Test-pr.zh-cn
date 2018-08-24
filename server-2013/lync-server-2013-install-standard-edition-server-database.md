@@ -29,18 +29,9 @@ _**上一次修改主题：** 2012-10-01_
 
 5.  在“正在执行命令”页上，将 SQL Server 2012 Express 作为 中央管理存储进行安装。创建必需的防火墙规则。完成安装数据库和必备软件后，单击“完成”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>初始安装可能要花费一些时间，这期间命令输出摘要屏幕上不显示更新。这是由 SQL Server Express 安装所导致的。如果需要监视数据库安装，请使用任务管理器监视安装过程。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 初始安装可能要花费一些时间，这期间命令输出摘要屏幕上不显示更新。这是由 SQL Server Express 安装所导致的。如果需要监视数据库安装，请使用任务管理器监视安装过程。
+    
 
 
 6.  如果之前尚未安装管理工具，请在“Lync Server 部署向导”页上单击“安装拓扑生成器”。有关详细信息，请参阅[安装 Lync Server 2013 管理工具](lync-server-2013-install-lync-server-administrative-tools.md)。

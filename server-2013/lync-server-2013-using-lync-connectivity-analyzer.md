@@ -47,11 +47,11 @@ Lync Connectivity Analyzer 测试下列其他组件的配置：
     
       - 在“Lync 帐户类型”中，选择“Office 365”或“内部部署”。
     
-      - 在“SIP URI”中，输入 Lync 连接的 SIP 登录地址，格式为 **user@domain.com**。
+      - 在“SIP URI”中，输入 Lync 连接的 SIP 登录地址，格式为 <strong>user@domain.com</strong>。
     
       - 在“密码”中，输入与此帐户关联的密码。
     
-      - 在“用户名(可选)”中，输入用户名（如适用）。用户名又称用户主体名称 (UPN)。如果用户名和 SIP URI 相同，则不需要输入用户名。如果不同，则输入格式为 **user@domain.com** 或 **domain\\user** 的用户名。
+      - 在“用户名(可选)”中，输入用户名（如适用）。用户名又称用户主体名称 (UPN)。如果用户名和 SIP URI 相同，则不需要输入用户名。如果不同，则输入格式为 <strong>user@domain.com</strong> 或 **domain\\user** 的用户名。
     
       - 如果您是从连接到您的内部网络的计算机运行 Lync Connectivity Analyzer，请在“网络访问”下选择“从我的组织内”。否则，选择“外部 (Internet)”。Lync Connectivity Analyzer 始终同时执行内部和外部测试，但指定您是处于自己的网络之内还是之外将有助于此工具解释某些故障是否为预期的。
     

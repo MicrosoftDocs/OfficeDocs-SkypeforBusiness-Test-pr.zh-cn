@@ -23,18 +23,9 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 使用以下过程创建 Web 发布规则。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>这些过程假定您已安装 Forefront Threat Management Gateway (TMG) 2010 Standard Edition 或者配置了 Internet Information Server 应用程序请求路由 (IIS ARR) 扩展。您可以使用 TMG 或 IIS ARR。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 这些过程假定您已安装 Forefront Threat Management Gateway (TMG) 2010 Standard Edition 或者配置了 Internet Information Server 应用程序请求路由 (IIS ARR) 扩展。您可以使用 TMG 或 IIS ARR。
+
 
 
 ## 在运行 TMG 2010 的计算机上创建 Web 服务器发布规则
@@ -53,34 +44,16 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 7.  在“内部发布详细信息”页的“内部站点名称”框中，键入承载会议内容和通讯簿内容的内部 Web 场的完全限定域名 (FQDN)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果内部服务器是 Standard Edition Server，则此 FQDN 为 Standard Edition Server 的 FQDN。如果内部服务器是前端池，则此 FQDN 是用于平衡内部 Web 场服务器负载的硬件负载平衡器虚拟 IP (VIP)。TMG 服务器必须能够将 FQDN 解析为内部 Web 服务器的 IP 地址。如果 TMG 服务器不能将 FQDN 解析为正确的 IP 地址，可以选择“使用计算机名称或 IP 地址连接到发布的服务器”，然后在“计算机名称或 IP 地址”框中键入内部 Web 服务器的 IP 地址。如果这样做，则必须确保在 TMG 服务器上打开端口 53，且 TMG 服务器可以访问位于外围网络中的 DNS 服务器。还可以使用本地主机文件中的条目提供名称解析。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果内部服务器是 Standard Edition Server，则此 FQDN 为 Standard Edition Server 的 FQDN。如果内部服务器是前端池，则此 FQDN 是用于平衡内部 Web 场服务器负载的硬件负载平衡器虚拟 IP (VIP)。TMG 服务器必须能够将 FQDN 解析为内部 Web 服务器的 IP 地址。如果 TMG 服务器不能将 FQDN 解析为正确的 IP 地址，可以选择“使用计算机名称或 IP 地址连接到发布的服务器”，然后在“计算机名称或 IP 地址”框中键入内部 Web 服务器的 IP 地址。如果这样做，则必须确保在 TMG 服务器上打开端口 53，且 TMG 服务器可以访问位于外围网络中的 DNS 服务器。还可以使用本地主机文件中的条目提供名称解析。
+    
 
 
 8.  在“内部发布详细信息”页的“路径(可选)”框中键入 **/\*** 作为要发布的文件夹的路径。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在网站发布向导中，只能指定一个路径。可以通过修改规则的属性来添加其他路径。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在网站发布向导中，只能指定一个路径。可以通过修改规则的属性来添加其他路径。
+    
 
 
 9.  在“发布名称详细信息”页上，确认在“接受请求”下选择“此域名”，在“公共名称”框中键入外部 Web 服务的 FQDN。
@@ -117,18 +90,9 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 1.  将您将用于反向代理的证书绑定到 HTTPS 协议。单击“开始”，依次选择“程序”、“管理工具”，然后单击“Internet 信息服务 (IIS) 管理器”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>有关部署和配置 IIS ARR 的其他帮助、屏幕截图和指导可以在 NextHop 文章<a href="http://go.microsoft.com/fwlink/?linkid=293391">使用 IIS ARR 作为 Lync Server 2013 的反向代理</a>中找到。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 有关部署和配置 IIS ARR 的其他帮助、屏幕截图和指导可以在 NextHop 文章<a href="http://go.microsoft.com/fwlink/?linkid=293391">使用 IIS ARR 作为 Lync Server 2013 的反向代理</a>中找到。
+    
 
 
 2.  如果您尚未这样做，请导入将用于反向代理的证书。在“Internet 信息服务 (IIS) 管理器”中，在控制台左侧单击反向代理服务器名称。在控制台中心的“IIS”下方，找到“服务器证书”。右键单击“服务器证书”，并选择“打开功能”。
@@ -137,51 +101,22 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 4.  分配供 HTTPS 使用的证书。在控制台左侧，选择 IIS 服务器的“默认网站”。在右侧，单击“绑定...”。在“网站绑定”对话框中，单击“添加…”。在“添加网站绑定”对话框中的“类型：”下方，单击“https”。选择 https 将允许您选择用于 https 的证书。在“SSL 证书：”下方，选择已为反向代理导入的证书。单击“确定”。然后单击“关闭”。证书现在已绑定到安全套接字层 (SSL) 和传输层安全性 (TLS) 的反向代理。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您在关闭“绑定”对话框时收到一个警告，表明缺少中间证书，则您需要找到并导入公共 CA 根证书颁发机构证书和任何中间 CA 证书。请参阅您向其请求您的证书的公共 CA 处的说明，并按照说明请求和导入证书链。如果您从 边缘服务器 导出了证书，则可以导入根 CA 证书和与 边缘服务器 相关联的任何中间 CA 证书。将根 CA 证书导入到计算机的（不要与用户存储混淆）受信任的根证书颁发机构存储中，而将中间证书导入到计算机的中间证书颁发机构存储中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您在关闭“绑定”对话框时收到一个警告，表明缺少中间证书，则您需要找到并导入公共 CA 根证书颁发机构证书和任何中间 CA 证书。请参阅您向其请求您的证书的公共 CA 处的说明，并按照说明请求和导入证书链。如果您从 边缘服务器 导出了证书，则可以导入根 CA 证书和与 边缘服务器 相关联的任何中间 CA 证书。将根 CA 证书导入到计算机的（不要与用户存储混淆）受信任的根证书颁发机构存储中，而将中间证书导入到计算机的中间证书颁发机构存储中。
 
 
 5.  在控制台左侧的 IIS 服务器名称下面，右键单击“服务器场”，然后单击“创建服务器场…”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果看不到“服务器场”节点，则您需要安装应用程序请求路由。有关详细信息，请参阅<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">为 Lync Server 2013 设置反向代理服务器</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果看不到“服务器场”节点，则您需要安装应用程序请求路由。有关详细信息，请参阅<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">为 Lync Server 2013 设置反向代理服务器</a>。
+    
     
     在“创建服务器场”对话框中，在“服务器场名称”中键入第一个 URL 的名称（这可以是用于识别目的的友好名称）。单击“下一步”。
 
 6.  在“添加服务器”对话框中，在“服务器地址”中键入您的 前端服务器 上外部 Web 服务的完全限定的域名 (FQDN)。这里用作举例说明的名称与反向代理[Lync Server 2013 中的证书摘要 - 反向代理](lync-server-2013-certificate-summary-reverse-proxy.md)的“规划”部分使用的名称相同。参阅反向代理规划，键入 FQDN `webext.contoso.com`。确认选中“联机”旁边的复选框。单击“添加”以向此配置的 Web 服务器池添加服务器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 使用硬件负载平衡器池化控制器和前端服务器的 HTTP 和 HTTPS 流量。在向 IIS ARR 服务器场添加服务器时，您只能提供一个 FQDN。FQDN 将是非池化服务器配置中的前端服务器或控制器，或者为服务器池配置的硬件负载平衡器的 FQDN。负载平衡 HTTP 和 HTTPS 流量唯一支持的方法是使用硬件负载平衡器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Lync Server 使用硬件负载平衡器池化控制器和前端服务器的 HTTP 和 HTTPS 流量。在向 IIS ARR 服务器场添加服务器时，您只能提供一个 FQDN。FQDN 将是非池化服务器配置中的前端服务器或控制器，或者为服务器池配置的硬件负载平衡器的 FQDN。负载平衡 HTTP 和 HTTPS 流量唯一支持的方法是使用硬件负载平衡器。
 
 
 7.  在“添加服务器”对话框中，单击“高级设置...”。这将打开一个对话框，以为配置的 FQDN 请求定义应用程序请求路由。目的是重新定义在 IIS ARR 处理请求时使用哪个端口。
@@ -194,34 +129,14 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 10. 单击服务器场的名称。在 IIS 管理器功能视图中的“服务器场”下方，双击“代理”。在“代理设置”页面上，将“超时（秒）”的值更改为适合您的部署的值。单击“应用”以保存更改。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>代理超时值是一个数字，因部署而异。您应该监控您的部署并修改值以便获得最佳客户端体验。您或许能够设置较低值，如 200。如果在您的环境中支持 Lync 移动客户端，您应该将值设置为 960，以便允许来自 Office 365 的推送通知超时，其超时值为 900。很可能您需要增加超时值以避免在值太低时客户端断开连接，或者如果通过代理进行的连接未断开，请降低该数字，并在客户端断开连接之后清除。只有监控您的环境的正常情况并设定比较基准，才能准确地确定此值的恰当设置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]
+    > 代理超时值是一个数字，因部署而异。您应该监控您的部署并修改值以便获得最佳客户端体验。您或许能够设置较低值，如 200。如果在您的环境中支持 Lync 移动客户端，您应该将值设置为 960，以便允许来自 Office 365 的推送通知超时，其超时值为 900。很可能您需要增加超时值以避免在值太低时客户端断开连接，或者如果通过代理进行的连接未断开，请降低该数字，并在客户端断开连接之后清除。只有监控您的环境的正常情况并设定比较基准，才能准确地确定此值的恰当设置。
 
 
 11. 单击服务器场的名称。在 IIS 管理器功能视图中的“服务器场”下方，双击“路由规则”。在“路由规则”对话框的“路由”下方，清除“启用 SSL 卸载”旁边的复选框。如果无法清除该复选框，请选择“使用 URL 重写检查传入请求”的复选框。单击“应用”以保存更改。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不支持反向代理的 SSL 卸载。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 不支持反向代理的 SSL 卸载。
 
 
 12. 为必须穿过反向代理的每个 URL 重复步骤 5-11。常见列表将为以下内容：
@@ -238,18 +153,8 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
     
       - Office Web Apps 服务器 URL：officewebapps01.contoso.com
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Office Web Apps Server 的 URL 将使用不同的 httpsPort 地址。在步骤 7 中，您将“httpsPort”定义为“443”，并将“httpPort”定义为端口“80”。所有其他配置设置相同。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > Office Web Apps Server 的 URL 将使用不同的 httpsPort 地址。在步骤 7 中，您将“httpsPort”定义为“443”，并将“httpPort”定义为端口“80”。所有其他配置设置相同。
 
 
 13. 在控制台左侧，单击 IIS 服务器名称。在控制台中心，在“IIS”下方找到“URL 重写”。双击“URL 重写”以打开 URL 重写规则配置。您应会看到您在前面的步骤中创建的每个服务器场的规则。如果看不到，请确认您已在 Internet Information Server 管理器控制台中“起始页”节点的正下方单击 **IIS 服务器**名称。
@@ -268,18 +173,8 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 15. 为您已经定义的每个 SSL 重写规则（每个服务器场 URL 一个）重复在步骤 14 中定义的过程。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>默认情况下，将创建 HTTP 规则并通过与 SSL 规则类似的命名表示。对于我们当前的示例，HTTP 规则将命名为 <strong>ARR_webext.contoso.com_loadbalance</strong>。无需对这些规则做任何修改，可以安全地忽略它们。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 默认情况下，将创建 HTTP 规则并通过与 SSL 规则类似的命名表示。对于我们当前的示例，HTTP 规则将命名为 <strong>ARR_webext.contoso.com_loadbalance</strong>。无需对这些规则做任何修改，可以安全地忽略它们。
 
 
 ## 在 TMG 2010 中修改 Web 发布规则的属性

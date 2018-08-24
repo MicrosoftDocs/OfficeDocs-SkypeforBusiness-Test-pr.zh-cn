@@ -19,32 +19,12 @@ _**上一次修改主题：** 2016-12-15_
 
 使用 拓扑生成器发布拓扑之前需配置所需的域名系统 (DNS) 记录。此外，在 Lync Server 2013 部署的配置中使用的部分完全限定的域名 (FQDN) 是逻辑服务器 FQDN，而不是物理服务器 FQDN，因此发布前还需其他 DNS 配置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ656815.warning(OCS.15).gif" title="warning" alt="warning" />警告：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 不支持单标签域。例如，支持具有名为 <strong>contoso.local</strong> 的根域的林，但不支持名为 <strong>local</strong> 的根域。有关详细信息，请参阅 Microsoft 知识库文章 300684“关于如何为使用单标签 DNS 名称的域配置 Windows 的信息”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=300684" class="uri">http://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=300684</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Lync Server 2013 不支持单标签域。例如，支持具有名为 <strong>contoso.local</strong> 的根域的林，但不支持名为 <strong>local</strong> 的根域。有关详细信息，请参阅 Microsoft 知识库文章 300684“关于如何为使用单标签 DNS 名称的域配置 Windows 的信息”，网址为 <a href="http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=300684" class="uri">http://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=300684</a>。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>指定的名称必须与在服务器上配置的计算机名称相同。默认情况下，未加入域的计算机的计算机名称是短名称，而不是 FQDN。拓扑生成器使用的是 FQDN，而不是短名称。在分配运行 Lync Server、边缘服务器和池的服务器的 FQDN 时， <strong>仅使用标准字符</strong> （包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线。FQDN 中的非标准字符通常不受外部 DNS 和公共证书颁发机构 (CA) 的支持（如必须向证书中的 SN 分配 FQDN 时）。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 指定的名称必须与在服务器上配置的计算机名称相同。默认情况下，未加入域的计算机的计算机名称是短名称，而不是 FQDN。拓扑生成器使用的是 FQDN，而不是短名称。在分配运行 Lync Server、边缘服务器和池的服务器的 FQDN 时， <strong>仅使用标准字符</strong> （包括 A–Z、a–z、0–9 和连字符）。不要使用 Unicode 字符或下划线。FQDN 中的非标准字符通常不受外部 DNS 和公共证书颁发机构 (CA) 的支持（如必须向证书中的 SN 分配 FQDN 时）。
 
 
 部署拓扑后，在对其进行操作之前，应确保创建了以下 Active Directory 和 DNS 记录（根据所需的特定功能规定的需要）：
@@ -156,18 +136,9 @@ _**上一次修改主题：** 2016-12-15_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>VIP 表示硬件负载平衡器的虚拟 IP 地址</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> VIP 表示硬件负载平衡器的虚拟 IP 地址
+
 
 
 ## 前端池的 DNS SRV 记录

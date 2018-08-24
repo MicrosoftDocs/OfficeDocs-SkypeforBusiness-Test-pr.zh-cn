@@ -25,18 +25,8 @@ _**上一次修改主题：** 2012-10-02_
 
   - 在旧部署与 Lync Server 2013 部署共存的阶段， Lync Server 2010 版本的存档服务器和监控服务器收集驻留在 Lync Server 2010 池中的用户的数据。 Lync Server 2013 中的存档和监控收集驻留在 Lync Server 2013 池中的用户的数据。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>迁移阶段仍将旧边缘服务器与新 Lync Server 2013 试点池结合使用时， Lync Server 2010 版本的存档服务器继续收集驻留在 Lync Server 2010 池中的用户的数据， Lync Server 2013 中的存档收集驻留在 Lync Server 2013 池中的用户的数据。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+    > 迁移阶段仍将旧边缘服务器与新 Lync Server 2013 试点池结合使用时， Lync Server 2010 版本的存档服务器继续收集驻留在 Lync Server 2010 池中的用户的数据， Lync Server 2013 中的存档收集驻留在 Lync Server 2013 池中的用户的数据。
 
 
   - 如果将第三方存档和监控解决方案与 Lync Server 2013 中的存档和监控结合使用，请咨询供应商，了解何时需要将第三方解决方案与 Lync Server 2013 集成以及如何集成。

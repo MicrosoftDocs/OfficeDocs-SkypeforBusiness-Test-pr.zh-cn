@@ -17,18 +17,8 @@ _**上一次修改主题：** 2012-11-01_
 
 使用下列过程之一配置 通知应用程序的未分配号码范围。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398794.important(OCS.15).gif" title="important" alt="important" />重要提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在配置未分配号码表之前，必须已定义一个或多个通知，或已设置 Exchange 统一消息 (UM) 自动助理。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 在配置未分配号码表之前，必须已定义一个或多个通知，或已设置 Exchange 统一消息 (UM) 自动助理。
 
 
 ## 使用 Lync Server 控制面板配置未分配电话号码
@@ -43,42 +33,19 @@ _**上一次修改主题：** 2012-11-01_
     
       - 若要创建新的号码范围，请单击“新建”。在“名称”中，键入此号码范围的标识名称。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>新的未分配号码范围提交到数据库后，将无法更改该名称。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 新的未分配号码范围提交到数据库后，将无法更改该名称。
+        
     
       - 若要修改现有号码范围，请在搜索字段中键入号码范围的全部或部分名称。在号码范围的结果列表中，单击所需的名称，再单击“编辑”，然后单击“显示详细信息”。
 
 5.  在第一个“号码范围”字段中，键入号码范围的起始号码，在第二个“号码范围”字段中，键入该范围的结束号码。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><ul>
-    <li><p>该范围的起始号码必须小于或等于该范围的结束号码。</p></li>
-    <li><p>如果号码范围的起始号码或结束号码包含分机号，那么号码范围的起始号码和结束号码都必须包含分机号，并且起始号码和结束号码的分机号必须相同。</p></li>
-    <li><p>此号码必须符合正则表达式 (tel:)?(\+)?[1-9]\d{0,17}(;ext=[1-9]\d{0,9})?。这意味着此号码可能以字符串 tel:（如果没有指定此字符串，将自动为您添加）、加号 (+) 以及一个 1 到 9 之间的数字开头。电话号码最长为 17 位数，并可以后跟分机号，格式为 ;ext= 后跟分机号。</p></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > <ul><li><p>该范围的起始号码必须小于或等于该范围的结束号码。</p></li>
+    > <li><p>如果号码范围的起始号码或结束号码包含分机号，那么号码范围的起始号码和结束号码都必须包含分机号，并且起始号码和结束号码的分机号必须相同。</p></li>
+    > <li><p>此号码必须符合正则表达式 (tel:)?(\+)?[1-9]\d{0,17}(;ext=[1-9]\d{0,9})?。这意味着此号码可能以字符串 tel:（如果没有指定此字符串，将自动为您添加）、加号 (+) 以及一个 1 到 9 之间的数字开头。电话号码最长为 17 位数，并可以后跟分机号，格式为 ;ext= 后跟分机号。</p></li></ul>
+    
 
 
 6.  在“通知服务”中，执行下列操作之一：
@@ -99,18 +66,8 @@ _**上一次修改主题：** 2012-11-01_
 
 10. 在“未分配号码”页上，确保未分配号码范围按照所需顺序排列。要更改号码范围在表中的位置，请在范围列表中单击一个或多个连续名称，然后单击向上箭头或向下箭头。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 从上至下搜索未分配号码表，并使用第一个匹配未分配号码的范围。如果有重叠的范围并且有一个范围指定了最后的操作，请确保将该范围置于列表底部。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Lync Server 从上至下搜索未分配号码表，并使用第一个匹配未分配号码的范围。如果有重叠的范围并且有一个范围指定了最后的操作，请确保将该范围置于列表底部。
 
 
 11. 按照希望的顺序排列未分配号码范围后，单击“全部提交”。
@@ -123,18 +80,8 @@ _**上一次修改主题：** 2012-11-01_
 
 3.  使用 **New-CsUnassignedNumber** 可创建新的未分配号码范围。使用 **Set-CsUnassignedNumber** 可修改现有未分配号码范围。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398094.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您具有重叠的范围并希望按某个特定顺序应用这些范围，请包含 Priority 参数。优先级最高的范围将应用于呼叫。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果您具有重叠的范围并希望按某个特定顺序应用这些范围，请包含 Priority 参数。优先级最高的范围将应用于呼叫。
     
     在命令行中，执行下列操作之一：
     
@@ -166,7 +113,7 @@ _**上一次修改主题：** 2012-11-01_
 
 #### 其他资源
 
-[New-CsUnassignedNumber](new-csunassignednumber.md)  
-[Set-CsUnassignedNumber](set-csunassignednumber.md)  
-[Get-CsUnassignedNumber](get-csunassignednumber.md)
+[New-CsUnassignedNumber](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsUnassignedNumber)  
+[Set-CsUnassignedNumber](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsUnassignedNumber)  
+[Get-CsUnassignedNumber](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUnassignedNumber)
 

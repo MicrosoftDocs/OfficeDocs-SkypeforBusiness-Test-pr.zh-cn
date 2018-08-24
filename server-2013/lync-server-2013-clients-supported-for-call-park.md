@@ -21,18 +21,9 @@ _**上一次修改主题：** 2012-09-13_
 
 可寄存来自任意 IP、专用交换机 (PBX)、公用电话交换网 (PSTN) 或移动电话的呼叫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只能寄存音频呼叫。不能寄存即时消息和会议。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 只能寄存音频呼叫。不能寄存即时消息和会议。
+
 
 
 以下客户端可使用 呼叫寄存寄存呼叫：
@@ -45,18 +36,9 @@ _**上一次修改主题：** 2012-09-13_
 
   - Lync Phone Edition
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Dn783119.note(OCS.15).gif" title="note" alt="note" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>移动电话不能使用 呼叫寄存寄存呼叫。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 移动电话不能使用 呼叫寄存寄存呼叫。
+
 
 
 ## 支持取回呼叫的客户端
